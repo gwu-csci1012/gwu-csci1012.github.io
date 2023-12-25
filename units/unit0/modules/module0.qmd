@@ -2,7 +2,7 @@
 title: "Module 0: Your First Program"
 ---
 
-Unit 0 > Module 0
+Unit 0 **>** Module 0
 
 ## Objectives
 By the end of this module you will be able to:
