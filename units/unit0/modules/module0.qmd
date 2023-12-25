@@ -1,0 +1,99 @@
+---
+title: "Module 0: Your First Program"
+---
+
+Unit 0 > Module 0
+
+## Objectives
+By the end of this module you will be able to:
+- Experince writing a really simple program.
+- Explain the difference between command-line outputs vs GUI for programs.
+
+### 0.0: Our First Program
+Lets take a look at our first program as it appears in a textbook (like this one):
+```python
+print("Hello World")
+```
+
+This is a simple program written in the Python programming language, possibly one of the smallest programs one can write, and a traditional starting point for learning programming.
+
+We will very soon (below) write this program ourselves.
+
+For now, let's point out a few things:
+
+- What we see above is the _text_ of the program.
+![](../../../media/units/unit0/module0/firstprogram.png)
+- The entire program will appear inside of a _code editor_ when we write.
+- We could use one of several code editors.
+- For example, this is how it would look inside the _Spyder_ code editor:
+![](../../../media/units/unit0/module0/spyder.png)
+- And how it might look in the _Thonny_ code editor:
+![](../../../media/units/unit0/module0/thonny1.png)
+- Various editors colorize in different ways for convenience of reading, none of which affect the actual text of the program.
+- Apart from typing it in (which you'll do shortly), we haven't actually _run_ the program.
+- Intuitively, just looking at the program we might think that:
+    - It has to do with some kind of "printing" (because we see `print`)
+    - We have no idea what is meant by the somewhat odd phrase "Hello World!", but we see it there.
+
+- There are several ways to run a program:
+    - Run the program inside the very same editor used to type in the program.
+    - Run it without any editor (a slightly advanced topic).
+
+- For example, if we run the program using the _Thonny_ editor, we will see this:
+![](../../../media/units/unit0/module0/thonny3.png)
+
+Next, you will try this yourself.
+
+###### <span style="color:#8B4513;">**0.1 Excercise:** Write and run the helloworld program using [these instructions]()</span>
+So, what's with printing the unusual phrase "Hello World!"?
+
+- It's a tradition in computer science that your first program will print "Hello World!".
+- It's meant to pretend that a program is a creature that's itself communicating to the outside world by saying hello.
+
+### 0.1 The recipe-cook-dish analogy
+
+What just happened above?
+
+Let's use an analogy
+![](../../../media/units/unit0/module0/recipe.png)
+    
+- A recipe is a bunch of instructions in text form.
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rArr;
+A program is also a set of instructions in text form.
+
+- By itself, a recipe doesn't do anything until it's _acted on_.
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rArr;
+You can type up a program but not do anything with it (i.e., not run it).
+
+- A cook _executes_ a recipe by following the instructions
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rArr;
+A combination of elements in your laptop _executes_ a program.
+
+- The net result of a cook executing a recipe is, typically, a dish.
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rArr;
+The result of executing a program is the program's output
+
+- We of course design and write up programs to get useful or interesting output.
+
+- When a recipe is poorly written, or if the cook messes up, the result may be failure.
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rArr;
+A program and the laptop are even more exacting: the slightest error can result in failure.
+
+### 0.2 Programming vs. computerese
+
+What we mean by _computerese_:
+
+- The computer-related tasks and knowledge that are needed, but not the intellectual core of programming.
+- We use the term slightly pejoratively, like _legalese_.
+     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rArr; 
+     A necessary evil.
+
+- Examples of computerese:
+     - Navigating directories
+     - Locating files, copying them, moving them.
+     - Mastery of editor keys, shortcuts.
+     - Handling the quirks of an operating system.
+     - Uploading files to a website, downloading.
+
+###### <span style="color:#8B4513;">**0.2 Excercise:** Develop your computerese skills by following [these instructions.]()</span>
+<span style="color:#8B4513;">(Note: there is nothing to submit for this particula exercise; it is aimed at generally helping you get proficien with using your computer for programming.)</span>
