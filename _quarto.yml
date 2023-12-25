@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "CSCI1012"
+  # navbar:
+  #   left:
+  sidebar:
+    # style: "docked"
+    contents: 
+      # - section: 
+      #   contents: 
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: coursework.qmd
+        text: Coursework
+      - href: faq.qmd
+        text: FAQ
+    back-to-top-navigation: true
+    search: true
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
