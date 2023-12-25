@@ -51,7 +51,6 @@ So, what's with printing the unusual phrase "Hello World!"?
 - It's meant to pretend that a program is a creature that's itself communicating to the outside world by saying hello.
 
 ### 0.1 The recipe-cook-dish analogy
-
 What just happened above?
 
 Let's use an analogy
@@ -80,7 +79,6 @@ The result of executing a program is the program's output
 A program and the laptop are even more exacting: the slightest error can result in failure.
 
 ### 0.2 Programming vs. computerese
-
 What we mean by _computerese_:
 
 - The computer-related tasks and knowledge that are needed, but not the intellectual core of programming.
@@ -97,3 +95,162 @@ What we mean by _computerese_:
 
 ###### <span style="color:#8B4513;">**0.2 Excercise:** Develop your computerese skills by following [these instructions.]()</span>
 <span style="color:#8B4513;">(Note: there is nothing to submit for this particula exercise; it is aimed at generally helping you get proficien with using your computer for programming.)</span>
+
+### 0.3 A slight variation
+We will now spend a bit of time trying a few variations, and also  examining what happens when typing mistakes are made.
+
+Consider this program:
+    <!-- <font size="+2">
+    <font color="#000000"><pre> -->
+```python
+print('Hello World!')
+print('My name is X')
+```
+###### <span style="color:#8B4513;">**0.3 Excercise:** Type up this program but use your own name instead of X. Save the file in the `module0` folder as `myname.py`. Note: in the future we will be asking you to "type up" programs; in all such cases, please also save the file (for eventual submission).</span>
+
+### 0.4 What happens when things go (even slightly) wrong
+We'll now deliberately make a few tiny errors and see what happens:
+
+- **Error #1:** forgetting to type the closing parenthesis.
+    - Here's the program:
+```python
+print('Hello World!'
+```
+    Note the missing right parenthesis at the end of the line.
+        
+    - What happens when we nonetheless try and run the program?    
+    - Here's an example with the Thonny editor:
+    ![](../../../media/units/unit0/module0/error1.png)
+- **Error #2:** What happens if we forget the quotation marks?
+    - Here's the program:
+```python
+print(Hello World!)
+```
+    - We get something quite similar:
+    ![](../../../media/units/unit0/module0/error2.png)
+
+###### <span style="color:#8B4513;">**0.4 Excercise:** Confirm that you get the errors above by typing up the two programs as `error1.py` and save the programs in the `module0` folder.</span>
+
+### 0.5 A peek at a more complex program
+Just to see what's coming later, let's get a sense of what a more complex program _looks like_.
+
+Your goal is to look through it with bemused curiosity, as if studying an incomprensible work of abstract art.
+
+We'll just examine the some surface features, as we would when examining some undeciphered ancient script such as:
+![](../../../media/units/unit0/module0/indus-script.jpg)
+
+Let's start by running the program.
+
+###### <span style="color:#8B4513;">**0.5 Excercise:** Download [`whackamole.py`]() into your `module0.py` folder Then open it and run it. You should see</span>
+![](../../../media/units/unit0/module0/whackamole.png)
+<span style="color:#8B4513;">The purpose of the program and how you use it should be easy to figure out.</span>
+
+Let's point out a few things:
+
+- Unlike the toy `helloworld.py` example, this program actually does something nontrivial.
+- The program brings up a window, and allows a user to interact with it (the program).
+
+Now let's list the program and then point out some "surface" features.
+
+The full program:
+
+```python
+# whackamole with nerf gun
+
+# Use programs written by others through "import"
+import tkinter as tk  
+
+# Define a window
+window = tk.Tk()
+
+# The instructions at the top
+instructions = 'Click reset, then click fire to strike the mole'
+label = tk.Label(text=instructions)
+label.pack()
+
+# Build a rectangular space on which to draw 
+# shapes like circles
+w = 300
+h = 200
+canvas = tk.Canvas(master=window, width=w, height=h)
+canvas.pack()
+
+# These are variables that control the 
+# position of the target and nerf ball
+targetX = 0
+targetVX = 10
+nerfX = 0
+nerfY = h-10
+nerfVX = 20
+nerfVY = 0
+nerfAY = -3
+delT = 0.1
+nerfFired = False
+
+
+# This is what we want to do when the 
+# reset button is clicked:
+def reset():
+    global nerfFired, targetX, nerfX, nerfY, nerfVY
+    nerfFired = False
+    targetX = 0
+    nerfX = 0
+    nerfY = h-1
+    nerfVY = 0
+    canvas.delete("all")
+    print('reset')
+
+# When the fire button is clicked, we change 
+# the status of the nerf gun
+def fire():
+    # start launch
+    global nerfFired
+    nerfFired = True
+    print('fired')
+
+# Build the three buttons called "reset", "fire" and "quit"
+frame = tk.Frame(master=window)
+frame.pack()
+
+resetb = tk.Button(
+    master=frame, text="reset", relief=tk.RIDGE, 
+    fg='black', bg='grey', height=2, width=5,command=reset)
+resetb.grid(row=0, column=0)
+
+fireb = tk.Button(
+    master=frame, text="fire", relief=tk.RIDGE, 
+    fg='black', bg='grey', height=2, width=5, command=fire)
+fireb.grid(row=0, column=1)
+
+quitb = tk.Button(
+    master=frame, text="quit", relief=tk.RIDGE, fg='black', 
+    bg='grey', height=2, width=5, command=window.destroy)
+quitb.grid(row=0, column=2)
+
+# This part of the code draws and animates
+def run():
+    global targetX, nerfX, nerfVY, nerfY
+    canvas.delete("all")
+    targetX += targetVX * delT
+    canvas.create_rectangle(
+        targetX, h-10, targetX+10, h, fill="green")
+    if nerfFired:
+        nerfX += nerfVX * delT
+        nerfVY += nerfAY * delT
+        nerfY += nerfVY * delT
+    canvas.create_oval(
+        nerfX+5,h-nerfY+5, nerfX+15, h-nerfY+15, 
+        fill="red")
+    window.after(1, run)
+
+# Launch the window and start the animation
+window.after(1, run)
+window.mainloop()
+```
+Yes, that's a long program! Now let's point out some features:
+
+First, some features from the first half of the program:
+![](../../../media/units/unit0/module0/whackamole2.png)
+
+And some from the latter part:And some from the latter part:
+![](../../../media/units/unit0/module0/whackamole3.png)
