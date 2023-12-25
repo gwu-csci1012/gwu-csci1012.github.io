@@ -2,12 +2,11 @@
 title: "CS 1012: Introduction to Programming with Python"
 ---
 
-<!-- :::{.column-margin} -->
-### Welcome to the online section of CS-1012!
+### Welcome to the section of CS-1012!
 
-Because this is an online course, it will operate differently than a regular course. In particular:
+Because this is an course, it will operate differently than a regular course. In particular:
 
-- Even though the course is online, we will meet three times: once at the beginning to get you going, once in the middle to check in, and once at the end for the in-class final exam.
+- Even though the course is, we will meet three times: once at the beginning to get you going, once in the middle to check in, and once at the end for the in-class final exam.
 - Most of our communication to you will be by email or by announcements in Blackboard.
 - When you need to communicate with us, please follow the specific instructions outlined in Blackboard.
 - When you submit work, please follow the specific instructions outlined in Blackboard for submitting work.
@@ -16,9 +15,4 @@ Because this is an online course, it will operate differently than a regular cou
 - Start by reading the About section. Then, await an email that will:
 - Schedule the first meeting.
 - Describe the first homework to submit.
-<!-- ::: -->
 
-
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
