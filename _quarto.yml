@@ -24,6 +24,7 @@ website:
           - section: "Unit 0: Getting Started With Programming"
             contents:
               - ./units/unit0/modules/module0.qmd
+              - ./submit-remember.qmd
 format:
   html:
     theme: cosmo
