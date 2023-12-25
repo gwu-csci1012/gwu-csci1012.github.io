@@ -4,6 +4,7 @@ project:
 
 website:
   title: "CSCI1012"
+  back-to-top-navigation: true
   # navbar:
   #   left:
   sidebar:
@@ -19,7 +20,6 @@ website:
         text: Coursework
       - href: faq.qmd
         text: FAQ
-    back-to-top-navigation: true
     search: true
 
 format:
