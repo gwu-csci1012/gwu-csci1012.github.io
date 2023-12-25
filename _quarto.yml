@@ -3,15 +3,12 @@ project:
   output-dir: docs
 
 website:
-  title: "CSCI1012"
+  title: "**CSCI1012**"
   back-to-top-navigation: true
-  # navbar:
-  #   left:
+  page-footer: "This is a Quarto website. To learn more about Quarto websites visit <https://quarto.org/docs/websites>."
+  search: true
   sidebar:
-    # style: "docked"
     contents: 
-      # - section: 
-      #   contents: 
       - href: index.qmd
         text: Home
       - href: about.qmd
@@ -20,13 +17,15 @@ website:
         text: Coursework
       - href: faq.qmd
         text: FAQ
-    search: true
-
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
-
+    grid:
+      sidebar-width: 300px
+      body-width: 900px
+      margin-width: 300px
+      gutter-width: 1.5rem
 
 
