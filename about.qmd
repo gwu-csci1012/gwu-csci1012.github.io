@@ -1,0 +1,93 @@
+---
+title: "About"
+---
+
+## Instructor: 
+### **Dr. Kartik Bulusu**
+
+**Email:** <a href="mailto:bulusu@gwu.edu">Dr. Kartik Bulusu</a><br>
+
+## Time/Location of course:
+This is a fully asychronous course: there are no fixed meeting times, nor any attendance requirement. All the material is released on day 1. You will be expected to submit work according to the schedule on the Coursework page.
+
+## Office Hours:
+TBD
+
+## Why are there no recorded video lectures?
+Learning to program by watching some talk about it is less effective than learning by "doing programming". Thus, most of your learning will consist of reading a concept, seeing an example, and immediately following that with a programming exercise that really gets into the details. At the same time, we know it's useful to have hints and explanations to help you in your exercises, when you are particularly stuck. Accordingly, although most of the material is written, and includes elaborate instructions, there is recorded media that you can optionally view/listen if you need it. These are recorded from a student point of view (but carefully vetted by us), as you'll see.
+
+## Teaching Assistants (TAs):
+Info will be posted on BB.
+
+## TA office hours:
+Friday afternoons (time/link on BB)
+
+## TA email:
+Info will be posted on BB.
+
+## Prerequisites:
+None
+
+## Official catalog description:
+Introduction to programming a computer using the Python language; variables, types, assignment, conditionals, loops, lists, and program units. _(Fall, spring, and summer, Every Year)._
+
+## Informal description:
+This course is all about getting started with programming in the language called Python.
+
+## Specific learning outcomes: 
+By the end of the course, you will be able to
+- Demonstrate familiarity with key concepts in a procedural programming language such as: variables, control structures, functions, input and output.
+- Demonstrate the ability to use programming to solve problems appropriate to a beginning class in programming.
+- Acquire familiarity with how programming can be applied to solve problems.
+
+## Textbook:
+All of the material is online (and free).
+
+## Other requirements:
+- You will be expected to have and use your Blackboard account. If you have trouble logging in, you will need to resolve this by the first meeting.
+
+## Staying on top of the course:
+- Visit the course website (this one) and the Blackboard part of this course several times each week.
+- Be responsive to email sent to you.
+
+## Course load:
+This is not a light course. The course has three units, each of which has a number of modules. Based on students who've taken the course previously, we've identified the approximate number of hours needed for each module. 
+
+**Important:** the hours needed vary by module, so please plan accordingly. The first unit starts off gently, after which the pace increases. Unit-1 is the hardest.
+
+## Coursework and grading:
+See approximate grade breakdown.
+
+## Assignment submission and late work policy:
+- All your work will be submitted via Blackboard.
+- **Late submission policy.** Every student will get to use three extensions in the semester:
+    1. A single-use 1-day extension.
+    2. A single-use 2-day extension.
+    3. A single-use 4-day extension.
+    4. A single-use 6-day extension.
+- Each extension can be used only once, and the entire extension will be applied. (That is, you can't submit something three days late, and claim that you've used only part of the 4-day extension.) You do NOT need to tell us you are using an extension, we will merely apply the best fit in the order we get the submissions. You also cannot pick and choose which extension to apply.
+- We're doing extensions ONLY because because everyone gets ill or has the occasional sudden emergency. It is NOT intended to be used as a tool for time-management or convenience.
+- For all other submissions where the extension does not apply, we will take off 25% per day late. These points taken off will NOT not be pro-rated hourly. Thus, if something is due 5pm March 19th, a submission at 5.05pm March 19th has 25% taken off.
+- You get bonus points if you don't use any extensions at all and if you don't submit anything late.
+- If you're seeking an extension because you've been seriously ill and have a letter from a doctor, communicate with the TA.
+- You cannot use any extension resulting in a submission past the last due date.
+
+## Academic Integrity policy:
+- In this course, you will be expected to work on _**all**_ assigned coursework by yourself, unless otherwise specified by instructions on this site.
+- You may not, without permission from the instructor, exchange course-related code with anyone (including anyone not registered in the course), or download code for use in your coursework, or use material from books other than the textbook. Likewise, you may not look at anyone else's code or show your code to anyone else.
+- **Important:** We have sophisticated tools that automatically examine all students' code and that perform a comparison. These tools are very good at determining similarity in code. We also reserve the right to ask you probing questions about submitted work; failure to answer these questions may result in loss of points for the submitted work.
+- **Important:** Parts of the final exam will feature small variations of the assigned work but without electronic access to your computer. Thus, _**you will succeed in the exam only if you actually do the assigned work.**_
+- If you use material in your assignments that are from outside the course material, then you should be prepared to explain that material. The instructors and TAs reserve the right to question you on your use of any extraneous material. Failure to answer such questions might be viewed as grounds for an integrity violation.
+- The Academic Integrity Code will apply to this course. Please read through the code carefully. Penalties for violating the code or the policies described here include failing this course.
+
+- If you have a disability that may effect your participation in this course and wish to discuss academic acommodations, please contact us as soon as possible.
+
+## Minimum course load: 
+In a 15-week semester, including exam week, students are expected to spend a minimum of 100 minutes of out-of-class work for every 50 minutes of direct instruction, for a minimum total of 2.5 hours a week. A 3-credit course includes 2.5 hours of direct instruction and a minimum of 5 hours of independent learning, or a minimum of 7.5 hours per week. More information about GW’s credit hour policy can be found at: provost.gwu.edu/policies-forms
+
+## Statement on inclusive teaching
+It is my intent that students from all backgrounds and perspectives be well-served by this course, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit. Your suggestions are encouraged and appreciated. Please let me know ways to improve the effectiveness of the course for you personally, or for other students or student groups.
+
+## GW's emergency preparedness guide
+
+## Finally, note that course policies may be adjusted or modified during the course of the semester.
