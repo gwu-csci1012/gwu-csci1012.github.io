@@ -254,3 +254,92 @@ First, some features from the first half of the program:
 
 And some from the latter part:And some from the latter part:
 ![](../../../media/units/unit0/module0/whackamole3.png)
+
+### 0.6 GUI vs command-line
+GUI stands for: Graphical User Interface.
+
+And is pronounced like "gooey".
+
+The difference between GUI and command-line programs:
+
+- Programs like `helloworld.py` from earlier printed plain text. These are _Command-line_ programs.
+- Programs like `whackamole.py` bring up their own little window on your screen. These are called GUI programs.
+- GUI programs are typically more complicated because one has to specify all the elements (buttons etc) of the interface.
+- We will spend quite a bit of time learning programming with simpler (albeit less exciting) command-line programs.
+- However, we will occasionally work with GUI programs because they are visually more interesting, and demonstrate applications.
+
+### 0.8 Computer science: beyond programming
+Is computer science the same as programming?
+
+Not at all:
+
+Programming is certainly a significant part, just as narrative non-fiction is a significant part of an English degree.
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &rArr; But there's much more to it.
+
+What else does a computer science degree feature? Typically:
+
+- Programming devices (units 9-10).
+- An understanding of the hardware (units 11-12).
+- Algorithms: the science in computer science.
+- Theory: understanding fundamental theoretical limitations of computation.
+- A deeper understanding of how computer systems work: networks, databases, operating systems.
+
+But also electives among (to name a few):
+
+- Artificial intelligence, machine learning, robotics, computer vision, natural language processing.
+- Design of interfaces.
+- Graphics, animation, visualization.
+- Digital humanities, computing for arts and social sciences.
+- Scientific computing.
+- Computational X, where X=biology, physics, economics ...
+- Educational tools, health data systems.
+- Medical devices, prosthetics, control of mechanical systems
+
+### 0.8 How to succeed as a student
+The challenge in learning programming:
+
+**1:** it's an alien world.
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &rArr; Takes getting used to.
+
+**2:** it's a mental skill
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &rArr; Skills are acquired slowly, with much practice, and in fits and starts.
+
+**3:** there are confounding issues
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &rArr; some knowledge of (regrettably) <em>computerese</em> needed.
+
+**4:** it's easy to feel overwhelmed or intimidated
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &rArr; your neighbor may appear to be "getting it" while you feel you don't.
+
+What you should expect:
+
+- You can't learn instantly
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &rArr; You may have to see a concept multiple times to "get it".
+- You may occasionally feel bewildered.
+- There are some things that can't be understoodat this stage.
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &rArr; Not enough background.
+- It's deceptively easy to understand an idea when reading or viewing but devilishly harder to do it yourself.
+
+How to succeed:
+
+- Make progress every day
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &rArr; Each module builds on previous modules
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &rArr; Can't afford to let <em>anything</em> slide.
+- Be willing to put the effort 
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &rArr; Do <em>all</em> exercises, assignments etc.
+- Practice being irrepressibly positive.
+
+###### <span style="color:#8B4513;">**0.6 Excercise:** Create a PDF file (using Word, Google-docs, or anything like that) called `module0.pdf` in your `module0.pdf` folder. This document should contain: (1) a picture that says something about you (it need not be a picture of you, it could  represent something iconic for you.) (2) a paragraph about yourself.</span>
+
+:::{.callout-note}
+[What to rememeber about submitting work](../../../submit-remember.qmd)
+:::
