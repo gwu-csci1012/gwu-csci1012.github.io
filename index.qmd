@@ -10,9 +10,9 @@ Because this is an course, it will operate differently than a regular course. In
 - Most of our communication to you will be by email or by announcements in Blackboard.
 - When you need to communicate with us, please follow the specific instructions outlined in Blackboard.
 - When you submit work, please follow the specific instructions outlined in Blackboard for submitting work.
-- The coursework page outlines the schedule. It is YOUR job to keep to the schedule and submit work accordingly.
+- The [coursework](coursework.qmd) page outlines the schedule. It is YOUR job to keep to the schedule and submit work accordingly.
 - As you'll see you'll be accompanied by four students who will be doing the course with you. These four have no background in computer science or engineering whatsoever, demonstrating that anyone can learn CS with sufficient enthusiasm.
-- Start by reading the About section. Then, await an email that will:
-- Schedule the first meeting.
-- Describe the first homework to submit.
+- Start by reading the [About](about.qmd) section. Then, await an email that will:
+    - Schedule the first meeting.
+    - Describe the first homework to submit.
 
