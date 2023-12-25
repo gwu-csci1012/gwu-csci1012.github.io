@@ -2,4 +2,33 @@
 title: "Coursework"
 ---
 
-About this site
+_**Important:**_
+
+- The dates below might change. Please check this table at least twice a week.
+- Unit-1 is more intensive that Unit-0; please plan accordingly.
+- Unless otherwise noted, the due time for each due date will be 11.59pm EST that day.
+
+## Schedule
+```{=html}
+<table>
+    <thead>
+        <tr>
+            <th>Week</th>
+      <th>Topic</th>
+      <th>Due (Due Date)</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>16 Jan</td>
+            <td>First Lecture</td>
+            <td>Nothing due</td>
+        </tr>
+        <tr>
+            <td>23 Jan</td>
+            <td>2nd Lecture</td>
+            <td>Nothing due</td>
+        </tr>
+    </tbody>
+</table>
+```
