@@ -4,7 +4,7 @@
     "href": "coursework.html",
     "title": "Coursework",
     "section": "",
-    "text": "About this site"
+    "text": "About this site\n\n\n\n Back to top"
   },
   {
     "objectID": "about.html",
@@ -24,15 +24,15 @@
     "objectID": "about.html#timelocation-of-course",
     "href": "about.html#timelocation-of-course",
     "title": "About",
-    "section": "Time/Location of course:",
-    "text": "Time/Location of course:\nThis is a fully asychronous course: there are no fixed meeting times, nor any attendance requirement. All the material is released on day 1. You will be expected to submit work according to the schedule on the Coursework page."
+    "section": "Time/Location of course",
+    "text": "Time/Location of course\nThis is a fully asychronous course: there are no fixed meeting times, nor any attendance requirement. All the material is released on day 1. You will be expected to submit work according to the schedule on the Coursework page."
   },
   {
     "objectID": "about.html#office-hours",
     "href": "about.html#office-hours",
     "title": "About",
-    "section": "Office Hours:",
-    "text": "Office Hours:\nTBD"
+    "section": "Office Hours",
+    "text": "Office Hours\nTBD"
   },
   {
     "objectID": "about.html#why-are-there-no-recorded-video-lectures",
@@ -45,106 +45,106 @@
     "objectID": "about.html#teaching-assistants-tas",
     "href": "about.html#teaching-assistants-tas",
     "title": "About",
-    "section": "Teaching Assistants (TAs):",
-    "text": "Teaching Assistants (TAs):\nInfo will be posted on BB."
+    "section": "Teaching Assistants (TAs)",
+    "text": "Teaching Assistants (TAs)\nInfo will be posted on BB."
   },
   {
     "objectID": "about.html#ta-office-hours",
     "href": "about.html#ta-office-hours",
     "title": "About",
-    "section": "TA office hours:",
-    "text": "TA office hours:\nFriday afternoons (time/link on BB)"
+    "section": "TA office hours",
+    "text": "TA office hours\nFriday afternoons (time/link on BB)"
   },
   {
     "objectID": "about.html#ta-email",
     "href": "about.html#ta-email",
     "title": "About",
-    "section": "TA email:",
-    "text": "TA email:\nInfo will be posted on BB."
+    "section": "TA email",
+    "text": "TA email\nInfo will be posted on BB."
   },
   {
     "objectID": "about.html#prerequisites",
     "href": "about.html#prerequisites",
     "title": "About",
-    "section": "Prerequisites:",
-    "text": "Prerequisites:\nNone"
+    "section": "Prerequisites",
+    "text": "Prerequisites\nNone"
   },
   {
     "objectID": "about.html#official-catalog-description",
     "href": "about.html#official-catalog-description",
     "title": "About",
-    "section": "Official catalog description:",
-    "text": "Official catalog description:\nIntroduction to programming a computer using the Python language; variables, types, assignment, conditionals, loops, lists, and program units. (Fall, spring, and summer, Every Year)."
+    "section": "Official catalog description",
+    "text": "Official catalog description\nIntroduction to programming a computer using the Python language; variables, types, assignment, conditionals, loops, lists, and program units. (Fall, spring, and summer, Every Year)."
   },
   {
     "objectID": "about.html#informal-description",
     "href": "about.html#informal-description",
     "title": "About",
-    "section": "Informal description:",
-    "text": "Informal description:\nThis course is all about getting started with programming in the language called Python."
+    "section": "Informal description",
+    "text": "Informal description\nThis course is all about getting started with programming in the language called Python."
   },
   {
     "objectID": "about.html#specific-learning-outcomes",
     "href": "about.html#specific-learning-outcomes",
     "title": "About",
-    "section": "Specific learning outcomes:",
-    "text": "Specific learning outcomes:\nBy the end of the course, you will be able to - Demonstrate familiarity with key concepts in a procedural programming language such as: variables, control structures, functions, input and output. - Demonstrate the ability to use programming to solve problems appropriate to a beginning class in programming. - Acquire familiarity with how programming can be applied to solve problems."
+    "section": "Specific learning outcomes",
+    "text": "Specific learning outcomes\nBy the end of the course, you will be able to - Demonstrate familiarity with key concepts in a procedural programming language such as: variables, control structures, functions, input and output. - Demonstrate the ability to use programming to solve problems appropriate to a beginning class in programming. - Acquire familiarity with how programming can be applied to solve problems."
   },
   {
     "objectID": "about.html#textbook",
     "href": "about.html#textbook",
     "title": "About",
-    "section": "Textbook:",
-    "text": "Textbook:\nAll of the material is online (and free)."
+    "section": "Textbook",
+    "text": "Textbook\nAll of the material is online (and free)."
   },
   {
     "objectID": "about.html#other-requirements",
     "href": "about.html#other-requirements",
     "title": "About",
-    "section": "Other requirements:",
-    "text": "Other requirements:\n\nYou will be expected to have and use your Blackboard account. If you have trouble logging in, you will need to resolve this by the first meeting."
+    "section": "Other requirements",
+    "text": "Other requirements\n\nYou will be expected to have and use your Blackboard account. If you have trouble logging in, you will need to resolve this by the first meeting."
   },
   {
     "objectID": "about.html#staying-on-top-of-the-course",
     "href": "about.html#staying-on-top-of-the-course",
     "title": "About",
-    "section": "Staying on top of the course:",
-    "text": "Staying on top of the course:\n\nVisit the course website (this one) and the Blackboard part of this course several times each week.\nBe responsive to email sent to you."
+    "section": "Staying on top of the course",
+    "text": "Staying on top of the course\n\nVisit the course website (this one) and the Blackboard part of this course several times each week.\nBe responsive to email sent to you."
   },
   {
     "objectID": "about.html#course-load",
     "href": "about.html#course-load",
     "title": "About",
-    "section": "Course load:",
-    "text": "Course load:\nThis is not a light course. The course has three units, each of which has a number of modules. Based on students who’ve taken the course previously, we’ve identified the approximate number of hours needed for each module.\nImportant: the hours needed vary by module, so please plan accordingly. The first unit starts off gently, after which the pace increases. Unit-1 is the hardest."
+    "section": "Course load",
+    "text": "Course load\nThis is not a light course. The course has three units, each of which has a number of modules. Based on students who’ve taken the course previously, we’ve identified the approximate number of hours needed for each module.\nImportant: the hours needed vary by module, so please plan accordingly. The first unit starts off gently, after which the pace increases. Unit-1 is the hardest."
   },
   {
     "objectID": "about.html#coursework-and-grading",
     "href": "about.html#coursework-and-grading",
     "title": "About",
-    "section": "Coursework and grading:",
-    "text": "Coursework and grading:\nSee approximate grade breakdown."
+    "section": "Coursework and grading",
+    "text": "Coursework and grading\nSee approximate grade breakdown."
   },
   {
     "objectID": "about.html#assignment-submission-and-late-work-policy",
     "href": "about.html#assignment-submission-and-late-work-policy",
     "title": "About",
-    "section": "Assignment submission and late work policy:",
-    "text": "Assignment submission and late work policy:\n\nAll your work will be submitted via Blackboard.\nLate submission policy. Every student will get to use three extensions in the semester:\n\nA single-use 1-day extension.\nA single-use 2-day extension.\nA single-use 4-day extension.\nA single-use 6-day extension.\n\nEach extension can be used only once, and the entire extension will be applied. (That is, you can’t submit something three days late, and claim that you’ve used only part of the 4-day extension.) You do NOT need to tell us you are using an extension, we will merely apply the best fit in the order we get the submissions. You also cannot pick and choose which extension to apply.\nWe’re doing extensions ONLY because because everyone gets ill or has the occasional sudden emergency. It is NOT intended to be used as a tool for time-management or convenience.\nFor all other submissions where the extension does not apply, we will take off 25% per day late. These points taken off will NOT not be pro-rated hourly. Thus, if something is due 5pm March 19th, a submission at 5.05pm March 19th has 25% taken off.\nYou get bonus points if you don’t use any extensions at all and if you don’t submit anything late.\nIf you’re seeking an extension because you’ve been seriously ill and have a letter from a doctor, communicate with the TA.\nYou cannot use any extension resulting in a submission past the last due date."
+    "section": "Assignment submission and late work policy",
+    "text": "Assignment submission and late work policy\n\nAll your work will be submitted via Blackboard.\nLate submission policy. Every student will get to use three extensions in the semester:\n\nA single-use 1-day extension.\nA single-use 2-day extension.\nA single-use 4-day extension.\nA single-use 6-day extension.\n\nEach extension can be used only once, and the entire extension will be applied. (That is, you can’t submit something three days late, and claim that you’ve used only part of the 4-day extension.) You do NOT need to tell us you are using an extension, we will merely apply the best fit in the order we get the submissions. You also cannot pick and choose which extension to apply.\nWe’re doing extensions ONLY because because everyone gets ill or has the occasional sudden emergency. It is NOT intended to be used as a tool for time-management or convenience.\nFor all other submissions where the extension does not apply, we will take off 25% per day late. These points taken off will NOT not be pro-rated hourly. Thus, if something is due 5pm March 19th, a submission at 5.05pm March 19th has 25% taken off.\nYou get bonus points if you don’t use any extensions at all and if you don’t submit anything late.\nIf you’re seeking an extension because you’ve been seriously ill and have a letter from a doctor, communicate with the TA.\nYou cannot use any extension resulting in a submission past the last due date."
   },
   {
     "objectID": "about.html#academic-integrity-policy",
     "href": "about.html#academic-integrity-policy",
     "title": "About",
-    "section": "Academic Integrity policy:",
-    "text": "Academic Integrity policy:\n\nIn this course, you will be expected to work on all assigned coursework by yourself, unless otherwise specified by instructions on this site.\nYou may not, without permission from the instructor, exchange course-related code with anyone (including anyone not registered in the course), or download code for use in your coursework, or use material from books other than the textbook. Likewise, you may not look at anyone else’s code or show your code to anyone else.\nImportant: We have sophisticated tools that automatically examine all students’ code and that perform a comparison. These tools are very good at determining similarity in code. We also reserve the right to ask you probing questions about submitted work; failure to answer these questions may result in loss of points for the submitted work.\nImportant: Parts of the final exam will feature small variations of the assigned work but without electronic access to your computer. Thus, you will succeed in the exam only if you actually do the assigned work.\nIf you use material in your assignments that are from outside the course material, then you should be prepared to explain that material. The instructors and TAs reserve the right to question you on your use of any extraneous material. Failure to answer such questions might be viewed as grounds for an integrity violation.\nThe Academic Integrity Code will apply to this course. Please read through the code carefully. Penalties for violating the code or the policies described here include failing this course.\nIf you have a disability that may effect your participation in this course and wish to discuss academic acommodations, please contact us as soon as possible."
+    "section": "Academic Integrity policy",
+    "text": "Academic Integrity policy\n\nIn this course, you will be expected to work on all assigned coursework by yourself, unless otherwise specified by instructions on this site.\nYou may not, without permission from the instructor, exchange course-related code with anyone (including anyone not registered in the course), or download code for use in your coursework, or use material from books other than the textbook. Likewise, you may not look at anyone else’s code or show your code to anyone else.\nImportant: We have sophisticated tools that automatically examine all students’ code and that perform a comparison. These tools are very good at determining similarity in code. We also reserve the right to ask you probing questions about submitted work; failure to answer these questions may result in loss of points for the submitted work.\nImportant: Parts of the final exam will feature small variations of the assigned work but without electronic access to your computer. Thus, you will succeed in the exam only if you actually do the assigned work.\nIf you use material in your assignments that are from outside the course material, then you should be prepared to explain that material. The instructors and TAs reserve the right to question you on your use of any extraneous material. Failure to answer such questions might be viewed as grounds for an integrity violation.\nThe Academic Integrity Code will apply to this course. Please read through the code carefully. Penalties for violating the code or the policies described here include failing this course.\nIf you have a disability that may effect your participation in this course and wish to discuss academic acommodations, please contact us as soon as possible."
   },
   {
     "objectID": "about.html#minimum-course-load",
     "href": "about.html#minimum-course-load",
     "title": "About",
-    "section": "Minimum course load:",
-    "text": "Minimum course load:\nIn a 15-week semester, including exam week, students are expected to spend a minimum of 100 minutes of out-of-class work for every 50 minutes of direct instruction, for a minimum total of 2.5 hours a week. A 3-credit course includes 2.5 hours of direct instruction and a minimum of 5 hours of independent learning, or a minimum of 7.5 hours per week. More information about GW’s credit hour policy can be found at: provost.gwu.edu/policies-forms"
+    "section": "Minimum course load",
+    "text": "Minimum course load\nIn a 15-week semester, including exam week, students are expected to spend a minimum of 100 minutes of out-of-class work for every 50 minutes of direct instruction, for a minimum total of 2.5 hours a week. A 3-credit course includes 2.5 hours of direct instruction and a minimum of 5 hours of independent learning, or a minimum of 7.5 hours per week. More information about GW’s credit hour policy can be found at: provost.gwu.edu/policies-forms"
   },
   {
     "objectID": "about.html#statement-on-inclusive-teaching",
@@ -172,13 +172,13 @@
     "href": "index.html",
     "title": "CS 1012: Introduction to Programming with Python",
     "section": "",
-    "text": "Welcome to the online section of CS-1012!\nBecause this is an online course, it will operate differently than a regular course. In particular:\n\nEven though the course is online, we will meet three times: once at the beginning to get you going, once in the middle to check in, and once at the end for the in-class final exam.\nMost of our communication to you will be by email or by announcements in Blackboard.\nWhen you need to communicate with us, please follow the specific instructions outlined in Blackboard.\nWhen you submit work, please follow the specific instructions outlined in Blackboard for submitting work.\nThe coursework page outlines the schedule. It is YOUR job to keep to the schedule and submit work accordingly.\nAs you’ll see you’ll be accompanied by four students who will be doing the course with you. These four have no background in computer science or engineering whatsoever, demonstrating that anyone can learn CS with sufficient enthusiasm.\nStart by reading the About section. Then, await an email that will:\nSchedule the first meeting.\nDescribe the first homework to submit. \n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Welcome to the section of CS-1012!\nBecause this is an course, it will operate differently than a regular course. In particular:\n\nEven though the course is, we will meet three times: once at the beginning to get you going, once in the middle to check in, and once at the end for the in-class final exam.\nMost of our communication to you will be by email or by announcements in Blackboard.\nWhen you need to communicate with us, please follow the specific instructions outlined in Blackboard.\nWhen you submit work, please follow the specific instructions outlined in Blackboard for submitting work.\nThe coursework page outlines the schedule. It is YOUR job to keep to the schedule and submit work accordingly.\nAs you’ll see you’ll be accompanied by four students who will be doing the course with you. These four have no background in computer science or engineering whatsoever, demonstrating that anyone can learn CS with sufficient enthusiasm.\nStart by reading the About section. Then, await an email that will:\nSchedule the first meeting.\nDescribe the first homework to submit.\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "faq.html",
     "href": "faq.html",
     "title": "FAQ",
     "section": "",
-    "text": "About this site"
+    "text": "About this site\n\n\n\n Back to top"
   }
 ]
