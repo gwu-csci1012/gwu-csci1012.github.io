@@ -1,6 +1,0 @@
----
-title: "Unit 0: Getting Started With Programming"
----
-
-# Modules in Unit 0
-[Your First Program.](modules/module0.qmd)
