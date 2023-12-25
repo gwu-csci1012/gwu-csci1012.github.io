@@ -20,7 +20,10 @@ website:
         text: FAQ
       - section: "Units"
         contents: 
-          - ./units/unit0/unit0.qmd
+          # - ./units/unit0/unit0.qmd
+          - section: "Unit 0: Getting Started With Programming"
+            contents:
+              - ./units/unit0/modules/module0.qmd
 format:
   html:
     theme: cosmo
