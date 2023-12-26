@@ -2,10 +2,15 @@
 title: "Module 0: Your First Program"
 ---
 
-Unit 0 **>** Module 0
+<div class="breadcrumbs">
+  <a href="../../../index.qmd">Home</a> &raquo;
+  <a href="#">Units</a> &raquo;
+  <span class="current-page">Module 0</span>
+</div>
 
 ## Objectives
 By the end of this module you will be able to:
+
 - Experince writing a really simple program.
 - Explain the difference between command-line outputs vs GUI for programs.
 
@@ -94,7 +99,11 @@ What we mean by _computerese_:
      - Uploading files to a website, downloading.
 
 ###### <span style="color:#8B4513;">**0.2 Excercise:** Develop your computerese skills by following [these instructions.]()</span>
-<span style="color:#8B4513;">(Note: there is nothing to submit for this particula exercise; it is aimed at generally helping you get proficien with using your computer for programming.)</span>
+<span style="color:#8B4513;"></span>
+
+:::{.callout-note}
+There is nothing to submit for this particula exercise; it is aimed at generally helping you get proficien with using your computer for programming.
+:::
 
 ### 0.3 A slight variation
 We will now spend a bit of time trying a few variations, and also  examining what happens when typing mistakes are made.
@@ -106,7 +115,11 @@ Consider this program:
 print('Hello World!')
 print('My name is X')
 ```
-###### <span style="color:#8B4513;">**0.3 Excercise:** Type up this program but use your own name instead of X. Save the file in the `module0` folder as `myname.py`. Note: in the future we will be asking you to "type up" programs; in all such cases, please also save the file (for eventual submission).</span>
+###### <span style="color:#8B4513;">**0.3 Excercise:** Type up this program but use your own name instead of X. Save the file in the `module0` folder as `myname.py`.</span>
+
+:::{.callout-note}
+In the future we will be asking you to "type up" programs; in all such cases, please also save the file (for eventual submission)
+:::
 
 ### 0.4 What happens when things go (even slightly) wrong
 We'll now deliberately make a few tiny errors and see what happens:
@@ -338,7 +351,7 @@ How to succeed:
     &rArr; Do <em>all</em> exercises, assignments etc.
 - Practice being irrepressibly positive.
 
-###### <span style="color:#8B4513;">**0.6 Excercise:** Create a PDF file (using Word, Google-docs, or anything like that) called `module0.pdf` in your `module0.pdf` folder. This document should contain: (1) a picture that says something about you (it need not be a picture of you, it could  represent something iconic for you.) (2) a paragraph about yourself.</span>
+###### <span style="color:#8B4513;">**0.6 Excercise:** Create a PDF file (using Word, Google-docs, or anything like that) called `module0.pdf` in your `module0.pdf` folder. This document should contain: **(1)** a picture that says something about you (it need not be a picture of you, it could  represent something iconic for you.) **(2)** a paragraph about yourself.</span>
 
 :::{.callout-note}
 [What to rememeber about submitting work](../../../submit-remember.qmd)
