@@ -25,6 +25,7 @@ website:
             contents:
               - ./units/unit0/modules/module0.qmd
               - ./units/unit0/modules/module1.qmd
+              - ./units/unit0/modules/module2.qmd
               - ./submit-remember.qmd
 format:
   html:
