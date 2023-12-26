@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>CSCI1012 - Module 2: Functions: a first look</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="../../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Units</li><li class="breadcrumb-item"><a href="../../../units/unit0/modules/module0.html">Unit 0: Getting Started With Programming</a></li><li class="breadcrumb-item"><a href="../../../units/unit0/modules/module2.html">Module 2: Functions: a first look</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../../"><strong>CSCI1012</strong></a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../coursework.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Coursework</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../faq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FAQ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Units</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Unit 0: Getting Started With Programming</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit0/modules/module0.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 0: Your First Program</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit0/modules/module1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 1: A few more getting-started examples</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit0/modules/module2.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Module 2: Functions: a first look</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../submit-remember.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to remember about submitting work</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
+  <li><a href="#an-example-with-function-calls" id="toc-an-example-with-function-calls" class="nav-link" data-scroll-target="#an-example-with-function-calls">2.0 An example with function calls</a></li>
+  <li><a href="#calling-functions-from-other-functions" id="toc-calling-functions-from-other-functions" class="nav-link" data-scroll-target="#calling-functions-from-other-functions">2.1 Calling functions from other functions</a></li>
+  <li><a href="#more-about-functions" id="toc-more-about-functions" class="nav-link" data-scroll-target="#more-about-functions">2.2 More about functions</a></li>
+  <li><a href="#a-peek-at-the-future" id="toc-a-peek-at-the-future" class="nav-link" data-scroll-target="#a-peek-at-the-future">2.3 &nbsp;&nbsp; A peek at the future</a></li>
+  <li><a href="#and-now-for-something-strange" id="toc-and-now-for-something-strange" class="nav-link" data-scroll-target="#and-now-for-something-strange">2.4 And now for something strange</a></li>
+  <li><a href="#another-reminder-about-computerese" id="toc-another-reminder-about-computerese" class="nav-link" data-scroll-target="#another-reminder-about-computerese">2.5 Another reminder about computerese</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Module 2: Functions: a first look</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="breadcrumbs">
+<p><a href="../../../index.html">Home</a> » <a href="#">Units</a> » <span class="current-page">Module 2</span></p>
+</div>
+<section id="objectives" class="level2">
+<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
+<p>By the end of this module, for simple HelloWorld-like programs, you will be able to:</p>
+<ul>
+<li>Demonstrate function calls.</li>
+<li>Use mental tracing to identify output without execution.</li>
+<li>Add numbered comments to show an execution trace.</li>
+<li>Identify and correct syntax errors related to the above objectives.</li>
+</ul>
+</section>
+<section id="an-example-with-function-calls" class="level2">
+<h2 class="anchored" data-anchor-id="an-example-with-function-calls">2.0 An example with function calls</h2>
+<p>Consider the following program:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># define a function we'll use later</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_big_M():    </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'** **'</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'* * *'</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># define another one we'll use later</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_big_O():    </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*****'</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*****'</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Print MOO using the above defined functions</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>print_big_M()</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>print_big_O()</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>print_big_O()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="excercise-type-up-the-above-in-animal_sounds.pyand-run-it.-also-save-the-file-so-that-it-can-be-submitted-you-will-need-to-save-the-appropriate-files-for-everysuch-type-up-exercise." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-animal_sounds.pyand-run-it.-also-save-the-file-so-that-it-can-be-submitted-you-will-need-to-save-the-appropriate-files-for-everysuch-type-up-exercise."><span style="color:#8B4513;"><strong>2.1 Excercise:</strong> Type up the above in <code>animal_sounds.py</code>and run it. Also save the file so that it can be submitted (You will need to save the appropriate files for everysuch “type up” exercise).</span></h6>
+<p>Let’s point out a few things: <img src="../../../media/units/unit0/module2/animalsounds.png" class="img-fluid"></p>
+<ul>
+<li><p>Let’s start by distinguishing between a function <em>definition</em> (which uses <code>def</code> and merely tells Python what the function is about), and invocation (which asks Python to execute the function at that moment).</p>
+<ul>
+<li>A <em>function definition</em> is a piece of code that begins with the word <code>def</code></li>
+<li>A function definition is sometimes also called <em>function declaration</em>.</li>
+<li>A function definition does not execute the code immediately.</li>
+<li>Instead it’s like saving in one place a bunch of instructions that can be invoked with just the name of the function.</li>
+<li>This saves writing lots of code if a group of code can begiven a name (in this case, a function name).</li>
+</ul></li>
+<li><p>A function definition has 5 elements: <img src="../../../media/units/unit0/module2/funcdef.png" class="img-fluid"></p></li>
+<li><p>A function with a given name is defined just once.</p></li>
+<li><p>A function invocation merely uses the name, along with parentheses:</p></li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>print_big_M()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We’ll later see examples where some things can go between the parens.</p>
+<ul>
+<li><p>While a particular function is defined once, it can be used any number of times:</p>
+<ul>
+<li>In fact, that is the whole purpose of defining functions.</li>
+<li>Each use of a function is a single line of code, which saves us the trouble of rewriting all the code that was inside the function for each time we need it.</li>
+</ul></li>
+<li><p>Function definitions also help isolate code so that one doesn’t have to see or understand what’s inside to use it.</p></li>
+<li><p>We’ve already used such a function before: the <code>print</code> function.</p>
+<ul>
+<li>The <code>print</code>function is defined internal to Python.</li>
+<li>We don’t type its definition, nor do we see it.</li>
+<li>We just use it as often as we like.</li>
+</ul></li>
+<li><p><strong>Important:</strong> Please pay careful attention to <em>indentation</em></p>
+<ul>
+<li>The line that begins with <code>def</code> should NOT be indented.</li>
+<li>Other lines that belong to the function <em>should</em> be indented.</li>
+<li>There are other forms of indentation that we’ll point out as we proceed - they’re all <em>important</em>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="video" class="level6">
+<h6 class="anchored" data-anchor-id="video"><span style="color:#8B4513;"><strong>2.2 Video:</strong></span></h6>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/units/unit0/module2/u0-mod2.2.mp4"></video></div>
+</section>
+<section id="exercise-write-your-own-animal-sound-that-uses-one-function-at-least-thrice-with-an-exclamation-mark-at-the-end-e.g.-print-the-big-version-of-baaa.-write-your-code-in-my_pet_sound.py.-once-your-program-is-working-say-the-sound-out-aloud-to-celebrate.-why-not" class="level6">
+<h6 class="anchored" data-anchor-id="exercise-write-your-own-animal-sound-that-uses-one-function-at-least-thrice-with-an-exclamation-mark-at-the-end-e.g.-print-the-big-version-of-baaa.-write-your-code-in-my_pet_sound.py.-once-your-program-is-working-say-the-sound-out-aloud-to-celebrate.-why-not"><span style="color:#8B4513;"><strong>2.3 Exercise:</strong> Write your own animal sound that uses one function at least thrice with an exclamation mark at the end, <em>e.g.</em> print the big version of <code>BAAA!</code>. Write your code in <code>my_pet_sound.py</code>. Once your program is working, say the sound out aloud to celebrate. (Why not?)</span></h6>
+<p>Next, let’s see how functions “work” by making a small change to the program:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_big_M():</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'** **'</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'* * *'</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_big_O():</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*****'</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*****'</span>)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Step 1'</span>)</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>print_big_M()</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Step 8'</span>)</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>print_big_O()</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Step x'</span>)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>print_big_O()</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Step y'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="exercise-type-up-the-above-in-animal_sounds2.py-and-run-it." class="level6">
+<h6 class="anchored" data-anchor-id="exercise-type-up-the-above-in-animal_sounds2.py-and-run-it."><span style="color:#8B4513;"><strong>2.4 Exercise:</strong> Type up the above in <code>animal_sounds2.py</code> and run it.</span></h6>
+<p>Let’s explain using an analogy: <img src="../../../media/units/unit0/module2/funcexecution.png" class="img-fluid"></p>
+<ul>
+<li><p>We’ll use the analogy of a <em>house</em> to describe a program and its parts (the functions).</p></li>
+<li><p>A program’s <em>execution starts at the very top</em>.</p></li>
+<li><p>In the above case, there are a number of definitions:</p>
+<ul>
+<li>Definitions are merely “processed” but not executed.</li>
+<li>It’s understood that the definitions may be invoked later.</li>
+<li>In our house analogy, we walk past these “rooms” to the main lobby.</li>
+</ul></li>
+<li><p>The first real line of code is the <code>print('Step 1')</code>statement.</p>
+<ul>
+<li>Think of this section of code as the “main lobby”.</li>
+</ul></li>
+<li><p>After this, we see the line (also a command) <code>print_big_M()</code></p>
+<ul>
+<li>This is an instruction that causes the computer to “go to the <code>print_big_M()</code>room”.</li>
+<li>We then head to that room and start executing commands in there.</li>
+</ul></li>
+<li><p>Thus, the third command that gets executed is <code>print('*   *')</code></p></li>
+<li><p>We’re still in the room with more commands to go, and the next one (4th so far) is <code>print('** **')</code></p></li>
+<li><p>Continuing, we execute the last line in the room, which will make this the 7th one executed.</p></li>
+<li><p>After we leave the “room”, <em>and this is important</em>, we continue execution after the invocation that brought us to the room.</p></li>
+</ul>
+</section>
+<section id="exercise-type-up-the-above-in-animal_sounds2.py-and-run-it.-1" class="level6">
+<h6 class="anchored" data-anchor-id="exercise-type-up-the-above-in-animal_sounds2.py-and-run-it.-1"><span style="color:#8B4513;"><strong>2.5 Exercise:</strong> Type up the above in <code>animal_sounds2.py</code> and run it.</span></h6>
+<p>At which step (which step number) do we execute the last line in <code>print_big_O</code>? And then, at which step do we enter <code>print_big_O</code> the second time and print its first line? In <code>animal_sounds2.py</code> replace x and y with the correct step number. Don’t forget: non-coding responses to exercises go into <code>module2.pdf</code> (one PDF per module).</p>
+</section>
+<section id="video-1" class="level6">
+<h6 class="anchored" data-anchor-id="video-1"><span style="color:#8B4513;"><strong>2.6 Video:</strong></span></h6>
+<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/units/unit0/module2/u0-mod2.6.mp4"></video></div>
+</section>
+</section>
+<section id="calling-functions-from-other-functions" class="level2">
+<h2 class="anchored" data-anchor-id="calling-functions-from-other-functions">2.1 Calling functions from other functions</h2>
+<p>Consider this program:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_big_M():</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'** **'</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'* * *'</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *</span><span class="ch">\n</span><span class="st">'</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_big_O():</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*****'</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*****</span><span class="ch">\n</span><span class="st">'</span>)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_two_big_Os():</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    print_big_O()</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    print_big_O()</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>print_big_M()</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>print_two_big_Os()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Yes, we can write our functions that call our own functions.</li>
+<li>Incidentally, did you notice the escape sequences? <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⇒ We improved the output.</li>
+</ul>
+<section id="exercise-type-up-the-above-in-animal_sounds2.py-and-run-it.-2" class="level6">
+<h6 class="anchored" data-anchor-id="exercise-type-up-the-above-in-animal_sounds2.py-and-run-it.-2"><span style="color:#8B4513;"><strong>2.7 Exercise:</strong> Type up the above in <code>animal_sounds2.py</code> and run it.</span></h6>
+<p>Use this idea to rewrite your own animal sound in a file called <code>my_pet_sound2.py</code>. That is, add an additional function to your earlier program <code>my_pet_sound.py</code> that is analogous to <code>print_two_big_Os()</code> above.</p>
+<ul>
+<li>Once again, let’s trace through some steps: <img src="../../../media/units/unit0/module2/funcexecution2.png" class="img-fluid"></li>
+</ul>
+</section>
+<section id="exercise-look-at-the-example-above.-what-step-number-is-represented-by-the-question-mark-next-to-the-second-print_big_o-inside-the-print_two_big_os-function-what-line-in-the-program-represents-step-15-write-your-answer-in-module2.pdf.-remember-if-its-not-clear-where-to-write-your-answer-write-it-in-your-module-pdf-for-this-module-thats-module2.pdf." class="level6">
+<h6 class="anchored" data-anchor-id="exercise-look-at-the-example-above.-what-step-number-is-represented-by-the-question-mark-next-to-the-second-print_big_o-inside-the-print_two_big_os-function-what-line-in-the-program-represents-step-15-write-your-answer-in-module2.pdf.-remember-if-its-not-clear-where-to-write-your-answer-write-it-in-your-module-pdf-for-this-module-thats-module2.pdf."><span style="color:#8B4513;"><strong>2.8 Exercise:</strong> Look at the example above. What step number is represented by the question mark (?) next to the second <code>print_big_O()</code> inside the <code>print_two_big_Os()</code> function? What line in the program represents step 15? Write your answer in <code>module2.pdf</code>. Remember: if it’s not clear where to write your answer, write it in your module pdf (for this module that’s <code>module2.pdf</code>).</span></h6>
+</section>
+<section id="video-2" class="level6">
+<h6 class="anchored" data-anchor-id="video-2"><span style="color:#8B4513;"><strong>2.9 Video:</strong></span></h6>
+<div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/units/unit0/module2/u0-mod2.9.mp4"></video></div>
+<ul>
+<li>Mental execution:</li>
+<li>We will use the term <em>mental execution</em> for the above exercise of tracing through the execution without actually compiling and running the program.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mental execution is <em>extremely important</em> in developing programming skill <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⇒ Please be sure to practice this with <em>every</em> program you read or write.</p>
+</div>
+</div>
+<ul>
+<li>We can’t emphasisize this enough. Really.</li>
+<li>Remember:
+<ul>
+<li>Execution starts at the top of a program and goes downwards.</li>
+<li>Function definitions are <em>processed</em> (understood) but not executed.</li>
+<li>When a function are <em>invoked</em>, execution “goes” into the function to execute the code in there.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="more-about-functions" class="level2">
+<h2 class="anchored" data-anchor-id="more-about-functions">2.2 More about functions</h2>
+<p>About function names:</p>
+<ul>
+<li>Consider the function name <code>print_big_M</code>.</li>
+<li>This is a name we chose.</li>
+<li>We could just as easily have called it <code>my_crazy_function</code>:</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> <span class="op">&lt;</span>b<span class="op">&gt;</span>my_crazy_function<span class="op">&lt;/</span>b<span class="op">&gt;</span>():</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'** **'</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'* * *'</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *</span><span class="ch">\n</span><span class="st">'</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_big_O():</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*****'</span>)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*****</span><span class="ch">\n</span><span class="st">'</span>)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_two_big_Os():</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    print_big_O()</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    print_big_O()</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the different name:</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>my_crazy_function()    </span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>print_two_big_Os()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>In other words, the compiler does not look into the <em>English meaning</em> of function names.</li>
+<li>We choose function names to help us <em>read</em> programs.</li>
+</ul>
+<p>Beware of name clashes: - Consider the following program (that has a mistake):</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_big_M():</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'** **'</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'* * *'</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *</span><span class="ch">\n</span><span class="st">'</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_big_M():      <span class="co"># A mistake! We meant to have typed</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*****'</span>)      <span class="co"># print_big_O()</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*****</span><span class="ch">\n</span><span class="st">'</span>)</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="co"># What happens now?</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>print_big_M()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>In this example, we have functions with different content but with the same name.</li>
+</ul>
+<section id="exercise-implement-the-above-in-name_clash.py-and-describe-what-happens-in-module2.pdf." class="level6">
+<h6 class="anchored" data-anchor-id="exercise-implement-the-above-in-name_clash.py-and-describe-what-happens-in-module2.pdf."><span style="color:#8B4513;"><strong>2.10 Exercise:</strong> Implement the above in <code>name_clash.py</code> and describe what happens in <code>module2.pdf</code>.</span></h6>
+<ul>
+<li>What we see is that the second definition replaces the first.</li>
+<li>The program runs but this error is not identified as such by the language. Instead, we need to be careful not to unintentionally make such a mistake.</li>
+</ul>
+<p>The order of function invocation matters. For example, consider:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_big_M():</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'** **'</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'* * *'</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *</span><span class="ch">\n</span><span class="st">'</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_big_O():</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*****'</span>)</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*****</span><span class="ch">\n</span><span class="st">'</span>)</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_two_big_Os():</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    print_big_O()</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>    print_big_O()</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="co"># We've changed the order here:</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>print_two_big_Os()</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>print_big_M()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="exercise-describe-in-your-module-pdf-how-the-output-would-be-different-first-without-typing-up-the-program-and-then-typing-it-up-in-animal_sounds3.py." class="level6">
+<h6 class="anchored" data-anchor-id="exercise-describe-in-your-module-pdf-how-the-output-would-be-different-first-without-typing-up-the-program-and-then-typing-it-up-in-animal_sounds3.py."><span style="color:#8B4513;"><strong>2.11 Exercise:</strong> Describe in your module pdf how the output would be different, first without typing up the program, and then typing it up in <code>animal_sounds3.py</code>.</span></h6>
+</section>
+</section>
+<section id="a-peek-at-the-future" class="level2">
+<h2 class="anchored" data-anchor-id="a-peek-at-the-future">2.3 &nbsp;&nbsp; A peek at the future</h2>
+<p>Once again, we will present a small program with features yet to be explained, by way of getting you comfortable and yet curious.</p>
+<p>Here’s the program:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random <span class="im">as</span> rand</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> <span class="dv">500</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>h <span class="op">=</span> <span class="dv">400</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>canvas <span class="op">=</span> tk.Canvas(master<span class="op">=</span>window, width<span class="op">=</span>w, height<span class="op">=</span>h)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>canvas.pack()</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co"># A function that draws a random circle</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> draw_random_circle(color):</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> rand.randint(<span class="dv">0</span>, w)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> rand.randint(<span class="dv">0</span>, h)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    size <span class="op">=</span> rand.randint(<span class="dv">0</span>, w<span class="op">/</span><span class="dv">10</span>)</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    canvas.create_oval(x,y, x<span class="op">+</span>size, y<span class="op">+</span>size, fill<span class="op">=</span>color)</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="co"># draw 100 circles</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">100</span>):</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    draw_random_circle(<span class="st">"cyan"</span>)</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Standard colors: "black", "red", "green", "blue", </span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="co"># "cyan", "yellow", "magenta"</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="exercise-type-up-the-above-program-in-random_art.py-and-execute-it." class="level6">
+<h6 class="anchored" data-anchor-id="exercise-type-up-the-above-program-in-random_art.py-and-execute-it."><span style="color:#8B4513;"><strong>2.12 Exercise:</strong> Type up the above program in <code>random_art.py</code> and execute it.</span></h6>
+<p>Now let’s point out a few features: <img src="../../../media/units/unit0/module2/randomart.png" class="img-fluid"></p>
+</section>
+<section id="exercise-use-the-same-code-in-random_art2.py-and-then-add-and-modify-it-to-create-your-own-art-and-include-a-screenshot-in-module2.pdf.-when-you-quit-your-program-instead-of-x-ing-out-the-window-type-control-c-control-key-and-c-key-pressed-together-while-the-cursor-is-in-the-output-window." class="level6">
+<h6 class="anchored" data-anchor-id="exercise-use-the-same-code-in-random_art2.py-and-then-add-and-modify-it-to-create-your-own-art-and-include-a-screenshot-in-module2.pdf.-when-you-quit-your-program-instead-of-x-ing-out-the-window-type-control-c-control-key-and-c-key-pressed-together-while-the-cursor-is-in-the-output-window."><span style="color:#8B4513;"><strong>2.13 Exercise:</strong> Use the same code in <code>random_art2.py</code> and then add and modify it to create your own art, and include a screenshot in <code>module2.pdf</code>. When you quit your program, instead of x-ing out the window, type <code>control-c</code> (“control” key and “c” key pressed together) while the cursor is in the output window.</span></h6>
+<p>About <em>control-c</em></p>
+<ul>
+<li>The standard keyboard has some keys that act together with other keys, in effect <em>modifying</em> them.</li>
+<li>The <em>shift</em> key is the most obvious one: pressing the shift key along with another key either capitalizes a letter or types the symbol “above” in a two-symbol key. For example, the ampersand &amp; is “above” 7 on the same key as 7; thus, pressing shift and 7 achieves typing &amp;</li>
+<li>On a Mac, you’ve probably used the <em>command</em> key, and on Windows, you’ve used <em>control</em>.</li>
+<li>The <em>control</em> key, when used with other keys is often used in programming contexts.</li>
+<li>One such case is to use <em>control-c</em> (control and c together) to terminate the execution of a program.</li>
+<li>However, to do this, you first need to click into wherever the program is executing. This is typically the output window (where the output appears).</li>
+</ul>
+</section>
+<section id="video-3" class="level6">
+<h6 class="anchored" data-anchor-id="video-3"><span style="color:#8B4513;"><strong>2.14 Video:</strong></span></h6>
+<div class="quarto-video"><video id="video_shortcode_videojs_video4" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/units/unit0/module2/u0-mod2.14.mp4"></video></div>
+</section>
+</section>
+<section id="and-now-for-something-strange" class="level2">
+<h2 class="anchored" data-anchor-id="and-now-for-something-strange">2.4 And now for something strange</h2>
+<p>Consider the following program:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_big_M():   </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'** **'</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'* * *'</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *</span><span class="ch">\n</span><span class="st">'</span>)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_big_O():   </span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*****'</span>)</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*   *'</span>)</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*****</span><span class="ch">\n</span><span class="st">'</span>)</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>    print_big_O()    <span class="co"># We're invoking the function from within</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>print_big_M()</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>print_big_O()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="exercise-mentally-execute-the-above-program.-that-is-without-typing-it-up-try-to-follow-how-the-program-executes-step-by-step-which-statement-gets-executed-in-the-10-th-step-of-execution-do-you-notice-anything-unusual-at-step-13-as-a-result-what-line-is-executed-in-step-15-write-your-answer-in-your-module-pdf-module2.pdf." class="level6">
+<h6 class="anchored" data-anchor-id="exercise-mentally-execute-the-above-program.-that-is-without-typing-it-up-try-to-follow-how-the-program-executes-step-by-step-which-statement-gets-executed-in-the-10-th-step-of-execution-do-you-notice-anything-unusual-at-step-13-as-a-result-what-line-is-executed-in-step-15-write-your-answer-in-your-module-pdf-module2.pdf."><span style="color:#8B4513;"><strong>2.15 Exercise:</strong> Mentally execute the above program. That is, without typing it up, try to follow how the program executes, step by step Which statement gets executed in the 10-th step of execution? Do you notice anything unusual at step 13? As a result, what line is executed in step 15? Write your answer in your module pdf (<code>module2.pdf</code>).</span></h6>
+</section>
+<section id="exercise-before-doing-this-exercise-please-read-this-page-on-how-to-stop-endlessly-running-programs.-now-type-up-and-execute-the-above-program-in-my_strange_example.py.-what-do-you-notice-or-you-might-get-an-recursion-depth-exceeded-error." class="level6">
+<h6 class="anchored" data-anchor-id="exercise-before-doing-this-exercise-please-read-this-page-on-how-to-stop-endlessly-running-programs.-now-type-up-and-execute-the-above-program-in-my_strange_example.py.-what-do-you-notice-or-you-might-get-an-recursion-depth-exceeded-error."><span style="color:#8B4513;"><strong>2.16 Exercise:</strong> <em>Before doing this exercise</em>, please <b><a href="stopping.html">read this page</a></b> on how to stop endlessly running programs. Now, type up and execute the above program in <code>my_strange_example.py</code>. What do you notice? (Or you might get an “recursion depth exceeded” error.)</span></h6>
+<p>The term <em>recursion</em> is used when function calls itself: - In the above example, it’s an obvious error <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⇒ Nothing useful is accomplished.</p>
+<ul>
+<li><p>Later, we’ll learn to use recursion to solve problems.</p></li>
+<li><p>In fact, <em>recursion</em> is one of the most powerful computational problem-solving paradigms.</p></li>
+</ul>
+</section>
+<section id="video-4" class="level6">
+<h6 class="anchored" data-anchor-id="video-4"><span style="color:#8B4513;"><strong>2.17 Video:</strong></span></h6>
+<div class="quarto-video"><video id="video_shortcode_videojs_video5" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/units/unit0/module2/u0-mod2.17.mp4"></video></div>
+</section>
+</section>
+<section id="another-reminder-about-computerese" class="level2">
+<h2 class="anchored" data-anchor-id="another-reminder-about-computerese">2.5 Another reminder about computerese</h2>
+<p>How is your computerese coming along? Are you now much more confident with folders, files, zip files and such? What about editing, and saving?</p>
+<p>Don’t forget that you can always review the <b><a href="unit0/module0/computerese.html">material on computerese</a></b> from Module 0.</p>
+<p>Please check that your module2 folder has the right files before you zip and upload. Does it look like one of these sample screenshots:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../media/units/unit0/module2/mac-module2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Mac</figcaption>
+</figure>
+</div>
+<p>or</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../media/units/unit0/module2/win-module2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Windows</figcaption>
+</figure>
+</div>
+<p>?</p>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">This is a Quarto website. To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>. <br>The course material is sourced from <a href="https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/" class="uri">https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/</a></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>videojs(video_shortcode_videojs_video1);</script>
+<script>videojs(video_shortcode_videojs_video2);</script>
+<script>videojs(video_shortcode_videojs_video3);</script>
+<script>videojs(video_shortcode_videojs_video4);</script>
+<script>videojs(video_shortcode_videojs_video5);</script>
+
+
+
+</body></html>
