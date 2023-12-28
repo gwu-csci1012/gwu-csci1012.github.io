@@ -391,3 +391,6 @@ or
 ![Windows](../../../media/units/unit0/module2/win-module2.png)
 
 ?
+
+<br>
+[Previous Module: **Module 1**](./module1.qmd){.button .prev} [Next Module: **Module 3**](./module3.qmd){.button .next}
