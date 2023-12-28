@@ -227,6 +227,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#tracing-through-a-program-in-detail" id="toc-tracing-through-a-program-in-detail" class="nav-link" data-scroll-target="#tracing-through-a-program-in-detail">3.3 Tracing through a program in detail</a></li>
   <li><a href="#reading-and-writing" id="toc-reading-and-writing" class="nav-link" data-scroll-target="#reading-and-writing">3.4 Reading and writing</a></li>
   <li><a href="#when-things-go-wrong" id="toc-when-things-go-wrong" class="nav-link" data-scroll-target="#when-things-go-wrong">3.5 When things go wrong</a></li>
+  <li><a href="#a-peek-at-the-future" id="toc-a-peek-at-the-future" class="nav-link" data-scroll-target="#a-peek-at-the-future">3.6 &nbsp;&nbsp; A peek at the future</a></li>
+  <li><a href="#some-things-to-keep-mind" id="toc-some-things-to-keep-mind" class="nav-link" data-scroll-target="#some-things-to-keep-mind">3.7 &nbsp;&nbsp; Some things to keep mind</a></li>
+  <li><a href="#meta" id="toc-meta" class="nav-link" data-scroll-target="#meta">3.8 Meta</a></li>
   </ul>
 </nav>
     </div>
@@ -747,7 +750,7 @@ Note
 </ul>
 </section>
 <section id="excercise-6" class="level6">
-<h6 class="anchored"><span style="color:#8B4513;"><strong>3.28 Excercise:</strong> </span></h6>
+<h6 class="anchored" data-anchor-id="excercise-6"><span style="color:#8B4513;"><strong>3.28 Excercise:</strong> </span></h6>
 <p>The following code intends to print</p>
 <div class="sourceCode" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="dv">55555</span></span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="dv">4444</span></span>
@@ -759,407 +762,146 @@ Note
 <span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(i, end<span class="op">=</span><span class="st">''</span>)</span>
 <span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span style="color:#8B4513;">But there are two bugs. First, try to find the problems solely by reading and mental execution. Then, type up the program in <code>my_loop_exercise7.py</code>. What does it print? Report what you see in <code>module3.pdf</code>. Then fix the program to get the desired output.</span></p>
-<a name="m3.6">
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-</p><hr>
-<p>
-<font color="#000080">
-</font></p><h2 class="anchored" data-anchor-id="excercise-6"><font color="#000080">
-3.6 &nbsp;&nbsp; A peek at the future
-</font></h2><font color="#000080">
-</font><font face="book antiqua, Georgia" color="#000060">
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-Consider the following program: <font size="+2"> <font color="#000000">
-</font></font></p><pre><font size="+2"><font color="#000000">import tkinter as tk
-
-window = tk.Tk()
-canvas = tk.Canvas(master=window, width=200, height=100)
-canvas.pack()
-
-def draw_rectangles():
-    for i in range(10, 51, 10):              
-        canvas.create_rectangle(
-            3*i, i, 3*i+20, i+10, outline="blue")
-
-draw_rectangles()
-window.mainloop()
-    </font></font></pre><font size="+2"><font color="#000000">
-</font> </font>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-</font></a><font face="book antiqua, Georgia" color="#000060"><p><a name="m3.6">
-<font color="#8B4513"><b>3.29 Exercise</b>: Download the above program, <b></b></font></a><font color="#8B4513"><b><a href="examples/my_forloop_rectangle.py">my_forloop_rectangle.py</a></b>, and execute the program. If you’re feeling brave, add a second for-loop so that output looks like:
-</font></p><p><font color="#8B4513">
-<img height="" width="50%" src="figures/forloop_rect_screenshot.png">
-</font></p><p><font color="#8B4513">
-</font></p><p></p>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-Let’s point out the for-loop’s part in the program:
-</p><ul>
-<li>
-First, we need to understand how coordinates work differently in Python:
-<p>
-<img height="" width="50%" src="figures/loop_rect.png">
-</p><p>
-</p><p>
-</p></li><li>
-Next, let’s read the for-loop statement to see how it iterates:
-<p>
-<img height="" width="50%" src="figures/loop_rect2.png">
-</p><p>
-</p><ul>
-<li>
-We can see that i will be 10 the first time through the loop.
-</li><li>
-Then i becomes 20, then 30 etc until 50.
-</li><li>
-Thus, there are 5 iterations through the loop.
-</li></ul>
-<p>
-</p></li><li>
-Notice how i is used in the calculation of the measurements needed to draw the rectangle:
-<p>
-<img height="" width="50%" src="figures/loop_rect3.png">
-</p><p>
-(We spilled a line of code over two lines to make the font large enough.)
-</p><ul>
-<li>
-When i is 10, the first rectangle’s top left corner gets drawn at 30 (which is 3 times i, or 3*i) from the left side, and 10 down from the top.
-</li><li>
-In the second iteration i is 20, which means the top left corner is 60 from the left. And so on.
-</li></ul>
-</li></ul>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-</p><p><font color="#8B4513"><b>3.30 Exercise</b>: Download <b><a href="examples/my_forloop_rectangle2.py">my_forloop_rectangle2.py</a></b>, and execute the program to see that an animation is really a for-loop. </font></p>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-About animations:
-</p><ul>
-<li>
-<p>Even if an object moves across a screen (and is in different positions on the screen), there is something that “repeats”.</p>
-<p>
-</p></li><li>
-<p>What repeats is the drawing of the object in different places (with a gap in time to create the illusion of real movement).</p>
-<p>
-</p></li><li>
-<p>Thus, when locations can be <em>calculated</em> we can use a loop to iterate through the different positions.</p>
-<p>
-</p></li><li>
-This is essentially how animation works.
-</li></ul>
-<a name="m3.7">
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-</p><hr>
-<p>
-<font color="#000080">
-</font></p><h2 class="anchored"><font color="#000080">
-3.7 &nbsp;&nbsp; Some things to keep mind
-</font></h2><font color="#000080">
-</font><font face="book antiqua, Georgia" color="#000060">
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-Let’s introduce the notion of <em>reserved words</em>:
-</p><ul>
-<li>
-Some words like <font color="#000000"><tt>for</tt></font> and <font color="#000000"><tt>in</tt></font> are special to the language and are called <em>reserved words</em> or <em>key words</em> of the language.
-<p>
-<img height="" width="30%" src="figures/forloop14.png">
-</p><p>
-</p><p>
-</p></li><li>
-<p>There are special rules associated with the usage of such reserved words, which we’ll describe over time. For now, we’re just pointing them out.</p>
-<p>
-</p></li><li>
-<p>Another example of a reserved word we’ve seen: <font color="#000000"><tt>def</tt></font></p>
-<p>
-</p></li><li>
-It turns out that, even though <font color="#000000"><tt>print</tt></font> looks like it should be a reserved word, it’s in fact not.
+</section>
+</section>
+<section id="a-peek-at-the-future" class="level2">
+<h2 class="anchored" data-anchor-id="a-peek-at-the-future">3.6 &nbsp;&nbsp; A peek at the future</h2>
+<p>Consider the following program:</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>canvas <span class="op">=</span> tk.Canvas(master<span class="op">=</span>window, width<span class="op">=</span><span class="dv">200</span>, height<span class="op">=</span><span class="dv">100</span>)</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>canvas.pack()</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> draw_rectangles():</span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>, <span class="dv">51</span>, <span class="dv">10</span>):              </span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>        canvas.create_rectangle(</span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>            <span class="dv">3</span><span class="op">*</span>i, i, <span class="dv">3</span><span class="op">*</span>i<span class="op">+</span><span class="dv">20</span>, i<span class="op">+</span><span class="dv">10</span>, outline<span class="op">=</span><span class="st">"blue"</span>)</span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>draw_rectangles()</span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="excercise-download-the-above-program-my_forloop_rectangle.py-and-execute-the-program.-if-youre-feeling-brave-add-a-second-for-loop-so-that-output-looks-like" class="level6">
+<h6 class="anchored" data-anchor-id="excercise-download-the-above-program-my_forloop_rectangle.py-and-execute-the-program.-if-youre-feeling-brave-add-a-second-for-loop-so-that-output-looks-like"><span style="color:#8B4513;"><strong>3.29 Excercise:</strong> Download the above program, <a href="../../../media/units/unit0/module3/my_forloop_rectangle.py" download=""><strong>my_forloop_rectangle.py</strong></a>, and execute the program. If you’re feeling brave, add a second for-loop so that output looks like:</span></h6>
+<p><img src="../../../media/units/unit0/module3/forloop_rect_screenshot.png" class="img-fluid"></p>
+<p>Let’s point out the for-loop’s part in the program:</p>
 <ul>
-<li>
-At this stage, the distinction is not clear and that’s fine.
-</li><li>
-As you learn the language, you’ll learn how to distinguish.
-</li></ul>
-</li></ul>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-Counting from 0:
-</p><ul>
-<li>
-<p>When a single number like 6 is specified in the <font color="#000000"><tt>range</tt></font> as in <font color="#000000"><tt>range(6)</tt></font>,</p>
-<pre><code>   &lt;p&gt;&lt;img height width="30%" src="figures/forloop15.png"&gt;&lt;p&gt;</code></pre>
-</li><li>
-<p>Thus, i is 0 the first time, then 1, then 2, and so on until i = 5 (last time through).</p>
-<p>
-</p></li><li>
-<p>The number 6 specifies that i cannot be 6 or higher.</p>
-<p>
-</p></li><li>
-Thus, there is a certain strangeness to get used to:
+<li>First, we need to understand how coordinates work differently in Python: <img src="../../../media/units/unit0/module3/loop_rect.png" class="img-fluid"></li>
+<li>Next, let’s read the for-loop statement to see how it iterates: <img src="../../../media/units/unit0/module3/loop_rect2.png" class="img-fluid">
 <ul>
-<li>
-Unlike math (where counting starts from 1), in programming, the convention is to start from 0. <br> (Did you notice that’s why we started with Module 0?)
-</li><li>
-The other strangeness is specifying the limit as one higher (6) than than last iteration value (5).
-</li></ul>
-</li></ul>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-The different uses of <font color="#000000"><tt>range</tt></font>:
-</p><ul>
-<li>
-<p>When a single number is specified, as in <font color="#000000"><tt>range(6)</tt></font>, the implied start is 0.</p>
-<p>
-</p></li><li>
-When two numbers are specified as in: <font color="#000000"><tt>range(10, 16)</tt></font>, the first is the start of the count, and the second is the limit:
-<p>
-<img height="" width="30%" src="figures/forloop16.png">
-</p><p>
-</p><ul>
-<li>
-Thus i is 10 the first time (this is the first thing that’s printed).
-</li><li>
-Then i becomes 11.
-</li><li>
-Then 12, and so on until the last time through when i is 15.
-</li></ul>
-<p>
-</p></li><li>
-When three numbers are specified as in <font color="#000000"><tt>range(10, 16, 2)</tt></font>, the third number is the increment.
-<p>
-<img height="" width="38%" src="figures/forloop17.png">
-</p><p>
-</p><ul>
-<li>
-Here, i starts as 10 in the first iteration.
-</li><li>
-Then, i is 12 in the second iteration.
-</li><li>
-Then i becomes 14. This is the last iteration because after that i would be 16, which ends the loop.
-</li></ul>
-<p>
-</p></li><li>
-Using <font color="#000000"><tt>range(10, 15, 2)</tt></font> produces the same result as above, and in fact preferable.
-</li></ul>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-About comments:
-</p></font></a><font face="book antiqua, Georgia" color="#000060"><ul><a name="m3.7">
-<li>
-<p>First, comments are for us to read. The computer does not read them.</p>
-<p>
-</p></li><li>
-Thus, in terms of execution, this program <font size="+2"> <font color="#000000">
-<pre><font color="#dc143c"># list the even numbers between 10 and 14, inclusive:</font>
-for i in range(10, 15, 2):    <font color="#dc143c"># Notice the increment</font>
-    print(i)
-    </pre>
-</font> </font> will result in the exact output as this one: <font size="+2"> <font color="#000000">
-<pre>for i in range(10, 15, 2):
-    print(i)
-    </pre>
-</font></font><p><font size="+2"><font color="#000000"></font> </font></p>
-<p>
-</p></li></a><li><a name="m3.7">
-We will use comments in two ways, as in the above example:
+<li>We can see that i will be 10 the first time through the loop.</li>
+<li>Then i becomes 20, then 30 etc until 50.</li>
+<li>Thus, there are 5 iterations through the loop.</li>
+</ul></li>
+<li>Notice how i is used in the calculation of the measurements needed to draw the rectangle: <img src="../../../media/units/unit0/module3/loop_rect3.png" class="img-fluid"> (We spilled a line of code over two lines to make the font large enough.)
 <ul>
-<li>
-<p>The first comment is an example of using a comment as a prelude to code, to explain what’s coming or intended.</p>
-<pre><code>&lt;li&gt; The second kind that is to the right side of a line of code
-is like an alert: we'll use this to point out something to pay
-attention to in that line of code.
-&lt;/ul&gt;</code></pre>
-</li></ul>
-</a><a name="m3.8">
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-</p><hr>
-<p>
-<font color="#000080">
-</font></p><h2 class="anchored"><font color="#000080">
-3.8 &nbsp;&nbsp; Meta
-</font></h2><font color="#000080">
-</font><font face="book antiqua, Georgia" color="#000060">
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-</p><p>We will occasionally step back from the details to comment on how best to learn.</p>
-<p>
-</p><p>This module was a bit different, a little more challenging than modules 1-2.</p>
-<p>
-What to keep in mind:
-</p><ul>
-<li>
-<p>It is only natural to feel like you are in an alien landscape. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⇒ You would feel no different doing the first few modules while learning a foreign language with an entirely different script.</p>
-<p>
-</p></li><li>
-<p>It takes a while to absorb some of the details, and that’s just fine.</p>
-<p>
-</p></li><li>
-Notice that some exercises were significantly more challenging than others:
+<li>When i is 10, the first rectangle’s top left corner gets drawn at 30 (which is 3 times i, or 3*i) from the left side, and 10 down from the top.</li>
+<li>In the second iteration i is 20, which means the top left corner is 60 from the left. And so on.</li>
+</ul></li>
+</ul>
+</section>
+<section id="excercise-download-my_forloop_rectangle2.py-and-execute-the-program-to-see-that-an-animation-is-really-a-for-loop." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-download-my_forloop_rectangle2.py-and-execute-the-program-to-see-that-an-animation-is-really-a-for-loop."><span style="color:#8B4513;"><strong>3.30 Excercise:</strong> Download <a href="../../../media/units/unit0/module3/my_forloop_rectangle2.py" download=""><strong>my_forloop_rectangle2.py</strong></a>, and execute the program to see that an animation is really a for-loop.</span></h6>
+<p>About animations:</p>
 <ul>
-<li>
-In prior modules, you merely typed in something and tried it out, or make a small change.
-</li><li>
-With some exercises (like brrrrr) you had to do it all from scratch.
-</li><li>
-Both involved <em>problem-solving</em> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⇒ Taking a problem described in words and finding a solution.
-</li></ul>
-<p>
-</p></li><li>
-Problem-solving is a higher-level skill than programming.
+<li>Even if an object moves across a screen (and is in different positions on the screen), there is something that “repeats”.</li>
+<li>What repeats is the drawing of the object in different places (with a gap in time to create the illusion of real movement).</li>
+<li>Thus, when locations can be <em>calculated</em> we can use a loop to iterate through the different positions.</li>
+<li>This is essentially how animation works.</li>
+</ul>
+</section>
+</section>
+<section id="some-things-to-keep-mind" class="level2">
+<h2 class="anchored" data-anchor-id="some-things-to-keep-mind">3.7 &nbsp;&nbsp; Some things to keep mind</h2>
+<p>Let’s introduce the notion of <em>reserved words</em>:</p>
 <ul>
-<li>
-It takes time to acquire this skill.
-</li><li>
-There is no magic formula or words to simply make “problem solving” work for you.
-</li><li>
-The only way is to develop this skill is to struggle with problems, and with lots of them.
-</li></ul>
-<p>
-</p></li><li>
-Finally, think about this:
+<li>Some words like <code>for</code> and <code>in</code> are special to the language and are called <em>reserved words</em> or <em>key words</em> of the language. <img src="../../../media/units/unit0/module3/forloop14.png" class="img-fluid"></li>
+<li>There are special rules associated with the usage of such reserved words, which we’ll describe over time. For now, we’re just pointing them out.</li>
+<li>Another example of a reserved word we’ve seen: <code>def</code></li>
+<li>It turns out that, even though <code>print</code> looks like it should be a reserved word, it’s in fact not.
 <ul>
-<li>
-Anyone can acquire both programming and problem-solving skills with sufficient dedication. So why not you?
-</li><li>
-If you get past these hurdles with determination, you will leave in the dust all those who gave up earlier.
-</li></ul>
-</li></ul>
+<li>At this stage, the distinction is not clear and that’s fine.</li>
+<li>As you learn the language, you’ll learn how to distinguish.</li>
+</ul></li>
+</ul>
+<p>Counting from 0:</p>
+<ul>
+<li>When a single number like 6 is specified in the <code>range</code> as in <code>range(6)</code> <img src="../../../media/units/unit0/module3/forloop15.png" class="img-fluid"></li>
+<li>Thus, i is 0 the first time, then 1, then 2, and so on until i = 5 (last time through).</li>
+<li>The number 6 specifies that i cannot be 6 or higher.</li>
+<li>Thus, there is a certain strangeness to get used to:
+<ul>
+<li>Unlike math (where counting starts from 1), in programming, the convention is to start from 0. <br> (Did you notice that’s why we started with Module 0?)</li>
+<li>The other strangeness is specifying the limit as one higher (6) than than last iteration value (5).</li>
+</ul></li>
+</ul>
+<p>The different uses of <code>range</code></p>
+<ul>
+<li>When a single number is specified, as in <code>range(6)</code> the implied start is 0.</li>
+<li>When two numbers are specified as in: <code>range(10, 16)</code> the first is the start of the count, and the second is the limit: <img src="../../../media/units/unit0/module3/forloop16.png" class="img-fluid">
+<ul>
+<li>Thus i is 10 the first time (this is the first thing that’s printed).</li>
+<li>Then i becomes 11.</li>
+<li>Then 12, and so on until the last time through when i is 15.</li>
+</ul></li>
+<li>When three numbers are specified as in <code>range(10, 16, 2)</code> the third number is the increment. <img src="../../../media/units/unit0/module3/forloop17.png" class="img-fluid">
+<ul>
+<li>Here, i starts as 10 in the first iteration.</li>
+<li>Then, i is 12 in the second iteration.</li>
+<li>Then i becomes 14. This is the last iteration because after that i would be 16, which ends the loop.</li>
+</ul></li>
+<li>Using <code>range(10, 15, 2)</code> produces the same result as above, and in fact preferable.</li>
+</ul>
+<p>About comments:</p>
+<ul>
+<li>First, comments are for us to read. The computer does not read them.</li>
+<li>Thus, in terms of execution, this program</li>
+</ul>
+<div class="sourceCode" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># list the even numbers between 10 and 14, inclusive:</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">2</span>):    <span class="co"># Notice the increment</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>will result in the exact output as this one:</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">2</span>):</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>We will use comments in two ways, as in the above example:
+<ul>
+<li>The first comment is an example of using a comment as a prelude to code, to explain what’s coming or intended.</li>
+<li>The second kind that is to the right side of a line of code is like an alert: we’ll use this to point out something to pay attention to in that line of code.</li>
+</ul></li>
+</ul>
+</section>
+<section id="meta" class="level2">
+<h2 class="anchored" data-anchor-id="meta">3.8 Meta</h2>
+<p>We will occasionally step back from the details to comment on how best to learn.</p>
+<p>This module was a bit different, a little more challenging than modules 1-2.</p>
+<p>What to keep in mind:</p>
+<ul>
+<li>It is only natural to feel like you are in an alien landscape. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⇒ You would feel no different doing the first few modules while learning a foreign language with an entirely different script.</li>
+<li>It takes a while to absorb some of the details, and that’s just fine.</li>
+<li>Notice that some exercises were significantly more challenging than others:
+<ul>
+<li>In prior modules, you merely typed in something and tried it out, or make a small change.</li>
+<li>With some exercises (like brrrrr) you had to do it all from scratch.</li>
+<li>Both involved <em>problem-solving</em> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⇒ Taking a problem described in words and finding a solution.</li>
+</ul></li>
+<li>Problem-solving is a higher-level skill than programming.
+<ul>
+<li>It takes time to acquire this skill.</li>
+<li>There is no magic formula or words to simply make “problem solving” work for you.</li>
+<li>The only way is to develop this skill is to struggle with problems, and with lots of them.</li>
+</ul></li>
+<li>Finally, think about this:
+<ul>
+<li>Anyone can acquire both programming and problem-solving skills with sufficient dedication. So why not you?</li>
+<li>If you get past these hurdles with determination, you will leave in the dust all those who gave up earlier.</li>
+</ul></li>
+</ul>
+<p><br> <a href="../../../units/unit0/modules/module2.html" class="button prev">Previous Module: <strong>Module 2</strong></a> <a href="./module4.qmd" class="button next">Next Module: <strong>Module 4</strong></a></p>
 
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
 
-</tbody></table>
-<p>
-</p><p><font color="#8B4513"><b>3.31 Audio</b>: <br> <br> <audio src="media/u0-mod3-outro.mp3" controls="controls"></audio> </font></p>
-<p><br><br></p>
-</font></a><font face="book antiqua, Georgia" color="#000060"><p><a name="m3.8"><b></b></a><b><a href="../unit0.html">On to Module 4</a></b></p>
-</font><p><font face="book antiqua, Georgia" color="#000060"></font></p>
-<br><br>
-<hr>
-<center>
-<font size="1"> © 2020, Rahul Simha </font>
-</center>
+</section>
 
-
-
-
-</li></ul></font></font></section><font face="book antiqua, Georgia" color="#000060"><font face="book antiqua, Georgia" color="#000060">
-</font></font></section><font face="book antiqua, Georgia" color="#000060"><font face="book antiqua, Georgia" color="#000060">
-
-</font></font><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><font face="book antiqua, Georgia" color="#000060"><font face="book antiqua, Georgia" color="#000060"> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1393,7 +1135,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-</font></font></div><font face="book antiqua, Georgia" color="#000060"><font face="book antiqua, Georgia" color="#000060"> <!-- /content -->
+</div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
@@ -1414,4 +1156,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</font></font></body></html>
+</body></html>
