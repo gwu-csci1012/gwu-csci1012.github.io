@@ -356,3 +356,6 @@ How to succeed:
 :::{.callout-note}
 [What to rememeber about submitting work](../../../submit-remember.qmd)
 :::
+
+<br>
+[Next Module: **Module 1**](./module1.qmd){.button .next}
