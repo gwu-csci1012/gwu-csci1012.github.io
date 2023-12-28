@@ -4,6 +4,10 @@ title: "CS 1012: Introduction to Programming with Python"
 
 ### Welcome to the section of CS-1012!
 
+:::{.callout-caution title="Cource Content" collapse="false"}
+The course material is sourced from **Prof. Simha's** webpage: <https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/>
+:::
+
 Because this is an course, it will operate differently than a regular course. In particular:
 
 - Even though the course is, we will meet three times: once at the beginning to get you going, once in the middle to check in, and once at the end for the in-class final exam.
