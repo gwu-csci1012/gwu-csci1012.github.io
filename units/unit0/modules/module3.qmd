@@ -568,23 +568,9 @@ for i in range(5, 0, 1):
 ```
 <span style="color:#8B4513;">But there are two bugs. First, try to find the problems solely by reading and mental execution. Then, type up the program in `my_loop_exercise7.py`. What does it print? Report what you see in `module3.pdf`. Then fix the program to get the desired output.</span>
 
-
-
-
-
-<a name="m3.6">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<hr><p><font color="#000080">
-<h2>
-3.6 &nbsp;&nbsp; A peek at the future
-</h2>
-</font><font face="book antiqua, Georgia" color="#000060">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-
-
+## 3.6 &nbsp;&nbsp; A peek at the future
 Consider the following program:
-    <font size="+2">
-    <font color="#000000"><pre>
+```python
 import tkinter as tk
 
 window = tk.Tk()
@@ -598,295 +584,120 @@ def draw_rectangles():
 
 draw_rectangles()
 window.mainloop()
-    </pre></font>
-    </font>
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>3.29 Exercise</b>:
-Download the above program,
-  <b><a href="examples/my_forloop_rectangle.py">my_forloop_rectangle.py</a></b>,
-  and execute the program.
-If you're feeling brave, add a second for-loop so that output
-looks like:
-     <p><img height width="50%" src="figures/forloop_rect_screenshot.png"><p>
-</font>
+```
 
+###### <span style="color:#8B4513;">**3.29 Excercise:** Download the above program, <a href="../../../media/units/unit0/module3/my_forloop_rectangle.py" download >**my_forloop_rectangle.py**</a>, and execute the program. If you're feeling brave, add a second for-loop so that output looks like:</span>
+![](../../../media/units/unit0/module3/forloop_rect_screenshot.png)
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
 Let's point out the for-loop's part in the program:
-  <ul>
-  <li> First, we need to understand how coordinates work differently
-  in Python:
-     <p><img height width="50%" src="figures/loop_rect.png"><p>
- 
-  <p><li> Next, let's read the for-loop statement to see how
-  it iterates:
-     <p><img height width="50%" src="figures/loop_rect2.png"><p>
-    <ul>
-    <li> We can see that i will be 10 the first time through the loop.
-    <li> Then i becomes 20, then 30 etc until 50.
-    <li> Thus, there are 5 iterations through the loop.
-    </ul>
 
-  <p><li> Notice how i is used in the calculation of the measurements
-  needed to draw the rectangle:
-     <p><img height width="50%" src="figures/loop_rect3.png"><p>
-  (We spilled a line of code over two lines to make the font large 
-  enough.)
-     <ul>
-     <li> When i is 10, the first rectangle's top left corner
-     gets drawn at 30 (which is 3 times i, or 3*i) from the left side,
-     and 10 down from the top.
-     <li> In the second iteration i is 20, which means the top left
-     corner is 60 from the left. And so on.
-     </ul>
-  </ul>
+- First, we need to understand how coordinates work differently in Python:
+![](../../../media/units/unit0/module3/loop_rect.png)
+- Next, let's read the for-loop statement to see how it iterates:
+![](../../../media/units/unit0/module3/loop_rect2.png)
+  - We can see that i will be 10 the first time through the loop.
+  - Then i becomes 20, then 30 etc until 50.
+  - Thus, there are 5 iterations through the loop.
 
+- Notice how i is used in the calculation of the measurements needed to draw the rectangle:
+![](../../../media/units/unit0/module3/loop_rect3.png)
+(We spilled a line of code over two lines to make the font large enough.)
+  - When i is 10, the first rectangle's top left corner gets drawn at 30 (which is 3 times i, or 3*i) from the left side, and 10 down from the top.
+  - In the second iteration i is 20, which means the top left corner is 60 from the left. And so on.
 
+###### <span style="color:#8B4513;">**3.30 Excercise:** Download <a href="../../../media/units/unit0/module3/my_forloop_rectangle2.py" download >**my_forloop_rectangle2.py**</a>, and execute the program to see that an animation is really a for-loop.</span>
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>3.30 Exercise</b>:
-Download 
-  <b><a href="examples/my_forloop_rectangle2.py">my_forloop_rectangle2.py</a></b>,
-  and execute the program to see that an animation is really a for-loop.
-</font>
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
 About animations:
-  <ul>
-  <li> Even if an object moves across a screen (and is in different
-  positions on the screen), there is something that "repeats".
 
-  <p><li> What repeats is the drawing of the object in different
-  places (with a gap in time to create the illusion of real movement).
-
-  <p><li> Thus, when locations can be <em>calculated</em> we can
-  use a loop to iterate through the different positions.
-
-  <p><li> This is essentially how animation works.
-  </ul>
+- Even if an object moves across a screen (and is in different positions on the screen), there is something that "repeats".
+- What repeats is the drawing of the object in different places (with a gap in time to create the illusion of real movement).
+- Thus, when locations can be <em>calculated</em> we can use a loop to iterate through the different positions.
+- This is essentially how animation works.
 
 
-<a name="m3.7">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<hr><p><font color="#000080">
-<h2>
-3.7 &nbsp;&nbsp; Some things to keep mind
-</h2>
-</font><font face="book antiqua, Georgia" color="#000060">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-
-
+## 3.7 &nbsp;&nbsp; Some things to keep mind
 Let's introduce the notion of <em>reserved words</em>:
-  <ul>
-  <li> Some words like 
-      <font color="#000000"><tt>for</tt></font>
-  and 
-      <font color="#000000"><tt>in</tt></font>
-  are special to the language and are called <em>reserved words</em>
-  or <em>key words</em> of the language.
-       <p><img height width="30%" src="figures/forloop14.png"><p>
 
-  <p><li> There are special rules associated with the usage of
-  such reserved words, which we'll describe over time. For now,
-  we're just pointing them out.
+- Some words like `for` and `in` are special to the language and are called <em>reserved words</em> or <em>key words</em> of the language.
+![](../../../media/units/unit0/module3/forloop14.png)
+- There are special rules associated with the usage of such reserved words, which we'll describe over time. For now, we're just pointing them out.
+- Another example of a reserved word we've seen: `def`
+- It turns out that, even though `print` looks like it should be a reserved word, it's in fact not.
+  - At this stage, the distinction is not clear and that's fine.
+  - As you learn the language, you'll learn how to distinguish.
 
-  <p><li> Another example of a reserved word we've seen:
-      <font color="#000000"><tt>def</tt></font>
-
-  <p><li> It turns out that, even though
-      <font color="#000000"><tt>print</tt></font>
-  looks like it should be a reserved word, it's in fact not.
-     <ul>
-     <li> At this stage, the distinction is not clear and that's fine.
-     <li> As you learn the language, you'll learn how to distinguish.
-     </ul>
-  </ul>
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
 Counting from 0:
-  <ul>
-  <li> When a single number like 6 is specified in the
-   <font color="#000000"><tt>range</tt></font>
-  as in 
-   <font color="#000000"><tt>range(6)</tt></font>,
 
-       <p><img height width="30%" src="figures/forloop15.png"><p>
+- When a single number like 6 is specified in the `range` as in `range(6)`
+![](../../../media/units/unit0/module3/forloop15.png)
+- Thus, i is 0 the first time, then 1, then 2, and so on until i = 5 (last time through). 
+- The number 6 specifies that i cannot be 6 or higher.
+- Thus, there is a certain strangeness to get used to:
+  - Unlike math (where counting starts from 1), in programming, the convention is to start from 0.
+    <br> (Did you notice that's why we started with Module 0?)
+  - The other strangeness is specifying the limit as one higher (6) than than last iteration value (5).
 
-  <li> Thus, i is 0 the first time, then 1, then 2, and so on until 
-  i = 5 (last time through). 
+The different uses of `range`
 
-  <p><li> The number 6 specifies that i cannot be 6 or higher.
+- When a single number is specified, as in `range(6)` the implied start is 0.
+- When two numbers are specified as in: `range(10, 16)` the first is the start of the count, and the second is the limit:
+![](../../../media/units/unit0/module3/forloop16.png)
+  - Thus i is 10 the first time (this is the first thing that's printed).
+  - Then i becomes 11.
+  - Then 12, and so on until the last time through when i is 15.
 
-  <p><li> Thus, there is a certain strangeness to get used to:
-     <ul>
-     <li> Unlike math (where counting starts from 1), in programming,
-     the convention is to start from 0.
-     <br> (Did you notice that's why we started with Module 0?)
-     <li> The other strangeness is specifying the limit as one higher (6)
-     than than last iteration value (5).
-     </ul>
-  </ul>
+- When three numbers are specified as in `range(10, 16, 2)` the third number is the increment.
+![](../../../media/units/unit0/module3/forloop17.png)
+  - Here, i starts as 10 in the first iteration.
+  - Then, i is 12 in the second iteration.
+  - Then i becomes 14. This is the last iteration because after that i would be 16, which ends the loop.
+- Using `range(10, 15, 2)` produces the same result as above, and in fact preferable.
 
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-The different uses of 
-   <font color="#000000"><tt>range</tt></font>:
-  <ul>
-  <Li> When a single number is specified, as in 
-   <font color="#000000"><tt>range(6)</tt></font>,
-  the implied start is 0.
-
-  <p><li> When two numbers are specified as in:
-   <font color="#000000"><tt>range(10, 16)</tt></font>,
-  the first is the start of the count, and the second is the limit:
-       <p><img height width="30%" src="figures/forloop16.png"><p>
-      <ul>
-      <li> Thus i is 10 the first time (this is the first thing that's printed).
-      <li> Then i becomes 11.
-      <li> Then 12, and so on until the last time through when i is 15.
-      </ul>
-
-  <p><li> When three numbers are specified as in 
-   <font color="#000000"><tt>range(10, 16, 2)</tt></font>,
-  the third number is the increment.
-       <p><img height width="38%" src="figures/forloop17.png"><p>
-     <ul>
-     <li> Here, i starts as 10 in the first iteration.
-     <li> Then, i is 12 in the second iteration.
-     <li> Then i becomes 14. This is the last iteration because
-     after that i would be 16, which ends the loop.
-     </ul>
-
-  <p><li> Using
-   <font color="#000000"><tt>range(10, 15, 2)</tt></font>
-  produces the same result as above, and in fact preferable.
-  </ul>
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
 About comments:
-  <ul>
-  <li> First, comments are for us to read. The computer does not read them.
 
-  <p><li> Thus, in terms of execution, this program
-    <font size="+2">
-    <font color="#000000"><pre>
-<font color="#dc143c"># list the even numbers between 10 and 14, inclusive:</font>
-for i in range(10, 15, 2):    <font color="#dc143c"># Notice the increment</font>
+- First, comments are for us to read. The computer does not read them.
+- Thus, in terms of execution, this program
+```python
+# list the even numbers between 10 and 14, inclusive:
+for i in range(10, 15, 2):    # Notice the increment
     print(i)
-    </pre></font>
-    </font>
-  will result in the exact output as this one:
-    <font size="+2">
-    <font color="#000000"><pre>
+```
+will result in the exact output as this one:
+```python
 for i in range(10, 15, 2):
     print(i)
-    </pre></font>
-    </font>
+```
 
-  <p><li> We will use comments in two ways, as in the above example:
-    <ul>
-    <li> The first comment is an example of using a comment
-     as a prelude to code, to explain what's coming or intended.
-    
-    <li> The second kind that is to the right side of a line of code
-    is like an alert: we'll use this to point out something to pay
-    attention to in that line of code.
-    </ul>
-  </ul>
+- We will use comments in two ways, as in the above example:
+  - The first comment is an example of using a comment as a prelude to code, to explain what's coming or intended.
+  - The second kind that is to the right side of a line of code is like an alert: we'll use this to point out something to pay attention to in that line of code.
 
+## 3.8 Meta
+We will occasionally step back from the details to comment on how best to learn.
 
-<a name="m3.8">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<hr><p><font color="#000080">
-<h2>
-3.8 &nbsp;&nbsp; Meta
-</h2>
-</font><font face="book antiqua, Georgia" color="#000060">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
+This module was a bit different, a little more challenging than modules 1-2.
 
-
-We will occasionally step back from the details to comment
-on how best to learn.
-
-<p>
-This module was a bit different, a little more challenging than 
-modules 1-2.
-
-<p> 
 What to keep in mind:
-  <ul>
-  <li> It is only natural to feel like you are in an alien
-    landscape.
-     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rArr; 
-     You would feel no different doing the first few modules 
-     while learning a foreign language with an entirely different script.
 
-  <p><li> It takes a while to absorb some of the details, and that's
-  just fine.
-
-  <p><li> Notice that some exercises were significantly
-    more challenging than others:
-    <ul>
-    <li> In prior modules, you merely typed in something and tried
+- It is only natural to feel like you are in an alien landscape.
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rArr; 
+  You would feel no different doing the first few modules while learning a foreign language with an entirely different script.
+- It takes a while to absorb some of the details, and that's just fine.
+- Notice that some exercises were significantly more challenging than others:
+  - In prior modules, you merely typed in something and tried
     it out, or make a small change.
-    <li> With some exercises (like brrrrr)  you had to do it all from scratch.
-    <li> Both involved <em>problem-solving</em>
-     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rArr; 
-     Taking a problem described in words and finding a solution.
-    </ul>
+  - With some exercises (like brrrrr)  you had to do it all from scratch.
+  - Both involved <em>problem-solving</em>
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rArr; 
+    Taking a problem described in words and finding a solution.
 
-  <p><li> Problem-solving is a higher-level skill than programming.
-     <ul>
-     <li> It takes time to acquire this skill.
-     <li> There is no magic formula or words to simply make "problem
-     solving" work for you.
-     <li> The only way is to develop this skill is to struggle with
-       problems, and with lots of them.
-     </ul>
+- Problem-solving is a higher-level skill than programming.
+  - It takes time to acquire this skill.
+  - There is no magic formula or words to simply make "problem solving" work for you.
+  - The only way is to develop this skill is to struggle with problems, and with lots of them.
+- Finally, think about this:
+  - Anyone can acquire both programming and problem-solving skills with sufficient dedication. So why not you?
+  - If you get past these hurdles with determination, you will leave in the dust all those who gave up earlier.
 
-  <p><li> Finally, think about this:
-    <ul>
-    <li> Anyone can acquire both programming and problem-solving
-    skills with sufficient dedication. So why not you?
-    <li> If you get past these hurdles with determination, you will
-      leave in the dust all those who gave up earlier.
-    </ul>
-  </ul>
-
-
-
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>3.31 Audio</b>:
 <br>
-<br>
-<audio src="media/u0-mod3-outro.mp3" controls="controls"></audio>
-</font>
-
-
-
-
-
-
-
-<br><br>
-
-<b><a href="../unit0.html">On to Module 4</a></b>
-
-</font>
-
-<br><br>
-<hr>
-<center>
-<font size="1">
-&copy; 2020, Rahul Simha
-</font>
-</center>
-
-
-</BODY>
-</HTML>
+[Previous Module: **Module 2**](./module2.qmd){.button .prev} [Next Module: **Module 4**](./module4.qmd){.button .next}
