@@ -4,8 +4,8 @@ project:
 
 website:
   title: "**CSCI1012**"
-  back-to-top-navigation: true
-  page-footer: "This is a Quarto website. To learn more about Quarto websites visit <https://quarto.org/docs/websites>. <br>The course material is sourced from **Prof. Simha's** webpage: <https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/>"
+  # back-to-top-navigation: true
+  page-footer: "The course material is sourced from **Prof. Simha's** webpage: <https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/> <br>This is a Quarto website. To learn more about Quarto websites visit <https://quarto.org/docs/websites>."
   search: true
   sidebar:
     style: floating
