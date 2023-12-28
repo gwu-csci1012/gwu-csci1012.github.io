@@ -265,3 +265,6 @@ As you complete Module 1 and ready that for submission you might want to review:
 If it's a bit hazy, please make sure to review from the <b><a href="../module0/computerese.html">material on computerese</a></b> from Module 0.
 
 [Here's more information about submitting Module 1]()
+
+<br>
+[Previous Module: **Module 0**](./module0.qmd){.button .prev} [Next Module: **Module 2**](./module2.qmd){.button .next}
