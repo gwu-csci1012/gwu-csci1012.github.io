@@ -1,5 +1,5 @@
 ---
-title: "Module 0: Your First Program"
+title: "**Module 0:** Your First Program"
 ---
 
 <div class="breadcrumbs">

@@ -1,5 +1,5 @@
 ---
-title: "Module 2: Functions: a first look"
+title: "**Module 2:** Functions: a first look"
 ---
 
 <div class="breadcrumbs">

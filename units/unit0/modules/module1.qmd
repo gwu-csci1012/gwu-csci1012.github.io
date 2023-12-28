@@ -1,5 +1,5 @@
 ---
-title: "Module 1: A few more getting-started examples"
+title: "**Module 1:** A few more getting-started examples"
 ---
 
 <div class="breadcrumbs">
