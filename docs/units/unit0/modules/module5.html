@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>CSCI1012 - Module 5: Strings and Characters</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Units</li><li class="breadcrumb-item"><a href="../../../units/unit0/modules/module0.html"><strong>Unit 0:</strong> Getting Started With Programming</a></li><li class="breadcrumb-item"><a href="../../../units/unit0/modules/module5.html"><strong>Module 5</strong>: Strings and Characters</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../../"><strong>CSCI1012</strong></a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../coursework.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Coursework</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../faq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FAQ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Units</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text"><strong>Unit 0:</strong> Getting Started With Programming</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit0/modules/module0.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 0:</strong> Your First Program</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit0/modules/module1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 1:</strong> A few more getting-started examples</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit0/modules/module2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 2:</strong> Functions: a first look</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit0/modules/module3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 3:</strong> Loops: the for-loop</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit0/modules/module4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 4:</strong> Integers</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit0/modules/module5.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><strong>Module 5</strong>: Strings and Characters</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../submit-remember.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to remember about submitting work</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
+  <li><a href="#strings" id="toc-strings" class="nav-link" data-scroll-target="#strings">5.0 Strings</a></li>
+  <li><a href="#string-concatenation" id="toc-string-concatenation" class="nav-link" data-scroll-target="#string-concatenation">5.1 String concatenation</a></li>
+  <li><a href="#fun-with-string-concatenation" id="toc-fun-with-string-concatenation" class="nav-link" data-scroll-target="#fun-with-string-concatenation">5.2 Fun with string concatenation</a></li>
+  <li><a href="#input-from-the-terminal" id="toc-input-from-the-terminal" class="nav-link" data-scroll-target="#input-from-the-terminal">5.3 Input from the terminal</a></li>
+  <li><a href="#strings-and-for-loops" id="toc-strings-and-for-loops" class="nav-link" data-scroll-target="#strings-and-for-loops">5.4 Strings and for-loops</a></li>
+  <li><a href="#the-useful-relationship-between-characters-and-integers" id="toc-the-useful-relationship-between-characters-and-integers" class="nav-link" data-scroll-target="#the-useful-relationship-between-characters-and-integers">5.5 &nbsp;&nbsp; The useful relationship between characters and integers</a></li>
+  <li><a href="#variable-names" id="toc-variable-names" class="nav-link" data-scroll-target="#variable-names">5.6 Variable names</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><strong>Module 5</strong>: Strings and Characters</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="breadcrumbs">
+<p><a href="../../../index.html">Home</a> » <a href="">Units</a> » <span class="current-page">Module 5</span></p>
+</div>
+<section id="objectives" class="level2">
+<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
+<p>By the end of this module, for simple HelloWorld-like programs, you will be able to:</p>
+<ul>
+<li>Write simple code that works with strings and characters (letters, digits, symbols like $)</li>
+<li>Identify some syntax errors related to characters and strings.</li>
+<li>Have some stress relieving fun after that long integer module.</li>
+</ul>
+</section>
+<section id="strings" class="level2">
+<h2 class="anchored" data-anchor-id="strings">5.0 Strings</h2>
+<p>About strings:</p>
+<ul>
+<li>We have already seen examples of strings, as in:</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Here, whatever is in between the quotes is treated as <em>one thing</em>: a sequence of letters, digits or symbols.</li>
+<li>Here are examples with digits, symbols and spaces:</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello there. I'</span>m on my way to <span class="dv">123</span> Main Street<span class="st">')</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="er">print</span>(<span class="st">'#@%&amp;! I'</span>m late<span class="op">!</span><span class="st">')</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>The entire sequence of letters, digits, punctuation etc from the <code>H</code> in <code>Hello</code> to the <code>t</code> in <code>Street</code> is one string.</li>
+<li>And you already know that “#@%&amp;!” translates to “Drat!”</li>
+</ul>
+<p>Just like integer values can be placed in variables, we can do the same with strings:</p>
+<ul>
+<li>Example:</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Here, the variable <code>s</code> has the string <code>The quick brown fox jumps over the lazy dog</code></p>
+<ul>
+<li>If you’re wondering how a variable (we used a box as an analogy) can fit so many letters, that is a somewhat advanced topic.</li>
+<li>For now, let’s proceed with the notion that we can do this.</li>
+</ul>
+<p>Consider this example:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a string and print it:</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract the length of the string and print that:</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">len</span>(s)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(k)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Here, we are using a function called <code>len</code> to extract the length of a string.</li>
+<li>The function <code>len</code> is like <code>print</code> in one respect: there is something that goes in between the parentheses: <img src="../../../media/units/unit0/module5/str_example.png" class="img-fluid"></li>
+<li>But it is different in another respect: something comes out of the function and gets placed into the variable <code>k</code></li>
+<li>We will later look further into how we can write our own functions that have this property of “making something and giving the result” to a variable.</li>
+</ul>
+<section id="excercise-type-up-the-above-in-my_string_example.py.-what-is-the-printed-length-remember-answers-to-non-coding-questions-like-this-need-to-be-in-the-appropriate-module-pdf-in-this-case-module5.pdf." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_string_example.py.-what-is-the-printed-length-remember-answers-to-non-coding-questions-like-this-need-to-be-in-the-appropriate-module-pdf-in-this-case-module5.pdf."><span style="color:#8B4513;"><strong>5.1 Excercise:</strong> Type up the above in <code>my_string_example.py</code>. What is the printed length? Remember, answers to non-coding questions like this need to be in the appropriate module pdf, in this case <code>module5.pdf</code>.</span></h6>
+</section>
+</section>
+<section id="string-concatenation" class="level2">
+<h2 class="anchored" data-anchor-id="string-concatenation">5.1 String concatenation</h2>
+<p>Strings would be of limited use if there were no way of combining them, just as integers would be if there were no way of performing arithmetic.</p>
+<p>The joining of two strings end to end is called <em>concatenation</em>.</p>
+<p>Consider this program:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'The'</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="st">'quick'</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> <span class="st">'brown'</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> x <span class="op">+</span> y <span class="op">+</span> z</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="excercise-type-up-the-above-in-my_string_example2.py.-what-is-the-output" class="level6">
+<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_string_example2.py.-what-is-the-output"><span style="color:#8B4513;"><strong>5.2 Excercise:</strong> Type up the above in <code>my_string_example2.py</code>. What is the output?</span></h6>
+<p>About concatenation:</p>
+<ul>
+<li>The same <code>+</code> that we used for integer addition is what’s used to concatenate strings.</li>
+<li>Thus <em>multiple-usage</em> of symbols in a programming language is common: we’ll see other examples of a single symbol or function serving multiple purposes.
+<ul>
+<li>How come Python doesn’t get confused and think that x, y, z are integers wanting to be added?</li>
+<li>Python is smart about context, and understands that when <code>+</code> is used with strings, the only reasonable thing to do is to concatenate. Likewise, with numbers, Python will add them.</li>
+</ul></li>
+<li>You may have noticed the words all strung together without a space. So let’s add the spaces:</li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'Sphinx'</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="st">'of'</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> <span class="st">'black'</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> x <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> y <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> z <span class="op">+</span> <span class="st">' quartz, judge my vow'</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Notice how multiple strings, some from variables, and some just written into the statement, are concatenated: <img src="../../../media/units/unit0/module5/str_example2.png" class="img-fluid"></li>
+</ul>
+</section>
+<section id="excercise-type-up-the-above-in-my_string_example3.py.-what-is-the-output-how-many-times-did-a-concatenation-occur" class="level6">
+<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_string_example3.py.-what-is-the-output-how-many-times-did-a-concatenation-occur"><span style="color:#8B4513;"><strong>5.3 Excercise:</strong> Type up the above in <code>my_string_example3.py</code>. What is the output? How many times did a concatenation occur?</span></h6>
+<p>We also introduced something new:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Here’s how to read this line:</p>
+<ul>
+<li>First look at <code>print</code> and notice that there’s something between the parentheses:</li>
+</ul>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Think to yourself: something is going to be given to <code>print</code> to get printed.</li>
+<li>Now look at what’s going to <code>print</code>:</li>
+</ul>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Here we see that the length of the string <code>s</code> is being computed.</li>
+<li>What you should be thinking is:
+<ul>
+<li>The length will <em>first</em> get computed.</li>
+<li>And <em>then</em> the result (36, in this case) will be sent to <code>print</code>.</li>
+<li><code>print</code> then prints it to the output, which is what we see.</li>
+</ul></li>
+<li>One way to think about this is to use a term, <em>nesting</em>, that we’ve seen before:
+<ul>
+<li>Here, the function invocation to <code>len</code> is nested in the function invocation to <code>print</code></li>
+<li>The innermost in this case executes first.</li>
+</ul></li>
+<li>In case you were wondering: yes, one can nest deeply with one function invocation inside another, inside another etc. But we won’t need that anytime soon.</li>
+</ul>
+<p>Often we want to concatenate strings with numbers, or other kinds of things:</p>
+<p>For example: consider</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">26</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="bu">str</span>(k)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> <span class="st">'A pangram must have all '</span> <span class="op">+</span> s <span class="op">+</span> <span class="st">' letters'</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Here, the value in <code>k</code> is an integer.</li>
+<li>Prior to concatenation with a string, we first need to make a string out of the integer:</li>
+</ul>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="bu">str</span>(k)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>We do this by sending the integer <code>k</code> to the <code>str</code> function, which builds a string version of the integer and gives that back.</li>
+<li>The string so computed is then placed into the variable <code>s</code> above.</li>
+<li>This string <code>s</code> gets concatenated with the other strings to produce the final result.</li>
+</ul>
+</section>
+<section id="excercise-type-up-the-above-in-my_string_example4.py-to-confirm." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_string_example4.py-to-confirm."><span style="color:#8B4513;"><strong>5.4 Excercise:</strong> Type up the above in <code>my_string_example4.py</code> to confirm.</span></h6>
+<p>Let’s examine a small variation:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">26</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># You can also build a string in the print statement itself:</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'A pangram must have all '</span> <span class="op">+</span> <span class="bu">str</span>(k) <span class="op">+</span> <span class="st">' letters'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="excercise-type-up-the-above-in-my_string_example5.py-to-see-the-resulting-output." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_string_example5.py-to-see-the-resulting-output."><span style="color:#8B4513;"><strong>5.5 Excercise:</strong> Type up the above in <code>my_string_example5.py</code> to see the resulting output.</span></h6>
+</section>
+</section>
+<section id="fun-with-string-concatenation" class="level2">
+<h2 class="anchored" data-anchor-id="fun-with-string-concatenation">5.2 Fun with string concatenation</h2>
+<p>We will occasionally introduce programs we’ve written to both simplify your programming and yet allow for interesting examples.</p>
+<p>If all we did was compute with integers, it would be boring.</p>
+<p>You’ve already seen one example of such a tool: <code>drawtool</code>.</p>
+<p>We’ll now use <code>wordtool</code>, another tool that you will use by calling appropriate functions.</p>
+<p>You are welcome and are encouraged to “look inside” by skimming over the code in any tool.</p>
+<p>Let’s look at an example that will also introduce some new ideas:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wordtool</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Invoke functions in wordtool to pick random words:</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>adj <span class="op">=</span> wordtool.get_random_adjective()</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>noun <span class="op">=</span> wordtool.get_random_noun()</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>noun2 <span class="op">=</span> wordtool.get_random_noun()</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>verb <span class="op">=</span> wordtool.get_random_verb()</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>prep <span class="op">=</span> wordtool.get_random_preposition()</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Build a sentence with these random words:</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>sentence <span class="op">=</span> (</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'The '</span> <span class="op">+</span> adj <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> noun <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> verb <span class="op">+</span> <span class="st">'s'</span> <span class="op">+</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">' '</span> <span class="op">+</span> prep <span class="op">+</span> <span class="st">' a '</span> <span class="op">+</span> noun2)</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sentence)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="excercise-type-up-the-above-in-my_random_sentence.py.-dont-run-it-just-yet.-first-download-wordtool.py-and-wordswithpos.txt-into-the-same-folder-as-your-program.-now-run-the-program-several-times.-report-your-favorite-output-sentence-in-module5.pdf." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_random_sentence.py.-dont-run-it-just-yet.-first-download-wordtool.py-and-wordswithpos.txt-into-the-same-folder-as-your-program.-now-run-the-program-several-times.-report-your-favorite-output-sentence-in-module5.pdf."><span style="color:#8B4513;"><strong>5.7 Excercise:</strong> Type up the above in <code>my_random_sentence.py</code>. Don’t run it just yet. First download <a href="../../useful/wordtool.py" download=""><strong>wordtool.py</strong></a> and <a href="../../useful/wordsWithPOS.txt" download=""><strong>wordsWithPOS.txt</strong></a> into the same folder as your program. Now run the program several times. Report your favorite output sentence in <code>module5.pdf</code>.</span></h6>
+<p>Let’s point out:</p>
+<ul>
+<li><code>wordtool.py</code> is merely another Python program, like the ones you’ve been writing, just a bit more complex.</li>
+<li><code>wordsWithPOS.txt</code> is plain text data (about English words, and parts-of-speech).</li>
+<li><code>wordtool.py</code> is written to read the data and make some functionality available, one of which is to randomly pick words from amongst the nouns, adjectives, and so on.</li>
+<li>To use functions in <code>wordtool.py</code> in your program, you need (and this is a new thing we’ve introduced) the <code>import</code> statement at the top of your program:</li>
+</ul>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wordtool</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The .py part is not in the import statement</p>
+</div>
+</div>
+<ul>
+<li>Then, to use a function defined in that other file, we use syntax like this:</li>
+</ul>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>adj <span class="op">=</span> wordtool.get_random_adjective()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<ul>
+<li>Here, <code>adj</code> is a string variable that we made.</li>
+<li>The combination of <code>wordtool</code>, a period, and the desired function <code>get_random_adjective()</code>, is what’s needed to invoke that particular function.</li>
+<li>In this case, it results in a randomly selected adjective (from the thousands in the data) being copied into the <code>adj</code> variable.</li>
+</ul>
+</ul>
+<ul>
+<li>Similarly, after getting a random noun, verb, and so on, we put those together to make a sentence. Hopefully, with hilarious results.</li>
+<li>We’ll point out one other new thing:</li>
+</ul>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>sentence <span class="op">=</span> (</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'The '</span> <span class="op">+</span> adj <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> noun <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> verb <span class="op">+</span> <span class="st">'s'</span> <span class="op">+</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">' '</span> <span class="op">+</span> prep <span class="op">+</span> <span class="st">' a '</span> <span class="op">+</span> noun2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<ul>
+<li>Here, we are concatenating many strings into a long one.</li>
+<li>However, if it’s unwieldy to type them all in one line, we can spill over into multiple lines.</li>
+<li>One way to do that is to use parentheses as shown above.</li>
+</ul>
+</ul>
+</section>
+<section id="excercise-open-wordtool.py-and-examine-the-functions-within.-then-make-a-longer-random-sentence-in-my_random_sentence2.py." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-open-wordtool.py-and-examine-the-functions-within.-then-make-a-longer-random-sentence-in-my_random_sentence2.py."><span style="color:#8B4513;"><strong>5.8 Excercise:</strong> Open <code>wordtool.py</code> and examine the functions within. Then, make a longer random sentence in <code>my_random_sentence2.py</code>.</span></h6>
+</section>
+</section>
+<section id="input-from-the-terminal" class="level2">
+<h2 class="anchored" data-anchor-id="input-from-the-terminal">5.3 Input from the terminal</h2>
+<p>Thus far we have printed (output) to the screen but have not taken in any input.</p>
+<p>Thus, we haven’t written any programs that interact with potential users of our programs.</p>
+<p>There’s a limited market for programs that only execute once with no input whatsoever, right?</p>
+<p>So, let’s do something more interesting by asking the user to type in a string:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wordtool</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co"># We will get the user to type their name:</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter your name: '</span>)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="co"># We'll use that and make rudimentary conversation:</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hi '</span> <span class="op">+</span> name <span class="op">+</span> <span class="st">'!'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="excercise-try-out-the-above-program-in-my_random_conversation.py.-since-you-are-writing-this-in-the-same-folder-you-wont-need-to-download-wordtool.py.-and-its-data." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-try-out-the-above-program-in-my_random_conversation.py.-since-you-are-writing-this-in-the-same-folder-you-wont-need-to-download-wordtool.py.-and-its-data."><span style="color:#8B4513;"><strong>5.10 Excercise:</strong> Try out the above program in <code>my_random_conversation.py</code>. Since you are writing this in the same folder, you won’t need to download <code>wordtool.py</code>. and its data.</span></h6>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>The function <code>input</code> is exactly what it sounds like: get input (from the user typing).</li>
+</ul>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter your name: '</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Here, there’s a string that goes into the <code>input</code> function. This string is displayed as a prompt in the output:</li>
+</ul>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>Enter your name: </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Of course, you aren’t writing this tiny program to send to someone who will run your program and type in their name. You are playing both roles: programmer and intended user.</li>
+<li>Whatever the user types in (from the keyboard) becomes a single string that’s placed in the variable we’ve called <code>name</code></li>
+<li>Then, we’ve concatenated whatever gets into <code>name</code>with two other strings and printed the result:</li>
+</ul>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hi '</span> <span class="op">+</span> <span class="op">&lt;</span>b<span class="op">&gt;</span>name<span class="op">&lt;/</span>b<span class="op">&gt;</span> <span class="op">+</span> <span class="st">'!'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p>Next, let’s make it more interesting:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wordtool</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter your name: '</span>)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hi '</span> <span class="op">+</span> name <span class="op">+</span> <span class="st">'!'</span>)</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>adv <span class="op">=</span> wordtool.get_random_adverb()</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>adj <span class="op">=</span> wordtool.get_random_adjective()</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>sentence <span class="op">=</span> name <span class="op">+</span> <span class="st">', you are '</span> <span class="op">+</span> adv <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> adj</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sentence)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="excercise-improve-on-the-above-program-by-writing-your-version-of-a-longer-conversation-my_random_conversation2.py.-allow-the-user-to-type-in-something-at-least-three-or-four-times.-this-will-require-using-input-multiple-times-to-go-back-and-forth-with-the-user.-unleash-your-guile-and-creativity." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-improve-on-the-above-program-by-writing-your-version-of-a-longer-conversation-my_random_conversation2.py.-allow-the-user-to-type-in-something-at-least-three-or-four-times.-this-will-require-using-input-multiple-times-to-go-back-and-forth-with-the-user.-unleash-your-guile-and-creativity."><span style="color:#8B4513;"><strong>5.11 Excercise:</strong> Improve on the above program by writing your version of a longer conversation <code>my_random_conversation2.py</code>. Allow the user to type in something at least three or four times. This will require using <code>input</code> multiple times to go back and forth with the user. Unleash your guile and creativity.</span></h6>
+</section>
+<section id="excercise-try-out-a-conversation-with-a-chatbot.-for-example-one-of-the-earliest-chatbots-in-history-was-eliza-which-you-can-try-out.-report-with-a-screenshot-in-your-module-pdf-a-sample-conversation-with-eliza." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-try-out-a-conversation-with-a-chatbot.-for-example-one-of-the-earliest-chatbots-in-history-was-eliza-which-you-can-try-out.-report-with-a-screenshot-in-your-module-pdf-a-sample-conversation-with-eliza."><span style="color:#8B4513;"><strong>5.12 Excercise:</strong> Try out a conversation with a chatbot. For example, one of the earliest chatbots in history was <a href="https://en.wikipedia.org/wiki/ELIZA">Eliza</a>, which <a href="http://www.masswerk.at/elizabot/">you can try out</a>. Report (with a screenshot in your module pdf) a sample conversation with Eliza.</span></h6>
+</section>
+</section>
+<section id="strings-and-for-loops" class="level2">
+<h2 class="anchored" data-anchor-id="strings-and-for-loops">5.4 Strings and for-loops</h2>
+<p>Consider this program:</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">''</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, n):</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> s <span class="op">+</span> <span class="st">'*'</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>We can initialize the value of <code>s</code> to the empty string <code>''</code> (nothing between the quotes).</li>
+<li>The loop successively concatenates a string with an asterisk (<code>'*'</code>) onto the gradually accumulative string <code>s</code>.</li>
+</ul>
+</div>
+</div>
+<section id="excercise-before-typing-up-the-program-trace-in-module5.pdf-the-execution-of-the-loop-showing-the-contents-of-the-string-s-in-each-iteration-of-the-for-loop.-then-confirm-the-final-output-in-your-trace-by-typing-it-up-in-my_loop_example.py.-then-change-the-value-of-n-to-8-and-examine-the-output.-submit-your-program-with-n-set-to-8." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-before-typing-up-the-program-trace-in-module5.pdf-the-execution-of-the-loop-showing-the-contents-of-the-string-s-in-each-iteration-of-the-for-loop.-then-confirm-the-final-output-in-your-trace-by-typing-it-up-in-my_loop_example.py.-then-change-the-value-of-n-to-8-and-examine-the-output.-submit-your-program-with-n-set-to-8."><span style="color:#8B4513;"><strong>5.13 Excercise:</strong> Before typing up the program, trace (in <code>module5.pdf</code>) the execution of the loop, showing the contents of the string <code>s</code> in each iteration of the for-loop. Then confirm the final output in your trace by typing it up in <code>my_loop_example.py</code>. Then change the value of <code>n</code> to 8 and examine the output. Submit your program with n set to 8.</span></h6>
+<p>Next, let’s use a nested loop to output a triangle of asterisks:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">''</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, n<span class="op">+</span><span class="dv">1</span>):</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, i):</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>        s <span class="op">=</span> s <span class="op">+</span> <span class="st">'*'</span></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> s <span class="op">+</span> <span class="st">'</span><span class="ch">\n</span><span class="st">'</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'A triangle with base='</span> <span class="op">+</span> <span class="bu">str</span>(n))</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="excercise-before-typing-up-the-program-trace-the-execution-of-the-loop-showing-the-contents-of-the-string-s-in-each-iteration-of-the-outer-for-loop.-then-confirm-the-final-output-in-your-trace-by-typing-it-up-in-my_triangle.py.-use-the-tabular-tracing-approach-as-in-the-example-from-module-3." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-before-typing-up-the-program-trace-the-execution-of-the-loop-showing-the-contents-of-the-string-s-in-each-iteration-of-the-outer-for-loop.-then-confirm-the-final-output-in-your-trace-by-typing-it-up-in-my_triangle.py.-use-the-tabular-tracing-approach-as-in-the-example-from-module-3."><span style="color:#8B4513;"><strong>5.14 Excercise:</strong> Before typing up the program, trace the execution of the loop, showing the contents of the string <code>s</code> in each iteration of the outer for-loop. Then confirm the final output in your trace by typing it up in <code>my_triangle.py</code>. Use the tabular tracing approach as in the <a href="../../../media/units/unit0/module3/TracingExample.pdf" download=""><strong>example from Module 3</strong></a>.</span></h6>
+<p>Next, we’ll make this more interactive:</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">''</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>n_str <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter triangle base size: '</span>)</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">int</span>(n_str)</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, n<span class="op">+</span><span class="dv">1</span>):</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, i):</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>        s <span class="op">=</span> s <span class="op">+</span> <span class="st">'*'</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> s <span class="op">+</span> <span class="st">'</span><span class="ch">\n</span><span class="st">'</span></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'A triangle with base='</span> <span class="op">+</span> <span class="bu">str</span>(n))</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="excercise-type-up-the-above-in-my_triangle2.py." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_triangle2.py."><span style="color:#8B4513;"><strong>5.14 Excercise:</strong> Type up the above in <code>my_triangle2.py</code>.</span></h6>
+<p>We’ve introduced some new concepts above:</p>
+<ul>
+<li>Since everything typed as input initially is made into a string, the actual input, even if it’s an integer, is a string.</li>
+<li>This is a little strange but it’s how Python works.</li>
+</ul>
+<p>Consider this example:</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">42</span>       <span class="co"># This is an integer</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'42'</span>     <span class="co"># This is a string</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">5</span>        <span class="co"># Integer</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> <span class="st">'5'</span>      <span class="co"># String</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Thus, when the user types in what they intend to be an integer, the <code>input</code> function makes a string out of it:</li>
+</ul>
+<div class="sourceCode" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>n_str <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter triangle base size: '</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Here, the variable <code>n_str</code> will have a string.</p>
+<ul>
+<li>We need to convert that string version of an integer into an actual integer using the <code>int</code> function:</li>
+</ul>
+<div class="sourceCode" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">int</span>(n_str)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Here the variable <code>n</code> will have the actual integer, which we can use in loops, in arithmetic, and so on.</p>
+<ul>
+<li>Notice that, since we want the loop to run <code>n</code> times, we’ve begun the outer loop at 1, running through to n (inclusive).</li>
+<li>This means using <code>range(1, n+1)</code> in the outer loop.</li>
+</ul>
+</section>
+<section id="excercise-trace-using-a-table-through-what-happens-above-when-the-user-enters-5." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-trace-using-a-table-through-what-happens-above-when-the-user-enters-5."><span style="color:#8B4513;"><strong>5.18 Excercise:</strong> Trace (using a table) through what happens above when the user enters 5.</span></h6>
+</section>
+<section id="excercise-what-happens-when-the-conversion-from-string-to-integer-is-not-done-find-out-by-trying-this" class="level6">
+<h6 class="anchored" data-anchor-id="excercise-what-happens-when-the-conversion-from-string-to-integer-is-not-done-find-out-by-trying-this"><span style="color:#8B4513;"><strong>5.19 Excercise:</strong> What happens when the conversion from string to integer is not done? Find out by trying this:</span></h6>
+<div class="sourceCode" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter an integer: '</span>)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">5</span> <span class="op">*</span> n</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(k)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Fix the issue by converting the string that’s in <code>n</code> and making an integer. Type your code in <code>my_conversion.py</code>.</p>
+</section>
+</section>
+<section id="the-useful-relationship-between-characters-and-integers" class="level2">
+<h2 class="anchored" data-anchor-id="the-useful-relationship-between-characters-and-integers">5.5 &nbsp;&nbsp; The useful relationship between characters and integers</h2>
+<p>Consider these three strings:</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'hello'</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="st">'h'</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> <span class="st">'$'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>The strings in variables <code>y</code> and <code>z</code> are fundamentally different from the one in <code>x</code> in that the strings in <code>y</code> and <code>z</code> have only one letter (or symbol) in them.</li>
+<li>We call such a single-letter or single-symbol string a <em>character</em>.</li>
+</ul>
+</div>
+</div>
+<p>There is a special relationship between characters and some integers:</p>
+<ul>
+<li>For example:
+<ul>
+<li>The character ‘a’ is sometimes represented by the integer 97.</li>
+<li>The character ‘b’ is sometimes represented by the integer 98.</li>
+<li>… and there are other examples.</li>
+</ul></li>
+<li>Think of this as a “secret code” maintained by Python, with that associates a number for every letter.</li>
+<li>The technical term for this “secret code” is <em>Ascii code</em>.</li>
+<li>We often use the shorter term “char” instead of “character”.</li>
+<li>So, every char has an Ascii code (pronounced “ass-key”). Who said computer nerds don’t have a sense of humor?</li>
+</ul>
+<p>Consider this program:</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>first_letter <span class="op">=</span> <span class="st">'a'</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>last_letter <span class="op">=</span> <span class="st">'z'</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">ord</span>(first_letter)</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(k)</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">ord</span>(last_letter)</span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(n)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="excercise-type-up-the-above-in-my_char_example.py." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_char_example.py."><span style="color:#8B4513;"><strong>5.21 Excercise:</strong> Type up the above in <code>my_char_example.py</code>.</span></h6>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>We’ve used longer, more descriptive variable names like <code>first_letter</code>.</li>
+<li>We’ll say more about this in a separate section below.</li>
+</ul>
+</div>
+</div>
+<ul>
+<li>The <code>ord</code> function takes a char and produces the corresponding Ascii code.</li>
+</ul>
+<div class="sourceCode" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">ord</span>(first_letter)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Going the other way: from Ascii code to char</p>
+<p>Consider this program:</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">97</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="bu">chr</span>(k)</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)      <span class="co"># Prints the char 'a'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="excercise-type-up-the-above-in-my_char_example2.py.-then-change-97-to-98.-what-should-the-value-of-k-be-to-print-the-char-z-last-lowercase-letter" class="level6">
+<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_char_example2.py.-then-change-97-to-98.-what-should-the-value-of-k-be-to-print-the-char-z-last-lowercase-letter"><span style="color:#8B4513;"><strong>5.22 Excercise:</strong> Type up the above in <code>my_char_example2.py</code>. Then, change 97 to 98. What should the value of <code>k</code> be to print the char ‘z’ (last lowercase letter)?</span></h6>
+<p>The usefulness of the Ascii code:</p>
+<ul>
+<li>The value of knowing the code is that we can <em>iterate</em> over numbers and use that to iterate over letters.</li>
+<li>For example:</li>
+</ul>
+<div class="sourceCode" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">97</span>, <span class="dv">123</span>):</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> <span class="bu">chr</span>(i)</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(s, end<span class="op">=</span><span class="st">''</span>)</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Inside a computer, it turns out all characters are actually stored as integers, and merely interpreted as characters when the occasion calls for it.</li>
+</ul>
+</section>
+<section id="excercise-type-up-the-above-in-my_char_example3.py.-what-does-it-print-what-is-the-significance-of-the-number-123" class="level6">
+<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_char_example3.py.-what-does-it-print-what-is-the-significance-of-the-number-123"><span style="color:#8B4513;"><strong>5.23 Excercise:</strong> Type up the above in <code>my_char_example3.py</code>. What does it print? What is the significance of the number 123?</span></h6>
+<p></p>
+</section>
+</section>
+<section id="variable-names" class="level2">
+<h2 class="anchored" data-anchor-id="variable-names">5.6 Variable names</h2>
+Most often, we’ve been using single letter <em>variable names</em>, for example: <font size="+2"> <font color="#000000">
+<pre>i = 7
+j = 15 * i
+print(j)
+
+x = 'Hello' 
+y = 'World'
+z = x + ' ' + y
+print(z)
+    </pre>
+</font></font><p><font size="+2"><font color="#000000"></font> </font></p>
+<p>
+Let’s rewrite the above with more meaningful variable names: <font size="+2"> <font color="#000000">
+</font></font></p><pre><font size="+2"><font color="#000000">days_in_a_week = 7
+days_in_a_semester = 15 * days_in_a_week
+print(days_in_a_semester)
+
+first_greeting_word = 'Hello' 
+second_greeting_word= 'World'
+full_greeting = first_greeting_word + ' ' + second_greeting_word
+print(full_greeting)
+    </font></font></pre><font size="+2"><font color="#000000">
+</font></font><p><font size="+2"><font color="#000000"></font> </font></p>
+<p>
+About variable names:
+</p><ul>
+<li>
+<p>First, let’s review the very notion of a <em>name</em> in Python, along with other kinds of “words” that are allowed in Python programs.</p>
+<p>
+</p></li><li>
+Reserved words or keywords:
+<ul>
+<li>
+Some words in the language belong formally to the language itself.
+</li><li>
+<p>These are words like <font color="#000000"><tt>for</tt></font>, <font color="#000000"><tt>in</tt></font>, <font color="#000000"><tt>def</tt></font>, and others.</p>
+<pre><code> &lt;li&gt; In fact, just to complete this, here's the full set of 
+ 33 reserved words:
+    &lt;blockquote&gt;
+    and as assert
+    break
+    class continue
+    def del 
+    elif else  except
+    False finally for from
+    global
+    if import in is 
+    lambda
+    None nonlocal not
+    or
+    pass
+    raise return
+    True try
+    while with
+    yield
+    &lt;/blockquote&gt;
+
+ &lt;li&gt; Everyone of these must be used in very specific ways,
+ in statements or in more complex structures.
+ &lt;li&gt; We will learn more about these as we proceed in the course.
+ &lt;li&gt; We won't learn about all of them, because full mastery
+ of the language takes more than one course.
+ &lt;/ul&gt;</code></pre>
+<p>
+</p></li><li>
+At the other end of the spectrum, there are words that we freely create for our use, as in these examples: <font color="#000000">
+<pre style="border:white;background-color:white;font-size:120%;">def <b>print_hello</b>():
+    print('Hello')
+
+<b>print_hello</b>()
+
+<b>x</b> = 'How goes?'
+print(<b>x</b>)
+
+for <b>i</b> in range(1,10):
+    print(<b>i</b>)
+  </pre>
+</font>
+<ul>
+<li>
+Here, we made a function and decided to call it <font color="#000000"><tt>print_hello</tt></font>
+</li><li>
+We decided to call the string variable <font color="#000000"><tt>x</tt></font>
+</li><li>
+And to call the loop variable <font color="#000000"><tt>i</tt></font>
+</li><li>
+These are called <em>identifiers</em> (jargon alert).
+</li></ul>
+<p>
+</p></li><li>
+Since we get to choose them, we could rewrite the above program as: <font color="#000000">
+<pre style="border:white;background-color:white;font-size:120%;">def <b>say_greeting</b>():
+    print('Hello')
+
+<b>say_greeting</b>()
+
+<b>follow_up</b> = 'How goes?'
+print(<b>follow_up</b>)
+
+for <b>my_loop_variable</b> in range(1,10):
+    print(<b>my_loop_variable</b>)
+  </pre>
+</font><p><font color="#000000"></font></p>
+<p>
+</p></li><li>
+So, what should dictate our choice of these names?
+<ul>
+<li>
+Generally, for numbers, loop-variables and short calculations, we prefer single-letter names like <font color="#000000"><tt>x</tt></font> and <font color="#000000"><tt>i</tt></font>.
+</li><li>
+Function names should carry some meaning so that anyone else who needs to use them should be able to make sense of them.
+</li><li>
+Sometimes, variable names should be longer when we want the code to be readable long after it’s written.
+</li><li>
+For example, it would not make sense for Python to use <font color="#000000"><tt>cryptic_blob_42</tt></font> instead of <font color="#000000"><tt>print</tt></font>.
+</li></ul>
+<p>
+</p></li><li>
+The use of <em>underscores</em>:
+<ul>
+<li>
+You’ve noticed by now the presence of underscores in our variable and function names.
+</li><li>
+An underscore is a convenient visual aid to help us read.
+</li><li>
+Writing <font color="#000000"><tt>days_in_a_week</tt></font> is better than <font color="#000000"><tt>daysinaweek</tt></font> because it’s easier to see.
+</li><li>
+<b>Important</b>: we cannot use spaces, so <font color="#000000"><tt>days in a week</tt></font> would be incorrect as a variable name.
+</li></ul>
+<p>
+</p></li><li>
+<p>Generally, we shouldn’t go overboard and make unnecessarily long names either, as in <font color="#000000"><tt>the_number_of_days_in_a_week</tt></font>.</p>
+<p>
+</p></li><li>
+<p><em>Another important rule</em>: use only letters, digits and underscores, and always start with a letter. Do NOT use other symbols like % or $ in variable names.</p>
+<p>
+</p></li><li>
+Finally, there are some function and variable names “already taken”. That is we can’t use them (or shouldn’t) because Python has decided to use them.
+<ul>
+<li>
+For example: <font color="#000000"><tt>print</tt></font> is a function name.
+</li><li>
+As are <font color="#000000"><tt>chr</tt></font> and <font color="#000000"><tt>ord</tt></font> and various math functions.
+</li><li>
+While we could technically use these names, we should avoid the conflict because it breaks convention and can cause hard-to-find problems.
+</li></ul>
+<p>
+</p></li><li>
+Here is a list of “avoid” names:
+<blockquote class="blockquote">
+<font color="#000000"><tt> abs, all, any, ascii, bin, bool, bytearray, bytes, callable, chr, classmethod, compile, complex, delattr, dict, dir, divmod, enumerate, eval, exec, filter, float, format, frozenset, getattr, globals, hasattr, hash, help, hex, id, input, int, isinstance, issubclass, iter, len, list, locals, map, max, memoryview, min, next, object, oct, open, ord, pow, print, property, range, repr, reversed, round, set, setattr, slice, sorted, str, sum, super, tuple, type, vars, zip </tt></font>
+</blockquote>
+Do NOT use these as your own variable or function names.
+</li></ul>
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+<font color="#8B4513"><b>5.24 Exercise</b>: Let’s see what can go wrong if we use one of the words “already taken”. Consider this program: <font color="#000000">
+</font></font></p><pre style="border:white;background-color:white;font-size:120%;"><font color="#8B4513"><font color="#000000">s = 'Hello'
+len = 5       <font color="#dc143c"># This is a BAD idea</font>
+print(len)
+  </font></font></pre><font color="#8B4513"><font color="#000000">
+</font> We really should not be using a variable called <font color="#000000"><tt>len</tt></font> since <font color="#000000"><tt>len</tt></font> is a predefined “already taken” name. What happens if you type and run this? Type your program in <font color="#000000"><tt>my_variable_name3.py</tt></font>. Then, type this program in <font color="#000000"><tt>my_variable_name4.py</tt></font>: <font color="#000000">
+<pre style="border:white;background-color:white;font-size:120%;">s = 'Hello'
+len = 5       <font color="#dc143c"># This is a BAD idea</font>
+print(len)
+
+t = 'Some looooooong sentence'
+k = len(t)
+print(k)
+  </pre>
+</font></font><p><font color="#8B4513"><font color="#000000"></font> What do you see? (Respond in your moduler pdf.) </font></p>
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+<font color="#8B4513"><b>5.25 Video</b>: <br>
+</font></p><div style="border:1px solid black; width:300; height: 200"><font color="#8B4513">
+<video height="200" width="300" src="media/u0-mod5.25.mp4" type="video/mp4" controls="controls">
+</video>
+</font></div><font color="#8B4513">
+</font><p><font color="#8B4513"></font></p>
+<a name="m5.7">
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+</p><hr>
+<p>
+<font color="#000080">
+</font></p><h2 class="anchored"><font color="#000080">
+5.7 &nbsp;&nbsp; A problem solving example
+</font></h2><font color="#000080">
+</font><font face="book antiqua, Georgia" color="#000060">
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+Possibly the hardest aspect of programming is <em>problem-solving</em>:
+</p><ul>
+<li>
+<p>Typically, we’re given an English description of a problem, with the goal of writing a program to solve the problem.</p>
+<p>
+</p></li><li>
+<p>The hard part is not the typing, and remembering syntactic details like parentheses.</p>
+<p>
+</p></li><li>
+<p>The hard part is figuring out what to write in code to solve the problem.</p>
+</li></ul>
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+</p><p>Let’s work through an example problem and solve it.</p>
+<p>
+Before that, we’ll learn one more string function: <font size="+2"> <font color="#000000">
+</font></font></p><pre><font size="+2"><font color="#000000">s = 'The quick brown fox jumps over the lazy dog'
+n = s.count('a')     <font color="#dc143c"># How many a's occur in the string s?</font>
+print(n)
+    </font></font></pre><font size="+2"><font color="#000000">
+</font> </font> Note:
+<ul>
+<li>
+<p>We’ve introduced a new feature of strings: the ability to count occurences of a letter in that string.</p>
+<p>
+</p></li><li>
+Notice the unusual way by which the function must be used: <font color="#000000">
+<pre style="border:white;background-color:white;font-size:120%;">n = s<b>.count</b>('a')
+  </pre>
+</font> and NOT <font color="#000000">
+<pre style="border:white;background-color:white;font-size:120%;">n = count(s, 'a')
+  </pre>
+</font><p><font color="#000000"></font></p>
+<p>
+</p></li><li>
+<p>That is, the function <font color="#000000"><tt>count</tt></font> appears to be part of the string variable <font color="#000000"><tt>s</tt></font>.</p>
+<p>
+</p></li><li>
+<p>This is a somewhat advanced topic, so we’ll just use it and be glad we have this feature. <br>(There are other such functions we’ll avail of.)</p>
+<p>
+</p></li><li>
+This is possible for any string, such as: <font size="+2"> <font color="#000000">
+<pre>x = 'helloooooooo'
+print(x.count('o'))    # Number of o's in string x
+y = 'missisippi'
+print(y.count('i'))    # Number of i's in string x
+    </pre>
+</font> </font>
+</li></ul>
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+</p><p><font color="#8B4513"><b>5.26 Exercise</b>: Confirm by typing up the above in <font color="#000000"><tt>my_letter_count.py</tt></font>. </font></p>
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+OK, now the problem:
+</p><ul>
+<li>
+<p>A <em>pangram</em> is an English sentence that contains all 26 letters.</p>
+<p>
+</p></li><li>
+We’ve already seen two examples: <font color="#000000">
+<pre style="border:white;background-color:white;font-size:120%;">The quick brown fox jumps over the lazy dog
+Sphinx of black quartz, judge my vow
+  </pre>
+</font><p><font color="#000000"></font></p>
+<p>
+</p></li><li>
+<p>There’s an informal competition running over a hundred years to find the shortest grammatically correct English sentence that’s a pangram.</p>
+<p>
+</p></li><li>
+Our smaller problem: given a sentence, print the number of a’s, the number of b’s … and so on. This could be useful in judging such a competition.
+</li></ul>
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+Let’s work towards a solution:
+</p><ul>
+<li>
+Given a candidate pangram, we could count the number of a’s: <font size="+2"> <font color="#000000">
+<pre>s = 'The quick brown fox jumps over the lazy dog'
+print(s.count('a'))
+    </pre>
+</font></font><p><font size="+2"><font color="#000000"></font> </font></p>
+<p>
+</p></li><li>
+Then, we could also count the number of b’s: <font size="+2"> <font color="#000000">
+<pre>s = 'The quick brown fox jumps over the lazy dog'
+print(s.count('a'))
+print(s.count('b'))
+    </pre>
+</font></font><p><font size="+2"><font color="#000000"></font> </font></p>
+<p>
+</p></li><li>
+<p>If we repeated this 26 times, we’d have a count for each letter.</p>
+<p>
+</p></li><li>
+But the moment we see a bunch of repetition, our computational problem-solving instincts (yes, still developing) should kick in:
+<blockquote class="blockquote">
+Repetition ⇒ use a loop!
+</blockquote>
+<p>
+</p></li><li>
+<p>What is the nature of iteration in this problem? <br> We are iterating through the letters ‘a’ to ‘z’</p>
+<p>
+</p></li><li>
+And we already know how to iterate over the letters: <font size="+2"> <font color="#000000">
+<pre>for i in range(97, 123):
+    letter = chr(i)       
+    <font color="#dc143c"># Recall: We're going from Ascii code to letter</font>
+    </pre>
+</font></font><p><font size="+2"><font color="#000000"></font> </font></p>
+<p>
+</p></li><li>
+Could we combine this with the counting of occurences inside the given string? So, the idea would be: <font size="+2"> <font color="#000000">
+<pre>for i in range(97, 123):
+    letter = chr(i)       
+    <font color="#dc143c"># Now somehow use that to do the counting of occurences</font>
+    </pre>
+</font></font><p><font size="+2"><font color="#000000"></font> </font></p>
+<p>
+</p></li><li>
+Combining: <font size="+2"> <font color="#000000">
+<pre>s = 'The quick brown fox jumps over the lazy dog'
+
+for i in range(97, 123):
+    letter = chr(i)       
+    k = s.count(letter)
+    print('Number of occurrences of ' + letter + ' is ' + str(k))
+    </pre>
+</font></font><p><font size="+2"><font color="#000000"></font> </font></p>
+</li></ul>
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+</p><p><font color="#8B4513"><b>5.27 Exercise</b>: Type up the above idea <font color="#000000"><tt>my_count_problem.py</tt></font>. Then, find another pangram and apply the program to that pangram. Submit your program with the pangram shown above (not the one you found). </font></p>
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+</p><p><font color="#8B4513"><b>5.28 Exercise</b>: This can be taken a step further. Instead of typing the pangram in the program itself (as was done above), ask the user to enter it as input. In <font color="#000000"><tt>my_count_problem2.py</tt></font>, read a string from the user and print the letter counts. When you test your program, use the pangram you found as input. </font></p>
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+<font color="#8B4513"><b>5.29 Video</b>: <br>
+</font></p><div style="border:1px solid black; width:300; height: 200"><font color="#8B4513">
+<video height="200" width="300" src="media/u0-mod5.29.mp4" type="video/mp4" controls="controls">
+</video>
+</font></div><font color="#8B4513">
+</font><p><font color="#8B4513"></font></p>
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+Lastly, we’ll point out a slightly more elegant way of iterating over the 26 letters: <font size="+2"> <font color="#000000">
+</font></font></p><pre><font size="+2"><font color="#000000">ascii_a = ord('a')
+ascii_z = ord('z')
+for i in range(ascii_a, ascii_z + 1):
+    letter = chr(i)       
+    <font color="#dc143c"># Now somehow use that to do the counting of occurences</font>
+    </font></font></pre><font size="+2"><font color="#000000">
+</font> </font> Note:
+<ul>
+<li>
+<p>Instead of typing in the numbers 97 and 123 (which we’d have to remember), we’re instead using the <font color="#000000"><tt>ord</tt></font> function itself to identify the limits of the loop.</p>
+<p>
+</p></li><li>
+An even more (but harder to read) compact way is to write: <font color="#000000">
+<pre style="border:white;background-color:white;font-size:120%;">for i in range(ord('a'), ord('z') + 1):
+    letter = chr(i)       
+  </pre>
+</font> We’ll understand this better once we see functions in more detail.
+</li></ul>
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+</p><p>Finally, we’ve written a program to solve an actual problem. Perhaps there’s a market out there for pangram-checkers?</p>
+</font></a><font face="book antiqua, Georgia" color="#000060"><a name="m5.8">
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+</p><hr>
+<p>
+<font color="#000080">
+</font></p><h2 class="anchored"><font color="#000080">
+5.8 &nbsp;&nbsp; When things go wrong
+</font></h2><font color="#000080">
+</font><font face="book antiqua, Georgia" color="#000060">
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+</p><p>In each of the exercises below, try to identify the error before typing it up and confirming. Report the error in the module pdf. Then, fix the error in the code, using the specified program (.py) name.</p>
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+<font color="#8B4513"><b>5.30 Exercise</b>: <font color="#000000">
+</font></font></p><pre style="border:white;background-color:white;font-size:120%;"><font color="#8B4513"><font color="#000000">x = 'Hello'
+y = 'World'
+s = 'x' + ' ' + 'y'
+  </font></font></pre><font color="#8B4513"><font color="#000000">
+</font></font><p><font color="#8B4513"><font color="#000000"></font> (This should print <font color="#000000"><tt>Hello World</tt></font>, with a space in between). Fix the error in <font color="#000000"><tt>error1.py</tt></font>. </font></p>
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+<font color="#8B4513"><b>5.31 Exercise</b>: <font color="#000000">
+</font></font></p><pre style="border:white;background-color:white;font-size:120%;"><font color="#8B4513"><font color="#000000">k = 8
+s = 'There are ' + k + ' planets in our solar system'
+print(s)
+  </font></font></pre><font color="#8B4513"><font color="#000000">
+</font></font><p><font color="#8B4513"><font color="#000000"></font> Fix the error in <font color="#000000"><tt>error2.py</tt></font>. </font></p>
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+<font color="#8B4513"><b>5.32 Exercise</b>: <font color="#000000">
+</font></font></p><pre style="border:white;background-color:white;font-size:120%;"><font color="#8B4513"><font color="#000000">long_sentence = 'How' + ' ' + 'vexingly' + ' ' +
+   'quick' + ' ' + 'daft' + ' ' + 'zebras' + ' ' + 'jump'
+  </font></font></pre><font color="#8B4513"><font color="#000000">
+</font></font><p><font color="#8B4513"><font color="#000000"></font> Fix the error in <font color="#000000"><tt>error3.py</tt></font>. </font></p>
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+<font color="#8B4513"><b>5.33 Exercise</b>: <font color="#000000">
+</font></font></p><pre style="border:white;background-color:white;font-size:120%;"><font color="#8B4513"><font color="#000000">x = input('Enter a number between 1 and 10')
+y = 2 * x
+print(y)
+  </font></font></pre><font color="#8B4513"><font color="#000000">
+</font></font><p><font color="#8B4513"><font color="#000000"></font> Fix the error in <font color="#000000"><tt>error4.py</tt></font>. </font></p>
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+<font color="#8B4513"><b>5.34 Exercise</b>: <font color="#000000">
+</font></font></p><pre style="border:white;background-color:white;font-size:120%;"><font color="#8B4513"><font color="#000000">for i in range(1, 6):
+    s = s + '**'
+print(s)
+  </font></font></pre><font color="#8B4513"><font color="#000000">
+</font></font><p><font color="#8B4513"><font color="#000000"></font> (This should print a string with 10 asterisks). Fix the error in <font color="#000000"><tt>error5.py</tt></font>. </font></p>
+
+<table>
+<tbody><tr>
+<td height="6">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+<font color="#8B4513"><b>5.35 Exercise</b>: <font color="#000000">
+</font></font></p><pre style="border:white;background-color:white;font-size:120%;"><font color="#8B4513"><font color="#000000">miles = 10
+feet per mile = 5280
+feet in ten miles = miles * feet per mile
+print(feet in ten miles)
+  </font></font></pre><font color="#8B4513"><font color="#000000">
+</font></font><p><font color="#8B4513"><font color="#000000"></font> Fix the error in <font color="#000000"><tt>error6.py</tt></font>. </font></p>
+
+<table>
+<tbody><tr>
+<td height="8">
+&nbsp;
+</td>
+</tr>
+
+</tbody></table>
+<p>
+</p><p><font color="#8B4513"><b>5.36 Audio</b>: <br> <audio src="media/u0-mod5-outro.mp3" controls="controls"></audio> </font></p>
+<p><br><br></p>
+</font></a><font face="book antiqua, Georgia" color="#000060"><p><a name="m5.8"><b></b></a><b><a href="../unit0.html">On to Module 6</a></b></p>
+</font><p><font face="book antiqua, Georgia" color="#000060"></font></p>
+<br><br>
+<hr>
+<center>
+<font size="1"> © 2020, Rahul Simha </font>
+</center>
+
+
+
+
+</font></li></ul></section><font face="book antiqua, Georgia" color="#000060">
+
+</font></main><font face="book antiqua, Georgia" color="#000060"> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</font></div><font face="book antiqua, Georgia" color="#000060"> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">The course material is sourced from <strong>Prof.&nbsp;Simha’s</strong> webpage: <a href="https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/" class="uri">https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/</a> <br>This is a Quarto website. To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</font></body></html>
