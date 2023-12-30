@@ -422,7 +422,7 @@ for i in range(1, N+1):
     print(k)
 ```
 
-###### <span style="color:#8B4513;">**4.20 Excercise:** Trace (in `module4.pdf<`) the values of `i<` and `k<` in the program above. This is what you should be able to domentally during mental execution.</span>
+###### <span style="color:#8B4513;">**4.20 Excercise:** Trace (in `module4.pdf`) the values of `i` and `k` in the program above. This is what you should be able to domentally during mental execution.</span>
 
 ## 4.6 A problem-solving example with variables and nested for-loops
 We'll solve the following problem: <em>for any given <i>n</i>, compute</em>
