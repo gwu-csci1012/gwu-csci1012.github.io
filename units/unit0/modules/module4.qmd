@@ -29,19 +29,23 @@ And, once we've worked with integers, we'll also do some "number crunching".
 Suppose we have boxes. Consider the following rules about "boxes":
 
 - Each box can store only one item.
+
 ![](../../../media/units/unit0/module4/box.PNG)
+
 - The possible things that can be stored inside are called *values*.
 - Thus, at any given moment, a box's value is whatever's inside it.
 - Each box has a unique *name*:
+
 ![](../../../media/units/unit0/module4/box3.PNG)
+
 - There is a <em>cloning</em> process that works like this:
 ![](../../../media/units/unit0/module4/box4.PNG)
     - The value inside one box is cloned.
     - The cloned value is placed inside another.
 - There is a strange shortcut notation to specify cloning:
 ![](../../../media/units/unit0/module4/box5.PNG)
-    - Here, the `=` (equals sign) does NOT mean "equals."
-    - It has been repurposed to mean "clone", "copy," or, in programming-language jargon, "assign".
+  - Here, the `=` (equals sign) does NOT mean "equals."
+  - It has been repurposed to mean "clone", "copy," or, in programming-language jargon, "assign".
 - How to say it: "x is assigned the value in y".
 - **Important:** Remember, a box can hold only one value at a time.
 - The technical term for our informal "box" is <em>variable</em>.
@@ -105,7 +109,7 @@ print(j)  # Prints 5
 
 - We say, in short, "`i` is assigned to `j`".
 
-:::{.callout-note}
+:::{.callout-tip}
 We've used comments above to annotate and explain.
 
 - We'll do this often, knowing that comments are not <em>executed</em>.
@@ -143,947 +147,444 @@ j = 0
 print(k)
 ```
 <span style="color:#8B4513;"> Try to identify the output of this program just by mental execution. Type up the program in `my_variable_example6.py` and confirm.</span>
-</font>
 
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
 Note that a copied value does not change if the original is changed:
-  <ul>
-  <li> For example, consider:
-    <font size="+2">
-    <font color="#000000"><pre>
+- For example, consider:
+```python
 i = 5
-j = i      <font color="#dc143c"># j now has 5</font>
-i = 0      <font color="#dc143c"># We changed i here</font>
-print(j)   <font color="#dc143c"># j still has 5</font>
-    </pre></font>
-    </font>
+j = i      # j now has 5
+i = 0      # We changed i here
+print(j)   # j still has 5
+```
 
-  <p><li> Here's the line-by-line execution:
-     <ul>
-     <li> The first line puts the value 5 in variable i.
-     <li> The second line <em>copies</em> the value in i (which is 5)
-     into j. So j will have the value 5 as well.
-     <li> The third line replaces the value 5 with value 0.
-     <li> j still has 5, so the fourth line will print 5.
-     </ul>
+- Here's the line-by-line execution:
+  - The first line puts the value 5 in variable i.
+  - The second line <em>copies</em> the value in i (which is 5) into j. So j will have the value 5 as well.
+  - The third line replaces the value 5 with value 0.
+  - j still has 5, so the fourth line will print 5.
 
-  <p><li> Note: 
-     0 is an actual value, and is not "no value" or "nothing".
+:::{.callout-tip}
+0 is an actual value, and is not "no value" or "nothing".
+:::
 
-  </ul>
+###### <span style="color:#8B4513;">**4.8 Excercise:** Consider this program:</span>
 
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.7 Video</b>:
-<br>
-<div style="border:1px solid black; width:300; height: 200">
-<video height="200" width="300" src="media/u0-mod4.7.mp4" type="video/mp4" controls="controls"></video>
-</div>
-</font>
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.8 Exercise</b>:
-Type up 
-the following lines of code in
-    <font color="#000000"><tt>my_variable_example7.py</tt></font>:
-    <font size="+2">
-    <font color="#000000"><pre>
+Type up the following lines of code in `my_variable_example7.py`:
+```python
 i = 5
 j = 6      
 
-<font color="#dc143c"># Add code between here</font>
+# Add code between here
 
-<font color="#dc143c"># and here.</font>
+# and here.
 
-print(i)   <font color="#dc143c"># should print 6</font>
-print(j)   <font color="#dc143c"># should print 5</font>
-    </pre></font>
-    </font>
-Add some lines of code with the objective of swapping the 
-values in variables i and j. You will need a third variable to
-be used as a holding place. Thus, without directly assigning the 
-number 5 to j or the number 6 to i, write code using a third 
-variable to achieve the desired swapping of values.
-</font>
+print(i)   # should print 6
+print(j)   # should print 5
+```
+<span style="color:#8B4513;">Add some lines of code with the objective of swapping the  values in variables i and j. You will need a third variable to be used as a holding place. Thus, without directly assigning the  number 5 to j or the number 6 to i, write code using a third variable to achieve the desired swapping of values.</span>
 
+## 4.2 Integer operators
+Let's examine the familiar <em>arithmetic operators</em> `+, -, *, /`
 
+- Addition: `+`
+- Subtraction: `-`
+- Multiplication: `*`
+- Division: `/`
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.9 Video</b>:
-<br>
-<div style="border:1px solid black; width:300; height: 200">
-<video height="200" width="300" src="media/u0-mod4.9.mp4" type="video/mp4" controls="controls"></video>
-</div>
-</font>
-
-
-<a name="m4.2">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<hr><p><font color="#000080">
-<h2>
-4.2 &nbsp;&nbsp; Integer operators
-</h2>
-</font><font face="book antiqua, Georgia" color="#000060">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-
-
-<p> Let's examine the familiar <em>arithmetic operators</em>
-    <font color="#000000"><tt>+, -, *, /</tt></font>
-  <ul>
-  <li> Addition: <font color="#000000"><tt>+</tt></font>
-  <p><li> Subtraction: <font color="#000000"><tt>-</tt></font>
-  <p><li> Multiplication: <font color="#000000"><tt>*</tt></font>
-  <p><li> Division: <font color="#000000"><tt>/</tt></font>
-
-  <p><li> Consider this example with addition:
-    <font size="+2">
-    <font color="#000000"><pre>
+- Consider this example with addition:
+```python
 i = 5
 j = 6
 k = i + j
 print(k)
-    </pre></font>
-    </font>
+```
 
+- What happens during execution:
+![](../../../media/units/unit0/module4/binary2.PNG)
+  - The <em>values</em> in `i` and `j` are added.
+  - The resulting <em>value</em> goes into variable `k`.
+- A long-ish way of saying this aloud:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+  &rArr; "`k` is assigned the sum of the values of `i` and `j`"
+- A shorter way:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+      &rArr; "`k` is assigned `i` plus `j`"
 
-  <p><li> What happens during execution:
-         <p><img height width="50%" src="figures/binary2.PNG"><p>
-      <ul>
-      <li> The <em>values</em> in <font color="#000000"><tt>i</tt></font> and <font color="#000000"><tt>j</tt></font>
-           are added.
-      <li> The resulting <em>value</em> goes into
-           variable <font color="#000000"><tt>k</tt></font>.
-      </ul>
-
-  <p><Li> A long-ish way of saying this aloud:
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
-      &rArr;
-       "<font color="#000000"><tt>k</tt></font> is assigned the sum of the values of 
-      <font color="#000000"><tt>i</tt></font> and <font color="#000000"><tt>j</tt></font>"
-
-  <p><li> A shorter way:
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
-      &rArr;
-       "<font color="#000000"><tt>k</tt></font> is assigned <font color="#000000"><tt>i</tt></font> plus <font color="#000000"><tt>j</tt></font>"
-
-  <p><li> Here's an example with multiplication and division:      
-    <font size="+2">
-    <font color="#000000"><pre>
+- Here's an example with multiplication and division:      
+```python
 i = 5
 j = 6
 k = i * j
-print(k)      <font color="#dc143c"># prints 30</font>
+print(k)      # prints 30
 m = i / j
-print(m)      <font color="#dc143c"># what does this print?</font>
+print(m)      # what does this print?
 n = i // j
-print(n)      <font color="#dc143c"># what does this print?</font>
-    </pre></font>
-    </font>
-
-  </ul>
+print(n)      # what does this print?
+```
 
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.10 Exercise</b>:
-Type up the above in 
-    <font color="#000000"><tt>my_variable_example8.py</tt></font>.
-What is the value of n printed? Change i to 21. What is the value of n printed?
-Answer in <font color="#000000"><tt>module4.pdf</tt></font>.
-Submit your code with i set to 5.
-</font>
+###### <span style="color:#8B4513;">**4.10 Excercise:** Type up the above in `my_variable_example8.py`. What is the value of n printed? Change i to 21. What is the value of n printed? Answer in `module4.pdf`. Submit your code with i set to 5.</span>
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
+
 Integer division:
-  <ul>
-  <li> In math, we learned that 1/4 = 0.25 and 21/6 = 3.5.
-  <p><li> This remains true in Python when we do something like
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
-      i = 21
-      j = 6
-      m = i / j
-  </pre></font>
-  <p><li> On the other hand, if we wish to perform 
-      <em>integer division</em>, we can use the 
-  integer division operator:
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
-      i = 21
-      j = 6
-      m = i // j
-  </pre></font>
+- In math, we learned that 1/4 = 0.25 and 21/6 = 3.5.
 
-  <p><li> That is, the result is truncated <em>down</em> to the
-  nearest integer.
-     <ul>
-     <li> Example: 3 // 2  becomes 1 because 1.5 gets truncated to 1.
-     <li> Example: 15 // 4  becomes 3 because 3.75 gets truncated to 3.
-     </ul>
+- This remains true in Python when we do something like
+  ```python
+        i = 21
+        j = 6
+        m = i / j
+  ```
 
-  <p><li> Integer division is useful when we want to do integer
-  arithmetic. 
-  </ul>
+- On the other hand, if we wish to perform <em>integer division</em>, we can use the integer division operator:
+  ```python
+        i = 21
+        j = 6
+        m = i // j
+  ```
 
+- That is, the result is truncated <em>down</em> to the nearest integer.
+  - **Example:** 3 // 2  becomes 1 because 1.5 gets truncated to 1.
+  - **Example:** 15 // 4  becomes 3 because 3.75 gets truncated to 3.
 
-<a name="m4.3">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<hr><p><font color="#000080">
-<h2>
-4.3 &nbsp;&nbsp; Expressions and operator-precedence
-</h2>
-</font><font face="book antiqua, Georgia" color="#000060">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
+- Integer division is useful when we want to do integer arithmetic. 
 
-
-<p> Consider the following program:
-    <font size="+2">
-    <font color="#000000"><pre>
+## 4.3 Expressions and operator-precedence
+- Consider the following program:
+```python
 i = 5
 j = 6
 k = i*j - (i+1)*(j-1)
 print(k)
-    </pre></font>
-    </font>
+```
 
+###### <span style="color:#8B4513;">**4.11 Excercise:** Type up the above program in `my_expression_example.py`. What does it print? Answer in `module4.pdf`.</span>
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.11 Exercise</b>:
-Type up the above program in 
-  <font color="#000000"><tt>my_expression_example.py</tt></font>
-What does it print?
-<!-- 0 -->
-Answer in <font color="#000000"><tt>module4.pdf</tt></font>.
-</font>
+About expressions:
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<p> About expressions:
-  <ul>
-  <li> An expression combines constants (like <font color="#000000"><tt>1</tt></font>, above), and
-       variables using operators.
+- An expression combines constants (like `1`, above), and variables using operators.
+- Example: `i*j - (i+1)*(j-1)`.
+- The above expression is really equivalent to: `(i*j) - ((i+1) * (j-1))`. Here, we added some clarifying parentheses.
+- Operator <em>precedence</em> allows us to reduce the number of clarifying parentheses.
+- Python precedence follows standard precedence in math:  `/, *, +, -`.
+- You might remember the precedence via the acronyms **BODMAS** or **PEMDAS**. (Look it up.)
+- The above expression is NOT the same as: `i*j - i+1*j-1`.
+- Also, note the change of whitespace:
+  - We could have written `k = i * j - (i + 1) * (j - 1)`.
+  - But `k = i*j - (i+1)*(j-1)` is easier to read.
 
-  <p><li> Example: 
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
-      <big><font color="#000000"><tt>i*j - (i+1)*(j-1)</tt></font></big>.
-
-  <p><li> The above expression is really equivalent to:
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
-        <big><font color="#000000"><tt>(i*j) - ((i+1) * (j-1))</tt></font></big>.
-     <br>
-     Here, we added some clarifying parentheses.
-
-  <p><Li> Operator <em>precedence</em> allows us to reduce the
-      number of clarifying parentheses.
-
-  <p><li> Python precedence follows standard precedence in math:
-          <big><font color="#000000"><tt>/, *, +, -</tt></font></big>.
-
-  <p><li> You might remember the precedence via the acronyms
-    BODMAS or PEMDAS. (Look it up.)
-
-  <p><li> The above expression is NOT the same as:
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
-      <big><font color="#000000"><tt>i*j - i+1*j-1</tt></font></big>.
-
-  <p><li> Also, note the change of whitespace:
-     <ul>
-     <li> We could have written
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
-      <big><font color="#000000"><tt>k = i * j - (i + 1) * (j - 1)</tt></font></big>.
-     <li> But 
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
-      <big><font color="#000000"><tt>k = i*j - (i+1)*(j-1)</tt></font></big>.
-     <br> is easier to read.
-     </ul>
-
-  </ul>
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
 Let's dive a bit deeper into precedence and do some examples:
-  <ul>
-  <li> We'll use the four operators: add or +, subtraction or -,
-   multiplication or *, and division or /.
 
-  <p><li> We'll use plain ol' numbers to illustrate.
+- We'll use the four operators: add or +, subtraction or -, multiplication or *, and division or /.
+- We'll use plain ol' numbers to illustrate.
 
-  <p><li>Note: The key to working them out is to use <b>extra</b> 
-  parentheses in the right way.
+:::{.callout-tip}
+The key to working them out is to use <b>extra</b> parentheses in the right way.
+:::
 
-  <p><li> The PEMDAS rule: 
-     <ul>
-     <li> First apply Parentheses, then Exponents, then 
-     Multiplication and Division, and then Addition and Subtraction.
-     </ul>
+- The PEMDAS rule: 
+  - First apply Parentheses, then Exponents, then Multiplication and Division, and then Addition and Subtraction.
 
-  <p><li> Example: 3 + 2*4
-     <ul>
-     <li> Here, we apply 2*4 to give 8
-     <li> Then do 3 + 8 to give 11.
-     <li> Applying extra parenthesis to 3 + (2*4) makes it clear.
-     </ul>
+- Example: 3 + 2*4
+  - Here, we apply 2*4 to give 8
+  - Then do 3 + 8 to give 11.
+  - Applying extra parenthesis to 3 + (2*4) makes it clear.
 
-  <p><li> Example: 3*(24/3-2*3)
-     <ul>
-     <li> First, work out what's inside the parens (the P of PEMDAS):
-         <ul>
-         <li> Do div to 24/3 and mult to 2*3 to get (8 - 6)
-         <li> This gives (2)
-         </ul>
-     <li> Now go out and see that we need to do 3*(2)
-     <li> Which gives 6.
-     <li> Using extra parens and spacing makes it clear:
-          3 * ( (24/3) - (2*3) )
-     </ul>
+- Example: 3*(24/3-2*3)
+  - First, work out what's inside the parens (the P of PEMDAS):
+    - Do div to 24/3 and mult to 2*3 to get (8 - 6)
+    - This gives (2)
+  - Now go out and see that we need to do 3*(2)
+  - Which gives 6.
+  - Using extra parens and spacing makes it clear: 3 * ( (24/3) - (2*3) )
 
-  <p><li> Example:   1 +  ( (4 - 1) * 8) / 6
-      <ul>
-      <li> Do the innermost parens first: (4 -1) = 3
-      <li> Which results in 1 + (3 * 8) / 6
-      <li> Then the next parens to give: 1 + 24/6
-      <li> Then the D in PEMDAS: 1 + 4
-      <li> Result: 5
-      </ul>
-  </ul>
+- Example:   1 +  ( (4 - 1) * 8) / 6
+  - Do the innermost parens first: (4 -1) = 3
+  - Which results in 1 + (3 * 8) / 6
+  - Then the next parens to give: 1 + 24/6
+  - Then the D in PEMDAS: 1 + 4
+  - Result: 5
 
+###### <span style="color:#8B4513;">**4.12 Excercise:** What does the expression `i*j - i+1*j-1` evaluate to when `i=7` and `j=3`? Answer in `module4.pdf`.</span>
 
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.12 Exercise</b>:
-What does the expression <font color="#000000"><tt>i*j - i+1*j-1</tt></font>
-evaluate to when <font color="#000000"><tt>i=7</tt></font> and <font color="#000000"><tt>j=3</tt></font>?
-<!-- 16 -->
-Answer in <font color="#000000"><tt>module4.pdf</tt></font>.
-</font>
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.13 Video</b>:
-<br>
-<div style="border:1px solid black; width:300; height: 200">
-<video height="200" width="300" src="media/u0-mod4.13.mp4" type="video/mp4" controls="controls"></video>
-</div>
-</font>
-
-
-
-<a name="m4.4">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<hr><p><font color="#000080">
-<h2>
-4.4 &nbsp;&nbsp; More about expressions and assignment
-</h2>
-</font><font face="book antiqua, Georgia" color="#000060">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
+## 4.4 More about expressions and assignment
 The <em>remainder</em> operator:
-  <ul>
-  <li> The expression 10 % 3 is "the remainder when 10 is divided by 3".
 
-  <p><li> Thus 10 % 3 is 1.
+- The expression 10 % 3 is "the remainder when 10 is divided by 3".
+- Thus 10 % 3 is 1.
+- Similarly 11 % 4 is 3.
+- The remainder operator is sometimes called <em>modulo</em>, as in "ten modulo 3 is 1"
 
-  <p><li> Similarly 11 % 4 is 3.
-
-  <p><li> The remainder operator is sometimes called <em>modulo</em>,
-  as in "ten modulo 3 is 1"
-  </ul>
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
 Consider this example:
-    <font size="+2">
-    <font color="#000000"><pre>
+```python
 i = 14
 j = -6
 k = i % (-j)
 print(k)
-    </pre></font>
-    </font>
+```
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.14 Exercise</b>:
-Can you mentally execute and identify what's printed?
-Type up the above in 
-  <font color="#000000"><tt>my_expression_example2.py</tt></font>
-to confirm. Report the value in 
-  <font color="#000000"><tt>module4.pdf</tt></font>
-</font>
+###### <span style="color:#8B4513;">**4.14 Excercise:** Can you mentally execute and identify what's printed? Type up the above in `my_expression_example2.py` to confirm. Report the value in `module4.pdf`.</span>
 
+One way to know whether one number cleanly divides another is to apply the `%` (remainder) operator.
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-One way to know whether one number cleanly divides another
-is to apply the 
-<font color="#000000"><tt>%</tt></font> (remainder)
-operator.
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
 Consider this program:
-    <font size="+2">
-    <font color="#000000"><pre>
+```python
 j = 10
 for i in range(1, j):
     k = j % i
     print(k)
-    </pre></font>
-    </font>
+```
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.15 Exercise</b>:
-Can you mentally execute and identify what's printed?
-Type up the above in 
-  <font color="#000000"><tt>my_expression_example3.py</tt></font>
-to confirm. Then change j to 11 and run the program.
-Report the output in each case in
-  <font color="#000000"><tt>module4.pdf</tt></font>
-When submitting the code, leave j as 11.
-</font>
+###### <span style="color:#8B4513;">**4.15 Excercise:** Can you mentally execute and identify what's printed? Type up the above in `my_expression_example3.py` to confirm. Then change j to 11 and run the program. Report the output in each case in `module4.pdf`. When submitting the code, leave j as 11.</span>
 
+:::{.callout-note}
+- In the above exercise we systematically obtained the remainder when dividing 10 (the value of j) by every possible number less than 10.
+- Whenever the output is 0 in some iteration, we know 10 % i is 0 for that iteration.
+- This means i divides 10 cleanly (with no remainder).
+- For example 10 % 5 is 0.
+- Whenever a number j has nothing less than j that divides j cleanly, the number is called a <em>prime number</em>.
+- Examples of prime numbers: 7 and 11.
+- Examples of non-prime numbers: 10 and 15
+- The notion of a prime number may seem like an esoteric topic, suitable for a dinner conversation with mathematicians. But it turns out to have immense practical value: much of cryptography is based on properties of numbers that can be cleanly divided by only two prime numbers. 
+:::
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-Note:
-  <ul>
-  <li> In the above exercise we systematically obtained the
-  remainder when dividing 10 (the value of j) by every possible 
-  number less than 10.
-  <p><li> Whenever the output is 0 in some iteration, we know 10 % i is 0 
-  for that iteration.
-  <p><li> This means i divides 10 cleanly (with no remainder).
-  <p><li> For example 10 % 5 is 0.
-  <p><li> Whenever a number j has nothing less than j that divides j
-  cleanly, the number is called a <em>prime number</em>.
-  <p><li> Examples of prime numbers: 7 and 11.
-  <p><li> Examples of non-prime numbers: 10 and 15
-  <p><li> The notion of a prime number may seem like an esoteric
-  topic, suitable for a dinner conversation with mathematicians. 
-  But it turns out to have immense practical value: much of
-  cryptography is based on properties of numbers that can
-  be cleanly divided by only two prime numbers. 
-  </ul>
+Now we'll look at a strange (initially) but very useful type of assignment:
 
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.16 Video</b>:
-<br>
-<div style="border:1px solid black; width:300; height: 200">
-<video height="200" width="300" src="media/u0-mod4.16.mp4" type="video/mp4" controls="controls"></video>
-</div>
-</font>
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<p> Now we'll look at a strange (initially) but very useful type of 
-assignment:
-  <ul>
-  <li> Consider this program:
-    <font size="+2">
-    <font color="#000000"><pre>
+Consider this program:
+```python
 i = 8
 i = i + i/2
 print(i)
-    </pre></font>
-    </font>
+```
 
-  <p><li> Prior to evaluating the expression, <font color="#000000"><tt>i</tt></font> has value <font color="#000000"><tt>8</tt></font>.
+- Prior to evaluating the expression, `i` has value `8`.
+- On the right side, the current value of `i` is used to <em>evaluate</em> the expression.
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+      &rArr; Thus, the expression evaluates to `(8 + 8/2) = 12`.
+- This evaluated value then goes into variable `i`.
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+      &rArr; After the assignment, `i` has the value `12`.
 
-  <p><li> On the right side, the current value of <font color="#000000"><tt>i</tt></font> is used
-      to <em>evaluate</em> the expression.
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
-      &rArr; Thus, the expression evaluates to <font color="#000000"><tt>(8 + 8/2) = 12</tt></font>.
-
-  <p><li> This evaluated value then goes into variable <font color="#000000"><tt>i</tt></font>.
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
-      &rArr; After the assignment, <font color="#000000"><tt>i</tt></font> has the value <font color="#000000"><tt>12</tt></font>.
-  </ul>
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<p> Let's use this to compute the sum of numbers from 0 to 10:
-    <font size="+2">
-    <font color="#000000"><pre>
+Let's use this to compute the sum of numbers from 0 to 10:
+```python
 s = 0
 for i in range(0, 11):
     s = s + i
 print(s)
-    </pre></font>
-    </font>
+```
 
+###### <span style="color:#8B4513;">**4.17 Excercise:** Trace the changing values of `s` in the above program using the following kind of table:</span>
+![](../../../media/units/unit0/module4/tracetable.PNG)
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.17 Exercise</b>:
-Trace the changing values of 
-   <font color="#000000"><tt>s</tt></font> in the above program
-using the following kind of table:
-         <p><img src="figures/tracetable.PNG"><p>
-Write up the table in 
-<font color="#000000"><tt>module4.pdf</tt></font>.
-Note: in this and other tracing exercises involving a table, 
-you can simply draw the table by hand and include a picture.
-(That is, you don't have to spend time on making tables inside Word.)
-</font>
+<span style="color:#8B4513;">Write up the table in `module4.pdf`.</span>
 
+:::{.callout-note}
+In this and other tracing exercises involving a table, you can simply draw the table by hand and include a picture. (That is, you don't have to spend time on making tables inside Word.)
+:::
 
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
 Consider this program:
-    <font size="+2">
-    <font color="#000000"><pre>
+```python
 N = 5
 s = 0
 for i in range(1, N+1):
     s = s + (2*i - 1)
 print(s)
-    </pre></font>
-    </font>
+```
+- The program prints the sum of the first N odd numbers.
+- Recall from earlier that as i goes through 1, 2, 3, ... (2*i-1) evaluates as successive odd numbers 1, 3, 5, ...
 
-  <ul>
-  <li> The program prints the sum of the first N odd numbers.
-  <li> Recall from earlier that as i goes through 1, 2, 3, ... 
-    (2*i-1) evaluates as successive odd numbers 1, 3, 5, ...
-  </ul>
+###### <span style="color:#8B4513;">**4.18 Excercise:** Trace (in `module4.pdf`) the values of `i` and `s` in the program above. Then, in `my_expression_example4.py`, edit the code to create an outer loop that varies N from 1 to 10. That is, make N a new for-loop variable that ranges between 1 and 10 (inclusive), and ensure that you properly indent the inner (nested) loop that uses i. What pattern do you observe in the output?
+</span>
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.18 Exercise</b>:
-Trace (in 
-<font color="#000000"><tt>module4.pdf</tt></font>)
-the values of <font color="#000000"><tt>i</tt></font> and 
-<font color="#000000"><tt>s</tt></font> 
-in the program above. 
-Then, in
-  <font color="#000000"><tt>my_expression_example4.py</tt></font>,
-edit the code to create an outer loop that varies N from
-1 to 10. That is, make N a new for-loop variable that
-ranges between 1 and 10 (inclusive), and ensure that you properly indent
-the inner (nested) loop that uses i. 
-What pattern do you observe in the output?
-</font>
+## 4.5 Problem solving and pseudocode
+Suppose we were given the following problem: <em>write a program to print the first <i>N</i> odd numbers</em>.
 
+We'll solve it in the following steps:
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.19 Video</b>:
-<br>
-<div style="border:1px solid black; width:300; height: 200">
-<video height="200" width="300" src="media/u0-mod4.19.mp4" type="video/mp4" controls="controls"></video>
-</div>
-</font>
+- First, let's sketch out a "program-like" outline (not a real program):
+  ```python
+  N = 10      
+  for i ranging from 1 to N:
+      Calculate the i-th odd number
+      Print it
+  ```
 
-
-
-<a name="m4.5">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<hr><p><font color="#000080">
-<h2>
-4.5 &nbsp;&nbsp; Problem solving and pseudocode
-</h2>
-</font><font face="book antiqua, Georgia" color="#000060">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-
-<p> Suppose we were given the following problem:
-<em>write a program to print the first <i>N</i> odd numbers</em>.
-
-<p> We'll solve it in the following steps:
-  <ul>
-  <li> First, let's sketch out a "program-like" outline (not a real program):
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
-       N = 10      
-       for i ranging from 1 to N:
-           Calculate the i-th odd number
-           Print it
-  </pre></font>
-
-
-  <p><li> This kind of rough outline is called <em>pseudocode</em>
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
-      &rArr; We're meant to do this on paper, prior to programming.
-
-  <p><Li> Pseudocode looks a little like code, but is half-English.
-
-  <p><li> For any given <font color="#000000"><tt>i</tt></font>, the <font color="#000000"><tt>i</tt></font>-th odd number is:
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
-      <big><font color="#000000"><tt>2*i - 1</tt></font></big>.
-        
-  <p><Li> Now let's put this together into a program:
-    <font size="+2">
-    <font color="#000000"><pre>
+- This kind of rough outline is called <em>pseudocode</em>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+  &rArr; We're meant to do this on paper, prior to programming.
+- Pseudocode looks a little like code, but is half-English.
+- For any given `i`, the `i`-th odd number is:
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+  `2*i - 1`.
+- Now let's put this together into a program:
+```python
 N = 10
 for i in range(1, N+1):
     k = (2*i - 1)
     print(k)
-    </pre></font>
-    </font>
-  </ul>
+```
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.20 Exercise</b>:
-Trace (in <font color="#000000"><tt>module4.pdf</tt></font>)
-the values of <font color="#000000"><tt>i</tt></font> and 
-<font color="#000000"><tt>k</tt></font> 
-in the program above. This is what you should be able to do
-mentally during mental execution.
-</font>
+###### <span style="color:#8B4513;">**4.20 Excercise:** Trace (in `module4.pdf<`) the values of `i<` and `k<` in the program above. This is what you should be able to domentally during mental execution.</span>
 
+## 4.6 A problem-solving example with variables and nested for-loops
+We'll solve the following problem: <em>for any given <i>n</i>, compute</em>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+  1 + 2<sup>1</sup> + 2<sup>2</sup> 
+  + 2<sup>3</sup> + ... + 2<sup>n</sup> 
 
+That is, the sum of consecutive powers of 2.
 
+As a first step, let's see if we can use a loop to compute a single power of 2:
+  
+- Suppose we wish to compute <i>2<sup>k</sup></i> for some <i>k</i>.
 
-
-
-<a name="m4.6">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<hr><p><font color="#000080">
-<h2>
-4.6 &nbsp;&nbsp; A problem-solving example with variables and nested for-loops
-</h2>
-</font><font face="book antiqua, Georgia" color="#000060">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-
-
-<p> We'll solve the following problem:
-   <em>for any given <i>n</i>, compute</em>
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
-      <big> 1 + 2<sup>1</sup> + 2<sup>2</sup> 
-	    + 2<sup>3</sup> + ... + 2<sup>n</sup> 
-      </big>
-
-<p> That is, the sum of consecutive powers of 2.
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<p> As a first step, let's see if we can use a loop to
-compute a single power of 2:
-  <ul>
-  <li> Suppose we wish to compute <big><i>2<sup>k</sup></i></big> for some 
-       <i>k</i>.
-
-  <p><li> We know that 
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
-       <big><i>2<sup>k</sup>
-	   =  2*2*2 ... *2</i></big> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (k times)
-
-  <p><li> Thus, what we could is:
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+- We know that 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+  <i>2<sup>k</sup>
+  =  2*2*2 ... *2</i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (k times)
+- Thus, what we could is:
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
       Start with p = 1
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
       Multiply by 2: p = p * 2
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
       Multiple that result by 2: p = p * 2
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
       ... etc
-
-  <p><li> In pseudocode:
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
-       p = 1  
-       for i ranging from 1 to k:
-          p = p * 2
-    </pre></font>
-
-  <p><li> Let's put this into code and test:
-    <font size="+2">
-    <font color="#000000"><pre>
-k = 10
-p = 1
-for i in range(1, k+1):
+- In pseudocode:
+  ```python
+  p = 1  
+  for i ranging from 1 to k:
     p = p * 2
-print(p)
-    </pre></font>
-    </font>
+  ```
 
-  </ul>
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.21 Exercise</b>:
-Trace the changing values of <font color="#000000"><tt>p</tt></font> 
-in the above program using a table 
-(in <font color="#000000"><tt>module4.pdf</tt></font>).
-Then, type up the above program in 
-   <font color="#000000"><tt>my_powerof2.py</tt></font>
-to confirm.
-</font>
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.22 Video</b>:
-<br>
-<div style="border:1px solid black; width:300; height: 200">
-<video height="200" width="300" src="media/u0-mod4.22.mp4" type="video/mp4" controls="controls"></video>
-</div>
-</font>
+- Let's put this into code and test:
+  ```python
+  k = 10
+  p = 1
+  for i in range(1, k+1):
+      p = p * 2
+  print(p)
+  ```
 
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-  <ul>
-  <li> Next, let's look at pseudocode for the sum of powers (our
-  original problem):
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
-       s = 1    
-       for k ranging from 1 to n:
-           Compute k-th power of 2
-           Accumulate in s
-       Print s
-    </pre></font>
+###### <span style="color:#8B4513;">**4.21 Excercise:** Trace the changing values of `p` in the above program using a table (in `module4.pdf`). Then, type up the above program in `my_powerof2.py` to confirm.</span>
 
-  <p><Li> Now, let's put this all together:
-    <font size="+2">
-    <font color="#000000"><pre>
-n = 5
-s = 1
-for k in range(1, n+1):
-    p = 1
-    for i in range(1, k+1):
-        p = p * 2
-    s = s + p
-print(s)
-    </pre></font>
-    </font>
+- Next, let's look at pseudocode for the sum of powers (our original problem):
+  ```python
+  s = 1    
+  for k ranging from 1 to n:
+      Compute k-th power of 2
+      Accumulate in s
+  Print s
+  ```
+- Now, let's put this all together:
+  ```python
+  n = 5
+  s = 1
+  for k in range(1, n+1):
+      p = 1
+      for i in range(1, k+1):
+          p = p * 2
+      s = s + p
+  print(s)
+  ```
 
-  <p><li> Let's point out a few things.
-     <ul>
-     <li> First, let's have our eyes look over the outer-loop and not
-     focus on the details of the inner loop:
-         <p><img height width="60%" src="figures/power.png"><p>
+- Let's point out a few things.
+  - First, let's have our eyes look over the outer-loop and not focus on the details of the inner loop:
+  ![](../../../media/units/unit0/module4/power.png)
+  - Now look inside the body of the outerloop:
+  ![](../../../media/units/unit0/module4/power2.png)
+  - Try to get a feel for how it executes by looking at the first iteration of the outerloop:
+  ![](../../../media/units/unit0/module4/power3.png)
 
-     <li> Now look inside the body of the outerloop:
-         <p><img height width="60%" src="figures/power2.png"><p>
+###### <span style="color:#8B4513;">**4.23 Excercise:** Make a table with columns labeled `k, i, p` and `s` and trace the program, filling in the table step-by-step (in `module4.pdf`).</span>
 
-     <li> Try to get a feel for how it executes by looking at the
-     first iteration of the outerloop:
-         <p><img height width="60%" src="figures/power3.png"><p>
-     </ul>
+###### <span style="color:#8B4513;">**4.25 Excercise:** Try a few other values of `n`, e.g., `n=3` or `n=4`. Try to guess the mathematical formula for 1 + 2<sup>1</sup> + 2<sup>2</sup> + 2<sup>3</sup> + ... + 2<sup>n</sup> (in `module4.pdf`)</span>
 
-  </ul>
+:::{.callout-tip}
+Add 1 to the sum-of-powers of 2.
+:::
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.23 Exercise</b>:
-Make a table with columns labeled <font color="#000000"><tt>k, i, p</tt></font>
-and <font color="#000000"><tt>s</tt></font> and trace the program, filling
-in the table step-by-step 
-(in <font color="#000000"><tt>module4.pdf</tt></font>).
-</font>
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.24 Video</b>:
-<br>
-<div style="border:1px solid black; width:300; height: 200">
-<video height="200" width="300" src="media/u0-mod4.24.mp4" type="video/mp4" controls="controls"></video>
-</div>
-</font>
-
-
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.25 Exercise</b>:
-Try a few other values of <font color="#000000"><tt>n</tt></font>, e.g., <font color="#000000"><tt>n=3</tt></font>
-or <font color="#000000"><tt>n=4</tt></font>. Try to guess the mathematical formula for
-      <big> 1 + 2<sup>1</sup> + 2<sup>2</sup> 
-	    + 2<sup>3</sup> + ... + 2<sup>n</sup>.
-      </big>
-(in
-<font color="#000000"><tt>module4.pdf</tt></font>)
-Hint: add 1 to the sum-of-powers of 2.
-</font>
-
-
-<a name="m4.7">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<hr><p><font color="#000080">
-<h2>
-4.7 &nbsp;&nbsp; Shortcut operators
-</h2>
-</font><font face="book antiqua, Georgia" color="#000060">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-
-<p> Recall the integer-sum program:
-    <font size="+2">
-    <font color="#000000"><pre>
+## 4.7 Shortcut operators
+Recall the integer-sum program:
+```python
 s = 0
 for i in range(0, 11):
     s = s + i
 print(s)
-    </pre></font>
-    </font>
+```
 
-<p> We can write this using the "shortcut addition" operator += as follows:
-    <font size="+2">
-    <font color="#000000"><pre>
+We can write this using the "shortcut addition" operator += as follows:
+```python
 s = 0
 for i in range(0, 11):
     s += i
 print(s)
-    </pre></font>
-    </font>
+```
+Thus, `s += i` is the same as `s = s + i`
 
-<p> Thus, 
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
-      <font color="#000000"><tt>s += i</tt></font>
-<br> is the same as
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
-      <font color="#000000"><tt>s = s + i</tt></font>
+One can read `s += i` as "add i to what's already in s, and store the result in s".
 
-<p> One can read
-      <font color="#000000"><tt>s += i</tt></font>
-as "add i to what's already in s, and store the result in s".
+This can be applied to the other operators as well:
+```python
+s -= i         # Same as s = s - i
+p *= 2         # Same as p = p * 2
+d /= 2         # Same as d = d / 2
+```
+###### <span style="color:#8B4513;">**4.26 Excercise:** In `my_sum_powerof2.py` rewrite the example code that computes the sum of power of 2, using shortcut operators where possible.</span>
 
-<p> This can be applied to the other operators as well:
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
-       s -= i         <font color="#dc143c"># Same as s = s - i</font>
-       p *= 2         <font color="#dc143c"># Same as p = p * 2</font>
-       d /= 2         <font color="#dc143c"># Same as d = d / 2</font>
-  </pre></font>
+## 4.8 When things go wrong
+As you might imagine, there are many ways to inadvertently create errors.
 
+In each case below, first try to identify the error just by reading. Then, type up the program to confirm.
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.26 Exercise</b>:
-In 
-   <font color="#000000"><tt>my_sum_powerof2.py</tt></font>
-rewrite the example code that computes the sum of power of 2,
-using shortcut operators where possible.
-</font>
-
-
-
-<a name="m4.8">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<hr><p><font color="#000080">
-<h2>
-4.8 &nbsp;&nbsp; When things go wrong
-</h2>
-</font><font face="book antiqua, Georgia" color="#000060">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-
-
-<p> As you might imagine, there are many ways to inadvertently
-create errors.
-
-<p> In each case below, first try to identify the error just
-by reading. Then, type up the program to confirm.
-
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.27 Exercise</b>:
-What is the error in this program?
-    <font size="+2">
-    <font color="#000000"><pre>
+###### <span style="color:#8B4513;">**4.27 Excercise:** What is the error in this program?</span>
+```python
 i = j
 j = 4
 print(i)
-    </pre></font>
-    </font>
-Type it up in 
-      <font color="#000000"><tt>error1.py</tt></font>
-to confirm.
-</font>
+```
+<span style="color:#8B4513;">Type it up in `error1.py` to confirm.</span>
 
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.28 Exercise</b>:
-What is the error in this program?
-    <font size="+2">
-    <font color="#000000"><pre>
+###### <span style="color:#8B4513;">**4.28 Excercise:** What is the error in this program?</span>
+```python
 i = 4
 j = 3
 k = ( (i + j) * (i - j) / 2
 print(k)
-    </pre></font>
-    </font>
-Type it up in 
-      <font color="#000000"><tt>error2.py</tt></font>
-to confirm.
-</font>
+```
+<span style="color:#8B4513;">Type it up in `error2.py` to confirm.</span>
 
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
 We'll now see a different kind of error:
-    <font size="+2">
-    <font color="#000000"><pre>
+```python
 n = 5
 for i in range(1, n+1):
     k = n / (n - i)
     print(k)
-    </pre></font>
-    </font>
+```
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.29 Exercise</b>:
-Type it up in 
-      <font color="#000000"><tt>error3.py</tt></font>
-and see. Then trace through the program at each iteration
-in 
-      <font color="#000000"><tt>module4.pdf</tt></font>.
-</font>
+<span style="color:#8B4513;">Type it up in `error3.py` to confirm. Then trace through the program at each iteration in `module4.pdf`.</span>
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
 The above is an example of a <em>runtime error</em>:
-  <ul>
-  <li> The code itself is correctly written in that there
-   are no issues with breaking the rules of the language.
-  <p><li> However, when i is 0, you can't divide by 0.
-  <p><li> This causes a runtime error, meaning the program
-   runs fine until the particular occurence of divide-by-zero.
-  </ul>
 
+- The code itself is correctly written in that there are no issues with breaking the rules of the language.
+- However, when i is 0, you can't divide by 0.
+- This causes a runtime error, meaning the program runs fine until the particular occurence of divide-by-zero.
 
-<a name="m4.9">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<hr><p><font color="#000080">
-<h2>
-4.9 &nbsp;&nbsp; Python files vs module pdf
-</h2>
-</font><font face="book antiqua, Georgia" color="#000060">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
+## 4.9 Python files vs module pdf
+**Important:**
 
+- By now it should be clear what you type into a Python file (ends with `.py`) verses what goes into your module pdf.
+- Code goes into the specified Python file (example: `error3.py`) and all other answers go into your module pdf (numbered by module#, such as: `module4.pdf`).
+- Your module pdf (a single pdf per module) will have all the non-coding answers for a module. Whereas, a module can have many different Python files.
+- Thus, in future modules, we will only specify the Python filename with the understanding that you know how to name your module pdf.
 
-<b>Important:</b>
-  <ul>
-  <li> By now it should be clear what you type into
-  a Python file (ends with 
-      <font color="#000000"><tt>.py</tt></font>)
-  verses what goes into your module pdf.
+## 4.10 A peek at the future
+Let's now revisit some earlier code <a href="../../../media/units/unit0/module1/hello_gui.py" download >**hello_gui.py**</a> and apply what've learned about integers, arithmetic, and for-loops:
+![](../../../media/units/unit0/module4/for-loop.png)
 
-  <p><li> Code goes into the specified Python file
-  (example:
-      <font color="#000000"><tt>error3.py</tt></font>)
-  and all other answers go into your 
-  module pdf
-  (numbered by module#, such as: 
-      <font color="#000000"><tt>module4.pdf</tt></font>).
-
-  <p><li> Your module pdf (a single pdf per module)
-  will have all the non-coding answers for a module.
-  Whereas, a module can have many different Python files.
-
-  <p><li> Thus, in future modules, we will only specify
-  the Python filename with the understanding that you know
-  how to name your module pdf.
-  </ul>
-
-
-
-
-<a name="m4.10">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<hr><p><font color="#000080">
-<h2>
-4.10 &nbsp;&nbsp; A peek at the future
-</h2>
-</font><font face="book antiqua, Georgia" color="#000060">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-
-
-<p> Let's now revisit some earlier code 
-(<b><a href="examples/hello_gui.py">hello_gui.py</a></b>)
-and apply what've learned about integers, arithmetic, and for-loops:
-  <p><img height width="70%" src="figures/for-loop.png"><p>
-
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
 Next, consider this program that uses a for-loop to plot
 points:
-    <font size="+2">
-    <font color="#000000"><pre>
+```python
 from drawtool import DrawTool 
 import math
 
@@ -1095,123 +596,48 @@ for i in range(0, 6):
     dt.draw_point(i, j)
 
 dt.display()
-    </pre></font>
-    </font>
+```
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.30 Exercise</b>:
-Download <b><a href="../../useful/drawtool.py">drawtool.py</a></b>
-into your module4 folder. Then, 
-type up the above in
-      <font color="#000000"><tt>my_plot_points.py</tt></font>,
-and run.
-</font>
+###### <span style="color:#8B4513;">**4.30 Excercise:** Download <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> into your module4 folder. Then, type up the above in `my_plot_points.py`, and run.</span>
 
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
 Let's point out:
-  <ul>
-  <li> Let's focus on the parts we recognize (the for-loop):
-      <p><img height width="60%" src="figures/for-loop2.png"><p>
-     <ul>
-     <li> So, when i is 0, j is calculated as 1
-     <li> This plots the point (0,1).
-     <li> Then, when i is 1, j becomes 3, which results in the point (1,3).
-     <li> ... and so on.
-     </ul>
 
-  <p><li> The points are the dots shown in the plot.
+- Let's focus on the parts we recognize (the for-loop):
+![](../../../media/units/unit0/module4/for-loop2.png)
+  - So, when i is 0, j is calculated as 1
+  - This plots the point (0,1).
+  - Then, when i is 1, j becomes 3, which results in the point (1,3).
+  - ... and so on.
 
-  <p><li> When you downloaded 
-      <font color="#000000"><tt>drawtool.py</tt></font>,
-  you downloaded another Python program into the same folder.
-     <ul>
-     <li> This is a program that provides drawing and plotting features.
-     <li> We've used one of its features here (plotting points),
-     and will use
-      <font color="#000000"><tt>drawtool.py</tt></font>
-     again in the future.
-     </ul>
+- The points are the dots shown in the plot.
+- When you downloaded `drawtool.py`, you downloaded another Python program into the same folder.
+  - This is a program that provides drawing and plotting features.
+  - We've used one of its features here (plotting points), and will use `drawtool.py` again in the future.
 
-  <p><li> Notice that the plotted points are along a straight line,
-  implying a <em>linear</em> relationship between i and j.
+- Notice that the plotted points are along a straight line, implying a <em>linear</em> relationship between i and j.
 
-  <p><li> We will occasionally write programs that work with numbers
-  and quantitative concepts. As a result, we'll encounter mathematical
-  ideas in a different way, through programming.
-  </ul>
+- We will occasionally write programs that work with numbers and quantitative concepts. As a result, we'll encounter mathematical ideas in a different way, through programming.
 
+## 4.11 Meta
+Another in our series of occasional "meta" sections that will step back from the material to comment on how we can learn better.
 
+This was a loooong module with lots of exercises and details. Let's review:
 
+- We introduced the all-important concept of a <em>variable</em> along with the sense that there's a "place" in the computer for each variable.
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rArr; 
+  The "place" is really in the <em>memory</em> (also called RAM) of the computer.
+- Along with variables is the notion of <em>assignment</em>, which means "copying the value in one variable into another variable".
 
-<a name="m4.11">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<hr><p><font color="#000080">
-<h2>
-4.11 &nbsp;&nbsp; Meta
-</h2>
-</font><font face="book antiqua, Georgia" color="#000060">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
+:::{.callout-tip}
+Assignments are amongst the most common of statements in everyday code.
+:::
 
-Another in our series of occasional "meta" sections that will
-step back from the material to comment on how we can learn better.
+- When a variable is of a numeric type like integers, we also need to go over basic <em>operators</em> and show examples.
+- Further complications arose when the operators have variations.
+- Since we were on the topic of integers, we took this opportunity to learn how to do some number-crunching.
+- When we got to nested loops, it got tricky following the values of variables through multiple nested loops.
 
-<p>This was a loooong module with lots of exercises and details.
-Let's review:
-  <ul>
-  <li> We introduced the all-important concept of a <em>variable</em>
-    along with the sense that there's a "place" in the computer
-    for each variable.
-     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rArr; 
-     The "place" is really in the <em>memory</em> (also called RAM) of the computer.
+So, if you felt a bit overwhelmed, that's perfectly understandable. If you have to go back to some of the material to review or try some exercises again, that's fine. You're going to get better at this!
 
-  <p><li> Along with variables is the notion of <em>assignment</em>,
-  which means "copying the value in one variable into another variable".
-
-  <p><li> Note: assignments are amongst the most common of statements
-    in everyday code.
-
-  <p><li> When a variable is of a numeric type like integers, we also
-    need to go over basic <em>operators</em> and show examples.
-
-  <p><li> Further complications arose when the operators have variations.
-
-  <p><li> Since we were on the topic of integers, we took this 
-    opportunity to learn how to do some number-crunching.
-
-  <p><li> When we got to nested loops, it got tricky following the
-    values of variables through multiple nested loops.
-  </ul>
-
-So, if you felt a bit overwhelmed, that's perfectly understandable.
-If you have to go back to some of the material to review or try
-some exercises again, that's fine. You're going to get better at this!
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>4.31 Audio</b>:
 <br>
-<audio src="media/u0-mod4-outro.mp3" controls="controls"></audio>
-</font>
-
-
-
-
-
-<br><br>
-
-<b><a href="../unit0.html">On to Module 5</a></b>
-
-</font>
-
-<br><br>
-<hr>
-<center>
-<font size="1">
-&copy; 2020, Rahul Simha
-</font>
-</center>
-
-
-</BODY>
-</HTML>
+[Previous Module: **Module 3**](./module3.qmd){.button .prev} [Next Module: **Module 5**](./module5.qmd){.button .next}
