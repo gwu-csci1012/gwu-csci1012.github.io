@@ -238,6 +238,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#strings-and-for-loops" id="toc-strings-and-for-loops" class="nav-link" data-scroll-target="#strings-and-for-loops">5.4 Strings and for-loops</a></li>
   <li><a href="#the-useful-relationship-between-characters-and-integers" id="toc-the-useful-relationship-between-characters-and-integers" class="nav-link" data-scroll-target="#the-useful-relationship-between-characters-and-integers">5.5 &nbsp;&nbsp; The useful relationship between characters and integers</a></li>
   <li><a href="#variable-names" id="toc-variable-names" class="nav-link" data-scroll-target="#variable-names">5.6 Variable names</a></li>
+  <li><a href="#a-problem-solving-example" id="toc-a-problem-solving-example" class="nav-link" data-scroll-target="#a-problem-solving-example">5.7 A problem solving example</a></li>
+  <li><a href="#when-things-go-wrong" id="toc-when-things-go-wrong" class="nav-link" data-scroll-target="#when-things-go-wrong">5.8 When things go wrong</a></li>
   </ul>
 </nav>
     </div>
@@ -434,7 +436,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">' '</span> <span class="op">+</span> prep <span class="op">+</span> <span class="st">' a '</span> <span class="op">+</span> noun2)</span>
 <span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sentence)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="excercise-type-up-the-above-in-my_random_sentence.py.-dont-run-it-just-yet.-first-download-wordtool.py-and-wordswithpos.txt-into-the-same-folder-as-your-program.-now-run-the-program-several-times.-report-your-favorite-output-sentence-in-module5.pdf." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_random_sentence.py.-dont-run-it-just-yet.-first-download-wordtool.py-and-wordswithpos.txt-into-the-same-folder-as-your-program.-now-run-the-program-several-times.-report-your-favorite-output-sentence-in-module5.pdf."><span style="color:#8B4513;"><strong>5.7 Excercise:</strong> Type up the above in <code>my_random_sentence.py</code>. Don’t run it just yet. First download <a href="../../useful/wordtool.py" download=""><strong>wordtool.py</strong></a> and <a href="../../useful/wordsWithPOS.txt" download=""><strong>wordsWithPOS.txt</strong></a> into the same folder as your program. Now run the program several times. Report your favorite output sentence in <code>module5.pdf</code>.</span></h6>
+<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_random_sentence.py.-dont-run-it-just-yet.-first-download-wordtool.py-and-wordswithpos.txt-into-the-same-folder-as-your-program.-now-run-the-program-several-times.-report-your-favorite-output-sentence-in-module5.pdf."><span style="color:#8B4513;"><strong>5.7 Excercise:</strong> Type up the above in <code>my_random_sentence.py</code>. Don’t run it just yet. First download <a href="../../../media/useful/wordtool.py" download=""><strong>wordtool.py</strong></a> and <a href="../../../media/useful/wordsWithPOS.txt" download=""><strong>wordsWithPOS.txt</strong></a> into the same folder as your program. Now run the program several times. Report your favorite output sentence in <code>module5.pdf</code>.</span></h6>
 <p>Let’s point out:</p>
 <ul>
 <li><code>wordtool.py</code> is merely another Python program, like the ones you’ve been writing, just a bit more complex.</li>
@@ -730,625 +732,299 @@ Note
 </section>
 <section id="excercise-type-up-the-above-in-my_char_example3.py.-what-does-it-print-what-is-the-significance-of-the-number-123" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_char_example3.py.-what-does-it-print-what-is-the-significance-of-the-number-123"><span style="color:#8B4513;"><strong>5.23 Excercise:</strong> Type up the above in <code>my_char_example3.py</code>. What does it print? What is the significance of the number 123?</span></h6>
-<p></p>
 </section>
 </section>
 <section id="variable-names" class="level2">
 <h2 class="anchored" data-anchor-id="variable-names">5.6 Variable names</h2>
-Most often, we’ve been using single letter <em>variable names</em>, for example: <font size="+2"> <font color="#000000">
-<pre>i = 7
-j = 15 * i
-print(j)
-
-x = 'Hello' 
-y = 'World'
-z = x + ' ' + y
-print(z)
-    </pre>
-</font></font><p><font size="+2"><font color="#000000"></font> </font></p>
-<p>
-Let’s rewrite the above with more meaningful variable names: <font size="+2"> <font color="#000000">
-</font></font></p><pre><font size="+2"><font color="#000000">days_in_a_week = 7
-days_in_a_semester = 15 * days_in_a_week
-print(days_in_a_semester)
-
-first_greeting_word = 'Hello' 
-second_greeting_word= 'World'
-full_greeting = first_greeting_word + ' ' + second_greeting_word
-print(full_greeting)
-    </font></font></pre><font size="+2"><font color="#000000">
-</font></font><p><font size="+2"><font color="#000000"></font> </font></p>
-<p>
-About variable names:
-</p><ul>
-<li>
-<p>First, let’s review the very notion of a <em>name</em> in Python, along with other kinds of “words” that are allowed in Python programs.</p>
-<p>
-</p></li><li>
-Reserved words or keywords:
+<p>Most often, we’ve been using single letter <em>variable names</em>, for example:</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">7</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>j <span class="op">=</span> <span class="dv">15</span> <span class="op">*</span> i</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(j)</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'Hello'</span> </span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="st">'World'</span></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> x <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> y</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(z)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Let’s rewrite the above with more meaningful variable names:</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>days_in_a_week <span class="op">=</span> <span class="dv">7</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>days_in_a_semester <span class="op">=</span> <span class="dv">15</span> <span class="op">*</span> days_in_a_week</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(days_in_a_semester)</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>first_greeting_word <span class="op">=</span> <span class="st">'Hello'</span> </span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>second_greeting_word<span class="op">=</span> <span class="st">'World'</span></span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>full_greeting <span class="op">=</span> first_greeting_word <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> second_greeting_word</span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(full_greeting)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>About variable names:</p>
 <ul>
-<li>
-Some words in the language belong formally to the language itself.
-</li><li>
-<p>These are words like <font color="#000000"><tt>for</tt></font>, <font color="#000000"><tt>in</tt></font>, <font color="#000000"><tt>def</tt></font>, and others.</p>
-<pre><code> &lt;li&gt; In fact, just to complete this, here's the full set of 
- 33 reserved words:
-    &lt;blockquote&gt;
-    and as assert
-    break
-    class continue
-    def del 
-    elif else  except
-    False finally for from
-    global
-    if import in is 
-    lambda
-    None nonlocal not
-    or
-    pass
-    raise return
-    True try
-    while with
-    yield
-    &lt;/blockquote&gt;
-
- &lt;li&gt; Everyone of these must be used in very specific ways,
- in statements or in more complex structures.
- &lt;li&gt; We will learn more about these as we proceed in the course.
- &lt;li&gt; We won't learn about all of them, because full mastery
- of the language takes more than one course.
- &lt;/ul&gt;</code></pre>
-<p>
-</p></li><li>
-At the other end of the spectrum, there are words that we freely create for our use, as in these examples: <font color="#000000">
-<pre style="border:white;background-color:white;font-size:120%;">def <b>print_hello</b>():
-    print('Hello')
-
-<b>print_hello</b>()
-
-<b>x</b> = 'How goes?'
-print(<b>x</b>)
-
-for <b>i</b> in range(1,10):
-    print(<b>i</b>)
-  </pre>
-</font>
+<li>First, let’s review the very notion of a <em>name</em> in Python, along with other kinds of “words” that are allowed in Python programs.</li>
+<li>Reserved words or keywords:
 <ul>
-<li>
-Here, we made a function and decided to call it <font color="#000000"><tt>print_hello</tt></font>
-</li><li>
-We decided to call the string variable <font color="#000000"><tt>x</tt></font>
-</li><li>
-And to call the loop variable <font color="#000000"><tt>i</tt></font>
-</li><li>
-These are called <em>identifiers</em> (jargon alert).
-</li></ul>
-<p>
-</p></li><li>
-Since we get to choose them, we could rewrite the above program as: <font color="#000000">
-<pre style="border:white;background-color:white;font-size:120%;">def <b>say_greeting</b>():
-    print('Hello')
-
-<b>say_greeting</b>()
-
-<b>follow_up</b> = 'How goes?'
-print(<b>follow_up</b>)
-
-for <b>my_loop_variable</b> in range(1,10):
-    print(<b>my_loop_variable</b>)
-  </pre>
-</font><p><font color="#000000"></font></p>
-<p>
-</p></li><li>
-So, what should dictate our choice of these names?
-<ul>
-<li>
-Generally, for numbers, loop-variables and short calculations, we prefer single-letter names like <font color="#000000"><tt>x</tt></font> and <font color="#000000"><tt>i</tt></font>.
-</li><li>
-Function names should carry some meaning so that anyone else who needs to use them should be able to make sense of them.
-</li><li>
-Sometimes, variable names should be longer when we want the code to be readable long after it’s written.
-</li><li>
-For example, it would not make sense for Python to use <font color="#000000"><tt>cryptic_blob_42</tt></font> instead of <font color="#000000"><tt>print</tt></font>.
-</li></ul>
-<p>
-</p></li><li>
-The use of <em>underscores</em>:
-<ul>
-<li>
-You’ve noticed by now the presence of underscores in our variable and function names.
-</li><li>
-An underscore is a convenient visual aid to help us read.
-</li><li>
-Writing <font color="#000000"><tt>days_in_a_week</tt></font> is better than <font color="#000000"><tt>daysinaweek</tt></font> because it’s easier to see.
-</li><li>
-<b>Important</b>: we cannot use spaces, so <font color="#000000"><tt>days in a week</tt></font> would be incorrect as a variable name.
-</li></ul>
-<p>
-</p></li><li>
-<p>Generally, we shouldn’t go overboard and make unnecessarily long names either, as in <font color="#000000"><tt>the_number_of_days_in_a_week</tt></font>.</p>
-<p>
-</p></li><li>
-<p><em>Another important rule</em>: use only letters, digits and underscores, and always start with a letter. Do NOT use other symbols like % or $ in variable names.</p>
-<p>
-</p></li><li>
-Finally, there are some function and variable names “already taken”. That is we can’t use them (or shouldn’t) because Python has decided to use them.
-<ul>
-<li>
-For example: <font color="#000000"><tt>print</tt></font> is a function name.
-</li><li>
-As are <font color="#000000"><tt>chr</tt></font> and <font color="#000000"><tt>ord</tt></font> and various math functions.
-</li><li>
-While we could technically use these names, we should avoid the conflict because it breaks convention and can cause hard-to-find problems.
-</li></ul>
-<p>
-</p></li><li>
-Here is a list of “avoid” names:
+<li>Some words in the language belong formally to the language itself.</li>
+<li>These are words like <code>for</code>, <code>in</code>, <code>def</code>, and others.</li>
+<li>In fact, just to complete this, here’s the full set of 33 reserved words:
 <blockquote class="blockquote">
-<font color="#000000"><tt> abs, all, any, ascii, bin, bool, bytearray, bytes, callable, chr, classmethod, compile, complex, delattr, dict, dir, divmod, enumerate, eval, exec, filter, float, format, frozenset, getattr, globals, hasattr, hash, help, hex, id, input, int, isinstance, issubclass, iter, len, list, locals, map, max, memoryview, min, next, object, oct, open, ord, pow, print, property, range, repr, reversed, round, set, setattr, slice, sorted, str, sum, super, tuple, type, vars, zip </tt></font>
-</blockquote>
-Do NOT use these as your own variable or function names.
-</li></ul>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-<font color="#8B4513"><b>5.24 Exercise</b>: Let’s see what can go wrong if we use one of the words “already taken”. Consider this program: <font color="#000000">
-</font></font></p><pre style="border:white;background-color:white;font-size:120%;"><font color="#8B4513"><font color="#000000">s = 'Hello'
-len = 5       <font color="#dc143c"># This is a BAD idea</font>
-print(len)
-  </font></font></pre><font color="#8B4513"><font color="#000000">
-</font> We really should not be using a variable called <font color="#000000"><tt>len</tt></font> since <font color="#000000"><tt>len</tt></font> is a predefined “already taken” name. What happens if you type and run this? Type your program in <font color="#000000"><tt>my_variable_name3.py</tt></font>. Then, type this program in <font color="#000000"><tt>my_variable_name4.py</tt></font>: <font color="#000000">
-<pre style="border:white;background-color:white;font-size:120%;">s = 'Hello'
-len = 5       <font color="#dc143c"># This is a BAD idea</font>
-print(len)
-
-t = 'Some looooooong sentence'
-k = len(t)
-print(k)
-  </pre>
-</font></font><p><font color="#8B4513"><font color="#000000"></font> What do you see? (Respond in your moduler pdf.) </font></p>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-<font color="#8B4513"><b>5.25 Video</b>: <br>
-</font></p><div style="border:1px solid black; width:300; height: 200"><font color="#8B4513">
-<video height="200" width="300" src="media/u0-mod5.25.mp4" type="video/mp4" controls="controls">
-</video>
-</font></div><font color="#8B4513">
-</font><p><font color="#8B4513"></font></p>
-<a name="m5.7">
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-</p><hr>
-<p>
-<font color="#000080">
-</font></p><h2 class="anchored"><font color="#000080">
-5.7 &nbsp;&nbsp; A problem solving example
-</font></h2><font color="#000080">
-</font><font face="book antiqua, Georgia" color="#000060">
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-Possibly the hardest aspect of programming is <em>problem-solving</em>:
-</p><ul>
-<li>
-<p>Typically, we’re given an English description of a problem, with the goal of writing a program to solve the problem.</p>
-<p>
-</p></li><li>
-<p>The hard part is not the typing, and remembering syntactic details like parentheses.</p>
-<p>
-</p></li><li>
-<p>The hard part is figuring out what to write in code to solve the problem.</p>
-</li></ul>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-</p><p>Let’s work through an example problem and solve it.</p>
-<p>
-Before that, we’ll learn one more string function: <font size="+2"> <font color="#000000">
-</font></font></p><pre><font size="+2"><font color="#000000">s = 'The quick brown fox jumps over the lazy dog'
-n = s.count('a')     <font color="#dc143c"># How many a's occur in the string s?</font>
-print(n)
-    </font></font></pre><font size="+2"><font color="#000000">
-</font> </font> Note:
+and as assert break class continue def del elif else except False finally for from global if import in is lambda None nonlocal not or pass raise return True try while with yield
+</blockquote></li>
+<li>Everyone of these must be used in very specific ways, in statements or in more complex structures.</li>
+<li>We will learn more about these as we proceed in the course.</li>
+<li>We won’t learn about all of them, because full mastery of the language takes more than one course.</li>
+</ul></li>
+<li>At the other end of the spectrum, there are words that we freely create for our use, as in these examples:</li>
+</ul>
+<div class="sourceCode" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_hello():</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'Hello'</span>)</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>print_hello()</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'How goes?'</span></span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">10</span>):</span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>
-<p>We’ve introduced a new feature of strings: the ability to count occurences of a letter in that string.</p>
-<p>
-</p></li><li>
-Notice the unusual way by which the function must be used: <font color="#000000">
-<pre style="border:white;background-color:white;font-size:120%;">n = s<b>.count</b>('a')
-  </pre>
-</font> and NOT <font color="#000000">
-<pre style="border:white;background-color:white;font-size:120%;">n = count(s, 'a')
-  </pre>
-</font><p><font color="#000000"></font></p>
-<p>
-</p></li><li>
-<p>That is, the function <font color="#000000"><tt>count</tt></font> appears to be part of the string variable <font color="#000000"><tt>s</tt></font>.</p>
-<p>
-</p></li><li>
-<p>This is a somewhat advanced topic, so we’ll just use it and be glad we have this feature. <br>(There are other such functions we’ll avail of.)</p>
-<p>
-</p></li><li>
-This is possible for any string, such as: <font size="+2"> <font color="#000000">
-<pre>x = 'helloooooooo'
-print(x.count('o'))    # Number of o's in string x
-y = 'missisippi'
-print(y.count('i'))    # Number of i's in string x
-    </pre>
-</font> </font>
-</li></ul>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-</p><p><font color="#8B4513"><b>5.26 Exercise</b>: Confirm by typing up the above in <font color="#000000"><tt>my_letter_count.py</tt></font>. </font></p>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-OK, now the problem:
-</p><ul>
-<li>
-<p>A <em>pangram</em> is an English sentence that contains all 26 letters.</p>
-<p>
-</p></li><li>
-We’ve already seen two examples: <font color="#000000">
-<pre style="border:white;background-color:white;font-size:120%;">The quick brown fox jumps over the lazy dog
-Sphinx of black quartz, judge my vow
-  </pre>
-</font><p><font color="#000000"></font></p>
-<p>
-</p></li><li>
-<p>There’s an informal competition running over a hundred years to find the shortest grammatically correct English sentence that’s a pangram.</p>
-<p>
-</p></li><li>
-Our smaller problem: given a sentence, print the number of a’s, the number of b’s … and so on. This could be useful in judging such a competition.
-</li></ul>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-Let’s work towards a solution:
-</p><ul>
-<li>
-Given a candidate pangram, we could count the number of a’s: <font size="+2"> <font color="#000000">
-<pre>s = 'The quick brown fox jumps over the lazy dog'
-print(s.count('a'))
-    </pre>
-</font></font><p><font size="+2"><font color="#000000"></font> </font></p>
-<p>
-</p></li><li>
-Then, we could also count the number of b’s: <font size="+2"> <font color="#000000">
-<pre>s = 'The quick brown fox jumps over the lazy dog'
-print(s.count('a'))
-print(s.count('b'))
-    </pre>
-</font></font><p><font size="+2"><font color="#000000"></font> </font></p>
-<p>
-</p></li><li>
-<p>If we repeated this 26 times, we’d have a count for each letter.</p>
-<p>
-</p></li><li>
-But the moment we see a bunch of repetition, our computational problem-solving instincts (yes, still developing) should kick in:
+<ul>
+<li>Here, we made a function and decided to call it <code>print_hello</code></li>
+<li>We decided to call the string variable <code>x</code></li>
+<li>And to call the loop variable <code>i</code></li>
+<li>These are called <em>identifiers</em> (jargon alert).</li>
+</ul>
+</ul>
+<ul>
+<li>Since we get to choose them, we could rewrite the above program as:</li>
+</ul>
+<div class="sourceCode" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> say_greeting():</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'Hello'</span>)</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>say_greeting()</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>follow_up <span class="op">=</span> <span class="st">'How goes?'</span></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(follow_up)</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> my_loop_variable <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">10</span>):</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(my_loop_variable)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>So, what should dictate our choice of these names?</p>
+<ul>
+<li>Generally, for numbers, loop-variables and short calculations, we prefer single-letter names like <code>x</code> and <code>i</code>.</li>
+<li>Function names should carry some meaning so that anyone else who needs to use them should be able to make sense of them.</li>
+<li>Sometimes, variable names should be longer when we want the code to be readable long after it’s written.</li>
+<li>For example, it would not make sense for Python to use <code>cryptic_blob_42</code> instead of <code>print</code>.</li>
+</ul></li>
+<li><p>The use of <em>underscores</em>:</p>
+<ul>
+<li>You’ve noticed by now the presence of underscores in our variable and function names.</li>
+<li>An underscore is a convenient visual aid to help us read.</li>
+<li>Writing <code>days_in_a_week</code> is better than <code>daysinaweek</code> because it’s easier to see.</li>
+<li><strong>Important:</strong> we cannot use spaces, so <code>days in a week</code> would be incorrect as a variable name.</li>
+</ul></li>
+<li><p>Generally, we shouldn’t go overboard and make unnecessarily long names either, as in <code>the_number_of_days_in_a_week</code>.</p></li>
+<li><p><em>Another important rule</em>: use only letters, digits and underscores, and always start with a letter. Do NOT use other symbols like % or $ in variable names.</p></li>
+<li><p>Finally, there are some function and variable names “already taken”. That is we can’t use them (or shouldn’t) because Python has decided to use them.</p>
+<ul>
+<li>For example: <code>print</code> is a function name.</li>
+<li>As are <code>chr</code> and <code>ord</code> and various math functions.</li>
+<li>While we could technically use these names, we should avoid the conflict because it breaks convention and can cause hard-to-find problems.</li>
+</ul></li>
+<li><p>Here is a list of “avoid” names:</p>
+<blockquote class="blockquote">
+<p>abs, all, any, ascii, bin, bool, bytearray, bytes, callable, chr, classmethod, compile, complex, delattr, dict, dir, divmod, enumerate, eval, exec, filter, float, format, frozenset, getattr, globals, hasattr, hash, help, hex, id, input, int, isinstance, issubclass, iter, len, list, locals, map, max, memoryview, min, next, object, oct, open, ord, pow, print, property, range, repr, reversed, round, set, setattr, slice, sorted, str, sum, super, tuple, type, vars, zip</p>
+</blockquote>
+<p>Do NOT use these as your own variable or function names.</p></li>
+</ul>
+<section id="excercise-lets-see-what-can-go-wrong-if-we-use-one-of-the-words-already-taken.-consider-this-program" class="level6">
+<h6 class="anchored" data-anchor-id="excercise-lets-see-what-can-go-wrong-if-we-use-one-of-the-words-already-taken.-consider-this-program"><span style="color:#8B4513;"><strong>5.24 Excercise:</strong> Let’s see what can go wrong if we use one of the words “already taken”. Consider this program:</span></h6>
+<div class="sourceCode" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'Hello'</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span> <span class="op">=</span> <span class="dv">5</span>       <span class="co"># This is a BAD idea</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span style="color:#8B4513;">We really should not be using a variable called <code>len</code> since <code>len</code> is a predefined “already taken” name. What happens if you type and run this? Type your program in <code>my_variable_name3.py</code>.Then, type this program in <code>my_variable_name4.py</code>:</span></p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'Hello'</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span> <span class="op">=</span> <span class="dv">5</span>       <span class="co"># This is a BAD idea</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>)</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> <span class="st">'Some looooooong sentence'</span></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">len</span>(t)</span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(k)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span style="color:#8B4513;">What do you see? (Respond in your moduler pdf.)</span></p>
+</section>
+</section>
+<section id="a-problem-solving-example" class="level2">
+<h2 class="anchored" data-anchor-id="a-problem-solving-example">5.7 A problem solving example</h2>
+<p>Possibly the hardest aspect of programming is <em>problem-solving</em>:</p>
+<ul>
+<li>Typically, we’re given an English description of a problem, with the goal of writing a program to solve the problem.</li>
+<li>The hard part is not the typing, and remembering syntactic details like parentheses.</li>
+<li>The hard part is figuring out what to write in code to solve the problem.</li>
+</ul>
+<p>Let’s work through an example problem and solve it.</p>
+<p>Before that, we’ll learn one more string function:</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> s.count(<span class="st">'a'</span>)     <span class="co"># How many a's occur in the string s?</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(n)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>We’ve introduced a new feature of strings: the ability to count occurences of a letter in that string.</li>
+<li>Notice the unusual way by which the function must be used:</li>
+</ul>
+<div class="sourceCode" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> s.count(<span class="st">'a'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>and NOT</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> count(s, <span class="st">'a'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>That is, the function <code>count</code> appears to be part of the string variable <code>s</code>.</li>
+<li>This is a somewhat advanced topic, so we’ll just use it and be glad we have this feature. (There are other such functions we’ll avail of.)</li>
+<li>This is possible for any string, such as:</li>
+</ul>
+<div class="sourceCode" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'helloooooooo'</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x.count(<span class="st">'o'</span>))    <span class="co"># Number of o's in string x</span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="st">'missisippi'</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y.count(<span class="st">'i'</span>))    <span class="co"># Number of i's in string x</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<section id="excercise-confirm-by-typing-up-the-above-in-my_letter_count.py." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-confirm-by-typing-up-the-above-in-my_letter_count.py."><span style="color:#8B4513;"><strong>5.26 Excercise:</strong> Confirm by typing up the above in <code>my_letter_count.py</code>.</span></h6>
+<p>OK, now the problem:</p>
+<ul>
+<li>A <em>pangram</em> is an English sentence that contains all 26 letters.</li>
+<li>We’ve already seen two examples:</li>
+</ul>
+<div class="sourceCode" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>The quick brown fox jumps over the lazy dog</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>Sphinx of black quartz, judge my vow</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>There’s an informal competition running over a hundred years to find the shortest grammatically correct English sentence that’s a pangram.</li>
+<li>Our smaller problem: given a sentence, print the number of a’s, the number of b’s … and so on. This could be useful in judging such a competition.</li>
+</ul>
+<p>Let’s work towards a solution:</p>
+<ul>
+<li>Given a candidate pangram, we could count the number of a’s:</li>
+</ul>
+<div class="sourceCode" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s.count(<span class="st">'a'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Then, we could also count the number of b’s:</li>
+</ul>
+<div class="sourceCode" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s.count(<span class="st">'a'</span>))</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s.count(<span class="st">'b'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>If we repeated this 26 times, we’d have a count for each letter.</li>
+<li>But the moment we see a bunch of repetition, our computational problem-solving instincts (yes, still developing) should kick in:
 <blockquote class="blockquote">
 Repetition ⇒ use a loop!
-</blockquote>
-<p>
-</p></li><li>
-<p>What is the nature of iteration in this problem? <br> We are iterating through the letters ‘a’ to ‘z’</p>
-<p>
-</p></li><li>
-And we already know how to iterate over the letters: <font size="+2"> <font color="#000000">
-<pre>for i in range(97, 123):
-    letter = chr(i)       
-    <font color="#dc143c"># Recall: We're going from Ascii code to letter</font>
-    </pre>
-</font></font><p><font size="+2"><font color="#000000"></font> </font></p>
-<p>
-</p></li><li>
-Could we combine this with the counting of occurences inside the given string? So, the idea would be: <font size="+2"> <font color="#000000">
-<pre>for i in range(97, 123):
-    letter = chr(i)       
-    <font color="#dc143c"># Now somehow use that to do the counting of occurences</font>
-    </pre>
-</font></font><p><font size="+2"><font color="#000000"></font> </font></p>
-<p>
-</p></li><li>
-Combining: <font size="+2"> <font color="#000000">
-<pre>s = 'The quick brown fox jumps over the lazy dog'
-
-for i in range(97, 123):
-    letter = chr(i)       
-    k = s.count(letter)
-    print('Number of occurrences of ' + letter + ' is ' + str(k))
-    </pre>
-</font></font><p><font size="+2"><font color="#000000"></font> </font></p>
-</li></ul>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-</p><p><font color="#8B4513"><b>5.27 Exercise</b>: Type up the above idea <font color="#000000"><tt>my_count_problem.py</tt></font>. Then, find another pangram and apply the program to that pangram. Submit your program with the pangram shown above (not the one you found). </font></p>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-</p><p><font color="#8B4513"><b>5.28 Exercise</b>: This can be taken a step further. Instead of typing the pangram in the program itself (as was done above), ask the user to enter it as input. In <font color="#000000"><tt>my_count_problem2.py</tt></font>, read a string from the user and print the letter counts. When you test your program, use the pangram you found as input. </font></p>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-<font color="#8B4513"><b>5.29 Video</b>: <br>
-</font></p><div style="border:1px solid black; width:300; height: 200"><font color="#8B4513">
-<video height="200" width="300" src="media/u0-mod5.29.mp4" type="video/mp4" controls="controls">
-</video>
-</font></div><font color="#8B4513">
-</font><p><font color="#8B4513"></font></p>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-Lastly, we’ll point out a slightly more elegant way of iterating over the 26 letters: <font size="+2"> <font color="#000000">
-</font></font></p><pre><font size="+2"><font color="#000000">ascii_a = ord('a')
-ascii_z = ord('z')
-for i in range(ascii_a, ascii_z + 1):
-    letter = chr(i)       
-    <font color="#dc143c"># Now somehow use that to do the counting of occurences</font>
-    </font></font></pre><font size="+2"><font color="#000000">
-</font> </font> Note:
+</blockquote></li>
+<li>What is the nature of iteration in this problem? <br> We are iterating through the letters ‘a’ to ‘z’</li>
+<li>And we already know how to iterate over the letters:</li>
+</ul>
+<div class="sourceCode" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">97</span>, <span class="dv">123</span>):</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>  letter <span class="op">=</span> <span class="bu">chr</span>(i)       </span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Recall: We're going from Ascii code to letter</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>
-<p>Instead of typing in the numbers 97 and 123 (which we’d have to remember), we’re instead using the <font color="#000000"><tt>ord</tt></font> function itself to identify the limits of the loop.</p>
-<p>
-</p></li><li>
-An even more (but harder to read) compact way is to write: <font color="#000000">
-<pre style="border:white;background-color:white;font-size:120%;">for i in range(ord('a'), ord('z') + 1):
-    letter = chr(i)       
-  </pre>
-</font> We’ll understand this better once we see functions in more detail.
-</li></ul>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-</p><p>Finally, we’ve written a program to solve an actual problem. Perhaps there’s a market out there for pangram-checkers?</p>
-</font></a><font face="book antiqua, Georgia" color="#000060"><a name="m5.8">
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-</p><hr>
-<p>
-<font color="#000080">
-</font></p><h2 class="anchored"><font color="#000080">
-5.8 &nbsp;&nbsp; When things go wrong
-</font></h2><font color="#000080">
-</font><font face="book antiqua, Georgia" color="#000060">
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-</p><p>In each of the exercises below, try to identify the error before typing it up and confirming. Report the error in the module pdf. Then, fix the error in the code, using the specified program (.py) name.</p>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-<font color="#8B4513"><b>5.30 Exercise</b>: <font color="#000000">
-</font></font></p><pre style="border:white;background-color:white;font-size:120%;"><font color="#8B4513"><font color="#000000">x = 'Hello'
-y = 'World'
-s = 'x' + ' ' + 'y'
-  </font></font></pre><font color="#8B4513"><font color="#000000">
-</font></font><p><font color="#8B4513"><font color="#000000"></font> (This should print <font color="#000000"><tt>Hello World</tt></font>, with a space in between). Fix the error in <font color="#000000"><tt>error1.py</tt></font>. </font></p>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-<font color="#8B4513"><b>5.31 Exercise</b>: <font color="#000000">
-</font></font></p><pre style="border:white;background-color:white;font-size:120%;"><font color="#8B4513"><font color="#000000">k = 8
-s = 'There are ' + k + ' planets in our solar system'
-print(s)
-  </font></font></pre><font color="#8B4513"><font color="#000000">
-</font></font><p><font color="#8B4513"><font color="#000000"></font> Fix the error in <font color="#000000"><tt>error2.py</tt></font>. </font></p>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-<font color="#8B4513"><b>5.32 Exercise</b>: <font color="#000000">
-</font></font></p><pre style="border:white;background-color:white;font-size:120%;"><font color="#8B4513"><font color="#000000">long_sentence = 'How' + ' ' + 'vexingly' + ' ' +
-   'quick' + ' ' + 'daft' + ' ' + 'zebras' + ' ' + 'jump'
-  </font></font></pre><font color="#8B4513"><font color="#000000">
-</font></font><p><font color="#8B4513"><font color="#000000"></font> Fix the error in <font color="#000000"><tt>error3.py</tt></font>. </font></p>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-<font color="#8B4513"><b>5.33 Exercise</b>: <font color="#000000">
-</font></font></p><pre style="border:white;background-color:white;font-size:120%;"><font color="#8B4513"><font color="#000000">x = input('Enter a number between 1 and 10')
-y = 2 * x
-print(y)
-  </font></font></pre><font color="#8B4513"><font color="#000000">
-</font></font><p><font color="#8B4513"><font color="#000000"></font> Fix the error in <font color="#000000"><tt>error4.py</tt></font>. </font></p>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-<font color="#8B4513"><b>5.34 Exercise</b>: <font color="#000000">
-</font></font></p><pre style="border:white;background-color:white;font-size:120%;"><font color="#8B4513"><font color="#000000">for i in range(1, 6):
-    s = s + '**'
-print(s)
-  </font></font></pre><font color="#8B4513"><font color="#000000">
-</font></font><p><font color="#8B4513"><font color="#000000"></font> (This should print a string with 10 asterisks). Fix the error in <font color="#000000"><tt>error5.py</tt></font>. </font></p>
-
-<table>
-<tbody><tr>
-<td height="6">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-<font color="#8B4513"><b>5.35 Exercise</b>: <font color="#000000">
-</font></font></p><pre style="border:white;background-color:white;font-size:120%;"><font color="#8B4513"><font color="#000000">miles = 10
-feet per mile = 5280
-feet in ten miles = miles * feet per mile
-print(feet in ten miles)
-  </font></font></pre><font color="#8B4513"><font color="#000000">
-</font></font><p><font color="#8B4513"><font color="#000000"></font> Fix the error in <font color="#000000"><tt>error6.py</tt></font>. </font></p>
-
-<table>
-<tbody><tr>
-<td height="8">
-&nbsp;
-</td>
-</tr>
-
-</tbody></table>
-<p>
-</p><p><font color="#8B4513"><b>5.36 Audio</b>: <br> <audio src="media/u0-mod5-outro.mp3" controls="controls"></audio> </font></p>
-<p><br><br></p>
-</font></a><font face="book antiqua, Georgia" color="#000060"><p><a name="m5.8"><b></b></a><b><a href="../unit0.html">On to Module 6</a></b></p>
-</font><p><font face="book antiqua, Georgia" color="#000060"></font></p>
-<br><br>
-<hr>
-<center>
-<font size="1"> © 2020, Rahul Simha </font>
-</center>
+<li>Could we combine this with the counting of occurences inside the given string? So, the idea would be:</li>
+</ul>
+<div class="sourceCode" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">97</span>, <span class="dv">123</span>):</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>  letter <span class="op">=</span> <span class="bu">chr</span>(i)       </span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now somehow use that to do the counting of occurences</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Combining:</li>
+</ul>
+<div class="sourceCode" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">97</span>, <span class="dv">123</span>):</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>  letter <span class="op">=</span> <span class="bu">chr</span>(i)       </span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>  k <span class="op">=</span> s.count(letter)</span>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'Number of occurrences of '</span> <span class="op">+</span> letter <span class="op">+</span> <span class="st">' is '</span> <span class="op">+</span> <span class="bu">str</span>(k))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="excercise-type-up-the-above-idea-my_count_problem.py.-then-find-another-pangram-and-apply-the-program-to-that-pangram.-submit-your-program-with-the-pangram-shown-above-not-the-one-you-found." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-idea-my_count_problem.py.-then-find-another-pangram-and-apply-the-program-to-that-pangram.-submit-your-program-with-the-pangram-shown-above-not-the-one-you-found."><span style="color:#8B4513;"><strong>5.27 Excercise:</strong> Type up the above idea <code>my_count_problem.py</code>. Then, find another pangram and apply the program to that pangram. Submit your program with the pangram shown above (not the one you found).</span></h6>
+</section>
+<section id="excercise-this-can-be-taken-a-step-further.-instead-of-typing-the-pangram-in-the-program-itself-as-was-done-above-ask-the-user-to-enter-it-as-input.-in-my_count_problem2.py-read-a-string-from-the-user-and-print-the-letter-counts.-when-you-test-your-program-use-the-pangram-you-found-as-input." class="level6">
+<h6 class="anchored" data-anchor-id="excercise-this-can-be-taken-a-step-further.-instead-of-typing-the-pangram-in-the-program-itself-as-was-done-above-ask-the-user-to-enter-it-as-input.-in-my_count_problem2.py-read-a-string-from-the-user-and-print-the-letter-counts.-when-you-test-your-program-use-the-pangram-you-found-as-input."><span style="color:#8B4513;"><strong>5.28 Excercise:</strong> This can be taken a step further. Instead of typing the pangram in the program itself (as was done above), ask the user to enter it as input. In <code>my_count_problem2.py</code>, read a string from the user and print the letter counts. When you test your program, use the pangram you found as input.</span></h6>
+<p>Lastly, we’ll point out a slightly more elegant way of iterating over the 26 letters:</p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>ascii_a <span class="op">=</span> <span class="bu">ord</span>(<span class="st">'a'</span>)</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>ascii_z <span class="op">=</span> <span class="bu">ord</span>(<span class="st">'z'</span>)</span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(ascii_a, ascii_z <span class="op">+</span> <span class="dv">1</span>):</span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>    letter <span class="op">=</span> <span class="bu">chr</span>(i)       </span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Now somehow use that to do the counting of occurences</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Instead of typing in the numbers 97 and 123 (which we’d have to remember), we’re instead using the <code>ord</code> function itself to identify the limits of the loop.</li>
+<li>An even more (but harder to read) compact way is to write:</li>
+</ul>
+<div class="sourceCode" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">ord</span>(<span class="st">'a'</span>), <span class="bu">ord</span>(<span class="st">'z'</span>) <span class="op">+</span> <span class="dv">1</span>):</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>    letter <span class="op">=</span> <span class="bu">chr</span>(i)       </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We’ll understand this better once we see functions in more detail.</p>
+</div>
+</div>
+<p>Finally, we’ve written a program to solve an actual problem. Perhaps there’s a market out there for pangram-checkers?</p>
+</section>
+</section>
+<section id="when-things-go-wrong" class="level2">
+<h2 class="anchored" data-anchor-id="when-things-go-wrong">5.8 When things go wrong</h2>
+<p>In each of the exercises below, try to identify the error before typing it up and confirming. Report the error in the module pdf. Then, fix the error in the code, using the specified program (.py) name.</p>
+<section id="excercise" class="level6">
+<h6 class="anchored" data-anchor-id="excercise"><span style="color:#8B4513;"><strong>5.30 Excercise:</strong> </span></h6>
+<div class="sourceCode" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'Hello'</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="st">'World'</span></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'x'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'y'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span style="color:#8B4513;">(This should print <code>Hello World</code>, with a space in between). Fix the error in <code>error1.py</code>.</span></p>
+</section>
+<section id="excercise-1" class="level6">
+<h6 class="anchored" data-anchor-id="excercise-1"><span style="color:#8B4513;"><strong>5.31 Excercise:</strong> </span></h6>
+<div class="sourceCode" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">8</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'There are '</span> <span class="op">+</span> k <span class="op">+</span> <span class="st">' planets in our solar system'</span></span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span style="color:#8B4513;">Fix the error in <code>error2.py</code>.</span></p>
+</section>
+<section id="excercise-2" class="level6">
+<h6 class="anchored" data-anchor-id="excercise-2"><span style="color:#8B4513;"><strong>5.32 Excercise:</strong> </span></h6>
+<div class="sourceCode" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>long_sentence <span class="op">=</span> <span class="st">'How'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'vexingly'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>   <span class="co">'quick'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'daft'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'zebras'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'jump'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span style="color:#8B4513;">Fix the error in <code>error3.py</code>.</span></p>
+</section>
+<section id="excercise-3" class="level6">
+<h6 class="anchored" data-anchor-id="excercise-3"><span style="color:#8B4513;"><strong>5.33 Excercise:</strong> </span></h6>
+<div class="sourceCode" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter a number between 1 and 10'</span>)</span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> x</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span style="color:#8B4513;">Fix the error in <code>error4.py</code>.</span></p>
+</section>
+<section id="excercise-4" class="level6">
+<h6 class="anchored" data-anchor-id="excercise-4"><span style="color:#8B4513;"><strong>5.34 Excercise:</strong> </span></h6>
+<div class="sourceCode" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">6</span>):</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> s <span class="op">+</span> <span class="st">'**'</span></span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span style="color:#8B4513;">(This should print a string with 10 asterisks). Fix the error in <code>error5.py</code>.</span></p>
+</section>
+<section id="excercise-5" class="level6">
+<h6 class="anchored" data-anchor-id="excercise-5"><span style="color:#8B4513;"><strong>5.35 Excercise:</strong> </span></h6>
+<div class="sourceCode" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>miles <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>feet per mile <span class="op">=</span> <span class="dv">5280</span></span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>feet <span class="kw">in</span> ten miles <span class="op">=</span> miles <span class="op">*</span> feet per mile</span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(feet <span class="kw">in</span> ten miles)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span style="color:#8B4513;">Fix the error in <code>error6.py</code>.</span></p>
+<p><br> <a href="../../../units/unit0/modules/module4.html" class="button prev">Previous Module: <strong>Module 4</strong></a> <a href="./module6.qmd" class="button next">Next Module: <strong>Module 6</strong></a></p>
 
 
+</section>
+</section>
 
-
-</font></li></ul></section><font face="book antiqua, Georgia" color="#000060">
-
-</font></main><font face="book antiqua, Georgia" color="#000060"> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1582,7 +1258,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-</font></div><font face="book antiqua, Georgia" color="#000060"> <!-- /content -->
+</div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
@@ -1597,4 +1273,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</font></body></html>
+</body></html>
