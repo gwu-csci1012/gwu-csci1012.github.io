@@ -247,19 +247,19 @@ print('Hi ' + name + '!')
 
 :::{.callout-tip}
 - The function `input` is exactly what it sounds like: get input (from the user typing).
-```python
-name = input('Enter your name: ')
-```
+  ```python
+  name = input('Enter your name: ')
+  ```
 - Here, there's a string that goes into the `input` function. This string is displayed as a prompt in the output:
-```python
-Enter your name: 
-```
+  ```python
+  Enter your name: 
+  ```
 - Of course, you aren't writing this tiny program to send to someone who will run your program and type in their name. You are playing both roles: programmer and intended user.
 - Whatever the user types in (from the keyboard) becomes a single string that's placed in the variable we've called `name`
 - Then, we've concatenated whatever gets into `name`with two other strings and printed the result:
-```python
-print('Hi ' + <b>name</b> + '!')
-```
+  ```python
+  print('Hi ' + <b>name</b> + '!')
+  ```
 :::
 
 Next, let's make it more interesting:
@@ -611,23 +611,26 @@ print(n)
 :::{.callout-note}
 - We've introduced a new feature of strings: the ability to count occurences of a letter in that string.
 - Notice the unusual way by which the function must be used:
-```python
-n = s.count('a')
-```
-and NOT
-```python
-n = count(s, 'a')
-```
+
+  ```python
+  n = s.count('a')
+  ```
+
+  and NOT
+
+  ```python
+  n = count(s, 'a')
+  ```
 
 - That is, the function `count` appears to be part of the string variable `s`.
 - This is a somewhat advanced topic, so we'll just use it and be glad we have this feature. (There are other such functions we'll avail of.)
 - This is possible for any string, such as:
-```python
-x = 'helloooooooo'
-print(x.count('o'))    # Number of o's in string x
-y = 'missisippi'
-print(y.count('i'))    # Number of i's in string x
-```
+  ```python
+  x = 'helloooooooo'
+  print(x.count('o'))    # Number of o's in string x
+  y = 'missisippi'
+  print(y.count('i'))    # Number of i's in string x
+  ```
 :::
 
 ###### <span style="color:#8B4513;">**5.26 Excercise:** Confirm by typing up the above in `my_letter_count.py`.</span>
@@ -705,10 +708,10 @@ for i in range(ascii_a, ascii_z + 1):
 :::{.callout-note}
 - Instead of typing in the numbers 97 and 123 (which we'd have to remember), we're instead using the `ord` function itself to identify the limits of the loop.
 - An even more (but harder to read) compact way is to write:
-```python
-for i in range(ord('a'), ord('z') + 1):
-    letter = chr(i)       
-```
+  ```python
+  for i in range(ord('a'), ord('z') + 1):
+      letter = chr(i)       
+  ```
 We'll understand this better once we see functions in more detail.
 :::
 
