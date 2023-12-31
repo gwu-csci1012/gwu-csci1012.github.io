@@ -29,7 +29,8 @@ website:
               - ./units/unit0/modules/module4.qmd
               - ./units/unit0/modules/module5.qmd
               - ./units/unit0/modules/module6.qmd
-              - ./submit-remember.qmd
+          - ./units/useful.qmd
+          - ./submit-remember.qmd
 format:
   html:
     theme: cosmo
