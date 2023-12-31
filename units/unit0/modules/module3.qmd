@@ -376,11 +376,13 @@ Ready? Let's trace through:
     - This will result in printing three 3's.
     - When i becomes 3, it hits the inner-loop limit and proceeds to the `print()` that follows.
     - The output so far is:
+    <ul>
     ```python
     1
     2 2
     3 3 3
     ```
+    </ul>
 - This completes the iterations of the inner loop with the outer loop j set to 3.
 -  Next, j becomes 4
 ![](../../../media/units/unit0/module3/looptrace11.png)
@@ -391,12 +393,12 @@ Ready? Let's trace through:
     - Then we come out of the inner loop and execute `print()`, which goes to the next line.
 
 - The output so far is
-```python
-1
-2 2
-3 3 3
-4 4 4 4
-```
+  ```python
+  1
+  2 2
+  3 3 3
+  4 4 4 4
+  ```
 - Finally at the end of the outer loop, j becomes 5 and hits the limit of the outer loop
 ![](../../../media/units/unit0/module3/looptrace12.png)
 
