@@ -218,14 +218,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><strong>Module 6</strong>: Real Numbers</span></a>
   </div>
 </li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/useful.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Useful tools</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../submit-remember.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What to remember about submitting work</span></a>
   </div>
 </li>
-      </ul>
-  </li>
       </ul>
   </li>
     </ul>
@@ -607,11 +613,13 @@ Note
 <li>So, the inner loop executes three times, with i first set to 0, then to 1, then to 2.</li>
 <li>This will result in printing three 3’s.</li>
 <li>When i becomes 3, it hits the inner-loop limit and proceeds to the <code>print()</code> that follows.</li>
-<li>The output so far is:</li>
+<li>The output so far is:
+<ul>
 </ul>
 <div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="dv">2</span></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="dv">3</span> <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="dv">3</span> <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</li></ul></li>
 <li><p>This completes the iterations of the inner loop with the outer loop j set to 3.</p></li>
 <li><p>Next, j becomes 4 <img src="../../../media/units/unit0/module3/looptrace11.png" class="img-fluid"></p>
 <ul>
@@ -621,14 +629,12 @@ Note
 <li>This results in four 4’s being printed in a line.</li>
 <li>Then we come out of the inner loop and execute <code>print()</code>, which goes to the next line.</li>
 </ul></li>
-<li><p>The output so far is</p></li>
-</ul>
+<li><p>The output so far is</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="dv">2</span></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="dv">3</span> <span class="dv">3</span></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span> <span class="dv">4</span> <span class="dv">4</span> <span class="dv">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Finally at the end of the outer loop, j becomes 5 and hits the limit of the outer loop <img src="../../../media/units/unit0/module3/looptrace12.png" class="img-fluid"></li>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span> <span class="dv">4</span> <span class="dv">4</span> <span class="dv">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Finally at the end of the outer loop, j becomes 5 and hits the limit of the outer loop <img src="../../../media/units/unit0/module3/looptrace12.png" class="img-fluid"></p></li>
 </ul>
 <p>Yes, that was long. But doing this many times will help you understand how to read programs. Later, you will become good at this and will, with a quick glance at the inner-loop, say “Oh, this prints 2 twice in the first iteration of the outer.”</p>
 <p><strong>Important:</strong> when you need to submit a program’s traced-out execution, use a shorter version. For example, <a href="../../../media/units/unit0/module3/TracingExample.pdf"><strong>see this PDF for the above program</strong></a>.</p>

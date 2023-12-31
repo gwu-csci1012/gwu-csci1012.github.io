@@ -218,14 +218,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><strong>Module 6</strong>: Real Numbers</span></a>
   </div>
 </li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/useful.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Useful tools</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../submit-remember.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What to remember about submitting work</span></a>
   </div>
 </li>
-      </ul>
-  </li>
       </ul>
   </li>
     </ul>
@@ -438,24 +444,20 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>We use the <code>int()</code> function to convert a string representation of an integer into an actual integer ready for arithmetic, as in:</li>
-</ul>
+<li><p>We use the <code>int()</code> function to convert a string representation of an integer into an actual integer ready for arithmetic, as in:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>pounds_str <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Desired flour in pounds: '</span>)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>pounds <span class="op">=</span> <span class="bu">int</span>(pounds_str)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>ounces <span class="op">=</span> <span class="dv">16</span> <span class="op">*</span> pounds</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Flour amount in ounces: '</span> <span class="op">+</span> ounces)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>The equivalent for real numbers is float:</li>
-</ul>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="bu">float</span>(x_str)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Why is it called so?
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Flour amount in ounces: '</span> <span class="op">+</span> ounces)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>The equivalent for real numbers is float:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="bu">float</span>(x_str)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Why is it called so?</p>
 <ul>
 <li>Observe that we can write the number 234.56 as 23.456 x 10<sup>1</sup> or as 2.3456 x 10<sup>2</sup> or as 0.23456 x 10<sup>3</sup>, or to exaggerate this idea: 0.000000000023456 x 10<sup>13</sup></li>
 <li>The decimal point can thus, be “floated” around by adjusting the exponent (like 13).</li>
 <li>This is called <em>floating-point</em> notation.</li>
 </ul></li>
-<li>So, what does it mean to have a string representation of a number versus the actual number?
+<li><p>So, what does it mean to have a string representation of a number versus the actual number?</p>
 <ul>
 <li>First, consider this program:</li>
 </ul>
@@ -464,13 +466,13 @@ Note
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Now we can use x in arithmetic</span></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> x <span class="op">/</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>We cannot use <code>some_string</code> in arithmetic.
+<li><p>We cannot use <code>some_string</code> in arithmetic.</p>
 </li></ul></li>
-<li>The following does NOT work:</li>
-</ul>
+<li><p>The following does NOT work:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'3.141'</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> x <span class="op">/</span> <span class="dv">2</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
 </div>
 </div>
 </section>
@@ -946,7 +948,7 @@ Tip
 <li>Interestingly, one can prove that there are many more irrational real numbers than rational real numbers.</li>
 </ul></li>
 <li>Another kind of real number is an <em>algebraic number</em>, meaning they are the solution to an equation like <span class="math display">\[ 3x^2 + 5 = 11 \]</span></li>
-<li>Those that aren’t algebraic go by the lovely name of transcendental number, such as <span class="math display">\[ pi \]</span>.</li>
+<li>Those that aren’t algebraic go by the lovely name of transcendental number, such as <span class="math display">\[ pi \]</span></li>
 <li>So, is every number a real number? <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⇒ No, there are numbers like <span class="math display">\[ \sqrt-1 \]</span> that are <em>imaginary</em>.</li>
 <li>You might think that an imaginary number couldn’t possibly have any use. It turns out that they are extraordinarily useful in many kinds of practical applications.
 <ul>

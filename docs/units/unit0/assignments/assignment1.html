@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CSCI1012 - Coursework</title>
+<title>CSCI1012 - Assignment 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +20,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -61,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -73,7 +107,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./coursework.html">Coursework</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      **CSCI1012**
+      </li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -88,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./"><strong>CSCI1012</strong></a> 
+      <a href="../../../"><strong>CSCI1012</strong></a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -100,25 +136,25 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./coursework.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../coursework.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Coursework</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./faq.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../faq.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FAQ</span></a>
   </div>
 </li>
@@ -142,43 +178,43 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/modules/module0.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/modules/module0.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 0:</strong> Your First Program</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/modules/module1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/modules/module1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 1:</strong> A few more getting-started examples</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/modules/module2.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/modules/module2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 2:</strong> Functions: a first look</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/modules/module3.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/modules/module3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 3:</strong> Loops: the for-loop</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/modules/module4.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/modules/module4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 4:</strong> Integers</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/modules/module5.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/modules/module5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 5</strong>: Strings and Characters</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/modules/module6.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/modules/module6.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 6</strong>: Real Numbers</span></a>
   </div>
 </li>
@@ -186,13 +222,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/useful.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/useful.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Useful tools</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./submit-remember.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../submit-remember.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What to remember about submitting work</span></a>
   </div>
 </li>
@@ -208,7 +244,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#schedule" id="toc-schedule" class="nav-link active" data-scroll-target="#schedule">Schedule</a></li>
+  <li><a href="#objectives-and-example" id="toc-objectives-and-example" class="nav-link active" data-scroll-target="#objectives-and-example">Objectives and example</a></li>
+  <li><a href="#assignment-problems" id="toc-assignment-problems" class="nav-link" data-scroll-target="#assignment-problems">Assignment problems</a>
+  <ul class="collapse">
+  <li><a href="#demo-problem" id="toc-demo-problem" class="nav-link" data-scroll-target="#demo-problem">1. Demo problem</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -217,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Coursework</h1>
+<h1 class="title">Assignment 1</h1>
 </div>
 
 
@@ -232,37 +272,50 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><em><strong>Important:</strong></em></p>
+<div class="breadcrumbs">
+<p><a href="../../../index.html">Home</a> » <a href="">Unit 0</a> » <span class="current-page">Assignment 1</span></p>
+</div>
+<section id="objectives-and-example" class="level2">
+<h2 class="anchored" data-anchor-id="objectives-and-example">Objectives and example</h2>
+<p>Assignments are designed to strengthen your problem-solving skills and build <em>independence</em>. While the module exercises are small variations of explained module examples, a single assignment will have multiple problems, all of which are intended to be more challenging than the module exercises, and will feature less detailed guidance. This is a good thing because ultimately, you’ll have to solve problems on your own. Facing and overcoming challenging problems cheerfully is the key to building problem-solving skill.</p>
+<p>In each such assignment set, we will help develop your problem-solving skills by showing you how to solve one problem, the first and often hardest problem. <em>However, the solution will include some exercises for you that you will need to submit</em>.</p>
+</section>
+<section id="assignment-problems" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-problems">Assignment problems</h2>
+<section id="demo-problem" class="level3">
+<h3 class="anchored" data-anchor-id="demo-problem">1. Demo problem</h3>
+<p>Suppose we want to use for-loops to produce this arrow-head like pattern:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">*</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">**</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">***</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">****</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">*****</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="op">******</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">*******</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="op">********</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="op">*********</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="op">**********</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="op">**********</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="op">*********</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="op">********</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="op">*******</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="op">******</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="op">*****</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="op">****</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="op">***</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="op">**</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="op">*</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>At this point, do not read further and try to address the following:</p>
 <ul>
-<li>The dates below might change. Please check this table at least twice a week.</li>
-<li>Unit-1 is more intensive that Unit-0; please plan accordingly.</li>
-<li>Unless otherwise noted, the due time for each due date will be 11.59pm EST that day.</li>
+<li>First understand what is being asked.</li>
+<li>Do you see a for-loop or two at work where, as the loops are printing, you’ll get the output shown above?</li>
+<li>Can the problem be broken down into parts, where you can solve the parts and put the solution together afterwards?</li>
+<li>Try writing some code to get at least some of the output. <a href="probsolve.html"><strong>Now examine the solution</strong></a></li>
 </ul>
-<section id="schedule" class="level2">
-<h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
-<table data-quarto-postprocess="true" class="table">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Week</th>
-<th data-quarto-table-cell-role="th">Topic</th>
-<th data-quarto-table-cell-role="th">Due (Due Date)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>16 Jan</td>
-<td>First Lecture</td>
-<td>Nothing due</td>
-</tr>
-<tr class="even">
-<td>23 Jan</td>
-<td>2nd Lecture</td>
-<td>Nothing due</td>
-</tr>
-</tbody>
-</table>
+<p>Don’t forget to submit your solutions to the exercises within.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

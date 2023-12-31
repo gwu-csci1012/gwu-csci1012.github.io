@@ -216,14 +216,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><strong>Module 6</strong>: Real Numbers</span></a>
   </div>
 </li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/useful.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Useful tools</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../submit-remember.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What to remember about submitting work</span></a>
   </div>
 </li>
-      </ul>
-  </li>
       </ul>
   </li>
     </ul>
@@ -325,9 +331,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="integer-variables" class="level2">
 <h2 class="anchored" data-anchor-id="integer-variables">4.1 Integer variables</h2>
 <p>We’ll now start working with “boxes” (variables) that hold <em>integers</em> (whole numbers like 3, 17, 2097, but not numbers like 3.141).</p>
-<ul>
-<li>Consider this program:</li>
-</ul>
+<p>Consider this program:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="excercise-type-up-the-program-in-my_variable_example.py.-also-save-the-file-so-that-it-can-be-submitted-remember-you-need-to-save-the-appropriate-files-for-every-such-type-up-exercise.-what-does-it-print-report-what-you-see-in-module4.pdf." class="level6">
@@ -348,8 +352,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>“I wonder what’s inside i?”</li>
 <li>“Let me look in the program to see what was the most recent value that got written into i”.</li>
 </ul></li>
-<li>For example:</li>
 </ul>
+<p>For example:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">3</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -364,9 +368,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span style="color:#8B4513;"> Type up the program in <code>my_variable_example3.py</code>. What is the error? Answer in <code>module4.pdf</code>. (Remember, non-coding questions are to be answered in your module pdf, in this case: <code>module4.pdf</code>.)</span></p>
 <p>Thus: when you make a variable, you need to put something in it. - Next, let’s look at <em>assignment</em> between variables: - This is the analogue of cloning between “boxes”.</p>
-<ul>
-<li>Consider this program:</li>
-</ul>
+<p>Consider this program:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>j <span class="op">=</span> i     <span class="co"># The value in i gets copied into j</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(j)  <span class="co"># Prints 5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -416,7 +418,20 @@ Tip
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>j <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(k)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span style="color:#8B4513;"> Try to identify the output of this program just by mental execution. Type up the program in <code>my_variable_example6.py</code> and confirm.</span></p>
-<p>Note that a copied value does not change if the original is changed: - For example, consider:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A copied value does not change if the original is changed</p>
+</div>
+</div>
+<p>For example, consider:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>j <span class="op">=</span> i      <span class="co"># j now has 5</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">0</span>      <span class="co"># We changed i here</span></span>
@@ -463,29 +478,28 @@ Tip
 <h2 class="anchored" data-anchor-id="integer-operators">4.2 Integer operators</h2>
 <p>Let’s examine the familiar <em>arithmetic operators</em> <code>+, -, *, /</code></p>
 <ul>
-<li><p>Addition: <code>+</code></p></li>
-<li><p>Subtraction: <code>-</code></p></li>
-<li><p>Multiplication: <code>*</code></p></li>
-<li><p>Division: <code>/</code></p></li>
-<li><p>Consider this example with addition:</p></li>
+<li>Addition: <code>+</code></li>
+<li>Subtraction: <code>-</code></li>
+<li>Multiplication: <code>*</code></li>
+<li>Division: <code>/</code></li>
 </ul>
+<p>Consider this example with addition:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>j <span class="op">=</span> <span class="dv">6</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> i <span class="op">+</span> j</span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(k)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li><p>What happens during execution: <img src="../../../media/units/unit0/module4/binary2.PNG" class="img-fluid"></p>
+<li>What happens during execution: <img src="../../../media/units/unit0/module4/binary2.PNG" class="img-fluid">
 <ul>
 <li>The <em>values</em> in <code>i</code> and <code>j</code> are added.</li>
 <li>The resulting <em>value</em> goes into variable <code>k</code>.</li>
 </ul></li>
-<li><p>A long-ish way of saying this aloud:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-⇒ “<code>k</code> is assigned the sum of the values of <code>i</code> and <code>j</code>”</p></li>
-<li><p>A shorter way:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-⇒ “<code>k</code> is assigned <code>i</code> plus <code>j</code>”</p></li>
-<li><p>Here’s an example with multiplication and division:<br>
-</p></li>
+<li>A long-ish way of saying this aloud:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+⇒ “<code>k</code> is assigned the sum of the values of <code>i</code> and <code>j</code>”</li>
+<li>A shorter way:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+⇒ “<code>k</code> is assigned <code>i</code> plus <code>j</code>”</li>
 </ul>
+<p>Here’s an example with multiplication and division:</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>j <span class="op">=</span> <span class="dv">6</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> i <span class="op">*</span> j</span>
@@ -517,9 +531,7 @@ Tip
 </section>
 <section id="expressions-and-operator-precedence" class="level2">
 <h2 class="anchored" data-anchor-id="expressions-and-operator-precedence">4.3 Expressions and operator-precedence</h2>
-<ul>
-<li>Consider the following program:</li>
-</ul>
+<p>Consider the following program:</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>j <span class="op">=</span> <span class="dv">6</span></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> i<span class="op">*</span>j <span class="op">-</span> (i<span class="op">+</span><span class="dv">1</span>)<span class="op">*</span>(j<span class="op">-</span><span class="dv">1</span>)</span>
@@ -708,12 +720,12 @@ Note
 <li><p>Pseudocode looks a little like code, but is half-English.</p></li>
 <li><p>For any given <code>i</code>, the <code>i</code>-th odd number is: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
 <code>2*i - 1</code>.</p></li>
-<li><p>Now let’s put this together into a program:</p></li>
-</ul>
+<li><p>Now let’s put this together into a program:</p>
 <div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> <span class="dv">10</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, N<span class="op">+</span><span class="dv">1</span>):</span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> (<span class="dv">2</span><span class="op">*</span>i <span class="op">-</span> <span class="dv">1</span>)</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(k)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(k)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
 <section id="excercise-trace-in-module4.pdf-the-values-of-i-and-k-in-the-program-above.-this-is-what-you-should-be-able-to-domentally-during-mental-execution." class="level6">
 <h6 class="anchored" data-anchor-id="excercise-trace-in-module4.pdf-the-values-of-i-and-k-in-the-program-above.-this-is-what-you-should-be-able-to-domentally-during-mental-execution."><span style="color:#8B4513;"><strong>4.20 Excercise:</strong> Trace (in <code>module4.pdf</code>) the values of <code>i</code> and <code>k</code> in the program above. This is what you should be able to domentally during mental execution.</span></h6>
 </section>
