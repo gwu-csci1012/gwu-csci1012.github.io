@@ -1,0 +1,11 @@
+---
+title: "Useful tools"
+---
+
+#### If and when needed.
+
+#### 1. <a href="../../media/useful/drawtool.py" download >**drawtool.py**</a>
+
+#### 2. <a href="../../media/useful/wordtool.py" download >**wordtool.py**</a> and <a href="../../media/useful/wordsWithPOS.txt" download >**wordsWithPOS.txt**</a>
+
+#### 3. <a href="../../media/useful/datatool.py" download >**datatool.py**</a>
