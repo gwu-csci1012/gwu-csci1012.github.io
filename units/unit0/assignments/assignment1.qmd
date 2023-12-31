@@ -1,0 +1,51 @@
+---
+title: "Assignment 1"
+---
+
+<div class="breadcrumbs">
+  <a href="../../../index.qmd">Home</a> &raquo;
+  <a href="">Unit 0</a> &raquo;
+  <span class="current-page">Assignment 1</span>
+</div>
+
+## Objectives and example
+Assignments are designed to strengthen your problem-solving skills and build <em>independence</em>. While the module exercises are small variations of explained module examples, a single assignment will have multiple problems, all of which are intended to be more challenging than the module exercises, and will feature less detailed guidance. This is a good thing because ultimately, you'll have to solve problems on your own. Facing and overcoming challenging problems cheerfully is the key to building problem-solving skill.
+
+In each such assignment set, we will help develop your problem-solving skills by showing you how to solve one problem, the first and often hardest problem. <em>However, the solution will include some exercises for you that you will need to submit</em>.
+
+
+## Assignment problems
+
+### 1. Demo problem
+Suppose we want to use for-loops to produce this arrow-head like pattern:
+```python
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+**********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+```
+At this point, do not read further and try to address the following:
+
+- First understand what is being asked.
+- Do you see a for-loop or two at work where, as the loops are printing, you'll get the output shown above?
+- Can the problem be broken down into parts, where you can solve the parts and put the solution together afterwards?
+- Try writing some code to get at least some of the output.
+<a href="probsolve.html">**Now examine the solution**</a>
+
+Don't forget to submit your solutions to the exercises within.
