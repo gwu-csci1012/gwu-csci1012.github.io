@@ -153,17 +153,19 @@ print('The square of the number you entered is: ' + str(x*x))
 
 :::{.callout-note}
 - We use the `int()` function to convert a string representation of an integer into an actual integer ready for arithmetic, as in:
-```python
-pounds_str = input('Desired flour in pounds: ')
-pounds = int(pounds_str)
-ounces = 16 * pounds
-print('Flour amount in ounces: ' + ounces)
-```
+    
+    ```python
+    pounds_str = input('Desired flour in pounds: ')
+    pounds = int(pounds_str)
+    ounces = 16 * pounds
+    print('Flour amount in ounces: ' + ounces)
+    ```
+
 - The equivalent for real numbers is float:
 
-```python
-x = float(x_str)
-```
+    ```python
+    x = float(x_str)
+    ```
 
 - Why is it called so?
     - Observe that we can write the number 234.56 as 23.456 x 10<sup>1</sup> or as 2.3456 x 10<sup>2</sup> or as 0.23456 x 10<sup>3</sup>, or to exaggerate this idea: 0.000000000023456 x 10<sup>13</sup>
@@ -171,21 +173,21 @@ x = float(x_str)
     - This is called <em>floating-point</em> notation.
 - So, what does it mean to have a string representation of a number versus the actual number?
     - First, consider this program:
-```python
-some_string = '3.141'
-x = float(some_string)
-# Now we can use x in arithmetic
-y = x / 2
-```
+    ```python
+    some_string = '3.141'
+    x = float(some_string)
+    # Now we can use x in arithmetic
+    y = x / 2
+    ```
 <ul>
 - We cannot use `some_string` in arithmetic.
 </ul>
 - The following does NOT work:
 
-```python
-x = '3.141'
-y = x / 2
-print(y)
+    ```python
+    x = '3.141'
+    y = x / 2
+    print(y)
 ```
 :::
 
@@ -465,38 +467,33 @@ Next, let's work with some real data
 Consider the following data:
       <center>
       <table cellpadding="2" border="2">
-         <tr>
-             <td> <b><i>x</i></b> </td>  <td> <b><i>f(x)</i></b> </td>
-         </tr>
-
-         <tr>
-             <td> 8.33 </td>  <td> 1666.67 </td>
-         </tr>
-         <tr>
-             <td> 22.22 </td>  <td>3666.67 </td>
-
-         </tr>
-         <tr>
-             <td> 23.61 </td>  <td>4833.33 </td>
-         </tr>
-         <tr>
-             <td> 30.55 </td>  <td> 5000 </td>
-
-         </tr>
-         <tr>
-             <td> 36.81 </td>  <td> 5166.67 </td>
-         </tr>
-         <tr>
-             <td> 47.22 </td>  <td> 8000 </td>
-
-         </tr>
-         <tr>
-             <td> 69.44 </td>  <td> 11333.33 </td>
-         </tr>
-         <tr>
-             <td> 105.56 </td>  <td> 19666.67 </td>
-
-         </tr>
+        <tr>
+            <td> <b><i>x</i></b> </td>  <td> <b><i>f(x)</i></b> </td>
+        </tr>
+        <tr>
+            <td> 8.33 </td>  <td> 1666.67 </td>
+        </tr>
+        <tr>
+            <td> 22.22 </td>  <td>3666.67 </td>
+        </tr>
+        <tr>
+            <td> 23.61 </td>  <td>4833.33 </td>
+        </tr>
+        <tr>
+            <td> 30.55 </td>  <td> 5000 </td>
+        </tr>
+        <tr>
+            <td> 36.81 </td>  <td> 5166.67 </td>
+        </tr>
+        <tr>
+            <td> 47.22 </td>  <td> 8000 </td>
+        </tr>
+        <tr>
+            <td> 69.44 </td>  <td> 11333.33 </td>
+        </tr>
+        <tr>
+            <td> 105.56 </td>  <td> 19666.67 </td>
+        </tr>
       </table>
       </center>
 
@@ -617,7 +614,7 @@ Let's start with numbers:
     - Interestingly, one can prove that there are many more irrational real numbers than rational real numbers.
 - Another kind of real number is an <em>algebraic number</em>,  meaning they are the solution to an equation like $$ 3x^2 + 5 = 11 $$
 - Those that aren't algebraic go by the lovely name of 
-      transcendental number, such as $$ pi $$.
+      transcendental number, such as $$ pi $$
 - So, is every number a real number?
     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rArr; 
     No, there are numbers like $$ \sqrt-1 $$ that are <em>imaginary</em>.
