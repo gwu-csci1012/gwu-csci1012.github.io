@@ -186,7 +186,7 @@ sentence = (
 print(sentence)
 ```
 
-###### <span style="color:#8B4513;">**5.7 Excercise:** Type up the above in `my_random_sentence.py`. Don't run it just yet. First download <a href="../../useful/wordtool.py" download >**wordtool.py**</a> and <a href="../../useful/wordsWithPOS.txt" download >**wordsWithPOS.txt**</a> into the same folder as your program. Now run the program several times. Report your favorite output sentence in `module5.pdf`.</span>
+###### <span style="color:#8B4513;">**5.7 Excercise:** Type up the above in `my_random_sentence.py`. Don't run it just yet. First download <a href="../../../media/useful/wordtool.py" download >**wordtool.py**</a> and <a href="../../../media/useful/wordsWithPOS.txt" download >**wordsWithPOS.txt**</a> into the same folder as your program. Now run the program several times. Report your favorite output sentence in `module5.pdf`.</span>
 
 Let's point out:
 
@@ -441,14 +441,12 @@ print()
 ```
 - Inside a computer, it turns out all characters are actually stored as integers, and merely interpreted as characters when the occasion calls for it.
 
-###### <span style="color:#8B4513;">**5.23 Excercise:** Type up the above in `my_char_example3.py`. What does it print? What is the significance of the number 123?
-</span>
+###### <span style="color:#8B4513;">**5.23 Excercise:** Type up the above in `my_char_example3.py`. What does it print? What is the significance of the number 123?</span>
 
 ## 5.6 Variable names
 Most often, we've been using single letter <em>variable names</em>,
 for example:
-    <font size="+2">
-    <font color="#000000"><pre>
+```python
 i = 7
 j = 15 * i
 print(j)
@@ -457,12 +455,10 @@ x = 'Hello'
 y = 'World'
 z = x + ' ' + y
 print(z)
-    </pre></font>
-    </font>
+```
 
-<p> Let's rewrite the above with more meaningful variable names:
-    <font size="+2">
-    <font color="#000000"><pre>
+Let's rewrite the above with more meaningful variable names:
+```python
 days_in_a_week = 7
 days_in_a_semester = 15 * days_in_a_week
 print(days_in_a_semester)
@@ -471,151 +467,91 @@ first_greeting_word = 'Hello'
 second_greeting_word= 'World'
 full_greeting = first_greeting_word + ' ' + second_greeting_word
 print(full_greeting)
-    </pre></font>
-    </font>
-  
-<p> About variable names:
-  <ul>
-  <li> First, let's review the very notion of a <em>name</em> in
-  Python, along with other kinds of "words" that are allowed in Python programs.
+```
 
-  <p><li> Reserved words or keywords:
-     <ul>
-     <li> Some words in the language belong formally to the language itself.
-     <li> These are words like 
-          <font color="#000000"><tt>for</tt></font>,
-          <font color="#000000"><tt>in</tt></font>,
-          <font color="#000000"><tt>def</tt></font>, and others.
+About variable names:
 
-     <li> In fact, just to complete this, here's the full set of 
-     33 reserved words:
-        <blockquote>
-        and as assert
-        break
-        class continue
-        def del 
-        elif else  except
-        False finally for from
-        global
-        if import in is 
-        lambda
-        None nonlocal not
-        or
-        pass
-        raise return
-        True try
-        while with
-        yield
-        </blockquote>
-
-     <li> Everyone of these must be used in very specific ways,
-     in statements or in more complex structures.
-     <li> We will learn more about these as we proceed in the course.
-     <li> We won't learn about all of them, because full mastery
-     of the language takes more than one course.
-     </ul>
-
-  <p><li> At the other end of the spectrum, there are words that
-  we freely create for our use, as in these examples:
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
-def <b>print_hello</b>():
+- First, let's review the very notion of a <em>name</em> in Python, along with other kinds of "words" that are allowed in Python programs.
+- Reserved words or keywords:
+  - Some words in the language belong formally to the language itself.
+  - These are words like `for`, `in`, `def`, and others.
+  - In fact, just to complete this, here's the full set of 33 reserved words:
+  <blockquote>
+    and as assert
+    break
+    class continue
+    def del 
+    elif else  except
+    False finally for from
+    global
+    if import in is 
+    lambda
+    None nonlocal not
+    or
+    pass
+    raise return
+    True try
+    while with
+    yield
+  </blockquote>
+  - Everyone of these must be used in very specific ways, in statements or in more complex structures.
+  - We will learn more about these as we proceed in the course.
+  - We won't learn about all of them, because full mastery of the language takes more than one course.
+- At the other end of the spectrum, there are words that we freely create for our use, as in these examples:
+```python
+def print_hello():
     print('Hello')
 
-<b>print_hello</b>()
+print_hello()
 
-<b>x</b> = 'How goes?'
-print(<b>x</b>)
+x = 'How goes?'
+print(x)
 
-for <b>i</b> in range(1,10):
-    print(<b>i</b>)
-  </pre></font>
-    <ul>
-    <li> Here, we made a function and decided to call it
-          <font color="#000000"><tt>print_hello</tt></font>
-    <li> We decided to call the string variable 
-          <font color="#000000"><tt>x</tt></font>
-    <li> And to call the loop variable 
-          <font color="#000000"><tt>i</tt></font>
-    <li> These are called <em>identifiers</em> (jargon alert).
-    </ul>
-
-  <p><li> Since we get to choose them, we could rewrite the above
+for i in range(1,10):
+    print(i)
+```
+<ul>
+- Here, we made a function and decided to call it `print_hello`
+- We decided to call the string variable `x`
+- And to call the loop variable `i`
+- These are called <em>identifiers</em> (jargon alert).
+</ul>
+- Since we get to choose them, we could rewrite the above
   program as:
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
-def <b>say_greeting</b>():
-    print('Hello')
 
-<b>say_greeting</b>()
+```python
+def say_greeting():
+  print('Hello')
 
-<b>follow_up</b> = 'How goes?'
-print(<b>follow_up</b>)
+say_greeting()
 
-for <b>my_loop_variable</b> in range(1,10):
-    print(<b>my_loop_variable</b>)
-  </pre></font>
+follow_up = 'How goes?'
+print(follow_up)
 
-  <p><li> So, what should dictate our choice of these names?
-    <ul>
-    <li> Generally, for numbers, loop-variables and short
-    calculations, we prefer single-letter names like
-          <font color="#000000"><tt>x</tt></font>
-    and
-          <font color="#000000"><tt>i</tt></font>.
-    <li> Function names should carry some meaning so that anyone
-    else who needs to use them should be able to make sense of them.
-    <li> Sometimes, variable names should be longer when we
-    want the code to be readable long after it's written.
-    <li> For example, it would not make sense for Python to 
-    use 
-          <font color="#000000"><tt>cryptic_blob_42</tt></font>
-    instead of 
-          <font color="#000000"><tt>print</tt></font>.
-    </ul>
+for my_loop_variable in range(1,10):
+    print(my_loop_variable)
+```
 
-  <p><li> The use of <em>underscores</em>:
-    <ul>
-    <li> You've noticed by now the presence of underscores
-    in our variable and function names.
-    <li> An underscore is a convenient visual aid to help
-    us read.
-    <li> Writing
-          <font color="#000000"><tt>days_in_a_week</tt></font>
-    is better than 
-          <font color="#000000"><tt>daysinaweek</tt></font>
-    because it's easier to see.
-    <li> <b>Important</b>: we cannot use spaces, so 
-          <font color="#000000"><tt>days in a week</tt></font>
-    would be incorrect as a variable name.
-    </ul>
+- So, what should dictate our choice of these names?
+  - Generally, for numbers, loop-variables and short calculations, we prefer single-letter names like `x` and `i`.
+  - Function names should carry some meaning so that anyone else who needs to use them should be able to make sense of them.
+  - Sometimes, variable names should be longer when we want the code to be readable long after it's written.
+  - For example, it would not make sense for Python to use `cryptic_blob_42` instead of `print`.
+- The use of <em>underscores</em>:
+  - You've noticed by now the presence of underscores in our variable and function names.
+  - An underscore is a convenient visual aid to help us read.
+  - Writing `days_in_a_week` is better than `daysinaweek` because it's easier to see.
+  - **Important:** we cannot use spaces, so `days in a week` would be incorrect as a variable name.
+- Generally, we shouldn't go overboard and make unnecessarily long names either, as in `the_number_of_days_in_a_week`.
 
-  <p><li> Generally, we shouldn't go overboard and make unnecessarily
-  long names either, as in
-          <font color="#000000"><tt>the_number_of_days_in_a_week</tt></font>.
+- <em>Another important rule</em>: use only letters, digits and underscores, and always start with a letter. Do NOT use other symbols like % or $ in variable names.
+- Finally, there are some function and variable names "already taken". That is we can't use them (or shouldn't) because Python has decided to use them.
+  - For example: `print` is a function name.
+  - As are `chr` and `ord` and various math functions.
+  - While we could technically use these names, we should avoid the conflict because it breaks convention and can cause hard-to-find problems.
 
-  <p><li><em>Another important rule</em>: use only letters, digits and
-  underscores, and always start with a letter. Do NOT use other
-  symbols like % or $ in variable names.
-
-  <p><li> Finally, there are some function and variable names "already taken".
-  That is we can't use them (or shouldn't) because Python has decided
-  to use them.
-     <ul>
-     <li> For example: 
-          <font color="#000000"><tt>print</tt></font>
-     is a function name.
-     <li> As are 
-          <font color="#000000"><tt>chr</tt></font>
-     and
-          <font color="#000000"><tt>ord</tt></font>
-     and various math functions.
-     <li> While we could technically use these names, we should avoid
-     the conflict because it breaks convention and can cause
-     hard-to-find problems.
-     </ul>
-
-  <p><li> Here is a list of "avoid" names:
-        <blockquote>
-          <font color="#000000"><tt>
+- Here is a list of "avoid" names:
+<blockquote>
 abs, all, any, ascii, 
 bin, bool, bytearray, bytes, 
 callable, chr, classmethod, compile, complex,
@@ -635,393 +571,201 @@ set, setattr, slice, sorted, str, sum, super,
 tuple, type, 
 vars,
 zip
-          </tt></font>
-        </blockquote>
-  Do NOT use these as your own variable or function names.
-  </ul>
+</blockquote>
+Do NOT use these as your own variable or function names.
 
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>5.24 Exercise</b>:
-Let's see what can go wrong if we use one of the words "already
-taken". Consider
-this program:
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
+###### <span style="color:#8B4513;">**5.24 Excercise:** Let's see what can go wrong if we use one of the words "already taken". Consider this program:</span>
+```python
 s = 'Hello'
-len = 5       <font color="#dc143c"># This is a BAD idea</font>
+len = 5       # This is a BAD idea
 print(len)
-  </pre></font>
-We really should not be using a variable called 
-      <font color="#000000"><tt>len</tt></font>
-since 
-      <font color="#000000"><tt>len</tt></font>
-is a predefined "already taken" name.
-What happens if you type and run this? Type your program in
-      <font color="#000000"><tt>my_variable_name3.py</tt></font>.
-Then, type this program in 
-      <font color="#000000"><tt>my_variable_name4.py</tt></font>:
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
+```
+<span style="color:#8B4513;">We really should not be using a variable called `len` since `len` is a predefined "already taken" name. What happens if you type and run this? Type your program in `my_variable_name3.py`.Then, type this program in `my_variable_name4.py`:</span>
+
+```python
 s = 'Hello'
-len = 5       <font color="#dc143c"># This is a BAD idea</font>
+len = 5       # This is a BAD idea
 print(len)
 
 t = 'Some looooooong sentence'
 k = len(t)
 print(k)
-  </pre></font>
-What do you see? (Respond in your moduler pdf.)
-</font>
+```
+<span style="color:#8B4513;">What do you see? (Respond in your moduler pdf.)</span>
 
+## 5.7 A problem solving example
+Possibly the hardest aspect of programming is <em>problem-solving</em>:
 
+- Typically, we're given an English description of a problem, with the goal of writing a program to solve the problem.
+- The hard part is not the typing, and remembering syntactic details like parentheses.
+- The hard part is figuring out what to write in code to solve the problem.
 
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>5.25 Video</b>:
-<br>
-<div style="border:1px solid black; width:300; height: 200">
-<video height="200" width="300" src="media/u0-mod5.25.mp4" type="video/mp4" controls="controls"></video>
-</div>
-</font>
-
-
-
-
-<a name="m5.7">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<hr><p><font color="#000080">
-<h2>
-5.7 &nbsp;&nbsp; A problem solving example
-</h2>
-</font><font face="book antiqua, Georgia" color="#000060">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-
-
-Possibly the hardest aspect of programming
-is <em>problem-solving</em>:
-  <ul>
-  <li> Typically, we're given an English description of a problem,
-  with the goal of writing a program to solve the problem.
-
-  <p><lI> The hard part is not the typing, and remembering syntactic
-  details like parentheses.
-
-  <p><li> The hard part is figuring out what to write in code to solve
-  the problem.
-
-  </ul>
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
 Let's work through an example problem and solve it.
 
-<p> Before that, we'll learn one more string function:
-    <font size="+2">
-    <font color="#000000"><pre>
+Before that, we'll learn one more string function:
+```python
 s = 'The quick brown fox jumps over the lazy dog'
-n = s.count('a')     <font color="#dc143c"># How many a's occur in the string s?</font>
+n = s.count('a')     # How many a's occur in the string s?
 print(n)
-    </pre></font>
-    </font>
-Note:
-  <ul>
-  <li> We've introduced a new feature of strings: the ability to
-  count occurences of a letter in that string.
-
-  <p><li> Notice the unusual way by which the function must be used:
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
-n = s<b>.count</b>('a')
-  </pre></font>
-  and NOT
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
+```
+:::{.callout-note}
+- We've introduced a new feature of strings: the ability to count occurences of a letter in that string.
+- Notice the unusual way by which the function must be used:
+```python
+n = s.count('a')
+```
+and NOT
+```python
 n = count(s, 'a')
-  </pre></font>
+```
 
-  <p><li> That is, the function 
-      <font color="#000000"><tt>count</tt></font>
-  appears to be part of the string variable 
-      <font color="#000000"><tt>s</tt></font>.
-
-  <p><li> This is a somewhat advanced topic, so we'll just use it
-  and be glad we have this feature.
-  <br>(There are other such functions we'll avail of.)
-
-  <p><li> This is possible for any string, such as:
-    <font size="+2">
-    <font color="#000000"><pre>
+- That is, the function `count` appears to be part of the string variable `s`.
+- This is a somewhat advanced topic, so we'll just use it and be glad we have this feature. (There are other such functions we'll avail of.)
+- This is possible for any string, such as:
+```python
 x = 'helloooooooo'
 print(x.count('o'))    # Number of o's in string x
 y = 'missisippi'
 print(y.count('i'))    # Number of i's in string x
-    </pre></font>
-    </font>
-  </ul>
+```
+:::
 
+###### <span style="color:#8B4513;">**5.26 Excercise:** Confirm by typing up the above in `my_letter_count.py`.</span>
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>5.26 Exercise</b>:
-Confirm by typing up the above in 
-      <font color="#000000"><tt>my_letter_count.py</tt></font>.
-</font> 
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
 OK, now the problem:
-  <ul>
-  <li> A <em>pangram</em> is an English sentence that contains
-   all 26 letters.
 
-  <p><li> We've already seen two examples:
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
+- A <em>pangram</em> is an English sentence that contains all 26 letters.
+- We've already seen two examples:
+```python
 The quick brown fox jumps over the lazy dog
 Sphinx of black quartz, judge my vow
-  </pre></font>
+```
+- There's an informal competition running over a hundred years to find the shortest grammatically correct English sentence that's a pangram.
+- Our smaller problem: given a sentence, print the number of a's, the number of b's ... and so on. This could be useful in judging such a competition.
 
-  <p><li> There's an informal competition running over a hundred years
-  to find the shortest grammatically correct English sentence that's a pangram.
-
-  <p><li> Our smaller problem: given a sentence, print the number of
-  a's, the number of b's ... and so on. This could be useful in
-  judging such a competition.
-  </ul>
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
 Let's work towards a solution:
-  <ul>
-  <li> Given a candidate pangram, we could count the number of a's:
-    <font size="+2">
-    <font color="#000000"><pre>
+
+- Given a candidate pangram, we could count the number of a's:
+```python
 s = 'The quick brown fox jumps over the lazy dog'
 print(s.count('a'))
-    </pre></font>
-    </font>
+```
 
-  <p><li> Then, we could also count the number of b's:
-    <font size="+2">
-    <font color="#000000"><pre>
+- Then, we could also count the number of b's:
+```python
 s = 'The quick brown fox jumps over the lazy dog'
 print(s.count('a'))
 print(s.count('b'))
-    </pre></font>
-    </font>
+```
 
-  <p><li> If we repeated this 26 times, we'd have a count for each letter.
+- If we repeated this 26 times, we'd have a count for each letter.
+- But the moment we see a bunch of repetition, our computational problem-solving instincts (yes, still developing) should kick in:
+<blockquote>
+  Repetition &rArr; use a loop!
+</blockquote>
+- What is the nature of iteration in this problem?
+  <br> We are iterating through the letters 'a' to 'z'
+- And we already know how to iterate over the letters:
 
-  <p><li> But the moment we see a bunch of repetition, our
-  computational problem-solving instincts (yes, still developing)
-  should kick in:
-     <blockquote>
-       Repetition &rArr; use a loop!
-     </blockquote>
-
-  <p><li> What is the nature of iteration in this problem?
-   <br> We are iterating through the letters 'a' to 'z'
-
-  <p><li> And we already know how to iterate over the letters:
-    <font size="+2">
-    <font color="#000000"><pre>
+```python
 for i in range(97, 123):
-    letter = chr(i)       
-    <font color="#dc143c"># Recall: We're going from Ascii code to letter</font>
-    </pre></font>
-    </font>
-
-  <p><li> Could we combine this with the counting of occurences inside
-  the given string? So, the idea would be:
-    <font size="+2">
-    <font color="#000000"><pre>
+  letter = chr(i)       
+  # Recall: We're going from Ascii code to letter
+```
+- Could we combine this with the counting of occurences inside the given string? So, the idea would be:
+```python
 for i in range(97, 123):
-    letter = chr(i)       
-    <font color="#dc143c"># Now somehow use that to do the counting of occurences</font>
-    </pre></font>
-    </font>
+  letter = chr(i)       
+  # Now somehow use that to do the counting of occurences
+```
 
-  <p><li> Combining:
-    <font size="+2">
-    <font color="#000000"><pre>
+- Combining:
+```python
 s = 'The quick brown fox jumps over the lazy dog'
 
 for i in range(97, 123):
-    letter = chr(i)       
-    k = s.count(letter)
-    print('Number of occurrences of ' + letter + ' is ' + str(k))
-    </pre></font>
-    </font>
+  letter = chr(i)       
+  k = s.count(letter)
+  print('Number of occurrences of ' + letter + ' is ' + str(k))
+```
 
-  </ul>
+###### <span style="color:#8B4513;">**5.27 Excercise:** Type up the above idea `my_count_problem.py`. Then, find another pangram and apply the program to that pangram. Submit your program with the pangram shown above (not the one you found).</span>
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>5.27 Exercise</b>:
-Type up the above idea
-      <font color="#000000"><tt>my_count_problem.py</tt></font>.
-Then, find another pangram and apply the program to that pangram.
-Submit your program with the pangram shown above (not the one you found).
-</font>
+###### <span style="color:#8B4513;">**5.28 Excercise:** This can be taken a step further. Instead of typing the pangram in the program itself (as was done above), ask the user to enter it as input. In `my_count_problem2.py`, read a string from the user and print the letter counts. When you test your program, use the pangram you found as input.</span>
 
+Lastly, we'll point out a slightly more elegant way of iterating over the 26 letters:
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>5.28 Exercise</b>:
-This can be taken a step further. Instead of typing the pangram in the program itself (as was done above), ask the user to enter it as input. 
-In
-      <font color="#000000"><tt>my_count_problem2.py</tt></font>,
-read a string from the user and print the letter counts.
-When you test your program, use the pangram you found as input.
-</font>
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>5.29 Video</b>:
-<br>
-<div style="border:1px solid black; width:300; height: 200">
-<video height="200" width="300" src="media/u0-mod5.29.mp4" type="video/mp4" controls="controls"></video>
-</div>
-</font>
-
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-Lastly, we'll point out a slightly more elegant way of
-iterating over the 26 letters:
-    <font size="+2">
-    <font color="#000000"><pre>
+```python
 ascii_a = ord('a')
 ascii_z = ord('z')
 for i in range(ascii_a, ascii_z + 1):
     letter = chr(i)       
-    <font color="#dc143c"># Now somehow use that to do the counting of occurences</font>
-    </pre></font>
-    </font>
-Note:
-  <ul>
-  <li> Instead of typing in the numbers 97 and 123 (which we'd have to
-  remember), we're instead using the
-      <font color="#000000"><tt>ord</tt></font>
-  function itself to identify the limits of the loop.
-
-  <p><li> An even more (but harder to read) compact way is to write:
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
+    # Now somehow use that to do the counting of occurences
+```
+:::{.callout-note}
+- Instead of typing in the numbers 97 and 123 (which we'd have to remember), we're instead using the `ord` function itself to identify the limits of the loop.
+- An even more (but harder to read) compact way is to write:
+```python
 for i in range(ord('a'), ord('z') + 1):
     letter = chr(i)       
-  </pre></font>
-  We'll understand this better once we see functions in more detail.
-  </ul>
+```
+We'll understand this better once we see functions in more detail.
+:::
 
+Finally, we've written a program to solve an actual problem. Perhaps there's a market out there for pangram-checkers?
 
+## 5.8 When things go wrong
+In each of the exercises below, try to identify the error before typing it up and confirming. Report the error in the module pdf. Then, fix the error in the code, using the specified program (.py) name.
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-Finally, we've written a program to solve an actual problem.
-Perhaps there's a market out there for pangram-checkers?
-
-
-
-<a name="m5.8">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<hr><p><font color="#000080">
-<h2>
-5.8 &nbsp;&nbsp; When things go wrong
-</h2>
-</font><font face="book antiqua, Georgia" color="#000060">
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-
-
-In each of the exercises below, try to identify the
-error before typing it up and confirming. Report
-the error in the module pdf. Then, fix the error in the code,
-using the specified program (.py) name.
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>5.30 Exercise</b>:
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
+###### <span style="color:#8B4513;">**5.30 Excercise:** </span>
+```python
 x = 'Hello'
 y = 'World'
 s = 'x' + ' ' + 'y'
-  </pre></font>
-(This should print 
-      <font color="#000000"><tt>Hello World</tt></font>,
-with a space in between).
-Fix the error in
-      <font color="#000000"><tt>error1.py</tt></font>.
-</font>
+```
+<span style="color:#8B4513;">(This should print `Hello World`, with a space in between). Fix the error in `error1.py`.</span>
 
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>5.31 Exercise</b>:
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
+###### <span style="color:#8B4513;">**5.31 Excercise:** </span>
+```python
 k = 8
 s = 'There are ' + k + ' planets in our solar system'
 print(s)
-  </pre></font>
-Fix the error in
-      <font color="#000000"><tt>error2.py</tt></font>.
-</font>
+```
+<span style="color:#8B4513;">Fix the error in `error2.py`.</span>
 
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>5.32 Exercise</b>:
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
+###### <span style="color:#8B4513;">**5.32 Excercise:** </span>
+```python
 long_sentence = 'How' + ' ' + 'vexingly' + ' ' +
    'quick' + ' ' + 'daft' + ' ' + 'zebras' + ' ' + 'jump'
-  </pre></font>
-Fix the error in
-      <font color="#000000"><tt>error3.py</tt></font>.
-</font>
+```
+<span style="color:#8B4513;">Fix the error in `error3.py`.</span>
 
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>5.33 Exercise</b>:
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
+###### <span style="color:#8B4513;">**5.33 Excercise:** </span>
+```python
 x = input('Enter a number between 1 and 10')
 y = 2 * x
 print(y)
-  </pre></font>
-Fix the error in
-      <font color="#000000"><tt>error4.py</tt></font>.
-</font>
+```
+<span style="color:#8B4513;">Fix the error in `error4.py`.</span>
 
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>5.34 Exercise</b>:
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
+###### <span style="color:#8B4513;">**5.34 Excercise:** </span>
+```python
 for i in range(1, 6):
     s = s + '**'
 print(s)
-  </pre></font>
-(This should print a string with 10 asterisks).
-Fix the error in
-      <font color="#000000"><tt>error5.py</tt></font>.
-</font>
+```
+<span style="color:#8B4513;">(This should print a string with 10 asterisks). Fix the error in `error5.py`.</span>
 
-
-<table> <tr> <td height=6> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>5.35 Exercise</b>:
-  <font color="#000000"><pre style="border:white;background-color:white;font-size:120%;">
+###### <span style="color:#8B4513;">**5.35 Excercise:** </span>
+```python
 miles = 10
 feet per mile = 5280
 feet in ten miles = miles * feet per mile
 print(feet in ten miles)
-  </pre></font>
-Fix the error in
-      <font color="#000000"><tt>error6.py</tt></font>.
-</font>
+```
+<span style="color:#8B4513;">Fix the error in `error6.py`.
 
-
-<table> <tr> <td height=8> &nbsp; </td> </tr> </table><p>
-<font color="#8B4513"><b>5.36 Audio</b>: 
 <br>
-<audio src="media/u0-mod5-outro.mp3" controls="controls"></audio>
-</font>
-
-
-
-<br><br>
-
-<b><a href="../unit0.html">On to Module 6</a></b>
-
-</font>
-
-<br><br>
-<hr>
-<center>
-<font size="1">
-&copy; 2020, Rahul Simha
-</font>
-</center>
-
-
-</BODY>
-</HTML>
+[Previous Module: **Module 4**](./module4.qmd){.button .prev} [Next Module: **Module 6**](./module6.qmd){.button .next}
