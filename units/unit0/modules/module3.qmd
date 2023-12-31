@@ -261,11 +261,13 @@ Also, observe that the very thing we're printing across a row is the loop limit 
 ![](../../../media/units/unit0/module3/forlooprint2.png)
 
 Another way to say this:
-```
+<!-- ``` -->
+<blockquote>
 When the value is 2, print a row of two 2's
-When the value is 3, print a row of three 3's
-When the value is 4, print a row of four 4's
-```
+<br>When the value is 3, print a row of three 3's
+<br>When the value is 4, print a row of four 4's
+</blockquote>
+<!-- ``` -->
 
 Thus, we could try to do is:
 ```python
