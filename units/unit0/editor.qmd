@@ -1,5 +1,8 @@
 ---
 title: "Instructions for typing and running your first program"
+# format: 
+#   html:
+#     embed-resources: true
 ---
 
 <!-- <div class="breadcrumbs">
@@ -98,8 +101,8 @@ These screenshots explain how to open Thonny:
 :::
 
 ### Step 4: Option A, Helloworld in Thonny
-<!-- {{< video  ../../media/units/unit0/module0/u0-mod0-mac-thonny.mp4 >}} -->
-<video height="200" width="300" src="(../../media/units/unit0/module0/u0-mod0-mac-thonny.mp4" type="video/mp4" controls="controls"></video>
+{{< video  https://github.com/GWU-CSCI1012/gwu-csci1012.github.io/raw/main/media/units/unit0/module0/u0-mod0-mac-thonny.mp4 >}}
+<!-- <video src="(/media/units/unit0/module0/u0-mod0-mac-thonny.mp4" type="video/mp4" controls="controls"></video> -->
 
 ### Step 4: Option B, Helloworld in Spyder
 
