@@ -287,11 +287,67 @@
     "text": "6.8 About the reals, and math in general\nWe’ve gone a bit beyond our comfort zone into real numbers and into some applications.\nWe’ll end this module by pointing out a few more things about numbers in a mathematical sense, and say something about math anxiety. None of this will be on any exam.\nLet’s start with numbers:\n\nThe easiest kind of number to understand are the natural numbers.\n\nThey are the numbers 1, 2, 3 … and so on.\nIt’s an infinite set, and many operations like + and * applied to naturals result in a natural.\nBut 3 - 5 is not a natural number, and neither is \\[ \\frac{3}{5} \\].\nSo, they’re limited in their use.\n\nIf we expand the naturals and add 0, and all the negative numbers, we get \\[\n          \\ldots -3, -2, -1, 0, 1, 2, 3 \\ldots\n  \\] (The triple-dot that indicates “going on forever” occurs now on both sides, the positive side and the negative side.)\n\nHowever, they too are limited because neither \\[ \\frac{3}{5} \\] nor \\[ \\frac{5}{3} \\] are integers.\n\nThe next kind of number to consider is rational number:\n\nA rational is a number that can be written as a fraction (or ratio) of integers.\nExamples: \\[ \\frac{5}{3}, \\frac{46}{7} \\]\nThey include all the integers.\n\nThen we get to the real numbers introduced in this module.\nWithin the real numbers there are interesting categories.\nSome real numbers are irrational and cannot be expressed as a ratio of integers.\n\nOne example is \\[ \\sqrt{2} \\], which bedeviled the Greeks a long time ago.\nInterestingly, one can prove that there are many more irrational real numbers than rational real numbers.\n\nAnother kind of real number is an algebraic number, meaning they are the solution to an equation like \\[ 3x^2 + 5 = 11 \\]\nThose that aren’t algebraic go by the lovely name of transcendental number, such as \\[ pi \\]\nSo, is every number a real number?        ⇒ No, there are numbers like \\[ \\sqrt-1 \\] that are imaginary.\nYou might think that an imaginary number couldn’t possibly have any use. It turns out that they are extraordinarily useful in many kinds of practical applications.\n\nExample: processing any kind of “wave” data, such as brain waves or seismic waves.\nExample: quantum computing.\n\n\nSome ideas to reflect on:\n\nWhich of the following most resonates with you?\n\n“I’ve always found math very hard and prefer to avoid it.”\n“I can tolerate math but would rather avoid it if possible.”\n“Math and I just don’t get along.”\n“Math is OK - I can do most of it but I don’t find it interesting or valuable.”\n“I can do math but am more interested in just applying it.”\n“I find math really interesting, even if I choose not to pursue math for math’s sake.”\n“I love math and will do as much of it as I can.”\n\nWhat ever your category, you should keep in mind:\n\nMath is a skill and takes practice, just like programming.\nYes, it’s true that a lot of high-school is boring. Much of what’s interesting in math comes after calculus.\nThe notion of not being suited to math is just a mindset. It can be changed.\nEven a little math is quite useful.\nYou can learn quite a bit of math via programming, as we’ll show you.\n\nWe’ll have more to say about the interesting and exciting connections between computer science, math, and other fields, including art."
   },
   {
-    "objectID": "units/useful.html",
-    "href": "units/useful.html",
-    "title": "Useful tools",
+    "objectID": "units/unit0/editor.html",
+    "href": "units/unit0/editor.html",
+    "title": "Instructions for typing and running your first program",
     "section": "",
-    "text": "If and when needed.\n\n\n1. drawtool.py\n\n\n2. wordtool.py and wordsWithPOS.txt\n\n\n3. datatool.py"
+    "text": "We will now have you type, run, and save your first computer program.\n\n\n\n\n\n\nNote\n\n\n\n\nPrograms are typed in using your computer’s keyboard, just as you would type in an email or text document.\nAnd just as the “thing you are typing into” is different for email and for text-editing, there is a different “thing” to type programs into.\nThe typing is one part of getting a program. If you just type your program, it will just be sitting there on your computer. But you want to go the next step and run (or, execute, as we say) the program. Typing and not-running is loosely analogous to typing an email but not sending it (the email will just remain in composed-form, but go nowhere) Similarly, typing text into Word doesn’t mean it gets “published”.\nThe “thing” into which you type and run your program is called a code editor or an IDE (Integrated Development Environment, a mouthful).\nWe are going to give you the option of using one of two code editors, Thonny or Spyder. Think of them as apps that help you type and run programs.\n\n\n\nBefore we get to typing in a program, we first (if not already done) need to download and install Python and either Thonny or Spyder.\n\nThe term install means: you download software on your computer and get it to run. This is something you do just once.\nWhen you need to run the software again, you search for it on your computer (since it’s already installed) and merely run it.\nThus, you will perform Steps 1 and 2 just once for this course.\nAnd Steps 3 and 4 repeatedly as you write code.\nAlso, if you start off with one editor and change your mind, you can come back here to install the other editor and learn how to use it.\n\n1. Install Anaconda: Pick between these two options and click through to follow instructions in installing Anaconda.\n\nAnaconda for MacOS Users\nAnaconda for Windows Users\n\nThen come back here and proceed with Step 2.\nIncidentally, you might be asking: what exactly is Anaconda and what does it have to do with Python other than its name?\n\nPython is a programming language. Typically a language alone is not enough to get many useful programming tasks done.\nWe need additional software that’s useful. Anaconda is a bundle that includes Python and this additional software. You install it once on your computer and you can then avail of all kinds of useful things related to Python.\nThe one thing it does not have, sadly, is the Thonny editor, so we’ll show you how to install that.\n\n2. Install a code editor: by selecting ONE of the following options:\n\nOption A: Thonny for Mac users\nOption B: There are no special instructions because Spyder comes bundled with Anaconda.\nOption A: Thonny for Windows users\nOption B: There are no special instructions because Spyder comes bundled with Anaconda.\n\n3. Open a code editor: Choose between\n\nOption A: looking for and opening Thonny for Mac users\nOption B: Using Spyder, looking for, and opening Spyder on a Mac is similar to looking for and opening Thonny.\nOption A: looking for and opening Thonny for Windows users\nOption B: looking for and opening Spyder. Looking for, and opening Spyder on Windows is similar to looking for and opening Thonny.\n\n4. Type and Execute helloworld.py: Choose between:\n\nOption A: Helloworld for Mac users using Thonny\nOption B: Helloworld for Mac users using Spyder\nOption A: Helloworld for Windows users using Thonny\nOption B: Helloworld for Windows users using Spyder\n\n5. Install Matplotlib for Thonny users: What is matplotlib? It’s a plotting package that we’ll use. This comes packaged with Spyder and so, only Thonny users need to download this. Thonny is a nice editor and so Thonny users cheerfully do this additional step in order to use plotting along with Thonny.\n\nMac Users: Install matplotlib for Thonny\nWindows Users: Install matplotlib for Thonny"
+  },
+  {
+    "objectID": "units/unit0/editor.html#objective",
+    "href": "units/unit0/editor.html#objective",
+    "title": "Instructions for typing and running your first program",
+    "section": "",
+    "text": "We will now have you type, run, and save your first computer program.\n\n\n\n\n\n\nNote\n\n\n\n\nPrograms are typed in using your computer’s keyboard, just as you would type in an email or text document.\nAnd just as the “thing you are typing into” is different for email and for text-editing, there is a different “thing” to type programs into.\nThe typing is one part of getting a program. If you just type your program, it will just be sitting there on your computer. But you want to go the next step and run (or, execute, as we say) the program. Typing and not-running is loosely analogous to typing an email but not sending it (the email will just remain in composed-form, but go nowhere) Similarly, typing text into Word doesn’t mean it gets “published”.\nThe “thing” into which you type and run your program is called a code editor or an IDE (Integrated Development Environment, a mouthful).\nWe are going to give you the option of using one of two code editors, Thonny or Spyder. Think of them as apps that help you type and run programs.\n\n\n\nBefore we get to typing in a program, we first (if not already done) need to download and install Python and either Thonny or Spyder.\n\nThe term install means: you download software on your computer and get it to run. This is something you do just once.\nWhen you need to run the software again, you search for it on your computer (since it’s already installed) and merely run it.\nThus, you will perform Steps 1 and 2 just once for this course.\nAnd Steps 3 and 4 repeatedly as you write code.\nAlso, if you start off with one editor and change your mind, you can come back here to install the other editor and learn how to use it.\n\n1. Install Anaconda: Pick between these two options and click through to follow instructions in installing Anaconda.\n\nAnaconda for MacOS Users\nAnaconda for Windows Users\n\nThen come back here and proceed with Step 2.\nIncidentally, you might be asking: what exactly is Anaconda and what does it have to do with Python other than its name?\n\nPython is a programming language. Typically a language alone is not enough to get many useful programming tasks done.\nWe need additional software that’s useful. Anaconda is a bundle that includes Python and this additional software. You install it once on your computer and you can then avail of all kinds of useful things related to Python.\nThe one thing it does not have, sadly, is the Thonny editor, so we’ll show you how to install that.\n\n2. Install a code editor: by selecting ONE of the following options:\n\nOption A: Thonny for Mac users\nOption B: There are no special instructions because Spyder comes bundled with Anaconda.\nOption A: Thonny for Windows users\nOption B: There are no special instructions because Spyder comes bundled with Anaconda.\n\n3. Open a code editor: Choose between\n\nOption A: looking for and opening Thonny for Mac users\nOption B: Using Spyder, looking for, and opening Spyder on a Mac is similar to looking for and opening Thonny.\nOption A: looking for and opening Thonny for Windows users\nOption B: looking for and opening Spyder. Looking for, and opening Spyder on Windows is similar to looking for and opening Thonny.\n\n4. Type and Execute helloworld.py: Choose between:\n\nOption A: Helloworld for Mac users using Thonny\nOption B: Helloworld for Mac users using Spyder\nOption A: Helloworld for Windows users using Thonny\nOption B: Helloworld for Windows users using Spyder\n\n5. Install Matplotlib for Thonny users: What is matplotlib? It’s a plotting package that we’ll use. This comes packaged with Spyder and so, only Thonny users need to download this. Thonny is a nice editor and so Thonny users cheerfully do this additional step in order to use plotting along with Thonny.\n\nMac Users: Install matplotlib for Thonny\nWindows Users: Install matplotlib for Thonny"
+  },
+  {
+    "objectID": "units/unit0/editor.html#macos-users",
+    "href": "units/unit0/editor.html#macos-users",
+    "title": "Instructions for typing and running your first program",
+    "section": "MacOS Users",
+    "text": "MacOS Users\n\nStep 1: Installing Anaconda\nFollow this guide to learn how to install Anaconda\n\n\nStep 2: Option A, Installing Thonny\n\n\n\nFollow this guide to learn how to install Thonny\n\n\nStep 3: Option A, Opening Thonny\nThese screenshots explain how to open Thonny:\n\nStep 3.A.1 \nStep 3.A.2 \nStep 3.A.3 \nStep 3.A.4: You now have opened Thonny \n\n\n\n\n\n\n\nNote\n\n\n\n\nWhen you open Thonny you aren’t opening program files (yet). It’s similar to opening Word without naming a text file to work on.\nYour program files are going to be in specific folders. You need to look for them, and when you create new ones, save them in specific folders.\n\n\n\n\n\nStep 4: Option A, Helloworld in Thonny\n\n\n\n\n\nStep 4: Option B, Helloworld in Spyder\n\n\nStep 5: Installing Matplotlib (or any package) for Thonny Users\nHow to add a package (like Matplotlib):\n\nTo add a package (which will only be necessary for those using Thonny), first, open Thonny, and go to “Tools”. From there, click on “Manage Packages”. \nThen, you will see a window like what is shown in the image above. Search for the “package” you need to install or remove. In this case, we have used the example of “Matplotlib”, which you will need to have installed for some exercises. Once you’ve typed the name of the package, click “Find package from PyPI” or press the enter/return key. \nTo add the package, click the install button. You will then see a small popup while the package is installed."
+  },
+  {
+    "objectID": "units/unit0/editor.html#windows-users",
+    "href": "units/unit0/editor.html#windows-users",
+    "title": "Instructions for typing and running your first program",
+    "section": "Windows Users",
+    "text": "Windows Users\n\nStep 1: Installing Anaconda\nFollow this guide to learn how to install Anaconda\n\n\nStep 2: Option A, Installing Thonny\n\n\nStep 3: Option A, Opening Thonny\n\n\n\nThe following screenshots explain how to open Thonny:\n\nStep 3.A.1 \nStep 3.A.2 \nStep 3.A.3 \n\n\n\n\n\n\n\nNote\n\n\n\n\nWhen you open Thonny you aren’t opening program files (yet). It’s similar to opening Word without naming a text file to work on.\nYour program files are going to be in specific folders. You need to look for them, and when you create new ones, save them in specific folders.\n\n\n\n\n\nStep 4: Option A, Helloworld in Thonny\n\n\nStep 4: Option B: Helloworld in Spyder\n\n\nStep 5: Installing Matplotlib\nHow to add a package (like Matplotlib):\n\nTo add a package (which will only be necessary for those using Thonny), first, open Thonny, and go to “Tools”. From there, click on “Manage Packages”. \nThen, you will see a window like what is shown in the image above. Search for the “package” you need to install or remove. In this case, we have used the example of “Matplotlib”, which you will need to have installed for some exercises. Once you’ve typed the name of the package, click “Find package from PyPI” or press the enter/return key. \nTo add the package, click the install button. You will then see a small popup while the package is installed."
+  },
+  {
+    "objectID": "units/unit0/anaconda-mac.html",
+    "href": "units/unit0/anaconda-mac.html",
+    "title": "Anaconda Installation Guide for macOS",
+    "section": "",
+    "text": "This guide will walk you through the process of installing Anaconda, a popular Python distribution, on your macOS computer. Anaconda provides a convenient way to manage Python packages and environments for data science and scientific computing."
+  },
+  {
+    "objectID": "units/unit0/anaconda-mac.html#introduction",
+    "href": "units/unit0/anaconda-mac.html#introduction",
+    "title": "Anaconda Installation Guide for macOS",
+    "section": "",
+    "text": "This guide will walk you through the process of installing Anaconda, a popular Python distribution, on your macOS computer. Anaconda provides a convenient way to manage Python packages and environments for data science and scientific computing."
+  },
+  {
+    "objectID": "units/unit0/anaconda-mac.html#prerequisites",
+    "href": "units/unit0/anaconda-mac.html#prerequisites",
+    "title": "Anaconda Installation Guide for macOS",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nBefore you begin, ensure you have the following:\n\nA macOS computer.\nAn internet connection.\nSufficient disk space for the installation."
+  },
+  {
+    "objectID": "units/unit0/anaconda-mac.html#installation-steps",
+    "href": "units/unit0/anaconda-mac.html#installation-steps",
+    "title": "Anaconda Installation Guide for macOS",
+    "section": "Installation Steps",
+    "text": "Installation Steps\n\n1. Download Anaconda\nVisit the Anaconda download page at https://www.anaconda.com/download.\n\n\n2. Choose the macOS Installer\nClick on the “Download” button under the macOS section depending on you System-on-chip (Intel/M1/M2) to download the Anaconda installer for macOS.\n\n\n\nDownload Anaconda\n\n\n\n\n3. Run the Installer\n\nLocate the downloaded file (usually in your “Downloads” folder).\nDouble-click the Anaconda disk image (.dmg) file to open it and click on “Allow” when prompted.\n\n\n\n\nRun Installer\n\n\n\n\n\nAllow Installation\n\n\n\n\n4. Follow the Installer Wizard\n\nFollow the on-screen instructions to begin the installation.\nRead and accept the license agreement when prompted.\n\n\n\n\nRead Me\n\n\n\n\n\nLicense Agreement\n\n\n\n\n5. Install Anaconda\nClick the “Install” button to begin the installation process. This may take a few minutes.\n\n\n\nInstall\n\n\n\n\n6. Complete the Installation\nOnce the installation is complete, you will see a confirmation message. Click the “Continue” button and finally close the installation wizard by clicking on the “Close” button.\n\n\n\nInstallation Complete\n\n\n\n\n\nClose Installation Wizard\n\n\n\n\n7. Move the Installer file to Trash (Optional)\n\n\n\nMove the Installer to Trash\n\n\n\n\n8. If prompted to update the navigator, select “No, don’t show again”\n\n\n\nDon’t Update\n\n\n\n\n9. You’re NOT REQUIRED to Log in/Sign up for Anaconda Cloud, close the prompt by clicking the “x” button\n\n\n\nDon’t Log in/Sign up"
+  },
+  {
+    "objectID": "units/unit0/anaconda-mac.html#conclusion",
+    "href": "units/unit0/anaconda-mac.html#conclusion",
+    "title": "Anaconda Installation Guide for macOS",
+    "section": "Conclusion",
+    "text": "Conclusion\nCongratulations! You’ve successfully installed Anaconda and Jupyter on your macOS computer. You can now use Anaconda to create Python environments, manage packages, and work on data science projects.\nFor more information on using Anaconda, refer to the official documentation at https://docs.anaconda.com/.\nIf you encounter any issues or have questions, don’t hesitate to seek help from the Anaconda community or consult the documentation for troubleshooting tips."
   },
   {
     "objectID": "index.html",
@@ -299,6 +355,13 @@
     "title": "CS 1012: Introduction to Programming with Python",
     "section": "",
     "text": "Welcome to the section of CS-1012!\n\n\n\n\n\n\nCource Content\n\n\n\n\n\nThe course material is sourced from Prof. Simha’s webpage: https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/\n\n\n\nBecause this is an course, it will operate differently than a regular course. In particular:\n\nEven though the course is, we will meet three times: once at the beginning to get you going, once in the middle to check in, and once at the end for the in-class final exam.\nMost of our communication to you will be by email or by announcements in Blackboard.\nWhen you need to communicate with us, please follow the specific instructions outlined in Blackboard.\nWhen you submit work, please follow the specific instructions outlined in Blackboard for submitting work.\nThe coursework page outlines the schedule. It is YOUR job to keep to the schedule and submit work accordingly.\nAs you’ll see you’ll be accompanied by four students who will be doing the course with you. These four have no background in computer science or engineering whatsoever, demonstrating that anyone can learn CS with sufficient enthusiasm.\nStart by reading the About section. Then, await an email that will:\n\nSchedule the first meeting.\nDescribe the first homework to submit."
+  },
+  {
+    "objectID": "units/useful.html",
+    "href": "units/useful.html",
+    "title": "Useful tools",
+    "section": "",
+    "text": "If and when needed.\n\n\n1. drawtool.py\n\n\n2. wordtool.py and wordsWithPOS.txt\n\n\n3. datatool.py"
   },
   {
     "objectID": "units/unit0/assignments/assignment1.html",
@@ -320,6 +383,41 @@
     "title": "Assignment 1",
     "section": "Assignment problems",
     "text": "Assignment problems\n\n1. Demo problem\nSuppose we want to use for-loops to produce this arrow-head like pattern:\n*\n**\n***\n****\n*****\n******\n*******\n********\n*********\n**********\n**********\n*********\n********\n*******\n******\n*****\n****\n***\n**\n*\nAt this point, do not read further and try to address the following:\n\nFirst understand what is being asked.\nDo you see a for-loop or two at work where, as the loops are printing, you’ll get the output shown above?\nCan the problem be broken down into parts, where you can solve the parts and put the solution together afterwards?\nTry writing some code to get at least some of the output. Now examine the solution\n\nDon’t forget to submit your solutions to the exercises within."
+  },
+  {
+    "objectID": "units/unit0/anaconda-windows.html",
+    "href": "units/unit0/anaconda-windows.html",
+    "title": "Anaconda Installation Guide for Windows",
+    "section": "",
+    "text": "This guide will walk you through the process of installing Anaconda, a popular Python distribution, on your Windows computer. Anaconda provides a convenient way to manage Python packages and environments for data science and scientific computing."
+  },
+  {
+    "objectID": "units/unit0/anaconda-windows.html#introduction",
+    "href": "units/unit0/anaconda-windows.html#introduction",
+    "title": "Anaconda Installation Guide for Windows",
+    "section": "",
+    "text": "This guide will walk you through the process of installing Anaconda, a popular Python distribution, on your Windows computer. Anaconda provides a convenient way to manage Python packages and environments for data science and scientific computing."
+  },
+  {
+    "objectID": "units/unit0/anaconda-windows.html#prerequisites",
+    "href": "units/unit0/anaconda-windows.html#prerequisites",
+    "title": "Anaconda Installation Guide for Windows",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nBefore you begin, ensure you have the following:\n\nA Windows computer.\nAn internet connection.\nSufficient disk space for the installation."
+  },
+  {
+    "objectID": "units/unit0/anaconda-windows.html#installation-steps",
+    "href": "units/unit0/anaconda-windows.html#installation-steps",
+    "title": "Anaconda Installation Guide for Windows",
+    "section": "Installation Steps",
+    "text": "Installation Steps\n\n1. Download Anaconda\nVisit the Anaconda download page at https://www.anaconda.com/download.\n\n\n2. Choose the Windows Installer\nClick on the “Download” button under the Windows section to download the Anaconda installer for Windows.\n\n\n\nDownload Anaconda\n\n\n\n\n3. Run the Installer\n\nLocate the downloaded file (usually in your “Downloads” folder).\nDouble-click the installer executable (.exe) file to run it.\n\n\n\n\nRun Installer\n\n\n\n\n4. Follow the Installer Wizard\n\nFollow the on-screen instructions to begin the installation.\nRead and accept the license agreement when prompted.\n\n\n\n\nRead Me\n\n\n\n\n\nLicense Agreement\n\n\n\nChoose the installation type. It’s recommended to select “Just me” unless you have specific reasons for a different choice.\n\n\n\n\nInstallation Type\n\n\n\nSelect the installation location (the default is usually fine).\n\n\n\n\nInstallation Location\n\n\n\n\n5. Install Anaconda\nClick the “Install” button to begin the installation process. This may take a few minutes.\n\n\n\nInstall\n\n\n\n\n6. Complete the Installation\nOnce the installation is complete, you will see a confirmation message. Click the “Next” button and proceed to finish.\n\n\n\nInstallation Complete\n\n\n\n\n\nClose Installation Wizard\n\n\n\n\n7. If prompted to update the navigator, select “No, don’t show again”\n\n\n\nDon’t Update\n\n\n\n\n8. You’re NOT REQUIRED to Log in/Sign up for Anaconda Cloud, close the prompt by clicking the “x” button\n\n\n\nDon’t Log in/Sign up"
+  },
+  {
+    "objectID": "units/unit0/anaconda-windows.html#conclusion",
+    "href": "units/unit0/anaconda-windows.html#conclusion",
+    "title": "Anaconda Installation Guide for Windows",
+    "section": "Conclusion",
+    "text": "Conclusion\nCongratulations! You’ve successfully installed Anaconda on your Windows computer. You can now use Anaconda to create Python environments, manage packages, and work on data science projects.\nFor more information on using Anaconda, refer to the official documentation at https://docs.anaconda.com/.\nIf you encounter any issues or have questions, don’t hesitate to seek help from the Anaconda community or consult the documentation for troubleshooting tips."
   },
   {
     "objectID": "units/unit0/modules/module4.html",
