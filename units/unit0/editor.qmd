@@ -1,8 +1,5 @@
 ---
 title: "Instructions for typing and running your first program"
-# format: 
-#   html:
-#     embed-resources: true
 ---
 
 <!-- <div class="breadcrumbs">
@@ -46,9 +43,9 @@ Incidentally, you might be asking: what exactly is Anaconda and what does it hav
 
 **2. Install a code editor**: by selecting ONE of the following options:
 
-- *Option A*: [Thonny for Mac users](thonny-mac.qmd#install-thonny)
+- *Option A*: [Thonny for Mac users](editor.qmd#install-thonny-mac)
 - *Option B*: There are no special instructions because Spyder comes bundled with Anaconda.
-- *Option A*: [Thonny for Windows users](thonny-windows.qmd#install-thonny)
+- *Option A*: [Thonny for Windows users](editor.qmd#install-thonny-windows)
 - *Option B*: There are no special instructions because Spyder comes bundled with Anaconda.
 
 
@@ -61,25 +58,28 @@ Incidentally, you might be asking: what exactly is Anaconda and what does it hav
 
 **4. Type and Execute `helloworld.py`**: Choose between:
 
-- *Option A*: [Helloworld for Mac users using Thonny](thonny-mac.qmd#hello-thonny)
-- *Option B*: [Helloworld for Mac users using Spyder](thonny-mac.qmd#hello-spyder)
-- *Option A*: [Helloworld for Windows users using Thonny](thonny-windows.qmd#hello-thonny)
-- *Option B*: [Helloworld for Windows users using Spyder](thonny-windows.qmd#hello-spyder)
+- *Option A*: [Helloworld for Mac users using Thonny](editor.qmd#hello-thonny-mac)
+- *Option B*: [Helloworld for Mac users using Spyder](editor.qmd#hello-spyder-mac)
+- *Option A*: [Helloworld for Windows users using Thonny](editor.qmd#hello-thonny-win)
+- *Option B*: [Helloworld for Windows users using Spyder](editor.qmd#hello-spyder-win)
 
 **5. Install Matplotlib for Thonny users**: 
 What is matplotlib? It's a plotting package that we'll use. This comes packaged with Spyder and so, only Thonny users need to download this. Thonny is a nice editor and so Thonny users cheerfully do this additional step in order to use plotting along with Thonny. 
 
-- Mac Users: [Install matplotlib for Thonny](editor.qmd#mac-matplotlib)
-- Windows Users: [Install matplotlib for Thonny](editor.qmd#windows-matplotlib)
+- Mac Users: [Install matplotlib for Thonny](editor.qmd#install-matplotlib-mac)
+- Windows Users: [Install matplotlib for Thonny](editor.qmd#install-matplotlib-win)
 
 ## MacOS Users
 ### Step 1: Installing Anaconda
 Follow [**this**](anaconda-mac.qmd) guide to learn how to install Anaconda 
 
+<div id="install-thonny-mac"></div>
 ### Step 2: Option A, Installing Thonny
-<div id="open-thonny-mac"></div>
-Follow [**this**](thonny-mac.qmd) guide to learn how to install Thonny
+Installing and Opening Thonny
+{{< video ../../media/units/unit0/module0/u0-mod0-installthonny-mac.mp4 aspect-ratio="21x9" >}}
+Now click on the [**Link to Thonny**](https://thonny.org) and install it on your laptop.
 
+<div id="open-thonny-mac"></div>
 ### Step 3: Option A, Opening Thonny
 These screenshots explain how to open Thonny:
 
@@ -100,12 +100,15 @@ These screenshots explain how to open Thonny:
 - Your program files are going to be in specific folders. You need to look for them, and when you create new ones, save them in specific folders.
 :::
 
+<div id="hello-thonny-mac"></div>
 ### Step 4: Option A, Helloworld in Thonny
-{{< video  https://github.com/GWU-CSCI1012/gwu-csci1012.github.io/raw/main/media/units/unit0/module0/u0-mod0-mac-thonny.mp4 >}}
-<!-- <video src="(/media/units/unit0/module0/u0-mod0-mac-thonny.mp4" type="video/mp4" controls="controls"></video> -->
+{{< video  ../../media/units/unit0/module0/u0-mod0-mac-thonny.mp4 aspect-ratio="21x9" >}}
 
+<div id="hello-spyder-mac"></div>
 ### Step 4: Option B, Helloworld in Spyder
+{{< video  ../../media/units/unit0/module0/u0-mod0-mac-spyder.mp4 aspect-ratio="21x9" >}}
 
+<div id="install-matplotlib-mac"></div>
 ### Step 5: Installing Matplotlib (or any package) for Thonny Users
 How to add a package (like Matplotlib):
 
@@ -122,11 +125,14 @@ How to add a package (like Matplotlib):
 ### Step 1: Installing Anaconda
 Follow [**this**](anaconda-windows.qmd) guide to learn how to install Anaconda 
 
+<div id="install-thonny-windows"></div>
 ### Step 2: Option A, Installing Thonny
+Installing and Opening Thonny
+{{< video ../../media/units/unit0/module0/u0-mod0-installthonny-win.mp4 aspect-ratio="21x9" >}}
+Now click on the [**Link to Thonny**](https://thonny.org) and install it on your laptop.
 
-
-### Step 3: Option A, Opening Thonny
 <div id="open-thonny-windows"></div>
+### Step 3: Option A, Opening Thonny
 The following screenshots explain how to open Thonny:
 
 - **Step 3.A.1**
@@ -143,10 +149,15 @@ The following screenshots explain how to open Thonny:
 - Your program files are going to be in specific folders. You need to look for them, and when you create new ones, save them in specific folders.
 :::
 
+<div id="hello-thonny-win"></div>
 ### Step 4: Option A, Helloworld in Thonny
+{{< video ../../media/units/unit0/module0/u0-mod0-win-spyder.mp4 aspect-ratio="21x9" >}}
 
+<div id="hello-spyder-win"></div>
 ### Step 4: Option B: Helloworld in Spyder
+{{< video ../../media/units/unit0/module0/u0-mod0-win-spyder.mp4 aspect-ratio="21x9" >}}
 
+<div id="install-matplotlib-win"></div>
 ### Step 5: Installing Matplotlib
 How to add a package (like Matplotlib):
 
