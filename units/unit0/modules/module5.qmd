@@ -157,6 +157,9 @@ print('A pangram must have all ' + str(k) + ' letters')
 
 ###### <span style="color:#8B4513;">**5.5 Excercise:** Type up the above in `my_string_example5.py` to see the resulting output.</span>
 
+<!-- ###### <span style="color:#8B4513;">**5.6 Video:**</span>
+{{< video ../../../media/units/unit0/module5/u0-mod5.6.mp4 aspect-ratio="21x9" >}} -->
+
 ## 5.2 Fun with string concatenation
 We will occasionally introduce programs we've written to both simplify your programming and yet allow for interesting examples.
 
@@ -224,6 +227,9 @@ sentence = (
 </ul>
 
 ###### <span style="color:#8B4513;">**5.8 Excercise:** Open `wordtool.py` and examine the functions within. Then, make a longer random sentence in `my_random_sentence2.py`.</span>
+
+###### <span style="color:#8B4513;">**5.9 Video:**</span>
+{{< video ../../../media/units/unit0/module5/u0-mod5.9.mp4 aspect-ratio="21x9" >}}
 
 ## 5.3 Input from the terminal
 Thus far we have printed (output) to the screen but have not taken in any input.
@@ -330,7 +336,10 @@ print('A triangle with base=' + str(n))
 print(s)
 ```
 
-###### <span style="color:#8B4513;">**5.14 Excercise:** Type up the above in `my_triangle2.py`.</span>
+###### <span style="color:#8B4513;">**5.15 Video:**</span>
+{{< video ../../../media/units/unit0/module5/u0-mod5.16.mp4 aspect-ratio="21x9" >}}
+
+###### <span style="color:#8B4513;">**5.16 Excercise:** Type up the above in `my_triangle2.py`.</span>
 
 We've introduced some new concepts above:
 
@@ -360,15 +369,18 @@ Here the variable `n` will have the actual integer, which we can use in loops, i
 - Notice that, since we want the loop to run `n` times, we've begun the outer loop at 1, running through to n (inclusive).
 - This means using `range(1, n+1)` in the outer loop.
 
-###### <span style="color:#8B4513;">**5.18 Excercise:** Trace (using a table) through what happens above when the user enters 5.</span>
+###### <span style="color:#8B4513;">**5.17 Excercise:** Trace (using a table) through what happens above when the user enters 5.</span>
 
-###### <span style="color:#8B4513;">**5.19 Excercise:** What happens when the conversion from string to integer is not done? Find out by trying this:</span>
+###### <span style="color:#8B4513;">**5.18 Excercise:** What happens when the conversion from string to integer is not done? Find out by trying this:</span>
 ```python
 n = input('Enter an integer: ')
 k = 5 * n
 print(k)
 ```
-Fix the issue by converting the string that's in `n` and making an integer. Type your code in `my_conversion.py`.
+<span style="color:#8B4513;">Fix the issue by converting the string that's in `n` and making an integer. Type your code in `my_conversion.py`.</span>
+
+###### <span style="color:#8B4513;">**5.19 Video:**</span>
+{{< video ../../../media/units/unit0/module5/u0-mod5.20.mp4 aspect-ratio="21x9" >}}
 
 ## 5.5 &nbsp;&nbsp; The useful relationship between characters and integers
 Consider these three strings:
@@ -406,7 +418,7 @@ n = ord(last_letter)
 print(n)
 ```
 
-###### <span style="color:#8B4513;">**5.21 Excercise:** Type up the above in `my_char_example.py`.</span>
+###### <span style="color:#8B4513;">**5.20 Excercise:** Type up the above in `my_char_example.py`.</span>
 
 :::{.callout-note}
 - We've used longer, more descriptive variable names like `first_letter`.
@@ -427,7 +439,7 @@ s = chr(k)
 print(s)      # Prints the char 'a'
 ```
 
-###### <span style="color:#8B4513;">**5.22 Excercise:** Type up the above in `my_char_example2.py`. Then, change 97 to 98. What should the value of `k` be to print the char 'z' (last lowercase letter)?</span>
+###### <span style="color:#8B4513;">**5.21 Excercise:** Type up the above in `my_char_example2.py`. Then, change 97 to 98. What should the value of `k` be to print the char 'z' (last lowercase letter)?</span>
 
 The usefulness of the Ascii code:
 
@@ -441,7 +453,7 @@ print()
 ```
 - Inside a computer, it turns out all characters are actually stored as integers, and merely interpreted as characters when the occasion calls for it.
 
-###### <span style="color:#8B4513;">**5.23 Excercise:** Type up the above in `my_char_example3.py`. What does it print? What is the significance of the number 123?</span>
+###### <span style="color:#8B4513;">**5.22 Excercise:** Type up the above in `my_char_example3.py`. What does it print? What is the significance of the number 123?</span>
 
 ## 5.6 Variable names
 Most often, we've been using single letter <em>variable names</em>,
@@ -574,7 +586,7 @@ zip
 </blockquote>
 Do NOT use these as your own variable or function names.
 
-###### <span style="color:#8B4513;">**5.24 Excercise:** Let's see what can go wrong if we use one of the words "already taken". Consider this program:</span>
+###### <span style="color:#8B4513;">**5.23 Excercise:** Let's see what can go wrong if we use one of the words "already taken". Consider this program:</span>
 ```python
 s = 'Hello'
 len = 5       # This is a BAD idea
@@ -592,6 +604,10 @@ k = len(t)
 print(k)
 ```
 <span style="color:#8B4513;">What do you see? (Respond in your moduler pdf.)</span>
+
+###### <span style="color:#8B4513;">**5.24 Video:**</span>
+{{< video ../../../media/units/unit0/module5/u0-mod5.25.mp4 aspect-ratio="21x9" >}}
+
 
 ## 5.7 A problem solving example
 Possibly the hardest aspect of programming is <em>problem-solving</em>:
@@ -633,7 +649,7 @@ print(n)
   ```
 :::
 
-###### <span style="color:#8B4513;">**5.26 Excercise:** Confirm by typing up the above in `my_letter_count.py`.</span>
+###### <span style="color:#8B4513;">**5.25 Excercise:** Confirm by typing up the above in `my_letter_count.py`.</span>
 
 OK, now the problem:
 
@@ -692,9 +708,12 @@ for i in range(97, 123):
   print('Number of occurrences of ' + letter + ' is ' + str(k))
 ```
 
-###### <span style="color:#8B4513;">**5.27 Excercise:** Type up the above idea `my_count_problem.py`. Then, find another pangram and apply the program to that pangram. Submit your program with the pangram shown above (not the one you found).</span>
+###### <span style="color:#8B4513;">**5.26 Excercise:** Type up the above idea `my_count_problem.py`. Then, find another pangram and apply the program to that pangram. Submit your program with the pangram shown above (not the one you found).</span>
 
-###### <span style="color:#8B4513;">**5.28 Excercise:** This can be taken a step further. Instead of typing the pangram in the program itself (as was done above), ask the user to enter it as input. In `my_count_problem2.py`, read a string from the user and print the letter counts. When you test your program, use the pangram you found as input.</span>
+###### <span style="color:#8B4513;">**5.27 Excercise:** This can be taken a step further. Instead of typing the pangram in the program itself (as was done above), ask the user to enter it as input. In `my_count_problem2.py`, read a string from the user and print the letter counts. When you test your program, use the pangram you found as input.</span>
+
+###### <span style="color:#8B4513;">**5.28 Video:**</span>
+{{< video ../../../media/units/unit0/module5/u0-mod5.29.mp4 aspect-ratio="21x9" >}}
 
 Lastly, we'll point out a slightly more elegant way of iterating over the 26 letters:
 
