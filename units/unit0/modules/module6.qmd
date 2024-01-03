@@ -112,6 +112,9 @@ print(x)
 ```
 <span style="color:#8B4513;">to compute the square root of 2 and print the square root (and only the square root - just one number).</span>
 
+###### <span style="color:#8B4513;">**6.4 Video:**</span>
+{{< video ../../../media/units/unit0/module6/u0-mod6.4.mp4 aspect-ratio="21x9" >}}
+
 ## 6.1 Going from reals to integers and strings
 Consider this program:
 ```python
@@ -207,6 +210,9 @@ print(v)    # Prints HelloHelloHello
 
 ###### <span style="color:#8B4513;">**6.7 Excercise:** Type up the above in `my_string_example.py` and confirm.</span>
 
+###### <span style="color:#8B4513;">**6.8 Video:**</span>
+{{< video ../../../media/units/unit0/module6/u0-mod6.8.mp4 aspect-ratio="21x9" >}}
+
 Now, back to real numbers.
 
 ###### <span style="color:#8B4513;">**6.9 Excercise:** In `my_conversion_example.py` write a program that asks the user to enter a distance in kilometers, and then converts to miles and prints that number.</span>
@@ -285,6 +291,9 @@ for k in range(n):
 
 print(total)
 ```
+
+###### <span style="color:#8B4513;">**6.13 Video:**</span>
+{{< video ../../../media/units/unit0/module6/u0-mod6.13.mp4 aspect-ratio="21x9" >}}
 
 ###### <span style="color:#8B4513;">**6.14 Excercise:** Type up the above in `my_zeno.py`. In your module pdf trace through the values of each of the variables.</span>
 
@@ -379,6 +388,9 @@ Let's plot the well-known \(\sin\) function.
 
 ###### <span style="color:#8B4513;">**6.20 Excercise:** Use a scientific calculator (included in every laptop) to calculate the sin values for the 20 input values beginning with 0, 0.5, 1, ... etc .. until 10. Then plot this by hand on paper and include a picture in your module pdf.</span>
 
+###### <span style="color:#8B4513;">**6.21 Video:**</span>
+{{< video ../../../media/units/unit0/module6/u0-mod6.23.mp4 aspect-ratio="21x9" >}}
+
 Let's now do the plotting in code:
 ```python
 from drawtool import DrawTool 
@@ -399,7 +411,7 @@ dt.display()
 
 
 
-###### <span style="color:#8B4513;">**6.21 Excercise:** Download <a href="../../../media/useful/drawtool.py" download >**drawtool.py**</a> into your module6 folder. Then type up the above in `my_functionplot.py` and execute. Change `N` to 100. This should produce a smoother curve. Next, change the statement </span>
+###### <span style="color:#8B4513;">**6.22 Excercise:** Download <a href="../../../media/useful/drawtool.py" download >**drawtool.py**</a> into your module6 folder. Then type up the above in `my_functionplot.py` and execute. Change `N` to 100. This should produce a smoother curve. Next, change the statement </span>
 ```python
 for k in range(0, N):
 ```
@@ -541,12 +553,12 @@ dt.draw_point (x, f)
 dt.display()
 ```
 
-###### <span style="color:#8B4513;">**6.22 Excercise:** You already have <a href="../../../media/useful/drawtool.py" download >**drawtool.py**</a> in your module6 folder. Type up the above in `my_dataplot.py` and run. Do you see the points "sort of" along a jagged line? This is actual scientific data from observations made in 1929. It utterly shattered our perception of the world. Can you identify what this was about and explain the significance?</span>
+###### <span style="color:#8B4513;">**6.23 Excercise:** You already have <a href="../../../media/useful/drawtool.py" download >**drawtool.py**</a> in your module6 folder. Type up the above in `my_dataplot.py` and run. Do you see the points "sort of" along a jagged line? This is actual scientific data from observations made in 1929. It utterly shattered our perception of the world. Can you identify what this was about and explain the significance?</span>
 
 ## 6.7 &nbsp;&nbsp; When things go wrong
 In each of the exercises below, first try to identify the error just by reading. Then type up the program to confirm, and after that, fix the error.
 
-###### <span style="color:#8B4513;">**6.23 Excercise:**</span>
+###### <span style="color:#8B4513;">**6.24 Excercise:**</span>
 
 ```python
 x = 2 *** 6
@@ -554,7 +566,7 @@ print(x)
 ```
 <span style="color:#8B4513;">Fix the error in `my_error1.py`.</span>
 
-###### <span style="color:#8B4513;">**6.24 Excercise:**</span>
+###### <span style="color:#8B4513;">**6.25 Excercise:**</span>
 ```python
 x = 100
 y = 0.1 * x
@@ -563,7 +575,7 @@ print('y=' + y)
 <span style="color:#8B4513;">Fix the error in `my_error2.py`.</span>
 
 
-###### <span style="color:#8B4513;">**6.25 Excercise:**</span>
+###### <span style="color:#8B4513;">**6.26 Excercise:**</span>
 ```python
 import math
 x = input('Enter your height in inches: ')
@@ -573,7 +585,7 @@ print('You are at least ' + str(y) + ' feet tall')
 <span style="color:#8B4513;">Fix the error in `my_error3.py`.</span>
 
 
-###### <span style="color:#8B4513;">**6.26 Excercise:**</span>
+###### <span style="color:#8B4513;">**6.27 Excercise:**</span>
 ```python
 for x in range(1.0, 2.0, 0.1):
     print(x)
