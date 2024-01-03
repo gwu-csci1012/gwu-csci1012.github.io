@@ -170,6 +170,9 @@ print(j)   # j still has 5
 0 is an actual value, and is not "no value" or "nothing".
 :::
 
+###### <span style="color:#8B4513;">**4.7 Video:**</span>
+{{< video ../../../media/units/unit0/module4/u0-mod4.7.mp4 aspect-ratio="21x9" >}}
+
 ###### <span style="color:#8B4513;">**4.8 Excercise:** Consider this program:</span>
 
 Type up the following lines of code in `my_variable_example7.py`:
@@ -185,6 +188,9 @@ print(i)   # should print 6
 print(j)   # should print 5
 ```
 <span style="color:#8B4513;">Add some lines of code with the objective of swapping the  values in variables i and j. You will need a third variable to be used as a holding place. Thus, without directly assigning the  number 5 to j or the number 6 to i, write code using a third variable to achieve the desired swapping of values.</span>
+
+###### <span style="color:#8B4513;">**4.9 Video:**</span>
+{{< video ../../../media/units/unit0/module4/u0-mod4.9.mp4 aspect-ratio="21x9" >}}
 
 ## 4.2 Integer operators
 Let's examine the familiar <em>arithmetic operators</em> `+, -, *, /`
@@ -308,6 +314,9 @@ The key to working them out is to use <b>extra</b> parentheses in the right way.
 
 ###### <span style="color:#8B4513;">**4.12 Excercise:** What does the expression `i*j - i+1*j-1` evaluate to when `i=7` and `j=3`? Answer in `module4.pdf`.</span>
 
+###### <span style="color:#8B4513;">**4.13 Video:**</span>
+{{< video ../../../media/units/unit0/module4/u0-mod4.13.mp4 aspect-ratio="21x9" >}}
+
 ## 4.4 More about expressions and assignment
 The <em>remainder</em> operator:
 
@@ -348,6 +357,9 @@ for i in range(1, j):
 - Examples of non-prime numbers: 10 and 15
 - The notion of a prime number may seem like an esoteric topic, suitable for a dinner conversation with mathematicians. But it turns out to have immense practical value: much of cryptography is based on properties of numbers that can be cleanly divided by only two prime numbers. 
 :::
+
+###### <span style="color:#8B4513;">**4.16 Video:**</span>
+{{< video ../../../media/units/unit0/module4/u0-mod4.16.mp4 aspect-ratio="21x9" >}}
 
 Now we'll look at a strange (initially) but very useful type of assignment:
 
@@ -394,8 +406,10 @@ print(s)
 - The program prints the sum of the first N odd numbers.
 - Recall from earlier that as i goes through 1, 2, 3, ... (2*i-1) evaluates as successive odd numbers 1, 3, 5, ...
 
-###### <span style="color:#8B4513;">**4.18 Excercise:** Trace (in `module4.pdf`) the values of `i` and `s` in the program above. Then, in `my_expression_example4.py`, edit the code to create an outer loop that varies N from 1 to 10. That is, make N a new for-loop variable that ranges between 1 and 10 (inclusive), and ensure that you properly indent the inner (nested) loop that uses i. What pattern do you observe in the output?
-</span>
+###### <span style="color:#8B4513;">**4.18 Excercise:** Trace (in `module4.pdf`) the values of `i` and `s` in the program above. Then, in `my_expression_example4.py`, edit the code to create an outer loop that varies N from 1 to 10. That is, make N a new for-loop variable that ranges between 1 and 10 (inclusive), and ensure that you properly indent the inner (nested) loop that uses i. What pattern do you observe in the output?</span>
+
+###### <span style="color:#8B4513;">**4.19 Video:**</span>
+{{< video ../../../media/units/unit0/module4/u0-mod4.19.mp4 aspect-ratio="21x9" >}}
 
 ## 4.5 Problem solving and pseudocode
 Suppose we were given the following problem: <em>write a program to print the first <i>N</i> odd numbers</em>.
@@ -471,6 +485,9 @@ As a first step, let's see if we can use a loop to compute a single power of 2:
 
 ###### <span style="color:#8B4513;">**4.21 Excercise:** Trace the changing values of `p` in the above program using a table (in `module4.pdf`). Then, type up the above program in `my_powerof2.py` to confirm.</span>
 
+###### <span style="color:#8B4513;">**4.22 Video:**</span>
+{{< video ../../../media/units/unit0/module4/u0-mod4.22.mp4 aspect-ratio="21x9" >}}
+
 - Next, let's look at pseudocode for the sum of powers (our original problem):
   ```python
   s = 1    
@@ -500,6 +517,9 @@ As a first step, let's see if we can use a loop to compute a single power of 2:
   ![](../../../media/units/unit0/module4/power3.png)
 
 ###### <span style="color:#8B4513;">**4.23 Excercise:** Make a table with columns labeled `k, i, p` and `s` and trace the program, filling in the table step-by-step (in `module4.pdf`).</span>
+
+###### <span style="color:#8B4513;">**4.24 Video:**</span>
+{{< video ../../../media/units/unit0/module4/u0-mod4.24.mp4 aspect-ratio="21x9" >}}
 
 ###### <span style="color:#8B4513;">**4.25 Excercise:** Try a few other values of `n`, e.g., `n=3` or `n=4`. Try to guess the mathematical formula for 1 + 2<sup>1</sup> + 2<sup>2</sup> + 2<sup>3</sup> + ... + 2<sup>n</sup> (in `module4.pdf`)</span>
 
