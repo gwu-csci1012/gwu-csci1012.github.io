@@ -156,8 +156,8 @@ print('The backslash character, \\, is less intimidating now')
   "    "   \\\  
 ```
 
-<!-- ###### <span style="color:#8B4513;">**1.10 Video:**</span>
-{{< video ../../../media/units/unit0/module1/u0-mod1.10.mp4 >}} -->
+###### <span style="color:#8B4513;">**1.10 Video:**</span>
+{{< video ../../../media/units/unit0/module1/u0-mod1.10.mp4 aspect-ratio='21x9' >}}
 
 Another use of backslash: to make long strings
 
