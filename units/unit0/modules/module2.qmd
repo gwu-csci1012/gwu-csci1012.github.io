@@ -80,8 +80,8 @@ We'll later see examples where some things can go between the parens.
     - Other lines that belong to the function <em>should</em> be indented.
     - There are other forms of indentation that we'll point out as we proceed - they're all <em>important</em>.
 
-<!-- ###### <span style="color:#8B4513;">**2.2 Video:**</span>
-{{< video ../../../media/units/unit0/module2/u0-mod2.2.mp4 >}} -->
+###### <span style="color:#8B4513;">**2.2 Video:**</span>
+{{< video ../../../media/units/unit0/module2/u0-mod2.2.mp4 aspect-ratio='21x9' >}}
 
 ###### <span style="color:#8B4513;">**2.3 Exercise:** Write your own animal sound that uses one function at least thrice with an exclamation mark at the end, <em>e.g.</em> print the big version of `BAAA!`. Write your code in `my_pet_sound.py`. Once your program is working, say the sound out aloud to celebrate. (Why not?)</span>
 
@@ -142,8 +142,8 @@ Let's explain using an analogy:
 At which step (which step number) do we execute the last line
 in `print_big_O`? And then, at which step do we enter `print_big_O` the second time and print its first line? In `animal_sounds2.py` replace x and y with the correct step number. Don't forget: non-coding responses to exercises go into `module2.pdf` (one PDF per module).
 
-<!-- ###### <span style="color:#8B4513;">**2.6 Video:**</span>
-{{< video ../../../media/units/unit0/module2/u0-mod2.6.mp4 >}} -->
+###### <span style="color:#8B4513;">**2.6 Video:**</span>
+{{< video ../../../media/units/unit0/module2/u0-mod2.6.mp4 aspect-ratio='21x9' >}}
 
 ## 2.1 Calling functions from other functions
 Consider this program:
@@ -184,8 +184,8 @@ called `my_pet_sound2.py`. That is, add an additional function to your earlier p
 
 ###### <span style="color:#8B4513;">**2.8 Exercise:** Look at the example above. What step number is represented by the question mark (?) next to the second `print_big_O()` inside the `print_two_big_Os()` function? What line in the program represents step 15? Write your answer in `module2.pdf`. Remember: if it's not clear where to write your answer, write it in your module pdf (for this module that's `module2.pdf`).</span>
 
-<!-- ###### <span style="color:#8B4513;">**2.9 Video:**</span>
-{{< video ../../../media/units/unit0/module2/u0-mod2.9.mp4 >}} -->
+###### <span style="color:#8B4513;">**2.9 Video:**</span>
+{{< video ../../../media/units/unit0/module2/u0-mod2.9.mp4 aspect-ratio='21x9' >}}
 
 - Mental execution:
 - We will use the term <em>mental execution</em> for the above exercise of tracing through the execution without actually compiling and running the program.
@@ -335,8 +335,8 @@ About <em>control-c</em>
 - One such case is to use <em>control-c</em> (control and c together) to terminate the execution of a program.
 - However, to do this, you first need to click into wherever the program is executing. This is typically the output window (where the output appears).
 
-<!-- ###### <span style="color:#8B4513;">**2.14 Video:**</span>
-{{< video ../../../media/units/unit0/module2/u0-mod2.14.mp4 >}} -->
+###### <span style="color:#8B4513;">**2.14 Video:**</span>
+{{< video ../../../media/units/unit0/module2/u0-mod2.14.mp4 aspect-ratio='21x9' >}}
 
 ## 2.4 And now for something strange
 
@@ -374,8 +374,8 @@ The term <em>recursion</em> is used when function calls itself:
 
 - In fact, <em>recursion</em> is one of the most powerful computational problem-solving paradigms.
 
-<!-- ###### <span style="color:#8B4513;">**2.17 Video:**</span>
-{{< video ../../../media/units/unit0/module2/u0-mod2.17.mp4 >}} -->
+###### <span style="color:#8B4513;">**2.17 Video:**</span>
+{{< video ../../../media/units/unit0/module2/u0-mod2.17.mp4 aspect-ratio='21x9' >}}
 
 ## 2.5 Another reminder about computerese
 How is your computerese coming along? Are you now much more confident with folders, files, zip files and such? What about editing, and saving?
