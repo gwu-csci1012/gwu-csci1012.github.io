@@ -1,6 +1,21 @@
 ---
 title: "**Module 1:** A few more getting-started examples"
+format:
+  html:
+    code-copy: false
 ---
+<html>
+<head>
+    <style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
+</head>
+<body>
 
 <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
@@ -268,3 +283,6 @@ If it's a bit hazy, please make sure to review from the <b><a href="../module0/c
 
 <br>
 [Previous Module: **Module 0**](./module0.qmd){.button .prev} [Next Module: **Module 2**](./module2.qmd){.button .next}
+
+</body>
+</html>
