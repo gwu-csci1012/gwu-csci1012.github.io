@@ -1,0 +1,68 @@
+---
+title: "Instruction Team"
+format:
+  html:
+    code-copy: false
+---
+
+<html>
+<head>
+    <style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
+</head>
+<body>
+
+<div class="breadcrumbs">
+  <a href="./index.qmd">Home</a> &raquo;
+  <span class="current-page">Instruction Team</span>
+</div>
+
+## Dr. Kartik Bulusu (Instructor)
+**Dr. Kartik V. Bulusu** is an Associate Professor of Practice in the Department of Computer Science (CS) and Associate Research Professor in the Department of Mechanical and Aerospace Engineering (MAE).
+
+His research work entails human health and sustainable energy with a focus on biofluid mechanics, polymer rheology, low-cost energy technologies, and applications of wavelet transforms.
+
+He is also working on AI-on-the-edge applications using low-power devices. In his free time, he loves to tinker with electronics and design low-cost experiments for research and education.
+
+Dr. Bulusu has been developing low-cost ejector technologies refrigeration in disaster-prone regions and humanitarian needs.
+
+**Office Hours:** On-Demand (Please reach out via email)
+
+**Location:** Blackboard Collaborate Course Room
+
+**Campus Address:** SEH 3640 
+
+**Email**: <a href="mailto:bulusu@gwu.edu">bulusu@gwu.edu</a>
+
+## GTAs
+### Amal Alqahtani
+
+### Lexi Sun
+
+### Boomika Karuppaiah
+
+### Ethan Leider
+
+## LAs
+### Abdulrahman Alsaleh
+
+### Adil Bajwa
+
+### Maya Bardin
+
+### Vik Becker
+
+### Petra Chuenarrom
+
+### Tanim Khan
+
+### Marlee Alvino
+
+## Grader
+### Rutvik Solanki
