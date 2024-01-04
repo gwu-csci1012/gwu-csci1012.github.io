@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CSCI1012 - Instructions for typing and running your first program</title>
+<title>CSCI1012 - Installing an Editor</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,8 +39,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -188,6 +186,23 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text"><strong>Unit 1:</strong> Key Building Blocks in Programming</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../units/unit1/modules/module0.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 0:</strong> A first look at lists</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../units/useful.html" class="sidebar-item-text sidebar-link">
@@ -218,24 +233,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#macos-users" id="toc-macos-users" class="nav-link" data-scroll-target="#macos-users">MacOS Users</a>
+  <li><a href="#understanding-the-basics" id="toc-understanding-the-basics" class="nav-link active" data-scroll-target="#understanding-the-basics">Understanding the Basics</a>
   <ul class="collapse">
-  <li><a href="#step-1-installing-anaconda" id="toc-step-1-installing-anaconda" class="nav-link" data-scroll-target="#step-1-installing-anaconda">Step 1: Installing Anaconda</a></li>
-  <li><a href="#step-2-option-a-installing-thonny" id="toc-step-2-option-a-installing-thonny" class="nav-link" data-scroll-target="#step-2-option-a-installing-thonny">Step 2: Option A, Installing Thonny</a></li>
-  <li><a href="#step-3-option-a-opening-thonny" id="toc-step-3-option-a-opening-thonny" class="nav-link" data-scroll-target="#step-3-option-a-opening-thonny">Step 3: Option A, Opening Thonny</a></li>
-  <li><a href="#step-4-option-a-helloworld-in-thonny" id="toc-step-4-option-a-helloworld-in-thonny" class="nav-link" data-scroll-target="#step-4-option-a-helloworld-in-thonny">Step 4: Option A, Helloworld in Thonny</a></li>
-  <li><a href="#step-4-option-b-helloworld-in-spyder" id="toc-step-4-option-b-helloworld-in-spyder" class="nav-link" data-scroll-target="#step-4-option-b-helloworld-in-spyder">Step 4: Option B, Helloworld in Spyder</a></li>
-  <li><a href="#step-5-installing-matplotlib-or-any-package-for-thonny-users" id="toc-step-5-installing-matplotlib-or-any-package-for-thonny-users" class="nav-link" data-scroll-target="#step-5-installing-matplotlib-or-any-package-for-thonny-users">Step 5: Installing Matplotlib (or any package) for Thonny Users</a></li>
-  </ul></li>
-  <li><a href="#windows-users" id="toc-windows-users" class="nav-link" data-scroll-target="#windows-users">Windows Users</a>
-  <ul class="collapse">
-  <li><a href="#step-1-installing-anaconda-1" id="toc-step-1-installing-anaconda-1" class="nav-link" data-scroll-target="#step-1-installing-anaconda-1">Step 1: Installing Anaconda</a></li>
-  <li><a href="#step-2-option-a-installing-thonny-1" id="toc-step-2-option-a-installing-thonny-1" class="nav-link" data-scroll-target="#step-2-option-a-installing-thonny-1">Step 2: Option A, Installing Thonny</a></li>
-  <li><a href="#step-3-option-a-opening-thonny-1" id="toc-step-3-option-a-opening-thonny-1" class="nav-link" data-scroll-target="#step-3-option-a-opening-thonny-1">Step 3: Option A, Opening Thonny</a></li>
-  <li><a href="#step-4-option-a-helloworld-in-thonny-1" id="toc-step-4-option-a-helloworld-in-thonny-1" class="nav-link" data-scroll-target="#step-4-option-a-helloworld-in-thonny-1">Step 4: Option A, Helloworld in Thonny</a></li>
-  <li><a href="#step-4-option-b-helloworld-in-spyder-1" id="toc-step-4-option-b-helloworld-in-spyder-1" class="nav-link" data-scroll-target="#step-4-option-b-helloworld-in-spyder-1">Step 4: Option B: Helloworld in Spyder</a></li>
-  <li><a href="#step-5-installing-matplotlib" id="toc-step-5-installing-matplotlib" class="nav-link" data-scroll-target="#step-5-installing-matplotlib">Step 5: Installing Matplotlib</a></li>
+  <li><a href="#select-an-option-appropriate-for-your-operating-system" id="toc-select-an-option-appropriate-for-your-operating-system" class="nav-link" data-scroll-target="#select-an-option-appropriate-for-your-operating-system"><strong>Select an Option Appropriate for Your Operating System</strong></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -245,7 +245,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Instructions for typing and running your first program</h1>
+<h1 class="title">Installing an Editor</h1>
 </div>
 
 
@@ -272,223 +272,46 @@ ul.task-list li input[type="checkbox"] {
     </style>
 
 
-<!-- <div class="breadcrumbs">
-  <a href="../../../index.qmd">Home</a> &raquo;
-  <a href="">Units</a> &raquo;
-  <span class="current-page"></span>
-</div> -->
-<section id="objectives" class="level2">
-<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
-<p>We will now have you <em>type</em>, run, and save your first <em>computer program</em>.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p><em>Getting Started with Your Coding Journey</em></p>
+<section id="understanding-the-basics" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-the-basics">Understanding the Basics</h2>
+<p>In the realm of programming, your choice of an editor is pivotal. It serves as your creative hub, where your code takes shape. Here’s a brief overview of key features editors bring to the table:</p>
 <ul>
-<li>Programs are <em>typed</em> in using your computer’s keyboard, just as you would type in an email or text document.</li>
-<li>And just as the “thing you are typing into” is different for email and for text-editing, there is a different “thing” to type programs into.</li>
-<li>The <em>typing</em> is one part of getting a program. If you just type your program, it will just be sitting there on your computer. But you want to go the next step and <em>run</em> (or, execute, as we say) the program. Typing and not-running is loosely analogous to typing an email but not <em>sending</em> it (the email will just remain in composed-form, but go nowhere) Similarly, typing text into Word doesn’t mean it gets “published”.</li>
-<li>The “thing” into which you type and run your program is called a <em>code editor</em> or an IDE (Integrated Development Environment, a mouthful).</li>
-<li>We are going to give you the option of using one of two code editors, <em>Thonny</em> or <em>Spyder</em>. Think of them as apps that help you type and run programs.</li>
+<li><p><strong>Text Editing</strong>: Core to any editor is the ability to write, edit, and organize code. Look for features like syntax highlighting, auto-indentation, and code completion for an enhanced coding experience.</p></li>
+<li><p><strong>Code Execution</strong>: Some editors go beyond editing by enabling interactive code execution, which is handy for data analysis and experimentation.</p></li>
+<li><p><strong>Extensions and Plugins</strong>: Editors are highly customizable. Enhance functionality by installing extensions or plugins tailored to your needs, adding Python-specific tools or themes.</p></li>
+<li><p><strong>IDEs (Integrated Development Environments)</strong>: Editors offer a complete development environment, including debugging and version control integration.</p></li>
 </ul>
-</div>
-</div>
-<p>Before we get to typing in a program, we first (if not already done) need to download and <em>install</em> Python and either Thonny or Spyder.</p>
+<p>For your CS1012 course, we recommend Thonny as the primary choice, with Spyder as a valuable alternative:</p>
 <ul>
-<li>The term <em>install</em> means: you download software on your computer and get it to run. This is something you do just once.</li>
-<li>When you need to run the software again, you search for it on your computer (since it’s already installed) and merely run it.</li>
-<li>Thus, you will perform <b>Steps 1 and 2 just once</b> for this course.</li>
-<li>And <b>Steps 3 and 4</b> repeatedly as you write code.</li>
-<li>Also, if you start off with one editor and change your mind, you can come back here to install the other editor and learn how to use it.</li>
+<li><p><strong>Thonny</strong>: Thonny is a beginner-friendly Python IDE, designed to make it easy to get started with programming. It comes with a simple interface and integrated tools for package management.</p></li>
+<li><p><strong>Spyder</strong>: Spyder is a powerful IDE for scientific computing and data analysis. It provides features like an interactive console, variable explorer, and integrated help, making it a solid alternative to Thonny.</p></li>
 </ul>
-<p><strong>1. Install Anaconda</strong>: Pick between these two options and click through to follow instructions in installing Anaconda.</p>
+<p>Let’s dive into the installation process:</p>
+<section id="select-an-option-appropriate-for-your-operating-system" class="level3">
+<h3 class="anchored" data-anchor-id="select-an-option-appropriate-for-your-operating-system"><strong>Select an Option Appropriate for Your Operating System</strong></h3>
+<!-- <div id="steps"></div> -->
+<section id="macos" class="level4">
+<h4 class="anchored" data-anchor-id="macos"><strong>MacOS:</strong></h4>
 <ul>
-<li><a href="../../units/unit0/anaconda-mac.html"><strong>Anaconda for MacOS Users</strong></a></li>
-<li><a href="../../units/unit0/anaconda-windows.html"><strong>Anaconda for Windows Users</strong></a></li>
-</ul>
-<p><em>Then come back here and proceed with Step 2.</em></p>
-<p>Incidentally, you might be asking: what exactly is Anaconda and what does it have to do with Python other than its name?</p>
-<ul>
-<li>Python is a programming language. Typically a language alone is not enough to get many useful programming tasks done.</li>
-<li>We need additional software that’s useful. Anaconda is a bundle that includes Python and this additional software. You install it once on your computer and you can then avail of all kinds of useful things related to Python.</li>
-<li>The one thing it does not have, sadly, is the Thonny editor, so we’ll show you how to install that.</li>
-</ul>
-<p><strong>2. Install a code editor</strong>: by selecting ONE of the following options:</p>
-<ul>
-<li><em>Option A</em>: <a href="../../units/unit0/editor.html#install-thonny-mac">Thonny for Mac users</a></li>
-<li><em>Option B</em>: There are no special instructions because Spyder comes bundled with Anaconda.</li>
-<li><em>Option A</em>: <a href="../../units/unit0/editor.html#install-thonny-windows">Thonny for Windows users</a></li>
-<li><em>Option B</em>: There are no special instructions because Spyder comes bundled with Anaconda.</li>
-</ul>
-<p><strong>3. Open a code editor</strong>: Choose between</p>
-<ul>
-<li><em>Option A</em>: looking for and opening <a href="../../units/unit0/editor.html#open-thonny-mac">Thonny for Mac users</a></li>
-<li><em>Option B</em>: Using Spyder, looking for, and opening Spyder on a Mac is similar to looking for and opening Thonny.</li>
-<li><em>Option A</em>: looking for and opening <a href="../../units/unit0/editor.html#open-thonny-windows">Thonny for Windows users</a></li>
-<li><em>Option B</em>: looking for and opening Spyder. Looking for, and opening Spyder on Windows is similar to looking for and opening Thonny.</li>
-</ul>
-<p><strong>4. Type and Execute <code>helloworld.py</code></strong>: Choose between:</p>
-<ul>
-<li><em>Option A</em>: <a href="../../units/unit0/editor.html#hello-thonny-mac">Helloworld for Mac users using Thonny</a></li>
-<li><em>Option B</em>: <a href="../../units/unit0/editor.html#hello-spyder-mac">Helloworld for Mac users using Spyder</a></li>
-<li><em>Option A</em>: <a href="../../units/unit0/editor.html#hello-thonny-win">Helloworld for Windows users using Thonny</a></li>
-<li><em>Option B</em>: <a href="../../units/unit0/editor.html#hello-spyder-win">Helloworld for Windows users using Spyder</a></li>
-</ul>
-<p><strong>5. Install Matplotlib for Thonny users</strong>: What is matplotlib? It’s a plotting package that we’ll use. This comes packaged with Spyder and so, only Thonny users need to download this. Thonny is a nice editor and so Thonny users cheerfully do this additional step in order to use plotting along with Thonny.</p>
-<ul>
-<li>Mac Users: <a href="../../units/unit0/editor.html#install-matplotlib-mac">Install matplotlib for Thonny</a></li>
-<li>Windows Users: <a href="../../units/unit0/editor.html#install-matplotlib-win">Install matplotlib for Thonny</a></li>
+<li><p><strong>Step 1</strong>: <a href="thonny-mac.qmd">Install Thonny for Mac</a></p></li>
+<li><p><strong>Step 2</strong>: <a href="spyder-mac.qmd">Install Spyder for Mac</a></p></li>
 </ul>
 </section>
-<section id="macos-users" class="level2">
-<h2 class="anchored" data-anchor-id="macos-users">MacOS Users</h2>
-<section id="step-1-installing-anaconda" class="level3">
-<h3 class="anchored" data-anchor-id="step-1-installing-anaconda">Step 1: Installing Anaconda</h3>
-<p>Follow <a href="../../units/unit0/anaconda-mac.html"><strong>this</strong></a> guide to learn how to install Anaconda</p>
-<div id="install-thonny-mac">
-
-</div>
-</section>
-<section id="step-2-option-a-installing-thonny" class="level3">
-<h3 class="anchored" data-anchor-id="step-2-option-a-installing-thonny">Step 2: Option A, Installing Thonny</h3>
-<p>Installing and Opening Thonny</p>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../media/units/unit0/module0/u0-mod0-installthonny-mac.mp4"></video></div>
-<p>Now click on the <a href="https://thonny.org"><strong>Link to Thonny</strong></a> and install it on your laptop.</p>
-<div id="open-thonny-mac">
-
-</div>
-</section>
-<section id="step-3-option-a-opening-thonny" class="level3">
-<h3 class="anchored" data-anchor-id="step-3-option-a-opening-thonny">Step 3: Option A, Opening Thonny</h3>
-<p>These screenshots explain how to open Thonny:</p>
+<section id="windows" class="level4">
+<h4 class="anchored" data-anchor-id="windows"><strong>Windows:</strong></h4>
 <ul>
-<li><p><strong>Step 3.A.1</strong> <img src="../../media/units/unit0/module0/spotlight-thonny-1.png" class="img-fluid"></p></li>
-<li><p><strong>Step 3.A.2</strong> <img src="../../media/units/unit0/module0/spotlight-thonny-2.png" class="img-fluid"></p></li>
-<li><p><strong>Step 3.A.3</strong> <img src="../../media/units/unit0/module0/spotlight-thonny-3.png" class="img-fluid"></p></li>
-<li><p><strong>Step 3.A.4: You now have opened Thonny</strong> <img src="../../media/units/unit0/module0/spotlight-thonny-4.png" class="img-fluid"></p></li>
+<li><p><strong>Step 1</strong>: <a href="thonny-windows.qmd">Install Thonny for Windows</a></p></li>
+<li><p><strong>Step 2</strong>: <a href="spyder-windows.qmd">Install Spyder for Windows</a></p></li>
 </ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>When you open Thonny you aren’t opening program files (yet). It’s similar to opening Word without naming a text file to work on.</li>
-<li>Your program files are going to be in specific folders. You need to look for them, and when you create new ones, save them in specific folders.</li>
-</ul>
-</div>
-</div>
-<div id="hello-thonny-mac">
+<p>Choose Thonny as your primary choice for its simplicity, especially if you’re new to coding. However, if you prefer a more feature-rich environment, Spyder is an excellent alternative.</p>
+<p>Follow the respective installation instructions and embark on your coding journey with confidence!</p>
+<p>Once you have your preferred editor installed, you’re ready to start coding. Happy exploring!</p>
 
-</div>
+
+
+
 </section>
-<section id="step-4-option-a-helloworld-in-thonny" class="level3">
-<h3 class="anchored" data-anchor-id="step-4-option-a-helloworld-in-thonny">Step 4: Option A, Helloworld in Thonny</h3>
-<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../media/units/unit0/module0/u0-mod0-mac-thonny.mp4"></video></div>
-<div id="hello-spyder-mac">
-
-</div>
-</section>
-<section id="step-4-option-b-helloworld-in-spyder" class="level3">
-<h3 class="anchored" data-anchor-id="step-4-option-b-helloworld-in-spyder">Step 4: Option B, Helloworld in Spyder</h3>
-<div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../media/units/unit0/module0/u0-mod0-mac-spyder.mp4"></video></div>
-<div id="install-matplotlib-mac">
-
-</div>
-</section>
-<section id="step-5-installing-matplotlib-or-any-package-for-thonny-users" class="level3">
-<h3 class="anchored" data-anchor-id="step-5-installing-matplotlib-or-any-package-for-thonny-users">Step 5: Installing Matplotlib (or any package) for Thonny Users</h3>
-<p>How to add a package (like Matplotlib):</p>
-<ul>
-<li><p>To add a package (which will only be necessary for those using Thonny), first, open Thonny, and go to “Tools”. From there, click on “Manage Packages”. <img src="../../media/units/unit0/module0/step1mac.jpg" class="img-fluid"></p></li>
-<li><p>Then, you will see a window like what is shown in the image above. Search for the “package” you need to install or remove. In this case, we have used the example of “Matplotlib”, which you will need to have installed for some exercises. Once you’ve typed the name of the package, click “Find package from PyPI” or press the enter/return key. <img src="../../media/units/unit0/module0/step2.png" class="img-fluid"></p></li>
-<li><p>To add the package, click the install button. You will then see a small popup while the package is installed. <img src="../../media/units/unit0/module0/step3add.png" class="img-fluid"></p></li>
-</ul>
-</section>
-</section>
-<section id="windows-users" class="level2">
-<h2 class="anchored" data-anchor-id="windows-users">Windows Users</h2>
-<section id="step-1-installing-anaconda-1" class="level3">
-<h3 class="anchored" data-anchor-id="step-1-installing-anaconda-1">Step 1: Installing Anaconda</h3>
-<p>Follow <a href="../../units/unit0/anaconda-windows.html"><strong>this</strong></a> guide to learn how to install Anaconda</p>
-<div id="install-thonny-windows">
-
-</div>
-</section>
-<section id="step-2-option-a-installing-thonny-1" class="level3">
-<h3 class="anchored" data-anchor-id="step-2-option-a-installing-thonny-1">Step 2: Option A, Installing Thonny</h3>
-<p>Installing and Opening Thonny</p>
-<div class="quarto-video"><video id="video_shortcode_videojs_video4" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../media/units/unit0/module0/u0-mod0-installthonny-win.mp4"></video></div>
-<p>Now click on the <a href="https://thonny.org"><strong>Link to Thonny</strong></a> and install it on your laptop.</p>
-<div id="open-thonny-windows">
-
-</div>
-</section>
-<section id="step-3-option-a-opening-thonny-1" class="level3">
-<h3 class="anchored" data-anchor-id="step-3-option-a-opening-thonny-1">Step 3: Option A, Opening Thonny</h3>
-<p>The following screenshots explain how to open Thonny:</p>
-<ul>
-<li><p><strong>Step 3.A.1</strong> <img src="../../media/units/unit0/module0/windows-thonny-1.png" class="img-fluid"></p></li>
-<li><p><strong>Step 3.A.2</strong> <img src="../../media/units/unit0/module0/windows-thonny-2.png" class="img-fluid"></p></li>
-<li><p><strong>Step 3.A.3</strong> <img src="../../media/units/unit0/module0/windows-thonny-3.png" class="img-fluid"></p></li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>When you open Thonny you aren’t opening program files (yet). It’s similar to opening Word without naming a text file to work on.</li>
-<li>Your program files are going to be in specific folders. You need to look for them, and when you create new ones, save them in specific folders.</li>
-</ul>
-</div>
-</div>
-<div id="hello-thonny-win">
-
-</div>
-</section>
-<section id="step-4-option-a-helloworld-in-thonny-1" class="level3">
-<h3 class="anchored" data-anchor-id="step-4-option-a-helloworld-in-thonny-1">Step 4: Option A, Helloworld in Thonny</h3>
-<div class="quarto-video"><video id="video_shortcode_videojs_video5" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../media/units/unit0/module0/u0-mod0-win-spyder.mp4"></video></div>
-<div id="hello-spyder-win">
-
-</div>
-</section>
-<section id="step-4-option-b-helloworld-in-spyder-1" class="level3">
-<h3 class="anchored" data-anchor-id="step-4-option-b-helloworld-in-spyder-1">Step 4: Option B: Helloworld in Spyder</h3>
-<div class="quarto-video"><video id="video_shortcode_videojs_video6" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../media/units/unit0/module0/u0-mod0-win-spyder.mp4"></video></div>
-<div id="install-matplotlib-win">
-
-</div>
-</section>
-<section id="step-5-installing-matplotlib" class="level3">
-<h3 class="anchored" data-anchor-id="step-5-installing-matplotlib">Step 5: Installing Matplotlib</h3>
-<p>How to add a package (like Matplotlib):</p>
-<ul>
-<li><p>To add a package (which will only be necessary for those using Thonny), first, open Thonny, and go to “Tools”. From there, click on “Manage Packages”. <img src="../../media/units/unit0/module0/step1win.png" class="img-fluid"></p></li>
-<li><p>Then, you will see a window like what is shown in the image above. Search for the “package” you need to install or remove. In this case, we have used the example of “Matplotlib”, which you will need to have installed for some exercises. Once you’ve typed the name of the package, click “Find package from PyPI” or press the enter/return key. <img src="../../media/units/unit0/module0/step2.png" class="img-fluid"></p></li>
-<li><p>To add the package, click the install button. You will then see a small popup while the package is installed. <img src="../../media/units/unit0/module0/step3add.png" class="img-fluid"></p></li>
-</ul>
-
-
-
-
 </section>
 </section>
 
@@ -686,12 +509,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>videojs(video_shortcode_videojs_video1);</script>
-<script>videojs(video_shortcode_videojs_video2);</script>
-<script>videojs(video_shortcode_videojs_video3);</script>
-<script>videojs(video_shortcode_videojs_video4);</script>
-<script>videojs(video_shortcode_videojs_video5);</script>
-<script>videojs(video_shortcode_videojs_video6);</script>
 
 
 

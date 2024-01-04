@@ -46,7 +46,7 @@
     "href": "units/unit0/modules/module3.html",
     "title": "Module 3: Loops: the for-loop",
     "section": "",
-    "text": "Home » Units » Module 3"
+    "text": "Home » Unit 0 » Module 3"
   },
   {
     "objectID": "units/unit0/modules/module3.html#objectives",
@@ -123,7 +123,7 @@
     "href": "units/unit0/modules/module0.html",
     "title": "Module 0: Your First Program",
     "section": "",
-    "text": "Home » Units » Module 0"
+    "text": "Home » Unit 0 » Module 0"
   },
   {
     "objectID": "units/unit0/modules/module0.html#objectives",
@@ -137,7 +137,7 @@
     "href": "units/unit0/modules/module5.html",
     "title": "Module 5: Strings and Characters",
     "section": "",
-    "text": "Home » Units » Module 5"
+    "text": "Home » Unit 0 » Module 5"
   },
   {
     "objectID": "units/unit0/modules/module5.html#objectives",
@@ -214,7 +214,7 @@
     "href": "units/unit0/modules/module6.html",
     "title": "Module 6: Real Numbers",
     "section": "",
-    "text": "Home » Units » Module 6"
+    "text": "Home » Unit 0 » Module 6"
   },
   {
     "objectID": "units/unit0/modules/module6.html#objectives",
@@ -287,67 +287,158 @@
     "text": "6.8 About the reals, and math in general\nWe’ve gone a bit beyond our comfort zone into real numbers and into some applications.\nWe’ll end this module by pointing out a few more things about numbers in a mathematical sense, and say something about math anxiety. None of this will be on any exam.\nLet’s start with numbers:\n\nThe easiest kind of number to understand are the natural numbers.\n\nThey are the numbers 1, 2, 3 … and so on.\nIt’s an infinite set, and many operations like + and * applied to naturals result in a natural.\nBut 3 - 5 is not a natural number, and neither is \\[ \\frac{3}{5} \\].\nSo, they’re limited in their use.\n\nIf we expand the naturals and add 0, and all the negative numbers, we get \\[\n          \\ldots -3, -2, -1, 0, 1, 2, 3 \\ldots\n  \\] (The triple-dot that indicates “going on forever” occurs now on both sides, the positive side and the negative side.)\n\nHowever, they too are limited because neither \\[ \\frac{3}{5} \\] nor \\[ \\frac{5}{3} \\] are integers.\n\nThe next kind of number to consider is rational number:\n\nA rational is a number that can be written as a fraction (or ratio) of integers.\nExamples: \\[ \\frac{5}{3}, \\frac{46}{7} \\]\nThey include all the integers.\n\nThen we get to the real numbers introduced in this module.\nWithin the real numbers there are interesting categories.\nSome real numbers are irrational and cannot be expressed as a ratio of integers.\n\nOne example is \\[ \\sqrt{2} \\], which bedeviled the Greeks a long time ago.\nInterestingly, one can prove that there are many more irrational real numbers than rational real numbers.\n\nAnother kind of real number is an algebraic number, meaning they are the solution to an equation like \\[ 3x^2 + 5 = 11 \\]\nThose that aren’t algebraic go by the lovely name of transcendental number, such as \\[ pi \\]\nSo, is every number a real number?        ⇒ No, there are numbers like \\[ \\sqrt-1 \\] that are imaginary.\nYou might think that an imaginary number couldn’t possibly have any use. It turns out that they are extraordinarily useful in many kinds of practical applications.\n\nExample: processing any kind of “wave” data, such as brain waves or seismic waves.\nExample: quantum computing.\n\n\nSome ideas to reflect on:\n\nWhich of the following most resonates with you?\n\n“I’ve always found math very hard and prefer to avoid it.”\n“I can tolerate math but would rather avoid it if possible.”\n“Math and I just don’t get along.”\n“Math is OK - I can do most of it but I don’t find it interesting or valuable.”\n“I can do math but am more interested in just applying it.”\n“I find math really interesting, even if I choose not to pursue math for math’s sake.”\n“I love math and will do as much of it as I can.”\n\nWhat ever your category, you should keep in mind:\n\nMath is a skill and takes practice, just like programming.\nYes, it’s true that a lot of high-school is boring. Much of what’s interesting in math comes after calculus.\nThe notion of not being suited to math is just a mindset. It can be changed.\nEven a little math is quite useful.\nYou can learn quite a bit of math via programming, as we’ll show you.\n\nWe’ll have more to say about the interesting and exciting connections between computer science, math, and other fields, including art."
   },
   {
-    "objectID": "units/unit0/editor.html",
-    "href": "units/unit0/editor.html",
+    "objectID": "units/unit0/editor-old.html",
+    "href": "units/unit0/editor-old.html",
     "title": "Instructions for typing and running your first program",
     "section": "",
     "text": "We will now have you type, run, and save your first computer program.\n\n\n\n\n\n\nNote\n\n\n\n\nPrograms are typed in using your computer’s keyboard, just as you would type in an email or text document.\nAnd just as the “thing you are typing into” is different for email and for text-editing, there is a different “thing” to type programs into.\nThe typing is one part of getting a program. If you just type your program, it will just be sitting there on your computer. But you want to go the next step and run (or, execute, as we say) the program. Typing and not-running is loosely analogous to typing an email but not sending it (the email will just remain in composed-form, but go nowhere) Similarly, typing text into Word doesn’t mean it gets “published”.\nThe “thing” into which you type and run your program is called a code editor or an IDE (Integrated Development Environment, a mouthful).\nWe are going to give you the option of using one of two code editors, Thonny or Spyder. Think of them as apps that help you type and run programs.\n\n\n\nBefore we get to typing in a program, we first (if not already done) need to download and install Python and either Thonny or Spyder.\n\nThe term install means: you download software on your computer and get it to run. This is something you do just once.\nWhen you need to run the software again, you search for it on your computer (since it’s already installed) and merely run it.\nThus, you will perform Steps 1 and 2 just once for this course.\nAnd Steps 3 and 4 repeatedly as you write code.\nAlso, if you start off with one editor and change your mind, you can come back here to install the other editor and learn how to use it.\n\n1. Install Anaconda: Pick between these two options and click through to follow instructions in installing Anaconda.\n\nAnaconda for MacOS Users\nAnaconda for Windows Users\n\nThen come back here and proceed with Step 2.\nIncidentally, you might be asking: what exactly is Anaconda and what does it have to do with Python other than its name?\n\nPython is a programming language. Typically a language alone is not enough to get many useful programming tasks done.\nWe need additional software that’s useful. Anaconda is a bundle that includes Python and this additional software. You install it once on your computer and you can then avail of all kinds of useful things related to Python.\nThe one thing it does not have, sadly, is the Thonny editor, so we’ll show you how to install that.\n\n2. Install a code editor: by selecting ONE of the following options:\n\nOption A: Thonny for Mac users\nOption B: There are no special instructions because Spyder comes bundled with Anaconda.\nOption A: Thonny for Windows users\nOption B: There are no special instructions because Spyder comes bundled with Anaconda.\n\n3. Open a code editor: Choose between\n\nOption A: looking for and opening Thonny for Mac users\nOption B: Using Spyder, looking for, and opening Spyder on a Mac is similar to looking for and opening Thonny.\nOption A: looking for and opening Thonny for Windows users\nOption B: looking for and opening Spyder. Looking for, and opening Spyder on Windows is similar to looking for and opening Thonny.\n\n4. Type and Execute helloworld.py: Choose between:\n\nOption A: Helloworld for Mac users using Thonny\nOption B: Helloworld for Mac users using Spyder\nOption A: Helloworld for Windows users using Thonny\nOption B: Helloworld for Windows users using Spyder\n\n5. Install Matplotlib for Thonny users: What is matplotlib? It’s a plotting package that we’ll use. This comes packaged with Spyder and so, only Thonny users need to download this. Thonny is a nice editor and so Thonny users cheerfully do this additional step in order to use plotting along with Thonny.\n\nMac Users: Install matplotlib for Thonny\nWindows Users: Install matplotlib for Thonny"
   },
   {
-    "objectID": "units/unit0/editor.html#objectives",
-    "href": "units/unit0/editor.html#objectives",
+    "objectID": "units/unit0/editor-old.html#objectives",
+    "href": "units/unit0/editor-old.html#objectives",
     "title": "Instructions for typing and running your first program",
     "section": "",
     "text": "We will now have you type, run, and save your first computer program.\n\n\n\n\n\n\nNote\n\n\n\n\nPrograms are typed in using your computer’s keyboard, just as you would type in an email or text document.\nAnd just as the “thing you are typing into” is different for email and for text-editing, there is a different “thing” to type programs into.\nThe typing is one part of getting a program. If you just type your program, it will just be sitting there on your computer. But you want to go the next step and run (or, execute, as we say) the program. Typing and not-running is loosely analogous to typing an email but not sending it (the email will just remain in composed-form, but go nowhere) Similarly, typing text into Word doesn’t mean it gets “published”.\nThe “thing” into which you type and run your program is called a code editor or an IDE (Integrated Development Environment, a mouthful).\nWe are going to give you the option of using one of two code editors, Thonny or Spyder. Think of them as apps that help you type and run programs.\n\n\n\nBefore we get to typing in a program, we first (if not already done) need to download and install Python and either Thonny or Spyder.\n\nThe term install means: you download software on your computer and get it to run. This is something you do just once.\nWhen you need to run the software again, you search for it on your computer (since it’s already installed) and merely run it.\nThus, you will perform Steps 1 and 2 just once for this course.\nAnd Steps 3 and 4 repeatedly as you write code.\nAlso, if you start off with one editor and change your mind, you can come back here to install the other editor and learn how to use it.\n\n1. Install Anaconda: Pick between these two options and click through to follow instructions in installing Anaconda.\n\nAnaconda for MacOS Users\nAnaconda for Windows Users\n\nThen come back here and proceed with Step 2.\nIncidentally, you might be asking: what exactly is Anaconda and what does it have to do with Python other than its name?\n\nPython is a programming language. Typically a language alone is not enough to get many useful programming tasks done.\nWe need additional software that’s useful. Anaconda is a bundle that includes Python and this additional software. You install it once on your computer and you can then avail of all kinds of useful things related to Python.\nThe one thing it does not have, sadly, is the Thonny editor, so we’ll show you how to install that.\n\n2. Install a code editor: by selecting ONE of the following options:\n\nOption A: Thonny for Mac users\nOption B: There are no special instructions because Spyder comes bundled with Anaconda.\nOption A: Thonny for Windows users\nOption B: There are no special instructions because Spyder comes bundled with Anaconda.\n\n3. Open a code editor: Choose between\n\nOption A: looking for and opening Thonny for Mac users\nOption B: Using Spyder, looking for, and opening Spyder on a Mac is similar to looking for and opening Thonny.\nOption A: looking for and opening Thonny for Windows users\nOption B: looking for and opening Spyder. Looking for, and opening Spyder on Windows is similar to looking for and opening Thonny.\n\n4. Type and Execute helloworld.py: Choose between:\n\nOption A: Helloworld for Mac users using Thonny\nOption B: Helloworld for Mac users using Spyder\nOption A: Helloworld for Windows users using Thonny\nOption B: Helloworld for Windows users using Spyder\n\n5. Install Matplotlib for Thonny users: What is matplotlib? It’s a plotting package that we’ll use. This comes packaged with Spyder and so, only Thonny users need to download this. Thonny is a nice editor and so Thonny users cheerfully do this additional step in order to use plotting along with Thonny.\n\nMac Users: Install matplotlib for Thonny\nWindows Users: Install matplotlib for Thonny"
   },
   {
-    "objectID": "units/unit0/editor.html#macos-users",
-    "href": "units/unit0/editor.html#macos-users",
+    "objectID": "units/unit0/editor-old.html#macos-users",
+    "href": "units/unit0/editor-old.html#macos-users",
     "title": "Instructions for typing and running your first program",
     "section": "MacOS Users",
     "text": "MacOS Users\n\nStep 1: Installing Anaconda\nFollow this guide to learn how to install Anaconda\n\n\n\n\n\nStep 2: Option A, Installing Thonny\nInstalling and Opening Thonny\n\nNow click on the Link to Thonny and install it on your laptop.\n\n\n\n\n\nStep 3: Option A, Opening Thonny\nThese screenshots explain how to open Thonny:\n\nStep 3.A.1 \nStep 3.A.2 \nStep 3.A.3 \nStep 3.A.4: You now have opened Thonny \n\n\n\n\n\n\n\nNote\n\n\n\n\nWhen you open Thonny you aren’t opening program files (yet). It’s similar to opening Word without naming a text file to work on.\nYour program files are going to be in specific folders. You need to look for them, and when you create new ones, save them in specific folders.\n\n\n\n\n\n\n\n\nStep 4: Option A, Helloworld in Thonny\n\n\n\n\n\n\nStep 4: Option B, Helloworld in Spyder\n\n\n\n\n\n\nStep 5: Installing Matplotlib (or any package) for Thonny Users\nHow to add a package (like Matplotlib):\n\nTo add a package (which will only be necessary for those using Thonny), first, open Thonny, and go to “Tools”. From there, click on “Manage Packages”. \nThen, you will see a window like what is shown in the image above. Search for the “package” you need to install or remove. In this case, we have used the example of “Matplotlib”, which you will need to have installed for some exercises. Once you’ve typed the name of the package, click “Find package from PyPI” or press the enter/return key. \nTo add the package, click the install button. You will then see a small popup while the package is installed."
   },
   {
-    "objectID": "units/unit0/editor.html#windows-users",
-    "href": "units/unit0/editor.html#windows-users",
+    "objectID": "units/unit0/editor-old.html#windows-users",
+    "href": "units/unit0/editor-old.html#windows-users",
     "title": "Instructions for typing and running your first program",
     "section": "Windows Users",
     "text": "Windows Users\n\nStep 1: Installing Anaconda\nFollow this guide to learn how to install Anaconda\n\n\n\n\n\nStep 2: Option A, Installing Thonny\nInstalling and Opening Thonny\n\nNow click on the Link to Thonny and install it on your laptop.\n\n\n\n\n\nStep 3: Option A, Opening Thonny\nThe following screenshots explain how to open Thonny:\n\nStep 3.A.1 \nStep 3.A.2 \nStep 3.A.3 \n\n\n\n\n\n\n\nNote\n\n\n\n\nWhen you open Thonny you aren’t opening program files (yet). It’s similar to opening Word without naming a text file to work on.\nYour program files are going to be in specific folders. You need to look for them, and when you create new ones, save them in specific folders.\n\n\n\n\n\n\n\n\nStep 4: Option A, Helloworld in Thonny\n\n\n\n\n\n\nStep 4: Option B: Helloworld in Spyder\n\n\n\n\n\n\nStep 5: Installing Matplotlib\nHow to add a package (like Matplotlib):\n\nTo add a package (which will only be necessary for those using Thonny), first, open Thonny, and go to “Tools”. From there, click on “Manage Packages”. \nThen, you will see a window like what is shown in the image above. Search for the “package” you need to install or remove. In this case, we have used the example of “Matplotlib”, which you will need to have installed for some exercises. Once you’ve typed the name of the package, click “Find package from PyPI” or press the enter/return key. \nTo add the package, click the install button. You will then see a small popup while the package is installed."
   },
   {
-    "objectID": "units/unit0/anaconda-mac.html",
-    "href": "units/unit0/anaconda-mac.html",
-    "title": "Anaconda Installation Guide for macOS",
+    "objectID": "units/unit0/assignments/assignment1.html",
+    "href": "units/unit0/assignments/assignment1.html",
+    "title": "Assignment 1",
     "section": "",
-    "text": "This guide will walk you through the process of installing Anaconda, a popular Python distribution, on your macOS computer. Anaconda provides a convenient way to manage Python packages and environments for data science and scientific computing."
+    "text": "Home » Unit 0 » Assignment 1"
   },
   {
-    "objectID": "units/unit0/anaconda-mac.html#introduction",
-    "href": "units/unit0/anaconda-mac.html#introduction",
-    "title": "Anaconda Installation Guide for macOS",
+    "objectID": "units/unit0/assignments/assignment1.html#objectives-and-example",
+    "href": "units/unit0/assignments/assignment1.html#objectives-and-example",
+    "title": "Assignment 1",
+    "section": "Objectives and example",
+    "text": "Objectives and example\nAssignments are designed to strengthen your problem-solving skills and build independence. While the module exercises are small variations of explained module examples, a single assignment will have multiple problems, all of which are intended to be more challenging than the module exercises, and will feature less detailed guidance. This is a good thing because ultimately, you’ll have to solve problems on your own. Facing and overcoming challenging problems cheerfully is the key to building problem-solving skill.\nIn each such assignment set, we will help develop your problem-solving skills by showing you how to solve one problem, the first and often hardest problem. However, the solution will include some exercises for you that you will need to submit."
+  },
+  {
+    "objectID": "units/unit0/assignments/assignment1.html#assignment-problems",
+    "href": "units/unit0/assignments/assignment1.html#assignment-problems",
+    "title": "Assignment 1",
+    "section": "Assignment problems",
+    "text": "Assignment problems\n\n1. Demo problem\nSuppose we want to use for-loops to produce this arrow-head like pattern:\n*\n**\n***\n****\n*****\n******\n*******\n********\n*********\n**********\n**********\n*********\n********\n*******\n******\n*****\n****\n***\n**\n*\nAt this point, do not read further and try to address the following:\n\nFirst understand what is being asked.\nDo you see a for-loop or two at work where, as the loops are printing, you’ll get the output shown above?\nCan the problem be broken down into parts, where you can solve the parts and put the solution together afterwards?\nTry writing some code to get at least some of the output. Now examine the solution\n\nDon’t forget to submit your solutions to the exercises within."
+  },
+  {
+    "objectID": "units/unit1/modules/module0.html",
+    "href": "units/unit1/modules/module0.html",
+    "title": "Module 0: A first look at lists",
     "section": "",
-    "text": "This guide will walk you through the process of installing Anaconda, a popular Python distribution, on your macOS computer. Anaconda provides a convenient way to manage Python packages and environments for data science and scientific computing."
+    "text": "Home » Unit 1 » Module 0"
   },
   {
-    "objectID": "units/unit0/anaconda-mac.html#prerequisites",
-    "href": "units/unit0/anaconda-mac.html#prerequisites",
-    "title": "Anaconda Installation Guide for macOS",
-    "section": "Prerequisites",
-    "text": "Prerequisites\nBefore you begin, ensure you have the following:\n\nA macOS computer.\nAn internet connection.\nSufficient disk space for the installation."
+    "objectID": "units/unit1/modules/module0.html#objectives",
+    "href": "units/unit1/modules/module0.html#objectives",
+    "title": "Module 0: A first look at lists",
+    "section": "Objectives",
+    "text": "Objectives\nBy the end of this module you will be able to:\n\nUnderstand how a list is different from a variable\nExplore the syntax around using lists in programs\nUse lists in programs to solve problems\nPractice mental execution (tracing) and debugging related to lists"
   },
   {
-    "objectID": "units/unit0/anaconda-mac.html#installation-steps",
-    "href": "units/unit0/anaconda-mac.html#installation-steps",
-    "title": "Anaconda Installation Guide for macOS",
-    "section": "Installation Steps",
-    "text": "Installation Steps\n\n1. Download Anaconda\nVisit the Anaconda download page at https://www.anaconda.com/download.\n\n\n2. Choose the macOS Installer\nClick on the “Download” button under the macOS section depending on you System-on-chip (Intel/M1/M2) to download the Anaconda installer for macOS.\n\n\n\nDownload Anaconda\n\n\n\n\n3. Run the Installer\n\nLocate the downloaded file (usually in your “Downloads” folder).\nDouble-click the Anaconda disk image (.dmg) file to open it and click on “Allow” when prompted.\n\n\n\n\nRun Installer\n\n\n\n\n\nAllow Installation\n\n\n\n\n4. Follow the Installer Wizard\n\nFollow the on-screen instructions to begin the installation.\nRead and accept the license agreement when prompted.\n\n\n\n\nRead Me\n\n\n\n\n\nLicense Agreement\n\n\n\n\n5. Install Anaconda\nClick the “Install” button to begin the installation process. This may take a few minutes.\n\n\n\nInstall\n\n\n\n\n6. Complete the Installation\nOnce the installation is complete, you will see a confirmation message. Click the “Continue” button and finally close the installation wizard by clicking on the “Close” button.\n\n\n\nInstallation Complete\n\n\n\n\n\nClose Installation Wizard\n\n\n\n\n7. Move the Installer file to Trash (Optional)\n\n\n\nMove the Installer to Trash\n\n\n\n\n8. If prompted to update the navigator, select “No, don’t show again”\n\n\n\nDon’t Update\n\n\n\n\n9. You’re NOT REQUIRED to Log in/Sign up for Anaconda Cloud, close the prompt by clicking the “x” button\n\n\n\nDon’t Log in/Sign up"
+    "objectID": "units/unit1/modules/module0.html#an-example-of-a-list",
+    "href": "units/unit1/modules/module0.html#an-example-of-a-list",
+    "title": "Module 0: A first look at lists",
+    "section": "0.0 An example of a list",
+    "text": "0.0 An example of a list\nConsider this program:\n# List example:\nA = [1, 4, 9, 16, 25]\n\nfor i in range(5):\n    print(A[i])\n\n# In contrast, a plain variable:\nk = 100\nprint(k)\n\n0.1 Excercise: In my_list1.py, type up the above and examine the output. Then, inside the above for-loop, but before the first print statement, add an additional line of code to also print the value of i so that each value of i is printed on a line by itself. Report your output in module1.pdf and submit this modified version of my_list1.py.\nRemember how we think of a variable as a box that stores values?\n\nThis is indeed how we think of the variable k above. \nIn contrast, a list variable is a single name given to a collection of boxes: \nThe above collection has a current size, in this case 5.\nThe values in a list are called elements of the list.\nThere is an implied order going from the first to the last element.\nIt turns out, we can access individual elements in the list using indices: \n\n\n\n\n\n\n\nNote\n\n\n\n\nList indices start at 0\nAnd end at one less than the size.\nThus, in the above example, the size of the list is 5.\nThe indices (positions in the list) are: 0, 1, 2, 3, 4.\nThe last valid position (or index), which is 4 here, is one less than the size, 5.\n\n\n\nConsider this program:\nA = [1, 4, 9, 16, 25]\n\n# Use len to get the current size:\nn = len(A)\nprint('Size of A: ' + str(n))\n\n# Add an element to the list:\nA.append(36)\nn = len(A)\nprint('Size of A: ' + str(n))\n\n# Change a particular element:\nA[3] = 100\nprint('The list: ' + str(A))\n\n\n0.2 Excercise: Try out the above in my_list2.py.\nLet’s point out:\n\nObserve how we obtain the current size and add an element: \nNext, observe square brackets being used for different purposes: \nWe could use a variable to access elements, as long as that variable has an integer value that has a valid index, for example:\nk = 3\nA[k] = 100\nRemember len?\n\nWe had used len earlier for the length of strings, as in\n\ns = 'hello'\nprint(len(s))    # Prints 5\n\nHere, len works to give us the length of a list, as in:\n\nA = [1, 4, 9, 16, 25]\nprint(len(A))\nFor example:\nA = [1, 4, 9, 16, 25]\n\ni = 3         # i's value 3 is valid for a size 5 list\nprint(A[i])\n\ni = 7         # 7 is not valid\nprint(A[i])\nIn the above example, there is no element A[7] in a list that only has 5 elements.\n\n\n\n0.3 Excercise: Type up the above in my_list3.py. Describe the error in your module pdf.\n\n\n0.4 Excercise: In my_list4.py, make a list with the values 1,2,3,4,5,6,7,8,9,10. Then, set up a for-loop so that only the odd numbers are printed as in:\n1\n3\n5\n7\n9\n\n\n0.5 Video:"
   },
   {
-    "objectID": "units/unit0/anaconda-mac.html#conclusion",
-    "href": "units/unit0/anaconda-mac.html#conclusion",
-    "title": "Anaconda Installation Guide for macOS",
-    "section": "Conclusion",
-    "text": "Conclusion\nCongratulations! You’ve successfully installed Anaconda and Jupyter on your macOS computer. You can now use Anaconda to create Python environments, manage packages, and work on data science projects.\nFor more information on using Anaconda, refer to the official documentation at https://docs.anaconda.com/.\nIf you encounter any issues or have questions, don’t hesitate to seek help from the Anaconda community or consult the documentation for troubleshooting tips."
+    "objectID": "units/unit1/modules/module0.html#more-list-examples",
+    "href": "units/unit1/modules/module0.html#more-list-examples",
+    "title": "Module 0: A first look at lists",
+    "section": "0.1 More list examples",
+    "text": "0.1 More list examples\nJust as we can add elements to list, so can we remove elements, as in:\nA = [64, 9, 25, 81, 49]\nprint(A)\n\nA.remove(9)\nprint(A)\n\n0.6 Excercise: Confirm the output by typing up the above in my_list5.py. Then, explore what would go wrong if you try and remove something that’s not in the list. For example, change the line A.remove(9) to A.remove(10). Report what you see in your module pdf. Submit your my_list5.py with the former (A.remove(9)).\n\n\n\n\n\n\nNote\n\n\n\n\nThe elements in a list do not need to be in sorted order, as the above example shows. They can be in any order, but once in that order, they stay in that order unless we make a change to the elements in the list.\nAlthough our examples so far have lists of integers like 64, we will later build lists with real numbers and strings.\n\n\n\nConsider this example:\n# List constructed by typing the elements in:\nA = [1, 4, 9, 16, 25]\nprint(A)\n\n# List built using code to construct elements:\nB = []                 # An empty list\nfor i in range(5):\n    k = (i+1) * (i+1) \n    B.append(k)\nprint(B)\n\n\n0.7 Excercise: Type up the above in my_list6.py. Then, in your module pdf, trace through the changing values of i, k and the list B in each iteration of the for-loop.\n\n\n\n\n\n\nNote\n\n\n\n\nIt is possible to create an empty list and give it a variable name as in:\nB = []                 # An empty list\nWe could then add elements by appending.\nOne can shorten the lines inside the loop:\nB = []                 # An empty list\nfor i in range(5):\n    B.append( (i+1) * (i+1) )\nHere, we’ve fed the arithmetic expression (i+1) * (i+1) directly into append, without using a separate variable k to first calculate and then append.\n\n\n\n\n\n0.8 Excercise: In my_odd_list.py fill in the necessary code below to create a list with the first N odd numbers:\nN = 10\nodd_numbers = []\n# WRITE YOUR CODE HERE\nprint(odd_numbers)\nIn this case, the output should be:\n[1, 3, 5, 7, 9, 11, 13, 15, 17, 19]\n(These are the first 10 odd numbers).\nWe do not need to traverse in exactly the order of elements in the list:\n\nFor example:\nA = [15, 25, 35, 45, 55, 65, 75, 85, 95, 105]\n\nfor i in range(9, 0, -2):\n    print(A[i])\nHere, we’re starting at the last element, traversing the list from end to beginning in steps of 2.\n\n\n\n0.10 Excercise: Trace through the above code showing the values of i and A[i] at each iteration. Confirm by typing your code in my_list7.py."
+  },
+  {
+    "objectID": "units/unit1/modules/module0.html#a-strange-thing-with-lists",
+    "href": "units/unit1/modules/module0.html#a-strange-thing-with-lists",
+    "title": "Module 0: A first look at lists",
+    "section": "0.2 A strange thing with lists",
+    "text": "0.2 A strange thing with lists\nLet’s first look at copying between regular variables, as in:\nx = 5\n\ny = x     # Copy the value in x into y\n\nx = 6     # Change the value in x\n\nprint(y)  # Does it affect what's in y?\n\n0.11 Excercise: Consider the example above. In your module pdf, draw two boxes, one for x and one for y. Show the contents of the two boxes and if they change, show how they change.\nNext, consider this:\nA = [1, 4, 9, 16, 25]\n\nB = A\n\nA[0] = 49    # Change some value in list A\n\nprint(B)     # Does it affect what's in list B?\n\n\n0.12 Excercise: Type up the above in my_list_copy.py to find out whether any values have changed in list B.\nLet’s explain:\n\nClearly something strange is going on with lists.\nOne way to think of it is to go back to our picture of a list: \nWe’ll now sketch out an analogy:\n\nThink of the list as a building with rooms (the boxes): \nThen, the list variable A is really something that holds the building address (the building number).\nThe rooms in the building are numbered from 0, 1, etc.\nThe first room is A[0], the second is A[1] etc.\n\nNow, consider an assignment like:\nB = A\nThen, in the building analogy, what we get is: \nThis is why, when we change the A list as in\nA[0] = 49    # Change some value in list A\nThen, we are achieving \n\n\n\n\n\n\n\nNote\n\n\n\nNowhere in our code is the building number (4701) explicitly written. Building numbers (they are technically called pointers) are handled by Python, and made invisible to us because we don’t need them.  (Yes, we can print the building number if we wish, but that’s an advanced topic.)\n\n\n\nWe obviously want to know: is it possible to create a complete copy of A in B? As in: \nBecause then, if we change A, it does not affect B: \nThis is what it looks like in code:\nA = [1, 4, 9, 16, 25]\n\nB = A.copy()\n\nA[0] = 49    # Change some value in list A\n\nprint(B)     # Does it affect what's in list B?\n\n\n\n0.13 Excercise: Type up the above in my_list_copy2.py to find out if any values have changed in list B.\nSo, which (B = A or B = A.copy()) do we use?\n\nGenerally, you should use B.copy() unless you intentionally want the same “building number”.\nIn the former case, you have to be careful."
+  },
+  {
+    "objectID": "units/unit1/modules/module0.html#different-ways-of-iterating-through-a-list",
+    "href": "units/unit1/modules/module0.html#different-ways-of-iterating-through-a-list",
+    "title": "Module 0: A first look at lists",
+    "section": "0.3 Different ways of iterating through a list",
+    "text": "0.3 Different ways of iterating through a list\nConsider this example:\nA = [1, 3, 5, 7, 9]\n\ntotal = 0\nfor i in range(5):\n    total = total + A[i]\n\nprint(total)\n\n0.14 Excercise: Type up the above in my_total_example1.py. In your module pdf, trace through the values of i and total through each iteration of the loop.\nNow let’s look at two different ways of writing the same loop (we’ll only show the loop part):\n\nThe first one:\n\nfor i in range(len(A)):\n    total = total + A[i]\n\n\n\n\n\n\nNote\n\n\n\n\nInstead of figuring out the length of a list by looking at the list, we can ask Python to compute the length and use that directly:\nfor i in range(&lt;b&gt;len(A)&lt;/b&gt;):\n    total = total + A[i]\nThis way, we don’t need to track the length ourselves (if elements get added or removed).\n\n\n\n\nThe second way is even better:\nfor k in A:\n    total = total + k\nHere:\n\nHere the iteration is directly over the contents of the list.\nThe variable k is not an index but takes on the actual values in the list.\nWith a list like\nA = [1, 3, 5, 7, 9]\n\ntotal = 0\nfor k in A:\n    total = total + k\nIn the first iteration k is 1, in the second k is 3, in the third k is 5, and so on.\nSo, naturally, these get added directly into the variable total.\n\nYou can think of the first approach (using an index i and A[i]) as index iteration.\nThe second (using the value directly), as content iteration.\nWhich one should one use?\n\nPrefer to use content-iteration, whenever you can.\nIn some cases, however, you’ll find index iteration is useful, especially when you need the position where something occurs in the list.\n\n\n\n\n0.15 Excercise: In my_content_iteration.py, use content-iteration to print the contents of the list A below:\nA = [2020, 2016, 2012, 2008, 2004, 2000]\n\n# Write your code here:\nThe output should be one number per line in the order that the numbers appear in the list."
+  },
+  {
+    "objectID": "units/unit1/modules/module0.html#working-with-multiple-lists",
+    "href": "units/unit1/modules/module0.html#working-with-multiple-lists",
+    "title": "Module 0: A first look at lists",
+    "section": "0.4 Working with multiple lists",
+    "text": "0.4 Working with multiple lists\nSuppose we have two lists of the same length like this:\nA = [1, 4, 9, 16, 25]\nB = [1, 3, 5, 7, 11]\nLet’s examine different ways of performing addition on the elements.\nFirst, let’s add up the total of all 10 numbers:\nA = [1, 4, 9, 16, 25]\nB = [1, 3, 5, 7, 11]\n\ntotal = 0\nfor k in A:\n    total = total + k\n\nfor k in B:\n    total = total + k\n\nprint(total)\n\n0.17 Excercise: First, in your module pdf, trace the values of k and total in each iteration of each loop. Type the above in my_twolist1.py to confirm.\n\n\n\n\n\n\nNote\n\n\n\n\nIn the above case, we added all the numbers contained in both lists, to get a single number.\nNotice how natural it is to use content-iteration.\nWhat if we want a third list whose elements are the additions of corresponding elements from each list?\n    1    4    9    16    25\n    1    3    5     7    11\n    -----------------------\n    2    7   14    23    36\nHere, the last row is a new (third) list.\n\n\n\nLet’s write code to perform element-by-element addition:\nA = [1, 4, 9, 16, 25]\nB = [1, 3, 5, 7, 11]\n\nC = []\nfor i in range(5):\n    element_total = A[i] + B[i]\n    C.append(element_total)\n\nprint(C)\n\n\n0.18 Excercise: First, in your module pdf, trace the values of i and element_total in each iteration of the loop, and also show how the list C changes across the iterations. Type the above in my_twolist2.py to confirm. Print the list inside the loop, by adding a print statement right after the append occurs. (Submit your program with the added print statement.) Explain why, in this case index-iteration is a better choice than content iteration.\n\n\n0.19 Video:"
+  },
+  {
+    "objectID": "units/unit1/modules/module0.html#moving-elements-around-in-a-list",
+    "href": "units/unit1/modules/module0.html#moving-elements-around-in-a-list",
+    "title": "Module 0: A first look at lists",
+    "section": "0.5 Moving elements around in a list",
+    "text": "0.5 Moving elements around in a list\nConsider a list like:\nA = [1, 4, 9, 16, 25]\nNext, suppose we want to swap the elements in the 2nd and 4th positions within the same list (not creating a new list).\nThat is, we want to write code so that:\nA = [1, 4, 9, 16, 25]\n\n# ... code to swap 2nd and 4th elements ...\n\nprint(A)\n\n# Should print [1, 16, 9, 4, 25]\nTo achieve that:\nA = [1, 4, 9, 16, 25]\n\ntemp = A[1]\nA[1] = A[3]\nA[3] = temp\n\nprint(A)\n\n0.20 Excercise: In your module pdf, trace through the execution above showing the values in temp and the list after each line executes. Then, do the same if the middle three lines were replaced by:\nA[1] = A[3]\nA[3] = A[1]\n\n\n0.21 Excercise: Use the “temp” variable idea to perform a left-rotate of a list in my_left_rotate.py. Thus, given \nA = [1, 4, 9, 16, 25]\n# ... your code here...\n\nprint(A)\n# Should print [4, 9, 16, 25, 1]\nThus everything but the first element moves leftwards and the first element gets to the last place. Use a for-loop to move most (but not all) elements."
+  },
+  {
+    "objectID": "units/unit1/modules/module0.html#lists-of-strings-characters-or-real-numbers",
+    "href": "units/unit1/modules/module0.html#lists-of-strings-characters-or-real-numbers",
+    "title": "Module 0: A first look at lists",
+    "section": "0.6 Lists of strings, characters, or real numbers",
+    "text": "0.6 Lists of strings, characters, or real numbers\nWe have thus far seen lists of integers. One can make a list of other kinds of elements.\nFor example:\n# A list of strings:\nA = ['cats', 'and', 'dogs']\ns = ''\nfor w in A:\n    s += w\nprint(s)\n\n# A way to extract the characters in a string into a list:\ns = 'abcdef'\nB = list(s)\nprint(B)\n\n# Some real numbers:\nC = [1.1, 2.22, 3.333, 4.4444]\ntotal = 0\nfor x in C:\n    total = total + x\nprint('Average =', total/4)\n\n0.23 Excercise: Type the above in my_other_lists.py, while noticing the subtle change in how the last print statement is written. Insert spaces in the first loop so that the first thing printed is cats and dogs."
+  },
+  {
+    "objectID": "units/unit1/modules/module0.html#a-different-version-of-print",
+    "href": "units/unit1/modules/module0.html#a-different-version-of-print",
+    "title": "Module 0: A first look at lists",
+    "section": "0.7    A different version of print",
+    "text": "0.7    A different version of print\nConsider these two variations of using print:\nx = 2\ns = 'eat'\ny = 3.141\n\nprint('I love ' + str(x) + ' ' + s + ' ' + str(y))\n\nprint('I love', x, s, y)\n\n0.24 Excercise: Type the above in my_print_example.py.\n\n\n\n\n\n\nNote\n\n\n\n\nThe first version above uses string concatenation to send one big string to print:\nprint( 'I love ' + str(x) + ' ' + s + ' ' + str(y) )\nIn the second version above, strings and variables given to print are separated by commas.\nHere, print treats the four things as separate entities:\nprint('I love', x, s, y)\nIn this case, print automatically inserts a space between the different things (that are separated by commas).\nIn the second type, there is no need to convert numbers to strings."
+  },
+  {
+    "objectID": "units/unit1/modules/module0.html#random-selection-of-elements-from-a-list",
+    "href": "units/unit1/modules/module0.html#random-selection-of-elements-from-a-list",
+    "title": "Module 0: A first look at lists",
+    "section": "0.8 Random selection of elements from a list",
+    "text": "0.8 Random selection of elements from a list\nIt is often useful to be able to pick random elements from a list.\nLet’s use this feature first for a single roll of a die, and then two dice:\n\nSince a single die has 6 faces with the numbers 1 through 6, we’ll use a list of the numbers 1 through 6:\ndie = [1, 2, 3, 4, 5, 6]\nOur goal is to choose one of these numbers randomly.\nPython provides a way to randomly pick (without removing) an element from a list:\ndie = [1, 2, 3, 4, 5, 6]\nroll = random.choice(die)\nLet’s put this together into a program (remembering to import the random package):\nimport random\n\ndie = [1, 2, 3, 4, 5, 6]\nroll = random.choice(die)\nprint(roll)\n\n\n0.25 Excercise: Type the above in my_die_roll.py. Run the program several times to see that you are getting random selections from the list.\nNext, let’s use this to make a (ridiculously) simple game:\n\nTwo players each roll a die N times. The numbers on the rolls are averaged. The player with the higher average wins.\nOK, not the most entertaining game, but one for which we can easily write a program (from the point of view of one player):\nimport random\n\ndie = [1, 2, 3, 4, 5, 6]\n\nnum_trials = 10\ntotal = 0\nfor i in range(num_trials):\n    roll = random.choice(die)\n    print(roll)\n    total += roll\n\nprint('Average score:', total/num_trials)\n\n\n\n0.26 Excercise: Type the above in my_die_roll2.py to observe the result. Report in your module pdf the average when you use a large number of trials (say, 1000).\n\n\n0.27 Excercise: In my_die_roll3.py, change the game to the following: in each trial, each player rolls the die twice and adds the two numbers. The final score is the average across all trials. What is the average when you use a large number of trials (say, 1000)? In your module pdf, devise a more interesting 2-player game one could play solely using dice. (You don’t have to write a program for this last part.)"
+  },
+  {
+    "objectID": "units/unit1/modules/module0.html#some-math-via-programming",
+    "href": "units/unit1/modules/module0.html#some-math-via-programming",
+    "title": "Module 0: A first look at lists",
+    "section": "0.9 Some math via programming",
+    "text": "0.9 Some math via programming\nLet’s start with an example and then use that to delve into a few concepts:\nfrom drawtool import DrawTool\n\ndt = DrawTool()\ndt.set_XY_range(0,10, 0,100)\n\n&lt;font color=\"#dc143c\"&gt;# The blue collection of points:&lt;/font&gt;\ndt.set_color('b')\nx_coords = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\ny_coords = [3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23]\ndt.draw_curve_as_points(x_coords, y_coords)\n\n&lt;font color=\"#dc143c\"&gt;# The red collection of points:&lt;/font&gt;\ndt.set_color('r')\nx_coords = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\ny_coords = [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]\ndt.draw_curve_as_points(x_coords, y_coords)\n\ndt.display()\n\n0.29 Excercise: Type up the above in my_plot_example.py to see what you get. You will also need to download drawtool.py into the same folder.\nNow let’s ask some basic questions:\n\nWhat, really, is a graph and what does it mean to plot on a graph?\nWhat are x,y values and what do they have to with plotting?\nWhat’s a function and what’s the connection between (f(x)) and points on a graph?\nAnd what does this have to do with programming?\n\nWe’ll address these questions below.\nLet’s recall where we started:\n\nIn the beginning, there were integers (whole numbers) like 1, 2, 3, and 42.\nAlong with them came real needs like addition, subtraction, multiplication and division.  (Ancient applications: navigation, telling time, accounting/trade).\nThe integers were not enough because you can perform 3 - 8 and get … what? So came the negative integers like -5.\nThen, because 5/2 is not an integer, more numbers were needed, and hence the real numbers.\nNext came algebra:\n\nInstead of saying “I can take 12 times 4 and get 48, and then divide by 6, to get twice your original number 4”, we can write: \\[ \\frac{12x}{6} = 2x \\]\nIt’s much more compact and precise.\n\nNext came functions:\n\nInstead of saying “OK, take your number and multiply it by itself”, it’s much more compact to say: (f(x) = x^2).\nWe can think of a function as taking some input (like (x)and “doing something to it” to get an output: \n\nAll of this resulted in significant advances in mathematics.\nThen came Descartes who took this to a whole new level with coordinates.\n\nThe idea of coordinates:\n\nSuppose you had a way of linking or associating pairs of numbers:\n\nFor example, suppose 1 is associated with 5\n2 is associated with 7\n3 with 9\n\nSuppose we wrote these as: (1,5), (2,7), (3,9) and so on.\nNext, draw two perpendicular lines (one horizontal, one vertical) on a page: \n\nAnd call them the x and y axes respectively.\n\nNow given associations (1,5), (2,7) and (3,9):\n\nTreat the first number as the distance from the vertical axis.\nTreat the second number as the distance from the horizontal axis.\nThis will put us in a unique spot.\nCall that a point.\n\nFor example: \nThat’s all there’s to it. It’s hard to believe that such a simple idea became transformational.\n\nThe connection between functions and coordinates:\n\nSuppose you have a function like: (f(x) = 2x + 3)\nOne way to make sense of a function is to compute lots of examples like:\n\\[ f({\\bf 1}) = 2*{\\bf 1} + 3 = 5 \\] \\[ f({\\bf 2}) = 2*{\\bf 2} + 3 = 7 \\] \\[ f({\\bf 3}) = 2*{\\bf 3} + 3 = 9 \\]\n\nAnd even \\[ f({\\bf 3.16}) = 2*{\\bf 3.16} + 3 = 9.32 \\]\n\nA pair of axes makes it possible to visualize a function directly, initially by plotting some example points:\n\nTake some x.\nCalculate f(x)\nThen treat x as the first coordinate (distance from y-axis).\nTreat f(x) as the second coordinate (distance from x-axis), and plot.\nFor example, when x=2, then we saw that f(2) = 7. So, plot (2, 7).\n\nIn general, we want to plot x, f(x) for lots of different possible x values.\nHere, f(x) is what we use for the y-coordinate, which is why we sometimes write y = f(x).\nWhen we plot x, f(x) for different x values, we typically pick those x values for our convenience.\nFor above, we showed how to calculate f(x) = 2x + 3 when x=1, when x=2, when x=3, and so on, perhaps up to when x=10,  (Here, the intended range is close to zero.)\nBut if we need to, we could just as easily calculate f(x) = 2x + 3 when x=0.1, when x=0.2, when x=0.3, and so on up to when x=1.0,  (Here, the intended range is close to zero, between 0 and 1.0)\n\nLet’s put these ideas to use:\n\nSuppose we have two functions f and g\n\nf(x) = 2x + 3\ng(x) = x^2\n\nOur goal: compare the two functions.\nOne advantage of programming is that we can write code to perform the action of functions.\nFor example:\nx = 0\nfor i in range(11):\n    f = 2*x + 3\n    print('x =', x, ' f(x) =', f)\n    x = x + 1\n\nx = 0\nfor i in range(11):\n    g = x*x\n    print('x =', x, ' g(x) =', g)\n    x = x + 1\n\n\n\n0.30 Excercise: Type up the above in my_function_example.py.\nIt is far more valuable to visualize, so let’s set about plotting both together:\n\nTo plot, we’ll need to construct the list of x and y coordinates:\n\nfrom drawtool import DrawTool\n\ndt = DrawTool()\ndt.set_XY_range(1,10, 0,100)\n\nx = 0\nx_coords = []\ny_coords = []\nfor i in range(11):\n    x_coords.append(x)\n    f = 2*x + 3\n    y_coords.append(f)\n    x = x + 1\n\ndt.draw_curve_as_lines(x_coords, y_coords)\n\ndt.set_color('r')\n\n# WRITE CODE HERE for the second function\n\ndt.draw_curve_as_lines(x_coords, y_coords)\n\ndt.display()\nLet’s point out: \n\n\n0.31 Excercise: Type up the above in my_function_plot.py and add code for the second function (g(x)=x2) to get a plot like:\n\n\n\n0.32 Video:\n\nScale and axes:\n\nYou may have noticed that the x-axis above had tick marks going from 0 to 10, while the y-axis went from 0 to 100.\nThis is an example of a plot that’s NOT drawn to scale.\nLet’s draw one to scale to see what it looks like by changing one line, from\ndt.set_XY_range(1,10, 0,100)\nto\ndt.set_XY_range(0,100, 0,100)\n\n\n\n0.33 Excercise: In my_function_plot2.py change your code from the earlier exercise to make the scale the same along x and y axes.\nWhen to use different scales along the axes:\n\nUsing the same scale, we see the dramatic difference between linear growth (the function (f(x)=2x+3)) and quadratic growth (the function (g(x) = x^2)).\nBut at the same time, some features like the point of intersection of the two curves is hard to see.\nWe can use different scales when we want to emphasize different aspects.\n\n\n\n0.34 Excercise: In my_function_plot3.py, add a third function (h(x) = 2x). Plot and take a screenshot once with the x and y range both as [0, 1200], and once with the x-range as [0,12] and the y-range as [0,1200]. This should show you how puny quadratic growth is compared to exponential growth. Submit your my_function_plot3.py with the former case when both ranges are the same."
+  },
+  {
+    "objectID": "units/unit1/modules/module0.html#mathematical-art",
+    "href": "units/unit1/modules/module0.html#mathematical-art",
+    "title": "Module 0: A first look at lists",
+    "section": "0.10 Mathematical art",
+    "text": "0.10 Mathematical art\nSince we’re on the topic of functions, we cannot resist developing an art project based on it.\nLet’s first plot a function from high-school: the sine function\nfrom drawtool import DrawTool\nimport math\n\ndt = DrawTool()\ndt.set_XY_range(0,6.28, -1,1)\n\nn = 100\nx_spacing = 6.28/n\n\nx = 0\nfor i in range(n):\n    f = math.sin(x)\n    dt.draw_point(x, f)\n    x = x + x_spacing\n\ndt.display()\nLet’s point out:\n\nFirst, some code features: \nNext, observe that we plotted points directly inside the loop instead of first building a list of coordinates.\nDoing so is an alternative way of plotting (“plot as you go”), and will let us change the point color.\n\nSo, for our art project:\n\nWe’ll draw a background with randomly strewn yellow dots.\nThen, along a sine-curve, we’ll draw small ellipses of different sizes.\n\n\n0.35 Excercise: Download functional_art.py and run to see. Then in my_functional_art.py, improve on the above by including your own functions and additional decoration by drawing."
+  },
+  {
+    "objectID": "units/unit1/modules/module0.html#when-things-go-wrong",
+    "href": "units/unit1/modules/module0.html#when-things-go-wrong",
+    "title": "Module 0: A first look at lists",
+    "section": "0.11 When things go wrong",
+    "text": "0.11 When things go wrong\nIn each of the exercises below, first try to identify the error just by reading. Then type up the program to confirm, and after that, fix the error.\n\n0.36 Excercise: \nA = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nfor i in range(1, 10):\n    print(A[i])\nIdentify and fix the error in my_error1.py.\n\n\n0.37 Excercise: The following program intends to build the decreasing-order list [10, 9, 8, 7, 6, 5, 4, 3, 2, 1].\nA = []\nn = 10\nfor i in range(n):\n    n = n - 1\n    A.append(n)\n\nprint(A)\nIdentify and fix the error in my_error2.py.\n\n\n0.38 Excercise: The following program intends to add to N all the elements of the list A.\nN = 100\nA = [1, 4, 9, 16, 25]\n\nfor k in A:\n    N = N + A[k]\n\nprint(N)\nIdentify and ix the error in my_error3.py."
+  },
+  {
+    "objectID": "units/unit1/modules/module0.html#meta",
+    "href": "units/unit1/modules/module0.html#meta",
+    "title": "Module 0: A first look at lists",
+    "section": "0.12 Meta",
+    "text": "0.12 Meta\nThis is the next installment in our series of stepping back from it all and reflecting, with the hope of helping you progress as a learner.\nThis time our topic is math and math anxiety.\nLet’s start by acknowledging a few things:\n\nStudents do in fact have bad experiences learning math.\n\nFor example, if you were unlucky to be ill during the critical period in 4th grade when fractions are covered, that could become a gap that precludes other concepts.\nOr if algebra did not go well, everything that follows in math can lead to cascading difficulties in learning.\n\nStudents learn math differently and their “window of opportunity” may not be aligned with where their school is.\n\nThus, for many students, a certain age is not optimal for academic intensity, or issues at home prevent full engagement.\n\nThere are hidden cultural dispositions that can get in the way.\n\nThe most pernicious by far is the notion that some people just aren’t cut out for it. Or you have to have the “math gene”.\n\nMuch of K-12 math is, admittedly, a bit dull.\n\nAt the same time, there’s good news:\n\nMath (and programming) is like any other skill: everyone can acquire it with sufficient practice, but not everyone can reach the level of “world expert”.\nThis is true of just about any mental skill: facility with language, playing a musical instrument,\nAnd, most importantly, anyone can acquire it at any age.\n\nCan you tell someone it’s too late to learn, say, French?\n\n\nIt all depends on shedding the “I’m not cut out for it” disposition and committing to practice.\nThere is world of elegance and beauty in math after crossing a threshold of skill level, just as with a musical instrument.\n\nLet’s say a bit more about practice:\n\nYou surely know a musical instrument cannot be learned merely by watching videos or reading about it.\nProficiency requires regular and intense practice.\nThe best part of practice is that, even though progress is not instantaneous, you can see results after a while.\nAnother advantage: the nature of practice is that many people give up. So, if you don’t, you are ahead of those that do.\n\nFinally, the connection between programming and math:\n\nIt is true that most people who program do not use math at all. Just ask a web developer.\nBut if you add a bit of math, you can do many interesting things in programming, as anyone who deals with data will tell you.\nSome aspects of computer science that have a strong mathematical underpinning are just … a lot of fun!\n\n Next Module: Module 1"
   },
   {
     "objectID": "index.html",
@@ -438,21 +529,21 @@
     "href": "instructors.html#gtas",
     "title": "Instruction Team",
     "section": "GTAs",
-    "text": "GTAs\n\nAmal Alqahtani\n\n\nLexi Sun\n\n\nBoomika Karuppaiah\n\n\nEthan Leider"
+    "text": "GTAs"
   },
   {
     "objectID": "instructors.html#las",
     "href": "instructors.html#las",
     "title": "Instruction Team",
     "section": "LAs",
-    "text": "LAs\n\nAbdulrahman Alsaleh\n\n\nAdil Bajwa\n\n\nMaya Bardin\n\n\nVik Becker\n\n\nPetra Chuenarrom\n\n\nTanim Khan\n\n\nMarlee Alvino"
+    "text": "LAs"
   },
   {
     "objectID": "instructors.html#grader",
     "href": "instructors.html#grader",
     "title": "Instruction Team",
     "section": "Grader",
-    "text": "Grader\n\nRutvik Solanki"
+    "text": "Grader"
   },
   {
     "objectID": "units/useful.html",
@@ -462,25 +553,53 @@
     "text": "If and when needed.\n\n\n1. drawtool.py\n\n\n2. wordtool.py and wordsWithPOS.txt\n\n\n3. datatool.py"
   },
   {
-    "objectID": "units/unit0/assignments/assignment1.html",
-    "href": "units/unit0/assignments/assignment1.html",
-    "title": "Assignment 1",
+    "objectID": "units/unit0/anaconda-mac.html",
+    "href": "units/unit0/anaconda-mac.html",
+    "title": "Anaconda Installation Guide for macOS",
     "section": "",
-    "text": "Home » Unit 0 » Assignment 1"
+    "text": "This guide will walk you through the process of installing Anaconda, a popular Python distribution, on your macOS computer. Anaconda provides a convenient way to manage Python packages and environments for data science and scientific computing."
   },
   {
-    "objectID": "units/unit0/assignments/assignment1.html#objectives-and-example",
-    "href": "units/unit0/assignments/assignment1.html#objectives-and-example",
-    "title": "Assignment 1",
-    "section": "Objectives and example",
-    "text": "Objectives and example\nAssignments are designed to strengthen your problem-solving skills and build independence. While the module exercises are small variations of explained module examples, a single assignment will have multiple problems, all of which are intended to be more challenging than the module exercises, and will feature less detailed guidance. This is a good thing because ultimately, you’ll have to solve problems on your own. Facing and overcoming challenging problems cheerfully is the key to building problem-solving skill.\nIn each such assignment set, we will help develop your problem-solving skills by showing you how to solve one problem, the first and often hardest problem. However, the solution will include some exercises for you that you will need to submit."
+    "objectID": "units/unit0/anaconda-mac.html#introduction",
+    "href": "units/unit0/anaconda-mac.html#introduction",
+    "title": "Anaconda Installation Guide for macOS",
+    "section": "",
+    "text": "This guide will walk you through the process of installing Anaconda, a popular Python distribution, on your macOS computer. Anaconda provides a convenient way to manage Python packages and environments for data science and scientific computing."
   },
   {
-    "objectID": "units/unit0/assignments/assignment1.html#assignment-problems",
-    "href": "units/unit0/assignments/assignment1.html#assignment-problems",
-    "title": "Assignment 1",
-    "section": "Assignment problems",
-    "text": "Assignment problems\n\n1. Demo problem\nSuppose we want to use for-loops to produce this arrow-head like pattern:\n*\n**\n***\n****\n*****\n******\n*******\n********\n*********\n**********\n**********\n*********\n********\n*******\n******\n*****\n****\n***\n**\n*\nAt this point, do not read further and try to address the following:\n\nFirst understand what is being asked.\nDo you see a for-loop or two at work where, as the loops are printing, you’ll get the output shown above?\nCan the problem be broken down into parts, where you can solve the parts and put the solution together afterwards?\nTry writing some code to get at least some of the output. Now examine the solution\n\nDon’t forget to submit your solutions to the exercises within."
+    "objectID": "units/unit0/anaconda-mac.html#prerequisites",
+    "href": "units/unit0/anaconda-mac.html#prerequisites",
+    "title": "Anaconda Installation Guide for macOS",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nBefore you begin, ensure you have the following:\n\nA macOS computer.\nAn internet connection.\nSufficient disk space for the installation."
+  },
+  {
+    "objectID": "units/unit0/anaconda-mac.html#installation-steps",
+    "href": "units/unit0/anaconda-mac.html#installation-steps",
+    "title": "Anaconda Installation Guide for macOS",
+    "section": "Installation Steps",
+    "text": "Installation Steps\n\n1. Download Anaconda\nVisit the Anaconda download page at https://www.anaconda.com/download.\n\n\n2. Choose the macOS Installer\nClick on the “Download” button under the macOS section depending on you System-on-chip (Intel/M1/M2) to download the Anaconda installer for macOS.\n\n\n\nDownload Anaconda\n\n\n\n\n3. Run the Installer\n\nLocate the downloaded file (usually in your “Downloads” folder).\nDouble-click the Anaconda disk image (.dmg) file to open it and click on “Allow” when prompted.\n\n\n\n\nRun Installer\n\n\n\n\n\nAllow Installation\n\n\n\n\n4. Follow the Installer Wizard\n\nFollow the on-screen instructions to begin the installation.\nRead and accept the license agreement when prompted.\n\n\n\n\nRead Me\n\n\n\n\n\nLicense Agreement\n\n\n\n\n5. Install Anaconda\nClick the “Install” button to begin the installation process. This may take a few minutes.\n\n\n\nInstall\n\n\n\n\n6. Complete the Installation\nOnce the installation is complete, you will see a confirmation message. Click the “Continue” button and finally close the installation wizard by clicking on the “Close” button.\n\n\n\nInstallation Complete\n\n\n\n\n\nClose Installation Wizard\n\n\n\n\n7. Move the Installer file to Trash (Optional)\n\n\n\nMove the Installer to Trash\n\n\n\n\n8. If prompted to update the navigator, select “No, don’t show again”\n\n\n\nDon’t Update\n\n\n\n\n9. You’re NOT REQUIRED to Log in/Sign up for Anaconda Cloud, close the prompt by clicking the “x” button\n\n\n\nDon’t Log in/Sign up"
+  },
+  {
+    "objectID": "units/unit0/anaconda-mac.html#conclusion",
+    "href": "units/unit0/anaconda-mac.html#conclusion",
+    "title": "Anaconda Installation Guide for macOS",
+    "section": "Conclusion",
+    "text": "Conclusion\nCongratulations! You’ve successfully installed Anaconda and Jupyter on your macOS computer. You can now use Anaconda to create Python environments, manage packages, and work on data science projects.\nFor more information on using Anaconda, refer to the official documentation at https://docs.anaconda.com/.\nIf you encounter any issues or have questions, don’t hesitate to seek help from the Anaconda community or consult the documentation for troubleshooting tips."
+  },
+  {
+    "objectID": "units/unit0/editor.html",
+    "href": "units/unit0/editor.html",
+    "title": "Installing an Editor",
+    "section": "",
+    "text": "Getting Started with Your Coding Journey"
+  },
+  {
+    "objectID": "units/unit0/editor.html#understanding-the-basics",
+    "href": "units/unit0/editor.html#understanding-the-basics",
+    "title": "Installing an Editor",
+    "section": "Understanding the Basics",
+    "text": "Understanding the Basics\nIn the realm of programming, your choice of an editor is pivotal. It serves as your creative hub, where your code takes shape. Here’s a brief overview of key features editors bring to the table:\n\nText Editing: Core to any editor is the ability to write, edit, and organize code. Look for features like syntax highlighting, auto-indentation, and code completion for an enhanced coding experience.\nCode Execution: Some editors go beyond editing by enabling interactive code execution, which is handy for data analysis and experimentation.\nExtensions and Plugins: Editors are highly customizable. Enhance functionality by installing extensions or plugins tailored to your needs, adding Python-specific tools or themes.\nIDEs (Integrated Development Environments): Editors offer a complete development environment, including debugging and version control integration.\n\nFor your CS1012 course, we recommend Thonny as the primary choice, with Spyder as a valuable alternative:\n\nThonny: Thonny is a beginner-friendly Python IDE, designed to make it easy to get started with programming. It comes with a simple interface and integrated tools for package management.\nSpyder: Spyder is a powerful IDE for scientific computing and data analysis. It provides features like an interactive console, variable explorer, and integrated help, making it a solid alternative to Thonny.\n\nLet’s dive into the installation process:\n\nSelect an Option Appropriate for Your Operating System\n\n\nMacOS:\n\nStep 1: Install Thonny for Mac\nStep 2: Install Spyder for Mac\n\n\n\nWindows:\n\nStep 1: Install Thonny for Windows\nStep 2: Install Spyder for Windows\n\nChoose Thonny as your primary choice for its simplicity, especially if you’re new to coding. However, if you prefer a more feature-rich environment, Spyder is an excellent alternative.\nFollow the respective installation instructions and embark on your coding journey with confidence!\nOnce you have your preferred editor installed, you’re ready to start coding. Happy exploring!"
   },
   {
     "objectID": "units/unit0/anaconda-windows.html",
@@ -522,7 +641,7 @@
     "href": "units/unit0/modules/module4.html",
     "title": "Module 4: Integers",
     "section": "",
-    "text": "Home » Units » Module 4"
+    "text": "Home » Unit 0 » Module 4"
   },
   {
     "objectID": "units/unit0/modules/module4.html#objectives",
@@ -620,7 +739,7 @@
     "href": "units/unit0/modules/module1.html",
     "title": "Module 1: A few more getting-started examples",
     "section": "",
-    "text": "Home » Units » Module 1"
+    "text": "Home » Unit 0 » Module 1"
   },
   {
     "objectID": "units/unit0/modules/module1.html#objectives",
@@ -676,7 +795,7 @@
     "href": "units/unit0/modules/module2.html",
     "title": "Module 2: Functions: a first look",
     "section": "",
-    "text": "Home » Units » Module 2"
+    "text": "Home » Unit 0 » Module 2"
   },
   {
     "objectID": "units/unit0/modules/module2.html#objectives",
