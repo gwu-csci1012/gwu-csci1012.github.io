@@ -1,6 +1,22 @@
 ---
 title: "**Module 6**: Real Numbers"
+format:
+  html:
+    code-copy: false
 ---
+
+<html>
+<head>
+    <style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
+</head>
+<body>
 
 <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
@@ -651,3 +667,6 @@ Some ideas to reflect on:
     - Even a little math is quite useful.
     - You can learn quite a bit of math via programming, as we'll show you.
 - We'll have more to say about the interesting and exciting connections between computer science, math, and other fields, including art.
+
+</body>
+</html>
