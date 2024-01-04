@@ -1,0 +1,155 @@
+---
+title: ""
+format:
+  html:
+    code-copy: false
+---
+
+<html>
+<head>
+    <style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
+</head>
+<body>
+
+<div class="breadcrumbs">
+  <a href="./index.qmd">Home</a> &raquo;
+  <span class="current-page">Instruction Team</span>
+</div>
+
+## Assignements & Grades
+### Assessments
+- 15 Modules
+- 5 Problem Sets
+- 13 Quizzes (given in lab)
+- Examination
+
+### Grading
+- Examination: 30%
+- Problem Sets: 25%
+- Modules: 15%
+- Quizzes: 20%
+- Professionalism: 10%
+
+You must pass the examination with a score greater than 60% to pass the course.
+
+:::{.callout-note}
+- The lowest four modules are dropped.
+- The lowest problem set is dropped.
+- The lowest four quizzes are dropped. (Low grades associated associated with academic integrity violations will not be dropped.)
+:::
+
+While we use [blackboard.com](https://gwu.blackboard.com/) for assignment submissions, do not rely on [blackboard.com](https://gwu.blackboard.com/) to calculate your grades. Use the grading criteria outlined in this syllabus.
+
+### Grading Scale
+The following grading scale will be applied at the end of the semester to calculate letter grades, grades are "_rounded up_" to the nearest integer: 
+<blockquote>
+90-100: __A__
+
+85-89: __A-__
+
+80-84: __B+__
+
+75-79: __B__
+
+70-74: __B-__
+
+65-69: __C+__
+
+60-64: __C__
+
+55-59: __C-__
+
+50-54: __D__
+
+0-49: __F__
+</blockquote>
+
+### Time Commitement
+There is one 75-minute class meeting per week and one 75-minute lab per week. Students are expected to spend at least 5 hours per week independently learning outside of class meetings for this course.
+
+## Additional important information about grading policy:
+
+- Late submissions on Homework and projects will not be acceptable.
+- Any questions or follow up about the assignments will be done only within 2 weeks of submission deadline.
+  - Following the week after the submission deadline no further discussion on the assignment will be done.
+
+## Classroom Policies and Student responsibilities
+:::{layout-ncol="2"}
+This course requires a combination of individual and group work entailing hands-on activities and frequent interactions with the instructional team. The lectures, labs, and office hours are available for interacting with your group and the instruction team. We ask that all students adhere to the course policies throughout the duration of the semester.
+
+![](./media/images/noun-classroom-3973477.png){ width="190" }
+<p><font size="1">classroom by Chattapat from <a href="https://thenounproject.com/browse/icons/term/classroom/" target="_blank" title="classroom Icons">Noun Project</a></font></p>
+:::
+
+- **Be respectful:** Listen to the instructors. Keep an open mind to the course material presented. Limit the use of personal devices. Be aware that you are working in a group. Be mindful of your colleagues.
+- **Be responsible:** Arrive on time. Attendance is the first pathway toward success. Submit the course deliverables on time. Help your team members.
+- **Be a communicator:** Observe, Ask questions and Try out the materials presented during the course. Communicate with your team effectively and politely.
+- **Be a problem solver:** Explore options to complete hands-on tasks. Make your own notes. Stay positive about the course outcomes.
+
+
+## Justice, Equity, Diversity, Inclusion (JEDI) statement
+
+:::{layout-ncol="2"}
+The instruction team intends to students from all diverse backgrounds and perspectives by this course, The diversity that the students bring to this class be viewed as a resource, strength, and benefit. The course materials and activities presented in this course are intended to be respectful of: age, race, ethnicity, country of origin, language, religion, spiritual practice, sexual orientation, gender identity or expression, introversion/extroversion personality dimensions, and socioeconomic and mental/physical status.
+
+![](./media/images/noun-employee-diversity-3989902.png){ width="190" }
+<p><font size="1">employee diversity by Bold Yellow from <a href="https://thenounproject.com/browse/icons/term/employee-diversity/" target="_blank" title="employee diversity Icons">Noun Project</a></font></p>
+:::
+
+Please let the main instructor know ways to improve the effectiveness of the course. See [JEDI resources](https://www.cs.seas.gwu.edu/justice-equity-diversity-and-inclusion-resources) for student resources.
+
+## Use of chatGPT or any other AI-based models for in-class work and deliverables
+The use **chatGPT or any other genreative AI-based tool is NOT PERMITTED**. Furthermore, the ethical issues regarding the use of chatGPT or any other AI-based models will be discussed in-class and course policy will be ammended according to the findings. The findings of any such discussions will be summarized and placed in-context of the [Academic Integrity Code](#academic-integrity-code)
+
+**Resources that will guide the course policy changes during the course:**
+
+- [chatGPT Course policy formulation](https://medium.com/@rwatkins_7167/updating-your-course-syllabus-for-chatgpt-965f4b57b003)
+- [chatGPT chatbot](https://openai.com/blog/chatgpt/)
+- [How ChatGPT Could Transform Higher Education](https://www.socialsciencespace.com/2022/12/how-chatgpt-could-transform-higher-education/)
+
+## University Policies
+
+### Use of Electronic Course Materials and Class Recordings
+Students are encouraged to use electronic course materials, including recorded class sessions (if any), for private personal use in connection with their academic program of study. Electronic course materials and recorded class sessions should not be shared or used for non-course related purposes unless express permission has been granted by the instructor. Students who impermissibly share any electronic course materials are subject to discipline under the Student Code of Conduct. Please contact the instructor if you have questions regarding what constitutes permissible or impermissible use of electronic course materials and/or recorded class sessions. Please contact [Disability Support Services](https://disabilitysupport.gwu.edu) if you have questions or need assistance in accessing electronic course materials.
+
+### University Policy on Religious Holidays 
+1.	Students should notify faculty during the first week of the semester of their intention to be absent from class on their day(s) of religious observance.
+2.	Faculty should extend to these students the courtesy of absence without penalty on such occasions, including permission to make up examinations.
+3.	Faculty who intend to observe a religious holiday should arrange at the beginning of the semester to reschedule missed classes or to make other provisions for their course‐related activities.
+For details and policy, see “Religious Holidays” at <https://provost.gwu.edu/policies-procedures-and-guidelines>
+
+## Support for Students Outside the Classroom 
+### Disability Support Services (DSS):
+
+<em>Telephone:</em> 202-994-8250
+
+Any student who may need an accommodation based on the potential impact of a disability should contact the Disability Support Services office in the Rome Hall, Suite 102, to establish eligibility and to coordinate reasonable accommodations. For additional information please refer to: <https://disabilitysupport.gwu.edu/>
+
+### Counseling & Psychological Services:
+
+<em>Telephone:</em> 202-994-5300
+
+The University's Mental Health Services offers 24/7 assistance and referral to address students' personal, social, career, and study skills problems. Services for students include: crisis and emergency mental health consultations confidential assessment, counseling services (individual and small group), and referrals. <https://healthcenter.gwu.edu/counseling-and-psychological-services>
+
+### Campus safety and security:
+The following links can be accessed to learn more about the Safety and Security at the George Washington University
+  
+- For help in an emergency, call **911** or GW Police **202-994-6111** (*GWPD*)
+- Additional resources for student safety and security can be found at this link: [https://studentlife.gwu.edu/safety-and-security](https://studentlife.gwu.edu/safety-and-security)
+
+## Academic Integrity Code
+
+_Contact information_: <a href="mailto:rights@gwu.edu">rights@gwu.edu</a> or 202-994-6757.
+
+Academic dishonesty is defined as cheating of any kind, including misrepresenting one's own work, taking credit for the work of others without crediting them and without appropriate authorization, and the fabrication of information. You are not allowed to collaborate on the home works and lab assignments; for programming projects and hardware lab assignments, you can work in teams only if they are designated as team projects (labs). Unless otherwise specified, you cannot search for solutions or code on the web – but you can use any code that is included in the textbook or lecture notes (but please cite them). I will be using a SW tool that checks for program code similarities – any pair of programs or written reports with greater than 10% similarity will be closely examined.
+
+The Office of Academic Integrity maintains a permanent record of the violation.
+More information is available from the Office of Academic Integrity at <https://studentconduct.gwu.edu/academic-integrity>. The University’s “Guide of Academic Integrity in Online Learning Environments” is available at <https://studentconduct.gwu.edu/guide-academic-integrity-online-learning-environments>. 
+
