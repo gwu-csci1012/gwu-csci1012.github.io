@@ -1,6 +1,22 @@
 ---
 title: "**Module 3:** Loops: the for-loop"
+format:
+  html:
+    code-copy: false
 ---
+
+<html>
+<head>
+    <style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
+</head>
+<body>
 
 <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
@@ -705,3 +721,6 @@ What to keep in mind:
 
 <br>
 [Previous Module: **Module 2**](./module2.qmd){.button .prev} [Next Module: **Module 4**](./module4.qmd){.button .next}
+
+</body>
+</html>
