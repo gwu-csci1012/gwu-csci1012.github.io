@@ -1,5 +1,5 @@
 ---
-title: "Instructions for typing and running your first program"
+title: "Installing an Editor"
 format:
   html:
     code-copy: false
@@ -18,173 +18,48 @@ format:
 </head>
 <body>
 
-<!-- <div class="breadcrumbs">
-  <a href="../../../index.qmd">Home</a> &raquo;
-  <a href="">Units</a> &raquo;
-  <span class="current-page"></span>
-</div> -->
+*Getting Started with Your Coding Journey*
 
-## Objectives
+## Understanding the Basics
 
-We will now have you <em>type</em>, </em>run</em>, and save your first <em>computer program</em>.
+In the realm of programming, your choice of an editor is pivotal. It serves as your creative hub, where your code takes shape. Here's a brief overview of key features editors bring to the table:
 
-:::{.callout-note}
-- Programs are <em>typed</em> in using your computer's keyboard, just as you would type in an email or text document. 
-- And just as the "thing you are typing into" is different for email and for text-editing, there is a different "thing" to type programs into.
-- The <em>typing</em> is one part of getting a program. If you just type your program, it will just be sitting there on your computer. But you want to go the next step and <em>run</em> (or, execute, as we say) the program. Typing and not-running is loosely analogous to typing an email but not <em>sending</em> it (the email will just remain in composed-form, but go nowhere) Similarly, typing text into Word doesn't mean it gets "published".
-- The "thing" into which you type and run your program is called a <em>code editor</em> or an IDE (Integrated Development Environment, a mouthful).
-- We are going to give you the option of using one of two code editors, <em>Thonny</em> or <em>Spyder</em>. Think of them as apps that help you type and run programs.
-:::
+- **Text Editing**: Core to any editor is the ability to write, edit, and organize code. Look for features like syntax highlighting, auto-indentation, and code completion for an enhanced coding experience.
 
-Before we get to typing in a program, we first (if not already done) need to download and <em>install</em> Python and either Thonny or Spyder.
+- **Code Execution**: Some editors go beyond editing by enabling interactive code execution, which is handy for data analysis and experimentation.
 
-- The term <em>install</em> means: you download software on your computer and get it to run. This is something you do just once.
-- When you need to run the software again, you search for it on your computer (since it's already installed) and merely run it.
-- Thus, you will perform <b>Steps 1 and 2 just once</b> for this course.
-- And <b>Steps 3 and 4</b> repeatedly as you write code.
-- Also, if you start off with one editor and change your mind, you can come back here to install the other editor and learn how to use it.
+- **Extensions and Plugins**: Editors are highly customizable. Enhance functionality by installing extensions or plugins tailored to your needs, adding Python-specific tools or themes.
 
-**1. Install Anaconda**: Pick between these two options and click through to follow instructions in installing Anaconda.
+- **IDEs (Integrated Development Environments)**: Editors offer a complete development environment, including debugging and version control integration.
 
-- [**Anaconda for MacOS Users**](anaconda-mac.qmd)
-- [**Anaconda for Windows Users**](anaconda-windows.qmd)
+For your CS1012 course, we recommend Thonny as the primary choice, with Spyder as a valuable alternative:
 
-<em>Then come back here and proceed with Step 2.</em>
+- **Thonny**: Thonny is a beginner-friendly Python IDE, designed to make it easy to get started with programming. It comes with a simple interface and integrated tools for package management.
 
-Incidentally, you might be asking: what exactly is Anaconda and what does it have to do with Python other than its name?
+- **Spyder**: Spyder is a powerful IDE for scientific computing and data analysis. It provides features like an interactive console, variable explorer, and integrated help, making it a solid alternative to Thonny.
 
-- Python is a programming language. Typically a language alone is not enough to get many useful programming tasks done.
-- We need additional software that's useful. Anaconda is a bundle that includes Python and this additional software. You install it once on your computer and you can then avail of all kinds of useful things related to Python.
-- The one thing it does not have, sadly, is the Thonny editor, so we'll show you how to install that.
+Let's dive into the installation process:
 
-**2. Install a code editor**: by selecting ONE of the following options:
+### **Select an Option Appropriate for Your Operating System**
+<!-- <div id="steps"></div> -->
 
-- *Option A*: [Thonny for Mac users](editor.qmd#install-thonny-mac)
-- *Option B*: There are no special instructions because Spyder comes bundled with Anaconda.
-- *Option A*: [Thonny for Windows users](editor.qmd#install-thonny-windows)
-- *Option B*: There are no special instructions because Spyder comes bundled with Anaconda.
+#### **MacOS:**
 
+- **Step 1**: [Install Thonny for Mac](thonny-mac.qmd)
 
-**3. Open a code editor**: Choose between
+- **Step 2**: [Install Spyder for Mac](spyder-mac.qmd)
 
-- *Option A*: looking for and opening [Thonny for Mac users](editor.qmd#open-thonny-mac)
-- *Option B*: Using Spyder, looking for, and opening Spyder on a Mac is similar to looking for and opening Thonny.
-- *Option A*: looking for and opening [Thonny for Windows users](editor.qmd#open-thonny-windows)
-- *Option B*: looking for and opening Spyder. Looking for, and opening Spyder on Windows is similar to looking for and opening Thonny.
+#### **Windows:**
 
-**4. Type and Execute `helloworld.py`**: Choose between:
+- **Step 1**: [Install Thonny for Windows](thonny-windows.qmd)
 
-- *Option A*: [Helloworld for Mac users using Thonny](editor.qmd#hello-thonny-mac)
-- *Option B*: [Helloworld for Mac users using Spyder](editor.qmd#hello-spyder-mac)
-- *Option A*: [Helloworld for Windows users using Thonny](editor.qmd#hello-thonny-win)
-- *Option B*: [Helloworld for Windows users using Spyder](editor.qmd#hello-spyder-win)
+- **Step 2**: [Install Spyder for Windows](spyder-windows.qmd)
 
-**5. Install Matplotlib for Thonny users**: 
-What is matplotlib? It's a plotting package that we'll use. This comes packaged with Spyder and so, only Thonny users need to download this. Thonny is a nice editor and so Thonny users cheerfully do this additional step in order to use plotting along with Thonny. 
+Choose Thonny as your primary choice for its simplicity, especially if you're new to coding. However, if you prefer a more feature-rich environment, Spyder is an excellent alternative.
 
-- Mac Users: [Install matplotlib for Thonny](editor.qmd#install-matplotlib-mac)
-- Windows Users: [Install matplotlib for Thonny](editor.qmd#install-matplotlib-win)
+Follow the respective installation instructions and embark on your coding journey with confidence!
 
-## MacOS Users
-### Step 1: Installing Anaconda
-Follow [**this**](anaconda-mac.qmd) guide to learn how to install Anaconda 
-
-<div id="install-thonny-mac"></div>
-### Step 2: Option A, Installing Thonny
-Installing and Opening Thonny
-{{< video ../../media/units/unit0/module0/u0-mod0-installthonny-mac.mp4 aspect-ratio="21x9" >}}
-Now click on the [**Link to Thonny**](https://thonny.org) and install it on your laptop.
-
-<div id="open-thonny-mac"></div>
-### Step 3: Option A, Opening Thonny
-These screenshots explain how to open Thonny:
-
-- **Step 3.A.1**
-![](../../media/units/unit0/module0/spotlight-thonny-1.png)
-
-- **Step 3.A.2**
-![](../../media/units/unit0/module0/spotlight-thonny-2.png)
-
-- **Step 3.A.3**
-![](../../media/units/unit0/module0/spotlight-thonny-3.png)
-
-- **Step 3.A.4: You now have opened Thonny**
-![](../../media/units/unit0/module0/spotlight-thonny-4.png)
-
-:::{.callout-note}
-- When you open Thonny you aren't opening program files (yet). It's similar to opening Word without naming a text file to work on.
-- Your program files are going to be in specific folders. You need to look for them, and when you create new ones, save them in specific folders.
-:::
-
-<div id="hello-thonny-mac"></div>
-### Step 4: Option A, Helloworld in Thonny
-{{< video  ../../media/units/unit0/module0/u0-mod0-mac-thonny.mp4 aspect-ratio="21x9" >}}
-
-<div id="hello-spyder-mac"></div>
-### Step 4: Option B, Helloworld in Spyder
-{{< video  ../../media/units/unit0/module0/u0-mod0-mac-spyder.mp4 aspect-ratio="21x9" >}}
-
-<div id="install-matplotlib-mac"></div>
-### Step 5: Installing Matplotlib (or any package) for Thonny Users
-How to add a package (like Matplotlib):
-
-- To add a package (which will only be necessary for those using Thonny), first, open Thonny, and go to "Tools". From there, click on "Manage Packages".
-![](../../media/units/unit0/module0/step1mac.jpg)
-
-- Then, you will see a window like what is shown in the image above. Search for the "package" you need to install or remove. In this case, we have used the example of "Matplotlib", which you will need to have installed for some exercises. Once you've typed the name of the package, click "Find package from PyPI" or press the enter/return key.
-![](../../media/units/unit0/module0/step2.png)
-
-- To add the package, click the install button. You will then see a small popup while the package is installed.
-![](../../media/units/unit0/module0/step3add.png)
-
-## Windows Users
-### Step 1: Installing Anaconda
-Follow [**this**](anaconda-windows.qmd) guide to learn how to install Anaconda 
-
-<div id="install-thonny-windows"></div>
-### Step 2: Option A, Installing Thonny
-Installing and Opening Thonny
-{{< video ../../media/units/unit0/module0/u0-mod0-installthonny-win.mp4 aspect-ratio="21x9" >}}
-Now click on the [**Link to Thonny**](https://thonny.org) and install it on your laptop.
-
-<div id="open-thonny-windows"></div>
-### Step 3: Option A, Opening Thonny
-The following screenshots explain how to open Thonny:
-
-- **Step 3.A.1**
-![](../../media/units/unit0/module0/windows-thonny-1.png)
-
-- **Step 3.A.2**
-![](../../media/units/unit0/module0/windows-thonny-2.png)
-
-- **Step 3.A.3**
-![](../../media/units/unit0/module0/windows-thonny-3.png)
-
-:::{.callout-note}
-- When you open Thonny you aren't opening program files (yet). It's similar to opening Word without naming a text file to work on.
-- Your program files are going to be in specific folders. You need to look for them, and when you create new ones, save them in specific folders.
-:::
-
-<div id="hello-thonny-win"></div>
-### Step 4: Option A, Helloworld in Thonny
-{{< video ../../media/units/unit0/module0/u0-mod0-win-spyder.mp4 aspect-ratio="21x9" >}}
-
-<div id="hello-spyder-win"></div>
-### Step 4: Option B: Helloworld in Spyder
-{{< video ../../media/units/unit0/module0/u0-mod0-win-spyder.mp4 aspect-ratio="21x9" >}}
-
-<div id="install-matplotlib-win"></div>
-### Step 5: Installing Matplotlib
-How to add a package (like Matplotlib):
-
-- To add a package (which will only be necessary for those using Thonny), first, open Thonny, and go to "Tools". From there, click on "Manage Packages".
-![](../../media/units/unit0/module0/step1win.png)
-
-- Then, you will see a window like what is shown in the image above. Search for the "package" you need to install or remove. In this case, we have used the example of "Matplotlib", which you will need to have installed for some exercises. Once you've typed the name of the package, click "Find package from PyPI" or press the enter/return key.
-![](../../media/units/unit0/module0/step2.png)
-
-- To add the package, click the install button. You will then see a small popup while the package is installed.
-![](../../media/units/unit0/module0/step3add.png)
+Once you have your preferred editor installed, you're ready to start coding. Happy exploring!
 
 </body>
 </html>
