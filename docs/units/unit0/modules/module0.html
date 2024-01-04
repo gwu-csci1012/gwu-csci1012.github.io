@@ -277,6 +277,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+
+
+<style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
+
+
 <div class="breadcrumbs">
 <p><a href="../../../index.html">Home</a> » <a href="#">Units</a> » <span class="current-page">Module 0</span></p>
 </div>
@@ -290,7 +302,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="our-first-program" class="level3">
 <h3 class="anchored" data-anchor-id="our-first-program">0.0: Our First Program</h3>
 <p>Lets take a look at our first program as it appears in a textbook (like this one):</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello World"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello World"</span>)</span></code></pre></div>
 <p>This is a simple program written in the Python programming language, possibly one of the smallest programs one can write, and a traditional starting point for learning programming.</p>
 <p>We will very soon (below) write this program ourselves.</p>
 <p>For now, let’s point out a few things:</p>
@@ -375,8 +387,8 @@ Note
 <p>We will now spend a bit of time trying a few variations, and also examining what happens when typing mistakes are made.</p>
 <p>Consider this program: <!-- <font size="+2">
     <font color="#000000"><pre> --></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello World!'</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'My name is X'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello World!'</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'My name is X'</span>)</span></code></pre></div>
 <section id="excercise-type-up-this-program-but-use-your-own-name-instead-of-x.-save-the-file-in-the-module0-folder-as-myname.py." class="level6">
 <h6 class="anchored" data-anchor-id="excercise-type-up-this-program-but-use-your-own-name-instead-of-x.-save-the-file-in-the-module0-folder-as-myname.py."><span style="color:#8B4513;"><strong>0.3 Excercise:</strong> Type up this program but use your own name instead of X. Save the file in the <code>module0</code> folder as <code>myname.py</code>.</span></h6>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -402,7 +414,7 @@ Note
 <ul>
 <li>Here’s the program:</li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello World!'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello World!'</span></span></code></pre></div>
 <p>Note the missing right parenthesis at the end of the line.</p>
 <ul>
 <li>What happens when we nonetheless try and run the program?<br>
@@ -413,7 +425,7 @@ Note
 <ul>
 <li>Here’s the program:</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Hello World<span class="op">!</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Hello World<span class="op">!</span>)</span></code></pre></div>
 <ul>
 <li>We get something quite similar: <img src="../../../media/units/unit0/module0/error2.png" class="img-fluid"></li>
 </ul></li>
@@ -438,7 +450,7 @@ Note
 </ul>
 <p>Now let’s list the program and then point out some “surface” features.</p>
 <p>The full program:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># whackamole with nerf gun</span></span>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># whackamole with nerf gun</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Use programs written by others through "import"</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk  </span>
@@ -528,7 +540,7 @@ Note
 <span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a><span class="co"># Launch the window and start the animation</span></span>
 <span id="cb5-90"><a href="#cb5-90" aria-hidden="true" tabindex="-1"></a>window.after(<span class="dv">1</span>, run)</span>
-<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div>
 <p>Yes, that’s a long program! Now let’s point out some features:</p>
 <p>First, some features from the first half of the program: <img src="../../../media/units/unit0/module0/whackamole2.png" class="img-fluid"></p>
 <p>And some from the latter part:And some from the latter part: <img src="../../../media/units/unit0/module0/whackamole3.png" class="img-fluid"></p>
@@ -610,6 +622,8 @@ Note
 <p><br> <a href="../../../units/unit0/modules/module1.html" class="button next">Next Module: <strong>Module 1</strong></a></p>
 
 
+
+
 </section>
 </section>
 </section>
@@ -642,58 +656,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,

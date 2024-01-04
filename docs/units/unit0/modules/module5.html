@@ -277,6 +277,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+
+
+<style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
+
+
 <div class="breadcrumbs">
 <p><a href="../../../index.html">Home</a> » <a href="">Units</a> » <span class="current-page">Module 5</span></p>
 </div>
@@ -295,13 +307,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>We have already seen examples of strings, as in:</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello'</span>)</span></code></pre></div>
 <ul>
 <li>Here, whatever is in between the quotes is treated as <em>one thing</em>: a sequence of letters, digits or symbols.</li>
 <li>Here are examples with digits, symbols and spaces:</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello there. I'</span>m on my way to <span class="dv">123</span> Main Street<span class="st">')</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="er">print</span>(<span class="st">'#@%&amp;! I'</span>m late<span class="op">!</span><span class="st">')</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello there. I'</span>m on my way to <span class="dv">123</span> Main Street<span class="st">')</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="er">print</span>(<span class="st">'#@%&amp;! I'</span>m late<span class="op">!</span><span class="st">')</span></span></code></pre></div>
 <ul>
 <li>The entire sequence of letters, digits, punctuation etc from the <code>H</code> in <code>Hello</code> to the <code>t</code> in <code>Street</code> is one string.</li>
 <li>And you already know that “#@%&amp;!” translates to “Drat!”</li>
@@ -310,21 +322,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Example:</li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code></pre></div>
 <p>Here, the variable <code>s</code> has the string <code>The quick brown fox jumps over the lazy dog</code></p>
 <ul>
 <li>If you’re wondering how a variable (we used a box as an analogy) can fit so many letters, that is a somewhat advanced topic.</li>
 <li>For now, let’s proceed with the notion that we can do this.</li>
 </ul>
 <p>Consider this example:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a string and print it:</span></span>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a string and print it:</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract the length of the string and print that:</span></span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">len</span>(s)</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(k)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(k)</span></code></pre></div>
 <ul>
 <li>Here, we are using a function called <code>len</code> to extract the length of a string.</li>
 <li>The function <code>len</code> is like <code>print</code> in one respect: there is something that goes in between the parentheses: <img src="../../../media/units/unit0/module5/str_example.png" class="img-fluid"></li>
@@ -340,12 +352,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Strings would be of limited use if there were no way of combining them, just as integers would be if there were no way of performing arithmetic.</p>
 <p>The joining of two strings end to end is called <em>concatenation</em>.</p>
 <p>Consider this program:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'The'</span></span>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'The'</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="st">'quick'</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> <span class="st">'brown'</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> x <span class="op">+</span> y <span class="op">+</span> z</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code></pre></div>
 <section id="excercise-type-up-the-above-in-my_string_example2.py.-what-is-the-output" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_string_example2.py.-what-is-the-output"><span style="color:#8B4513;"><strong>5.2 Excercise:</strong> Type up the above in <code>my_string_example2.py</code>. What is the output?</span></h6>
 <p>About concatenation:</p>
@@ -358,14 +370,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul></li>
 <li>You may have noticed the words all strung together without a space. So let’s add the spaces:</li>
 </ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'Sphinx'</span></span>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'Sphinx'</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="st">'of'</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> <span class="st">'black'</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> x <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> y <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> z <span class="op">+</span> <span class="st">' quartz, judge my vow'</span></span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code></pre></div>
 <ul>
 <li>Notice how multiple strings, some from variables, and some just written into the statement, are concatenated: <img src="../../../media/units/unit0/module5/str_example2.png" class="img-fluid"></li>
 </ul>
@@ -373,17 +385,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="excercise-type-up-the-above-in-my_string_example3.py.-what-is-the-output-how-many-times-did-a-concatenation-occur" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_string_example3.py.-what-is-the-output-how-many-times-did-a-concatenation-occur"><span style="color:#8B4513;"><strong>5.3 Excercise:</strong> Type up the above in <code>my_string_example3.py</code>. What is the output? How many times did a concatenation occur?</span></h6>
 <p>We also introduced something new:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code></pre></div>
 <p>Here’s how to read this line:</p>
 <ul>
 <li>First look at <code>print</code> and notice that there’s something between the parentheses:</li>
 </ul>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code></pre></div>
 <ul>
 <li>Think to yourself: something is going to be given to <code>print</code> to get printed.</li>
 <li>Now look at what’s going to <code>print</code>:</li>
 </ul>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code></pre></div>
 <ul>
 <li>Here we see that the length of the string <code>s</code> is being computed.</li>
 <li>What you should be thinking is:
@@ -401,15 +413,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>Often we want to concatenate strings with numbers, or other kinds of things:</p>
 <p>For example: consider</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">26</span></span>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">26</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="bu">str</span>(k)</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> <span class="st">'A pangram must have all '</span> <span class="op">+</span> s <span class="op">+</span> <span class="st">' letters'</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code></pre></div>
 <ul>
 <li>Here, the value in <code>k</code> is an integer.</li>
 <li>Prior to concatenation with a string, we first need to make a string out of the integer:</li>
 </ul>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="bu">str</span>(k)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="bu">str</span>(k)</span></code></pre></div>
 <ul>
 <li>We do this by sending the integer <code>k</code> to the <code>str</code> function, which builds a string version of the integer and gives that back.</li>
 <li>The string so computed is then placed into the variable <code>s</code> above.</li>
@@ -419,9 +431,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="excercise-type-up-the-above-in-my_string_example4.py-to-confirm." class="level6">
 <h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_string_example4.py-to-confirm."><span style="color:#8B4513;"><strong>5.4 Excercise:</strong> Type up the above in <code>my_string_example4.py</code> to confirm.</span></h6>
 <p>Let’s examine a small variation:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">26</span></span>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">26</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># You can also build a string in the print statement itself:</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'A pangram must have all '</span> <span class="op">+</span> <span class="bu">str</span>(k) <span class="op">+</span> <span class="st">' letters'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'A pangram must have all '</span> <span class="op">+</span> <span class="bu">str</span>(k) <span class="op">+</span> <span class="st">' letters'</span>)</span></code></pre></div>
 </section>
 <section id="excercise-type-up-the-above-in-my_string_example5.py-to-see-the-resulting-output." class="level6">
 <h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_string_example5.py-to-see-the-resulting-output."><span style="color:#8B4513;"><strong>5.5 Excercise:</strong> Type up the above in <code>my_string_example5.py</code> to see the resulting output.</span></h6>
@@ -437,7 +449,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>We’ll now use <code>wordtool</code>, another tool that you will use by calling appropriate functions.</p>
 <p>You are welcome and are encouraged to “look inside” by skimming over the code in any tool.</p>
 <p>Let’s look at an example that will also introduce some new ideas:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wordtool</span>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wordtool</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Invoke functions in wordtool to pick random words:</span></span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>adj <span class="op">=</span> wordtool.get_random_adjective()</span>
@@ -450,7 +462,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>sentence <span class="op">=</span> (</span>
 <span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'The '</span> <span class="op">+</span> adj <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> noun <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> verb <span class="op">+</span> <span class="st">'s'</span> <span class="op">+</span></span>
 <span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">' '</span> <span class="op">+</span> prep <span class="op">+</span> <span class="st">' a '</span> <span class="op">+</span> noun2)</span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sentence)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sentence)</span></code></pre></div>
 <section id="excercise-type-up-the-above-in-my_random_sentence.py.-dont-run-it-just-yet.-first-download-wordtool.py-and-wordswithpos.txt-into-the-same-folder-as-your-program.-now-run-the-program-several-times.-report-your-favorite-output-sentence-in-module5.pdf." class="level6">
 <h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_random_sentence.py.-dont-run-it-just-yet.-first-download-wordtool.py-and-wordswithpos.txt-into-the-same-folder-as-your-program.-now-run-the-program-several-times.-report-your-favorite-output-sentence-in-module5.pdf."><span style="color:#8B4513;"><strong>5.7 Excercise:</strong> Type up the above in <code>my_random_sentence.py</code>. Don’t run it just yet. First download <a href="../../../media/useful/wordtool.py" download=""><strong>wordtool.py</strong></a> and <a href="../../../media/useful/wordsWithPOS.txt" download=""><strong>wordsWithPOS.txt</strong></a> into the same folder as your program. Now run the program several times. Report your favorite output sentence in <code>module5.pdf</code>.</span></h6>
 <p>Let’s point out:</p>
@@ -460,7 +472,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>wordtool.py</code> is written to read the data and make some functionality available, one of which is to randomly pick words from amongst the nouns, adjectives, and so on.</li>
 <li>To use functions in <code>wordtool.py</code> in your program, you need (and this is a new thing we’ve introduced) the <code>import</code> statement at the top of your program:</li>
 </ul>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wordtool</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wordtool</span></code></pre></div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -477,7 +489,7 @@ Tip
 <ul>
 <li>Then, to use a function defined in that other file, we use syntax like this:</li>
 </ul>
-<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>adj <span class="op">=</span> wordtool.get_random_adjective()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>adj <span class="op">=</span> wordtool.get_random_adjective()</span></code></pre></div>
 <ul>
 <ul>
 <li>Here, <code>adj</code> is a string variable that we made.</li>
@@ -489,9 +501,9 @@ Tip
 <li>Similarly, after getting a random noun, verb, and so on, we put those together to make a sentence. Hopefully, with hilarious results.</li>
 <li>We’ll point out one other new thing:</li>
 </ul>
-<div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>sentence <span class="op">=</span> (</span>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>sentence <span class="op">=</span> (</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'The '</span> <span class="op">+</span> adj <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> noun <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> verb <span class="op">+</span> <span class="st">'s'</span> <span class="op">+</span></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">' '</span> <span class="op">+</span> prep <span class="op">+</span> <span class="st">' a '</span> <span class="op">+</span> noun2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">' '</span> <span class="op">+</span> prep <span class="op">+</span> <span class="st">' a '</span> <span class="op">+</span> noun2)</span></code></pre></div>
 <ul>
 <ul>
 <li>Here, we are concatenating many strings into a long one.</li>
@@ -514,13 +526,13 @@ Tip
 <p>Thus, we haven’t written any programs that interact with potential users of our programs.</p>
 <p>There’s a limited market for programs that only execute once with no input whatsoever, right?</p>
 <p>So, let’s do something more interesting by asking the user to type in a string:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wordtool</span>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wordtool</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co"># We will get the user to type their name:</span></span>
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter your name: '</span>)</span>
 <span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="co"># We'll use that and make rudimentary conversation:</span></span>
-<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hi '</span> <span class="op">+</span> name <span class="op">+</span> <span class="st">'!'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hi '</span> <span class="op">+</span> name <span class="op">+</span> <span class="st">'!'</span>)</span></code></pre></div>
 <section id="excercise-try-out-the-above-program-in-my_random_conversation.py.-since-you-are-writing-this-in-the-same-folder-you-wont-need-to-download-wordtool.py.-and-its-data." class="level6">
 <h6 class="anchored" data-anchor-id="excercise-try-out-the-above-program-in-my_random_conversation.py.-since-you-are-writing-this-in-the-same-folder-you-wont-need-to-download-wordtool.py.-and-its-data."><span style="color:#8B4513;"><strong>5.10 Excercise:</strong> Try out the above program in <code>my_random_conversation.py</code>. Since you are writing this in the same folder, you won’t need to download <code>wordtool.py</code>. and its data.</span></h6>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -535,18 +547,18 @@ Tip
 <div class="callout-body-container callout-body">
 <ul>
 <li><p>The function <code>input</code> is exactly what it sounds like: get input (from the user typing).</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter your name: '</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter your name: '</span>)</span></code></pre></div></li>
 <li><p>Here, there’s a string that goes into the <code>input</code> function. This string is displayed as a prompt in the output:</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>Enter your name: </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>Enter your name: </span></code></pre></div></li>
 <li><p>Of course, you aren’t writing this tiny program to send to someone who will run your program and type in their name. You are playing both roles: programmer and intended user.</p></li>
 <li><p>Whatever the user types in (from the keyboard) becomes a single string that’s placed in the variable we’ve called <code>name</code></p></li>
 <li><p>Then, we’ve concatenated whatever gets into <code>name</code>with two other strings and printed the result:</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hi '</span> <span class="op">+</span> <span class="op">&lt;</span>b<span class="op">&gt;</span>name<span class="op">&lt;/</span>b<span class="op">&gt;</span> <span class="op">+</span> <span class="st">'!'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hi '</span> <span class="op">+</span> <span class="op">&lt;</span>b<span class="op">&gt;</span>name<span class="op">&lt;/</span>b<span class="op">&gt;</span> <span class="op">+</span> <span class="st">'!'</span>)</span></code></pre></div></li>
 </ul>
 </div>
 </div>
 <p>Next, let’s make it more interesting:</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wordtool</span>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wordtool</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter your name: '</span>)</span>
 <span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -555,7 +567,7 @@ Tip
 <span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>adv <span class="op">=</span> wordtool.get_random_adverb()</span>
 <span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>adj <span class="op">=</span> wordtool.get_random_adjective()</span>
 <span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>sentence <span class="op">=</span> name <span class="op">+</span> <span class="st">', you are '</span> <span class="op">+</span> adv <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> adj</span>
-<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sentence)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sentence)</span></code></pre></div>
 </section>
 <section id="excercise-improve-on-the-above-program-by-writing-your-version-of-a-longer-conversation-my_random_conversation2.py.-allow-the-user-to-type-in-something-at-least-three-or-four-times.-this-will-require-using-input-multiple-times-to-go-back-and-forth-with-the-user.-unleash-your-guile-and-creativity." class="level6">
 <h6 class="anchored" data-anchor-id="excercise-improve-on-the-above-program-by-writing-your-version-of-a-longer-conversation-my_random_conversation2.py.-allow-the-user-to-type-in-something-at-least-three-or-four-times.-this-will-require-using-input-multiple-times-to-go-back-and-forth-with-the-user.-unleash-your-guile-and-creativity."><span style="color:#8B4513;"><strong>5.11 Excercise:</strong> Improve on the above program by writing your version of a longer conversation <code>my_random_conversation2.py</code>. Allow the user to type in something at least three or four times. This will require using <code>input</code> multiple times to go back and forth with the user. Unleash your guile and creativity.</span></h6>
@@ -567,13 +579,13 @@ Tip
 <section id="strings-and-for-loops" class="level2">
 <h2 class="anchored" data-anchor-id="strings-and-for-loops">5.4 Strings and for-loops</h2>
 <p>Consider this program:</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">6</span></span>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">6</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">''</span></span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, n):</span>
 <span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> s <span class="op">+</span> <span class="st">'*'</span></span>
 <span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code></pre></div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -593,7 +605,7 @@ Note
 <section id="excercise-before-typing-up-the-program-trace-in-module5.pdf-the-execution-of-the-loop-showing-the-contents-of-the-string-s-in-each-iteration-of-the-for-loop.-then-confirm-the-final-output-in-your-trace-by-typing-it-up-in-my_loop_example.py.-then-change-the-value-of-n-to-8-and-examine-the-output.-submit-your-program-with-n-set-to-8." class="level6">
 <h6 class="anchored" data-anchor-id="excercise-before-typing-up-the-program-trace-in-module5.pdf-the-execution-of-the-loop-showing-the-contents-of-the-string-s-in-each-iteration-of-the-for-loop.-then-confirm-the-final-output-in-your-trace-by-typing-it-up-in-my_loop_example.py.-then-change-the-value-of-n-to-8-and-examine-the-output.-submit-your-program-with-n-set-to-8."><span style="color:#8B4513;"><strong>5.13 Excercise:</strong> Before typing up the program, trace (in <code>module5.pdf</code>) the execution of the loop, showing the contents of the string <code>s</code> in each iteration of the for-loop. Then confirm the final output in your trace by typing it up in <code>my_loop_example.py</code>. Then change the value of <code>n</code> to 8 and examine the output. Submit your program with n set to 8.</span></h6>
 <p>Next, let’s use a nested loop to output a triangle of asterisks:</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">5</span></span>
+<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">''</span></span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, n<span class="op">+</span><span class="dv">1</span>):</span>
@@ -602,12 +614,12 @@ Note
 <span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> s <span class="op">+</span> <span class="st">'</span><span class="ch">\n</span><span class="st">'</span></span>
 <span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'A triangle with base='</span> <span class="op">+</span> <span class="bu">str</span>(n))</span>
-<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code></pre></div>
 </section>
 <section id="excercise-before-typing-up-the-program-trace-the-execution-of-the-loop-showing-the-contents-of-the-string-s-in-each-iteration-of-the-outer-for-loop.-then-confirm-the-final-output-in-your-trace-by-typing-it-up-in-my_triangle.py.-use-the-tabular-tracing-approach-as-in-the-example-from-module-3." class="level6">
 <h6 class="anchored" data-anchor-id="excercise-before-typing-up-the-program-trace-the-execution-of-the-loop-showing-the-contents-of-the-string-s-in-each-iteration-of-the-outer-for-loop.-then-confirm-the-final-output-in-your-trace-by-typing-it-up-in-my_triangle.py.-use-the-tabular-tracing-approach-as-in-the-example-from-module-3."><span style="color:#8B4513;"><strong>5.14 Excercise:</strong> Before typing up the program, trace the execution of the loop, showing the contents of the string <code>s</code> in each iteration of the outer for-loop. Then confirm the final output in your trace by typing it up in <code>my_triangle.py</code>. Use the tabular tracing approach as in the <a href="../../../media/units/unit0/module3/TracingExample.pdf" download=""><strong>example from Module 3</strong></a>.</span></h6>
 <p>Next, we’ll make this more interactive:</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">''</span></span>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">''</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>n_str <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter triangle base size: '</span>)</span>
 <span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">int</span>(n_str)</span>
@@ -618,7 +630,7 @@ Note
 <span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> s <span class="op">+</span> <span class="st">'</span><span class="ch">\n</span><span class="st">'</span></span>
 <span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'A triangle with base='</span> <span class="op">+</span> <span class="bu">str</span>(n))</span>
-<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code></pre></div>
 </section>
 <section id="video-1" class="level6">
 <h6 class="anchored" data-anchor-id="video-1"><span style="color:#8B4513;"><strong>5.15 Video:</strong></span></h6>
@@ -632,20 +644,20 @@ Note
 <li>This is a little strange but it’s how Python works.</li>
 </ul>
 <p>Consider this example:</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">42</span>       <span class="co"># This is an integer</span></span>
+<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">42</span>       <span class="co"># This is an integer</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'42'</span>     <span class="co"># This is a string</span></span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">5</span>        <span class="co"># Integer</span></span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> <span class="st">'5'</span>      <span class="co"># String</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> <span class="st">'5'</span>      <span class="co"># String</span></span></code></pre></div>
 <ul>
 <li>Thus, when the user types in what they intend to be an integer, the <code>input</code> function makes a string out of it:</li>
 </ul>
-<div class="sourceCode" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>n_str <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter triangle base size: '</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>n_str <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter triangle base size: '</span>)</span></code></pre></div>
 <p>Here, the variable <code>n_str</code> will have a string.</p>
 <ul>
 <li>We need to convert that string version of an integer into an actual integer using the <code>int</code> function:</li>
 </ul>
-<div class="sourceCode" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">int</span>(n_str)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">int</span>(n_str)</span></code></pre></div>
 <p>Here the variable <code>n</code> will have the actual integer, which we can use in loops, in arithmetic, and so on.</p>
 <ul>
 <li>Notice that, since we want the loop to run <code>n</code> times, we’ve begun the outer loop at 1, running through to n (inclusive).</li>
@@ -657,9 +669,9 @@ Note
 </section>
 <section id="excercise-what-happens-when-the-conversion-from-string-to-integer-is-not-done-find-out-by-trying-this" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-what-happens-when-the-conversion-from-string-to-integer-is-not-done-find-out-by-trying-this"><span style="color:#8B4513;"><strong>5.18 Excercise:</strong> What happens when the conversion from string to integer is not done? Find out by trying this:</span></h6>
-<div class="sourceCode" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter an integer: '</span>)</span>
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter an integer: '</span>)</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">5</span> <span class="op">*</span> n</span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(k)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(k)</span></code></pre></div>
 <p><span style="color:#8B4513;">Fix the issue by converting the string that’s in <code>n</code> and making an integer. Type your code in <code>my_conversion.py</code>.</span></p>
 </section>
 <section id="video-2" class="level6">
@@ -670,9 +682,9 @@ Note
 <section id="the-useful-relationship-between-characters-and-integers" class="level2">
 <h2 class="anchored" data-anchor-id="the-useful-relationship-between-characters-and-integers">5.5 &nbsp;&nbsp; The useful relationship between characters and integers</h2>
 <p>Consider these three strings:</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'hello'</span></span>
+<div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'hello'</span></span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="st">'h'</span></span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> <span class="st">'$'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> <span class="st">'$'</span></span></code></pre></div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -703,14 +715,14 @@ Note
 <li>So, every char has an Ascii code (pronounced “ass-key”). Who said computer nerds don’t have a sense of humor?</li>
 </ul>
 <p>Consider this program:</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>first_letter <span class="op">=</span> <span class="st">'a'</span></span>
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>first_letter <span class="op">=</span> <span class="st">'a'</span></span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>last_letter <span class="op">=</span> <span class="st">'z'</span></span>
 <span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">ord</span>(first_letter)</span>
 <span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(k)</span>
 <span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">ord</span>(last_letter)</span>
-<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(n)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(n)</span></code></pre></div>
 <section id="excercise-type-up-the-above-in-my_char_example.py." class="level6">
 <h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_char_example.py."><span style="color:#8B4513;"><strong>5.20 Excercise:</strong> Type up the above in <code>my_char_example.py</code>.</span></h6>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -732,12 +744,12 @@ Note
 <ul>
 <li>The <code>ord</code> function takes a char and produces the corresponding Ascii code.</li>
 </ul>
-<div class="sourceCode" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">ord</span>(first_letter)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">ord</span>(first_letter)</span></code></pre></div>
 <p>Going the other way: from Ascii code to char</p>
 <p>Consider this program:</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">97</span></span>
+<div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">97</span></span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="bu">chr</span>(k)</span>
-<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)      <span class="co"># Prints the char 'a'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)      <span class="co"># Prints the char 'a'</span></span></code></pre></div>
 </section>
 <section id="excercise-type-up-the-above-in-my_char_example2.py.-then-change-97-to-98.-what-should-the-value-of-k-be-to-print-the-char-z-last-lowercase-letter" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_char_example2.py.-then-change-97-to-98.-what-should-the-value-of-k-be-to-print-the-char-z-last-lowercase-letter"><span style="color:#8B4513;"><strong>5.21 Excercise:</strong> Type up the above in <code>my_char_example2.py</code>. Then, change 97 to 98. What should the value of <code>k</code> be to print the char ‘z’ (last lowercase letter)?</span></h6>
@@ -746,10 +758,10 @@ Note
 <li>The value of knowing the code is that we can <em>iterate</em> over numbers and use that to iterate over letters.</li>
 <li>For example:</li>
 </ul>
-<div class="sourceCode" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">97</span>, <span class="dv">123</span>):</span>
+<div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">97</span>, <span class="dv">123</span>):</span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> <span class="bu">chr</span>(i)</span>
 <span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(s, end<span class="op">=</span><span class="st">''</span>)</span>
-<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span></code></pre></div>
 <ul>
 <li>Inside a computer, it turns out all characters are actually stored as integers, and merely interpreted as characters when the occasion calls for it.</li>
 </ul>
@@ -761,23 +773,23 @@ Note
 <section id="variable-names" class="level2">
 <h2 class="anchored" data-anchor-id="variable-names">5.6 Variable names</h2>
 <p>Most often, we’ve been using single letter <em>variable names</em>, for example:</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">7</span></span>
+<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">7</span></span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>j <span class="op">=</span> <span class="dv">15</span> <span class="op">*</span> i</span>
 <span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(j)</span>
 <span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'Hello'</span> </span>
 <span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="st">'World'</span></span>
 <span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> x <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> y</span>
-<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(z)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(z)</span></code></pre></div>
 <p>Let’s rewrite the above with more meaningful variable names:</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>days_in_a_week <span class="op">=</span> <span class="dv">7</span></span>
+<div class="sourceCode" id="cb35"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>days_in_a_week <span class="op">=</span> <span class="dv">7</span></span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>days_in_a_semester <span class="op">=</span> <span class="dv">15</span> <span class="op">*</span> days_in_a_week</span>
 <span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(days_in_a_semester)</span>
 <span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>first_greeting_word <span class="op">=</span> <span class="st">'Hello'</span> </span>
 <span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>second_greeting_word<span class="op">=</span> <span class="st">'World'</span></span>
 <span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>full_greeting <span class="op">=</span> first_greeting_word <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> second_greeting_word</span>
-<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(full_greeting)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(full_greeting)</span></code></pre></div>
 <p>About variable names:</p>
 <ul>
 <li>First, let’s review the very notion of a <em>name</em> in Python, along with other kinds of “words” that are allowed in Python programs.</li>
@@ -795,7 +807,7 @@ and as assert break class continue def del elif else except False finally for fr
 </ul></li>
 <li>At the other end of the spectrum, there are words that we freely create for our use, as in these examples:</li>
 </ul>
-<div class="sourceCode" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_hello():</span>
+<div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_hello():</span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'Hello'</span>)</span>
 <span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>print_hello()</span>
@@ -804,7 +816,7 @@ and as assert break class continue def del elif else except False finally for fr
 <span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span>
 <span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">10</span>):</span>
-<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code></pre></div>
 <ul>
 <ul>
 <li>Here, we made a function and decided to call it <code>print_hello</code></li>
@@ -816,7 +828,7 @@ and as assert break class continue def del elif else except False finally for fr
 <ul>
 <li>Since we get to choose them, we could rewrite the above program as:</li>
 </ul>
-<div class="sourceCode" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> say_greeting():</span>
+<div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> say_greeting():</span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'Hello'</span>)</span>
 <span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>say_greeting()</span>
@@ -825,7 +837,7 @@ and as assert break class continue def del elif else except False finally for fr
 <span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(follow_up)</span>
 <span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> my_loop_variable <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">10</span>):</span>
-<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(my_loop_variable)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(my_loop_variable)</span></code></pre></div>
 <ul>
 <li><p>So, what should dictate our choice of these names?</p>
 <ul>
@@ -857,17 +869,17 @@ and as assert break class continue def del elif else except False finally for fr
 </ul>
 <section id="excercise-lets-see-what-can-go-wrong-if-we-use-one-of-the-words-already-taken.-consider-this-program" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-lets-see-what-can-go-wrong-if-we-use-one-of-the-words-already-taken.-consider-this-program"><span style="color:#8B4513;"><strong>5.23 Excercise:</strong> Let’s see what can go wrong if we use one of the words “already taken”. Consider this program:</span></h6>
-<div class="sourceCode" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'Hello'</span></span>
+<div class="sourceCode" id="cb38"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'Hello'</span></span>
 <span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span> <span class="op">=</span> <span class="dv">5</span>       <span class="co"># This is a BAD idea</span></span>
-<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>)</span></code></pre></div>
 <p><span style="color:#8B4513;">We really should not be using a variable called <code>len</code> since <code>len</code> is a predefined “already taken” name. What happens if you type and run this? Type your program in <code>my_variable_name3.py</code>.Then, type this program in <code>my_variable_name4.py</code>:</span></p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'Hello'</span></span>
+<div class="sourceCode" id="cb39"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'Hello'</span></span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span> <span class="op">=</span> <span class="dv">5</span>       <span class="co"># This is a BAD idea</span></span>
 <span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>)</span>
 <span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> <span class="st">'Some looooooong sentence'</span></span>
 <span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">len</span>(t)</span>
-<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(k)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(k)</span></code></pre></div>
 <p><span style="color:#8B4513;">What do you see? (Respond in your moduler pdf.)</span></p>
 </section>
 <section id="video-3" class="level6">
@@ -885,9 +897,9 @@ and as assert break class continue def del elif else except False finally for fr
 </ul>
 <p>Let’s work through an example problem and solve it.</p>
 <p>Before that, we’ll learn one more string function:</p>
-<div class="sourceCode" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
+<div class="sourceCode" id="cb40"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
 <span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> s.count(<span class="st">'a'</span>)     <span class="co"># How many a's occur in the string s?</span></span>
-<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(n)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(n)</span></code></pre></div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -901,16 +913,16 @@ Note
 <ul>
 <li><p>We’ve introduced a new feature of strings: the ability to count occurences of a letter in that string.</p></li>
 <li><p>Notice the unusual way by which the function must be used:</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> s.count(<span class="st">'a'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> s.count(<span class="st">'a'</span>)</span></code></pre></div>
 <p>and NOT</p>
-<div class="sourceCode" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> count(s, <span class="st">'a'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb42"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> count(s, <span class="st">'a'</span>)</span></code></pre></div></li>
 <li><p>That is, the function <code>count</code> appears to be part of the string variable <code>s</code>.</p></li>
 <li><p>This is a somewhat advanced topic, so we’ll just use it and be glad we have this feature. (There are other such functions we’ll avail of.)</p></li>
 <li><p>This is possible for any string, such as:</p>
-<div class="sourceCode" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'helloooooooo'</span></span>
+<div class="sourceCode" id="cb43"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'helloooooooo'</span></span>
 <span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x.count(<span class="st">'o'</span>))    <span class="co"># Number of o's in string x</span></span>
 <span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="st">'missisippi'</span></span>
-<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y.count(<span class="st">'i'</span>))    <span class="co"># Number of i's in string x</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y.count(<span class="st">'i'</span>))    <span class="co"># Number of i's in string x</span></span></code></pre></div></li>
 </ul>
 </div>
 </div>
@@ -921,8 +933,8 @@ Note
 <li>A <em>pangram</em> is an English sentence that contains all 26 letters.</li>
 <li>We’ve already seen two examples:</li>
 </ul>
-<div class="sourceCode" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>The quick brown fox jumps over the lazy dog</span>
-<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>Sphinx of black quartz, judge my vow</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb44"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>The quick brown fox jumps over the lazy dog</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>Sphinx of black quartz, judge my vow</span></code></pre></div>
 <ul>
 <li>There’s an informal competition running over a hundred years to find the shortest grammatically correct English sentence that’s a pangram.</li>
 <li>Our smaller problem: given a sentence, print the number of a’s, the number of b’s … and so on. This could be useful in judging such a competition.</li>
@@ -931,14 +943,14 @@ Note
 <ul>
 <li>Given a candidate pangram, we could count the number of a’s:</li>
 </ul>
-<div class="sourceCode" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
-<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s.count(<span class="st">'a'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s.count(<span class="st">'a'</span>))</span></code></pre></div>
 <ul>
 <li>Then, we could also count the number of b’s:</li>
 </ul>
-<div class="sourceCode" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
+<div class="sourceCode" id="cb46"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
 <span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s.count(<span class="st">'a'</span>))</span>
-<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s.count(<span class="st">'b'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s.count(<span class="st">'b'</span>))</span></code></pre></div>
 <ul>
 <li>If we repeated this 26 times, we’d have a count for each letter.</li>
 <li>But the moment we see a bunch of repetition, our computational problem-solving instincts (yes, still developing) should kick in:
@@ -948,24 +960,24 @@ Repetition ⇒ use a loop!
 <li>What is the nature of iteration in this problem? <br> We are iterating through the letters ‘a’ to ‘z’</li>
 <li>And we already know how to iterate over the letters:</li>
 </ul>
-<div class="sourceCode" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">97</span>, <span class="dv">123</span>):</span>
+<div class="sourceCode" id="cb47"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">97</span>, <span class="dv">123</span>):</span>
 <span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>  letter <span class="op">=</span> <span class="bu">chr</span>(i)       </span>
-<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Recall: We're going from Ascii code to letter</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Recall: We're going from Ascii code to letter</span></span></code></pre></div>
 <ul>
 <li>Could we combine this with the counting of occurences inside the given string? So, the idea would be:</li>
 </ul>
-<div class="sourceCode" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">97</span>, <span class="dv">123</span>):</span>
+<div class="sourceCode" id="cb48"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">97</span>, <span class="dv">123</span>):</span>
 <span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>  letter <span class="op">=</span> <span class="bu">chr</span>(i)       </span>
-<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now somehow use that to do the counting of occurences</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now somehow use that to do the counting of occurences</span></span></code></pre></div>
 <ul>
 <li>Combining:</li>
 </ul>
-<div class="sourceCode" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
+<div class="sourceCode" id="cb49"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
 <span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">97</span>, <span class="dv">123</span>):</span>
 <span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>  letter <span class="op">=</span> <span class="bu">chr</span>(i)       </span>
 <span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>  k <span class="op">=</span> s.count(letter)</span>
-<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'Number of occurrences of '</span> <span class="op">+</span> letter <span class="op">+</span> <span class="st">' is '</span> <span class="op">+</span> <span class="bu">str</span>(k))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'Number of occurrences of '</span> <span class="op">+</span> letter <span class="op">+</span> <span class="st">' is '</span> <span class="op">+</span> <span class="bu">str</span>(k))</span></code></pre></div>
 </section>
 <section id="excercise-type-up-the-above-idea-my_count_problem.py.-then-find-another-pangram-and-apply-the-program-to-that-pangram.-submit-your-program-with-the-pangram-shown-above-not-the-one-you-found." class="level6">
 <h6 class="anchored" data-anchor-id="excercise-type-up-the-above-idea-my_count_problem.py.-then-find-another-pangram-and-apply-the-program-to-that-pangram.-submit-your-program-with-the-pangram-shown-above-not-the-one-you-found."><span style="color:#8B4513;"><strong>5.26 Excercise:</strong> Type up the above idea <code>my_count_problem.py</code>. Then, find another pangram and apply the program to that pangram. Submit your program with the pangram shown above (not the one you found).</span></h6>
@@ -977,11 +989,11 @@ Repetition ⇒ use a loop!
 <h6 class="anchored" data-anchor-id="video-4"><span style="color:#8B4513;"><strong>5.28 Video:</strong></span></h6>
 <div class="quarto-video"><video id="video_shortcode_videojs_video6" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/units/unit0/module5/u0-mod5.29.mp4"></video></div>
 <p>Lastly, we’ll point out a slightly more elegant way of iterating over the 26 letters:</p>
-<div class="sourceCode" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>ascii_a <span class="op">=</span> <span class="bu">ord</span>(<span class="st">'a'</span>)</span>
+<div class="sourceCode" id="cb50"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>ascii_a <span class="op">=</span> <span class="bu">ord</span>(<span class="st">'a'</span>)</span>
 <span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>ascii_z <span class="op">=</span> <span class="bu">ord</span>(<span class="st">'z'</span>)</span>
 <span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(ascii_a, ascii_z <span class="op">+</span> <span class="dv">1</span>):</span>
 <span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>    letter <span class="op">=</span> <span class="bu">chr</span>(i)       </span>
-<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Now somehow use that to do the counting of occurences</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Now somehow use that to do the counting of occurences</span></span></code></pre></div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -995,8 +1007,8 @@ Note
 <ul>
 <li><p>Instead of typing in the numbers 97 and 123 (which we’d have to remember), we’re instead using the <code>ord</code> function itself to identify the limits of the loop.</p></li>
 <li><p>An even more (but harder to read) compact way is to write:</p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">ord</span>(<span class="st">'a'</span>), <span class="bu">ord</span>(<span class="st">'z'</span>) <span class="op">+</span> <span class="dv">1</span>):</span>
-<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>    letter <span class="op">=</span> <span class="bu">chr</span>(i)       </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb51"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">ord</span>(<span class="st">'a'</span>), <span class="bu">ord</span>(<span class="st">'z'</span>) <span class="op">+</span> <span class="dv">1</span>):</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>    letter <span class="op">=</span> <span class="bu">chr</span>(i)       </span></code></pre></div>
 <p>We’ll understand this better once we see functions in more detail.</p></li>
 </ul>
 </div>
@@ -1009,46 +1021,48 @@ Note
 <p>In each of the exercises below, try to identify the error before typing it up and confirming. Report the error in the module pdf. Then, fix the error in the code, using the specified program (.py) name.</p>
 <section id="excercise" class="level6">
 <h6 class="anchored" data-anchor-id="excercise"><span style="color:#8B4513;"><strong>5.30 Excercise:</strong> </span></h6>
-<div class="sourceCode" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'Hello'</span></span>
+<div class="sourceCode" id="cb52"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'Hello'</span></span>
 <span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="st">'World'</span></span>
-<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'x'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'y'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'x'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'y'</span></span></code></pre></div>
 <p><span style="color:#8B4513;">(This should print <code>Hello World</code>, with a space in between). Fix the error in <code>error1.py</code>.</span></p>
 </section>
 <section id="excercise-1" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-1"><span style="color:#8B4513;"><strong>5.31 Excercise:</strong> </span></h6>
-<div class="sourceCode" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">8</span></span>
+<div class="sourceCode" id="cb53"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">8</span></span>
 <span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'There are '</span> <span class="op">+</span> k <span class="op">+</span> <span class="st">' planets in our solar system'</span></span>
-<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code></pre></div>
 <p><span style="color:#8B4513;">Fix the error in <code>error2.py</code>.</span></p>
 </section>
 <section id="excercise-2" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-2"><span style="color:#8B4513;"><strong>5.32 Excercise:</strong> </span></h6>
-<div class="sourceCode" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>long_sentence <span class="op">=</span> <span class="st">'How'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'vexingly'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span></span>
-<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>   <span class="co">'quick'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'daft'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'zebras'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'jump'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb54"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>long_sentence <span class="op">=</span> <span class="st">'How'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'vexingly'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>   <span class="co">'quick'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'daft'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'zebras'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'jump'</span></span></code></pre></div>
 <p><span style="color:#8B4513;">Fix the error in <code>error3.py</code>.</span></p>
 </section>
 <section id="excercise-3" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-3"><span style="color:#8B4513;"><strong>5.33 Excercise:</strong> </span></h6>
-<div class="sourceCode" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter a number between 1 and 10'</span>)</span>
+<div class="sourceCode" id="cb55"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter a number between 1 and 10'</span>)</span>
 <span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> x</span>
-<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)</span></code></pre></div>
 <p><span style="color:#8B4513;">Fix the error in <code>error4.py</code>.</span></p>
 </section>
 <section id="excercise-4" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-4"><span style="color:#8B4513;"><strong>5.34 Excercise:</strong> </span></h6>
-<div class="sourceCode" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">6</span>):</span>
+<div class="sourceCode" id="cb56"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">6</span>):</span>
 <span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> s <span class="op">+</span> <span class="st">'**'</span></span>
-<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code></pre></div>
 <p><span style="color:#8B4513;">(This should print a string with 10 asterisks). Fix the error in <code>error5.py</code>.</span></p>
 </section>
 <section id="excercise-5" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-5"><span style="color:#8B4513;"><strong>5.35 Excercise:</strong> </span></h6>
-<div class="sourceCode" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>miles <span class="op">=</span> <span class="dv">10</span></span>
+<div class="sourceCode" id="cb57"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>miles <span class="op">=</span> <span class="dv">10</span></span>
 <span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>feet per mile <span class="op">=</span> <span class="dv">5280</span></span>
 <span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>feet <span class="kw">in</span> ten miles <span class="op">=</span> miles <span class="op">*</span> feet per mile</span>
-<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(feet <span class="kw">in</span> ten miles)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(feet <span class="kw">in</span> ten miles)</span></code></pre></div>
 <p><span style="color:#8B4513;">Fix the error in <code>error6.py</code>.</span></p>
 <p><br> <a href="../../../units/unit0/modules/module4.html" class="button prev">Previous Module: <strong>Module 4</strong></a> <a href="../../../units/unit0/modules/module6.html" class="button next">Next Module: <strong>Module 6</strong></a></p>
+
+
 
 
 </section>
@@ -1082,58 +1096,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,

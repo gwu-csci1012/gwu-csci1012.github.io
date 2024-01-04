@@ -274,6 +274,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+
+
+<style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
+
+
 <div class="breadcrumbs">
 <p><a href="../../../index.html">Home</a> » <a href="#">Units</a> » <span class="current-page">Module 1</span></p>
 </div>
@@ -293,26 +305,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="comments" class="level2">
 <h2 class="anchored" data-anchor-id="comments">1.0 comments</h2>
 <p>A <em>comment</em> is like a note-to-self that you include directly in a program as a way to explain something to yourself for later, or to someone else who reads your program.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is a comment</span></span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is a comment</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>      <span class="co"># This is one too, but not recommended </span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Something'</span>)      <span class="co"># And so is this</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Something'</span>)      <span class="co"># And so is this</span></span></code></pre></div>
 <p>Let’s explain:</p>
 <ul>
 <li>A comment begins with a and ends at the end of the line.</li>
 <li>Anything written as a comment is not treated by your computer as a “command” or as programming intent.</li>
 <li>Thus, as far as programming goes, the above program is as good as:</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Something'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Something'</span>)</span></code></pre></div>
 <ul>
 <li>You can insert comments in various places in a program: <img src="../../../media/units/unit0/module1/comments.png" class="img-fluid"></li>
 </ul>
 <section id="excercise-under-your-unit0-create-a-module1-folder-if-you-havent-already-and-then-write-up-the-above-in-my_comments.py.-fix-the-second-comment-to-start-at-the-beginning-of-the-line-and-add-an-entirely-new-comment-line-of-your-own." class="level6">
 <h6 class="anchored" data-anchor-id="excercise-under-your-unit0-create-a-module1-folder-if-you-havent-already-and-then-write-up-the-above-in-my_comments.py.-fix-the-second-comment-to-start-at-the-beginning-of-the-line-and-add-an-entirely-new-comment-line-of-your-own."><span style="color:#8B4513;"><strong>1.1 Excercise:</strong> Under your <code>unit0</code>, create a <code>module1</code> folder (if you haven’t already), and then write up the above in <code>my_comments.py</code>. Fix the second comment to start at the beginning of the line, and add an entirely new comment line of your own.</span></h6>
 <p>Sometimes one needs a comment to spill over multiple lines, as in</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># I wrote this program at midnight</span></span>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># I wrote this program at midnight</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="dv">20</span> seconds before the deadline</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Something'</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Something'</span>) </span></code></pre></div>
 <p>Notice the missing # in the second line of the comment.</p>
 </section>
 <section id="excercise-write-up-the-above-in-comment_error.py.-remember-to-save-the-file-and-do-this-for-every-exercise-in-the-future-that-involves-a-program.-what-is-the-error-displayed-when-you-try-to-run-the-program-write-the-error-in-your-module1.pdf-file." class="level6">
@@ -322,18 +334,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="whitespace" class="level2">
 <h2 class="anchored" data-anchor-id="whitespace">1.1 Whitespace</h2>
 <p>Consider the following program:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>   (  <span class="st">'Hello World!'</span>     ) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>   (  <span class="st">'Hello World!'</span>     ) </span></code></pre></div>
 <p>Notice the spaces inserted in various places.</p>
 <section id="excercise-write-up-the-above-in-whitespace_example.py.-does-the-program-run-write-your-answer-in-module1.pdf-file.-remember-if-its-not-clear-where-to-write-your-answer-write-it-in-your-module-pdf-for-this-module-thats-module1.pdf" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-write-up-the-above-in-whitespace_example.py.-does-the-program-run-write-your-answer-in-module1.pdf-file.-remember-if-its-not-clear-where-to-write-your-answer-write-it-in-your-module-pdf-for-this-module-thats-module1.pdf"><span style="color:#8B4513;"><strong>1.3 Excercise:</strong> Write up the above in <code>whitespace_example.py</code>. Does the program run? Write your answer in <code>module1.pdf</code> file. Remember: if it’s not clear where to write your answer, write it in your module pdf (for this module that’s <code>module1.pdf</code>)</span></h6>
 <p>Consider this variation</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'Hello World!'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'Hello World!'</span>)</span></code></pre></div>
 <p>(Two spaces before <code>print</code>).</p>
 </section>
 <section id="excercise-write-up-the-above-in-whitespace_example2.py.-what-is-the-error-produced" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-write-up-the-above-in-whitespace_example2.py.-what-is-the-error-produced"><span style="color:#8B4513;"><strong>1.4 Excercise:</strong> Write up the above in <code>whitespace_example2.py</code>. What is the error produced?</span></h6>
 <p>Finally, look at:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello     World!'</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello     World!'</span>) </span></code></pre></div>
 <p>(Extra spaces between Hello and World.)</p>
 </section>
 <section id="excercise-write-up-the-above-in-whitespace_example3.py.-what-is-printed-out-write-your-answer-in-module1.pdf" class="level6">
@@ -376,14 +388,14 @@ Note
 </div>
 </div>
 <p>First, note that we can use single or double quotes for different strings in the same program:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello'</span>)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"World!"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello'</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"World!"</span>) </span></code></pre></div>
 <section id="excercise-confirm-that-hello-and-world-get-printed-on-two-lines-by-writing-the-above-in-my_string_example.py" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-confirm-that-hello-and-world-get-printed-on-two-lines-by-writing-the-above-in-my_string_example.py"><span style="color:#8B4513;"><strong>1.6 Excercise:</strong> Confirm that Hello and World! get printed on two lines by writing the above in <code>my_string_example.py</code></span></h6>
 <p>A print statement prints the string within parenthesis and then goes to the next line of output, which is why we see World! on the next line.</p>
 <p>To keep printing on the same line:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello'</span>, end<span class="op">=</span><span class="st">' '</span>)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'World!'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello'</span>, end<span class="op">=</span><span class="st">' '</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'World!'</span>)</span></code></pre></div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -401,28 +413,28 @@ Note
 <section id="excercise-confirm-by-writing-the-above-in-my_string_example2.py." class="level6">
 <h6 class="anchored" data-anchor-id="excercise-confirm-by-writing-the-above-in-my_string_example2.py."><span style="color:#8B4513;"><strong>1.7 Excercise:</strong> Confirm by writing the above in <code>my_string_example2.py</code>.</span></h6>
 <p>We’ll now go the other way and have a single string itself contain a directive to spill over to the next line.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello</span><span class="ch">\n</span><span class="st">World!'</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello</span><span class="ch">\n</span><span class="st">World!'</span>) </span></code></pre></div>
 <p>Notice the backslash <code>\</code> followed by <code>n</code> inside the string: <code>'Hello&lt;b&gt;\n&lt;/b&gt;World!'</code></p>
 </section>
 <section id="excercise-write-up-the-above-my_string_example3.py.-what-is-the-output-write-your-answer-in-module1.pdf" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-write-up-the-above-my_string_example3.py.-what-is-the-output-write-your-answer-in-module1.pdf"><span style="color:#8B4513;"><strong>1.8 Excercise:</strong> Write up the above <code>my_string_example3.py</code>. What is the output? Write your answer in <code>module1.pdf</code></span></h6>
 <p>Strings can embed special so-called <em>escape sequences</em> that begin with backslash.</p>
 <p>This will give us one way to print a quote:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'My friend</span><span class="ch">\'</span><span class="st">s friend</span><span class="ch">\'</span><span class="st">s dog</span><span class="ch">\'</span><span class="st">s friend'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'My friend</span><span class="ch">\'</span><span class="st">s friend</span><span class="ch">\'</span><span class="st">s dog</span><span class="ch">\'</span><span class="st">s friend'</span>)</span></code></pre></div>
 <p>Another way is to use one set of quotes to delimit the string that are different from the ones used within:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'My friend</span><span class="ch">\'</span><span class="st">s friend</span><span class="ch">\'</span><span class="st">s dog</span><span class="ch">\'</span><span class="st">s friend'</span>)</span>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'My friend</span><span class="ch">\'</span><span class="st">s friend</span><span class="ch">\'</span><span class="st">s dog</span><span class="ch">\'</span><span class="st">s friend'</span>)</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"bit my friend's dog's ankle"</span>)</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'who yelped "owww"'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'who yelped "owww"'</span>)</span></code></pre></div>
 <p>How does one print a backslash itself? By using a double backslash:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The backslash character, </span><span class="ch">\\</span><span class="st">, is less intimidating now'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The backslash character, </span><span class="ch">\\</span><span class="st">, is less intimidating now'</span>)</span></code></pre></div>
 </section>
 <section id="excercise-write-a-program-called-practice_escaping.py-that-prints-out" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-write-a-program-called-practice_escaping.py-that-prints-out"><span style="color:#8B4513;"><strong>1.9 Excercise:</strong> Write a program called <code>practice_escaping.py</code> that prints out</span></h6>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>  <span class="co">"    "</span>   \\<span class="op">\</span></span>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>  <span class="co">"    "</span>   \\<span class="op">\</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"    "</span>    \    </span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">""""""</span>    \    </span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="co">"    "</span>    \    </span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">"    "</span>   \\\  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">"    "</span>   \\\  </span></code></pre></div>
 </section>
 <section id="video" class="level6">
 <h6 class="anchored" data-anchor-id="video"><span style="color:#8B4513;"><strong>1.10 Video:</strong></span></h6>
@@ -432,25 +444,25 @@ Note
 <li>Sometimes we need to type in a really long string.</li>
 <li>The following does NOT work:</li>
 </ul>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'An Ogden Nash poem:'</span>)</span>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'An Ogden Nash poem:'</span>)</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The camel has a single hump; </span></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="er">The dromedary, two; </span></span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>Or <span class="cf">else</span> the other way around. </span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>I’m never sure. Are you?<span class="st">')</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>I’m never sure. Are you?<span class="st">')</span></span></code></pre></div>
 </section>
 <section id="excercise-write-a-program-called-my_string_example4.py-with-the-above-program-and-run-it.-what-is-the-error-you-observe-write-your-answer-in-module1.pdf" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-write-a-program-called-my_string_example4.py-with-the-above-program-and-run-it.-what-is-the-error-you-observe-write-your-answer-in-module1.pdf"><span style="color:#8B4513;"><strong>1.11 Excercise:</strong> Write a program called <code>my_string_example4.py</code> with the above program and run it. What is the error you observe? Write your answer in <code>module1.pdf</code></span></h6>
 <p>To spread a single string over multiple lines, one uses a <em>triple quote</em> as in:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'An Ogden Nash poem:'</span>)</span>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'An Ogden Nash poem:'</span>)</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'''The camel has a single hump; </span></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="st">The dromedary, two; </span></span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="st">Or else the other way around. </span></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="st">I’m never sure. Are you?'''</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="st">I’m never sure. Are you?'''</span>)</span></code></pre></div>
 </section>
 <section id="excercise-write-a-program-called-my_string_example5.py-with-a-5-line-limerick." class="level6">
 <h6 class="anchored" data-anchor-id="excercise-write-a-program-called-my_string_example5.py-with-a-5-line-limerick."><span style="color:#8B4513;"><strong>1.12 Excercise:</strong> Write a program called <code>my_string_example5.py</code> with a 5-line limerick.</span></h6>
 <p>Empty strings: - It is possible to not have anything in a string, as in:</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">''</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">''</span>)</span></code></pre></div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -473,12 +485,12 @@ Note
 <section id="case-sensitivity" class="level2">
 <h2 class="anchored" data-anchor-id="case-sensitivity">1.3 Case sensitivity</h2>
 <p>What if we had used uppercase P instead of lowercase p in print?</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello World!'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello World!'</span>)</span></code></pre></div>
 <section id="excercise-write-up-the-above-program-in-case_error.py-and-run-it.-what-is-the-error-you-get" class="level6">
 <h6 class="anchored" data-anchor-id="excercise-write-up-the-above-program-in-case_error.py-and-run-it.-what-is-the-error-you-get"><span style="color:#8B4513;"><strong>1.13 Excercise:</strong> Write up the above program in <code>case_error.py</code> and run it. What is the error you get?</span></h6>
 <p>Write your answer in <code>module1.pdf</code>.</p>
 <p>What if we changed the case inside a string?</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'helLo WoRLd!'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'helLo WoRLd!'</span>)</span></code></pre></div>
 </section>
 <section id="excercise-write-up-the-above-program-in-my_string_example6.py-and-run-it-to-see-if-it-works." class="level6">
 <h6 class="anchored" data-anchor-id="excercise-write-up-the-above-program-in-my_string_example6.py-and-run-it-to-see-if-it-works."><span style="color:#8B4513;"><strong>1.14 Excercise:</strong> Write up the above program in <code>my_string_example6.py</code> and run it to see if it works.</span></h6>
@@ -494,7 +506,7 @@ Note
 <p>We will occasionally jump ahead and present an example of a program that does something advanced, just so you get a feel for what’s coming.</p>
 <p>With these examples, we’ll only ask you to type up the program and run the program.</p>
 <p>And then we’ll point out a few features, just so that you get acquainted with features that you’ll eventually encounter.</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
 <span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>canvas <span class="op">=</span> tk.Canvas(master<span class="op">=</span>window, width<span class="op">=</span><span class="dv">500</span>, height<span class="op">=</span><span class="dv">400</span>)</span>
@@ -508,7 +520,7 @@ Note
 <span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>    canvas.create_text(</span>
 <span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>        startx, starty, text<span class="op">=</span><span class="st">"Hello"</span>, font<span class="op">=</span>fontStr, fill<span class="op">=</span><span class="st">'grey'</span>)</span>
 <span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div>
 <section id="excercise-write-up-the-above-program-in-hello_gui.py-being-careful-to-type-it-in-exactly-as-shown-above-paying-attention-to-every-keystroke.-run-it-to-get-something-like-if-something-went-wrong-with-the-typing-you-can-instead-download-hello_gui.py-but-only-after-giving-the-typing-a-good-try." class="level6">
 <h6 class="anchored" data-anchor-id="excercise-write-up-the-above-program-in-hello_gui.py-being-careful-to-type-it-in-exactly-as-shown-above-paying-attention-to-every-keystroke.-run-it-to-get-something-like-if-something-went-wrong-with-the-typing-you-can-instead-download-hello_gui.py-but-only-after-giving-the-typing-a-good-try."><span style="color:#8B4513;"><strong>1.14 Excercise:</strong> Write up the above program in <code>hello_gui.py</code> being careful to type it in exactly as shown above, paying attention to every keystroke. Run it to get something like: <img src="../../../media/units/unit0/module1/hello-gui.png" class="img-fluid"> If something went wrong with the typing, you can instead download <a href="../../../media/units/unit0/module1/hello_gui.py" download=""><strong>hello_gui.py</strong></a> but only after giving the typing a good try. </span></h6>
 <p>Now let’s point out a few features of the program, and we’ll focus on the middle section: <img src="../../../media/units/unit0/module1/for-loop.png" class="img-fluid"></p>
@@ -522,6 +534,8 @@ Note
 <p>If it’s a bit hazy, please make sure to review from the <b><a href="../module0/computerese.html">material on computerese</a></b> from Module 0.</p>
 <p><a href="">Here’s more information about submitting Module 1</a></p>
 <p><br> <a href="../../../units/unit0/modules/module0.html" class="button prev">Previous Module: <strong>Module 0</strong></a> <a href="../../../units/unit0/modules/module2.html" class="button next">Next Module: <strong>Module 2</strong></a></p>
+
+
 
 
 </section>
@@ -554,58 +568,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
