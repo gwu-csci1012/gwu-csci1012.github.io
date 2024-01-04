@@ -1,6 +1,22 @@
 ---
 title: "**Module 2:** Functions: a first look"
+format:
+  html:
+    code-copy: false
 ---
+
+<html>
+<head>
+    <style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
+</head>
+<body>
 
 <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
@@ -394,3 +410,6 @@ or
 
 <br>
 [Previous Module: **Module 1**](./module1.qmd){.button .prev} [Next Module: **Module 3**](./module3.qmd){.button .next}
+
+</body>
+</html>
