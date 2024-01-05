@@ -583,13 +583,13 @@ from drawtool import DrawTool
 dt = DrawTool()
 dt.set_XY_range(0,10, 0,100)
 
-<font color="#dc143c"># The blue collection of points:</font>
+# The blue collection of points:
 dt.set_color('b')
 x_coords = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 y_coords = [3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23]
 dt.draw_curve_as_points(x_coords, y_coords)
 
-<font color="#dc143c"># The red collection of points:</font>
+# The red collection of points:
 dt.set_color('r')
 x_coords = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 y_coords = [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
