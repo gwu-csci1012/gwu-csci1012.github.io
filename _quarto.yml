@@ -34,6 +34,7 @@ website:
           - section: "**Unit 1:** Key Building Blocks in Programming"
             contents: 
               - ./units/unit1/modules/module0.qmd
+              - ./units/unit1/modules/module1.qmd
           - ./units/useful.qmd
           - ./submit-remember.qmd
       - href: course-policies.qmd
