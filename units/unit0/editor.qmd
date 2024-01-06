@@ -45,15 +45,15 @@ Let's dive into the installation process:
 
 #### **MacOS:**
 
-- **Step 1**: [Install Thonny for Mac](thonny-mac.qmd)
+- **Step 1**: [Install Thonny for Mac](./guides/thonny-mac.qmd)
 
-- **Step 2**: [Install Spyder for Mac](spyder-mac.qmd)
+- **Step 2**: [Install Spyder for Mac](./guides/anaconda-mac.qmd)
 
 #### **Windows:**
 
-- **Step 1**: [Install Thonny for Windows](thonny-windows.qmd)
+- **Step 1**: [Install Thonny for Windows](./guides/thonny-windows.qmd)
 
-- **Step 2**: [Install Spyder for Windows](spyder-windows.qmd)
+- **Step 2**: [Install Spyder for Windows](./guides/anaconda-windows.qmd)
 
 Choose Thonny as your primary choice for its simplicity, especially if you're new to coding. However, if you prefer a more feature-rich environment, Spyder is an excellent alternative.
 
