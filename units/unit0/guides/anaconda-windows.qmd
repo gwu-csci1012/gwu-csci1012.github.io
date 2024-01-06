@@ -22,7 +22,7 @@ Visit the Anaconda download page at [https://www.anaconda.com/download](https://
 
 ### 2. Choose the Windows Installer
 
-Click on the "*Download*" button under the Windows section to download the Anaconda installer for Windows.
+Click on the "**Download**" button under the Windows section to download the Anaconda installer for Windows.
 
 ![Download Anaconda](../../../media/anaconda-windows/screenshot-1.png)
 
@@ -77,7 +77,9 @@ Once the installation is complete, you'll see a confirmation message. Click "**N
 - Open _Anaconda Navigator_, now installed on your system.
 - Locate Spyder and click "**Launch**" to open the _Spyder IDE_.
 
-![Launch Spyder](../../../media/anaconda-mac/screenshot-14-spyder.png)
+![Launch Spyder](../../../media/anaconda-windows/Step_13.png)
+
+![Spyder](../../../media/anaconda-windows/Step_14.png)
 
 ## Conclusion
 
