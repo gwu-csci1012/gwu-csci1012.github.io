@@ -287,32 +287,74 @@
     "text": "6.8 About the reals, and math in general\nWe’ve gone a bit beyond our comfort zone into real numbers and into some applications.\nWe’ll end this module by pointing out a few more things about numbers in a mathematical sense, and say something about math anxiety. None of this will be on any exam.\nLet’s start with numbers:\n\nThe easiest kind of number to understand are the natural numbers.\n\nThey are the numbers 1, 2, 3 … and so on.\nIt’s an infinite set, and many operations like + and * applied to naturals result in a natural.\nBut 3 - 5 is not a natural number, and neither is \\[ \\frac{3}{5} \\].\nSo, they’re limited in their use.\n\nIf we expand the naturals and add 0, and all the negative numbers, we get \\[\n          \\ldots -3, -2, -1, 0, 1, 2, 3 \\ldots\n  \\] (The triple-dot that indicates “going on forever” occurs now on both sides, the positive side and the negative side.)\n\nHowever, they too are limited because neither \\[ \\frac{3}{5} \\] nor \\[ \\frac{5}{3} \\] are integers.\n\nThe next kind of number to consider is rational number:\n\nA rational is a number that can be written as a fraction (or ratio) of integers.\nExamples: \\[ \\frac{5}{3}, \\frac{46}{7} \\]\nThey include all the integers.\n\nThen we get to the real numbers introduced in this module.\nWithin the real numbers there are interesting categories.\nSome real numbers are irrational and cannot be expressed as a ratio of integers.\n\nOne example is \\[ \\sqrt{2} \\], which bedeviled the Greeks a long time ago.\nInterestingly, one can prove that there are many more irrational real numbers than rational real numbers.\n\nAnother kind of real number is an algebraic number, meaning they are the solution to an equation like \\[ 3x^2 + 5 = 11 \\]\nThose that aren’t algebraic go by the lovely name of transcendental number, such as \\[ pi \\]\nSo, is every number a real number?        ⇒ No, there are numbers like \\[ \\sqrt-1 \\] that are imaginary.\nYou might think that an imaginary number couldn’t possibly have any use. It turns out that they are extraordinarily useful in many kinds of practical applications.\n\nExample: processing any kind of “wave” data, such as brain waves or seismic waves.\nExample: quantum computing.\n\n\nSome ideas to reflect on:\n\nWhich of the following most resonates with you?\n\n“I’ve always found math very hard and prefer to avoid it.”\n“I can tolerate math but would rather avoid it if possible.”\n“Math and I just don’t get along.”\n“Math is OK - I can do most of it but I don’t find it interesting or valuable.”\n“I can do math but am more interested in just applying it.”\n“I find math really interesting, even if I choose not to pursue math for math’s sake.”\n“I love math and will do as much of it as I can.”\n\nWhat ever your category, you should keep in mind:\n\nMath is a skill and takes practice, just like programming.\nYes, it’s true that a lot of high-school is boring. Much of what’s interesting in math comes after calculus.\nThe notion of not being suited to math is just a mindset. It can be changed.\nEven a little math is quite useful.\nYou can learn quite a bit of math via programming, as we’ll show you.\n\nWe’ll have more to say about the interesting and exciting connections between computer science, math, and other fields, including art."
   },
   {
-    "objectID": "units/unit0/editor-old.html",
-    "href": "units/unit0/editor-old.html",
-    "title": "Instructions for typing and running your first program",
+    "objectID": "units/unit0/guides/anaconda-windows.html",
+    "href": "units/unit0/guides/anaconda-windows.html",
+    "title": "Anaconda and Spyder Installation Guide for Windows",
     "section": "",
-    "text": "We will now have you type, run, and save your first computer program.\n\n\n\n\n\n\nNote\n\n\n\n\nPrograms are typed in using your computer’s keyboard, just as you would type in an email or text document.\nAnd just as the “thing you are typing into” is different for email and for text-editing, there is a different “thing” to type programs into.\nThe typing is one part of getting a program. If you just type your program, it will just be sitting there on your computer. But you want to go the next step and run (or, execute, as we say) the program. Typing and not-running is loosely analogous to typing an email but not sending it (the email will just remain in composed-form, but go nowhere) Similarly, typing text into Word doesn’t mean it gets “published”.\nThe “thing” into which you type and run your program is called a code editor or an IDE (Integrated Development Environment, a mouthful).\nWe are going to give you the option of using one of two code editors, Thonny or Spyder. Think of them as apps that help you type and run programs.\n\n\n\nBefore we get to typing in a program, we first (if not already done) need to download and install Python and either Thonny or Spyder.\n\nThe term install means: you download software on your computer and get it to run. This is something you do just once.\nWhen you need to run the software again, you search for it on your computer (since it’s already installed) and merely run it.\nThus, you will perform Steps 1 and 2 just once for this course.\nAnd Steps 3 and 4 repeatedly as you write code.\nAlso, if you start off with one editor and change your mind, you can come back here to install the other editor and learn how to use it.\n\n1. Install Anaconda: Pick between these two options and click through to follow instructions in installing Anaconda.\n\nAnaconda for MacOS Users\nAnaconda for Windows Users\n\nThen come back here and proceed with Step 2.\nIncidentally, you might be asking: what exactly is Anaconda and what does it have to do with Python other than its name?\n\nPython is a programming language. Typically a language alone is not enough to get many useful programming tasks done.\nWe need additional software that’s useful. Anaconda is a bundle that includes Python and this additional software. You install it once on your computer and you can then avail of all kinds of useful things related to Python.\nThe one thing it does not have, sadly, is the Thonny editor, so we’ll show you how to install that.\n\n2. Install a code editor: by selecting ONE of the following options:\n\nOption A: Thonny for Mac users\nOption B: There are no special instructions because Spyder comes bundled with Anaconda.\nOption A: Thonny for Windows users\nOption B: There are no special instructions because Spyder comes bundled with Anaconda.\n\n3. Open a code editor: Choose between\n\nOption A: looking for and opening Thonny for Mac users\nOption B: Using Spyder, looking for, and opening Spyder on a Mac is similar to looking for and opening Thonny.\nOption A: looking for and opening Thonny for Windows users\nOption B: looking for and opening Spyder. Looking for, and opening Spyder on Windows is similar to looking for and opening Thonny.\n\n4. Type and Execute helloworld.py: Choose between:\n\nOption A: Helloworld for Mac users using Thonny\nOption B: Helloworld for Mac users using Spyder\nOption A: Helloworld for Windows users using Thonny\nOption B: Helloworld for Windows users using Spyder\n\n5. Install Matplotlib for Thonny users: What is matplotlib? It’s a plotting package that we’ll use. This comes packaged with Spyder and so, only Thonny users need to download this. Thonny is a nice editor and so Thonny users cheerfully do this additional step in order to use plotting along with Thonny.\n\nMac Users: Install matplotlib for Thonny\nWindows Users: Install matplotlib for Thonny"
+    "text": "This guide will guide you through the installation process of Anaconda, a popular Python distribution, on your Windows computer. Anaconda facilitates the management of Python packages and environments, and it includes Spyder, a powerful IDE for scientific computing."
   },
   {
-    "objectID": "units/unit0/editor-old.html#objectives",
-    "href": "units/unit0/editor-old.html#objectives",
-    "title": "Instructions for typing and running your first program",
+    "objectID": "units/unit0/guides/anaconda-windows.html#introduction",
+    "href": "units/unit0/guides/anaconda-windows.html#introduction",
+    "title": "Anaconda and Spyder Installation Guide for Windows",
     "section": "",
-    "text": "We will now have you type, run, and save your first computer program.\n\n\n\n\n\n\nNote\n\n\n\n\nPrograms are typed in using your computer’s keyboard, just as you would type in an email or text document.\nAnd just as the “thing you are typing into” is different for email and for text-editing, there is a different “thing” to type programs into.\nThe typing is one part of getting a program. If you just type your program, it will just be sitting there on your computer. But you want to go the next step and run (or, execute, as we say) the program. Typing and not-running is loosely analogous to typing an email but not sending it (the email will just remain in composed-form, but go nowhere) Similarly, typing text into Word doesn’t mean it gets “published”.\nThe “thing” into which you type and run your program is called a code editor or an IDE (Integrated Development Environment, a mouthful).\nWe are going to give you the option of using one of two code editors, Thonny or Spyder. Think of them as apps that help you type and run programs.\n\n\n\nBefore we get to typing in a program, we first (if not already done) need to download and install Python and either Thonny or Spyder.\n\nThe term install means: you download software on your computer and get it to run. This is something you do just once.\nWhen you need to run the software again, you search for it on your computer (since it’s already installed) and merely run it.\nThus, you will perform Steps 1 and 2 just once for this course.\nAnd Steps 3 and 4 repeatedly as you write code.\nAlso, if you start off with one editor and change your mind, you can come back here to install the other editor and learn how to use it.\n\n1. Install Anaconda: Pick between these two options and click through to follow instructions in installing Anaconda.\n\nAnaconda for MacOS Users\nAnaconda for Windows Users\n\nThen come back here and proceed with Step 2.\nIncidentally, you might be asking: what exactly is Anaconda and what does it have to do with Python other than its name?\n\nPython is a programming language. Typically a language alone is not enough to get many useful programming tasks done.\nWe need additional software that’s useful. Anaconda is a bundle that includes Python and this additional software. You install it once on your computer and you can then avail of all kinds of useful things related to Python.\nThe one thing it does not have, sadly, is the Thonny editor, so we’ll show you how to install that.\n\n2. Install a code editor: by selecting ONE of the following options:\n\nOption A: Thonny for Mac users\nOption B: There are no special instructions because Spyder comes bundled with Anaconda.\nOption A: Thonny for Windows users\nOption B: There are no special instructions because Spyder comes bundled with Anaconda.\n\n3. Open a code editor: Choose between\n\nOption A: looking for and opening Thonny for Mac users\nOption B: Using Spyder, looking for, and opening Spyder on a Mac is similar to looking for and opening Thonny.\nOption A: looking for and opening Thonny for Windows users\nOption B: looking for and opening Spyder. Looking for, and opening Spyder on Windows is similar to looking for and opening Thonny.\n\n4. Type and Execute helloworld.py: Choose between:\n\nOption A: Helloworld for Mac users using Thonny\nOption B: Helloworld for Mac users using Spyder\nOption A: Helloworld for Windows users using Thonny\nOption B: Helloworld for Windows users using Spyder\n\n5. Install Matplotlib for Thonny users: What is matplotlib? It’s a plotting package that we’ll use. This comes packaged with Spyder and so, only Thonny users need to download this. Thonny is a nice editor and so Thonny users cheerfully do this additional step in order to use plotting along with Thonny.\n\nMac Users: Install matplotlib for Thonny\nWindows Users: Install matplotlib for Thonny"
+    "text": "This guide will guide you through the installation process of Anaconda, a popular Python distribution, on your Windows computer. Anaconda facilitates the management of Python packages and environments, and it includes Spyder, a powerful IDE for scientific computing."
   },
   {
-    "objectID": "units/unit0/editor-old.html#macos-users",
-    "href": "units/unit0/editor-old.html#macos-users",
-    "title": "Instructions for typing and running your first program",
-    "section": "MacOS Users",
-    "text": "MacOS Users\n\nStep 1: Installing Anaconda\nFollow this guide to learn how to install Anaconda\n\n\n\n\n\nStep 2: Option A, Installing Thonny\nInstalling and Opening Thonny\n\nNow click on the Link to Thonny and install it on your laptop.\n\n\n\n\n\nStep 3: Option A, Opening Thonny\nThese screenshots explain how to open Thonny:\n\nStep 3.A.1 \nStep 3.A.2 \nStep 3.A.3 \nStep 3.A.4: You now have opened Thonny \n\n\n\n\n\n\n\nNote\n\n\n\n\nWhen you open Thonny you aren’t opening program files (yet). It’s similar to opening Word without naming a text file to work on.\nYour program files are going to be in specific folders. You need to look for them, and when you create new ones, save them in specific folders.\n\n\n\n\n\n\n\n\nStep 4: Option A, Helloworld in Thonny\n\n\n\n\n\n\nStep 4: Option B, Helloworld in Spyder\n\n\n\n\n\n\nStep 5: Installing Matplotlib (or any package) for Thonny Users\nHow to add a package (like Matplotlib):\n\nTo add a package (which will only be necessary for those using Thonny), first, open Thonny, and go to “Tools”. From there, click on “Manage Packages”. \nThen, you will see a window like what is shown in the image above. Search for the “package” you need to install or remove. In this case, we have used the example of “Matplotlib”, which you will need to have installed for some exercises. Once you’ve typed the name of the package, click “Find package from PyPI” or press the enter/return key. \nTo add the package, click the install button. You will then see a small popup while the package is installed."
+    "objectID": "units/unit0/guides/anaconda-windows.html#prerequisites",
+    "href": "units/unit0/guides/anaconda-windows.html#prerequisites",
+    "title": "Anaconda and Spyder Installation Guide for Windows",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nBefore you begin, ensure you have the following:\n\nA Windows computer.\nAn active internet connection.\nAdequate disk space for the installation."
   },
   {
-    "objectID": "units/unit0/editor-old.html#windows-users",
-    "href": "units/unit0/editor-old.html#windows-users",
-    "title": "Instructions for typing and running your first program",
-    "section": "Windows Users",
-    "text": "Windows Users\n\nStep 1: Installing Anaconda\nFollow this guide to learn how to install Anaconda\n\n\n\n\n\nStep 2: Option A, Installing Thonny\nInstalling and Opening Thonny\n\nNow click on the Link to Thonny and install it on your laptop.\n\n\n\n\n\nStep 3: Option A, Opening Thonny\nThe following screenshots explain how to open Thonny:\n\nStep 3.A.1 \nStep 3.A.2 \nStep 3.A.3 \n\n\n\n\n\n\n\nNote\n\n\n\n\nWhen you open Thonny you aren’t opening program files (yet). It’s similar to opening Word without naming a text file to work on.\nYour program files are going to be in specific folders. You need to look for them, and when you create new ones, save them in specific folders.\n\n\n\n\n\n\n\n\nStep 4: Option A, Helloworld in Thonny\n\n\n\n\n\n\nStep 4: Option B: Helloworld in Spyder\n\n\n\n\n\n\nStep 5: Installing Matplotlib\nHow to add a package (like Matplotlib):\n\nTo add a package (which will only be necessary for those using Thonny), first, open Thonny, and go to “Tools”. From there, click on “Manage Packages”. \nThen, you will see a window like what is shown in the image above. Search for the “package” you need to install or remove. In this case, we have used the example of “Matplotlib”, which you will need to have installed for some exercises. Once you’ve typed the name of the package, click “Find package from PyPI” or press the enter/return key. \nTo add the package, click the install button. You will then see a small popup while the package is installed."
+    "objectID": "units/unit0/guides/anaconda-windows.html#installation-steps",
+    "href": "units/unit0/guides/anaconda-windows.html#installation-steps",
+    "title": "Anaconda and Spyder Installation Guide for Windows",
+    "section": "Installation Steps",
+    "text": "Installation Steps\n\n1. Download Anaconda\nVisit the Anaconda download page at https://www.anaconda.com/download.\n\n\n2. Choose the Windows Installer\nClick on the “Download” button under the Windows section to download the Anaconda installer for Windows.\n\n\n\nDownload Anaconda\n\n\n\n\n3. Run the Installer\n\nLocate the downloaded file, typically in your “Downloads” folder.\nDouble-click the installer executable (.exe) file to run it.\n\n\n\n\nRun Installer\n\n\n\n\n4. Follow the Installer Wizard\n\nFollow the on-screen instructions to initiate the installation.\nRead and accept the license agreement when prompted.\n\n\n\n\nRead Me\n\n\n\n\n\nLicense Agreement\n\n\n\nChoose the installation type. It’s recommended to select “Just me” unless you have specific reasons for a different choice.\n\n\n\n\nInstallation Type\n\n\n\nSelect the installation location (the default is usually fine).\n\n\n\n\nInstallation Location\n\n\n\n\n5. Install Anaconda\nClick the “Install” button to begin the installation process. This may take a few minutes.\n\n\n\nInstall\n\n\n\n\n6. Complete the Installation\nOnce the installation is complete, you’ll see a confirmation message. Click “Next” and proceed to finish.\n\n\n\nInstallation Complete\n\n\n\n\n\nClose Installation Wizard\n\n\n\n\n7. If prompted to update the navigator, select “No, don’t show again”\n\n\n\nDon’t Update\n\n\n\n\n8. You’re NOT REQUIRED to Log in/Sign up for Anaconda Cloud; close the prompt by clicking the “X” button\n\n\n\nDon’t Log in/Sign up\n\n\n\n\n9. Access Spyder through Anaconda Navigator\n\nOpen Anaconda Navigator, now installed on your system.\nLocate Spyder and click “Launch” to open the Spyder IDE.\n\n\n\n\nLaunch Spyder"
+  },
+  {
+    "objectID": "units/unit0/guides/anaconda-windows.html#conclusion",
+    "href": "units/unit0/guides/anaconda-windows.html#conclusion",
+    "title": "Anaconda and Spyder Installation Guide for Windows",
+    "section": "Conclusion",
+    "text": "Conclusion\nCongratulations! Anaconda and Spyder are now successfully installed on your Windows computer. Utilize Spyder for scientific computing and Python development.\nFor further guidance on using Anaconda, refer to the official documentation at https://docs.anaconda.com/.\nIf you encounter any issues or have questions, seek assistance from the Anaconda community or consult the documentation for troubleshooting tips."
+  },
+  {
+    "objectID": "units/unit0/guides/anaconda-mac.html",
+    "href": "units/unit0/guides/anaconda-mac.html",
+    "title": "Anaconda and Spyder Installation Guide for macOS",
+    "section": "",
+    "text": "This guide will lead you through the process of installing Anaconda, a popular Python distribution, on your macOS computer. Anaconda provides a convenient way to manage Python packages and environments, and it includes Spyder, a powerful IDE for scientific computing."
+  },
+  {
+    "objectID": "units/unit0/guides/anaconda-mac.html#introduction",
+    "href": "units/unit0/guides/anaconda-mac.html#introduction",
+    "title": "Anaconda and Spyder Installation Guide for macOS",
+    "section": "",
+    "text": "This guide will lead you through the process of installing Anaconda, a popular Python distribution, on your macOS computer. Anaconda provides a convenient way to manage Python packages and environments, and it includes Spyder, a powerful IDE for scientific computing."
+  },
+  {
+    "objectID": "units/unit0/guides/anaconda-mac.html#prerequisites",
+    "href": "units/unit0/guides/anaconda-mac.html#prerequisites",
+    "title": "Anaconda and Spyder Installation Guide for macOS",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nBefore you begin, make sure you have the following:\n\nA macOS computer.\nAn internet connection.\nAdequate disk space for the installation."
+  },
+  {
+    "objectID": "units/unit0/guides/anaconda-mac.html#installation-steps",
+    "href": "units/unit0/guides/anaconda-mac.html#installation-steps",
+    "title": "Anaconda and Spyder Installation Guide for macOS",
+    "section": "Installation Steps",
+    "text": "Installation Steps\n\n1. Download Anaconda\nVisit the Anaconda download page at https://www.anaconda.com/download.\n\n\n2. Choose the macOS Installer\nClick on the “Download” button under the macOS section depending on your System-on-chip (Intel/M1/M2) to download the Anaconda installer for macOS.\n\n\n\nDownload Anaconda\n\n\n\n\n3. Run the Installer\n\nLocate the downloaded file, usually in your “Downloads” folder.\nDouble-click the Anaconda disk image (.dmg) file to open it and click “Allow” when prompted.\n\n\n\n\nRun Installer\n\n\n\n\n\nAllow Installation\n\n\n\n\n4. Follow the Installer Wizard\n\nFollow on-screen instructions to begin the installation.\nRead and accept the license agreement when prompted.\n\n\n\n\nRead Me\n\n\n\n\n\nLicense Agreement\n\n\n\n\n5. Install Anaconda\nClick the “Install” button to start the installation process. This may take a few minutes.\n\n\n\nInstall\n\n\n\n\n6. Complete the Installation\nOnce installation is complete, you’ll see a confirmation message. Click “Continue” and close the installation wizard by clicking “Close”.\n\n\n\nInstallation Complete\n\n\n\n\n\nClose Installation Wizard\n\n\n\n\n7. Move the Installer File to Trash (Optional)\n\n\n\nMove the Installer to Trash\n\n\n\n\n8. If prompted to update the navigator, select “No, don’t show again”\n\n\n\nDon’t Update\n\n\n\n\n9. You’re NOT REQUIRED to Log in/Sign up for Anaconda Cloud; close the prompt by clicking the “x” button\n\n\n\nDon’t Log in/Sign up\n\n\n\n\n10. Access Spyder through Anaconda Navigator\n\nOpen Anaconda Navigator, which is now installed on your system.\nLocate Spyder and click “Launch” to open the Spyder IDE.\n\n\n\n\nLaunch Spyder"
+  },
+  {
+    "objectID": "units/unit0/guides/anaconda-mac.html#conclusion",
+    "href": "units/unit0/guides/anaconda-mac.html#conclusion",
+    "title": "Anaconda and Spyder Installation Guide for macOS",
+    "section": "Conclusion",
+    "text": "Conclusion\nCongratulations! You’ve successfully installed Anaconda and Spyder on your macOS computer. Utilize Spyder for scientific computing and Python development.\nFor further guidance on using Anaconda, refer to the official documentation at https://docs.anaconda.com/.\nIf you encounter any issues or have questions, seek assistance from the Anaconda community or consult the documentation for troubleshooting tips."
   },
   {
     "objectID": "units/unit0/assignments/assignment1.html",
@@ -334,6 +376,307 @@
     "title": "Assignment 1",
     "section": "Assignment problems",
     "text": "Assignment problems\n\n1. Demo problem\nSuppose we want to use for-loops to produce this arrow-head like pattern:\n*\n**\n***\n****\n*****\n******\n*******\n********\n*********\n**********\n**********\n*********\n********\n*******\n******\n*****\n****\n***\n**\n*\nAt this point, do not read further and try to address the following:\n\nFirst understand what is being asked.\nDo you see a for-loop or two at work where, as the loops are printing, you’ll get the output shown above?\nCan the problem be broken down into parts, where you can solve the parts and put the solution together afterwards?\nTry writing some code to get at least some of the output. Now examine the solution\n\nDon’t forget to submit your solutions to the exercises within."
+  },
+  {
+    "objectID": "units/unit1/modules/module1.html",
+    "href": "units/unit1/modules/module1.html",
+    "title": "Module 1: Conditionals",
+    "section": "",
+    "text": "Home » Unit 1 » Module 1"
+  },
+  {
+    "objectID": "units/unit1/modules/module1.html#objectives",
+    "href": "units/unit1/modules/module1.html#objectives",
+    "title": "Module 1: Conditionals",
+    "section": "Objectives",
+    "text": "Objectives\nBy the end of this module you will be able to:\n\nEvaluate Boolean (pronounced: BOO-lee-unn) expressions.\nConstruct Boolean expressions from English descriptions.\nMentally execute (trace) code with conditionals: that is: if, if-else, and if-multi-else statements.\nWrite and debug code with conditionals.\nWrite and debug code with conditionals inside loops.\nIdentify new syntactic elements related to the above."
+  },
+  {
+    "objectID": "units/unit1/modules/module1.html#a-simple-example",
+    "href": "units/unit1/modules/module1.html#a-simple-example",
+    "title": "Module 1: Conditionals",
+    "section": "1.0 A simple example",
+    "text": "1.0 A simple example\nConsider this program:\nx = 5\ny = 4\n\nif x &gt; y:\n    print('Hey, x is bigger')\n\nprint(\"OK, we're done\")\n\n1.1 Excercise: In my_ifexample.py, type up the above and examine the output. Then, just below the print with ‘Hey’ (and indented 4 spaces) add another print to print anything. Then, change the value of y to 6 and report the output in module0.pdf. Submit the program with these modifications.\nLet’s explain:\n\nFirst, observe: \nNow, at the moment the if-statement executes, the condition is evaluated:  If the condition is true then the code that’s indented below the if-statement executes.\nConsider what happens when y is 6: \n\n\n\n1.2 Excercise: Consider this program:\ns = 0\nfor i in range(6):\n    s = s + i\n\nif s &lt; 15:\n    print('Less than 15')\n\nprint('Done')\nTry to mentally execute (trace its execution in your mind) and predict the output before typing it up in my_ifexample2.py to confirm."
+  },
+  {
+    "objectID": "units/unit1/modules/module1.html#if-else",
+    "href": "units/unit1/modules/module1.html#if-else",
+    "title": "Module 1: Conditionals",
+    "section": "1.1 if-else",
+    "text": "1.1 if-else\nThink of else as if’s occasional partner.\nConsider this example:\nx = 5\ny = 4\n\nif x &gt; y:\n    print('Hey, x is bigger')\nelse:\n    print('Who said x is bigger?')\n    print('In fact, y is bigger')\n\nprint(\"OK, we're done\")\n\n1.3 Excercise: Type up the above in my_ifexample3.py and examine the output. Then, change the value of y to 6. What is the output? Change y to 5. What is the output? Report these in your module pdf.\nLet’s point out:\n\nWhen x is indeed larger than y, the code in the if-body executes: \nWhen the if-condition evaluates to false: \nWhat happens when x is 5 and y is 5? \n\nBecause some of these arrows might be difficult to follow, let’s emphasize some blocks (lines) of code:\n\nFirst consider when x is larger than y: \nAnd when y is larger than x:"
+  },
+  {
+    "objectID": "units/unit1/modules/module1.html#if-elif-else",
+    "href": "units/unit1/modules/module1.html#if-elif-else",
+    "title": "Module 1: Conditionals",
+    "section": "1.2 if-elif-else",
+    "text": "1.2 if-elif-else\nConsider this variation:\nx = 5\ny = 5\n\nif x &gt; y:\n    print('Hey, x is bigger')\nelif y &gt; x:\n    print('Who said x is bigger?')\n    print('In fact, y is bigger')\nelse:\n    print('Actually, they are equal')\n\nprint(\"OK, we're done\")\n\n1.4 Excercise: Type up the above in my_ifexample4.py and examine the output. Then, try y=6 and y=4. Report results in your module pdf.\nLet’s explain:\n\nFirst, consider the case x=5, y=5: \nNow consider x=5, y=4: \nNext: x=5, y=6: \n\nOne can have as many elif sections as one would like, for example:\nx = 3\n\nif x == 1:\n    print('one')\nelif x == 2:\n    print('two')\nelif x == 3:\n    print('three')\nelif x == 4:\n    print('four')\nelse:\n    print('big')\nThink of the whole thing as a giant if-statement:  In the above case, when x is 3, the execution path through the giant if-statement is: \n\n\n1.5 Excercise: Type up the above in my_ifexample5.py. Then, try each of x=1, x=2, x=4, x=5. Draw the execution pathways (similar to the picture above) for each case in your module pdf.\nConsider this program:\nx = 5\ny = 4\nz = 3\n\nif x &gt; y:\n    print('Hey, x is bigger')\n\nif x &gt; z:\n    print('x is bigger than z')\n    print('So, x must be the largest')\n\n\n1.6 Excercise: Type up the above in my_ifexample6.py. Try y = 6. Explain why it does not work. Then try to alter the program without changing the print-statements so that it works in all cases for possible values of x,y, and z. That is, whichever of the above print-statements gets printed correctly reflects the values of x, y and z.\n\n\n1.7 Video:"
+  },
+  {
+    "objectID": "units/unit1/modules/module1.html#nested-conditionals",
+    "href": "units/unit1/modules/module1.html#nested-conditionals",
+    "title": "Module 1: Conditionals",
+    "section": "1.3 Nested conditionals",
+    "text": "1.3 Nested conditionals\nConsider this program:\na = 3\nb = 4\nc = 5\n\nif a &lt; b:\n    if a &lt; c:\n        print('a is the smallest')\n    else:\n        print('a is not the smallest')\n\nprint('Done')\nThis is an example of a nested conditional (nested if):\n\nFirst, examine the indented structure: \nThe flow of execution: \n\nConsider this variation:\na = 3\nb = 4\nc = 5\n\nif a &lt; b:\n    if a &lt; c:\n        print('a is the smallest')\n    else:\n        print('a is not the smallest')\n    print('We know a is less than b')\nelse:\n    print('We know a is not less than b')\n\nprint('Done')\n\n1.8 Excercise: Type up the above in my_nestedif.py. Draw the flow of execution for the following three cases: (1) when a=3, b=4, c=5; (2) when a=3, b=4, c=2; (3) when a=6, b=4, c=5.\n\n\n1.9 Excercise: In my_smallest_of_three.py, modify the above program so that it prints out, appropriately, one of “a is the smallest”, “b is the smallest” or “c is the smallest”, depending on the actual values of a, b, and c. Try different values of these variables to make sure your program is working correctly.\n\n\n\n\n\n\nTip\n\n\n\n\nA numeric variable can be: strictly less, less than or equal to, strictly greater, greater than or equal to, or equal to another variable.\nAccordingly, the different types of less/greater comparisons are:\na &lt; b      # Strictly less than, as when a=3, b=4\na &lt;= b     # Could be less (a=3, b=5), could be equal (a=3, b=3) \na &gt; b      # Strictly greater (a=3, b=2)\na &gt;= b     # Could be greater (a=3, b=1), could be equal (a=2, b=2)"
+  },
+  {
+    "objectID": "units/unit1/modules/module1.html#combining-conditions",
+    "href": "units/unit1/modules/module1.html#combining-conditions",
+    "title": "Module 1: Conditionals",
+    "section": "1.4 Combining conditions",
+    "text": "1.4 Combining conditions\nConsider this program:\nx = 5\ny = 5\nz = 5\n\nif x == y and y == z:\n    print('All three are equal')\n\n\n\n\n\n\nNote\n\n\n\n\nThe first thing to point out is the == operator:\n\nBecause we’ve been using the equals operator for assigning values to variables, we need something else to test for equality.\nThe equality operator in Python is == as in:\nif x == y and y == z:\nAlas, the problems with limited keyboard symbols!\n\nImportant: the difference between = and == is very important to remember. It’s easy to make a mistake one forget.\nThe if-statement combines two conditions:\nif x == y and y == z:\nThe combining occurs with the Boolean operator and:\nif x == y and y == z:\nWe can clarify the parts and combination thereof using parens:\nif (x == y) and (y == z):\nThe two parts are often called clauses:\n\nFirst clause (x == y):\nif (x == y) and (y == z):\nSecond clause (y == z):\nif (x == y) and (y == z):\nYou could have many more clauses.\n\nThe “and” operator works like this: \nBoolean is pronounced “BOO lee unn”.\nA Boolean operator takes expressions and computes to either true or false.\n\n\n\nLet’s go back to finding the smallest of three numbers using conditionals:\na = 3\nb = 4\nc = 5\n\n# Fill in code here ... \n\n1.11 Excercise: In my_smallest_of_three2.py, fill in code to identify which of the three variables has the smallest value, depending on the actual values of a, b, and c. Use if-statements with multiple clauses. Try different values of these variables to make sure your program is working correctly.\n\n\n1.12 Video:\n\nAs the counterpart to the and operator, there is the or operator:\na = -2.718\n\nif (a &lt;= 0) or (a &gt;= 1):\n    print('a is not between 0 and 1')\n\n\n1.13 Excercisle: Type up the above in my_boolean2.py. Then try a=0.5.\n\n\n\n\n\n\nNote\n\n\n\n\nWe have shown how to write “less than or equal to” using =\n\nSo, now we can add “equals” and “not equals” to the numeric comparisons:\n    a &lt; b      # Strictly less than, like a=3 &lt; b=4\n    a &lt;= b     # Could be less, could be equal (a=3, b=3)\n    a &gt; b      # Strictly greater (a=3, b=2)\n    a &gt;= b     # Could be greater, could be equal \n    a == b     # Exactly equal\n    a != b     # Not equal\nFor the or operator to evaluate to true, any one or both of the two expressions needs to be true.\nConsider:\na = 3\nb = 4\nif (a &lt; 10) or (b &lt; 10):\n    print('One or both of them is less than 10')\n\nIn this case both will evaluate to true, and so the print statement executes.\nSuppose we made a=3, b=11, the print statement will execute.\nSuppose we change a=11, b=3, the print statement will execute.\nBut if a=11, b=12, the or fails (both clauses are false), and the print won’t execute.\n\nIncidentally, let’s replace or with and in the above case, and see what we get:\na = 3\nb = 4\nif (a &lt; 10) and (b &lt; 10):\n    print('Both of them are less than 10')\nIn this case, both sub-conditions are satisfied, and so the whole if-condition is satisfied, which means the print will execute.\nBut if we had\na = 3\nb = 4\nif (a &lt; 10) and (&lt;b&gt;b &gt; 10&lt;/b&gt;):\n    print('Both of them are less than 10')\nIn this case, the second comparison fails, and the print won’t occur.\nWhereas if we had or:\na = 3\nb = 4\nif (a &lt; 10) &lt;b&gt;or&lt;/b&gt; (&lt;b&gt;b &gt; 10&lt;/b&gt;):\n    print('One or both of them is less than 10')\nHere, it’s enough that a is less than 3, and so the print executes even though “b greater than 10” fails.\n\n\n\nNext, let’s look at the NOT operator (written with !):\nx = 5\ny = 6\nz = 7\n\nif (x != y) and (x != z):\n    print('x is different from y and from z')\nHere, read != as “not equals”.\n\n\n1.14 Excercisle: Type up the above in my_boolean3.py, then change z to be 6 (same as y). What do you observe?\nOne can combine any number of and’s, for example:\nx = 5\ny = 6\nz = 7\n\nif (x != y) and (x != z) and (y != z):\n    print('x, y, z are all different')\nThe difference between != and not\n\nWe should read != as “not equals” just as we read == as “equals”.\nThere is another operator called not, which applies to Boolean expressions, as we’ll see next.\n\nThe not operator\n\nOne can apply the not operator to groups of clauses using additional parens:\nx = 8\n\nif not ( (x == 5) or (x == 6) ):\n    print('x is neither 5 nor 6')\nHere, not is asking that whatever it applies to be false.\nThus, consider the expression\nif not ((x == 5) or (x == 6)):\nIn this case, x is 8. So, neither of (x == 5) nor (x == 6) is true.\nThus, the whole expression ( (x == 5) or (x ==6) ) is false.\nWhich means not ( (x == 5) or (x ==6) ) evaluates to true.\nTherefore, the print executes.\n\n\n\n1.15 Excercisle: Suppose integer variables a,b,c,d,e have values a=1, b=1, c=3, d=4, e=5. Consider the following three expressions:\n( (a &lt;= b) and (c+d &gt; e) and (d &gt; 1) )\n\n( (a &gt; c) or ( (c+1 &lt; e) and (c-b &gt; a) ) )\n\nnot ( (b == d-c) and (a &gt; b) or (c &lt; d) )\nTry to evaluate each expression by hand. Then, in my_boolean4.py, write up each of these in an if-statement to see if the result matches with your hand-evaluation.\n\n\n1.16 Excercisle: In my_boolean5.py, write a program that begins with\na = -3\nb = -4\nand uses conditionals to print out the absolute difference between the two numbers. In the above case, the difference is 1. In the case of a=3, b=4, the difference is also 1. When a=-3, b=4, the difference is 7.\n\n\n1.17 Video:&gt;"
+  },
+  {
+    "objectID": "units/unit1/modules/module1.html#conditionals-and-loops",
+    "href": "units/unit1/modules/module1.html#conditionals-and-loops",
+    "title": "Module 1: Conditionals",
+    "section": "1.5 Conditionals and loops",
+    "text": "1.5 Conditionals and loops\nLet’s write a program to loop through integers and print only the even numbers:\nn = 10\nfor i in range(1, n+1):\n    if i % 2 == 0:\n        print(i, 'is even')\n\n1.18 Excercisle: In your module pdf, trace through the iterations in the above program. Then, in my_oddeven.py, modify the above program so that for every number between n and 1, going backwards, the program prints whether it’s even or odd, as in:\n10 is even\n9 is odd\n8 is even\n7 is odd\n6 is even\n5 is odd\n4 is even\n3 is odd\n2 is even\n1 is odd"
+  },
+  {
+    "objectID": "units/unit1/modules/module1.html#conditionals-and-lists",
+    "href": "units/unit1/modules/module1.html#conditionals-and-lists",
+    "title": "Module 1: Conditionals",
+    "section": "1.6 Conditionals and lists",
+    "text": "1.6 Conditionals and lists\nSuppose we have a list of numbers, representing daily profits (sometimes negative, sometimes positive) and we only want to add up the positive numbers:\nearnings = [-5, 2, 3, -9, 12, 4, -30]\ntotal = 0\nfor k in earnings:\n    if k &gt;= 0:\n        total += k\n\nprint('Total profit =', total)\n\n1.20 Excercisle: Trace through the values of total and k in your module pdf.\n\n\n1.21 Excercisle: Given a list like\nA = [-5, 2, 4, -9, 12, 13, -30, -21, -20]\nwe see that 12,13 and -21,-20 are pairs of consecutive numbers. Write a program called my_consecutive.py, with loop and a conditional to identify such consecutive pairs and print them. For the above list, the output should be:\nConsecutive pair found: 12 13\nConsecutive pair found: -21 -20\nNext, let’s write a program that asks the user to enter a number that we then check is in a list of numbers:\n# The list of numbers:\nA = [-5, 2, 4, -9, 12, 13, -30]\n\n# Receive what the user types in (as a string):\nuser_str = input('Enter an integer: ')\n\n# Convert string to integer:\nk = int(user_str)\n\n# Check whether in the list:\nif k in A:\n    print(k,'is in the list')\nelse:\n    print(k,'is not in the list')\n\n\n\n\n\n\nNote\n\n\n\nThe in operator checks member in the list:\nif k in A:\n\n\n\n\n1.23 Excercisle: Suppose you are given two lists like\nA = [-5, 2, 4, -9, 12, 13, -30, -21, -20]\nB = [2, -9, 11, 16, 13]\nNotice that some elements of A (like 2) also exist in B.In my_twolist.py, use the list membership idea to print those elements of A that are also in B. For the above example, the output should be:\n2 in A also found in B\n-9 in A also found in B\n13 in A also found in B"
+  },
+  {
+    "objectID": "units/unit1/modules/module1.html#more-examples-with-lists",
+    "href": "units/unit1/modules/module1.html#more-examples-with-lists",
+    "title": "Module 1: Conditionals",
+    "section": "1.7 More examples with lists",
+    "text": "1.7 More examples with lists\nConsider the following program that aims to find duplicates in a list:\nA = [2, 9, 2, 6, 4, 3, 3, 2]\nfor k in A:\n    if k in A:\n        print('Duplicate found:', k)\nIn the list, we can see that 2 occurs thrice, and 3 occurs twice. Both should be listed as duplicates. Is this the case?\n\n1.25 Excercisle: Trace through the iterations in the above program and explain why it does not work.\nNow consider this variation:\nA = [2, 9, 2, 6, 4, 3, 3, 2]\nfor i in range(len(A)-1):\n    for j in range(i+1, len(A)):\n        if A[i] == A[j]:\n            print('Duplicate found:', A[i])\n\n\n1.26 Excercisle: Trace through the iterations in the above program and explain the output. Why does the inner loop start with i+1?"
+  },
+  {
+    "objectID": "units/unit1/modules/module1.html#some-stats-via-programming",
+    "href": "units/unit1/modules/module1.html#some-stats-via-programming",
+    "title": "Module 1: Conditionals",
+    "section": "1.8 Some stats via programming",
+    "text": "1.8 Some stats via programming\nLet’s now apply our practice with conditionals to solve some problems in probability and statistics.\nFor example: Suppose I toss a coin 4 times and observe the face that’s up. What is the probability that I get all “tails” (not one toss shows “heads”).\nLet’s do this in steps.\nFirst, let’s write a program to toss a coin 4 times\nimport random\n\ncoin = ['heads', 'tails']\nfor i in range(4):\n    toss = random.choice(coin)\n    print(toss)\n\n1.28 Excercisle: Type up the above in my_cointosses.py and run it a few times to see what you get.\n\n\n\n\n\n\nNote\n\n\n\n\nWe have made a list of strings:\ncoin = ['heads', 'tails']\nPython has a useful way to randomly select a member of a list:\ntoss = random.choice(coin)\nAlternatively, we could have written:\ntoss = random.choice(['heads','tails'])\nand avoided defining coin.\n\n\n\nNext, instead of printing the results, let’s count the number of heads observed:\nimport random\n\ncount = 0\nfor i in range(4):\n    toss = random.choice(['heads', 'tails'])\n    if toss == 'heads':\n        count = count + 1\n\nprint('Number of heads', count)\n\n\n1.29 Excercisle: Type up the above in my_cointosses2.py and run it a few times to see what you get.\n\n\n\n\n\n\nNote\n\n\n\nObserve how the string that’s randomly selected from the list is compared against ‘heads’:\nif toss == 'heads':\n    count = count + 1\n\n\nNext, what we need to do is repeat the 4-coin toss many times:\n\nSuppose we call 4-coin tosses a single trial.\nClearly, if we ran a single trial and obtained 1 heads (count=1) then, could we conclude that the probability of getting all-4-tails is zero?\nWhat we need to do is run a large number of trials and record in how many trials we get a run of 4-tails.\nWe’ll use the term “success” to identify a trial in which we get all-4-tails.\nLet’s examine the code:\n\nimport random\n\ntrials = 10\nsuccesses = 0\nfor i in range(trials):\n    # Count number of heads in 4 tosses:\n    count = 0\n    for i in range(4):\n        toss = random.choice(['heads', 'tails'])\n        if toss == 'heads':\n            count = count + 1\n\n    # If the count is zero, that's a success\n    if count == 0:\n        successes += 1\n\n# Ratio of successes to trials:\nprobability = successes / trials\nprint('probability =', probability)\n\n\n1.30 Excercisle: Type up the above in my_cointosses3.py and run it a few times to see what you get. Then increase the number of trials to 100000 and see. The theoretical answer is 0.0625 (approximately 6% chance there’s no heads in 4 tosses).\n\n\n1.31 Excercisle: In my_cointosses4.py, write a program to run a large number of trials of the following experiment: toss a coin 10 times and record a success if you get an equal number of heads and tails.\nNow let’s solve a problem with that other favorite manner of generating chance: dice\nWe’ll roll two dice and add the numbers face up. We want to ask: what are the chances we get 7 (when added up)?\nHere’s the program:\nimport random\n\npossible_outcomes = [1,2,3,4,5,6]\ntrials = 100000\nsuccesses = 0\nfor i in range(trials):\n    roll1 = random.choice(possible_outcomes)\n    roll2 = random.choice(possible_outcomes)\n    if roll1 + roll2 == 7:\n        successes += 1\n\nprobability = successes / trials\nprint('probability =', probability)\n\n\n1.33 Excercisle: Type up the above in my_dice.py and see what you get, reporting in your module pdf. Is there a number other than 7 for which the probability is higher?\nLet’s also look at how one can get Python to randomly generate real numbers, for example:\nimport random\n\ntrials = 100\ntotal = 0\n\nfor i in range(trials):\n    x = random.uniform(5, 10)\n    print(x)\n    total += x\n\nprint('mean =', total/trials)\n\n\n\n\n\n\nNote\n\n\n\n\nBy using\nx = random.uniform(5, 10)\nwe can generate a random real number between 5 and 10.\nIn the above program we are generating many such numbers and calculating their average.\n\n\n\n\n\n1.34 Excercisle: Type up the above in my_uniform.py, then increase the number of trials, and see what you get as the average, reporting in your module pdf. What is the average when you generate numbers between 25 and 30 and how does that compare with the average of the numbers 25 and 30? Explain why this should make sense.\nBefore you head off to Vegas with your Python programs, let’s point out:\n\nYou can use programming to explore ideas in probability and statistics, and solve real problems as well.\nIt is an exciting way to learn stats that we will have more to say about later."
+  },
+  {
+    "objectID": "units/unit1/modules/module1.html#algorithmic-art",
+    "href": "units/unit1/modules/module1.html#algorithmic-art",
+    "title": "Module 1: Conditionals",
+    "section": "1.9 Algorithmic art",
+    "text": "1.9 Algorithmic art\nLet’s now use what we’ve learned to explore the notion of how computers can be programmed to generate abstract art.\nIn our first example, we’ll draw lines from one border of a square to another: \nLet’s describe the main idea via some pseudocode:\n\nIn a loop we’ll generate:\nSet up an initial x1,y1 and x2,y2\nfor i in ...\n    Pick a random color\n    Draw a line from x1,y1, y2,y2\n    Make the current endpoint the start of the next line:\n    x1 = x2\n    y1 = y2\n    Pick a random border\n    Now pick a new random point on the next border\nWhen we pick a border, we’ll need to figure out the coordinates.\n\n\n1.35 Excercisle: Download conditional_art.py and drawtool.py. Try it out and then examine the code to confirm that it follows the pseudocode. Try different values of n. Can you change the choices of randomly chosen colors to improve the result? Does it look good with just two colors? Next, starting with Kandinsky, find an example of abstract art that you think might be considered an analogue in the history of art. Include a screenshot of your improved art, and the historical painting in your module pdf.\nNext, we’ll explore an interesting question:\n\nThink of random art at one end of a spectrum.\nAnd highly-structured geometry at the other end, generated by an algorithm.\nThe question: can we adjust a “knob” that let’s us generate a mix? And is that more aesthetic?\n\n\n\n1.36 Excercisle: Download conditional_art2.py. Try out different values (between 0 and 1) of the structure parameter, for example 0.9 and 0.1. Is there a value that provides an aesthetic mix? Try different n. Make changes to the code and submit a screenshot of the result."
+  },
+  {
+    "objectID": "units/unit1/modules/module1.html#when-things-go-wrong",
+    "href": "units/unit1/modules/module1.html#when-things-go-wrong",
+    "title": "Module 1: Conditionals",
+    "section": "1.10 When things go wrong",
+    "text": "1.10 When things go wrong\nIn each of the exercises below, first try to identify the error just by reading. Then type up the program to confirm, and after that, fix the error.\n\n1.37 Excercisle:\nx = 5\ny = 6\nif x &lt; y\n    print('x is less than y')\nIdentify and fix the error in my_error1.py.\n\n\n1.38 Excercisle:\nx = 5\ny = 6\nif x !&lt; y:\n    print('x is not less than y')\nIdentify and fix the error in my_error2.py.\n\n\n1.40 Excercisle:\na = 2.5\n\n# See whether a lies between 0 to 1, or 1 to 2, \n# or something else\nif (a &gt; 0) and (a &lt; 1):\n    print('between 0 and 1')\nelse if (a &gt; 1) and (a &lt; 2):\n    print('between 1 and 2')\nelse:\n    print('something else')\nIdentify and fix the error in my_error4.py.\n Previous Module: Module 0 Next Module: Module 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CS 1012: Introduction to Programming with Python",
+    "section": "",
+    "text": "Welcome to the section of CS-1012!\n\n\n\n\n\n\nCource Content\n\n\n\n\n\nThe course material is sourced from Prof. Simha’s webpage: https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/\n\n\n\nBecause this is an course, it will operate differently than a regular course. In particular:\n\nEven though the course is, we will meet three times: once at the beginning to get you going, once in the middle to check in, and once at the end for the in-class final exam.\nMost of our communication to you will be by email or by announcements in Blackboard.\nWhen you need to communicate with us, please follow the specific instructions outlined in Blackboard.\nWhen you submit work, please follow the specific instructions outlined in Blackboard for submitting work.\nThe coursework page outlines the schedule. It is YOUR job to keep to the schedule and submit work accordingly.\nAs you’ll see you’ll be accompanied by four students who will be doing the course with you. These four have no background in computer science or engineering whatsoever, demonstrating that anyone can learn CS with sufficient enthusiasm.\nStart by reading the About section. Then, await an email that will:\n\nSchedule the first meeting.\nDescribe the first homework to submit."
+  },
+  {
+    "objectID": "anaconda-mac-old.html",
+    "href": "anaconda-mac-old.html",
+    "title": "Anaconda Installation Guide for macOS",
+    "section": "",
+    "text": "This guide will walk you through the process of installing Anaconda, a popular Python distribution, on your macOS computer. Anaconda provides a convenient way to manage Python packages and environments for data science and scientific computing."
+  },
+  {
+    "objectID": "anaconda-mac-old.html#introduction",
+    "href": "anaconda-mac-old.html#introduction",
+    "title": "Anaconda Installation Guide for macOS",
+    "section": "",
+    "text": "This guide will walk you through the process of installing Anaconda, a popular Python distribution, on your macOS computer. Anaconda provides a convenient way to manage Python packages and environments for data science and scientific computing."
+  },
+  {
+    "objectID": "anaconda-mac-old.html#prerequisites",
+    "href": "anaconda-mac-old.html#prerequisites",
+    "title": "Anaconda Installation Guide for macOS",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nBefore you begin, ensure you have the following:\n\nA macOS computer.\nAn internet connection.\nSufficient disk space for the installation."
+  },
+  {
+    "objectID": "anaconda-mac-old.html#installation-steps",
+    "href": "anaconda-mac-old.html#installation-steps",
+    "title": "Anaconda Installation Guide for macOS",
+    "section": "Installation Steps",
+    "text": "Installation Steps\n\n1. Download Anaconda\nVisit the Anaconda download page at https://www.anaconda.com/download.\n\n\n2. Choose the macOS Installer\nClick on the “Download” button under the macOS section depending on you System-on-chip (Intel/M1/M2) to download the Anaconda installer for macOS.\n\n\n\nDownload Anaconda\n\n\n\n\n3. Run the Installer\n\nLocate the downloaded file (usually in your “Downloads” folder).\nDouble-click the Anaconda disk image (.dmg) file to open it and click on “Allow” when prompted.\n\n\n\n\nRun Installer\n\n\n\n\n\nAllow Installation\n\n\n\n\n4. Follow the Installer Wizard\n\nFollow the on-screen instructions to begin the installation.\nRead and accept the license agreement when prompted.\n\n\n\n\nRead Me\n\n\n\n\n\nLicense Agreement\n\n\n\n\n5. Install Anaconda\nClick the “Install” button to begin the installation process. This may take a few minutes.\n\n\n\nInstall\n\n\n\n\n6. Complete the Installation\nOnce the installation is complete, you will see a confirmation message. Click the “Continue” button and finally close the installation wizard by clicking on the “Close” button.\n\n\n\nInstallation Complete\n\n\n\n\n\nClose Installation Wizard\n\n\n\n\n7. Move the Installer file to Trash (Optional)\n\n\n\nMove the Installer to Trash\n\n\n\n\n8. If prompted to update the navigator, select “No, don’t show again”\n\n\n\nDon’t Update\n\n\n\n\n9. You’re NOT REQUIRED to Log in/Sign up for Anaconda Cloud, close the prompt by clicking the “X” button\n\n\n\nDon’t Log in/Sign up"
+  },
+  {
+    "objectID": "anaconda-mac-old.html#conclusion",
+    "href": "anaconda-mac-old.html#conclusion",
+    "title": "Anaconda Installation Guide for macOS",
+    "section": "Conclusion",
+    "text": "Conclusion\nCongratulations! You’ve successfully installed Anaconda and Spyder on your macOS computer. You can now use Anaconda to create Python environments, manage packages, and work on data science projects.\nFor more information on using Anaconda, refer to the official documentation at https://docs.anaconda.com/.\nIf you encounter any issues or have questions, don’t hesitate to seek help from the Anaconda community or consult the documentation for troubleshooting tips."
+  },
+  {
+    "objectID": "instructors.html",
+    "href": "instructors.html",
+    "title": "Instruction Team",
+    "section": "",
+    "text": "Home » Instruction Team"
+  },
+  {
+    "objectID": "instructors.html#dr.-kartik-bulusu-instructor",
+    "href": "instructors.html#dr.-kartik-bulusu-instructor",
+    "title": "Instruction Team",
+    "section": "Dr. Kartik Bulusu (Instructor)",
+    "text": "Dr. Kartik Bulusu (Instructor)\nDr. Kartik V. Bulusu is an Associate Professor of Practice in the Department of Computer Science (CS) and Associate Research Professor in the Department of Mechanical and Aerospace Engineering (MAE).\nHis research work entails human health and sustainable energy with a focus on biofluid mechanics, polymer rheology, low-cost energy technologies, and applications of wavelet transforms.\nHe is also working on AI-on-the-edge applications using low-power devices. In his free time, he loves to tinker with electronics and design low-cost experiments for research and education.\nDr. Bulusu has been developing low-cost ejector technologies refrigeration in disaster-prone regions and humanitarian needs.\nOffice Hours: On-Demand (Please reach out via email)\nLocation: Blackboard Collaborate Course Room\nCampus Address: SEH 3640\nEmail: bulusu@gwu.edu"
+  },
+  {
+    "objectID": "instructors.html#gtas",
+    "href": "instructors.html#gtas",
+    "title": "Instruction Team",
+    "section": "GTAs",
+    "text": "GTAs"
+  },
+  {
+    "objectID": "instructors.html#las",
+    "href": "instructors.html#las",
+    "title": "Instruction Team",
+    "section": "LAs",
+    "text": "LAs"
+  },
+  {
+    "objectID": "instructors.html#grader",
+    "href": "instructors.html#grader",
+    "title": "Instruction Team",
+    "section": "Grader",
+    "text": "Grader"
+  },
+  {
+    "objectID": "course-policies.html",
+    "href": "course-policies.html",
+    "title": "**CSCI1012**",
+    "section": "",
+    "text": "Home » Instruction Team"
+  },
+  {
+    "objectID": "course-policies.html#assignements-grades",
+    "href": "course-policies.html#assignements-grades",
+    "title": "**CSCI1012**",
+    "section": "Assignements & Grades",
+    "text": "Assignements & Grades\n\nAssessments\n\n15 Modules\n5 Problem Sets\n13 Quizzes (given in lab)\nExamination\n\n\n\nGrading\n\nExamination: 30%\nProblem Sets: 25%\nModules: 15%\nQuizzes: 20%\nProfessionalism: 10%\n\nYou must pass the examination with a score greater than 60% to pass the course.\n\n\n\n\n\n\nNote\n\n\n\n\nThe lowest four modules are dropped.\nThe lowest problem set is dropped.\nThe lowest four quizzes are dropped. (Low grades associated associated with academic integrity violations will not be dropped.)\n\n\n\nWhile we use blackboard.com for assignment submissions, do not rely on blackboard.com to calculate your grades. Use the grading criteria outlined in this syllabus.\n\n\nGrading Scale\nThe following grading scale will be applied at the end of the semester to calculate letter grades, grades are “rounded up” to the nearest integer:\n\n90-100: A\n85-89: A-\n80-84: B+\n75-79: B\n70-74: B-\n65-69: C+\n60-64: C\n55-59: C-\n50-54: D\n0-49: F\n\n\n\nTime Commitement\nThere is one 75-minute class meeting per week and one 75-minute lab per week. Students are expected to spend at least 5 hours per week independently learning outside of class meetings for this course."
+  },
+  {
+    "objectID": "course-policies.html#additional-important-information-about-grading-policy",
+    "href": "course-policies.html#additional-important-information-about-grading-policy",
+    "title": "**CSCI1012**",
+    "section": "Additional important information about grading policy:",
+    "text": "Additional important information about grading policy:\n\nLate submissions on Homework and projects will not be acceptable.\nAny questions or follow up about the assignments will be done only within 2 weeks of submission deadline.\n\nFollowing the week after the submission deadline no further discussion on the assignment will be done."
+  },
+  {
+    "objectID": "course-policies.html#classroom-policies-and-student-responsibilities",
+    "href": "course-policies.html#classroom-policies-and-student-responsibilities",
+    "title": "**CSCI1012**",
+    "section": "Classroom Policies and Student responsibilities",
+    "text": "Classroom Policies and Student responsibilities\n\n\n\nThis course requires a combination of individual and group work entailing hands-on activities and frequent interactions with the instructional team. The lectures, labs, and office hours are available for interacting with your group and the instruction team. We ask that all students adhere to the course policies throughout the duration of the semester.\n\n\n\n\n\n\n\n\n\n\nclassroom by Chattapat from Noun Project\n\n\n\n\n\n\n\n\n\nBe respectful: Listen to the instructors. Keep an open mind to the course material presented. Limit the use of personal devices. Be aware that you are working in a group. Be mindful of your colleagues.\nBe responsible: Arrive on time. Attendance is the first pathway toward success. Submit the course deliverables on time. Help your team members.\nBe a communicator: Observe, Ask questions and Try out the materials presented during the course. Communicate with your team effectively and politely.\nBe a problem solver: Explore options to complete hands-on tasks. Make your own notes. Stay positive about the course outcomes."
+  },
+  {
+    "objectID": "course-policies.html#justice-equity-diversity-inclusion-jedi-statement",
+    "href": "course-policies.html#justice-equity-diversity-inclusion-jedi-statement",
+    "title": "**CSCI1012**",
+    "section": "Justice, Equity, Diversity, Inclusion (JEDI) statement",
+    "text": "Justice, Equity, Diversity, Inclusion (JEDI) statement\n\n\n\nThe instruction team intends to students from all diverse backgrounds and perspectives by this course, The diversity that the students bring to this class be viewed as a resource, strength, and benefit. The course materials and activities presented in this course are intended to be respectful of: age, race, ethnicity, country of origin, language, religion, spiritual practice, sexual orientation, gender identity or expression, introversion/extroversion personality dimensions, and socioeconomic and mental/physical status.\n\n\n\n\n\n\n\n\n\n\nemployee diversity by Bold Yellow from Noun Project\n\n\n\n\n\n\n\n\nPlease let the main instructor know ways to improve the effectiveness of the course. See JEDI resources for student resources."
+  },
+  {
+    "objectID": "course-policies.html#use-of-chatgpt-or-any-other-ai-based-models-for-in-class-work-and-deliverables",
+    "href": "course-policies.html#use-of-chatgpt-or-any-other-ai-based-models-for-in-class-work-and-deliverables",
+    "title": "**CSCI1012**",
+    "section": "Use of chatGPT or any other AI-based models for in-class work and deliverables",
+    "text": "Use of chatGPT or any other AI-based models for in-class work and deliverables\nThe use chatGPT or any other genreative AI-based tool is NOT PERMITTED. Furthermore, the ethical issues regarding the use of chatGPT or any other AI-based models will be discussed in-class and course policy will be ammended according to the findings. The findings of any such discussions will be summarized and placed in-context of the Academic Integrity Code\nResources that will guide the course policy changes during the course:\n\nchatGPT Course policy formulation\nchatGPT chatbot\nHow ChatGPT Could Transform Higher Education"
+  },
+  {
+    "objectID": "course-policies.html#university-policies",
+    "href": "course-policies.html#university-policies",
+    "title": "**CSCI1012**",
+    "section": "University Policies",
+    "text": "University Policies\n\nUse of Electronic Course Materials and Class Recordings\nStudents are encouraged to use electronic course materials, including recorded class sessions (if any), for private personal use in connection with their academic program of study. Electronic course materials and recorded class sessions should not be shared or used for non-course related purposes unless express permission has been granted by the instructor. Students who impermissibly share any electronic course materials are subject to discipline under the Student Code of Conduct. Please contact the instructor if you have questions regarding what constitutes permissible or impermissible use of electronic course materials and/or recorded class sessions. Please contact Disability Support Services if you have questions or need assistance in accessing electronic course materials.\n\n\nUniversity Policy on Religious Holidays\n\nStudents should notify faculty during the first week of the semester of their intention to be absent from class on their day(s) of religious observance.\nFaculty should extend to these students the courtesy of absence without penalty on such occasions, including permission to make up examinations.\nFaculty who intend to observe a religious holiday should arrange at the beginning of the semester to reschedule missed classes or to make other provisions for their course‐related activities. For details and policy, see “Religious Holidays” at https://provost.gwu.edu/policies-procedures-and-guidelines"
+  },
+  {
+    "objectID": "course-policies.html#support-for-students-outside-the-classroom",
+    "href": "course-policies.html#support-for-students-outside-the-classroom",
+    "title": "**CSCI1012**",
+    "section": "Support for Students Outside the Classroom",
+    "text": "Support for Students Outside the Classroom\n\nDisability Support Services (DSS):\nTelephone: 202-994-8250\nAny student who may need an accommodation based on the potential impact of a disability should contact the Disability Support Services office in the Rome Hall, Suite 102, to establish eligibility and to coordinate reasonable accommodations. For additional information please refer to: https://disabilitysupport.gwu.edu/\n\n\nCounseling & Psychological Services:\nTelephone: 202-994-5300\nThe University’s Mental Health Services offers 24/7 assistance and referral to address students’ personal, social, career, and study skills problems. Services for students include: crisis and emergency mental health consultations confidential assessment, counseling services (individual and small group), and referrals. https://healthcenter.gwu.edu/counseling-and-psychological-services\n\n\nCampus safety and security:\nThe following links can be accessed to learn more about the Safety and Security at the George Washington University\n\nFor help in an emergency, call 911 or GW Police 202-994-6111 (GWPD)\nAdditional resources for student safety and security can be found at this link: https://studentlife.gwu.edu/safety-and-security"
+  },
+  {
+    "objectID": "course-policies.html#academic-integrity-code",
+    "href": "course-policies.html#academic-integrity-code",
+    "title": "**CSCI1012**",
+    "section": "Academic Integrity Code",
+    "text": "Academic Integrity Code\nContact information: rights@gwu.edu or 202-994-6757.\nAcademic dishonesty is defined as cheating of any kind, including misrepresenting one’s own work, taking credit for the work of others without crediting them and without appropriate authorization, and the fabrication of information. You are not allowed to collaborate on the home works and lab assignments; for programming projects and hardware lab assignments, you can work in teams only if they are designated as team projects (labs). Unless otherwise specified, you cannot search for solutions or code on the web – but you can use any code that is included in the textbook or lecture notes (but please cite them). I will be using a SW tool that checks for program code similarities – any pair of programs or written reports with greater than 10% similarity will be closely examined.\nThe Office of Academic Integrity maintains a permanent record of the violation. More information is available from the Office of Academic Integrity at https://studentconduct.gwu.edu/academic-integrity. The University’s “Guide of Academic Integrity in Online Learning Environments” is available at https://studentconduct.gwu.edu/guide-academic-integrity-online-learning-environments."
+  },
+  {
+    "objectID": "anaconda-windows-old.html",
+    "href": "anaconda-windows-old.html",
+    "title": "Anaconda Installation Guide for Windows",
+    "section": "",
+    "text": "This guide will walk you through the process of installing Anaconda, a popular Python distribution, on your Windows computer. Anaconda provides a convenient way to manage Python packages and environments for data science and scientific computing."
+  },
+  {
+    "objectID": "anaconda-windows-old.html#introduction",
+    "href": "anaconda-windows-old.html#introduction",
+    "title": "Anaconda Installation Guide for Windows",
+    "section": "",
+    "text": "This guide will walk you through the process of installing Anaconda, a popular Python distribution, on your Windows computer. Anaconda provides a convenient way to manage Python packages and environments for data science and scientific computing."
+  },
+  {
+    "objectID": "anaconda-windows-old.html#prerequisites",
+    "href": "anaconda-windows-old.html#prerequisites",
+    "title": "Anaconda Installation Guide for Windows",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nBefore you begin, ensure you have the following:\n\nA Windows computer.\nAn internet connection.\nSufficient disk space for the installation."
+  },
+  {
+    "objectID": "anaconda-windows-old.html#installation-steps",
+    "href": "anaconda-windows-old.html#installation-steps",
+    "title": "Anaconda Installation Guide for Windows",
+    "section": "Installation Steps",
+    "text": "Installation Steps\n\n1. Download Anaconda\nVisit the Anaconda download page at https://www.anaconda.com/download.\n\n\n2. Choose the Windows Installer\nClick on the “Download” button under the Windows section to download the Anaconda installer for Windows.\n\n\n\nDownload Anaconda\n\n\n\n\n3. Run the Installer\n\nLocate the downloaded file (usually in your “Downloads” folder).\nDouble-click the installer executable (.exe) file to run it.\n\n\n\n\nRun Installer\n\n\n\n\n4. Follow the Installer Wizard\n\nFollow the on-screen instructions to begin the installation.\nRead and accept the license agreement when prompted.\n\n\n\n\nRead Me\n\n\n\n\n\nLicense Agreement\n\n\n\nChoose the installation type. It’s recommended to select “Just me” unless you have specific reasons for a different choice.\n\n\n\n\nInstallation Type\n\n\n\nSelect the installation location (the default is usually fine).\n\n\n\n\nInstallation Location\n\n\n\n\n5. Install Anaconda\nClick the “Install” button to begin the installation process. This may take a few minutes.\n\n\n\nInstall\n\n\n\n\n6. Complete the Installation\nOnce the installation is complete, you will see a confirmation message. Click the “Next” button and proceed to finish.\n\n\n\nInstallation Complete\n\n\n\n\n\nClose Installation Wizard\n\n\n\n\n7. If prompted to update the navigator, select “No, don’t show again”\n\n\n\nDon’t Update\n\n\n\n\n8. You’re NOT REQUIRED to Log in/Sign up for Anaconda Cloud, close the prompt by clicking the “x” button\n\n\n\nDon’t Log in/Sign up"
+  },
+  {
+    "objectID": "anaconda-windows-old.html#conclusion",
+    "href": "anaconda-windows-old.html#conclusion",
+    "title": "Anaconda Installation Guide for Windows",
+    "section": "Conclusion",
+    "text": "Conclusion\nCongratulations! You’ve successfully installed Anaconda on your Windows computer. You can now use Anaconda to create Python environments, manage packages, and work on data science projects.\nFor more information on using Anaconda, refer to the official documentation at https://docs.anaconda.com/.\nIf you encounter any issues or have questions, don’t hesitate to seek help from the Anaconda community or consult the documentation for troubleshooting tips."
+  },
+  {
+    "objectID": "editor-old.html",
+    "href": "editor-old.html",
+    "title": "Instructions for typing and running your first program",
+    "section": "",
+    "text": "We will now have you type, run, and save your first computer program.\n\n\n\n\n\n\nNote\n\n\n\n\nPrograms are typed in using your computer’s keyboard, just as you would type in an email or text document.\nAnd just as the “thing you are typing into” is different for email and for text-editing, there is a different “thing” to type programs into.\nThe typing is one part of getting a program. If you just type your program, it will just be sitting there on your computer. But you want to go the next step and run (or, execute, as we say) the program. Typing and not-running is loosely analogous to typing an email but not sending it (the email will just remain in composed-form, but go nowhere) Similarly, typing text into Word doesn’t mean it gets “published”.\nThe “thing” into which you type and run your program is called a code editor or an IDE (Integrated Development Environment, a mouthful).\nWe are going to give you the option of using one of two code editors, Thonny or Spyder. Think of them as apps that help you type and run programs.\n\n\n\nBefore we get to typing in a program, we first (if not already done) need to download and install Python and either Thonny or Spyder.\n\nThe term install means: you download software on your computer and get it to run. This is something you do just once.\nWhen you need to run the software again, you search for it on your computer (since it’s already installed) and merely run it.\nThus, you will perform Steps 1 and 2 just once for this course.\nAnd Steps 3 and 4 repeatedly as you write code.\nAlso, if you start off with one editor and change your mind, you can come back here to install the other editor and learn how to use it.\n\n1. Install Anaconda: Pick between these two options and click through to follow instructions in installing Anaconda.\n\nAnaconda for MacOS Users\nAnaconda for Windows Users\n\nThen come back here and proceed with Step 2.\nIncidentally, you might be asking: what exactly is Anaconda and what does it have to do with Python other than its name?\n\nPython is a programming language. Typically a language alone is not enough to get many useful programming tasks done.\nWe need additional software that’s useful. Anaconda is a bundle that includes Python and this additional software. You install it once on your computer and you can then avail of all kinds of useful things related to Python.\nThe one thing it does not have, sadly, is the Thonny editor, so we’ll show you how to install that.\n\n2. Install a code editor: by selecting ONE of the following options:\n\nOption A: Thonny for Mac users\nOption B: There are no special instructions because Spyder comes bundled with Anaconda.\nOption A: Thonny for Windows users\nOption B: There are no special instructions because Spyder comes bundled with Anaconda.\n\n3. Open a code editor: Choose between\n\nOption A: looking for and opening Thonny for Mac users\nOption B: Using Spyder, looking for, and opening Spyder on a Mac is similar to looking for and opening Thonny.\nOption A: looking for and opening Thonny for Windows users\nOption B: looking for and opening Spyder. Looking for, and opening Spyder on Windows is similar to looking for and opening Thonny.\n\n4. Type and Execute helloworld.py: Choose between:\n\nOption A: Helloworld for Mac users using Thonny\nOption B: Helloworld for Mac users using Spyder\nOption A: Helloworld for Windows users using Thonny\nOption B: Helloworld for Windows users using Spyder\n\n5. Install Matplotlib for Thonny users: What is matplotlib? It’s a plotting package that we’ll use. This comes packaged with Spyder and so, only Thonny users need to download this. Thonny is a nice editor and so Thonny users cheerfully do this additional step in order to use plotting along with Thonny.\n\nMac Users: Install matplotlib for Thonny\nWindows Users: Install matplotlib for Thonny"
+  },
+  {
+    "objectID": "editor-old.html#objectives",
+    "href": "editor-old.html#objectives",
+    "title": "Instructions for typing and running your first program",
+    "section": "",
+    "text": "We will now have you type, run, and save your first computer program.\n\n\n\n\n\n\nNote\n\n\n\n\nPrograms are typed in using your computer’s keyboard, just as you would type in an email or text document.\nAnd just as the “thing you are typing into” is different for email and for text-editing, there is a different “thing” to type programs into.\nThe typing is one part of getting a program. If you just type your program, it will just be sitting there on your computer. But you want to go the next step and run (or, execute, as we say) the program. Typing and not-running is loosely analogous to typing an email but not sending it (the email will just remain in composed-form, but go nowhere) Similarly, typing text into Word doesn’t mean it gets “published”.\nThe “thing” into which you type and run your program is called a code editor or an IDE (Integrated Development Environment, a mouthful).\nWe are going to give you the option of using one of two code editors, Thonny or Spyder. Think of them as apps that help you type and run programs.\n\n\n\nBefore we get to typing in a program, we first (if not already done) need to download and install Python and either Thonny or Spyder.\n\nThe term install means: you download software on your computer and get it to run. This is something you do just once.\nWhen you need to run the software again, you search for it on your computer (since it’s already installed) and merely run it.\nThus, you will perform Steps 1 and 2 just once for this course.\nAnd Steps 3 and 4 repeatedly as you write code.\nAlso, if you start off with one editor and change your mind, you can come back here to install the other editor and learn how to use it.\n\n1. Install Anaconda: Pick between these two options and click through to follow instructions in installing Anaconda.\n\nAnaconda for MacOS Users\nAnaconda for Windows Users\n\nThen come back here and proceed with Step 2.\nIncidentally, you might be asking: what exactly is Anaconda and what does it have to do with Python other than its name?\n\nPython is a programming language. Typically a language alone is not enough to get many useful programming tasks done.\nWe need additional software that’s useful. Anaconda is a bundle that includes Python and this additional software. You install it once on your computer and you can then avail of all kinds of useful things related to Python.\nThe one thing it does not have, sadly, is the Thonny editor, so we’ll show you how to install that.\n\n2. Install a code editor: by selecting ONE of the following options:\n\nOption A: Thonny for Mac users\nOption B: There are no special instructions because Spyder comes bundled with Anaconda.\nOption A: Thonny for Windows users\nOption B: There are no special instructions because Spyder comes bundled with Anaconda.\n\n3. Open a code editor: Choose between\n\nOption A: looking for and opening Thonny for Mac users\nOption B: Using Spyder, looking for, and opening Spyder on a Mac is similar to looking for and opening Thonny.\nOption A: looking for and opening Thonny for Windows users\nOption B: looking for and opening Spyder. Looking for, and opening Spyder on Windows is similar to looking for and opening Thonny.\n\n4. Type and Execute helloworld.py: Choose between:\n\nOption A: Helloworld for Mac users using Thonny\nOption B: Helloworld for Mac users using Spyder\nOption A: Helloworld for Windows users using Thonny\nOption B: Helloworld for Windows users using Spyder\n\n5. Install Matplotlib for Thonny users: What is matplotlib? It’s a plotting package that we’ll use. This comes packaged with Spyder and so, only Thonny users need to download this. Thonny is a nice editor and so Thonny users cheerfully do this additional step in order to use plotting along with Thonny.\n\nMac Users: Install matplotlib for Thonny\nWindows Users: Install matplotlib for Thonny"
+  },
+  {
+    "objectID": "editor-old.html#macos-users",
+    "href": "editor-old.html#macos-users",
+    "title": "Instructions for typing and running your first program",
+    "section": "MacOS Users",
+    "text": "MacOS Users\n\nStep 1: Installing Anaconda\nFollow this guide to learn how to install Anaconda\n\n\n\n\n\nStep 2: Option A, Installing Thonny\nInstalling and Opening Thonny\n\nNow click on the Link to Thonny and install it on your laptop.\n\n\n\n\n\nStep 3: Option A, Opening Thonny\nThese screenshots explain how to open Thonny:\n\nStep 3.A.1 \nStep 3.A.2 \nStep 3.A.3 \nStep 3.A.4: You now have opened Thonny \n\n\n\n\n\n\n\nNote\n\n\n\n\nWhen you open Thonny you aren’t opening program files (yet). It’s similar to opening Word without naming a text file to work on.\nYour program files are going to be in specific folders. You need to look for them, and when you create new ones, save them in specific folders.\n\n\n\n\n\n\n\n\nStep 4: Option A, Helloworld in Thonny\n\n\n\n\n\n\nStep 4: Option B, Helloworld in Spyder\n\n\n\n\n\n\nStep 5: Installing Matplotlib (or any package) for Thonny Users\nHow to add a package (like Matplotlib):\n\nTo add a package (which will only be necessary for those using Thonny), first, open Thonny, and go to “Tools”. From there, click on “Manage Packages”. \nThen, you will see a window like what is shown in the image above. Search for the “package” you need to install or remove. In this case, we have used the example of “Matplotlib”, which you will need to have installed for some exercises. Once you’ve typed the name of the package, click “Find package from PyPI” or press the enter/return key. \nTo add the package, click the install button. You will then see a small popup while the package is installed."
+  },
+  {
+    "objectID": "editor-old.html#windows-users",
+    "href": "editor-old.html#windows-users",
+    "title": "Instructions for typing and running your first program",
+    "section": "Windows Users",
+    "text": "Windows Users\n\nStep 1: Installing Anaconda\nFollow this guide to learn how to install Anaconda\n\n\n\n\n\nStep 2: Option A, Installing Thonny\nInstalling and Opening Thonny\n\nNow click on the Link to Thonny and install it on your laptop.\n\n\n\n\n\nStep 3: Option A, Opening Thonny\nThe following screenshots explain how to open Thonny:\n\nStep 3.A.1 \nStep 3.A.2 \nStep 3.A.3 \n\n\n\n\n\n\n\nNote\n\n\n\n\nWhen you open Thonny you aren’t opening program files (yet). It’s similar to opening Word without naming a text file to work on.\nYour program files are going to be in specific folders. You need to look for them, and when you create new ones, save them in specific folders.\n\n\n\n\n\n\n\n\nStep 4: Option A, Helloworld in Thonny\n\n\n\n\n\n\nStep 4: Option B: Helloworld in Spyder\n\n\n\n\n\n\nStep 5: Installing Matplotlib\nHow to add a package (like Matplotlib):\n\nTo add a package (which will only be necessary for those using Thonny), first, open Thonny, and go to “Tools”. From there, click on “Manage Packages”. \nThen, you will see a window like what is shown in the image above. Search for the “package” you need to install or remove. In this case, we have used the example of “Matplotlib”, which you will need to have installed for some exercises. Once you’ve typed the name of the package, click “Find package from PyPI” or press the enter/return key. \nTo add the package, click the install button. You will then see a small popup while the package is installed."
+  },
+  {
+    "objectID": "units/useful.html",
+    "href": "units/useful.html",
+    "title": "Useful tools",
+    "section": "",
+    "text": "If and when needed.\n\n\n1. drawtool.py\n\n\n2. wordtool.py and wordsWithPOS.txt\n\n\n3. datatool.py"
   },
   {
     "objectID": "units/unit1/modules/module0.html",
@@ -441,244 +784,6 @@
     "text": "0.12 Meta\nThis is the next installment in our series of stepping back from it all and reflecting, with the hope of helping you progress as a learner.\nThis time our topic is math and math anxiety.\nLet’s start by acknowledging a few things:\n\nStudents do in fact have bad experiences learning math.\n\nFor example, if you were unlucky to be ill during the critical period in 4th grade when fractions are covered, that could become a gap that precludes other concepts.\nOr if algebra did not go well, everything that follows in math can lead to cascading difficulties in learning.\n\nStudents learn math differently and their “window of opportunity” may not be aligned with where their school is.\n\nThus, for many students, a certain age is not optimal for academic intensity, or issues at home prevent full engagement.\n\nThere are hidden cultural dispositions that can get in the way.\n\nThe most pernicious by far is the notion that some people just aren’t cut out for it. Or you have to have the “math gene”.\n\nMuch of K-12 math is, admittedly, a bit dull.\n\nAt the same time, there’s good news:\n\nMath (and programming) is like any other skill: everyone can acquire it with sufficient practice, but not everyone can reach the level of “world expert”.\nThis is true of just about any mental skill: facility with language, playing a musical instrument,\nAnd, most importantly, anyone can acquire it at any age.\n\nCan you tell someone it’s too late to learn, say, French?\n\n\nIt all depends on shedding the “I’m not cut out for it” disposition and committing to practice.\nThere is world of elegance and beauty in math after crossing a threshold of skill level, just as with a musical instrument.\n\nLet’s say a bit more about practice:\n\nYou surely know a musical instrument cannot be learned merely by watching videos or reading about it.\nProficiency requires regular and intense practice.\nThe best part of practice is that, even though progress is not instantaneous, you can see results after a while.\nAnother advantage: the nature of practice is that many people give up. So, if you don’t, you are ahead of those that do.\n\nFinally, the connection between programming and math:\n\nIt is true that most people who program do not use math at all. Just ask a web developer.\nBut if you add a bit of math, you can do many interesting things in programming, as anyone who deals with data will tell you.\nSome aspects of computer science that have a strong mathematical underpinning are just … a lot of fun!\n\n Next Module: Module 1"
   },
   {
-    "objectID": "units/useful.html",
-    "href": "units/useful.html",
-    "title": "Useful tools",
-    "section": "",
-    "text": "If and when needed.\n\n\n1. drawtool.py\n\n\n2. wordtool.py and wordsWithPOS.txt\n\n\n3. datatool.py"
-  },
-  {
-    "objectID": "instructors.html",
-    "href": "instructors.html",
-    "title": "Instruction Team",
-    "section": "",
-    "text": "Home » Instruction Team"
-  },
-  {
-    "objectID": "instructors.html#dr.-kartik-bulusu-instructor",
-    "href": "instructors.html#dr.-kartik-bulusu-instructor",
-    "title": "Instruction Team",
-    "section": "Dr. Kartik Bulusu (Instructor)",
-    "text": "Dr. Kartik Bulusu (Instructor)\nDr. Kartik V. Bulusu is an Associate Professor of Practice in the Department of Computer Science (CS) and Associate Research Professor in the Department of Mechanical and Aerospace Engineering (MAE).\nHis research work entails human health and sustainable energy with a focus on biofluid mechanics, polymer rheology, low-cost energy technologies, and applications of wavelet transforms.\nHe is also working on AI-on-the-edge applications using low-power devices. In his free time, he loves to tinker with electronics and design low-cost experiments for research and education.\nDr. Bulusu has been developing low-cost ejector technologies refrigeration in disaster-prone regions and humanitarian needs.\nOffice Hours: On-Demand (Please reach out via email)\nLocation: Blackboard Collaborate Course Room\nCampus Address: SEH 3640\nEmail: bulusu@gwu.edu"
-  },
-  {
-    "objectID": "instructors.html#gtas",
-    "href": "instructors.html#gtas",
-    "title": "Instruction Team",
-    "section": "GTAs",
-    "text": "GTAs"
-  },
-  {
-    "objectID": "instructors.html#las",
-    "href": "instructors.html#las",
-    "title": "Instruction Team",
-    "section": "LAs",
-    "text": "LAs"
-  },
-  {
-    "objectID": "instructors.html#grader",
-    "href": "instructors.html#grader",
-    "title": "Instruction Team",
-    "section": "Grader",
-    "text": "Grader"
-  },
-  {
-    "objectID": "course-policies.html",
-    "href": "course-policies.html",
-    "title": "**CSCI1012**",
-    "section": "",
-    "text": "Home » Instruction Team"
-  },
-  {
-    "objectID": "course-policies.html#assignements-grades",
-    "href": "course-policies.html#assignements-grades",
-    "title": "**CSCI1012**",
-    "section": "Assignements & Grades",
-    "text": "Assignements & Grades\n\nAssessments\n\n15 Modules\n5 Problem Sets\n13 Quizzes (given in lab)\nExamination\n\n\n\nGrading\n\nExamination: 30%\nProblem Sets: 25%\nModules: 15%\nQuizzes: 20%\nProfessionalism: 10%\n\nYou must pass the examination with a score greater than 60% to pass the course.\n\n\n\n\n\n\nNote\n\n\n\n\nThe lowest four modules are dropped.\nThe lowest problem set is dropped.\nThe lowest four quizzes are dropped. (Low grades associated associated with academic integrity violations will not be dropped.)\n\n\n\nWhile we use blackboard.com for assignment submissions, do not rely on blackboard.com to calculate your grades. Use the grading criteria outlined in this syllabus.\n\n\nGrading Scale\nThe following grading scale will be applied at the end of the semester to calculate letter grades, grades are “rounded up” to the nearest integer:\n\n90-100: A\n85-89: A-\n80-84: B+\n75-79: B\n70-74: B-\n65-69: C+\n60-64: C\n55-59: C-\n50-54: D\n0-49: F\n\n\n\nTime Commitement\nThere is one 75-minute class meeting per week and one 75-minute lab per week. Students are expected to spend at least 5 hours per week independently learning outside of class meetings for this course."
-  },
-  {
-    "objectID": "course-policies.html#additional-important-information-about-grading-policy",
-    "href": "course-policies.html#additional-important-information-about-grading-policy",
-    "title": "**CSCI1012**",
-    "section": "Additional important information about grading policy:",
-    "text": "Additional important information about grading policy:\n\nLate submissions on Homework and projects will not be acceptable.\nAny questions or follow up about the assignments will be done only within 2 weeks of submission deadline.\n\nFollowing the week after the submission deadline no further discussion on the assignment will be done."
-  },
-  {
-    "objectID": "course-policies.html#classroom-policies-and-student-responsibilities",
-    "href": "course-policies.html#classroom-policies-and-student-responsibilities",
-    "title": "**CSCI1012**",
-    "section": "Classroom Policies and Student responsibilities",
-    "text": "Classroom Policies and Student responsibilities\n\n\n\nThis course requires a combination of individual and group work entailing hands-on activities and frequent interactions with the instructional team. The lectures, labs, and office hours are available for interacting with your group and the instruction team. We ask that all students adhere to the course policies throughout the duration of the semester.\n\n\n\n\n\n\n\n\n\n\nclassroom by Chattapat from Noun Project\n\n\n\n\n\n\n\n\n\nBe respectful: Listen to the instructors. Keep an open mind to the course material presented. Limit the use of personal devices. Be aware that you are working in a group. Be mindful of your colleagues.\nBe responsible: Arrive on time. Attendance is the first pathway toward success. Submit the course deliverables on time. Help your team members.\nBe a communicator: Observe, Ask questions and Try out the materials presented during the course. Communicate with your team effectively and politely.\nBe a problem solver: Explore options to complete hands-on tasks. Make your own notes. Stay positive about the course outcomes."
-  },
-  {
-    "objectID": "course-policies.html#justice-equity-diversity-inclusion-jedi-statement",
-    "href": "course-policies.html#justice-equity-diversity-inclusion-jedi-statement",
-    "title": "**CSCI1012**",
-    "section": "Justice, Equity, Diversity, Inclusion (JEDI) statement",
-    "text": "Justice, Equity, Diversity, Inclusion (JEDI) statement\n\n\n\nThe instruction team intends to students from all diverse backgrounds and perspectives by this course, The diversity that the students bring to this class be viewed as a resource, strength, and benefit. The course materials and activities presented in this course are intended to be respectful of: age, race, ethnicity, country of origin, language, religion, spiritual practice, sexual orientation, gender identity or expression, introversion/extroversion personality dimensions, and socioeconomic and mental/physical status.\n\n\n\n\n\n\n\n\n\n\nemployee diversity by Bold Yellow from Noun Project\n\n\n\n\n\n\n\n\nPlease let the main instructor know ways to improve the effectiveness of the course. See JEDI resources for student resources."
-  },
-  {
-    "objectID": "course-policies.html#use-of-chatgpt-or-any-other-ai-based-models-for-in-class-work-and-deliverables",
-    "href": "course-policies.html#use-of-chatgpt-or-any-other-ai-based-models-for-in-class-work-and-deliverables",
-    "title": "**CSCI1012**",
-    "section": "Use of chatGPT or any other AI-based models for in-class work and deliverables",
-    "text": "Use of chatGPT or any other AI-based models for in-class work and deliverables\nThe use chatGPT or any other genreative AI-based tool is NOT PERMITTED. Furthermore, the ethical issues regarding the use of chatGPT or any other AI-based models will be discussed in-class and course policy will be ammended according to the findings. The findings of any such discussions will be summarized and placed in-context of the Academic Integrity Code\nResources that will guide the course policy changes during the course:\n\nchatGPT Course policy formulation\nchatGPT chatbot\nHow ChatGPT Could Transform Higher Education"
-  },
-  {
-    "objectID": "course-policies.html#university-policies",
-    "href": "course-policies.html#university-policies",
-    "title": "**CSCI1012**",
-    "section": "University Policies",
-    "text": "University Policies\n\nUse of Electronic Course Materials and Class Recordings\nStudents are encouraged to use electronic course materials, including recorded class sessions (if any), for private personal use in connection with their academic program of study. Electronic course materials and recorded class sessions should not be shared or used for non-course related purposes unless express permission has been granted by the instructor. Students who impermissibly share any electronic course materials are subject to discipline under the Student Code of Conduct. Please contact the instructor if you have questions regarding what constitutes permissible or impermissible use of electronic course materials and/or recorded class sessions. Please contact Disability Support Services if you have questions or need assistance in accessing electronic course materials.\n\n\nUniversity Policy on Religious Holidays\n\nStudents should notify faculty during the first week of the semester of their intention to be absent from class on their day(s) of religious observance.\nFaculty should extend to these students the courtesy of absence without penalty on such occasions, including permission to make up examinations.\nFaculty who intend to observe a religious holiday should arrange at the beginning of the semester to reschedule missed classes or to make other provisions for their course‐related activities. For details and policy, see “Religious Holidays” at https://provost.gwu.edu/policies-procedures-and-guidelines"
-  },
-  {
-    "objectID": "course-policies.html#support-for-students-outside-the-classroom",
-    "href": "course-policies.html#support-for-students-outside-the-classroom",
-    "title": "**CSCI1012**",
-    "section": "Support for Students Outside the Classroom",
-    "text": "Support for Students Outside the Classroom\n\nDisability Support Services (DSS):\nTelephone: 202-994-8250\nAny student who may need an accommodation based on the potential impact of a disability should contact the Disability Support Services office in the Rome Hall, Suite 102, to establish eligibility and to coordinate reasonable accommodations. For additional information please refer to: https://disabilitysupport.gwu.edu/\n\n\nCounseling & Psychological Services:\nTelephone: 202-994-5300\nThe University’s Mental Health Services offers 24/7 assistance and referral to address students’ personal, social, career, and study skills problems. Services for students include: crisis and emergency mental health consultations confidential assessment, counseling services (individual and small group), and referrals. https://healthcenter.gwu.edu/counseling-and-psychological-services\n\n\nCampus safety and security:\nThe following links can be accessed to learn more about the Safety and Security at the George Washington University\n\nFor help in an emergency, call 911 or GW Police 202-994-6111 (GWPD)\nAdditional resources for student safety and security can be found at this link: https://studentlife.gwu.edu/safety-and-security"
-  },
-  {
-    "objectID": "course-policies.html#academic-integrity-code",
-    "href": "course-policies.html#academic-integrity-code",
-    "title": "**CSCI1012**",
-    "section": "Academic Integrity Code",
-    "text": "Academic Integrity Code\nContact information: rights@gwu.edu or 202-994-6757.\nAcademic dishonesty is defined as cheating of any kind, including misrepresenting one’s own work, taking credit for the work of others without crediting them and without appropriate authorization, and the fabrication of information. You are not allowed to collaborate on the home works and lab assignments; for programming projects and hardware lab assignments, you can work in teams only if they are designated as team projects (labs). Unless otherwise specified, you cannot search for solutions or code on the web – but you can use any code that is included in the textbook or lecture notes (but please cite them). I will be using a SW tool that checks for program code similarities – any pair of programs or written reports with greater than 10% similarity will be closely examined.\nThe Office of Academic Integrity maintains a permanent record of the violation. More information is available from the Office of Academic Integrity at https://studentconduct.gwu.edu/academic-integrity. The University’s “Guide of Academic Integrity in Online Learning Environments” is available at https://studentconduct.gwu.edu/guide-academic-integrity-online-learning-environments."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "CS 1012: Introduction to Programming with Python",
-    "section": "",
-    "text": "Welcome to the section of CS-1012!\n\n\n\n\n\n\nCource Content\n\n\n\n\n\nThe course material is sourced from Prof. Simha’s webpage: https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/\n\n\n\nBecause this is an course, it will operate differently than a regular course. In particular:\n\nEven though the course is, we will meet three times: once at the beginning to get you going, once in the middle to check in, and once at the end for the in-class final exam.\nMost of our communication to you will be by email or by announcements in Blackboard.\nWhen you need to communicate with us, please follow the specific instructions outlined in Blackboard.\nWhen you submit work, please follow the specific instructions outlined in Blackboard for submitting work.\nThe coursework page outlines the schedule. It is YOUR job to keep to the schedule and submit work accordingly.\nAs you’ll see you’ll be accompanied by four students who will be doing the course with you. These four have no background in computer science or engineering whatsoever, demonstrating that anyone can learn CS with sufficient enthusiasm.\nStart by reading the About section. Then, await an email that will:\n\nSchedule the first meeting.\nDescribe the first homework to submit."
-  },
-  {
-    "objectID": "units/unit1/modules/module1.html",
-    "href": "units/unit1/modules/module1.html",
-    "title": "Module 1: Conditionals",
-    "section": "",
-    "text": "Home » Unit 1 » Module 1"
-  },
-  {
-    "objectID": "units/unit1/modules/module1.html#objectives",
-    "href": "units/unit1/modules/module1.html#objectives",
-    "title": "Module 1: Conditionals",
-    "section": "Objectives",
-    "text": "Objectives\nBy the end of this module you will be able to:\n\nEvaluate Boolean (pronounced: BOO-lee-unn) expressions.\nConstruct Boolean expressions from English descriptions.\nMentally execute (trace) code with conditionals: that is: if, if-else, and if-multi-else statements.\nWrite and debug code with conditionals.\nWrite and debug code with conditionals inside loops.\nIdentify new syntactic elements related to the above."
-  },
-  {
-    "objectID": "units/unit1/modules/module1.html#a-simple-example",
-    "href": "units/unit1/modules/module1.html#a-simple-example",
-    "title": "Module 1: Conditionals",
-    "section": "1.0 A simple example",
-    "text": "1.0 A simple example\nConsider this program:\nx = 5\ny = 4\n\nif x &gt; y:\n    print('Hey, x is bigger')\n\nprint(\"OK, we're done\")\n\n1.1 Excercise: In my_ifexample.py, type up the above and examine the output. Then, just below the print with ‘Hey’ (and indented 4 spaces) add another print to print anything. Then, change the value of y to 6 and report the output in module0.pdf. Submit the program with these modifications.\nLet’s explain:\n\nFirst, observe: \nNow, at the moment the if-statement executes, the condition is evaluated:  If the condition is true then the code that’s indented below the if-statement executes.\nConsider what happens when y is 6: \n\n\n\n1.2 Excercise: Consider this program:\ns = 0\nfor i in range(6):\n    s = s + i\n\nif s &lt; 15:\n    print('Less than 15')\n\nprint('Done')\nTry to mentally execute (trace its execution in your mind) and predict the output before typing it up in my_ifexample2.py to confirm."
-  },
-  {
-    "objectID": "units/unit1/modules/module1.html#if-else",
-    "href": "units/unit1/modules/module1.html#if-else",
-    "title": "Module 1: Conditionals",
-    "section": "1.1 if-else",
-    "text": "1.1 if-else\nThink of else as if’s occasional partner.\nConsider this example:\nx = 5\ny = 4\n\nif x &gt; y:\n    print('Hey, x is bigger')\nelse:\n    print('Who said x is bigger?')\n    print('In fact, y is bigger')\n\nprint(\"OK, we're done\")\n\n1.3 Excercise: Type up the above in my_ifexample3.py and examine the output. Then, change the value of y to 6. What is the output? Change y to 5. What is the output? Report these in your module pdf.\nLet’s point out:\n\nWhen x is indeed larger than y, the code in the if-body executes: \nWhen the if-condition evaluates to false: \nWhat happens when x is 5 and y is 5? \n\nBecause some of these arrows might be difficult to follow, let’s emphasize some blocks (lines) of code:\n\nFirst consider when x is larger than y: \nAnd when y is larger than x:"
-  },
-  {
-    "objectID": "units/unit1/modules/module1.html#if-elif-else",
-    "href": "units/unit1/modules/module1.html#if-elif-else",
-    "title": "Module 1: Conditionals",
-    "section": "1.2 if-elif-else",
-    "text": "1.2 if-elif-else\nConsider this variation:\nx = 5\ny = 5\n\nif x &gt; y:\n    print('Hey, x is bigger')\nelif y &gt; x:\n    print('Who said x is bigger?')\n    print('In fact, y is bigger')\nelse:\n    print('Actually, they are equal')\n\nprint(\"OK, we're done\")\n\n1.4 Excercise: Type up the above in my_ifexample4.py and examine the output. Then, try y=6 and y=4. Report results in your module pdf.\nLet’s explain:\n\nFirst, consider the case x=5, y=5: \nNow consider x=5, y=4: \nNext: x=5, y=6: \n\nOne can have as many elif sections as one would like, for example:\nx = 3\n\nif x == 1:\n    print('one')\nelif x == 2:\n    print('two')\nelif x == 3:\n    print('three')\nelif x == 4:\n    print('four')\nelse:\n    print('big')\nThink of the whole thing as a giant if-statement:  In the above case, when x is 3, the execution path through the giant if-statement is: \n\n\n1.5 Excercise: Type up the above in my_ifexample5.py. Then, try each of x=1, x=2, x=4, x=5. Draw the execution pathways (similar to the picture above) for each case in your module pdf.\nConsider this program:\nx = 5\ny = 4\nz = 3\n\nif x &gt; y:\n    print('Hey, x is bigger')\n\nif x &gt; z:\n    print('x is bigger than z')\n    print('So, x must be the largest')\n\n\n1.6 Excercise: Type up the above in my_ifexample6.py. Try y = 6. Explain why it does not work. Then try to alter the program without changing the print-statements so that it works in all cases for possible values of x,y, and z. That is, whichever of the above print-statements gets printed correctly reflects the values of x, y and z.\n\n\n1.7 Video:"
-  },
-  {
-    "objectID": "units/unit1/modules/module1.html#nested-conditionals",
-    "href": "units/unit1/modules/module1.html#nested-conditionals",
-    "title": "Module 1: Conditionals",
-    "section": "1.3 Nested conditionals",
-    "text": "1.3 Nested conditionals\nConsider this program:\na = 3\nb = 4\nc = 5\n\nif a &lt; b:\n    if a &lt; c:\n        print('a is the smallest')\n    else:\n        print('a is not the smallest')\n\nprint('Done')\nThis is an example of a nested conditional (nested if):\n\nFirst, examine the indented structure: \nThe flow of execution: \n\nConsider this variation:\na = 3\nb = 4\nc = 5\n\nif a &lt; b:\n    if a &lt; c:\n        print('a is the smallest')\n    else:\n        print('a is not the smallest')\n    print('We know a is less than b')\nelse:\n    print('We know a is not less than b')\n\nprint('Done')\n\n1.8 Excercise: Type up the above in my_nestedif.py. Draw the flow of execution for the following three cases: (1) when a=3, b=4, c=5; (2) when a=3, b=4, c=2; (3) when a=6, b=4, c=5.\n\n\n1.9 Excercise: In my_smallest_of_three.py, modify the above program so that it prints out, appropriately, one of “a is the smallest”, “b is the smallest” or “c is the smallest”, depending on the actual values of a, b, and c. Try different values of these variables to make sure your program is working correctly.\n\n\n\n\n\n\nTip\n\n\n\n\nA numeric variable can be: strictly less, less than or equal to, strictly greater, greater than or equal to, or equal to another variable.\nAccordingly, the different types of less/greater comparisons are:\na &lt; b      # Strictly less than, as when a=3, b=4\na &lt;= b     # Could be less (a=3, b=5), could be equal (a=3, b=3) \na &gt; b      # Strictly greater (a=3, b=2)\na &gt;= b     # Could be greater (a=3, b=1), could be equal (a=2, b=2)"
-  },
-  {
-    "objectID": "units/unit1/modules/module1.html#combining-conditions",
-    "href": "units/unit1/modules/module1.html#combining-conditions",
-    "title": "Module 1: Conditionals",
-    "section": "1.4 Combining conditions",
-    "text": "1.4 Combining conditions\nConsider this program:\nx = 5\ny = 5\nz = 5\n\nif x == y and y == z:\n    print('All three are equal')\n\n\n\n\n\n\nNote\n\n\n\n\nThe first thing to point out is the == operator:\n\nBecause we’ve been using the equals operator for assigning values to variables, we need something else to test for equality.\nThe equality operator in Python is == as in:\nif x == y and y == z:\nAlas, the problems with limited keyboard symbols!\n\nImportant: the difference between = and == is very important to remember. It’s easy to make a mistake one forget.\nThe if-statement combines two conditions:\nif x == y and y == z:\nThe combining occurs with the Boolean operator and:\nif x == y and y == z:\nWe can clarify the parts and combination thereof using parens:\nif (x == y) and (y == z):\nThe two parts are often called clauses:\n\nFirst clause (x == y):\nif (x == y) and (y == z):\nSecond clause (y == z):\nif (x == y) and (y == z):\nYou could have many more clauses.\n\nThe “and” operator works like this: \nBoolean is pronounced “BOO lee unn”.\nA Boolean operator takes expressions and computes to either true or false.\n\n\n\nLet’s go back to finding the smallest of three numbers using conditionals:\na = 3\nb = 4\nc = 5\n\n# Fill in code here ... \n\n1.11 Excercise: In my_smallest_of_three2.py, fill in code to identify which of the three variables has the smallest value, depending on the actual values of a, b, and c. Use if-statements with multiple clauses. Try different values of these variables to make sure your program is working correctly.\n\n\n1.12 Video:\n\nAs the counterpart to the and operator, there is the or operator:\na = -2.718\n\nif (a &lt;= 0) or (a &gt;= 1):\n    print('a is not between 0 and 1')\n\n\n1.13 Excercisle: Type up the above in my_boolean2.py. Then try a=0.5.\n\n\n\n\n\n\nNote\n\n\n\n\nWe have shown how to write “less than or equal to” using =\n\nSo, now we can add “equals” and “not equals” to the numeric comparisons:\n    a &lt; b      # Strictly less than, like a=3 &lt; b=4\n    a &lt;= b     # Could be less, could be equal (a=3, b=3)\n    a &gt; b      # Strictly greater (a=3, b=2)\n    a &gt;= b     # Could be greater, could be equal \n    a == b     # Exactly equal\n    a != b     # Not equal\nFor the or operator to evaluate to true, any one or both of the two expressions needs to be true.\nConsider:\na = 3\nb = 4\nif (a &lt; 10) or (b &lt; 10):\n    print('One or both of them is less than 10')\n\nIn this case both will evaluate to true, and so the print statement executes.\nSuppose we made a=3, b=11, the print statement will execute.\nSuppose we change a=11, b=3, the print statement will execute.\nBut if a=11, b=12, the or fails (both clauses are false), and the print won’t execute.\n\nIncidentally, let’s replace or with and in the above case, and see what we get:\na = 3\nb = 4\nif (a &lt; 10) and (b &lt; 10):\n    print('Both of them are less than 10')\nIn this case, both sub-conditions are satisfied, and so the whole if-condition is satisfied, which means the print will execute.\nBut if we had\na = 3\nb = 4\nif (a &lt; 10) and (&lt;b&gt;b &gt; 10&lt;/b&gt;):\n    print('Both of them are less than 10')\nIn this case, the second comparison fails, and the print won’t occur.\nWhereas if we had or:\na = 3\nb = 4\nif (a &lt; 10) &lt;b&gt;or&lt;/b&gt; (&lt;b&gt;b &gt; 10&lt;/b&gt;):\n    print('One or both of them is less than 10')\nHere, it’s enough that a is less than 3, and so the print executes even though “b greater than 10” fails.\n\n\n\nNext, let’s look at the NOT operator (written with !):\nx = 5\ny = 6\nz = 7\n\nif (x != y) and (x != z):\n    print('x is different from y and from z')\nHere, read != as “not equals”.\n\n\n1.14 Excercisle: Type up the above in my_boolean3.py, then change z to be 6 (same as y). What do you observe?\nOne can combine any number of and’s, for example:\nx = 5\ny = 6\nz = 7\n\nif (x != y) and (x != z) and (y != z):\n    print('x, y, z are all different')\nThe difference between != and not\n\nWe should read != as “not equals” just as we read == as “equals”.\nThere is another operator called not, which applies to Boolean expressions, as we’ll see next.\n\nThe not operator\n\nOne can apply the not operator to groups of clauses using additional parens:\nx = 8\n\nif not ( (x == 5) or (x == 6) ):\n    print('x is neither 5 nor 6')\nHere, not is asking that whatever it applies to be false.\nThus, consider the expression\nif not ((x == 5) or (x == 6)):\nIn this case, x is 8. So, neither of (x == 5) nor (x == 6) is true.\nThus, the whole expression ( (x == 5) or (x ==6) ) is false.\nWhich means not ( (x == 5) or (x ==6) ) evaluates to true.\nTherefore, the print executes.\n\n\n\n1.15 Excercisle: Suppose integer variables a,b,c,d,e have values a=1, b=1, c=3, d=4, e=5. Consider the following three expressions:\n( (a &lt;= b) and (c+d &gt; e) and (d &gt; 1) )\n\n( (a &gt; c) or ( (c+1 &lt; e) and (c-b &gt; a) ) )\n\nnot ( (b == d-c) and (a &gt; b) or (c &lt; d) )\nTry to evaluate each expression by hand. Then, in my_boolean4.py, write up each of these in an if-statement to see if the result matches with your hand-evaluation.\n\n\n1.16 Excercisle: In my_boolean5.py, write a program that begins with\na = -3\nb = -4\nand uses conditionals to print out the absolute difference between the two numbers. In the above case, the difference is 1. In the case of a=3, b=4, the difference is also 1. When a=-3, b=4, the difference is 7.\n\n\n1.17 Video:&gt;"
-  },
-  {
-    "objectID": "units/unit1/modules/module1.html#conditionals-and-loops",
-    "href": "units/unit1/modules/module1.html#conditionals-and-loops",
-    "title": "Module 1: Conditionals",
-    "section": "1.5 Conditionals and loops",
-    "text": "1.5 Conditionals and loops\nLet’s write a program to loop through integers and print only the even numbers:\nn = 10\nfor i in range(1, n+1):\n    if i % 2 == 0:\n        print(i, 'is even')\n\n1.18 Excercisle: In your module pdf, trace through the iterations in the above program. Then, in my_oddeven.py, modify the above program so that for every number between n and 1, going backwards, the program prints whether it’s even or odd, as in:\n10 is even\n9 is odd\n8 is even\n7 is odd\n6 is even\n5 is odd\n4 is even\n3 is odd\n2 is even\n1 is odd"
-  },
-  {
-    "objectID": "units/unit1/modules/module1.html#conditionals-and-lists",
-    "href": "units/unit1/modules/module1.html#conditionals-and-lists",
-    "title": "Module 1: Conditionals",
-    "section": "1.6 Conditionals and lists",
-    "text": "1.6 Conditionals and lists\nSuppose we have a list of numbers, representing daily profits (sometimes negative, sometimes positive) and we only want to add up the positive numbers:\nearnings = [-5, 2, 3, -9, 12, 4, -30]\ntotal = 0\nfor k in earnings:\n    if k &gt;= 0:\n        total += k\n\nprint('Total profit =', total)\n\n1.20 Excercisle: Trace through the values of total and k in your module pdf.\n\n\n1.21 Excercisle: Given a list like\nA = [-5, 2, 4, -9, 12, 13, -30, -21, -20]\nwe see that 12,13 and -21,-20 are pairs of consecutive numbers. Write a program called my_consecutive.py, with loop and a conditional to identify such consecutive pairs and print them. For the above list, the output should be:\nConsecutive pair found: 12 13\nConsecutive pair found: -21 -20\nNext, let’s write a program that asks the user to enter a number that we then check is in a list of numbers:\n# The list of numbers:\nA = [-5, 2, 4, -9, 12, 13, -30]\n\n# Receive what the user types in (as a string):\nuser_str = input('Enter an integer: ')\n\n# Convert string to integer:\nk = int(user_str)\n\n# Check whether in the list:\nif k in A:\n    print(k,'is in the list')\nelse:\n    print(k,'is not in the list')\n\n\n\n\n\n\nNote\n\n\n\nThe in operator checks member in the list:\nif k in A:\n\n\n\n\n1.23 Excercisle: Suppose you are given two lists like\nA = [-5, 2, 4, -9, 12, 13, -30, -21, -20]\nB = [2, -9, 11, 16, 13]\nNotice that some elements of A (like 2) also exist in B.In my_twolist.py, use the list membership idea to print those elements of A that are also in B. For the above example, the output should be:\n2 in A also found in B\n-9 in A also found in B\n13 in A also found in B"
-  },
-  {
-    "objectID": "units/unit1/modules/module1.html#more-examples-with-lists",
-    "href": "units/unit1/modules/module1.html#more-examples-with-lists",
-    "title": "Module 1: Conditionals",
-    "section": "1.7 More examples with lists",
-    "text": "1.7 More examples with lists\nConsider the following program that aims to find duplicates in a list:\nA = [2, 9, 2, 6, 4, 3, 3, 2]\nfor k in A:\n    if k in A:\n        print('Duplicate found:', k)\nIn the list, we can see that 2 occurs thrice, and 3 occurs twice. Both should be listed as duplicates. Is this the case?\n\n1.25 Excercisle: Trace through the iterations in the above program and explain why it does not work.\nNow consider this variation:\nA = [2, 9, 2, 6, 4, 3, 3, 2]\nfor i in range(len(A)-1):\n    for j in range(i+1, len(A)):\n        if A[i] == A[j]:\n            print('Duplicate found:', A[i])\n\n\n1.26 Excercisle: Trace through the iterations in the above program and explain the output. Why does the inner loop start with i+1?"
-  },
-  {
-    "objectID": "units/unit1/modules/module1.html#some-stats-via-programming",
-    "href": "units/unit1/modules/module1.html#some-stats-via-programming",
-    "title": "Module 1: Conditionals",
-    "section": "1.8 Some stats via programming",
-    "text": "1.8 Some stats via programming\nLet’s now apply our practice with conditionals to solve some problems in probability and statistics.\nFor example: Suppose I toss a coin 4 times and observe the face that’s up. What is the probability that I get all “tails” (not one toss shows “heads”).\nLet’s do this in steps.\nFirst, let’s write a program to toss a coin 4 times\nimport random\n\ncoin = ['heads', 'tails']\nfor i in range(4):\n    toss = random.choice(coin)\n    print(toss)\n\n1.28 Excercisle: Type up the above in my_cointosses.py and run it a few times to see what you get.\n\n\n\n\n\n\nNote\n\n\n\n\nWe have made a list of strings:\ncoin = ['heads', 'tails']\nPython has a useful way to randomly select a member of a list:\ntoss = random.choice(coin)\nAlternatively, we could have written:\ntoss = random.choice(['heads','tails'])\nand avoided defining coin.\n\n\n\nNext, instead of printing the results, let’s count the number of heads observed:\nimport random\n\ncount = 0\nfor i in range(4):\n    toss = random.choice(['heads', 'tails'])\n    if toss == 'heads':\n        count = count + 1\n\nprint('Number of heads', count)\n\n\n1.29 Excercisle: Type up the above in my_cointosses2.py and run it a few times to see what you get.\n\n\n\n\n\n\nNote\n\n\n\nObserve how the string that’s randomly selected from the list is compared against ‘heads’:\nif toss == 'heads':\n    count = count + 1\n\n\nNext, what we need to do is repeat the 4-coin toss many times:\n\nSuppose we call 4-coin tosses a single trial.\nClearly, if we ran a single trial and obtained 1 heads (count=1) then, could we conclude that the probability of getting all-4-tails is zero?\nWhat we need to do is run a large number of trials and record in how many trials we get a run of 4-tails.\nWe’ll use the term “success” to identify a trial in which we get all-4-tails.\nLet’s examine the code:\n\nimport random\n\ntrials = 10\nsuccesses = 0\nfor i in range(trials):\n    # Count number of heads in 4 tosses:\n    count = 0\n    for i in range(4):\n        toss = random.choice(['heads', 'tails'])\n        if toss == 'heads':\n            count = count + 1\n\n    # If the count is zero, that's a success\n    if count == 0:\n        successes += 1\n\n# Ratio of successes to trials:\nprobability = successes / trials\nprint('probability =', probability)\n\n\n1.30 Excercisle: Type up the above in my_cointosses3.py and run it a few times to see what you get. Then increase the number of trials to 100000 and see. The theoretical answer is 0.0625 (approximately 6% chance there’s no heads in 4 tosses).\n\n\n1.31 Excercisle: In my_cointosses4.py, write a program to run a large number of trials of the following experiment: toss a coin 10 times and record a success if you get an equal number of heads and tails.\nNow let’s solve a problem with that other favorite manner of generating chance: dice\nWe’ll roll two dice and add the numbers face up. We want to ask: what are the chances we get 7 (when added up)?\nHere’s the program:\nimport random\n\npossible_outcomes = [1,2,3,4,5,6]\ntrials = 100000\nsuccesses = 0\nfor i in range(trials):\n    roll1 = random.choice(possible_outcomes)\n    roll2 = random.choice(possible_outcomes)\n    if roll1 + roll2 == 7:\n        successes += 1\n\nprobability = successes / trials\nprint('probability =', probability)\n\n\n1.33 Excercisle: Type up the above in my_dice.py and see what you get, reporting in your module pdf. Is there a number other than 7 for which the probability is higher?\nLet’s also look at how one can get Python to randomly generate real numbers, for example:\nimport random\n\ntrials = 100\ntotal = 0\n\nfor i in range(trials):\n    x = random.uniform(5, 10)\n    print(x)\n    total += x\n\nprint('mean =', total/trials)\n\n\n\n\n\n\nNote\n\n\n\n\nBy using\nx = random.uniform(5, 10)\nwe can generate a random real number between 5 and 10.\nIn the above program we are generating many such numbers and calculating their average.\n\n\n\n\n\n1.34 Excercisle: Type up the above in my_uniform.py, then increase the number of trials, and see what you get as the average, reporting in your module pdf. What is the average when you generate numbers between 25 and 30 and how does that compare with the average of the numbers 25 and 30? Explain why this should make sense.\nBefore you head off to Vegas with your Python programs, let’s point out:\n\nYou can use programming to explore ideas in probability and statistics, and solve real problems as well.\nIt is an exciting way to learn stats that we will have more to say about later."
-  },
-  {
-    "objectID": "units/unit1/modules/module1.html#algorithmic-art",
-    "href": "units/unit1/modules/module1.html#algorithmic-art",
-    "title": "Module 1: Conditionals",
-    "section": "1.9 Algorithmic art",
-    "text": "1.9 Algorithmic art\nLet’s now use what we’ve learned to explore the notion of how computers can be programmed to generate abstract art.\nIn our first example, we’ll draw lines from one border of a square to another: \nLet’s describe the main idea via some pseudocode:\n\nIn a loop we’ll generate:\nSet up an initial x1,y1 and x2,y2\nfor i in ...\n    Pick a random color\n    Draw a line from x1,y1, y2,y2\n    Make the current endpoint the start of the next line:\n    x1 = x2\n    y1 = y2\n    Pick a random border\n    Now pick a new random point on the next border\nWhen we pick a border, we’ll need to figure out the coordinates.\n\n\n1.35 Excercisle: Download conditional_art.py and drawtool.py. Try it out and then examine the code to confirm that it follows the pseudocode. Try different values of n. Can you change the choices of randomly chosen colors to improve the result? Does it look good with just two colors? Next, starting with Kandinsky, find an example of abstract art that you think might be considered an analogue in the history of art. Include a screenshot of your improved art, and the historical painting in your module pdf.\nNext, we’ll explore an interesting question:\n\nThink of random art at one end of a spectrum.\nAnd highly-structured geometry at the other end, generated by an algorithm.\nThe question: can we adjust a “knob” that let’s us generate a mix? And is that more aesthetic?\n\n\n\n1.36 Excercisle: Download conditional_art2.py. Try out different values (between 0 and 1) of the structure parameter, for example 0.9 and 0.1. Is there a value that provides an aesthetic mix? Try different n. Make changes to the code and submit a screenshot of the result."
-  },
-  {
-    "objectID": "units/unit1/modules/module1.html#when-things-go-wrong",
-    "href": "units/unit1/modules/module1.html#when-things-go-wrong",
-    "title": "Module 1: Conditionals",
-    "section": "1.10 When things go wrong",
-    "text": "1.10 When things go wrong\nIn each of the exercises below, first try to identify the error just by reading. Then type up the program to confirm, and after that, fix the error.\n\n1.37 Excercisle:\nx = 5\ny = 6\nif x &lt; y\n    print('x is less than y')\nIdentify and fix the error in my_error1.py.\n\n\n1.38 Excercisle:\nx = 5\ny = 6\nif x !&lt; y:\n    print('x is not less than y')\nIdentify and fix the error in my_error2.py.\n\n\n1.40 Excercisle:\na = 2.5\n\n# See whether a lies between 0 to 1, or 1 to 2, \n# or something else\nif (a &gt; 0) and (a &lt; 1):\n    print('between 0 and 1')\nelse if (a &gt; 1) and (a &lt; 2):\n    print('between 1 and 2')\nelse:\n    print('something else')\nIdentify and fix the error in my_error4.py.\n Previous Module: Module 0 Next Module: Module 2"
-  },
-  {
-    "objectID": "units/unit0/anaconda-mac.html",
-    "href": "units/unit0/anaconda-mac.html",
-    "title": "Anaconda Installation Guide for macOS",
-    "section": "",
-    "text": "This guide will walk you through the process of installing Anaconda, a popular Python distribution, on your macOS computer. Anaconda provides a convenient way to manage Python packages and environments for data science and scientific computing."
-  },
-  {
-    "objectID": "units/unit0/anaconda-mac.html#introduction",
-    "href": "units/unit0/anaconda-mac.html#introduction",
-    "title": "Anaconda Installation Guide for macOS",
-    "section": "",
-    "text": "This guide will walk you through the process of installing Anaconda, a popular Python distribution, on your macOS computer. Anaconda provides a convenient way to manage Python packages and environments for data science and scientific computing."
-  },
-  {
-    "objectID": "units/unit0/anaconda-mac.html#prerequisites",
-    "href": "units/unit0/anaconda-mac.html#prerequisites",
-    "title": "Anaconda Installation Guide for macOS",
-    "section": "Prerequisites",
-    "text": "Prerequisites\nBefore you begin, ensure you have the following:\n\nA macOS computer.\nAn internet connection.\nSufficient disk space for the installation."
-  },
-  {
-    "objectID": "units/unit0/anaconda-mac.html#installation-steps",
-    "href": "units/unit0/anaconda-mac.html#installation-steps",
-    "title": "Anaconda Installation Guide for macOS",
-    "section": "Installation Steps",
-    "text": "Installation Steps\n\n1. Download Anaconda\nVisit the Anaconda download page at https://www.anaconda.com/download.\n\n\n2. Choose the macOS Installer\nClick on the “Download” button under the macOS section depending on you System-on-chip (Intel/M1/M2) to download the Anaconda installer for macOS.\n\n\n\nDownload Anaconda\n\n\n\n\n3. Run the Installer\n\nLocate the downloaded file (usually in your “Downloads” folder).\nDouble-click the Anaconda disk image (.dmg) file to open it and click on “Allow” when prompted.\n\n\n\n\nRun Installer\n\n\n\n\n\nAllow Installation\n\n\n\n\n4. Follow the Installer Wizard\n\nFollow the on-screen instructions to begin the installation.\nRead and accept the license agreement when prompted.\n\n\n\n\nRead Me\n\n\n\n\n\nLicense Agreement\n\n\n\n\n5. Install Anaconda\nClick the “Install” button to begin the installation process. This may take a few minutes.\n\n\n\nInstall\n\n\n\n\n6. Complete the Installation\nOnce the installation is complete, you will see a confirmation message. Click the “Continue” button and finally close the installation wizard by clicking on the “Close” button.\n\n\n\nInstallation Complete\n\n\n\n\n\nClose Installation Wizard\n\n\n\n\n7. Move the Installer file to Trash (Optional)\n\n\n\nMove the Installer to Trash\n\n\n\n\n8. If prompted to update the navigator, select “No, don’t show again”\n\n\n\nDon’t Update\n\n\n\n\n9. You’re NOT REQUIRED to Log in/Sign up for Anaconda Cloud, close the prompt by clicking the “x” button\n\n\n\nDon’t Log in/Sign up"
-  },
-  {
-    "objectID": "units/unit0/anaconda-mac.html#conclusion",
-    "href": "units/unit0/anaconda-mac.html#conclusion",
-    "title": "Anaconda Installation Guide for macOS",
-    "section": "Conclusion",
-    "text": "Conclusion\nCongratulations! You’ve successfully installed Anaconda and Jupyter on your macOS computer. You can now use Anaconda to create Python environments, manage packages, and work on data science projects.\nFor more information on using Anaconda, refer to the official documentation at https://docs.anaconda.com/.\nIf you encounter any issues or have questions, don’t hesitate to seek help from the Anaconda community or consult the documentation for troubleshooting tips."
-  },
-  {
     "objectID": "units/unit0/editor.html",
     "href": "units/unit0/editor.html",
     "title": "Installing an Editor",
@@ -693,39 +798,74 @@
     "text": "Understanding the Basics\nIn the realm of programming, your choice of an editor is pivotal. It serves as your creative hub, where your code takes shape. Here’s a brief overview of key features editors bring to the table:\n\nText Editing: Core to any editor is the ability to write, edit, and organize code. Look for features like syntax highlighting, auto-indentation, and code completion for an enhanced coding experience.\nCode Execution: Some editors go beyond editing by enabling interactive code execution, which is handy for data analysis and experimentation.\nExtensions and Plugins: Editors are highly customizable. Enhance functionality by installing extensions or plugins tailored to your needs, adding Python-specific tools or themes.\nIDEs (Integrated Development Environments): Editors offer a complete development environment, including debugging and version control integration.\n\nFor your CS1012 course, we recommend Thonny as the primary choice, with Spyder as a valuable alternative:\n\nThonny: Thonny is a beginner-friendly Python IDE, designed to make it easy to get started with programming. It comes with a simple interface and integrated tools for package management.\nSpyder: Spyder is a powerful IDE for scientific computing and data analysis. It provides features like an interactive console, variable explorer, and integrated help, making it a solid alternative to Thonny.\n\nLet’s dive into the installation process:\n\nSelect an Option Appropriate for Your Operating System\n\n\nMacOS:\n\nStep 1: Install Thonny for Mac\nStep 2: Install Spyder for Mac\n\n\n\nWindows:\n\nStep 1: Install Thonny for Windows\nStep 2: Install Spyder for Windows\n\nChoose Thonny as your primary choice for its simplicity, especially if you’re new to coding. However, if you prefer a more feature-rich environment, Spyder is an excellent alternative.\nFollow the respective installation instructions and embark on your coding journey with confidence!\nOnce you have your preferred editor installed, you’re ready to start coding. Happy exploring!"
   },
   {
-    "objectID": "units/unit0/anaconda-windows.html",
-    "href": "units/unit0/anaconda-windows.html",
-    "title": "Anaconda Installation Guide for Windows",
+    "objectID": "units/unit0/guides/thonny-windows.html",
+    "href": "units/unit0/guides/thonny-windows.html",
+    "title": "Thonny Installation Guide for Windows",
     "section": "",
-    "text": "This guide will walk you through the process of installing Anaconda, a popular Python distribution, on your Windows computer. Anaconda provides a convenient way to manage Python packages and environments for data science and scientific computing."
+    "text": "This guide provides a step-by-step walkthrough for installing Thonny, a user-friendly Python IDE, on your Windows computer. Thonny simplifies Python programming and is suitable for learners and developers."
   },
   {
-    "objectID": "units/unit0/anaconda-windows.html#introduction",
-    "href": "units/unit0/anaconda-windows.html#introduction",
-    "title": "Anaconda Installation Guide for Windows",
+    "objectID": "units/unit0/guides/thonny-windows.html#introduction",
+    "href": "units/unit0/guides/thonny-windows.html#introduction",
+    "title": "Thonny Installation Guide for Windows",
     "section": "",
-    "text": "This guide will walk you through the process of installing Anaconda, a popular Python distribution, on your Windows computer. Anaconda provides a convenient way to manage Python packages and environments for data science and scientific computing."
+    "text": "This guide provides a step-by-step walkthrough for installing Thonny, a user-friendly Python IDE, on your Windows computer. Thonny simplifies Python programming and is suitable for learners and developers."
   },
   {
-    "objectID": "units/unit0/anaconda-windows.html#prerequisites",
-    "href": "units/unit0/anaconda-windows.html#prerequisites",
-    "title": "Anaconda Installation Guide for Windows",
+    "objectID": "units/unit0/guides/thonny-windows.html#prerequisites",
+    "href": "units/unit0/guides/thonny-windows.html#prerequisites",
+    "title": "Thonny Installation Guide for Windows",
     "section": "Prerequisites",
-    "text": "Prerequisites\nBefore you begin, ensure you have the following:\n\nA Windows computer.\nAn internet connection.\nSufficient disk space for the installation."
+    "text": "Prerequisites\nBefore you begin, ensure you have the following:\n\nA Windows computer.\nAn active internet connection.\nAdequate disk space for the installation."
   },
   {
-    "objectID": "units/unit0/anaconda-windows.html#installation-steps",
-    "href": "units/unit0/anaconda-windows.html#installation-steps",
-    "title": "Anaconda Installation Guide for Windows",
+    "objectID": "units/unit0/guides/thonny-windows.html#installation-steps",
+    "href": "units/unit0/guides/thonny-windows.html#installation-steps",
+    "title": "Thonny Installation Guide for Windows",
     "section": "Installation Steps",
-    "text": "Installation Steps\n\n1. Download Anaconda\nVisit the Anaconda download page at https://www.anaconda.com/download.\n\n\n2. Choose the Windows Installer\nClick on the “Download” button under the Windows section to download the Anaconda installer for Windows.\n\n\n\nDownload Anaconda\n\n\n\n\n3. Run the Installer\n\nLocate the downloaded file (usually in your “Downloads” folder).\nDouble-click the installer executable (.exe) file to run it.\n\n\n\n\nRun Installer\n\n\n\n\n4. Follow the Installer Wizard\n\nFollow the on-screen instructions to begin the installation.\nRead and accept the license agreement when prompted.\n\n\n\n\nRead Me\n\n\n\n\n\nLicense Agreement\n\n\n\nChoose the installation type. It’s recommended to select “Just me” unless you have specific reasons for a different choice.\n\n\n\n\nInstallation Type\n\n\n\nSelect the installation location (the default is usually fine).\n\n\n\n\nInstallation Location\n\n\n\n\n5. Install Anaconda\nClick the “Install” button to begin the installation process. This may take a few minutes.\n\n\n\nInstall\n\n\n\n\n6. Complete the Installation\nOnce the installation is complete, you will see a confirmation message. Click the “Next” button and proceed to finish.\n\n\n\nInstallation Complete\n\n\n\n\n\nClose Installation Wizard\n\n\n\n\n7. If prompted to update the navigator, select “No, don’t show again”\n\n\n\nDon’t Update\n\n\n\n\n8. You’re NOT REQUIRED to Log in/Sign up for Anaconda Cloud, close the prompt by clicking the “x” button\n\n\n\nDon’t Log in/Sign up"
+    "text": "Installation Steps\n\n1. Visit Thonny’s Official Website\nGo to https://www.thonny.org/ to access Thonny’s official download page.\n\n\n\nVisit Official Website\n\n\n\n\n2. Select the Windows Download Option\nHover your mouse over the “Windows” option in the “Download version…” box and click to initiate the download.\n\n\n\nDownload Thonny\n\n\n\n\n3. Execute the Installer\nLocate the downloaded file, typically in your “Downloads” folder. Double-click the Thonny installer to run it.\n\n\n\nDownload Thonny\n\n\n\n\n4. Confirm Installation\nClick “Next” to proceed with the installation.\n\n\n\nConfirm Installation\n\n\n\n\n5. Agree to License Agreements\nAccept the license agreements by clicking “Agree.”\n\n\n\nLicense Agreement\n\n\n\n\n6. Choose Installation Location\nSelect a location for installation; the default option is acceptable.\n\n\n\nInstallation Location\n\n\n\n\n7. Select Start Menu Folder\nChoose a start menu folder; the default option is acceptable.\n\n\n\nStart Menu Folder\n\n\n\n\n8. Create Desktop Icon\nOpt to create a desktop icon for easy access. Click “Create Desktop Icon”.\n\n\n\nDesktop Icon\n\n\n\n\n9. Initiate Installation\nClick “Install” to start the installation process.\n\n\n\nInstall Thonny\n\n\n\n\n10. Completion\nOnce the installation is complete, click “Finish.”\n\n\n\nInstallation Complete\n\n\n\n\n11. Optional Cleanup\nConsider moving the installer file to the Recycle bin if desired.\n\n\n\nMove to Recycle bin\n\n\n\n\n12. Launch Thonny\nThonny is now installed on your computer. Open the Thonny editor by clicking on the desktop icon. \n\n\n13. Verification\nConfirm the successful installation by viewing the Thonny screen window.\n\n\n\nVerification"
   },
   {
-    "objectID": "units/unit0/anaconda-windows.html#conclusion",
-    "href": "units/unit0/anaconda-windows.html#conclusion",
-    "title": "Anaconda Installation Guide for Windows",
+    "objectID": "units/unit0/guides/thonny-windows.html#conclusion",
+    "href": "units/unit0/guides/thonny-windows.html#conclusion",
+    "title": "Thonny Installation Guide for Windows",
     "section": "Conclusion",
-    "text": "Conclusion\nCongratulations! You’ve successfully installed Anaconda on your Windows computer. You can now use Anaconda to create Python environments, manage packages, and work on data science projects.\nFor more information on using Anaconda, refer to the official documentation at https://docs.anaconda.com/.\nIf you encounter any issues or have questions, don’t hesitate to seek help from the Anaconda community or consult the documentation for troubleshooting tips."
+    "text": "Conclusion\nCongratulations! Thonny is successfully installed on your Windows computer.\nBegin your coding journey with Thonny, and for additional guidance, consult the official documentation at https://docs.thonny.org/.\nIf you encounter any issues or have questions, feel free to seek assistance from the Thonny community or refer to the documentation for troubleshooting tips."
+  },
+  {
+    "objectID": "units/unit0/guides/thonny-mac.html",
+    "href": "units/unit0/guides/thonny-mac.html",
+    "title": "Thonny Installation Guide for macOS",
+    "section": "",
+    "text": "This guide will take you through the step-by-step process of installing Thonny, a user-friendly Python IDE, on your macOS system. Thonny simplifies Python programming and is ideal for learners and developers alike."
+  },
+  {
+    "objectID": "units/unit0/guides/thonny-mac.html#introduction",
+    "href": "units/unit0/guides/thonny-mac.html#introduction",
+    "title": "Thonny Installation Guide for macOS",
+    "section": "",
+    "text": "This guide will take you through the step-by-step process of installing Thonny, a user-friendly Python IDE, on your macOS system. Thonny simplifies Python programming and is ideal for learners and developers alike."
+  },
+  {
+    "objectID": "units/unit0/guides/thonny-mac.html#prerequisites",
+    "href": "units/unit0/guides/thonny-mac.html#prerequisites",
+    "title": "Thonny Installation Guide for macOS",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nBefore you start, make sure you have the following:\n\nA macOS computer.\nAn active internet connection.\nAdequate disk space for the installation."
+  },
+  {
+    "objectID": "units/unit0/guides/thonny-mac.html#installation-steps",
+    "href": "units/unit0/guides/thonny-mac.html#installation-steps",
+    "title": "Thonny Installation Guide for macOS",
+    "section": "Installation Steps",
+    "text": "Installation Steps\n\n1. Visit Thonny’s Official Website\nGo to https://www.thonny.org/ to access Thonny’s official download page.\n\n\n\nVisit Official Website\n\n\n\n\n2. Select the macOS Download Option\nHover your cursor over the “Mac” option in the “Download version…” box and click to initiate the download.\n\n\n\nDownload Thonny\n\n\n\n\n3. Execute the Installer\nLocate the downloaded file, typically in your “Downloads” folder. Double-click the Thonny installer and click “Allow” if prompted.\n\n\n\nRun Installer\n\n\n\n\n4. Confirm Installation\nFollow the on-screen instructions. Click “Continue” and agree to the license agreements.\n\n\n\nFollow the Installation Wizard\n\n\n\n\n\nLicense Agreement\n\n\n\n\n5. Choose Installation Destination\nSelect a destination for installation; the default option is acceptable.\n\n\n\nInstallation Destination\n\n\n\n\n6. Initiate Installation\nClick “Install” and allow the installation process to complete.\n\n\n\nInstall Thonny\n\n\n\n\n7. Grant Folder Access\nIf necessary, click “OK” to allow the installer access to folders.\n\n\n\nFolder Access\n\n\n\n\n8. Completion Confirmation\nClick “Close” to finalize the installation.\n\n\n\nInstallation Complete\n\n\n\n\n9. Optional Cleanup\nConsider moving the installer file to the trash if desired.\n\n\n\n10. Launch Thonny\nThonny is now installed on your computer. Open the Thonny editor by clicking on its icon.\n\n\n\n11. Initial Configuration\nUse the dropdown menu to select default options. Click “Let’s go.”\n\n\n\nInitial Configuration\n\n\n\n\n12. Verification\nConfirm the successful installation by viewing the Thonny screen window.\n\n\n\nVerification"
+  },
+  {
+    "objectID": "units/unit0/guides/thonny-mac.html#conclusion",
+    "href": "units/unit0/guides/thonny-mac.html#conclusion",
+    "title": "Thonny Installation Guide for macOS",
+    "section": "Conclusion",
+    "text": "Conclusion\nCongratulations! Thonny is now successfully installed on your macOS system.\nStart coding with Thonny, and if you need more guidance, consult the official documentation at https://docs.thonny.org/.\nFor any issues or questions, feel free to seek assistance from the Thonny community or refer to the documentation for troubleshooting tips."
   },
   {
     "objectID": "units/unit0/modules/module4.html",
