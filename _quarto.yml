@@ -39,6 +39,9 @@ website:
           - ./submit-remember.qmd
       - href: course-policies.qmd
         text: Course Policies
+      - section: "Getting Started"
+        contents: 
+        - ./units/unit0/editor.qmd
 format:
   html:
     theme: cosmo
