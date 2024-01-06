@@ -17,12 +17,10 @@ Before you begin, make sure you have the following:
 ## Installation Steps
 
 ### 1. Download Anaconda
-
 Visit the Anaconda download page at [https://www.anaconda.com/download](https://www.anaconda.com/download).
 
 ### 2. Choose the macOS Installer
-
-Click on the "Download" button under the macOS section depending on your System-on-chip (**Intel/M1/M2**) to download the Anaconda installer for macOS.
+Click on the "**Download**" button under the macOS section depending on your System-on-chip (**Intel/M1/M2**) to download the Anaconda installer for macOS.
 
 ![Download Anaconda](../../../media/anaconda-mac/screenshot-1.png)
 
@@ -45,13 +43,11 @@ Click on the "Download" button under the macOS section depending on your System-
 ![License Agreement](../../../media/anaconda-mac/screenshot-5.png)
 
 ### 5. Install Anaconda
-
 Click the "**Install**" button to start the installation process. This may take a few minutes.
 
 ![Install](../../../media/anaconda-mac/screenshot-6.png)
 
 ### 6. Complete the Installation
-
 Once installation is complete, you'll see a confirmation message. Click "**Continue**" and close the installation wizard by clicking "**Close**".
 
 ![Installation Complete](../../../media/anaconda-mac/screenshot-7.png)
@@ -73,9 +69,14 @@ Once installation is complete, you'll see a confirmation message. Click "**Conti
 ### 10. Access Spyder through Anaconda Navigator
 
 - Open _Anaconda Navigator_, which is now installed on your system.
+
+![Launch Anaconda Navigator](../../../media/anaconda-mac/Step_12.png)
+
 - Locate Spyder and click "**Launch**" to open the _Spyder IDE_.
 
-![Launch Spyder](../../../media/anaconda-mac/screenshot-14-spyder.png)
+![Launch Spyder](../../../media/anaconda-mac/Step_13.png)
+
+![Spyder](../../../media/anaconda-mac/Step_14.png)
 
 ## Conclusion
 
