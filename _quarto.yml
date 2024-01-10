@@ -16,32 +16,32 @@ website:
         text: Home
       - href: about.qmd
         text: About
-      - href: coursework.qmd
-        text: Coursework
-      - href: faq.qmd
-        text: FAQ
+      - href: schedule.qmd
+        text: Schedule
+      - ./submit-remember.qmd
+      - ./units/useful.qmd
+      - section: "Getting Started"
+        contents: 
+        - ./units/unit0/editor.qmd
       - section: "Units"
         contents: 
           - section: "**Unit 0:** Getting Started With Programming"
             contents:
-              - ./units/unit0/modules/module0.qmd
-              - ./units/unit0/modules/module1.qmd
-              - ./units/unit0/modules/module2.qmd
-              - ./units/unit0/modules/module3.qmd
-              - ./units/unit0/modules/module4.qmd
-              - ./units/unit0/modules/module5.qmd
-              - ./units/unit0/modules/module6.qmd
+              - ./units/unit0/modules/module0.0.qmd
+              - ./units/unit0/modules/module0.1.qmd
+              - ./units/unit0/modules/module0.2.qmd
+              - ./units/unit0/modules/module0.3.qmd
+              - ./units/unit0/modules/module0.4.qmd
+              - ./units/unit0/modules/module0.5.qmd
+              - ./units/unit0/modules/module0.6.qmd
           - section: "**Unit 1:** Key Building Blocks in Programming"
             contents: 
-              - ./units/unit1/modules/module0.qmd
-              - ./units/unit1/modules/module1.qmd
-          - ./units/useful.qmd
-          - ./submit-remember.qmd
+              - ./units/unit1/modules/module1.0.qmd
+              - ./units/unit1/modules/module1.1.qmd
       - href: course-policies.qmd
         text: Course Policies
-      - section: "Getting Started"
-        contents: 
-        - ./units/unit0/editor.qmd
+      - href: faq.qmd
+        text: FAQ
 format:
   html:
     theme: cosmo
