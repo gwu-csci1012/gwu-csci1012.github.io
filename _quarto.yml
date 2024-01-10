@@ -38,6 +38,7 @@ website:
             contents: 
               - ./units/unit1/modules/module1.0.qmd
               - ./units/unit1/modules/module1.1.qmd
+              - ./units/unit1/modules/module1.2.qmd
       - href: course-policies.qmd
         text: Course Policies
       - href: faq.qmd
