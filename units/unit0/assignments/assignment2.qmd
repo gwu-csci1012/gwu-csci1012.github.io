@@ -1,0 +1,160 @@
+---
+title: "Assignment 2"
+---
+
+<html>
+<head>
+    <style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
+</head>
+<body>
+
+<div class="breadcrumbs">
+  <a href="../../../index.qmd">Home</a> &raquo;
+  <a href="">Unit 0</a> &raquo;
+  <span class="current-page">Assignment 2</span>
+</div>
+
+## Objectives
+As usual, in each such assignment set, we will help develop your problem-solving skills by showing you how to solve one problem, the first and often hardest problem. <em>However, the solution will include some exercises for you that you will need to submit</em>.
+
+
+## Assignment problems
+
+### 1. Demo problem.
+
+Consider this coding puzzle. Suppose we're asked to print out lines in a pattern like this:
+```python
+z
+zy
+zyx
+zyxw
+zyxwv
+zyxwvu
+zyxwvut
+zyxwvuts
+zyxwvutsr
+zyxwvutsrq
+```
+And suppose we want to use for-loops to achieve this. How do we go about solving this problem?
+
+At this point, do not read further and try to address the following:
+
+- First understand what is being asked.
+- Do see a for-loop or two at work where, as the loops are printing, you'll get the output shown above?
+- Can the problem be broken down into parts, where you can solve the parts and put the solution together afterwards?
+- Try writing some code to get at least some of the output.
+- What are the issues related to strings?
+
+[**Now examine the solution**](./assignment2-solution.qmd)
+
+Don't forget to submit your solutions to the exercises within.
+
+### 2. Write a program called `my_odd_sum.py` to compute the sum of all odd numbers in a given range. Here's part of the code:
+```python
+m = 10
+n = 20
+
+# Write code to add up the odd numbers between m and n inclusive
+
+# WRITE YOUR CODE HERE
+
+# When m=10, and n=20, you should get 75
+```
+
+Then test out your code by changing m to m=100 and n to n=150. What do you get?
+
+### 3. Review the example in Module 5 where we made a random sentence. After pulling out random nouns, a verb etc, we built a sentence like so:
+```python
+    sentence = (
+        'The ' + adj + ' ' + noun + ' ' + verb + 's' +
+        ' ' + prep + ' a ' + noun2)
+```
+
+In `my_avg_sentence_length.py`, use a loop to build many such sentences and compute the average sentence length at the end. Print each sentence and at the end, print the average sentence length. 
+
+:::{.callout-tip}
+Use the sentence construction as above, which will include spaces.
+:::
+
+### 4. In `my_geometric_art.py`, write code to use drawtool so that the result is:
+![](../../../media/units/unit0/assignment2/artwork.png)
+
+Here's some code to get started with:
+```python
+from drawtool import DrawTool 
+
+dt = DrawTool()
+dt.set_XY_range(0,100, 0,100)
+dt.set_aspect('equal')
+
+# This is how you set the drawing color:
+dt.set_color('b')
+# Other colors: r for red, g for green, m for magenta
+# k for black, w for white, y for yellow, c for cyan
+
+m = 0
+for k in range(0, 41, 10):
+    dt.draw_rectangle(k, m, 5, 5)
+    m = m + 10
+
+# WRITE YOUR CODE BETWEEN HERE ...
+
+# ... AND HERE.
+dt.display()
+```
+
+Start by downloading <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> into your assignment folder. Then, write the above code in `my_geometric_art.py` to see that a part of the drawing has been made for you. You can draw a circle with center at (10,20) with radius 5 using the line:
+```python
+dt.draw_circle(10, 20, 5)
+```
+(Try it).
+
+### 5. **Art project**.
+In `my_geometric_art2.py`, use the ability to draw rectangles and circles, changing colors where needed, to make a far more impressive work of art. You are also welcome to use other functions in drawtool such as:
+```python
+dt.draw_filled_circle(10, 20, 5)
+dt.draw_filled_rectangle(40, 50, 5, 5)
+```
+With a limited color and geometric palette, we're confident you can make something Mark Rothko or Piet Mondrian would be proud of.
+
+### 6. The following program intends to print the integer value of a letter (character) along with the corresponding letter, separately for uppercase first, and then lowercase. The output (edited for length) is something like:
+```python
+65-A
+66-B
+67-C
+...
+90-Z
+97-a
+98-b
+99-c
+...
+122-z
+```
+Here's the program with errors:
+```python
+for i in range(65,91):
+    print(i+ "-" + chr(i)
+
+for j in range(ord('a'),ord('z')):
+    x = char(j)
+    print(str(i)+ "-" + x)
+```
+Find and fix the errors in `fixed_errors1.py`.
+
+### 7. In `assignment2.pdf`, explore geometric art and the general topic of computer-generated art. What were you able to find? Write a paragraph on a well-known artist and provide a link to the sources you found. Explain what you like in this artist's work and why.
+
+
+## How to submit:
+
+- Write all your programs and `assignment1.pdf` in a directory called  `assignment1`.
+- Make a zip of the directory and submit that.
+
+</body>
+</html>
