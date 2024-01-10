@@ -6,10 +6,10 @@ title: "What to remember about submitting work"
 
 - The submission requirements are <em>stringent</em>. You MUST name folders and files exactly as described.
 - In particular: be careful to avoid spaces where they shouldn't be spaces, and to use <em>lowercase</em> when asked. For example:
-    - `module0.pdf` (correct)
-    - `Module0.pdf` (wrong: starts with uppercase)
-    - `module 0.pdf` (wrong: space before 0)
-    - `module0.docx` (wrong: not a pdf).
+    - `module0.0.pdf` (correct)
+    - `Module0.0.pdf` (wrong: starts with uppercase)
+    - `module 0.0.pdf` (wrong: space before 0)
+    - `module0.0.docx` (wrong: not a pdf).
 - Your programs must do what's asked, no less no more. If you print more than what's required the <em>autograder</em> will not grade your program.
 
 If you've forgotten how to make folders, zip files etc, now may be a good time to [review your computerese skills]()
@@ -36,8 +36,8 @@ You must name your folders with the following rules:
     - For your Unit 1 work, name that unit's folder `unit1`.
     - For your Unit 2 work, name that unit's folder `unit2`.
 - Each unit has several modules. For each module folder inside the each unit folder, you must name the module folder according to these rules: Each unit has several modules. For each module folder inside the each unit folder, you must name the module folder according to these rules: 
-    - For your Module 0 work, name that module's folder `module0`.
-    - For your Module 1 work, name that module's folder `module1`.
+    - For your Module 0.0 work, name that module's folder `module0.0`.
+    - For your Module 1.0 work, name that module's folder `module1.0`.
     - And so on.
 - Each unit has will also have assignments. For each assignment inside each unit, make a folder. You must name the assignment folders according to these rules: 
     - For your Assignment 1 work, name that folder `assignment1`.
@@ -45,7 +45,7 @@ You must name your folders with the following rules:
     - And so on if there are more assignments.
 - Thus, one looks inside your 1012 folder, we'd expect to see three sub-folders called `unit0, unit1,` and `unit2`. 
 - And, if one further looks inside the `unit0` folder, we'd expect to see 9 sub-folders:
-    - 7 of these will be called `module0, module1, module2, module3, module4, module5` and `module6`
+    - 7 of these will be called `module0.0, module0.1, module0.2, module0.3, module0.4, module0.5` and `module0.6`
     - 2 of these will be called `assignment1` and `assignment2`.
 
 ## Correct location and naming of files within folders
@@ -53,16 +53,15 @@ Every module and every assignment will feature multiple files:
 
 - Most files will be Python programs. The names of these will end in `.py`.
 - For example: `myname.py`.
-- Another example from Module 0  in Unit 0: In Exercise 0.4, you are instructed to create the files `error1.py` and `error2.py`. These need to be saved in your `module0` folder when using your code editor (Thonny or Spyder).
-- Every module will also have a single PDF file with the same first-part named as the module name. For example: you will make a file called `module0.pdf` in your `module0` folder.
+- Another example from Module 0  in Unit 0: In Exercise 0.4, you are instructed to create the files `error1.py` and `error2.py`. These need to be saved in your `module0.0` folder when using your code editor (_Thonny_ or _Spyder_).
+- Every module will also have a single PDF file with the same first-part named as the module name. For example: you will make a file called `module0.0.pdf` in your `module0.0` folder.
 - When is the PDF file to be used? The single PDF (one per module) is used when you are to write responses outside of Python code. For example:
-    - In Module 0, you are asked to submit a picture and write (in English) something about yourself. You can write in Word, and save to a PDF file called `module0.pdf` in your `module0` folder.
-    - In Exercise 1.11 of Module 1, you are asked to describe
-    an error. You will describe (in plain English) by writing in `module1.pdf`. Similarly, Exercise 1.8 asks you to describe the output of a program. Copy-paste the output from Thonny/Spyder into  `module1.pdf`. Make sure `module1.pdf` is saved to in your `module1`folder.
+    - In Module 0, you are asked to submit a picture and write (in English) something about yourself. You can write in Word, and save to a PDF file called `module0.pdf` in your `module0.0` folder.
+    - In Exercise 1.11 of Module 1.1, you are asked to describe an error. You will describe (in plain English) by writing in `module1.1.pdf`. Similarly, Exercise 1.8 asks you to describe the output of a program. Copy-paste the output from Thonny/Spyder into  `module1.1.pdf`. Make sure `module1.1.pdf` is saved to in your `module1.1`folder.
 
 ## Making a zip to submit
 When you zip your files when preparing to submit them, you must zip only the files for the current module and you must name the zip file for the corresponding folder.  
 
 - The easy way to do this is to zip the folder containing the files.  
-- For example, for **Unit 0 : Module 1**, you must zip the `module1` folder that is inside the `unit0` folder. Since this folder will contain the `module1.pdf` file, it will get included in the zip file.
-- When it's time to submit, you will upload this zip file (example: `module1.zip`) into the _appropriate place in Blackboard_.
+- For example, for **Unit 0 : Module 0.1**, you must zip the `module0.1` folder that is inside the `unit0` folder. Since this folder will contain the `module0.1.pdf` file, it will get included in the zip file.
+- When it's time to submit, you will upload this zip file (example: `module0.1.zip`) into the _appropriate place in Blackboard_.
