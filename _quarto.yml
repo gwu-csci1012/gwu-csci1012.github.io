@@ -11,6 +11,7 @@ website:
   search: true
   sidebar:
     style: floating
+    collapse-level: 1
     contents: 
       - href: index.qmd
         text: Home
@@ -41,6 +42,8 @@ website:
               - ./units/unit1/modules/module1.2.qmd
       - href: course-policies.qmd
         text: Course Policies
+      - href: instructors.qmd
+        text: Instruction Team
       - href: faq.qmd
         text: FAQ
 format:
