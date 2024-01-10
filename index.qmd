@@ -2,21 +2,35 @@
 title: "CS 1012: Introduction to Programming with Python"
 ---
 
-### Welcome to the section of CS-1012!
+### Welcome to CSCI 1012 - Spring 2024:
 
-:::{.callout-caution title="Cource Content" collapse="false"}
-The course material is sourced from **Prof. Simha's** webpage: <https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/>
+- **General information**: The course we will meet during lecture and laboratory times each week.
+    - Most of our communication to you will be by Blackboard messaging and announcements.
+    - Start by reading the [About](about.qmd) section. 
+
+- **Getting Started**: You will need to install a Python IDE or Integrated development environment.
+    - Follow the instructions on [Installing an Editor](units/unit0/editor.qmd).
+    - Choose Thonny (for [Mac](units/unit0/guides/thonny-mac.qmd) or [Windows](units/unit0/guides/thonny-windows.qmd)) as your primary choice of IDE for its simplicity, especially if you are new to coding. However, you can choose, Spyder (for [Mac](units/unit0/guides/anaconda-mac.qmd) or [Windows](units/unit0/guides/anaconda-windows.qmd)) which is a more versatile alternative. 
+
+- **Course schedule**: The [Schedule](schedule.qmd) page outlines the weekly-schedule and what your deliverables are. It is YOUR job to keep to the schedule and submit work accordingly.
+    - The first meeting of the course will be during the labs on Wednesday (01/17/2024) and Friday (01/19/2024) [See [Schedule](schedule.qmd)]
+    - Note that there is deliverable by January  22, 2024 by 11:59 PM.
+
+- **Submitting your work**: When you submit work, please follow the specific instructions outlined on [how to submit your work](submit-remember.qmd).
+
+- **Main method of communication during the semester**: Our main method of communication is Ed, an online discussion board for questions and answers related to the course, whether technical or logistical in nature.
+    - [Join Ed here](https://edstem.org/us/join/aNhz9P)
+    - Do not post your source code to Ed. 
+    - Think through your questions. Post a general of the programming concept. 
+    - Your questions on Ed will be addressed within 24 hours.
+
+- **Communication during extenuating circumstances**: When you need to communicate with us directly regarding extenuating circumstances, please use Blackboard or follow the specific instructions outlined in [Blackboard](https://blackboard.gwu.edu).
+    - The instructor will check emails on Mondays and may respond directly or have one of the GTAs respond. 
+    - Any direct email communication with the instruction team may not result in a response.
+
+:::{.callout-important}
+- Our staff is limiting the use of Linux OS-based laptops and cannot support them this year. 
+- We prefer that your computer has a standard US keyboard layout i.e, a QWERTY keyboard. 
+- The QWERTY (pronounced KWEHR-tee) keyboard is the standard typewriter and computer keyboard in countries that use a Latin-based alphabet.
 :::
-
-Because this is an course, it will operate differently than a regular course. In particular:
-
-- Even though the course is, we will meet three times: once at the beginning to get you going, once in the middle to check in, and once at the end for the in-class final exam.
-- Most of our communication to you will be by email or by announcements in Blackboard.
-- When you need to communicate with us, please follow the specific instructions outlined in Blackboard.
-- When you submit work, please follow the specific instructions outlined in Blackboard for submitting work.
-- The [coursework](coursework.qmd) page outlines the schedule. It is YOUR job to keep to the schedule and submit work accordingly.
-- As you'll see you'll be accompanied by four students who will be doing the course with you. These four have no background in computer science or engineering whatsoever, demonstrating that anyone can learn CS with sufficient enthusiasm.
-- Start by reading the [About](about.qmd) section. Then, await an email that will:
-    - Schedule the first meeting.
-    - Describe the first homework to submit.
 
