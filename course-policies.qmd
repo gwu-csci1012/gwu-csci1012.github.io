@@ -20,29 +20,29 @@ format:
 
 <div class="breadcrumbs">
   <a href="./index.qmd">Home</a> &raquo;
-  <span class="current-page">Instruction Team</span>
+  <span class="current-page">Course Policies</span>
 </div>
 
-## Assignements & Grades
+## Assessments and Grading
 ### Assessments
-- 15 Modules
-- 5 Problem Sets
-- 13 Quizzes (given in lab)
-- Examination
+-	15 Modules
+-	5 Assignments
+-	up to 13 Quizzes (given in lab)
+-	1 Examination
 
 ### Grading
-- Examination: 30%
-- Problem Sets: 25%
-- Modules: 15%
-- Quizzes: 20%
-- Professionalism: 10%
-
-You must pass the examination with a score greater than 60% to pass the course.
+-	Examination: 30%
+-	Assignments: 25%
+-	Modules: 15%
+-	Quizzes: 20%
+-	Professionalism: 10%
 
 :::{.callout-note}
-- The lowest four modules are dropped.
-- The lowest problem set is dropped.
-- The lowest four quizzes are dropped. (Low grades associated associated with academic integrity violations will not be dropped.)
+You must pass the examination with a score greater than 60% to pass the course.
+-	The lowest four modules are dropped.
+-	The lowest problem set is dropped.
+-	The lowest four quizzes are dropped.
+(Low grades associated associated with academic integrity violations will not be dropped.)
 :::
 
 While we use [blackboard.com](https://gwu.blackboard.com/) for assignment submissions, do not rely on [blackboard.com](https://gwu.blackboard.com/) to calculate your grades. Use the grading criteria outlined in this syllabus.
