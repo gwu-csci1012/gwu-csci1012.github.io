@@ -40,6 +40,7 @@ website:
               - ./units/unit1/modules/module1.0.qmd
               - ./units/unit1/modules/module1.1.qmd
               - ./units/unit1/modules/module1.2.qmd
+              - ./units/unit1/modules/module1.3.qmd
       - href: course-policies.qmd
         text: Course Policies
       - href: instructors.qmd
