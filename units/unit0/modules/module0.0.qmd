@@ -30,9 +30,9 @@ By the end of this module you will be able to:
 - Experince writing a really simple program.
 - Explain the difference between command-line outputs vs GUI for programs.
 
-### 0.0: Our First Program
+### 0.0.0: Our First Program
 Lets take a look at our first program as it appears in a textbook (like this one):
-```python
+```{python}
 print("Hello World")
 ```
 
@@ -65,13 +65,16 @@ For now, let's point out a few things:
 
 Next, you will try this yourself.
 
-###### <span style="color:#8B4513;">**0.1 Excercise:** Write and run the helloworld program using [these instructions]()</span>
+:::{.callout-caution appearance="simple" icon=false title="0.0.1 Exercise"}
+Write and run the helloworld program using [these instructions]()
+:::
+
 So, what's with printing the unusual phrase "Hello World!"?
 
 - It's a tradition in computer science that your first program will print "Hello World!".
 - It's meant to pretend that a program is a creature that's itself communicating to the outside world by saying hello.
 
-### 0.1 The recipe-cook-dish analogy
+### 0.0.1 The recipe-cook-dish analogy
 What just happened above?
 
 Let's use an analogy
@@ -99,7 +102,7 @@ The result of executing a program is the program's output
 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rArr;
 A program and the laptop are even more exacting: the slightest error can result in failure.
 
-### 0.2 Programming vs. computerese
+### 0.0.2 Programming vs. computerese
 What we mean by _computerese_:
 
 - The computer-related tasks and knowledge that are needed, but not the intellectual core of programming.
@@ -114,8 +117,9 @@ What we mean by _computerese_:
      - Handling the quirks of an operating system.
      - Uploading files to a website, downloading.
 
-###### <span style="color:#8B4513;">**0.2 Excercise:** Develop your computerese skills by following [these instructions.]()</span>
-<span style="color:#8B4513;"></span>
+:::{.callout-caution appearance="simple" icon=false title="0.0.2 Exercise"}
+Develop your computerese skills by following [these instructions.]()
+:::
 
 :::{.callout-note}
 There is nothing to submit for this particula exercise; it is aimed at generally helping you get proficien with using your computer for programming.
@@ -131,13 +135,15 @@ Consider this program:
 print('Hello World!')
 print('My name is X')
 ```
-###### <span style="color:#8B4513;">**0.3 Excercise:** Type up this program but use your own name instead of X. Save the file in the `module0` folder as `myname.py`.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.0.3 Exercise"}
+Type up this program but use your own name instead of X. Save the file in the `module0.0` folder as `myname.py`.
+:::
 
 :::{.callout-note}
 In the future we will be asking you to "type up" programs; in all such cases, please also save the file (for eventual submission)
 :::
 
-### 0.4 What happens when things go (even slightly) wrong
+### 0.0.4 What happens when things go (even slightly) wrong
 We'll now deliberately make a few tiny errors and see what happens:
 
 - **Error #1:** forgetting to type the closing parenthesis.
@@ -158,9 +164,11 @@ print(Hello World!)
     - We get something quite similar:
     ![](../../../media/units/unit0/module0/error2.png)
 
-###### <span style="color:#8B4513;">**0.4 Excercise:** Confirm that you get the errors above by typing up the two programs as `error1.py` and save the programs in the `module0` folder.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.0.4 Exercise"}
+Confirm that you get the errors above by typing up the two programs as `error1.py` and save the programs in the `module0.0` folder.
+:::
 
-### 0.5 A peek at a more complex program
+### 0.0.5 A peek at a more complex program
 Just to see what's coming later, let's get a sense of what a more complex program _looks like_.
 
 Your goal is to look through it with bemused curiosity, as if studying an incomprensible work of abstract art.
@@ -170,9 +178,11 @@ We'll just examine the some surface features, as we would when examining some un
 
 Let's start by running the program.
 
-###### <span style="color:#8B4513;">**0.5 Excercise:** Download [`whackamole.py`]() into your `module0.py` folder Then open it and run it. You should see</span>
+:::{.callout-caution appearance="simple" icon=false title="0.0.5 Exercise"}
+Download <a href="../../../media/units/unit0/module0/whackamole.py" download>**whackamole.py**</a> into your `module0.0` folder Then open it and run it. You should see
 ![](../../../media/units/unit0/module0/whackamole.png)
-<span style="color:#8B4513;">The purpose of the program and how you use it should be easy to figure out.</span>
+The purpose of the program and how you use it should be easy to figure out.
+:::
 
 Let's point out a few things:
 
@@ -284,7 +294,7 @@ First, some features from the first half of the program:
 And some from the latter part:And some from the latter part:
 ![](../../../media/units/unit0/module0/whackamole3.png)
 
-### 0.6 GUI vs command-line
+### 0.0.6 GUI vs command-line
 GUI stands for: Graphical User Interface.
 
 And is pronounced like "gooey".
@@ -297,7 +307,7 @@ The difference between GUI and command-line programs:
 - We will spend quite a bit of time learning programming with simpler (albeit less exciting) command-line programs.
 - However, we will occasionally work with GUI programs because they are visually more interesting, and demonstrate applications.
 
-### 0.8 Computer science: beyond programming
+### 0.0.7 Computer science: beyond programming
 Is computer science the same as programming?
 
 Not at all:
@@ -325,7 +335,7 @@ But also electives among (to name a few):
 - Educational tools, health data systems.
 - Medical devices, prosthetics, control of mechanical systems
 
-### 0.8 How to succeed as a student
+### 0.0.8 How to succeed as a student
 The challenge in learning programming:
 
 **1:** it's an alien world.
@@ -367,7 +377,9 @@ How to succeed:
     &rArr; Do <em>all</em> exercises, assignments etc.
 - Practice being irrepressibly positive.
 
-###### <span style="color:#8B4513;">**0.6 Excercise:** Create a PDF file (using Word, Google-docs, or anything like that) called `module0.pdf` in your `module0.pdf` folder. This document should contain: **(1)** a picture that says something about you (it need not be a picture of you, it could  represent something iconic for you.) **(2)** a paragraph about yourself.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.0.6 Exercise"}
+Create a PDF file (using Word, Google-docs, or anything like that) called `module0.pdf` in your `module0.pdf` folder. This document should contain: **(1)** a picture that says something about you (it need not be a picture of you, it could  represent something iconic for you.) **(2)** a paragraph about yourself.
+:::
 
 :::{.callout-note}
 [What to rememeber about submitting work](../../../submit-remember.qmd)
