@@ -125,7 +125,7 @@ Develop your computerese skills by following [these instructions.]()
 There is nothing to submit for this particula exercise; it is aimed at generally helping you get proficien with using your computer for programming.
 :::
 
-### 0.3 A slight variation
+### 0.0.3 A slight variation
 We will now spend a bit of time trying a few variations, and also  examining what happens when typing mistakes are made.
 
 Consider this program:
