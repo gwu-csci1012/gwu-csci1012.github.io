@@ -2,7 +2,7 @@
 title: "Assignment 2"
 ---
 
-<html>
+<!-- <html>
 <head>
     <style>
         body {
@@ -13,7 +13,7 @@ title: "Assignment 2"
         }
     </style>
 </head>
-<body>
+<body> -->
 
 <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
@@ -148,13 +148,13 @@ for j in range(ord('a'),ord('z')):
 ```
 Find and fix the errors in `fixed_errors1.py`.
 
-### 7. In `assignment2.pdf`, explore geometric art and the general topic of computer-generated art. What were you able to find? Write a paragraph on a well-known artist and provide a link to the sources you found. Explain what you like in this artist's work and why.
+<!-- ### 7. In `assignment2.pdf`, explore geometric art and the general topic of computer-generated art. What were you able to find? Write a paragraph on a well-known artist and provide a link to the sources you found. Explain what you like in this artist's work and why. -->
 
 
 ## How to submit:
 
-- Write all your programs and `assignment1.pdf` in a directory called  `assignment1`.
+<!-- - Write all your programs and `assignment1.pdf` in a directory called  `assignment1`. -->
 - Make a zip of the directory and submit that.
 
-</body>
-</html>
+<!-- </body>
+</html> -->
