@@ -270,6 +270,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><strong>Module 1.2:</strong> Functions</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit1/modules/module1.3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 1.3:</strong> Booleans, strings, built-in functions, types</span></a>
+  </div>
+</li>
       </ul>
   </li>
       </ul>
@@ -303,12 +309,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#comments" id="toc-comments" class="nav-link" data-scroll-target="#comments">1.0 comments</a></li>
-  <li><a href="#whitespace" id="toc-whitespace" class="nav-link" data-scroll-target="#whitespace">1.1 Whitespace</a></li>
-  <li><a href="#strings" id="toc-strings" class="nav-link" data-scroll-target="#strings">1.2 Strings</a></li>
-  <li><a href="#case-sensitivity" id="toc-case-sensitivity" class="nav-link" data-scroll-target="#case-sensitivity">1.3 Case sensitivity</a></li>
-  <li><a href="#a-peek-at-the-future" id="toc-a-peek-at-the-future" class="nav-link" data-scroll-target="#a-peek-at-the-future">1.4 A peek at the future</a></li>
-  <li><a href="#a-reminder-about-computerese" id="toc-a-reminder-about-computerese" class="nav-link" data-scroll-target="#a-reminder-about-computerese">1.5 A reminder about computerese</a></li>
+  <li><a href="#comments" id="toc-comments" class="nav-link" data-scroll-target="#comments">0.1.0 comments</a></li>
+  <li><a href="#whitespace" id="toc-whitespace" class="nav-link" data-scroll-target="#whitespace">0.1.1 Whitespace</a></li>
+  <li><a href="#strings" id="toc-strings" class="nav-link" data-scroll-target="#strings">0.1.2 Strings</a></li>
+  <li><a href="#case-sensitivity" id="toc-case-sensitivity" class="nav-link" data-scroll-target="#case-sensitivity">0.1.3 Case sensitivity</a></li>
+  <li><a href="#a-peek-at-the-future" id="toc-a-peek-at-the-future" class="nav-link" data-scroll-target="#a-peek-at-the-future">0.1.4 A peek at the future</a></li>
+  <li><a href="#a-reminder-about-computerese" id="toc-a-reminder-about-computerese" class="nav-link" data-scroll-target="#a-reminder-about-computerese">0.1.5 A reminder about computerese</a></li>
   </ul>
 </nav>
     </div>
@@ -361,7 +367,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 </section>
 <section id="comments" class="level2">
-<h2 class="anchored" data-anchor-id="comments">1.0 comments</h2>
+<h2 class="anchored" data-anchor-id="comments">0.1.0 comments</h2>
 <p>A <em>comment</em> is like a note-to-self that you include directly in a program as a way to explain something to yourself for later, or to someone else who reads your program.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is a comment</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>      <span class="co"># This is one too, but not recommended </span></span>
@@ -369,7 +375,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Something'</span>)      <span class="co"># And so is this</span></span></code></pre></div>
 <p>Let’s explain:</p>
 <ul>
-<li>A comment begins with a and ends at the end of the line.</li>
+<li>A comment begins with a <code>#</code> and ends at the end of the line.</li>
 <li>Anything written as a comment is not treated by your computer as a “command” or as programming intent.</li>
 <li>Thus, as far as programming goes, the above program is as good as:</li>
 </ul>
@@ -377,37 +383,88 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>You can insert comments in various places in a program: <img src="../../../media/units/unit0/module1/comments.png" class="img-fluid"></li>
 </ul>
-<section id="excercise-under-your-unit0-create-a-module1-folder-if-you-havent-already-and-then-write-up-the-above-in-my_comments.py.-fix-the-second-comment-to-start-at-the-beginning-of-the-line-and-add-an-entirely-new-comment-line-of-your-own." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-under-your-unit0-create-a-module1-folder-if-you-havent-already-and-then-write-up-the-above-in-my_comments.py.-fix-the-second-comment-to-start-at-the-beginning-of-the-line-and-add-an-entirely-new-comment-line-of-your-own."><span style="color:#8B4513;"><strong>1.1 Excercise:</strong> Under your <code>unit0</code>, create a <code>module1</code> folder (if you haven’t already), and then write up the above in <code>my_comments.py</code>. Fix the second comment to start at the beginning of the line, and add an entirely new comment line of your own.</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.1.1 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.1.1 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Under your <code>unit0</code>, create a <code>module0.1</code> folder (if you haven’t already), and then write up the above in <code>my_comments.py</code>. Fix the second comment to start at the beginning of the line, and add an entirely new comment line of your own.</p>
+</div>
+</div>
 <p>Sometimes one needs a comment to spill over multiple lines, as in</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># I wrote this program at midnight</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="dv">20</span> seconds before the deadline</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Something'</span>) </span></code></pre></div>
 <p>Notice the missing # in the second line of the comment.</p>
-</section>
-<section id="excercise-write-up-the-above-in-comment_error.py.-remember-to-save-the-file-and-do-this-for-every-exercise-in-the-future-that-involves-a-program.-what-is-the-error-displayed-when-you-try-to-run-the-program-write-the-error-in-your-module1.pdf-file." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-write-up-the-above-in-comment_error.py.-remember-to-save-the-file-and-do-this-for-every-exercise-in-the-future-that-involves-a-program.-what-is-the-error-displayed-when-you-try-to-run-the-program-write-the-error-in-your-module1.pdf-file."><span style="color:#8B4513;"><strong>1.2 Excercise:</strong> Write up the above in <code>comment_error.py</code>. Remember to save the file (and do this for every exercise in the future that involves a program). What is the error displayed when you try to run the program? Write the error in your <code>module1.pdf</code> file.</span></h6>
-</section>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.1.2 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.1.2 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Write up the above in <code>comment_error.py</code>. Remember to save the file (and do this for every exercise in the future that involves a program). What is the error displayed when you try to run the program? Write the error in your <code>module0.1.pdf</code> file.</p>
+</div>
+</div>
 </section>
 <section id="whitespace" class="level2">
-<h2 class="anchored" data-anchor-id="whitespace">1.1 Whitespace</h2>
+<h2 class="anchored" data-anchor-id="whitespace">0.1.1 Whitespace</h2>
 <p>Consider the following program:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>   (  <span class="st">'Hello World!'</span>     ) </span></code></pre></div>
 <p>Notice the spaces inserted in various places.</p>
-<section id="excercise-write-up-the-above-in-whitespace_example.py.-does-the-program-run-write-your-answer-in-module1.pdf-file.-remember-if-its-not-clear-where-to-write-your-answer-write-it-in-your-module-pdf-for-this-module-thats-module1.pdf" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-write-up-the-above-in-whitespace_example.py.-does-the-program-run-write-your-answer-in-module1.pdf-file.-remember-if-its-not-clear-where-to-write-your-answer-write-it-in-your-module-pdf-for-this-module-thats-module1.pdf"><span style="color:#8B4513;"><strong>1.3 Excercise:</strong> Write up the above in <code>whitespace_example.py</code>. Does the program run? Write your answer in <code>module1.pdf</code> file. Remember: if it’s not clear where to write your answer, write it in your module pdf (for this module that’s <code>module1.pdf</code>)</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.1.3 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.1.3 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Write up the above in <code>whitespace_example.py</code>. Does the program run? Write your answer in <code>module0.1.pdf</code> file. Remember: if it’s not clear where to write your answer, write it in your module pdf (for this module that’s <code>module0.1.pdf</code>)</p>
+</div>
+</div>
 <p>Consider this variation</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'Hello World!'</span>)</span></code></pre></div>
 <p>(Two spaces before <code>print</code>).</p>
-</section>
-<section id="excercise-write-up-the-above-in-whitespace_example2.py.-what-is-the-error-produced" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-write-up-the-above-in-whitespace_example2.py.-what-is-the-error-produced"><span style="color:#8B4513;"><strong>1.4 Excercise:</strong> Write up the above in <code>whitespace_example2.py</code>. What is the error produced?</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.1.4 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.1.4 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Write up the above in <code>whitespace_example2.py</code>. What is the error produced?</p>
+</div>
+</div>
 <p>Finally, look at:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello     World!'</span>) </span></code></pre></div>
 <p>(Extra spaces between Hello and World.)</p>
-</section>
-<section id="excercise-write-up-the-above-in-whitespace_example3.py.-what-is-printed-out-write-your-answer-in-module1.pdf" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-write-up-the-above-in-whitespace_example3.py.-what-is-printed-out-write-your-answer-in-module1.pdf"><span style="color:#8B4513;"><strong>1.5 Excercise:</strong> Write up the above in <code>whitespace_example3.py</code>. What is printed out? Write your answer in <code>module1.pdf</code></span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.1.5 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.1.5 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Write up the above in <code>whitespace_example3.py</code>. What is printed out? Write your answer in <code>module0.1.pdf</code></p>
+</div>
+</div>
 <p>Let’s point out a few things:</p>
 <ul>
 <li>Some kinds of whitespace, even if ill-advised, is permitted.</li>
@@ -415,9 +472,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>The extra spaces between Hello and World are perfectly acceptable if the goal is to print them. Printing accepts whatever spaces you want printed.</li>
 </ul>
 </section>
-</section>
 <section id="strings" class="level2">
-<h2 class="anchored" data-anchor-id="strings">1.2 Strings</h2>
+<h2 class="anchored" data-anchor-id="strings">0.1.2 Strings</h2>
 <p>A <em>string</em> in Python is a sequence of letters, digits, or symbols (like $ or *) surrounded by either</p>
 <ul>
 <li>A pair of double quotes, as in: <code>"Hello World!"</code></li>
@@ -448,8 +504,19 @@ Note
 <p>First, note that we can use single or double quotes for different strings in the same program:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello'</span>)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"World!"</span>) </span></code></pre></div>
-<section id="excercise-confirm-that-hello-and-world-get-printed-on-two-lines-by-writing-the-above-in-my_string_example.py" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-confirm-that-hello-and-world-get-printed-on-two-lines-by-writing-the-above-in-my_string_example.py"><span style="color:#8B4513;"><strong>1.6 Excercise:</strong> Confirm that Hello and World! get printed on two lines by writing the above in <code>my_string_example.py</code></span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.1.6 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.1.6 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Confirm that Hello and World! get printed on two lines by writing the above in <code>my_string_example.py</code></p>
+</div>
+</div>
 <p>A print statement prints the string within parenthesis and then goes to the next line of output, which is why we see World! on the next line.</p>
 <p>To keep printing on the same line:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello'</span>, end<span class="op">=</span><span class="st">' '</span>)</span>
@@ -467,15 +534,35 @@ Note
 <p>We’ve reverted to using single-quotes for all strings, which will be our preference.</p>
 </div>
 </div>
-</section>
-<section id="excercise-confirm-by-writing-the-above-in-my_string_example2.py." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-confirm-by-writing-the-above-in-my_string_example2.py."><span style="color:#8B4513;"><strong>1.7 Excercise:</strong> Confirm by writing the above in <code>my_string_example2.py</code>.</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.1.7 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.1.7 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Confirm by writing the above in <code>my_string_example2.py</code>.</p>
+</div>
+</div>
 <p>We’ll now go the other way and have a single string itself contain a directive to spill over to the next line.</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello</span><span class="ch">\n</span><span class="st">World!'</span>) </span></code></pre></div>
-<p>Notice the backslash <code>\</code> followed by <code>n</code> inside the string: <code>'Hello&lt;b&gt;\n&lt;/b&gt;World!'</code></p>
-</section>
-<section id="excercise-write-up-the-above-my_string_example3.py.-what-is-the-output-write-your-answer-in-module1.pdf" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-write-up-the-above-my_string_example3.py.-what-is-the-output-write-your-answer-in-module1.pdf"><span style="color:#8B4513;"><strong>1.8 Excercise:</strong> Write up the above <code>my_string_example3.py</code>. What is the output? Write your answer in <code>module1.pdf</code></span></h6>
+<p>Notice the backslash <code>\</code> followed by <code>n</code> inside the string: <code>'Hello\nWorld!'</code></p>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.1.8 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.1.8 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Write up the above <code>my_string_example3.py</code>. What is the output? Write your answer in <code>module0.1.pdf</code></p>
+</div>
+</div>
 <p>Strings can embed special so-called <em>escape sequences</em> that begin with backslash.</p>
 <p>This will give us one way to print a quote:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'My friend</span><span class="ch">\'</span><span class="st">s friend</span><span class="ch">\'</span><span class="st">s dog</span><span class="ch">\'</span><span class="st">s friend'</span>)</span></code></pre></div>
@@ -485,17 +572,26 @@ Note
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'who yelped "owww"'</span>)</span></code></pre></div>
 <p>How does one print a backslash itself? By using a double backslash:</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The backslash character, </span><span class="ch">\\</span><span class="st">, is less intimidating now'</span>)</span></code></pre></div>
-</section>
-<section id="excercise-write-a-program-called-practice_escaping.py-that-prints-out" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-write-a-program-called-practice_escaping.py-that-prints-out"><span style="color:#8B4513;"><strong>1.9 Excercise:</strong> Write a program called <code>practice_escaping.py</code> that prints out</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.1.9 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.1.9 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Write a program called <code>practice_escaping.py</code> that prints out</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>  <span class="co">"    "</span>   \\<span class="op">\</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"    "</span>    \    </span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">""""""</span>    \    </span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="co">"    "</span>    \    </span>
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">"    "</span>   \\\  </span></code></pre></div>
-</section>
+</div>
+</div>
 <section id="video" class="level6">
-<h6 class="anchored" data-anchor-id="video"><span style="color:#8B4513;"><strong>1.10 Video:</strong></span></h6>
+<h6 class="anchored" data-anchor-id="video"><strong>0.1.10 Video</strong></h6>
 <div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/units/unit0/module1/u0-mod1.10.mp4"></video></div>
 <p>Another use of backslash: to make long strings</p>
 <ul>
@@ -507,18 +603,38 @@ Note
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="er">The dromedary, two; </span></span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>Or <span class="cf">else</span> the other way around. </span>
 <span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>I’m never sure. Are you?<span class="st">')</span></span></code></pre></div>
-</section>
-<section id="excercise-write-a-program-called-my_string_example4.py-with-the-above-program-and-run-it.-what-is-the-error-you-observe-write-your-answer-in-module1.pdf" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-write-a-program-called-my_string_example4.py-with-the-above-program-and-run-it.-what-is-the-error-you-observe-write-your-answer-in-module1.pdf"><span style="color:#8B4513;"><strong>1.11 Excercise:</strong> Write a program called <code>my_string_example4.py</code> with the above program and run it. What is the error you observe? Write your answer in <code>module1.pdf</code></span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.1.11 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.1.11 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Write a program called <code>my_string_example4.py</code> with the above program and run it. What is the error you observe? Write your answer in <code>module0.1.pdf</code></p>
+</div>
+</div>
 <p>To spread a single string over multiple lines, one uses a <em>triple quote</em> as in:</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'An Ogden Nash poem:'</span>)</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'''The camel has a single hump; </span></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="st">The dromedary, two; </span></span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="st">Or else the other way around. </span></span>
 <span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="st">I’m never sure. Are you?'''</span>)</span></code></pre></div>
-</section>
-<section id="excercise-write-a-program-called-my_string_example5.py-with-a-5-line-limerick." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-write-a-program-called-my_string_example5.py-with-a-5-line-limerick."><span style="color:#8B4513;"><strong>1.12 Excercise:</strong> Write a program called <code>my_string_example5.py</code> with a 5-line limerick.</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.1.12 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.1.12 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Write a program called <code>my_string_example5.py</code> with a 5-line limerick.</p>
+</div>
+</div>
 <p>Empty strings: - It is possible to not have anything in a string, as in:</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">''</span>)</span></code></pre></div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -541,26 +657,45 @@ Note
 </section>
 </section>
 <section id="case-sensitivity" class="level2">
-<h2 class="anchored" data-anchor-id="case-sensitivity">1.3 Case sensitivity</h2>
+<h2 class="anchored" data-anchor-id="case-sensitivity">0.1.3 Case sensitivity</h2>
 <p>What if we had used uppercase P instead of lowercase p in print?</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello World!'</span>)</span></code></pre></div>
-<section id="excercise-write-up-the-above-program-in-case_error.py-and-run-it.-what-is-the-error-you-get" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-write-up-the-above-program-in-case_error.py-and-run-it.-what-is-the-error-you-get"><span style="color:#8B4513;"><strong>1.13 Excercise:</strong> Write up the above program in <code>case_error.py</code> and run it. What is the error you get?</span></h6>
-<p>Write your answer in <code>module1.pdf</code>.</p>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.1.13 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.1.13 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Write up the above program in <code>case_error.py</code> and run it. What is the error you get? Write your answer in <code>module0.1.pdf</code>.</p>
+</div>
+</div>
 <p>What if we changed the case inside a string?</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'helLo WoRLd!'</span>)</span></code></pre></div>
-</section>
-<section id="excercise-write-up-the-above-program-in-my_string_example6.py-and-run-it-to-see-if-it-works." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-write-up-the-above-program-in-my_string_example6.py-and-run-it-to-see-if-it-works."><span style="color:#8B4513;"><strong>1.14 Excercise:</strong> Write up the above program in <code>my_string_example6.py</code> and run it to see if it works.</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.1.14 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.1.14 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Write up the above program in <code>my_string_example6.py</code> and run it to see if it works.</p>
+</div>
+</div>
 <p>Python is case sensitive but strings are like <em>data</em> inside programs, which means they can be whatever we like.</p>
 <ul>
 <li>The two strings <code>'Hello World!'</code> and <code>'helLo WoRLd!'</code> are fine as two different strings, if that’s we want.</li>
 <li>However, Python has only one <code>print</code> and so it won’t recognize <code>Print</code> (with capital P).</li>
 </ul>
 </section>
-</section>
 <section id="a-peek-at-the-future" class="level2">
-<h2 class="anchored" data-anchor-id="a-peek-at-the-future">1.4 A peek at the future</h2>
+<h2 class="anchored" data-anchor-id="a-peek-at-the-future">0.1.4 A peek at the future</h2>
 <p>We will occasionally jump ahead and present an example of a program that does something advanced, just so you get a feel for what’s coming.</p>
 <p>With these examples, we’ll only ask you to type up the program and run the program.</p>
 <p>And then we’ll point out a few features, just so that you get acquainted with features that you’ll eventually encounter.</p>
@@ -579,18 +714,28 @@ Note
 <span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>        startx, starty, text<span class="op">=</span><span class="st">"Hello"</span>, font<span class="op">=</span>fontStr, fill<span class="op">=</span><span class="st">'grey'</span>)</span>
 <span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div>
-<section id="excercise-write-up-the-above-program-in-hello_gui.py-being-careful-to-type-it-in-exactly-as-shown-above-paying-attention-to-every-keystroke.-run-it-to-get-something-like-if-something-went-wrong-with-the-typing-you-can-instead-download-hello_gui.py-but-only-after-giving-the-typing-a-good-try." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-write-up-the-above-program-in-hello_gui.py-being-careful-to-type-it-in-exactly-as-shown-above-paying-attention-to-every-keystroke.-run-it-to-get-something-like-if-something-went-wrong-with-the-typing-you-can-instead-download-hello_gui.py-but-only-after-giving-the-typing-a-good-try."><span style="color:#8B4513;"><strong>1.14 Excercise:</strong> Write up the above program in <code>hello_gui.py</code> being careful to type it in exactly as shown above, paying attention to every keystroke. Run it to get something like: <img src="../../../media/units/unit0/module1/hello-gui.png" class="img-fluid"> If something went wrong with the typing, you can instead download <a href="../../../media/units/unit0/module1/hello_gui.py" download=""><strong>hello_gui.py</strong></a> but only after giving the typing a good try. </span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.1.15 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.1.15 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Write up the above program in <code>hello_gui.py</code> being careful to type it in exactly as shown above, paying attention to every keystroke. Run it to get something like: <img src="../../../media/units/unit0/module1/hello-gui.png" class="img-fluid"> If something went wrong with the typing, you can instead download <a href="../../../media/units/unit0/module1/hello_gui.py" download=""><strong>hello_gui.py</strong></a> but only after giving the typing a good try.</p>
+</div>
+</div>
 <p>Now let’s point out a few features of the program, and we’ll focus on the middle section: <img src="../../../media/units/unit0/module1/for-loop.png" class="img-fluid"></p>
 <p>Our belief is that by showing you bits and pieces of advanced code, you’ll be primed to absorb these concepts when we work through them.</p>
 <p>One of the most important things to observe about is that some code is <em>indented</em>: <img src="../../../media/units/unit0/module1/for-loop2.png" class="img-fluid"></p>
 </section>
-</section>
 <section id="a-reminder-about-computerese" class="level2">
-<h2 class="anchored" data-anchor-id="a-reminder-about-computerese">1.5 A reminder about computerese</h2>
+<h2 class="anchored" data-anchor-id="a-reminder-about-computerese">0.1.5 A reminder about computerese</h2>
 <p>As you complete Module 1 and ready that for submission you might want to review: - Did you make your <code>module1</code> folder? Did you ensure that the <code>m</code> in <code>module1</code> is lowercase and that there’s no space <code>module</code> and <code>1</code>? - Are your Python programs from this module in that folder? - Did you make your <code>module1.pdf</code> in this folder? Does it have the non-coding questions answered within? - Do you recall how to make a zip?</p>
 <p>If it’s a bit hazy, please make sure to review from the <b><a href="../module0/computerese.html">material on computerese</a></b> from Module 0.</p>
-<p><a href="">Here’s more information about submitting Module 1</a></p>
+<!-- [Here's more information about submitting Module 1]() -->
 <p><br> <a href="../../../units/unit0/modules/module0.0.html" class="button prev">Previous Module: <strong>Module 0.0</strong></a> <a href="../../../units/unit0/modules/module0.2.html" class="button next">Next Module: <strong>Module 0.2</strong></a></p>
 
 
