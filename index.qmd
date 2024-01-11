@@ -13,7 +13,7 @@ The course material is sourced from **Prof. Simha's** webpage: <https://www2.sea
     - Start by reading the [**About**](about.qmd) section. 
     - Review the [**Course policies**](course-policies.qmd) and get familiar with the [**Instruction Team**](instructors.qmd). 
 
-- **Main method of communication during the semester**: Our main method of communication is Ed, an online discussion board for questions and answers related to the course, whether technical or logistical in nature.
+- **Student's main method of communication during the semester**: Our main method of communication is Ed, an online discussion board for questions and answers related to the course, whether technical or logistical in nature.
     - [**Join Ed here**](https://edstem.org/us/join/aNhz9P)
     - Do not post your source code to Ed. 
     - Think through your questions. Post a general of the programming concept. 
@@ -35,7 +35,7 @@ The course material is sourced from **Prof. Simha's** webpage: <https://www2.sea
     - Any direct email communication with the instruction team may not result in a response.
 
 :::{.callout-important}
-- Our staff is limiting the use of Linux OS-based laptops and cannot support them this year. 
+- Our staff is limiting the use of Linux OS-based laptops and cannot support them this semester. 
 - We prefer that your computer has a standard US keyboard layout i.e, a QWERTY keyboard. 
     - The QWERTY (pronounced KWEHR-tee) keyboard is the standard typewriter and computer keyboard in countries that use a Latin-based alphabet.
 :::
