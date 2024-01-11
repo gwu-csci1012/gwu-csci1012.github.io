@@ -1,11 +1,11 @@
 ---
-title: "Assignment 1"
-format:
-  html:
-    code-copy: false
+title: "Assignment 0"
+# format:
+#   html:
+#     code-copy: false
 ---
 
-<html>
+<!-- <html>
 <head>
     <style>
         body {
@@ -16,12 +16,12 @@ format:
         }
     </style>
 </head>
-<body>
+<body> -->
 
 <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
   <a href="">Unit 0</a> &raquo;
-  <span class="current-page">Assignment 1</span>
+  <span class="current-page">Assignment 0</span>
 </div>
 
 ## Objectives and example
@@ -119,7 +119,7 @@ dt.display()
 ```
 This produces (we've added some markup to explain):
 
-![]()
+<!-- ![]() -->
 
 As a first step, download <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> into your assignment1 folder and type up the above single-rectangle example in `my_rectangle_example.py`. This way, you know that the download worked and that drawing works. Now you can focus on the many-rectangle problem. Think about how the for-loop needs to range so that you can draw the rectangles in the loop. Write your program in `my_rectangle_pattern.py`.
 
@@ -177,13 +177,13 @@ function#2()
 ```
 There are several errors above. Point them out in your assignment pdf. Then fix them in `fixed_downprint.py`.
 
-### 8. In each assignment, we will include a sometimes whimsical, sometimes serious non-coding exploration to encourage creativity and curiousity. For this assignment, in your `assignment1.pdf`, make a cartoon that makes light of "frustration with computers". You can use a simple drawing tool, or find images that are copyright-free (please include the link to images/cartoons). Make sure the caption is <em>original</em> (this is the whole point). We'll post some of the funniest ones.
+<!-- ### 8. In each assignment, we will include a sometimes whimsical, sometimes serious non-coding exploration to encourage creativity and curiousity. For this assignment, in your `assignment1.pdf`, make a cartoon that makes light of "frustration with computers". You can use a simple drawing tool, or find images that are copyright-free (please include the link to images/cartoons). Make sure the caption is <em>original</em> (this is the whole point). We'll post some of the funniest ones. -->
 
 
 ## How to submit:
 
-- Write all your programs and `assignment1.pdf` in a directory called `assignment1`.
+<!-- - Write all your programs and `assignment1.pdf` in a directory called `assignment1`. -->
 - Make a zip of the directory and submit that.
 
-</body>
-</html>
+<!-- </body>
+</html> -->
