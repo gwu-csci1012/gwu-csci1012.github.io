@@ -129,8 +129,6 @@ There is nothing to submit for this particula exercise; it is aimed at generally
 We will now spend a bit of time trying a few variations, and also  examining what happens when typing mistakes are made.
 
 Consider this program:
-    <!-- <font size="+2">
-    <font color="#000000"><pre> -->
 ```python
 print('Hello World!')
 print('My name is X')
