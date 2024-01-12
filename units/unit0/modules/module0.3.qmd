@@ -113,7 +113,7 @@ Type up the above in `my_forloop_example.py` and run it. You should observe this
 4
 5
 ```
-In the place in the code where you see the number 6, replace 6 with  10 and then run the program. Next, try 2 instead of 6. Finally, try 0 instead of 6. What is the output in each case? Report in your module pdf (`module3.pdf`). Submit the program with 6.
+In the place in the code where you see the number 6, replace 6 with  10 and then run the program. Next, try 2 instead of 6. Finally, try 0 instead of 6. What is the output in each case? Discuss the program with your TA to understand what happens when you replace the number 6 with 10 and 2.
 :::
 
 Let's now examine elements of the loop:
@@ -285,7 +285,7 @@ Add a row for `5` (with five of them), writing your code in `my_forloop_print.py
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="0.3.11 Exercise"}
-Just for the heck of it, could one use a for-loop to achieve the printing of `1` all by itself? That is, answer the question in your module pdf: can a for-loop be set up so that you go into it exactly once? Write your code in `my_forloop_print2.py`.
+Just for the heck of it, could one use a for-loop to achieve the printing of `1` all by itself? That is, can a for-loop be set up so that you go into it exactly once? Write you code in my_foorloop_print2.py
 :::
 
 Next, observe that the upper-limits of the for-loops are themselves increasing:
@@ -453,7 +453,7 @@ for i in range(1, 6):
         print('-', end='')
     print()
 ```
-First, trace through the values of i and j by hand and try to figure out what gets printed. Do this painstakingly for each possible value of i and j, remembering that i is now the name of the outerloop variable. Write your tracing in `module3.pdf`, using the shorter "table" format we saw in [**see this PDF for the above program**](../../../media/units/unit0/module3/TracingExample.pdf) earlier. Then, edit, compile and execute the above program in `my_forloop_trace.py`.to see if you were right.
+First, trace through the values of i and j by hand and try to figure out what gets printed. Do this painstakingly for each possible value of i and j, remembering that i is now the name of the outerloop variable. You can use the shorter “table” format. See [**this PDF for the above program**](../../../media/units/unit0/module3/TracingExample.pdf)  Then edit, compile and execute the above program in `my_forloop_trace.py`. Discuss the program with your TA if you are encountering any errors or for any questions. 
 :::
 
 ###### **0.3.15 Video** 
@@ -496,7 +496,7 @@ for k in range(1, 10, 2):
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="0.3.19 Exercise"}
-Write up the above in `my_simpleloop.py` and run to see the output. Then in `module3.pdf`, trace the execution of the program.
+Write up the above in `my_simpleloop.py` and run to see the output.
 :::
 
 Instead of explaining the execution, let's focus on how to <em>read</em> such a program:
@@ -535,7 +535,7 @@ for i in range(1, 11, 2):
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="0.3.20 Exercise"}
-What does it print? Try to figure this out by mental execution first. Then, type it up, compile and execute to confirm, writing your code in `my_execution_exercise.py`. Then in `module3.pdf`, trace the execution of the program.
+What does it print? Try to figure this out by mental execution first. Then, type it up, compile and execute to confirm, writing your code in `my_execution_exercise.py`.
 :::
 
 ###### **0.3.21 Video** 
@@ -622,7 +622,7 @@ for i in range(5, 0, 1):
         print(i, end='')
     print()
 ```
-But there are two bugs. First, try to find the problems solely by reading and mental execution. Then, type up the program in `my_loop_exercise7.py`. What does it print? Report what you see in `module3.pdf`. Then fix the program to get the desired output.
+But there are two bugs. First, try to find the problems solely by reading and mental execution. Then, type up the program in `my_loop_exercise7.py`. Fix the program to get the desired output.
 :::
 
 ## 0.3.6 &nbsp;&nbsp; A peek at the future
