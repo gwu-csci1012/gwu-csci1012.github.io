@@ -48,6 +48,8 @@ website:
               - ./units/unit1/modules/module1.3.qmd
               - ./units/unit1/modules/module1.4.qmd
               - ./units/unit1/modules/module1.5.qmd
+          - section: "<b>Unit 2:</b> <em>will be added soon...</em>"
+            contents: 
       - href: faq.qmd
         text: FAQ
 format:
