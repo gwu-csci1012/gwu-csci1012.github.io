@@ -46,6 +46,8 @@ website:
               - ./units/unit1/modules/module1.1.qmd
               - ./units/unit1/modules/module1.2.qmd
               - ./units/unit1/modules/module1.3.qmd
+              - ./units/unit1/modules/module1.4.qmd
+              - ./units/unit1/modules/module1.5.qmd
       - href: faq.qmd
         text: FAQ
 format:
