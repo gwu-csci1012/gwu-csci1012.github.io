@@ -21,7 +21,7 @@ format:
 <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
   <a href="">Unit 0</a> &raquo;
-  <span class="current-page">Module 0.6</span>
+  <span class="current-page">Module 0.6
 </div>
 
 ## Objectives
@@ -38,7 +38,7 @@ By the end of this module, for simple programs with real numbers, you will be ab
 - Produce desired output using for-loops and calculations.
 - Identify new syntactic elements related to the above.
 
-## 6.0 What are real numbers?
+## 0.6.0 What are real numbers?
 Let's start with some math facts:
 
 - Whole numbers like 3, 42 and 1024 are <em>integers</em>.
@@ -57,17 +57,20 @@ Let's start with some math facts:
     - The same operations: +, -, *, /
     - What's nice is that applying these to real numbers will always result in real number results.
 - For example:
-```python
-x = 3.14
-y = 2.718
-z = x + y
-print(z)
+    
+    ```python
+    x = 3.14
+    y = 2.718
+    z = x + y
+    print(z)
 
-w = z * (x + y) / (x - y)
-print(w)
-```
+    w = z * (x + y) / (x - y)
+    print(w)
+    ```
 
-###### <span style="color:#8B4513;">**6.1 Excercise:** Type up the above in `my_real_example1.py`. What is the output?</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.1 Exercise"}
+Type up the above in `my_real_example1.py`. What is the output?
+:::
 
 :::{.callout-note}
 
@@ -88,15 +91,18 @@ Quick review of some relevant math:
 - The next step then is to allow numbers like 2.56<sup>6.4</sup>.
 - In fact, you can take any real number as the <em>mantissa</em> (the 2.56 in 2.56<sup>6.4</sup>) and any real number as the <em>exponent</em> (the 6.4 in  2.56<sup>6.4</sup>).
 - Let's put this in code and introduce a new operator to raise a number to a power, as in 2.56<sup>6.4</sup>).
-```python
-x = 2 ** 6
-print(x)
 
-y = 2.56 ** 6.4
-print(y)
-```
+    ```python
+    x = 2 ** 6
+    print(x)
 
-###### <span style="color:#8B4513;">**6.2 Excercise:** Type up the above in `my_real_example2.py`. What is the output? Consider 2.56<sup>x</sup> = y. Can you guess what approximate value of x would make `y` become 400? Play around with the number 6.4 in the program above and see if you can guess approximately what value would make `y` become 400. </span>
+    y = 2.56 ** 6.4
+    print(y)
+    ```
+
+:::{.callout-caution appearance="simple" icon=false title="0.6.2 Exercise"}
+Type up the above in `my_real_example2.py`. What is the output? Consider 2.56<sup>x</sup> = y. Can you guess what approximate value of x would make `y` become 400? Play around with the number 6.4 in the program above and see if you can guess approximately what value would make `y` become 400. 
+:::
 
 Let's explore further:
 
@@ -104,12 +110,13 @@ Let's explore further:
 - We would say: x = log<sub>2.56</sub>(400).
   <br> (Read this as: x is equal to log of 400 to the base 2.56).
 - We can calculate this directly:
-```python
-import math
 
-x = math.log(400, 2.56)
-print(x)
-```
+    ```python
+    import math
+
+    x = math.log(400, 2.56)
+    print(x)
+    ```
 
 - Here we've introduced some new concepts:
 ![](../../../media/units/unit0/module6/real1.png)
@@ -117,7 +124,8 @@ print(x)
 - **Example**: `math.sqrt` for square roots.
 
 
-###### <span style="color:#8B4513;">**6.3 Excercise:** In `my_real_example3.py`, fill in code below</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.3 Exercise"}
+In `my_real_example3.py`, fill in code below
 
 ```python
 import math
@@ -126,12 +134,13 @@ import math
 
 print(x)
 ```
-<span style="color:#8B4513;">to compute the square root of 2 and print the square root (and only the square root - just one number).</span>
+to compute the square root of 2 and print the square root (and only the square root - just one number).
+:::
 
-###### <span style="color:#8B4513;">**6.4 Video:**</span>
+###### **0.6.4 Video**
 {{< video ../../../media/units/unit0/module6/u0-mod6.4.mp4 aspect-ratio="21x9" >}}
 
-## 6.1 Going from reals to integers and strings
+## 0.6.1 Going from reals to integers and strings
 Consider this program:
 ```python
 import math
@@ -151,7 +160,9 @@ print('Rounding up x gives ' + str(j))
 - So, any number with digits after the decimal point like 3.141 lies between its floor and ceiling.
 :::
 
-###### <span style="color:#8B4513;">**6.5 Excercise:** Type the above in `my_real_example4.py`. Then, add additional lines of code to print the floor and ceiling of 2.718 in the same way that the floor and ceiling of 3.141 were printed above.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.5 Exercise"}
+Type the above in `my_real_example4.py`. Then, add additional lines of code to print the floor and ceiling of 2.718 in the same way that the floor and ceiling of 3.141 were printed above.
+:::
 
 Let's point out a few things:
 ![](../../../media/units/unit0/module6/real2.png)
@@ -192,12 +203,13 @@ print('The square of the number you entered is: ' + str(x*x))
     - This is called <em>floating-point</em> notation.
 - So, what does it mean to have a string representation of a number versus the actual number?
     - First, consider this program:
-    ```python
-    some_string = '3.141'
-    x = float(some_string)
-    # Now we can use x in arithmetic
-    y = x / 2
-    ```
+        
+        ```python
+        some_string = '3.141'
+        x = float(some_string)
+        # Now we can use x in arithmetic
+        y = x / 2
+        ```
 <ul>
 - We cannot use `some_string` in arithmetic.
 </ul>
@@ -210,44 +222,53 @@ print('The square of the number you entered is: ' + str(x*x))
 ```
 :::
 
-###### <span style="color:#8B4513;">**6.6 Excercise:** What is the error in the above program? Now change the second statement from `y = x / 2` to `y = x * 2`. What do you see? Write your code in `my_real_example5.py`. Submit the version with `y = x / 2` but describe both cases in your module pdf.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.6 Exercise"}
+What is the error in the above program? Now change the second statement from `y = x / 2` to `y = x * 2`. What do you see? Write your code in `my_real_example5.py`. Submit the version with `y = x / 2` but describe both cases in your module pdf.
+:::
 
 The last exercise illustrates the strange way in which operators like + and * are repurposed for strings when used with strings:
 
 - Consider this example:
-```python
-s = 'Hello'
-t = ' World'
-u = s + t
-print(u)
-v = s * 3   # Makes 3 copies of s and concatenates them
-print(v)    # Prints HelloHelloHello
-```
+    
+    ```python
+    s = 'Hello'
+    t = ' World'
+    u = s + t
+    print(u)
+    v = s * 3   # Makes 3 copies of s and concatenates them
+    print(v)    # Prints HelloHelloHello
+    ```
 
-###### <span style="color:#8B4513;">**6.7 Excercise:** Type up the above in `my_string_example.py` and confirm.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.7 Exercise"}
+Type up the above in `my_string_example.py` and confirm.
+:::
 
-###### <span style="color:#8B4513;">**6.8 Video:**</span>
+###### **0.6.8 Video**
 {{< video ../../../media/units/unit0/module6/u0-mod6.8.mp4 aspect-ratio="21x9" >}}
 
 Now, back to real numbers.
 
-###### <span style="color:#8B4513;">**6.9 Excercise:** In `my_conversion_example.py` write a program that asks the user to enter a distance in kilometers, and then converts to miles and prints that number.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.9 Exercise"}
+In `my_conversion_example.py` write a program that asks the user to enter a distance in kilometers, and then converts to miles and prints that number.
+:::
 
-## 6.2 Real numbers and loops
+## 0.6.2 Real numbers and loops
 There are two ways in which we'll work with real numbers and loops:
 
 - The first will use integers to <em>drive</em> the loop's iterations as in:
-```python
-for k in range(1, n):
-    # do stuff
-```
+    
+    ```python
+    for k in range(1, n):
+        # do stuff
+    ```
 Here, `k`, `1`, and `n`, are all integers.
 
 - The second is more advanced in that real numbers can themselves be used in the range. We'll tackle this approach later but we'll give you a preview of what it looks like:
-```python
-for r in np.arange(0.1, 1, 0.2):
-    # do stuff
-```
+
+    ```python
+    for r in np.arange(0.1, 1, 0.2):
+        # do stuff
+    ```
 
 Let's start with an example:
 ```python
@@ -262,14 +283,18 @@ for year in range(1, num_years + 1):
     print('amount = ' + str(amount))
 ```
 
-###### <span style="color:#8B4513;">**6.11 Excercise:** Type up the above in `my_compound_interest.py`. What is the final amount printed? In your module pdf, trace through the iterations above using a table, tracking the variables `year, amount, interest`.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.11 Exercise"}
+Type up the above in `my_compound_interest.py`. What is the final amount printed? In your module pdf, trace through the iterations above using a table, tracking the variables `year, amount, interest`.
+:::
 
 Let's point out:
 ![](../../../media/units/unit0/module6/real3.png)
 
-###### <span style="color:#8B4513;">**6.12 Excercise:** In `my_compound_interest2.py`, write two successive (not nested) for-loops to compare what happens when $1000 is invested for 20 years in each of two mutual funds, one of which has an annual growth rate of 3%, and the other 8%. Write your program so that it only prints at the end of the program, and prints the amount by which the 8% fund exceeds the 3% fund (at the end of 20 years). Now you know what a 401-K program is about.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.12 Exercise"}
+In `my_compound_interest2.py`, write two successive (not nested) for-loops to compare what happens when $1000 is invested for 20 years in each of two mutual funds, one of which has an annual growth rate of 3%, and the other 8%. Write your program so that it only prints at the end of the program, and prints the amount by which the 8% fund exceeds the 3% fund (at the end of 20 years). Now you know what a 401-K program is about.
+:::
 
-## 6.3 Some Greek history via programming
+## 0.6.3 Some Greek history via programming
 Zeno's paradox:
     - Zeno was a Greek philosopher famous for creating several apparent paradoxes.
 
@@ -297,29 +322,34 @@ Zeno's paradox:
     - ... and so on.
 - To compute half of something, we multiply by 1/2.
 - Here's the program:
-```python
-n = 5
-total = 0
-term = 1/2
-for k in range(n):
-    total = total + term
-    term = term * (1/2)
+    
+    ```python
+    n = 5
+    total = 0
+    term = 1/2
+    for k in range(n):
+        total = total + term
+        term = term * (1/2)
 
-print(total)
-```
+    print(total)
+    ```
 
-###### <span style="color:#8B4513;">**6.13 Video:**</span>
+###### **0.6.13 Video**
 {{< video ../../../media/units/unit0/module6/u0-mod6.13.mp4 aspect-ratio="21x9" >}}
 
-###### <span style="color:#8B4513;">**6.14 Excercise:** Type up the above in `my_zeno.py`. In your module pdf trace through the values of each of the variables.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.14 Exercise"}
+Type up the above in `my_zeno.py`. In your module pdf trace through the values of each of the variables.
+:::
 
-###### <span style="color:#8B4513;">**6.15 Excercise:** Type up the above in `my_zeno.py`. In your module pdf trace through the values of each of the variables.</span>
-In `my_zeno2.py`, change `n` to 100, and then 1000, and report the results of the final total, submitting the program with `n` set to 100. Write a cheeky one-paragraph letter to Zeno (in your module pdf) and explain why he was wrong.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.15 Exercise"}
+Type up the above in `my_zeno.py`. In your module pdf trace through the values of each of the variables.
+In `my_zeno2.py`, change `n` to 100, and then 1000, and report the results of the final total, submitting the program with `n` set to 100. Write a cheeky one-paragraph letter to Zeno (in your module pdf) and explain why he was wrong.
+:::
 
 Let's point out:
 ![](../../../media/units/unit0/module6/real4.png)
 
-## 6.4 A statistical application
+## 0.6.4 A statistical application
 Let's use a loop to compute that most basic of statistical things: an average
 
 For example, suppose we wish to compute the average of the numbers from 1 to 10:
@@ -335,9 +365,13 @@ print('Average=' + str(avg))
 ```
 ![](../../../media/units/unit0/module6/real5.png)
 
-###### <span style="color:#8B4513;">**6.16 Excercise:** Type up the above in `my_stats1.py`. What is the average?</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.16 Exercise"}
+Type up the above in `my_stats1.py`. What is the average?
+:::
 
-###### <span style="color:#8B4513;">**6.17 Excercise:** In `my_stats2.py`, modify the above code to compute the average of odd numbers from 1 through 9, and check against the answer you get computing by hand. Then, use your program to compute the average of odd numbers between 1 and 100.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.17 Exercise"}
+In `my_stats2.py`, modify the above code to compute the average of odd numbers from 1 through 9, and check against the answer you get computing by hand. Then, use your program to compute the average of odd numbers between 1 and 100.
+:::
 
 We'll next look at a problem at the intersection of language and statistics:
 
@@ -348,27 +382,32 @@ We'll next look at a problem at the intersection of language and statistics:
 - However, we'll do this statistically by randomly sampling nouns and verbs. 
     <br> (Because this is the "stats" section of the module, after all.)
 - We'll provide most of the code, leaving you to fill out one line:
-```python
-import wordtool
+    
+    ```python
+    import wordtool
 
-n = 10
-total = 0
+    n = 10
+    total = 0
 
-for k in range(1, n+1):
-    word = wordtool.get_random_noun()
-    # FILL IN THE MISSING LINE HERE:
+    for k in range(1, n+1):
+        word = wordtool.get_random_noun()
+        # FILL IN THE MISSING LINE HERE:
 
-avg = total / n
-print('Average word length = ' + str(avg))
-```
+    avg = total / n
+    print('Average word length = ' + str(avg))
+    ```
 
 ![](../../../media/units/unit0/module6/real6.png)
 
-###### <span style="color:#8B4513;">**6.18 Excercise:** Fill in the missing line and write up the program in `my_stats3.py`. You will need to download <a href="../../../media/useful/wordtool.py" download >**wordtool.py**</a> and <a href="../../../media/useful/wordsWithPOS.txt" download>**wordsWithPOS.txt**</a>.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.18 Exercise"}
+Fill in the missing line and write up the program in `my_stats3.py`. You will need to download <a href="../../../media/useful/wordtool.py" download >**wordtool.py**</a> and <a href="../../../media/useful/wordsWithPOS.txt" download>**wordsWithPOS.txt**</a>.
+:::
 
-###### <span style="color:#8B4513;">**6.19 Excercise:** In `my_stats4.py`, modify the above to estimate the average length of verbs. Compare the average length of nouns to the average length of verbs. Do you think n=10 is enough of a random sample? Try higher values of n. What should n be to feel assured that you have a sound comparison?</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.19 Exercise"}
+In `my_stats4.py`, modify the above to estimate the average length of verbs. Compare the average length of nouns to the average length of verbs. Do you think n=10 is enough of a random sample? Try higher values of n. What should n be to feel assured that you have a sound comparison?
+:::
 
-## 6.5 Plotting a function
+## 0.6.5 Plotting a function
 Let's plot the well-known \(\sin\) function.
 
 - We'll plot this in the range *[0,10]*.
@@ -402,9 +441,11 @@ Let's plot the well-known \(\sin\) function.
     - Just think of it as, you give it a value like 0.5, and it gives back a number like 0.005.
     - We'll say more about this below.
 
-###### <span style="color:#8B4513;">**6.20 Excercise:** Use a scientific calculator (included in every laptop) to calculate the sin values for the 20 input values beginning with 0, 0.5, 1, ... etc .. until 10. Then plot this by hand on paper and include a picture in your module pdf.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.20 Exercise"}
+Use a scientific calculator (included in every laptop) to calculate the sin values for the 20 input values beginning with 0, 0.5, 1, ... etc .. until 10. Then plot this by hand on paper and include a picture in your module pdf.
+:::
 
-###### <span style="color:#8B4513;">**6.21 Video:**</span>
+###### **0.6.21 Video**
 {{< video ../../../media/units/unit0/module6/u0-mod6.23.mp4 aspect-ratio="21x9" >}}
 
 Let's now do the plotting in code:
@@ -425,9 +466,8 @@ for k in range(0, N):
 dt.display()
 ```  
 
-
-
-###### <span style="color:#8B4513;">**6.22 Excercise:** Download <a href="../../../media/useful/drawtool.py" download >**drawtool.py**</a> into your module6 folder. Then type up the above in `my_functionplot.py` and execute. Change `N` to 100. This should produce a smoother curve. Next, change the statement </span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.22 Exercise"}
+Download <a href="../../../media/useful/drawtool.py" download >**drawtool.py**</a> into your module6 folder. Then type up the above in `my_functionplot.py` and execute. Change `N` to 100. This should produce a smoother curve. Next, change the statement 
 ```python
 for k in range(0, N):
 ```
@@ -435,8 +475,8 @@ to
 ```python
 for k in range(1, N+1):
 ```
-<span style="color:#8B4513;">Explain (in your module pdf) why this does not change the results.</span>
-
+Explain (in your module pdf) why this does not change the results.
+:::
 
 Let's point out:
 ![](../../../media/units/unit0/module6/real7.png)
@@ -445,10 +485,11 @@ Let's point out:
 - Much of the complication in this program comes from how we <em>use</em> another program in our program:
     - To perform plotting or drawing, we will use the `drawtool.py` program.
     - To use this program involves many types of statements, such as:
-    ```python
-    dt = DrawTool()
-    dt.set_XY_range(0,10, -2,2)
-    ```
+        
+        ```python
+        dt = DrawTool()
+        dt.set_XY_range(0,10, -2,2)
+        ```
     among others.
     - There are aspects we're not going to be able to understand now, but we can at least use the program.
 - Notice that when N=20, the spacing is 10/20 (which is equal to 0.5).
@@ -489,7 +530,7 @@ About the sin function:
 - We're not going to require much math knowledge in this course but will make observations from time to time.
 
 
-## 6.6 Plotting a curve with data
+## 0.6.6 Plotting a curve with data
 Next, let's work with some real data
 
 Consider the following data:
@@ -569,50 +610,53 @@ dt.draw_point (x, f)
 dt.display()
 ```
 
-###### <span style="color:#8B4513;">**6.23 Excercise:** You already have <a href="../../../media/useful/drawtool.py" download >**drawtool.py**</a> in your module6 folder. Type up the above in `my_dataplot.py` and run. Do you see the points "sort of" along a jagged line? This is actual scientific data from observations made in 1929. It utterly shattered our perception of the world. Can you identify what this was about and explain the significance?</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.23 Exercise"}
+You already have <a href="../../../media/useful/drawtool.py" download >**drawtool.py**</a> in your module6 folder. Type up the above in `my_dataplot.py` and run. Do you see the points "sort of" along a jagged line? This is actual scientific data from observations made in 1929. It utterly shattered our perception of the world. Can you identify what this was about and explain the significance?
+:::
 
-## 6.7 &nbsp;&nbsp; When things go wrong
+## 0.6.7 When things go wrong
 In each of the exercises below, first try to identify the error just by reading. Then type up the program to confirm, and after that, fix the error.
 
-###### <span style="color:#8B4513;">**6.24 Excercise:**</span>
-
+:::{.callout-caution appearance="simple" icon=false title="0.6.24 Exercise"}
 ```python
 x = 2 *** 6
 print(x)
 ```
-<span style="color:#8B4513;">Fix the error in `my_error1.py`.</span>
+Fix the error in `my_error1.py`.
+:::
 
-###### <span style="color:#8B4513;">**6.25 Excercise:**</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.25 Exercise"}
 ```python
 x = 100
 y = 0.1 * x
 print('y=' + y)
 ```
-<span style="color:#8B4513;">Fix the error in `my_error2.py`.</span>
+Fix the error in `my_error2.py`.
+:::
 
-
-###### <span style="color:#8B4513;">**6.26 Excercise:**</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.26 Exercise"}
 ```python
 import math
 x = input('Enter your height in inches: ')
 y = math.floor(x / 12)
 print('You are at least ' + str(y) + ' feet tall')
 ```
-<span style="color:#8B4513;">Fix the error in `my_error3.py`.</span>
+Fix the error in `my_error3.py`.
+:::
 
-
-###### <span style="color:#8B4513;">**6.27 Excercise:**</span>
+:::{.callout-caution appearance="simple" icon=false title="0.6.27 Exercise"}
 ```python
 for x in range(1.0, 2.0, 0.1):
     print(x)
 ```
-<span style="color:#8B4513;">Fix the error in `my_error4.py` so that the numbers 1.0, 1.1, 1.2, ..., 2.0 are printed out.</span>
+Fix the error in `my_error4.py` so that the numbers 1.0, 1.1, 1.2, ..., 2.0 are printed out.
+:::
 
 :::{.callout-tip}
 Use integers in `range` but use separate variables to run through the real numbers.
 :::
 
-## 6.8 About the reals, and math in general
+## 0.6.8 About the reals, and math in general
 We've gone a bit beyond our comfort zone into real numbers and into some applications.
 
 We'll end this module by pointing out a few more things about numbers in a mathematical sense, and say something about <em>math anxiety</em>. None of this will be on any exam. 
