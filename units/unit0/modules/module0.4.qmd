@@ -76,7 +76,7 @@ i = 5
 print(i)
 ```
 :::{.callout-caution appearance="simple" icon=false title="0.4.1 Exercise"}
-Type up the program in `my_variable_example.py`. Also save the file so that it can be submitted (Remember: you need to save the appropriate files for every such "type up" exercise). What does it print? Report what you see in `module4.pdf`.
+Type up the program in `my_variable_example.py`. Also save the file so that it can be submitted (Remember: you need to save the appropriate files for every such "type up" exercise).
 :::
 
 - Now let's examine key parts of this program:
@@ -115,7 +115,7 @@ Is it possible to not have a value in a variable? Consider this program:
 i
 print(i)
 ```
-Type up the program in  `my_variable_example3.py`. What is the error? Answer in `module4.pdf`. (Remember, non-coding questions are to be answered in your module pdf, in this case: `module4.pdf`.)
+Type up the program in  `my_variable_example3.py`. Use comments (text followed by ‘#’ symbol) to describe the error if any in the python-file.
 :::
 
 Thus: when you make a variable, you need to put something in it.
@@ -146,7 +146,7 @@ j = i
 print(j)
 print(i)   # Did i lose its value?
 ```
-Type up the program in `my_variable_example4.py` and report what gets printed in `module4.pdf`.
+Type up the program in `my_variable_example4.py` and use comments (text followed by ‘#’ symbol) to describe what happens with print(i) # Did i lose its value?
 :::
 
 The above example illustrates that the value in `i` gets copied into the variable `j`, which means that the value 5 is still in  the variable `i`.
@@ -261,7 +261,7 @@ print(n)      # what does this print?
 
 
 :::{.callout-caution appearance="simple" icon=false title="0.4.10 Exercise"}
-Type up the above in `my_variable_example8.py`. What is the value of n printed? Change i to 21. What is the value of n printed? Answer in `module4.pdf`. Submit your code with i set to 5.
+Type up the above in `my_variable_example8.py`. What is the value of n printed? Change i to 21. What is the value of n printed? Change i to 21. Use comments (text followed by ‘#’ symbol) to describe what happens when you change i to 21. Submit your code with i set to 5.
 :::
 
 
@@ -296,10 +296,6 @@ j = 6
 k = i*j - (i+1)*(j-1)
 print(k)
 ```
-
-:::{.callout-caution appearance="simple" icon=false title="0.4.11 Exercise"}
-Type up the above program in `my_expression_example.py`. What does it print? Answer in `module4.pdf`.
-:::
 
 About expressions:
 
@@ -347,7 +343,7 @@ The key to working them out is to use <b>extra</b> parentheses in the right way.
   - Result: 5
 
 :::{.callout-caution appearance="simple" icon=false title="0.4.12 Exercise"}
-What does the expression `i*j - i+1*j-1` evaluate to when `i=7` and `j=3`? Answer in `module4.pdf`.
+Use the PEMDAS rule to evaluate mentally or by hand the expression,  `i*j - i+1*j-1` when `i = 7` and `j = 3`. Write a code to evaluate the expression and compare your answer.
 :::
 
 ###### **0.4.13 Video**
@@ -370,7 +366,7 @@ print(k)
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="0.4.14 Exercise"}
-Can you mentally execute and identify what's printed? Type up the above in `my_expression_example2.py` to confirm. Report the value in `module4.pdf`.
+Can you mentally execute and identify what's printed? Type up the above in `my_expression_example2.py` to confirm.
 :::
 
 One way to know whether one number cleanly divides another is to apply the `%` (remainder) operator.
@@ -384,7 +380,7 @@ for i in range(1, j):
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="0.4.15 Exercise"}
-Can you mentally execute and identify what's printed? Type up the above in `my_expression_example3.py` to confirm. Then change j to 11 and run the program. Report the output in each case in `module4.pdf`. When submitting the code, leave j as 11.
+Can you mentally execute and identify what's printed? Type up the above in `my_expression_example3.py` to confirm. Then change j to 11 and run the program. When submitting the code, leave j as 11.
 :::
 
 :::{.callout-note}
@@ -430,7 +426,7 @@ print(s)
 Trace the changing values of `s` in the above program using the following kind of table:
 ![](../../../media/units/unit0/module4/tracetable.PNG)
 
-Write up the table in `module4.pdf`.
+ Try writing up the table in a spreadsheet or a document. There is nothing to submit in this exercise.
 :::
 
 :::{.callout-note}
@@ -449,7 +445,7 @@ print(s)
 - Recall from earlier that as i goes through 1, 2, 3, ... (2*i-1) evaluates as successive odd numbers 1, 3, 5, ...
 
 :::{.callout-caution appearance="simple" icon=false title="0.4.18 Exercise"}
-Trace (in `module4.pdf`) the values of `i` and `s` in the program above. Then, in `my_expression_example4.py`, edit the code to create an outer loop that varies N from 1 to 10. That is, make N a new for-loop variable that ranges between 1 and 10 (inclusive), and ensure that you properly indent the inner (nested) loop that uses i. What pattern do you observe in the output?
+Write up the above program in my_expression_example4.py, edit the code to create an outer loop that varies N from 1 to 10... That is, make N a new for-loop variable that ranges between 1 and 10 (inclusive), and ensure that you properly indent the inner (nested) loop that uses i. Observe the pattern in the output and follow what the program is doing.
 :::
 
 ###### **0.4.19 Video**
@@ -484,7 +480,7 @@ We'll solve it in the following steps:
   ```
 
 :::{.callout-caution appearance="simple" icon=false title="0.4.20 Exercise"}
-Trace (in `module4.pdf`) the values of `i` and `k` in the program above. This is what you should be able to domentally during mental execution.
+Trace the values of i and k in the program above using a table in a spreadsheet or a document. Write up the above program in `loop_exercise1.py`. There is nothing to submit in this exercise
 :::
 
 ## 0.4.6 A problem-solving example with variables and nested for-loops
@@ -530,7 +526,7 @@ As a first step, let's see if we can use a loop to compute a single power of 2:
 
 
 :::{.callout-caution appearance="simple" icon=false title="0.4.21 Exercise"}
-Trace the changing values of `p` in the above program using a table (in `module4.pdf`). Then, type up the above program in `my_powerof2.py` to confirm.
+Trace the changing values of p in the above program using a table in a spreadsheet or a document. Write up the above program in my_powerof2.py to confirm and submit.
 :::
 
 ###### **0.4.22 Video**
@@ -565,14 +561,14 @@ Trace the changing values of `p` in the above program using a table (in `module4
   ![](../../../media/units/unit0/module4/power3.png)
 
 :::{.callout-caution appearance="simple" icon=false title="0.4.23 Exercise"}
-Make a table with columns labeled `k, i, p` and `s` and trace the program, filling in the table step-by-step (in `module4.pdf`).
+Make a table with columns labeled `k, i, p` and `s` and trace the program, filling in the table step-by-step. There is nothing to submit in this exercise.
 :::
 
 ###### **0.4.24 Video:**
 {{< video ../../../media/units/unit0/module4/u0-mod4.24.mp4 aspect-ratio="21x9" >}}
 
 :::{.callout-caution appearance="simple" icon=false title="0.4.25 Exercise"}
-Try a few other values of `n`, e.g., `n=3` or `n=4`. Try to guess the mathematical formula for 1 + 2<sup>1</sup> + 2<sup>2</sup> + 2<sup>3</sup> + ... + 2<sup>n</sup> (in `module4.pdf`)
+Watch the video above and try a few other values of n, e.g., n = 3 or n =4. Try to guess the mathematical formula for 1 + 2<sup>1</sup> + 2<sup>2</sup> + 2<sup>3</sup> + ... + 2<sup>n</sup>
 :::
 
 :::{.callout-tip}
@@ -621,7 +617,7 @@ i = j
 j = 4
 print(i)
 ```
-Type it up in `error1.py` to confirm.
+Type it up in `error1.py` to confirm. Use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="0.4.28 Exercise"}
@@ -632,7 +628,7 @@ j = 3
 k = ( (i + j) * (i - j) / 2
 print(k)
 ```
-Type it up in `error2.py` to confirm.
+Type it up in `error2.py` to confirm. Use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
 :::
 
 We'll now see a different kind of error:
@@ -644,14 +640,16 @@ for i in range(1, n+1):
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="0.4.29 Exercise"}
-Type it up in `error3.py` to confirm. Then trace through the program at each iteration in `module4.pdf`.
+Type it up in `error3.py` to confirm. Trace through the program to understand why there is an error. Use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
 :::
 
+:::{.callout-tip title="Hint"}
 The above is an example of a <em>runtime error</em>:
 
 - The code itself is correctly written in that there are no issues with breaking the rules of the language.
 - However, when i is 0, you can't divide by 0.
 - This causes a runtime error, meaning the program runs fine until the particular occurence of divide-by-zero.
+:::
 
 ## 0.4.9 Python files vs module pdf
 **Important:**
