@@ -375,10 +375,6 @@ How to succeed:
     &rArr; Do <em>all</em> exercises, assignments etc.
 - Practice being irrepressibly positive.
 
-:::{.callout-caution appearance="simple" icon=false title="0.0.6 Exercise"}
-Create a PDF file (using Word, Google-docs, or anything like that) called `module0.pdf` in your `module0.pdf` folder. This document should contain: **(1)** a picture that says something about you (it need not be a picture of you, it could  represent something iconic for you.) **(2)** a paragraph about yourself.
-:::
-
 :::{.callout-note}
 [What to rememeber about submitting work](../../../submit-remember.qmd)
 :::
