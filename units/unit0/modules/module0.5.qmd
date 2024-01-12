@@ -78,7 +78,7 @@ print(k)
 - We will later look further into how we can write our own functions that have this property of "making something and giving the result" to a variable.
 
 :::{.callout-caution appearance="simple" icon=false title="0.5.1 Exercise"}
-Type up the above in `my_string_example.py`. What is the printed length? Remember, answers to non-coding questions like this need to be in the appropriate module pdf, in this case `module5.pdf`.
+Type up the above in `my_string_example.py`. What is the printed length? Use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
 :::
 
 ## 0.5.1 String concatenation
@@ -97,7 +97,7 @@ print(s)
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="0.5.2 Exercise"}
-Type up the above in `my_string_example2.py`. What is the output?
+Type up the above in `my_string_example2.py`. What is the output? Use comments (text followed by ‘#’ symbol) to describe the output in the python-file. 
 :::
 
 About concatenation:
@@ -122,7 +122,7 @@ About concatenation:
 ![](../../../media/units/unit0/module5/str_example2.png)
 
 :::{.callout-caution appearance="simple" icon=false title="0.5.3 Exercise"}
-Type up the above in `my_string_example3.py`. What is the output? How many times did a concatenation occur?
+Type up the above in `my_string_example3.py`. What is the output? How many times did a concatenation occur? Use comments (text followed by ‘#’ symbol) to describe the output in the python-file. 
 :::
 
 We also introduced something new:
@@ -216,7 +216,7 @@ print(sentence)
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="0.5.7 Exercise"}
-Type up the above in `my_random_sentence.py`. Don't run it just yet. First download <a href="../../../media/useful/wordtool.py" download >**wordtool.py**</a> and <a href="../../../media/useful/wordsWithPOS.txt" download >**wordsWithPOS.txt**</a> into the same folder as your program. Now run the program several times. Report your favorite output sentence in `module5.pdf`.
+Type up the above in `my_random_sentence.py`. Don't run it just yet. First download <a href="../../../media/useful/wordtool.py" download >**wordtool.py**</a> and <a href="../../../media/useful/wordsWithPOS.txt" download >**wordsWithPOS.txt**</a> into the same folder as your program. Now run the program several times. Run the program several times. Use comments (text followed by ‘#’ symbol) to and include each output in the python-file. 
 :::
 
 Let's point out:
@@ -319,7 +319,7 @@ Improve on the above program by writing your version of a longer conversation `m
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="0.5.12 Exercise"}
-Try out a conversation with a chatbot. For example, one of the earliest chatbots in history was <a href="https://en.wikipedia.org/wiki/ELIZA">Eliza</a>, which <a href="http://www.masswerk.at/elizabot/">you can try out</a>. Report (with a screenshot in your module pdf) a sample conversation with Eliza.
+Try out a conversation with a chatbot. For example, one of the earliest chatbots in history was <a href="https://en.wikipedia.org/wiki/ELIZA">Eliza</a>, which <a href="http://www.masswerk.at/elizabot/">you can try out</a>. There is nothing to submit in this exercise.
 :::
 
 ## 0.5.4 Strings and for-loops
@@ -339,7 +339,7 @@ print(s)
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="0.5.13 Exercise"}
-Before typing up the program, trace (in `module5.pdf`) the execution of the loop, showing the contents of the string `s` in each iteration of the for-loop. Then confirm the final output in your trace by typing it up in `my_loop_example.py`. Then change the value of `n` to 8 and examine the output. Submit your program with n set to 8.
+Trace the execution of the loop, showing the contents of the string s in each iteration of the for-loop changing values using a table in a spreadsheet or a document. Then confirm the final output in your trace by typing it up in `my_loop_example.py`. Then change the value of `n` to 8 and examine the output. Submit your program with n set to 8.
 :::
 
 Next, let's use a nested loop to output a triangle of asterisks:
@@ -653,7 +653,7 @@ t = 'Some looooooong sentence'
 k = len(t)
 print(k)
 ```
-What do you see? (Respond in your moduler pdf.)
+Use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
 :::
 
 ###### **0.5.24 Video**
