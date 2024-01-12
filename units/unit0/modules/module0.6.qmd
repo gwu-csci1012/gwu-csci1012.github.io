@@ -223,7 +223,7 @@ print('The square of the number you entered is: ' + str(x*x))
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="0.6.6 Exercise"}
-What is the error in the above program? Now change the second statement from `y = x / 2` to `y = x * 2`. What do you see? Write your code in `my_real_example5.py`. Submit the version with `y = x / 2` but describe both cases in your module pdf.
+What is the error in the above program? Now change the second statement from `y = x / 2` to `y = x * 2`. What do you see? Write your code in `my_real_example5.py`. Submit the version with `y = x / 2`, use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
 :::
 
 The last exercise illustrates the strange way in which operators like + and * are repurposed for strings when used with strings:
@@ -284,7 +284,7 @@ for year in range(1, num_years + 1):
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="0.6.11 Exercise"}
-Type up the above in `my_compound_interest.py`. What is the final amount printed? In your module pdf, trace through the iterations above using a table, tracking the variables `year, amount, interest`.
+Type up the above in `my_compound_interest.py`. What is the final amount printed? Trace through the iterations above using a table in a spreadsheet or a document, tracking the variables year, amount, interest.
 :::
 
 Let's point out:
@@ -295,8 +295,10 @@ In `my_compound_interest2.py`, write two successive (not nested) for-loops to co
 :::
 
 ## 0.6.3 Some Greek history via programming
+<div id="zeno"></div>
 Zeno's paradox:
-    - Zeno was a Greek philosopher famous for creating several apparent paradoxes.
+
+- Zeno was a Greek philosopher famous for creating several apparent paradoxes.
 
 - His most famous one: the hare and the tortoise
     - Suppose a hare and tortoise are separated by 1 unit of distance, for example: 1 mile.
@@ -338,12 +340,7 @@ Zeno's paradox:
 {{< video ../../../media/units/unit0/module6/u0-mod6.13.mp4 aspect-ratio="21x9" >}}
 
 :::{.callout-caution appearance="simple" icon=false title="0.6.14 Exercise"}
-Type up the above in `my_zeno.py`. In your module pdf trace through the values of each of the variables.
-:::
-
-:::{.callout-caution appearance="simple" icon=false title="0.6.15 Exercise"}
-Type up the above in `my_zeno.py`. In your module pdf trace through the values of each of the variables.
-In `my_zeno2.py`, change `n` to 100, and then 1000, and report the results of the final total, submitting the program with `n` set to 100. Write a cheeky one-paragraph letter to Zeno (in your module pdf) and explain why he was wrong.
+Type up the above in `my_zeno.py`. Trace through the values of each of the variables using a table in a spreadsheet or a document
 :::
 
 Let's point out:
@@ -365,11 +362,11 @@ print('Average=' + str(avg))
 ```
 ![](../../../media/units/unit0/module6/real5.png)
 
-:::{.callout-caution appearance="simple" icon=false title="0.6.16 Exercise"}
+:::{.callout-caution appearance="simple" icon=false title="0.6.15 Exercise"}
 Type up the above in `my_stats1.py`. What is the average?
 :::
 
-:::{.callout-caution appearance="simple" icon=false title="0.6.17 Exercise"}
+:::{.callout-caution appearance="simple" icon=false title="0.6.16 Exercise"}
 In `my_stats2.py`, modify the above code to compute the average of odd numbers from 1 through 9, and check against the answer you get computing by hand. Then, use your program to compute the average of odd numbers between 1 and 100.
 :::
 
@@ -399,11 +396,11 @@ We'll next look at a problem at the intersection of language and statistics:
 
 ![](../../../media/units/unit0/module6/real6.png)
 
-:::{.callout-caution appearance="simple" icon=false title="0.6.18 Exercise"}
+:::{.callout-caution appearance="simple" icon=false title="0.6.17 Exercise"}
 Fill in the missing line and write up the program in `my_stats3.py`. You will need to download <a href="../../../media/useful/wordtool.py" download >**wordtool.py**</a> and <a href="../../../media/useful/wordsWithPOS.txt" download>**wordsWithPOS.txt**</a>.
 :::
 
-:::{.callout-caution appearance="simple" icon=false title="0.6.19 Exercise"}
+:::{.callout-caution appearance="simple" icon=false title="0.6.18 Exercise"}
 In `my_stats4.py`, modify the above to estimate the average length of verbs. Compare the average length of nouns to the average length of verbs. Do you think n=10 is enough of a random sample? Try higher values of n. What should n be to feel assured that you have a sound comparison?
 :::
 
@@ -441,8 +438,8 @@ Let's plot the well-known \(\sin\) function.
     - Just think of it as, you give it a value like 0.5, and it gives back a number like 0.005.
     - We'll say more about this below.
 
-:::{.callout-caution appearance="simple" icon=false title="0.6.20 Exercise"}
-Use a scientific calculator (included in every laptop) to calculate the sin values for the 20 input values beginning with 0, 0.5, 1, ... etc .. until 10. Then plot this by hand on paper and include a picture in your module pdf.
+:::{.callout-caution appearance="simple" icon=false title="0.6.19 Exercise"}
+Use a scientific calculator (included in every laptop) to calculate the sin values for the 20 input values beginning with 0, 0.5, 1, ... etc .. until 10. Then plot this by hand on paper. There is nothing to submit in this exercise
 :::
 
 ###### **0.6.21 Video**
@@ -475,7 +472,7 @@ to
 ```python
 for k in range(1, N+1):
 ```
-Explain (in your module pdf) why this does not change the results.
+Use comments (text followed by ‘#’ symbol) to explain why this does not change the results in the python-file.
 :::
 
 Let's point out:
