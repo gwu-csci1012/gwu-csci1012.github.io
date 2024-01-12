@@ -19,6 +19,11 @@ website:
         text: About
       - href: schedule.qmd
         text: Schedule
+      - href: course-policies.qmd
+        text: Course Policies
+      - href: instructors.qmd
+        text: Instruction Team
+
       - ./submit-remember.qmd
       - ./units/useful.qmd
       - section: "Getting Started"
@@ -41,10 +46,6 @@ website:
               - ./units/unit1/modules/module1.1.qmd
               - ./units/unit1/modules/module1.2.qmd
               - ./units/unit1/modules/module1.3.qmd
-      - href: course-policies.qmd
-        text: Course Policies
-      - href: instructors.qmd
-        text: Instruction Team
       - href: faq.qmd
         text: FAQ
 format:
