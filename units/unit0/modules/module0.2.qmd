@@ -210,7 +210,7 @@ called `my_pet_sound2.py`. That is, add an additional function to your earlier p
 ![](../../../media/units/unit0/module2/funcexecution2.png)
 
 :::{.callout-caution appearance="simple" icon=false title="0.2.8 Exercise"}
-Look at the example above. What step number is represented by the question mark (?) next to the second `print_big_O()` inside the `print_two_big_Os()` function? What line in the program represents step 15? Write your answer in `module2.pdf`. Remember: if it's not clear where to write your answer, write it in your module pdf (for this module that's `module2.pdf`).
+Look at the example above. What step number is represented by the question mark (?) next to the second `print_big_O()` inside the `print_two_big_Os()` function? What line in the program represents step 15? Discuss the program to correctly identify “step-15” with your TAs.
 :::
 
 ###### **0.2.9 Video**
@@ -289,7 +289,7 @@ Beware of name clashes:
 - In this example, we have functions with different content but with the same name.
 
 :::{.callout-caution appearance="simple" icon=false title="0.2.10 Exercise"}
-Implement the above in `name_clash.py` and describe what happens in `module2.pdf`.
+Implement the above in `name_clash.py` and discuss the program to understand the comments (text followed by ‘#’ symbol) with your TA.
 :::
 
 - What we see is that the second definition replaces the first.
@@ -321,7 +321,7 @@ print_big_M()
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="0.2.11 Exercise"}
-Describe in your module pdf how the output would be different, first without typing up the program, and then typing it up in `animal_sounds3.py`.
+Type up the above exmaple in `animal_sounds3.py` and run it make sure there are no errors.
 :::
 
 ## 0.2.3 A peek at the future
@@ -400,13 +400,13 @@ def print_big_O():
 print_big_M()
 print_big_O()
 ```
-  
+
 :::{.callout-caution appearance="simple" icon=false title="0.2.15 Exercise"}
-Mentally execute the above program. That is, without typing it up, try to follow how the program executes, step by step Which statement gets executed in the 10-th step of execution? Do you notice anything unusual at step 13?  As a result, what line is executed in step 15? Write your answer in your module pdf (`module2.pdf`).
+<em>Before doing this exercise</em>, please [**read this page**](../guides/stopping.qmd) on how to  stop endlessly running programs. Now, type up and execute the above program in `my_strange_example.py`. Use comments (text followed by ‘#’ symbol) to describe the error if any in the python-file.
 :::
 
-:::{.callout-caution appearance="simple" icon=false title="0.2.16 Exercise"}
-<em>Before doing this exercise</em>, please <b><a href="stopping.html">read this page</a></b> on how to  stop endlessly running programs. Now, type up and execute the above program in `my_strange_example.py`. What do you notice? (Or you might get an "recursion depth exceeded" error.)
+:::{.callout-tip title="Hint"}
+You might get a “recursion depth exceed” error. Ask your TA about what this error means. 
 :::
 
 The term <em>recursion</em> is used when function calls itself:
