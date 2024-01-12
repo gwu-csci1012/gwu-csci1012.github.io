@@ -288,7 +288,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><strong>Module 1.3:</strong> Booleans, strings, built-in functions, types</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit1/modules/module1.4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 1.4:</strong> <code>while</code> loops, I/O</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit1/modules/module1.5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 1.5:</strong> Review</span></a>
+  </div>
+</li>
       </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text"><b>Unit 2:</b> <em>will be added soon...</em></span></span>
   </li>
       </ul>
   </li>
@@ -461,7 +477,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span></span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span></span></code></pre></div>
-<p>In the place in the code where you see the number 6, replace 6 with 10 and then run the program. Next, try 2 instead of 6. Finally, try 0 instead of 6. What is the output in each case? Report in your module pdf (<code>module3.pdf</code>). Submit the program with 6.</p>
+<p>In the place in the code where you see the number 6, replace 6 with 10 and then run the program. Next, try 2 instead of 6. Finally, try 0 instead of 6. What is the output in each case? Discuss the program with your TA to understand what happens when you replace the number 6 with 10 and 2.</p>
 </div>
 </div>
 <p>Let’s now examine elements of the loop: - There’s the special word <code>for</code> <img src="../../../media/units/unit0/module3/forloop1.png" class="img-fluid"></p>
@@ -673,7 +689,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Just for the heck of it, could one use a for-loop to achieve the printing of <code>1</code> all by itself? That is, answer the question in your module pdf: can a for-loop be set up so that you go into it exactly once? Write your code in <code>my_forloop_print2.py</code>.</p>
+<p>Just for the heck of it, could one use a for-loop to achieve the printing of <code>1</code> all by itself? That is, can a for-loop be set up so that you go into it exactly once? Write you code in my_foorloop_print2.py</p>
 </div>
 </div>
 <p>Next, observe that the upper-limits of the for-loops are themselves increasing: <img src="../../../media/units/unit0/module3/forlooprint.png" class="img-fluid"></p>
@@ -838,7 +854,7 @@ Note
 <span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, i):</span>
 <span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">'-'</span>, end<span class="op">=</span><span class="st">''</span>)</span>
 <span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>()</span></code></pre></div>
-<p>First, trace through the values of i and j by hand and try to figure out what gets printed. Do this painstakingly for each possible value of i and j, remembering that i is now the name of the outerloop variable. Write your tracing in <code>module3.pdf</code>, using the shorter “table” format we saw in <a href="../../../media/units/unit0/module3/TracingExample.pdf"><strong>see this PDF for the above program</strong></a> earlier. Then, edit, compile and execute the above program in <code>my_forloop_trace.py</code>.to see if you were right.</p>
+<p>First, trace through the values of i and j by hand and try to figure out what gets printed. Do this painstakingly for each possible value of i and j, remembering that i is now the name of the outerloop variable. You can use the shorter “table” format. See <a href="../../../media/units/unit0/module3/TracingExample.pdf"><strong>this PDF for the above program</strong></a> Then edit, compile and execute the above program in <code>my_forloop_trace.py</code>. Discuss the program with your TA if you are encountering any errors or for any questions.</p>
 </div>
 </div>
 <section id="video-3" class="level6">
@@ -901,7 +917,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Write up the above in <code>my_simpleloop.py</code> and run to see the output. Then in <code>module3.pdf</code>, trace the execution of the program.</p>
+<p>Write up the above in <code>my_simpleloop.py</code> and run to see the output.</p>
 </div>
 </div>
 <p>Instead of explaining the execution, let’s focus on how to <em>read</em> such a program:</p>
@@ -940,7 +956,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>What does it print? Try to figure this out by mental execution first. Then, type it up, compile and execute to confirm, writing your code in <code>my_execution_exercise.py</code>. Then in <code>module3.pdf</code>, trace the execution of the program.</p>
+<p>What does it print? Try to figure this out by mental execution first. Then, type it up, compile and execute to confirm, writing your code in <code>my_execution_exercise.py</code>.</p>
 </div>
 </div>
 <section id="video-5" class="level6">
@@ -1070,7 +1086,7 @@ Note
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, i):</span>
 <span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(i, end<span class="op">=</span><span class="st">''</span>)</span>
 <span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>()</span></code></pre></div>
-<p>But there are two bugs. First, try to find the problems solely by reading and mental execution. Then, type up the program in <code>my_loop_exercise7.py</code>. What does it print? Report what you see in <code>module3.pdf</code>. Then fix the program to get the desired output.</p>
+<p>But there are two bugs. First, try to find the problems solely by reading and mental execution. Then, type up the program in <code>my_loop_exercise7.py</code>. Fix the program to get the desired output.</p>
 </div>
 </div>
 </section>
