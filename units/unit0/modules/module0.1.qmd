@@ -68,7 +68,7 @@ print('Something')
 Notice the missing # in the second line of the comment.
 
 :::{.callout-caution appearance="simple" icon=false title="0.1.2 Exercise"}
-Write up the above in `comment_error.py`. Remember to save the file (and do this for every exercise in the future that involves a program). What is the error displayed when you try to run the program? Write the error in your `module0.1.pdf` file.
+Write up the above in `comment_error.py`. Remember to save the file (and do this for every exercise in the future that involves a program). Use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
 :::
 
 ## 0.1.1 Whitespace
@@ -79,7 +79,7 @@ print   (  'Hello World!'     )
 Notice the spaces inserted in various places.
 
 :::{.callout-caution appearance="simple" icon=false title="0.1.3 Exercise"} 
-Write up the above in `whitespace_example.py`. Does the program run? Write your answer in `module0.1.pdf` file. Remember: if it's not clear where to write your answer, write it in your module pdf (for this module that's `module0.1.pdf`)
+Write up the above in `whitespace_example.py`. Does the program run? Use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
 :::
 
 Consider this variation
@@ -89,7 +89,7 @@ Consider this variation
 (Two spaces before `print`).
 
 :::{.callout-caution appearance="simple" icon=false title="0.1.4 Exercise"}
-Write up the above in `whitespace_example2.py`. What is the error produced?
+Write up the above in `whitespace_example2.py`. Run and check if you are getting any errors.
 :::
 
 Finally, look at:
@@ -99,7 +99,7 @@ print('Hello     World!')
 (Extra spaces between Hello and World.)
 
 :::{.callout-caution appearance="simple" icon=false title="0.1.5 Exercise"}
-Write up the above in `whitespace_example3.py`. What is printed out? Write your answer in `module0.1.pdf`
+Write up the above in `whitespace_example3.py`. Run and check if you are getting any errors.
 :::
 
 Let's point out a few things:
@@ -155,7 +155,7 @@ print('Hello\nWorld!')
 Notice the backslash `\` followed by `n` inside the string: `'Hello\nWorld!'`
 
 :::{.callout-caution appearance="simple" icon=false title="0.1.8 Exercise"}
-Write up the above `my_string_example3.py`. What is the output? Write your answer in `module0.1.pdf`
+Write up the above `my_string_example3.py`. Run and check if you are getting any errors.
 :::
 
 Strings can embed special so-called <em>escape sequences</em> that begin with backslash.
@@ -204,7 +204,7 @@ Or else the other way around.
 I’m never sure. Are you?')
 ```
 :::{.callout-caution appearance="simple" icon=false title="0.1.11 Exercise"}
-Write a program called `my_string_example4.py` with the above program and run it. What is the error you observe? Write your answer in `module0.1.pdf`
+Write a program called `my_string_example4.py` with the above program and run it. Use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
 :::
 
 To spread a single string over multiple lines, one uses a <em>triple quote</em> as in:
@@ -240,7 +240,7 @@ print('Hello World!')
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="0.1.13 Exercise"}
-Write up the above program in `case_error.py` and run it. What is the error you get? Write your answer in `module0.1.pdf`.
+Write up the above program in `case_error.py` and run it. Use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
 :::
 
 What if we changed the case inside a string?
