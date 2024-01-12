@@ -21,7 +21,7 @@ format:
 <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
   <a href="">Unit 0</a> &raquo;
-  <span class="current-page">Module 0.4</span>
+  <span class="current-page">Module 0.4
 </div>
 
 ## Objectives
@@ -41,7 +41,7 @@ By the end of this module, for simple HelloWorld-like programs, you will be able
 
 And, once we've worked with integers, we'll also do some "number crunching".
 
-## 4.0 First, an analogy
+## 0.4.0 First, an analogy
 Suppose we have boxes. Consider the following rules about "boxes":
 
 - Each box can store only one item.
@@ -67,7 +67,7 @@ Suppose we have boxes. Consider the following rules about "boxes":
 - The technical term for our informal "box" is <em>variable</em>.
 
 
-## 4.1 Integer variables
+## 0.4.1 Integer variables
 We'll now start working with "boxes" (variables) that hold <em>integers</em> (whole numbers like 3, 17, 2097, but not numbers like 3.141).
 
 Consider this program:
@@ -75,7 +75,9 @@ Consider this program:
 i = 5
 print(i)
 ```
-###### <span style="color:#8B4513;">**4.1 Excercise:** Type up the program in `my_variable_example.py`. Also save the file so that it can be submitted (Remember: you need to save the appropriate files for every such "type up" exercise). What does it print? Report what you see in `module4.pdf`.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.1 Exercise"}
+Type up the program in `my_variable_example.py`. Also save the file so that it can be submitted (Remember: you need to save the appropriate files for every such "type up" exercise). What does it print? Report what you see in `module4.pdf`.
+:::
 
 - Now let's examine key parts of this program:
 - First, `i` is the <em>name</em> of a "box" (of sorts).
@@ -100,17 +102,21 @@ i = 3
 print(i)
 ```
 
-###### <span style="color:#8B4513;">**4.2 Excercise:** Type up the above in `my_variable_example2.py` and confirm that 3 is what gets printed.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.2 Exercise"}
+Type up the above in `my_variable_example2.py` and confirm that 3 is what gets printed.
+:::
 
 By way of explanation:
 ![](../../../media/units/unit0/module4/int2.png)
 
-###### <span style="color:#8B4513;">**4.3 Excercise:** Is it possible to not have a value in a variable? Consider this program:</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.3 Exercise"}
+Is it possible to not have a value in a variable? Consider this program:
 ```python
 i
 print(i)
 ```
-<span style="color:#8B4513;"> Type up the program in  `my_variable_example3.py`. What is the error? Answer in `module4.pdf`. (Remember, non-coding questions are to be answered in your module pdf, in this case: `module4.pdf`.)</span>
+Type up the program in  `my_variable_example3.py`. What is the error? Answer in `module4.pdf`. (Remember, non-coding questions are to be answered in your module pdf, in this case: `module4.pdf`.)
+:::
 
 Thus: when you make a variable, you need to put something in it.
 - Next, let's look at <em>assignment</em> between variables:
@@ -131,7 +137,8 @@ We've used comments above to annotate and explain.
 - We'll do this often, knowing that comments are not <em>executed</em>.
 :::
 
-###### <span style="color:#8B4513;">**4.4 Excercise:** Consider this program:</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.4 Exercise"}
+Consider this program:
 
 ```python
 i = 5
@@ -139,11 +146,13 @@ j = i
 print(j)
 print(i)   # Did i lose its value?
 ```
-<span style="color:#8B4513;">Type up the program in `my_variable_example4.py` and report what gets printed in `module4.pdf`.</span>
+Type up the program in `my_variable_example4.py` and report what gets printed in `module4.pdf`.
+:::
 
 The above example illustrates that the value in `i` gets copied into the variable `j`, which means that the value 5 is still in  the variable `i`.
 
-###### <span style="color:#8B4513;">**4.5 Excercise:** Consider this program:</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.5 Exercise"}
+Consider this program:
 
 ```python
 i = 5
@@ -151,9 +160,11 @@ j = i
 k = j
 print(k)
 ```
-<span style="color:#8B4513;">Try to identify the output of this program just by mental execution. Type up the program in `my_variable_example5.py` and confirm.</span>
+Try to identify the output of this program just by mental execution. Type up the program in `my_variable_example5.py` and confirm.
+:::
 
-###### <span style="color:#8B4513;">**4.6 Excercise:** Consider this program:</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.6 Exercise"}
+Consider this program:
 ```python
 i = 5
 j = i
@@ -162,7 +173,8 @@ k = j
 j = 0
 print(k)
 ```
-<span style="color:#8B4513;"> Try to identify the output of this program just by mental execution. Type up the program in `my_variable_example6.py` and confirm.</span>
+Try to identify the output of this program just by mental execution. Type up the program in `my_variable_example6.py` and confirm.
+:::
 
 :::{.callout-note}
 A copied value does not change if the original is changed
@@ -186,10 +198,11 @@ print(j)   # j still has 5
 0 is an actual value, and is not "no value" or "nothing".
 :::
 
-###### <span style="color:#8B4513;">**4.7 Video:**</span>
+###### **0.4.7 Video**
 {{< video ../../../media/units/unit0/module4/u0-mod4.7.mp4 aspect-ratio="21x9" >}}
 
-###### <span style="color:#8B4513;">**4.8 Excercise:** Consider this program:</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.8 Exercise"}
+Consider this program:
 
 Type up the following lines of code in `my_variable_example7.py`:
 ```python
@@ -203,12 +216,13 @@ j = 6
 print(i)   # should print 6
 print(j)   # should print 5
 ```
-<span style="color:#8B4513;">Add some lines of code with the objective of swapping the  values in variables i and j. You will need a third variable to be used as a holding place. Thus, without directly assigning the  number 5 to j or the number 6 to i, write code using a third variable to achieve the desired swapping of values.</span>
+Add some lines of code with the objective of swapping the  values in variables i and j. You will need a third variable to be used as a holding place. Thus, without directly assigning the  number 5 to j or the number 6 to i, write code using a third variable to achieve the desired swapping of values.
+:::
 
-###### <span style="color:#8B4513;">**4.9 Video:**</span>
+###### **0.4.9 Video**
 {{< video ../../../media/units/unit0/module4/u0-mod4.9.mp4 aspect-ratio="21x9" >}}
 
-## 4.2 Integer operators
+## 0.4.2 Integer operators
 Let's examine the familiar <em>arithmetic operators</em> `+, -, *, /`
 
 - Addition: `+`
@@ -246,7 +260,9 @@ print(n)      # what does this print?
 ```
 
 
-###### <span style="color:#8B4513;">**4.10 Excercise:** Type up the above in `my_variable_example8.py`. What is the value of n printed? Change i to 21. What is the value of n printed? Answer in `module4.pdf`. Submit your code with i set to 5.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.10 Exercise"}
+Type up the above in `my_variable_example8.py`. What is the value of n printed? Change i to 21. What is the value of n printed? Answer in `module4.pdf`. Submit your code with i set to 5.
+:::
 
 
 Integer division:
@@ -272,7 +288,7 @@ Integer division:
 
 - Integer division is useful when we want to do integer arithmetic. 
 
-## 4.3 Expressions and operator-precedence
+## 0.4.3 Expressions and operator-precedence
 Consider the following program:
 ```python
 i = 5
@@ -281,7 +297,9 @@ k = i*j - (i+1)*(j-1)
 print(k)
 ```
 
-###### <span style="color:#8B4513;">**4.11 Excercise:** Type up the above program in `my_expression_example.py`. What does it print? Answer in `module4.pdf`.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.11 Exercise"}
+Type up the above program in `my_expression_example.py`. What does it print? Answer in `module4.pdf`.
+:::
 
 About expressions:
 
@@ -328,12 +346,14 @@ The key to working them out is to use <b>extra</b> parentheses in the right way.
   - Then the D in PEMDAS: 1 + 4
   - Result: 5
 
-###### <span style="color:#8B4513;">**4.12 Excercise:** What does the expression `i*j - i+1*j-1` evaluate to when `i=7` and `j=3`? Answer in `module4.pdf`.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.12 Exercise"}
+What does the expression `i*j - i+1*j-1` evaluate to when `i=7` and `j=3`? Answer in `module4.pdf`.
+:::
 
-###### <span style="color:#8B4513;">**4.13 Video:**</span>
+###### **0.4.13 Video**
 {{< video ../../../media/units/unit0/module4/u0-mod4.13.mp4 aspect-ratio="21x9" >}}
 
-## 4.4 More about expressions and assignment
+## 0.4.4 More about expressions and assignment
 The <em>remainder</em> operator:
 
 - The expression 10 % 3 is "the remainder when 10 is divided by 3".
@@ -349,7 +369,9 @@ k = i % (-j)
 print(k)
 ```
 
-###### <span style="color:#8B4513;">**4.14 Excercise:** Can you mentally execute and identify what's printed? Type up the above in `my_expression_example2.py` to confirm. Report the value in `module4.pdf`.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.14 Exercise"}
+Can you mentally execute and identify what's printed? Type up the above in `my_expression_example2.py` to confirm. Report the value in `module4.pdf`.
+:::
 
 One way to know whether one number cleanly divides another is to apply the `%` (remainder) operator.
 
@@ -361,7 +383,9 @@ for i in range(1, j):
     print(k)
 ```
 
-###### <span style="color:#8B4513;">**4.15 Excercise:** Can you mentally execute and identify what's printed? Type up the above in `my_expression_example3.py` to confirm. Then change j to 11 and run the program. Report the output in each case in `module4.pdf`. When submitting the code, leave j as 11.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.15 Exercise"}
+Can you mentally execute and identify what's printed? Type up the above in `my_expression_example3.py` to confirm. Then change j to 11 and run the program. Report the output in each case in `module4.pdf`. When submitting the code, leave j as 11.
+:::
 
 :::{.callout-note}
 - In the above exercise we systematically obtained the remainder when dividing 10 (the value of j) by every possible number less than 10.
@@ -374,7 +398,7 @@ for i in range(1, j):
 - The notion of a prime number may seem like an esoteric topic, suitable for a dinner conversation with mathematicians. But it turns out to have immense practical value: much of cryptography is based on properties of numbers that can be cleanly divided by only two prime numbers. 
 :::
 
-###### <span style="color:#8B4513;">**4.16 Video:**</span>
+###### **0.4.16 Video**
 {{< video ../../../media/units/unit0/module4/u0-mod4.16.mp4 aspect-ratio="21x9" >}}
 
 Now we'll look at a strange (initially) but very useful type of assignment:
@@ -402,10 +426,12 @@ for i in range(0, 11):
 print(s)
 ```
 
-###### <span style="color:#8B4513;">**4.17 Excercise:** Trace the changing values of `s` in the above program using the following kind of table:</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.17 Exercise"}
+Trace the changing values of `s` in the above program using the following kind of table:
 ![](../../../media/units/unit0/module4/tracetable.PNG)
 
-<span style="color:#8B4513;">Write up the table in `module4.pdf`.</span>
+Write up the table in `module4.pdf`.
+:::
 
 :::{.callout-note}
 In this and other tracing exercises involving a table, you can simply draw the table by hand and include a picture. (That is, you don't have to spend time on making tables inside Word.)
@@ -422,12 +448,14 @@ print(s)
 - The program prints the sum of the first N odd numbers.
 - Recall from earlier that as i goes through 1, 2, 3, ... (2*i-1) evaluates as successive odd numbers 1, 3, 5, ...
 
-###### <span style="color:#8B4513;">**4.18 Excercise:** Trace (in `module4.pdf`) the values of `i` and `s` in the program above. Then, in `my_expression_example4.py`, edit the code to create an outer loop that varies N from 1 to 10. That is, make N a new for-loop variable that ranges between 1 and 10 (inclusive), and ensure that you properly indent the inner (nested) loop that uses i. What pattern do you observe in the output?</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.18 Exercise"}
+Trace (in `module4.pdf`) the values of `i` and `s` in the program above. Then, in `my_expression_example4.py`, edit the code to create an outer loop that varies N from 1 to 10. That is, make N a new for-loop variable that ranges between 1 and 10 (inclusive), and ensure that you properly indent the inner (nested) loop that uses i. What pattern do you observe in the output?
+:::
 
-###### <span style="color:#8B4513;">**4.19 Video:**</span>
+###### **0.4.19 Video**
 {{< video ../../../media/units/unit0/module4/u0-mod4.19.mp4 aspect-ratio="21x9" >}}
 
-## 4.5 Problem solving and pseudocode
+## 0.4.5 Problem solving and pseudocode
 Suppose we were given the following problem: <em>write a program to print the first <i>N</i> odd numbers</em>.
 
 We'll solve it in the following steps:
@@ -455,9 +483,11 @@ We'll solve it in the following steps:
       print(k)
   ```
 
-###### <span style="color:#8B4513;">**4.20 Excercise:** Trace (in `module4.pdf`) the values of `i` and `k` in the program above. This is what you should be able to domentally during mental execution.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.20 Exercise"}
+Trace (in `module4.pdf`) the values of `i` and `k` in the program above. This is what you should be able to domentally during mental execution.
+:::
 
-## 4.6 A problem-solving example with variables and nested for-loops
+## 0.4.6 A problem-solving example with variables and nested for-loops
 We'll solve the following problem: <em>for any given <i>n</i>, compute</em>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
   1 + 2<sup>1</sup> + 2<sup>2</sup> 
@@ -499,9 +529,11 @@ As a first step, let's see if we can use a loop to compute a single power of 2:
   ```
 
 
-###### <span style="color:#8B4513;">**4.21 Excercise:** Trace the changing values of `p` in the above program using a table (in `module4.pdf`). Then, type up the above program in `my_powerof2.py` to confirm.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.21 Exercise"}
+Trace the changing values of `p` in the above program using a table (in `module4.pdf`). Then, type up the above program in `my_powerof2.py` to confirm.
+:::
 
-###### <span style="color:#8B4513;">**4.22 Video:**</span>
+###### **0.4.22 Video**
 {{< video ../../../media/units/unit0/module4/u0-mod4.22.mp4 aspect-ratio="21x9" >}}
 
 - Next, let's look at pseudocode for the sum of powers (our original problem):
@@ -532,18 +564,22 @@ As a first step, let's see if we can use a loop to compute a single power of 2:
   - Try to get a feel for how it executes by looking at the first iteration of the outerloop:
   ![](../../../media/units/unit0/module4/power3.png)
 
-###### <span style="color:#8B4513;">**4.23 Excercise:** Make a table with columns labeled `k, i, p` and `s` and trace the program, filling in the table step-by-step (in `module4.pdf`).</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.23 Exercise"}
+Make a table with columns labeled `k, i, p` and `s` and trace the program, filling in the table step-by-step (in `module4.pdf`).
+:::
 
-###### <span style="color:#8B4513;">**4.24 Video:**</span>
+###### **0.4.24 Video:**
 {{< video ../../../media/units/unit0/module4/u0-mod4.24.mp4 aspect-ratio="21x9" >}}
 
-###### <span style="color:#8B4513;">**4.25 Excercise:** Try a few other values of `n`, e.g., `n=3` or `n=4`. Try to guess the mathematical formula for 1 + 2<sup>1</sup> + 2<sup>2</sup> + 2<sup>3</sup> + ... + 2<sup>n</sup> (in `module4.pdf`)</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.25 Exercise"}
+Try a few other values of `n`, e.g., `n=3` or `n=4`. Try to guess the mathematical formula for 1 + 2<sup>1</sup> + 2<sup>2</sup> + 2<sup>3</sup> + ... + 2<sup>n</sup> (in `module4.pdf`)
+:::
 
 :::{.callout-tip}
 Add 1 to the sum-of-powers of 2.
 :::
 
-## 4.7 Shortcut operators
+## 0.4.7 Shortcut operators
 Recall the integer-sum program:
 ```python
 s = 0
@@ -569,29 +605,35 @@ s -= i         # Same as s = s - i
 p *= 2         # Same as p = p * 2
 d /= 2         # Same as d = d / 2
 ```
-###### <span style="color:#8B4513;">**4.26 Excercise:** In `my_sum_powerof2.py` rewrite the example code that computes the sum of power of 2, using shortcut operators where possible.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.26 Exercise"}
+In `my_sum_powerof2.py` rewrite the example code that computes the sum of power of 2, using shortcut operators where possible.
+:::
 
-## 4.8 When things go wrong
+## 0.4.8 When things go wrong
 As you might imagine, there are many ways to inadvertently create errors.
 
 In each case below, first try to identify the error just by reading. Then, type up the program to confirm.
 
-###### <span style="color:#8B4513;">**4.27 Excercise:** What is the error in this program?</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.27 Exercise"}
+What is the error in this program?
 ```python
 i = j
 j = 4
 print(i)
 ```
-<span style="color:#8B4513;">Type it up in `error1.py` to confirm.</span>
+Type it up in `error1.py` to confirm.
+:::
 
-###### <span style="color:#8B4513;">**4.28 Excercise:** What is the error in this program?</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.28 Exercise"}
+What is the error in this program?
 ```python
 i = 4
 j = 3
 k = ( (i + j) * (i - j) / 2
 print(k)
 ```
-<span style="color:#8B4513;">Type it up in `error2.py` to confirm.</span>
+Type it up in `error2.py` to confirm.
+:::
 
 We'll now see a different kind of error:
 ```python
@@ -601,7 +643,9 @@ for i in range(1, n+1):
     print(k)
 ```
 
-<span style="color:#8B4513;">Type it up in `error3.py` to confirm. Then trace through the program at each iteration in `module4.pdf`.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.29 Exercise"}
+Type it up in `error3.py` to confirm. Then trace through the program at each iteration in `module4.pdf`.
+:::
 
 The above is an example of a <em>runtime error</em>:
 
@@ -609,7 +653,7 @@ The above is an example of a <em>runtime error</em>:
 - However, when i is 0, you can't divide by 0.
 - This causes a runtime error, meaning the program runs fine until the particular occurence of divide-by-zero.
 
-## 4.9 Python files vs module pdf
+## 0.4.9 Python files vs module pdf
 **Important:**
 
 - By now it should be clear what you type into a Python file (ends with `.py`) verses what goes into your module pdf.
@@ -617,7 +661,7 @@ The above is an example of a <em>runtime error</em>:
 - Your module pdf (a single pdf per module) will have all the non-coding answers for a module. Whereas, a module can have many different Python files.
 - Thus, in future modules, we will only specify the Python filename with the understanding that you know how to name your module pdf.
 
-## 4.10 A peek at the future
+## 0.4.10 A peek at the future
 Let's now revisit some earlier code <a href="../../../media/units/unit0/module1/hello_gui.py" download >**hello_gui.py**</a> and apply what've learned about integers, arithmetic, and for-loops:
 ![](../../../media/units/unit0/module4/for-loop.png)
 
@@ -637,7 +681,9 @@ for i in range(0, 6):
 dt.display()
 ```
 
-###### <span style="color:#8B4513;">**4.30 Excercise:** Download <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> into your module4 folder. Then, type up the above in `my_plot_points.py`, and run.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.4.30 Exercise"}
+Download <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> into your module4 folder. Then, type up the above in `my_plot_points.py`, and run.
+:::
 
 Let's point out:
 
@@ -657,7 +703,7 @@ Let's point out:
 
 - We will occasionally write programs that work with numbers and quantitative concepts. As a result, we'll encounter mathematical ideas in a different way, through programming.
 
-## 4.11 Meta
+## 0.4.11 Meta
 Another in our series of occasional "meta" sections that will step back from the material to comment on how we can learn better.
 
 This was a loooong module with lots of exercises and details. Let's review:
