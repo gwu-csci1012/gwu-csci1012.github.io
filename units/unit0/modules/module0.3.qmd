@@ -3,6 +3,7 @@ title: "**Module 0.3:** Loops: the for-loop"
 format:
   html:
     code-copy: false
+    anchor-sections: true
 ---
 
 <html>
@@ -21,7 +22,7 @@ format:
 <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
   <a href="#">Unit 0</a> &raquo;
-  <span class="current-page">Module 0.3</span>
+  <span class="current-page">Module 0.3
 </div>
 
 ## Objectives
@@ -36,7 +37,7 @@ By the end of this module, for simple HelloWorld-like programs, you will be able
 - Identify and correct syntax errors related to above objectives.
 - Distinguish between syntax errors and debugging.
 
-## 3.0 An example 
+## 0.3.0 An example 
 
 Consider the following program:
 ```python
@@ -86,9 +87,13 @@ print_big_M()
 for i in range(6):
     print_big_O()
 ```
-###### <span style="color:#8B4513;">**3.1 Excercise:** Type up the above in `animal_sounds_loop.py` and run it. Also save the file so that it can be submitted (You will need to save the appropriate files for every such "type up" exercise).</span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.1 Exercise"}
+Type up the above in `animal_sounds_loop.py` and run it. Also save the file so that it can be submitted (You will need to save the appropriate files for every such "type up" exercise).
+:::
 
-###### <span style="color:#8B4513;">**3.2 Excercise:** Using the example above as a point of reference, print out your own animal sound. Be sure to use a for-loop to repeatedly print one letter in the sound. Write your code in `my_pet_sound_loop.py`.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.2 Exercise"}
+Using the example above as a point of reference, print out your own animal sound. Be sure to use a for-loop to repeatedly print one letter in the sound. Write your code in `my_pet_sound_loop.py`.
+:::
 
 Let's zoom in on the for-loop and examine it.
 
@@ -97,7 +102,8 @@ To do so, we'll write a different for-loop:
 for i in range(6):
     print(i)
 ```
-###### <span style="color:#8B4513;">**3.3 Excercise:** Type up the above in `my_forloop_example.py` and run it. You should observe this:</span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.3 Exercise"}
+Type up the above in `my_forloop_example.py` and run it. You should observe this:
 
 ```python
 0
@@ -107,8 +113,8 @@ for i in range(6):
 4
 5
 ```
-
-<span style="color:#8B4513;">In the place in the code where you see the number 6, replace 6 with  10 and then run the program. Next, try 2 instead of 6. Finally, try 0 instead of 6. What is the output in each case? Report in your module pdf (`module3.pdf`). Submit the program with 6.</span>
+In the place in the code where you see the number 6, replace 6 with  10 and then run the program. Next, try 2 instead of 6. Finally, try 0 instead of 6. What is the output in each case? Report in your module pdf (`module3.pdf`). Submit the program with 6.
+:::
 
 Let's now examine elements of the loop:
 - There's the special word `for`
@@ -136,7 +142,9 @@ for i in range(6):
     print('Hello')
 ```
 
-###### <span style="color:#8B4513;">**3.4 Excercise:** Type up the above in  `my_forloop_example2.py` and run the program.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.4 Exercise"}
+Type up the above in  `my_forloop_example2.py` and run the program.
+:::
 
 Observe that the body of this for-loop has two statements:
 ![](../../../media/units/unit0/module3/forloop7.png)
@@ -170,10 +178,10 @@ Let's now use a slightly fictionalized way to explain the <em>action</em> of thi
     - In this case, there's no other code and the program completes.
 
 
-###### <span style="color:#8B4513;">**3.5 Video:** </span>
+###### **0.3.5 Video**
 {{< video ../../../media/units/unit0/module3/u0-mod3.5.mp4 aspect-ratio='21x9' >}}
 
-## 3.1 Variations
+## 0.3.1 Variations
 To explore for-loops further, we'll look at some variations of the basic for-loop:
 
 **1.** First, we could have named our for-loop variable 
@@ -223,16 +231,22 @@ for i in range(16, 10, -1):
 - In the last iteration, i becomes 11.
 - Finally, when i is decremented to 10, the loop is ended.
 
-###### <span style="color:#8B4513;">**3.6 Excercise:** Type up the above four examples in `my_forloop_variation1.py`, `my_forloop_variation2.py`, `my_forloop_variation3.py`, and `my_forloop_variation4.py`. Run to confirm the output.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.6 Exercise"}
+Type up the above four examples in `my_forloop_variation1.py`, `my_forloop_variation2.py`, `my_forloop_variation3.py`, and `my_forloop_variation4.py`. Run to confirm the output.
+:::
 
-###### <span style="color:#8B4513;">**3.7 Excercise:** In `count_odd_up.py`, write a loop to print the odd numbers from 1 to 25 (thus, skipping by 2, and including 1 and 25 in the output).</span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.7 Exercise"}
+In `count_odd_up.py`, write a loop to print the odd numbers from 1 to 25 (thus, skipping by 2, and including 1 and 25 in the output).
+:::
 
-###### <span style="color:#8B4513;">**3.8 Excercise:** In `count_even_down.py`, write a loop to print the even numbers from 24 down to 2 (inclusive of 24 and 2).</span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.8 Exercise"}
+In `count_even_down.py`, write a loop to print the even numbers from 24 down to 2 (inclusive of 24 and 2).
+:::
 
-###### <span style="color:#8B4513;">**3.9 Video:** </span>
+###### **0.3.9 Video** 
 {{< video ../../../media/units/unit0/module3/u0-mod3.9.mp4 aspect-ratio="21x9" >}}
 
-## 3.2 Nested for-loops
+## 0.3.2 Nested for-loops
 We'll start by writing a program to print a little number triangle like this:
 ```python
 1
@@ -266,9 +280,13 @@ Observe:
 - `print()` merely goes to the next line. <br>(Or, stated differently, ends the current line being printed.)
 
 
-###### <span style="color:#8B4513;">**3.10 Excercise:** Add a row for `5` (with five of them), writing your code in `my_forloop_print.py`.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.10 Exercise"}
+Add a row for `5` (with five of them), writing your code in `my_forloop_print.py`.
+:::
 
-###### <span style="color:#8B4513;">**3.11 Excercise:** Just for the heck of it, could one use a for-loop to achieve the printing of `1` all by itself? That is, answer the question in your module pdf: can a for-loop be set up so that you go into it exactly once? Write your code in `my_forloop_print2.py`.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.11 Exercise"}
+Just for the heck of it, could one use a for-loop to achieve the printing of `1` all by itself? That is, answer the question in your module pdf: can a for-loop be set up so that you go into it exactly once? Write your code in `my_forloop_print2.py`.
+:::
 
 Next, observe that the upper-limits of the for-loops are themselves increasing:
 ![](../../../media/units/unit0/module3/forlooprint.png)
@@ -308,10 +326,12 @@ for j in range(2, 5):      # j iterates from 2 to 4
         print(j, end='')
     print()    
 ```
-###### <span style="color:#8B4513;">**3.12 Video:** </span>
+###### **0.3.12 Video** 
 {{< video ../../../media/units/unit0/module3/u0-mod3.12.mp4 aspect-ratio="21x9" >}}
 
-###### <span style="color:#8B4513;">**3.13 Excercise:** Change the program to print a fifth row with five `5`'s. Also adjust the for-loop so that the for-loop  also takes care of printing the sole `1` that appears in the row of the sole `1`'s. That is, adjust the for-loop conditions so that you don't need the stand-alone `print(1)` to print `1`. Write your code in `my_forloop_print3.py`.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.13 Exercise"}
+Change the program to print a fifth row with five `5`'s. Also adjust the for-loop so that the for-loop  also takes care of printing the sole `1` that appears in the row of the sole `1`'s. That is, adjust the for-loop conditions so that you don't need the stand-alone `print(1)` to print `1`. Write your code in `my_forloop_print3.py`.
+:::
 
 Let's review what we learned above:
 
@@ -326,7 +346,7 @@ Let's review what we learned above:
 - Another way to say it: a <em>nested for-loop</em> has one for-loop inside another.
 - We will use <em>nesting</em> in other contexts as well, when one structure is placed inside another.
 
-## 3.3 Tracing through a program in detail
+## 0.3.3 Tracing through a program in detail
 We'll now look at an example of how to execute a program "by hand". That is, how to <em>trace</em> a program's execution by painstakingly following its execution step-by-step.
 
 At first this will appear tedious, but it is <em><b>critical</b></em> to a firm understanding of how programs execute, and eventually to your own writing of programs.
@@ -422,7 +442,8 @@ Yes, that was long. But doing this many times will help you understand how to re
 
 **Important:** when you need to submit a program's traced-out execution, use a shorter version. For example, [**see this PDF for the above program**](../../../media/units/unit0/module3/TracingExample.pdf).
 
-###### <span style="color:#8B4513;">**3.14 Excercise:** Consider this program:</span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.14 Exercise"}
+Consider this program:
 ```python
 for i in range(1, 6):
     for j in range(i, 0, -1):
@@ -432,12 +453,14 @@ for i in range(1, 6):
         print('-', end='')
     print()
 ```
-###### <span style="color:#8B4513;">First, trace through the values of i and j by hand and try to figure out what gets printed. Do this painstakingly for each possible value of i and j, remembering that i is now the name of the outerloop variable. Write your tracing in `module3.pdf`, using the shorter "table" format we saw in [**see this PDF for the above program**](../../../media/units/unit0/module3/TracingExample.pdf) earlier. Then, edit, compile and execute the above program in `my_forloop_trace.py`.to see if you were right.</span>
+First, trace through the values of i and j by hand and try to figure out what gets printed. Do this painstakingly for each possible value of i and j, remembering that i is now the name of the outerloop variable. Write your tracing in `module3.pdf`, using the shorter "table" format we saw in [**see this PDF for the above program**](../../../media/units/unit0/module3/TracingExample.pdf) earlier. Then, edit, compile and execute the above program in `my_forloop_trace.py`.to see if you were right.
+:::
 
-###### <span style="color:#8B4513;">**3.15 Video:** </span>
+###### **0.3.15 Video** 
 {{< video ../../../media/units/unit0/module3/u0-mod3.15.mp4 aspect-ratio='21x9' >}}
 
-###### <span style="color:#8B4513;">**3.16 Excercise:** Consider this program:</span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.16 Exercise"}
+Consider this program:
 Write a program to print out consecutive integers in a diagonal, as in
 ```python
 1
@@ -446,21 +469,24 @@ Write a program to print out consecutive integers in a diagonal, as in
    4
     5
 ```
-<span style="color:#8B4513;">Use a nested for-loop as in earlier examples to print the requisite number of spaces before printing a digit. Write your code in `my_diagonal_print.py`.</span>
+Use a nested for-loop as in earlier examples to print the requisite number of spaces before printing a digit. Write your code in `my_diagonal_print.py`.
+:::
 
 
-###### <span style="color:#8B4513;">**3.17 Excercise:** Consider this program:</span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.17 Exercise"}
+Consider this program:
 Write a program to print out 
 ```python
 I'm feeling cold: b rrrrrr rrrrr rrrr rrr rr r
 ```
-<span style="color:#8B4513;">Use a regular `print` to print everything up to the `b`. Then, use a nested for-loop for the `r`'s. Don't forget the space between each grouping of `r`'s. Write your code in `my_brr_print.py`.</span>
+Use a regular `print` to print everything up to the `b`. Then, use a nested for-loop for the `r`'s. Don't forget the space between each grouping of `r`'s. Write your code in `my_brr_print.py`.
+:::
 
 
-###### <span style="color:#8B4513;">**3.18 Video:** </span>
+###### **0.3.18 Video** 
 {{< video ../../../media/units/unit0/module3/u0-mod3.18.mp4 aspect-ratio="21x9" >}}
 
-## 3.4 Reading and writing
+## 0.3.4 Reading and writing
 Let's consider how to <em>read</em> a single for-loop, such as:
 ```python
 for k in range(1, 10, 2):
@@ -469,7 +495,9 @@ for k in range(1, 10, 2):
     print('-')
 ```
 
-###### <span style="color:#8B4513;">**3.19 Excercise:** Write up the above in `my_simpleloop.py` and run to see the output. Then in `module3.pdf`, trace the execution of the program.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.19 Exercise"}
+Write up the above in `my_simpleloop.py` and run to see the output. Then in `module3.pdf`, trace the execution of the program.
+:::
 
 Instead of explaining the execution, let's focus on how to <em>read</em> such a program:
 
@@ -506,60 +534,68 @@ for i in range(1, 11, 2):
     functionThree()
 ```
 
-###### <span style="color:#8B4513;">**3.20 Excercise:** What does it print? Try to figure this out by mental execution first. Then, type it up, compile and execute to confirm, writing your code in `my_execution_exercise.py`. Then in `module3.pdf`, trace the execution of the program.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.20 Exercise"}
+What does it print? Try to figure this out by mental execution first. Then, type it up, compile and execute to confirm, writing your code in `my_execution_exercise.py`. Then in `module3.pdf`, trace the execution of the program.
+:::
 
-###### <span style="color:#8B4513;">**3.21 Video:** </span>
+###### **0.3.21 Video** 
 {{< video ../../../media/units/unit0/module3/u0-mod3.21.mp4 aspect-ratio="21x9" >}}
 
-## 3.5 When things go wrong
+## 0.3.5 When things go wrong
 As code gets more complex, it gets easier to make mistakes, and harder to find them.
 
 In each of the programs below, try to determine the error without compiling the program. Then, write up the program, compile and see what the compiler says. After that, fix the error.
 
 
-###### <span style="color:#8B4513;">**3.22 Excercise:** </span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.22 Exercise"}
 ```python
 for i in range(0 6):
     print(i)
 ```
-<span style="color:#8B4513;">Write your corrected code in `my_loop_exercise1.py`.</span>
+Write your corrected code in `my_loop_exercise1.py`.
+:::
 
-###### <span style="color:#8B4513;">**3.23 Excercise:** </span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.23 Exercise"}
 ```python
 for i in range(0, 6)
     print(i)
 ```
-<span style="color:#8B4513;">Write your corrected code in `my_loop_exercise2.py`.</span>
+Write your corrected code in `my_loop_exercise2.py`.
+:::
 
-###### <span style="color:#8B4513;">**3.24 Excercise:** </span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.24 Exercise"}
 ```python
 for i in range(0, 6:
     print(i)
 ```
-<span style="color:#8B4513;">Write your corrected code in `my_loop_exercise3.py`.</span>
+Write your corrected code in `my_loop_exercise3.py`.
+:::
 
-###### <span style="color:#8B4513;">**3.25 Excercise:** </span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.25 Exercise"}
 ```python
 for i in range(0, 6):
 print(i)
 ```
-<span style="color:#8B4513;">Write your corrected code in `my_loop_exercise4.py`</span>.
+Write your corrected code in `my_loop_exercise4.py`.
+:::
 
 
-###### <span style="color:#8B4513;">**3.26 Excercise:** </span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.26 Exercise"}
 ```python
 for in range(0, 6):
     print(i)
 ```
-<span style="color:#8B4513;">Write your corrected code in `my_loop_exercise5.py`</span>.
+Write your corrected code in `my_loop_exercise5.py`.
+:::
 
 
-###### <span style="color:#8B4513;">**3.27 Excercise:** </span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.27 Exercise"}
 ```python
 for i in range(0, 6):
     print i
 ```
-<span style="color:#8B4513;">Write your corrected code in `my_loop_exercise6.py</span>.
+Write your corrected code in `my_loop_exercise6.py`.
+:::
 
 Let's point out the difference between a <em>syntax error</em> and a <em>logical</em> error:
   
@@ -571,7 +607,7 @@ Let's point out the difference between a <em>syntax error</em> and a <em>logical
 
 
 
-###### <span style="color:#8B4513;">**3.28 Excercise:** </span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.28 Exercise"}
 The following code intends to print
 ```python
 55555
@@ -586,9 +622,10 @@ for i in range(5, 0, 1):
         print(i, end='')
     print()
 ```
-<span style="color:#8B4513;">But there are two bugs. First, try to find the problems solely by reading and mental execution. Then, type up the program in `my_loop_exercise7.py`. What does it print? Report what you see in `module3.pdf`. Then fix the program to get the desired output.</span>
+But there are two bugs. First, try to find the problems solely by reading and mental execution. Then, type up the program in `my_loop_exercise7.py`. What does it print? Report what you see in `module3.pdf`. Then fix the program to get the desired output.
+:::
 
-## 3.6 &nbsp;&nbsp; A peek at the future
+## 0.3.6 &nbsp;&nbsp; A peek at the future
 Consider the following program:
 ```python
 import tkinter as tk
@@ -606,8 +643,10 @@ draw_rectangles()
 window.mainloop()
 ```
 
-###### <span style="color:#8B4513;">**3.29 Excercise:** Download the above program, <a href="../../../media/units/unit0/module3/my_forloop_rectangle.py" download >**my_forloop_rectangle.py**</a>, and execute the program. If you're feeling brave, add a second for-loop so that output looks like:</span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.29 Exercise"}
+Download the above program, <a href="../../../media/units/unit0/module3/my_forloop_rectangle.py" download >**my_forloop_rectangle.py**</a>, and execute the program. If you're feeling brave, add a second for-loop so that output looks like:
 ![](../../../media/units/unit0/module3/forloop_rect_screenshot.png)
+:::
 
 Let's point out the for-loop's part in the program:
 
@@ -625,7 +664,9 @@ Let's point out the for-loop's part in the program:
   - When i is 10, the first rectangle's top left corner gets drawn at 30 (which is 3 times i, or 3*i) from the left side, and 10 down from the top.
   - In the second iteration i is 20, which means the top left corner is 60 from the left. And so on.
 
-###### <span style="color:#8B4513;">**3.30 Excercise:** Download <a href="../../../media/units/unit0/module3/my_forloop_rectangle2.py" download >**my_forloop_rectangle2.py**</a>, and execute the program to see that an animation is really a for-loop.</span>
+:::{.callout-caution appearance="simple" icon=false title="0.3.30 Exercise"}
+Download <a href="../../../media/units/unit0/module3/my_forloop_rectangle2.py" download >**my_forloop_rectangle2.py**</a>, and execute the program to see that an animation is really a for-loop.
+:::
 
 About animations:
 
@@ -635,7 +676,7 @@ About animations:
 - This is essentially how animation works.
 
 
-## 3.7 &nbsp;&nbsp; Some things to keep mind
+## 0.3.7 &nbsp;&nbsp; Some things to keep mind
 Let's introduce the notion of <em>reserved words</em>:
 
 - Some words like `for` and `in` are special to the language and are called <em>reserved words</em> or <em>key words</em> of the language.
@@ -692,7 +733,7 @@ for i in range(10, 15, 2):
   - The first comment is an example of using a comment as a prelude to code, to explain what's coming or intended.
   - The second kind that is to the right side of a line of code is like an alert: we'll use this to point out something to pay attention to in that line of code.
 
-## 3.8 Meta
+## 0.3.8 Meta
 We will occasionally step back from the details to comment on how best to learn.
 
 This module was a bit different, a little more challenging than modules 1-2.
