@@ -154,6 +154,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../../course-policies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Policies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../instructors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Instruction Team</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../../submit-remember.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What to remember about submitting work</span></a>
   </div>
@@ -282,18 +294,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../course-policies.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Course Policies</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../instructors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Instruction Team</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../../faq.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FAQ</span></a>
   </div>
@@ -309,15 +309,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#strings" id="toc-strings" class="nav-link" data-scroll-target="#strings">5.0 Strings</a></li>
-  <li><a href="#string-concatenation" id="toc-string-concatenation" class="nav-link" data-scroll-target="#string-concatenation">5.1 String concatenation</a></li>
-  <li><a href="#fun-with-string-concatenation" id="toc-fun-with-string-concatenation" class="nav-link" data-scroll-target="#fun-with-string-concatenation">5.2 Fun with string concatenation</a></li>
-  <li><a href="#input-from-the-terminal" id="toc-input-from-the-terminal" class="nav-link" data-scroll-target="#input-from-the-terminal">5.3 Input from the terminal</a></li>
-  <li><a href="#strings-and-for-loops" id="toc-strings-and-for-loops" class="nav-link" data-scroll-target="#strings-and-for-loops">5.4 Strings and for-loops</a></li>
-  <li><a href="#the-useful-relationship-between-characters-and-integers" id="toc-the-useful-relationship-between-characters-and-integers" class="nav-link" data-scroll-target="#the-useful-relationship-between-characters-and-integers">5.5 &nbsp;&nbsp; The useful relationship between characters and integers</a></li>
-  <li><a href="#variable-names" id="toc-variable-names" class="nav-link" data-scroll-target="#variable-names">5.6 Variable names</a></li>
-  <li><a href="#a-problem-solving-example" id="toc-a-problem-solving-example" class="nav-link" data-scroll-target="#a-problem-solving-example">5.7 A problem solving example</a></li>
-  <li><a href="#when-things-go-wrong" id="toc-when-things-go-wrong" class="nav-link" data-scroll-target="#when-things-go-wrong">5.8 When things go wrong</a></li>
+  <li><a href="#strings" id="toc-strings" class="nav-link" data-scroll-target="#strings">0.5.0 Strings</a></li>
+  <li><a href="#string-concatenation" id="toc-string-concatenation" class="nav-link" data-scroll-target="#string-concatenation">0.5.1 String concatenation</a></li>
+  <li><a href="#fun-with-string-concatenation" id="toc-fun-with-string-concatenation" class="nav-link" data-scroll-target="#fun-with-string-concatenation">0.5.2 Fun with string concatenation</a></li>
+  <li><a href="#input-from-the-terminal" id="toc-input-from-the-terminal" class="nav-link" data-scroll-target="#input-from-the-terminal">0.5.3 Input from the terminal</a></li>
+  <li><a href="#strings-and-for-loops" id="toc-strings-and-for-loops" class="nav-link" data-scroll-target="#strings-and-for-loops">0.5.4 Strings and for-loops</a></li>
+  <li><a href="#the-useful-relationship-between-characters-and-integers" id="toc-the-useful-relationship-between-characters-and-integers" class="nav-link" data-scroll-target="#the-useful-relationship-between-characters-and-integers">0.5.5 The useful relationship between characters and integers</a></li>
+  <li><a href="#variable-names" id="toc-variable-names" class="nav-link" data-scroll-target="#variable-names">0.5.6 Variable names</a></li>
+  <li><a href="#a-problem-solving-example" id="toc-a-problem-solving-example" class="nav-link" data-scroll-target="#a-problem-solving-example">0.5.7 A problem solving example</a></li>
+  <li><a href="#when-things-go-wrong" id="toc-when-things-go-wrong" class="nav-link" data-scroll-target="#when-things-go-wrong">0.5.8 When things go wrong</a></li>
   </ul>
 </nav>
     </div>
@@ -366,32 +366,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 </section>
 <section id="strings" class="level2">
-<h2 class="anchored" data-anchor-id="strings">5.0 Strings</h2>
+<h2 class="anchored" data-anchor-id="strings">0.5.0 Strings</h2>
 <p>About strings:</p>
 <ul>
-<li>We have already seen examples of strings, as in:</li>
-</ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello'</span>)</span></code></pre></div>
-<ul>
-<li>Here, whatever is in between the quotes is treated as <em>one thing</em>: a sequence of letters, digits or symbols.</li>
-<li>Here are examples with digits, symbols and spaces:</li>
-</ul>
+<li><p>We have already seen examples of strings, as in:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello'</span>)</span></code></pre></div></li>
+<li><p>Here, whatever is in between the quotes is treated as <em>one thing</em>: a sequence of letters, digits or symbols.</p></li>
+<li><p>Here are examples with digits, symbols and spaces:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello there. I'</span>m on my way to <span class="dv">123</span> Main Street<span class="st">')</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="er">print</span>(<span class="st">'#@%&amp;! I'</span>m late<span class="op">!</span><span class="st">')</span></span></code></pre></div>
-<ul>
-<li>The entire sequence of letters, digits, punctuation etc from the <code>H</code> in <code>Hello</code> to the <code>t</code> in <code>Street</code> is one string.</li>
-<li>And you already know that “#@%&amp;!” translates to “Drat!”</li>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="er">print</span>(<span class="st">'#@%&amp;! I'</span>m late<span class="op">!</span><span class="st">')</span></span></code></pre></div></li>
+<li><p>The entire sequence of letters, digits, punctuation etc from the <code>H</code> in <code>Hello</code> to the <code>t</code> in <code>Street</code> is one string.</p></li>
+<li><p>And you already know that “#@%&amp;!” translates to “Drat!”</p></li>
 </ul>
 <p>Just like integer values can be placed in variables, we can do the same with strings:</p>
 <ul>
-<li>Example:</li>
-</ul>
+<li><p>Example:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code></pre></div>
-<p>Here, the variable <code>s</code> has the string <code>The quick brown fox jumps over the lazy dog</code></p>
-<ul>
-<li>If you’re wondering how a variable (we used a box as an analogy) can fit so many letters, that is a somewhat advanced topic.</li>
-<li>For now, let’s proceed with the notion that we can do this.</li>
+<p>Here, the variable <code>s</code> has the string <code>'The quick brown fox jumps over the lazy dog'</code></p></li>
+<li><p>If you’re wondering how a variable (we used a box as an analogy) can fit so many letters, that is a somewhat advanced topic.</p></li>
+<li><p>For now, let’s proceed with the notion that we can do this.</p></li>
 </ul>
 <p>Consider this example:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a string and print it:</span></span>
@@ -407,12 +401,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>But it is different in another respect: something comes out of the function and gets placed into the variable <code>k</code></li>
 <li>We will later look further into how we can write our own functions that have this property of “making something and giving the result” to a variable.</li>
 </ul>
-<section id="excercise-type-up-the-above-in-my_string_example.py.-what-is-the-printed-length-remember-answers-to-non-coding-questions-like-this-need-to-be-in-the-appropriate-module-pdf-in-this-case-module5.pdf." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_string_example.py.-what-is-the-printed-length-remember-answers-to-non-coding-questions-like-this-need-to-be-in-the-appropriate-module-pdf-in-this-case-module5.pdf."><span style="color:#8B4513;"><strong>5.1 Excercise:</strong> Type up the above in <code>my_string_example.py</code>. What is the printed length? Remember, answers to non-coding questions like this need to be in the appropriate module pdf, in this case <code>module5.pdf</code>.</span></h6>
-</section>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.1 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.1 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up the above in <code>my_string_example.py</code>. What is the printed length? Remember, answers to non-coding questions like this need to be in the appropriate module pdf, in this case <code>module5.pdf</code>.</p>
+</div>
+</div>
 </section>
 <section id="string-concatenation" class="level2">
-<h2 class="anchored" data-anchor-id="string-concatenation">5.1 String concatenation</h2>
+<h2 class="anchored" data-anchor-id="string-concatenation">0.5.1 String concatenation</h2>
 <p>Strings would be of limited use if there were no way of combining them, just as integers would be if there were no way of performing arithmetic.</p>
 <p>The joining of two strings end to end is called <em>concatenation</em>.</p>
 <p>Consider this program:</p>
@@ -422,18 +426,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> x <span class="op">+</span> y <span class="op">+</span> z</span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code></pre></div>
-<section id="excercise-type-up-the-above-in-my_string_example2.py.-what-is-the-output" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_string_example2.py.-what-is-the-output"><span style="color:#8B4513;"><strong>5.2 Excercise:</strong> Type up the above in <code>my_string_example2.py</code>. What is the output?</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.2 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.2 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up the above in <code>my_string_example2.py</code>. What is the output?</p>
+</div>
+</div>
 <p>About concatenation:</p>
 <ul>
-<li>The same <code>+</code> that we used for integer addition is what’s used to concatenate strings.</li>
-<li>Thus <em>multiple-usage</em> of symbols in a programming language is common: we’ll see other examples of a single symbol or function serving multiple purposes.
+<li><p>The same <code>+</code> that we used for integer addition is what’s used to concatenate strings.</p></li>
+<li><p>Thus <em>multiple-usage</em> of symbols in a programming language is common: we’ll see other examples of a single symbol or function serving multiple purposes.</p>
 <ul>
 <li>How come Python doesn’t get confused and think that x, y, z are integers wanting to be added?</li>
 <li>Python is smart about context, and understands that when <code>+</code> is used with strings, the only reasonable thing to do is to concatenate. Likewise, with numbers, Python will add them.</li>
 </ul></li>
-<li>You may have noticed the words all strung together without a space. So let’s add the spaces:</li>
-</ul>
+<li><p>You may have noticed the words all strung together without a space. So let’s add the spaces:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'Sphinx'</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="st">'of'</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> <span class="st">'black'</span></span>
@@ -441,39 +455,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> x <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> y <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> z <span class="op">+</span> <span class="st">' quartz, judge my vow'</span></span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code></pre></div>
-<ul>
-<li>Notice how multiple strings, some from variables, and some just written into the statement, are concatenated: <img src="../../../media/units/unit0/module5/str_example2.png" class="img-fluid"></li>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code></pre></div></li>
+<li><p>Notice how multiple strings, some from variables, and some just written into the statement, are concatenated: <img src="../../../media/units/unit0/module5/str_example2.png" class="img-fluid"></p></li>
 </ul>
-</section>
-<section id="excercise-type-up-the-above-in-my_string_example3.py.-what-is-the-output-how-many-times-did-a-concatenation-occur" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_string_example3.py.-what-is-the-output-how-many-times-did-a-concatenation-occur"><span style="color:#8B4513;"><strong>5.3 Excercise:</strong> Type up the above in <code>my_string_example3.py</code>. What is the output? How many times did a concatenation occur?</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.3 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.3 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up the above in <code>my_string_example3.py</code>. What is the output? How many times did a concatenation occur?</p>
+</div>
+</div>
 <p>We also introduced something new:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code></pre></div>
 <p>Here’s how to read this line:</p>
 <ul>
-<li>First look at <code>print</code> and notice that there’s something between the parentheses:</li>
-</ul>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code></pre></div>
-<ul>
-<li>Think to yourself: something is going to be given to <code>print</code> to get printed.</li>
-<li>Now look at what’s going to <code>print</code>:</li>
-</ul>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code></pre></div>
-<ul>
-<li>Here we see that the length of the string <code>s</code> is being computed.</li>
-<li>What you should be thinking is:
+<li><p>First look at <code>print</code> and notice that there’s something between the parentheses:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code></pre></div></li>
+<li><p>Think to yourself: something is going to be given to <code>print</code> to get printed.</p></li>
+<li><p>Now look at what’s going to <code>print</code>:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(s))</span></code></pre></div></li>
+<li><p>Here we see that the length of the string <code>s</code> is being computed.</p></li>
+<li><p>What you should be thinking is:</p>
 <ul>
 <li>The length will <em>first</em> get computed.</li>
 <li>And <em>then</em> the result (36, in this case) will be sent to <code>print</code>.</li>
 <li><code>print</code> then prints it to the output, which is what we see.</li>
 </ul></li>
-<li>One way to think about this is to use a term, <em>nesting</em>, that we’ve seen before:
+<li><p>One way to think about this is to use a term, <em>nesting</em>, that we’ve seen before:</p>
 <ul>
 <li>Here, the function invocation to <code>len</code> is nested in the function invocation to <code>print</code></li>
 <li>The innermost in this case executes first.</li>
 </ul></li>
-<li>In case you were wondering: yes, one can nest deeply with one function invocation inside another, inside another etc. But we won’t need that anytime soon.</li>
+<li><p>In case you were wondering: yes, one can nest deeply with one function invocation inside another, inside another etc. But we won’t need that anytime soon.</p></li>
 </ul>
 <p>Often we want to concatenate strings with numbers, or other kinds of things:</p>
 <p>For example: consider</p>
@@ -482,31 +501,50 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> <span class="st">'A pangram must have all '</span> <span class="op">+</span> s <span class="op">+</span> <span class="st">' letters'</span></span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code></pre></div>
 <ul>
-<li>Here, the value in <code>k</code> is an integer.</li>
-<li>Prior to concatenation with a string, we first need to make a string out of the integer:</li>
+<li><p>Here, the value in <code>k</code> is an integer.</p></li>
+<li><p>Prior to concatenation with a string, we first need to make a string out of the integer:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="bu">str</span>(k)</span></code></pre></div></li>
+<li><p>We do this by sending the integer <code>k</code> to the <code>str</code> function, which builds a string version of the integer and gives that back.</p></li>
+<li><p>The string so computed is then placed into the variable <code>s</code> above.</p></li>
+<li><p>This string <code>s</code> gets concatenated with the other strings to produce the final result.</p></li>
 </ul>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="bu">str</span>(k)</span></code></pre></div>
-<ul>
-<li>We do this by sending the integer <code>k</code> to the <code>str</code> function, which builds a string version of the integer and gives that back.</li>
-<li>The string so computed is then placed into the variable <code>s</code> above.</li>
-<li>This string <code>s</code> gets concatenated with the other strings to produce the final result.</li>
-</ul>
-</section>
-<section id="excercise-type-up-the-above-in-my_string_example4.py-to-confirm." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_string_example4.py-to-confirm."><span style="color:#8B4513;"><strong>5.4 Excercise:</strong> Type up the above in <code>my_string_example4.py</code> to confirm.</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.4 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.4 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up the above in <code>my_string_example4.py</code> to confirm.</p>
+</div>
+</div>
 <p>Let’s examine a small variation:</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">26</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># You can also build a string in the print statement itself:</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'A pangram must have all '</span> <span class="op">+</span> <span class="bu">str</span>(k) <span class="op">+</span> <span class="st">' letters'</span>)</span></code></pre></div>
-</section>
-<section id="excercise-type-up-the-above-in-my_string_example5.py-to-see-the-resulting-output." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_string_example5.py-to-see-the-resulting-output."><span style="color:#8B4513;"><strong>5.5 Excercise:</strong> Type up the above in <code>my_string_example5.py</code> to see the resulting output.</span></h6>
-<!-- ###### <span style="color:#8B4513;">**5.6 Video:**</span>
- -->
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.5 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.5 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up the above in <code>my_string_example5.py</code> to see the resulting output.</p>
+</div>
+</div>
+<section id="video" class="level6">
+<h6 class="anchored" data-anchor-id="video"><strong>0.5.6 Video</strong></h6>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/units/unit0/module5/u0-mod5.6.mp4"></video></div>
 </section>
 </section>
 <section id="fun-with-string-concatenation" class="level2">
-<h2 class="anchored" data-anchor-id="fun-with-string-concatenation">5.2 Fun with string concatenation</h2>
+<h2 class="anchored" data-anchor-id="fun-with-string-concatenation">0.5.2 Fun with string concatenation</h2>
 <p>We will occasionally introduce programs we’ve written to both simplify your programming and yet allow for interesting examples.</p>
 <p>If all we did was compute with integers, it would be boring.</p>
 <p>You’ve already seen one example of such a tool: <code>drawtool</code>.</p>
@@ -527,15 +565,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'The '</span> <span class="op">+</span> adj <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> noun <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> verb <span class="op">+</span> <span class="st">'s'</span> <span class="op">+</span></span>
 <span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">' '</span> <span class="op">+</span> prep <span class="op">+</span> <span class="st">' a '</span> <span class="op">+</span> noun2)</span>
 <span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sentence)</span></code></pre></div>
-<section id="excercise-type-up-the-above-in-my_random_sentence.py.-dont-run-it-just-yet.-first-download-wordtool.py-and-wordswithpos.txt-into-the-same-folder-as-your-program.-now-run-the-program-several-times.-report-your-favorite-output-sentence-in-module5.pdf." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_random_sentence.py.-dont-run-it-just-yet.-first-download-wordtool.py-and-wordswithpos.txt-into-the-same-folder-as-your-program.-now-run-the-program-several-times.-report-your-favorite-output-sentence-in-module5.pdf."><span style="color:#8B4513;"><strong>5.7 Excercise:</strong> Type up the above in <code>my_random_sentence.py</code>. Don’t run it just yet. First download <a href="../../../media/useful/wordtool.py" download=""><strong>wordtool.py</strong></a> and <a href="../../../media/useful/wordsWithPOS.txt" download=""><strong>wordsWithPOS.txt</strong></a> into the same folder as your program. Now run the program several times. Report your favorite output sentence in <code>module5.pdf</code>.</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.7 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.7 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up the above in <code>my_random_sentence.py</code>. Don’t run it just yet. First download <a href="../../../media/useful/wordtool.py" download=""><strong>wordtool.py</strong></a> and <a href="../../../media/useful/wordsWithPOS.txt" download=""><strong>wordsWithPOS.txt</strong></a> into the same folder as your program. Now run the program several times. Report your favorite output sentence in <code>module5.pdf</code>.</p>
+</div>
+</div>
 <p>Let’s point out:</p>
 <ul>
-<li><code>wordtool.py</code> is merely another Python program, like the ones you’ve been writing, just a bit more complex.</li>
-<li><code>wordsWithPOS.txt</code> is plain text data (about English words, and parts-of-speech).</li>
-<li><code>wordtool.py</code> is written to read the data and make some functionality available, one of which is to randomly pick words from amongst the nouns, adjectives, and so on.</li>
-<li>To use functions in <code>wordtool.py</code> in your program, you need (and this is a new thing we’ve introduced) the <code>import</code> statement at the top of your program:</li>
-</ul>
+<li><p><code>wordtool.py</code> is merely another Python program, like the ones you’ve been writing, just a bit more complex.</p></li>
+<li><p><code>wordsWithPOS.txt</code> is plain text data (about English words, and parts-of-speech).</p></li>
+<li><p><code>wordtool.py</code> is written to read the data and make some functionality available, one of which is to randomly pick words from amongst the nouns, adjectives, and so on.</p></li>
+<li><p>To use functions in <code>wordtool.py</code> in your program, you need (and this is a new thing we’ve introduced) the <code>import</code> statement at the top of your program:</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wordtool</span></code></pre></div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -549,43 +597,45 @@ Tip
 <div class="callout-body-container callout-body">
 <p>The .py part is not in the import statement</p>
 </div>
-</div>
-<ul>
-<li>Then, to use a function defined in that other file, we use syntax like this:</li>
-</ul>
+</div></li>
+<li><p>Then, to use a function defined in that other file, we use syntax like this:</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>adj <span class="op">=</span> wordtool.get_random_adjective()</span></code></pre></div>
 <ul>
-<ul>
-<li>Here, <code>adj</code> is a string variable that we made.</li>
-<li>The combination of <code>wordtool</code>, a period, and the desired function <code>get_random_adjective()</code>, is what’s needed to invoke that particular function.</li>
-<li>In this case, it results in a randomly selected adjective (from the thousands in the data) being copied into the <code>adj</code> variable.</li>
-</ul>
-</ul>
-<ul>
-<li>Similarly, after getting a random noun, verb, and so on, we put those together to make a sentence. Hopefully, with hilarious results.</li>
-<li>We’ll point out one other new thing:</li>
-</ul>
+<li><p>Here, <code>adj</code> is a string variable that we made.</p></li>
+<li><p>The combination of <code>wordtool</code>, a period, and the desired function <code>get_random_adjective()</code>, is what’s needed to invoke that particular function.</p></li>
+<li><p>In this case, it results in a randomly selected adjective (from the thousands in the data) being copied into the <code>adj</code> variable.</p>
+</li></ul></li>
+<li><p>Similarly, after getting a random noun, verb, and so on, we put those together to make a sentence. Hopefully, with hilarious results.</p></li>
+<li><p>We’ll point out one other new thing:</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>sentence <span class="op">=</span> (</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'The '</span> <span class="op">+</span> adj <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> noun <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> verb <span class="op">+</span> <span class="st">'s'</span> <span class="op">+</span></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">' '</span> <span class="op">+</span> prep <span class="op">+</span> <span class="st">' a '</span> <span class="op">+</span> noun2)</span></code></pre></div>
 <ul>
-<ul>
-<li>Here, we are concatenating many strings into a long one.</li>
-<li>However, if it’s unwieldy to type them all in one line, we can spill over into multiple lines.</li>
-<li>One way to do that is to use parentheses as shown above.</li>
+<li><p>Here, we are concatenating many strings into a long one.</p></li>
+<li><p>However, if it’s unwieldy to type them all in one line, we can spill over into multiple lines.</p></li>
+<li><p>One way to do that is to use parentheses as shown above.</p>
+</li></ul></li>
 </ul>
-</ul>
-</section>
-<section id="excercise-open-wordtool.py-and-examine-the-functions-within.-then-make-a-longer-random-sentence-in-my_random_sentence2.py." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-open-wordtool.py-and-examine-the-functions-within.-then-make-a-longer-random-sentence-in-my_random_sentence2.py."><span style="color:#8B4513;"><strong>5.8 Excercise:</strong> Open <code>wordtool.py</code> and examine the functions within. Then, make a longer random sentence in <code>my_random_sentence2.py</code>.</span></h6>
-</section>
-<section id="video" class="level6">
-<h6 class="anchored" data-anchor-id="video"><span style="color:#8B4513;"><strong>5.9 Video:</strong></span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.8 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.8 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Open <code>wordtool.py</code> and examine the functions within. Then, make a longer random sentence in <code>my_random_sentence2.py</code>.</p>
+</div>
+</div>
+<section id="video-1" class="level6">
+<h6 class="anchored" data-anchor-id="video-1"><strong>0.5.9 Video</strong></h6>
 <div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/units/unit0/module5/u0-mod5.9.mp4"></video></div>
 </section>
 </section>
 <section id="input-from-the-terminal" class="level2">
-<h2 class="anchored" data-anchor-id="input-from-the-terminal">5.3 Input from the terminal</h2>
+<h2 class="anchored" data-anchor-id="input-from-the-terminal">0.5.3 Input from the terminal</h2>
 <p>Thus far we have printed (output) to the screen but have not taken in any input.</p>
 <p>Thus, we haven’t written any programs that interact with potential users of our programs.</p>
 <p>There’s a limited market for programs that only execute once with no input whatsoever, right?</p>
@@ -597,8 +647,19 @@ Tip
 <span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="co"># We'll use that and make rudimentary conversation:</span></span>
 <span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hi '</span> <span class="op">+</span> name <span class="op">+</span> <span class="st">'!'</span>)</span></code></pre></div>
-<section id="excercise-try-out-the-above-program-in-my_random_conversation.py.-since-you-are-writing-this-in-the-same-folder-you-wont-need-to-download-wordtool.py.-and-its-data." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-try-out-the-above-program-in-my_random_conversation.py.-since-you-are-writing-this-in-the-same-folder-you-wont-need-to-download-wordtool.py.-and-its-data."><span style="color:#8B4513;"><strong>5.10 Excercise:</strong> Try out the above program in <code>my_random_conversation.py</code>. Since you are writing this in the same folder, you won’t need to download <code>wordtool.py</code>. and its data.</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.10 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.10 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Try out the above program in <code>my_random_conversation.py</code>. Since you are writing this in the same folder, you won’t need to download <code>wordtool.py</code>. and its data.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -632,16 +693,35 @@ Tip
 <span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>adj <span class="op">=</span> wordtool.get_random_adjective()</span>
 <span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>sentence <span class="op">=</span> name <span class="op">+</span> <span class="st">', you are '</span> <span class="op">+</span> adv <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> adj</span>
 <span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sentence)</span></code></pre></div>
-</section>
-<section id="excercise-improve-on-the-above-program-by-writing-your-version-of-a-longer-conversation-my_random_conversation2.py.-allow-the-user-to-type-in-something-at-least-three-or-four-times.-this-will-require-using-input-multiple-times-to-go-back-and-forth-with-the-user.-unleash-your-guile-and-creativity." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-improve-on-the-above-program-by-writing-your-version-of-a-longer-conversation-my_random_conversation2.py.-allow-the-user-to-type-in-something-at-least-three-or-four-times.-this-will-require-using-input-multiple-times-to-go-back-and-forth-with-the-user.-unleash-your-guile-and-creativity."><span style="color:#8B4513;"><strong>5.11 Excercise:</strong> Improve on the above program by writing your version of a longer conversation <code>my_random_conversation2.py</code>. Allow the user to type in something at least three or four times. This will require using <code>input</code> multiple times to go back and forth with the user. Unleash your guile and creativity.</span></h6>
-</section>
-<section id="excercise-try-out-a-conversation-with-a-chatbot.-for-example-one-of-the-earliest-chatbots-in-history-was-eliza-which-you-can-try-out.-report-with-a-screenshot-in-your-module-pdf-a-sample-conversation-with-eliza." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-try-out-a-conversation-with-a-chatbot.-for-example-one-of-the-earliest-chatbots-in-history-was-eliza-which-you-can-try-out.-report-with-a-screenshot-in-your-module-pdf-a-sample-conversation-with-eliza."><span style="color:#8B4513;"><strong>5.12 Excercise:</strong> Try out a conversation with a chatbot. For example, one of the earliest chatbots in history was <a href="https://en.wikipedia.org/wiki/ELIZA">Eliza</a>, which <a href="http://www.masswerk.at/elizabot/">you can try out</a>. Report (with a screenshot in your module pdf) a sample conversation with Eliza.</span></h6>
-</section>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.11 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.11 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Improve on the above program by writing your version of a longer conversation <code>my_random_conversation2.py</code>. Allow the user to type in something at least three or four times. This will require using <code>input</code> multiple times to go back and forth with the user. Unleash your guile and creativity.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.12 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.12 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Try out a conversation with a chatbot. For example, one of the earliest chatbots in history was <a href="https://en.wikipedia.org/wiki/ELIZA">Eliza</a>, which <a href="http://www.masswerk.at/elizabot/">you can try out</a>. Report (with a screenshot in your module pdf) a sample conversation with Eliza.</p>
+</div>
+</div>
 </section>
 <section id="strings-and-for-loops" class="level2">
-<h2 class="anchored" data-anchor-id="strings-and-for-loops">5.4 Strings and for-loops</h2>
+<h2 class="anchored" data-anchor-id="strings-and-for-loops">0.5.4 Strings and for-loops</h2>
 <p>Consider this program:</p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">6</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">''</span></span>
@@ -666,8 +746,19 @@ Note
 </ul>
 </div>
 </div>
-<section id="excercise-before-typing-up-the-program-trace-in-module5.pdf-the-execution-of-the-loop-showing-the-contents-of-the-string-s-in-each-iteration-of-the-for-loop.-then-confirm-the-final-output-in-your-trace-by-typing-it-up-in-my_loop_example.py.-then-change-the-value-of-n-to-8-and-examine-the-output.-submit-your-program-with-n-set-to-8." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-before-typing-up-the-program-trace-in-module5.pdf-the-execution-of-the-loop-showing-the-contents-of-the-string-s-in-each-iteration-of-the-for-loop.-then-confirm-the-final-output-in-your-trace-by-typing-it-up-in-my_loop_example.py.-then-change-the-value-of-n-to-8-and-examine-the-output.-submit-your-program-with-n-set-to-8."><span style="color:#8B4513;"><strong>5.13 Excercise:</strong> Before typing up the program, trace (in <code>module5.pdf</code>) the execution of the loop, showing the contents of the string <code>s</code> in each iteration of the for-loop. Then confirm the final output in your trace by typing it up in <code>my_loop_example.py</code>. Then change the value of <code>n</code> to 8 and examine the output. Submit your program with n set to 8.</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.13 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.13 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Before typing up the program, trace (in <code>module5.pdf</code>) the execution of the loop, showing the contents of the string <code>s</code> in each iteration of the for-loop. Then confirm the final output in your trace by typing it up in <code>my_loop_example.py</code>. Then change the value of <code>n</code> to 8 and examine the output. Submit your program with n set to 8.</p>
+</div>
+</div>
 <p>Next, let’s use a nested loop to output a triangle of asterisks:</p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">''</span></span>
@@ -679,9 +770,19 @@ Note
 <span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'A triangle with base='</span> <span class="op">+</span> <span class="bu">str</span>(n))</span>
 <span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code></pre></div>
-</section>
-<section id="excercise-before-typing-up-the-program-trace-the-execution-of-the-loop-showing-the-contents-of-the-string-s-in-each-iteration-of-the-outer-for-loop.-then-confirm-the-final-output-in-your-trace-by-typing-it-up-in-my_triangle.py.-use-the-tabular-tracing-approach-as-in-the-example-from-module-3." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-before-typing-up-the-program-trace-the-execution-of-the-loop-showing-the-contents-of-the-string-s-in-each-iteration-of-the-outer-for-loop.-then-confirm-the-final-output-in-your-trace-by-typing-it-up-in-my_triangle.py.-use-the-tabular-tracing-approach-as-in-the-example-from-module-3."><span style="color:#8B4513;"><strong>5.14 Excercise:</strong> Before typing up the program, trace the execution of the loop, showing the contents of the string <code>s</code> in each iteration of the outer for-loop. Then confirm the final output in your trace by typing it up in <code>my_triangle.py</code>. Use the tabular tracing approach as in the <a href="../../../media/units/unit0/module3/TracingExample.pdf" download=""><strong>example from Module 3</strong></a>.</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.14 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.14 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Before typing up the program, trace the execution of the loop, showing the contents of the string <code>s</code> in each iteration of the outer for-loop. Then confirm the final output in your trace by typing it up in <code>my_triangle.py</code>. Use the tabular tracing approach as in the <a href="../../../media/units/unit0/module3/TracingExample.pdf" download=""><strong>example from Module 3</strong></a>.</p>
+</div>
+</div>
 <p>Next, we’ll make this more interactive:</p>
 <div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">''</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -695,13 +796,22 @@ Note
 <span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'A triangle with base='</span> <span class="op">+</span> <span class="bu">str</span>(n))</span>
 <span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code></pre></div>
-</section>
-<section id="video-1" class="level6">
-<h6 class="anchored" data-anchor-id="video-1"><span style="color:#8B4513;"><strong>5.15 Video:</strong></span></h6>
+<section id="video-2" class="level6">
+<h6 class="anchored" data-anchor-id="video-2"><strong>0.5.15 Video</strong></h6>
 <div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/units/unit0/module5/u0-mod5.16.mp4"></video></div>
-</section>
-<section id="excercise-type-up-the-above-in-my_triangle2.py." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_triangle2.py."><span style="color:#8B4513;"><strong>5.16 Excercise:</strong> Type up the above in <code>my_triangle2.py</code>.</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.16 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.16 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up the above in <code>my_triangle2.py</code>.</p>
+</div>
+</div>
 <p>We’ve introduced some new concepts above:</p>
 <ul>
 <li>Since everything typed as input initially is made into a string, the actual input, even if it’s an integer, is a string.</li>
@@ -714,37 +824,53 @@ Note
 <span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">5</span>        <span class="co"># Integer</span></span>
 <span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> <span class="st">'5'</span>      <span class="co"># String</span></span></code></pre></div>
 <ul>
-<li>Thus, when the user types in what they intend to be an integer, the <code>input</code> function makes a string out of it:</li>
-</ul>
+<li><p>Thus, when the user types in what they intend to be an integer, the <code>input</code> function makes a string out of it:</p>
 <div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>n_str <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter triangle base size: '</span>)</span></code></pre></div>
-<p>Here, the variable <code>n_str</code> will have a string.</p>
-<ul>
-<li>We need to convert that string version of an integer into an actual integer using the <code>int</code> function:</li>
-</ul>
+<p>Here, the variable <code>n_str</code> will have a string.</p></li>
+<li><p>We need to convert that string version of an integer into an actual integer using the <code>int</code> function:</p>
 <div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">int</span>(n_str)</span></code></pre></div>
-<p>Here the variable <code>n</code> will have the actual integer, which we can use in loops, in arithmetic, and so on.</p>
-<ul>
-<li>Notice that, since we want the loop to run <code>n</code> times, we’ve begun the outer loop at 1, running through to n (inclusive).</li>
-<li>This means using <code>range(1, n+1)</code> in the outer loop.</li>
+<p>Here the variable <code>n</code> will have the actual integer, which we can use in loops, in arithmetic, and so on.</p></li>
+<li><p>Notice that, since we want the loop to run <code>n</code> times, we’ve begun the outer loop at 1, running through to n (inclusive).</p></li>
+<li><p>This means using <code>range(1, n+1)</code> in the outer loop.</p></li>
 </ul>
-</section>
-<section id="excercise-trace-using-a-table-through-what-happens-above-when-the-user-enters-5." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-trace-using-a-table-through-what-happens-above-when-the-user-enters-5."><span style="color:#8B4513;"><strong>5.17 Excercise:</strong> Trace (using a table) through what happens above when the user enters 5.</span></h6>
-</section>
-<section id="excercise-what-happens-when-the-conversion-from-string-to-integer-is-not-done-find-out-by-trying-this" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-what-happens-when-the-conversion-from-string-to-integer-is-not-done-find-out-by-trying-this"><span style="color:#8B4513;"><strong>5.18 Excercise:</strong> What happens when the conversion from string to integer is not done? Find out by trying this:</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.17 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.17 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Trace (using a table) through what happens above when the user enters 5.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.18 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.18 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>What happens when the conversion from string to integer is not done? Find out by trying this:</p>
 <div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter an integer: '</span>)</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">5</span> <span class="op">*</span> n</span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(k)</span></code></pre></div>
-<p><span style="color:#8B4513;">Fix the issue by converting the string that’s in <code>n</code> and making an integer. Type your code in <code>my_conversion.py</code>.</span></p>
+<p>Fix the issue by converting the string that’s in <code>n</code> and making an integer. Type your code in <code>my_conversion.py</code>.</p>
+</div>
+</div>
 </section>
-<section id="video-2" class="level6">
-<h6 class="anchored" data-anchor-id="video-2"><span style="color:#8B4513;"><strong>5.19 Video:</strong></span></h6>
+<section id="video-3" class="level6">
+<h6 class="anchored" data-anchor-id="video-3"><strong>0.5.19 Video</strong></h6>
 <div class="quarto-video"><video id="video_shortcode_videojs_video4" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/units/unit0/module5/u0-mod5.20.mp4"></video></div>
 </section>
 </section>
 <section id="the-useful-relationship-between-characters-and-integers" class="level2">
-<h2 class="anchored" data-anchor-id="the-useful-relationship-between-characters-and-integers">5.5 &nbsp;&nbsp; The useful relationship between characters and integers</h2>
+<h2 class="anchored" data-anchor-id="the-useful-relationship-between-characters-and-integers">0.5.5 The useful relationship between characters and integers</h2>
 <p>Consider these three strings:</p>
 <div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'hello'</span></span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="st">'h'</span></span>
@@ -787,8 +913,19 @@ Note
 <span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">ord</span>(last_letter)</span>
 <span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(n)</span></code></pre></div>
-<section id="excercise-type-up-the-above-in-my_char_example.py." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_char_example.py."><span style="color:#8B4513;"><strong>5.20 Excercise:</strong> Type up the above in <code>my_char_example.py</code>.</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.20 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.20 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up the above in <code>my_char_example.py</code>.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -806,36 +943,53 @@ Note
 </div>
 </div>
 <ul>
-<li>The <code>ord</code> function takes a char and produces the corresponding Ascii code.</li>
+<li><p>The <code>ord</code> function takes a char and produces the corresponding Ascii code.</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">ord</span>(first_letter)</span></code></pre></div></li>
 </ul>
-<div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">ord</span>(first_letter)</span></code></pre></div>
 <p>Going the other way: from Ascii code to char</p>
 <p>Consider this program:</p>
 <div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">97</span></span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="bu">chr</span>(k)</span>
 <span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)      <span class="co"># Prints the char 'a'</span></span></code></pre></div>
-</section>
-<section id="excercise-type-up-the-above-in-my_char_example2.py.-then-change-97-to-98.-what-should-the-value-of-k-be-to-print-the-char-z-last-lowercase-letter" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_char_example2.py.-then-change-97-to-98.-what-should-the-value-of-k-be-to-print-the-char-z-last-lowercase-letter"><span style="color:#8B4513;"><strong>5.21 Excercise:</strong> Type up the above in <code>my_char_example2.py</code>. Then, change 97 to 98. What should the value of <code>k</code> be to print the char ‘z’ (last lowercase letter)?</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.21 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.21 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up the above in <code>my_char_example2.py</code>. Then, change 97 to 98. What should the value of <code>k</code> be to print the char ‘z’ (last lowercase letter)?</p>
+</div>
+</div>
 <p>The usefulness of the Ascii code:</p>
 <ul>
-<li>The value of knowing the code is that we can <em>iterate</em> over numbers and use that to iterate over letters.</li>
-<li>For example:</li>
-</ul>
+<li><p>The value of knowing the code is that we can <em>iterate</em> over numbers and use that to iterate over letters.</p></li>
+<li><p>For example:</p>
 <div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">97</span>, <span class="dv">123</span>):</span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> <span class="bu">chr</span>(i)</span>
 <span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(s, end<span class="op">=</span><span class="st">''</span>)</span>
-<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span></code></pre></div>
-<ul>
-<li>Inside a computer, it turns out all characters are actually stored as integers, and merely interpreted as characters when the occasion calls for it.</li>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span></code></pre></div></li>
+<li><p>Inside a computer, it turns out all characters are actually stored as integers, and merely interpreted as characters when the occasion calls for it.</p></li>
 </ul>
-</section>
-<section id="excercise-type-up-the-above-in-my_char_example3.py.-what-does-it-print-what-is-the-significance-of-the-number-123" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-in-my_char_example3.py.-what-does-it-print-what-is-the-significance-of-the-number-123"><span style="color:#8B4513;"><strong>5.22 Excercise:</strong> Type up the above in <code>my_char_example3.py</code>. What does it print? What is the significance of the number 123?</span></h6>
-</section>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.22 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.22 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up the above in <code>my_char_example3.py</code>. What does it print? What is the significance of the number 123?</p>
+</div>
+</div>
 </section>
 <section id="variable-names" class="level2">
-<h2 class="anchored" data-anchor-id="variable-names">5.6 Variable names</h2>
+<h2 class="anchored" data-anchor-id="variable-names">0.5.6 Variable names</h2>
 <p>Most often, we’ve been using single letter <em>variable names</em>, for example:</p>
 <div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">7</span></span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>j <span class="op">=</span> <span class="dv">15</span> <span class="op">*</span> i</span>
@@ -856,8 +1010,8 @@ Note
 <span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(full_greeting)</span></code></pre></div>
 <p>About variable names:</p>
 <ul>
-<li>First, let’s review the very notion of a <em>name</em> in Python, along with other kinds of “words” that are allowed in Python programs.</li>
-<li>Reserved words or keywords:
+<li><p>First, let’s review the very notion of a <em>name</em> in Python, along with other kinds of “words” that are allowed in Python programs.</p></li>
+<li><p>Reserved words or keywords:</p>
 <ul>
 <li>Some words in the language belong formally to the language itself.</li>
 <li>These are words like <code>for</code>, <code>in</code>, <code>def</code>, and others.</li>
@@ -869,8 +1023,7 @@ and as assert break class continue def del elif else except False finally for fr
 <li>We will learn more about these as we proceed in the course.</li>
 <li>We won’t learn about all of them, because full mastery of the language takes more than one course.</li>
 </ul></li>
-<li>At the other end of the spectrum, there are words that we freely create for our use, as in these examples:</li>
-</ul>
+<li><p>At the other end of the spectrum, there are words that we freely create for our use, as in these examples:</p>
 <div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_hello():</span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'Hello'</span>)</span>
 <span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -882,16 +1035,12 @@ and as assert break class continue def del elif else except False finally for fr
 <span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">10</span>):</span>
 <span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code></pre></div>
 <ul>
-<ul>
-<li>Here, we made a function and decided to call it <code>print_hello</code></li>
-<li>We decided to call the string variable <code>x</code></li>
-<li>And to call the loop variable <code>i</code></li>
-<li>These are called <em>identifiers</em> (jargon alert).</li>
-</ul>
-</ul>
-<ul>
-<li>Since we get to choose them, we could rewrite the above program as:</li>
-</ul>
+<li><p>Here, we made a function and decided to call it <code>print_hello</code></p></li>
+<li><p>We decided to call the string variable <code>x</code></p></li>
+<li><p>And to call the loop variable <code>i</code></p></li>
+<li><p>These are called <em>identifiers</em> (jargon alert).</p>
+</li></ul></li>
+<li><p>Since we get to choose them, we could rewrite the above program as:</p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> say_greeting():</span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'Hello'</span>)</span>
 <span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -901,8 +1050,7 @@ and as assert break class continue def del elif else except False finally for fr
 <span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(follow_up)</span>
 <span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> my_loop_variable <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">10</span>):</span>
-<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(my_loop_variable)</span></code></pre></div>
-<ul>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(my_loop_variable)</span></code></pre></div></li>
 <li><p>So, what should dictate our choice of these names?</p>
 <ul>
 <li>Generally, for numbers, loop-variables and short calculations, we prefer single-letter names like <code>x</code> and <code>i</code>.</li>
@@ -931,12 +1079,21 @@ and as assert break class continue def del elif else except False finally for fr
 </blockquote>
 <p>Do NOT use these as your own variable or function names.</p></li>
 </ul>
-<section id="excercise-lets-see-what-can-go-wrong-if-we-use-one-of-the-words-already-taken.-consider-this-program" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-lets-see-what-can-go-wrong-if-we-use-one-of-the-words-already-taken.-consider-this-program"><span style="color:#8B4513;"><strong>5.23 Excercise:</strong> Let’s see what can go wrong if we use one of the words “already taken”. Consider this program:</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.23 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.23 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Let’s see what can go wrong if we use one of the words “already taken”. Consider this program:</p>
 <div class="sourceCode" id="cb38"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'Hello'</span></span>
 <span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span> <span class="op">=</span> <span class="dv">5</span>       <span class="co"># This is a BAD idea</span></span>
 <span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>)</span></code></pre></div>
-<p><span style="color:#8B4513;">We really should not be using a variable called <code>len</code> since <code>len</code> is a predefined “already taken” name. What happens if you type and run this? Type your program in <code>my_variable_name3.py</code>.Then, type this program in <code>my_variable_name4.py</code>:</span></p>
+<p>We really should not be using a variable called <code>len</code> since <code>len</code> is a predefined “already taken” name. What happens if you type and run this? Type your program in <code>my_variable_name3.py</code>.Then, type this program in <code>my_variable_name4.py</code>:</p>
 <div class="sourceCode" id="cb39"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'Hello'</span></span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span> <span class="op">=</span> <span class="dv">5</span>       <span class="co"># This is a BAD idea</span></span>
 <span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>)</span>
@@ -944,15 +1101,16 @@ and as assert break class continue def del elif else except False finally for fr
 <span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> <span class="st">'Some looooooong sentence'</span></span>
 <span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">len</span>(t)</span>
 <span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(k)</span></code></pre></div>
-<p><span style="color:#8B4513;">What do you see? (Respond in your moduler pdf.)</span></p>
-</section>
-<section id="video-3" class="level6">
-<h6 class="anchored" data-anchor-id="video-3"><span style="color:#8B4513;"><strong>5.24 Video:</strong></span></h6>
+<p>What do you see? (Respond in your moduler pdf.)</p>
+</div>
+</div>
+<section id="video-4" class="level6">
+<h6 class="anchored" data-anchor-id="video-4"><strong>0.5.24 Video</strong></h6>
 <div class="quarto-video"><video id="video_shortcode_videojs_video5" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/units/unit0/module5/u0-mod5.25.mp4"></video></div>
 </section>
 </section>
 <section id="a-problem-solving-example" class="level2">
-<h2 class="anchored" data-anchor-id="a-problem-solving-example">5.7 A problem solving example</h2>
+<h2 class="anchored" data-anchor-id="a-problem-solving-example">0.5.7 A problem solving example</h2>
 <p>Possibly the hardest aspect of programming is <em>problem-solving</em>:</p>
 <ul>
 <li>Typically, we’re given an English description of a problem, with the goal of writing a program to solve the problem.</li>
@@ -990,67 +1148,87 @@ Note
 </ul>
 </div>
 </div>
-<section id="excercise-confirm-by-typing-up-the-above-in-my_letter_count.py." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-confirm-by-typing-up-the-above-in-my_letter_count.py."><span style="color:#8B4513;"><strong>5.25 Excercise:</strong> Confirm by typing up the above in <code>my_letter_count.py</code>.</span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.25 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.25 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Confirm by typing up the above in <code>my_letter_count.py</code>.</p>
+</div>
+</div>
 <p>OK, now the problem:</p>
 <ul>
-<li>A <em>pangram</em> is an English sentence that contains all 26 letters.</li>
-<li>We’ve already seen two examples:</li>
-</ul>
+<li><p>A <em>pangram</em> is an English sentence that contains all 26 letters.</p></li>
+<li><p>We’ve already seen two examples:</p>
 <div class="sourceCode" id="cb44"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>The quick brown fox jumps over the lazy dog</span>
-<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>Sphinx of black quartz, judge my vow</span></code></pre></div>
-<ul>
-<li>There’s an informal competition running over a hundred years to find the shortest grammatically correct English sentence that’s a pangram.</li>
-<li>Our smaller problem: given a sentence, print the number of a’s, the number of b’s … and so on. This could be useful in judging such a competition.</li>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>Sphinx of black quartz, judge my vow</span></code></pre></div></li>
+<li><p>There’s an informal competition running over a hundred years to find the shortest grammatically correct English sentence that’s a pangram.</p></li>
+<li><p>Our smaller problem: given a sentence, print the number of a’s, the number of b’s … and so on. This could be useful in judging such a competition.</p></li>
 </ul>
 <p>Let’s work towards a solution:</p>
 <ul>
-<li>Given a candidate pangram, we could count the number of a’s:</li>
-</ul>
+<li><p>Given a candidate pangram, we could count the number of a’s:</p>
 <div class="sourceCode" id="cb45"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
-<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s.count(<span class="st">'a'</span>))</span></code></pre></div>
-<ul>
-<li>Then, we could also count the number of b’s:</li>
-</ul>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s.count(<span class="st">'a'</span>))</span></code></pre></div></li>
+<li><p>Then, we could also count the number of b’s:</p>
 <div class="sourceCode" id="cb46"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
 <span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s.count(<span class="st">'a'</span>))</span>
-<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s.count(<span class="st">'b'</span>))</span></code></pre></div>
-<ul>
-<li>If we repeated this 26 times, we’d have a count for each letter.</li>
-<li>But the moment we see a bunch of repetition, our computational problem-solving instincts (yes, still developing) should kick in:
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s.count(<span class="st">'b'</span>))</span></code></pre></div></li>
+<li><p>If we repeated this 26 times, we’d have a count for each letter.</p></li>
+<li><p>But the moment we see a bunch of repetition, our computational problem-solving instincts (yes, still developing) should kick in:</p>
 <blockquote class="blockquote">
-Repetition ⇒ use a loop!
+<p>Repetition ⇒ use a loop!</p>
 </blockquote></li>
-<li>What is the nature of iteration in this problem? <br> We are iterating through the letters ‘a’ to ‘z’</li>
-<li>And we already know how to iterate over the letters:</li>
-</ul>
+<li><p>What is the nature of iteration in this problem? <br> We are iterating through the letters ‘a’ to ‘z’</p></li>
+<li><p>And we already know how to iterate over the letters:</p>
 <div class="sourceCode" id="cb47"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">97</span>, <span class="dv">123</span>):</span>
 <span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>  letter <span class="op">=</span> <span class="bu">chr</span>(i)       </span>
-<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Recall: We're going from Ascii code to letter</span></span></code></pre></div>
-<ul>
-<li>Could we combine this with the counting of occurences inside the given string? So, the idea would be:</li>
-</ul>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Recall: We're going from Ascii code to letter</span></span></code></pre></div></li>
+<li><p>Could we combine this with the counting of occurences inside the given string? So, the idea would be:</p>
 <div class="sourceCode" id="cb48"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">97</span>, <span class="dv">123</span>):</span>
 <span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>  letter <span class="op">=</span> <span class="bu">chr</span>(i)       </span>
-<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now somehow use that to do the counting of occurences</span></span></code></pre></div>
-<ul>
-<li>Combining:</li>
-</ul>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now somehow use that to do the counting of occurences</span></span></code></pre></div></li>
+<li><p>Combining:</p>
 <div class="sourceCode" id="cb49"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'The quick brown fox jumps over the lazy dog'</span></span>
 <span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">97</span>, <span class="dv">123</span>):</span>
 <span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>  letter <span class="op">=</span> <span class="bu">chr</span>(i)       </span>
 <span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>  k <span class="op">=</span> s.count(letter)</span>
-<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'Number of occurrences of '</span> <span class="op">+</span> letter <span class="op">+</span> <span class="st">' is '</span> <span class="op">+</span> <span class="bu">str</span>(k))</span></code></pre></div>
-</section>
-<section id="excercise-type-up-the-above-idea-my_count_problem.py.-then-find-another-pangram-and-apply-the-program-to-that-pangram.-submit-your-program-with-the-pangram-shown-above-not-the-one-you-found." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-type-up-the-above-idea-my_count_problem.py.-then-find-another-pangram-and-apply-the-program-to-that-pangram.-submit-your-program-with-the-pangram-shown-above-not-the-one-you-found."><span style="color:#8B4513;"><strong>5.26 Excercise:</strong> Type up the above idea <code>my_count_problem.py</code>. Then, find another pangram and apply the program to that pangram. Submit your program with the pangram shown above (not the one you found).</span></h6>
-</section>
-<section id="excercise-this-can-be-taken-a-step-further.-instead-of-typing-the-pangram-in-the-program-itself-as-was-done-above-ask-the-user-to-enter-it-as-input.-in-my_count_problem2.py-read-a-string-from-the-user-and-print-the-letter-counts.-when-you-test-your-program-use-the-pangram-you-found-as-input." class="level6">
-<h6 class="anchored" data-anchor-id="excercise-this-can-be-taken-a-step-further.-instead-of-typing-the-pangram-in-the-program-itself-as-was-done-above-ask-the-user-to-enter-it-as-input.-in-my_count_problem2.py-read-a-string-from-the-user-and-print-the-letter-counts.-when-you-test-your-program-use-the-pangram-you-found-as-input."><span style="color:#8B4513;"><strong>5.27 Excercise:</strong> This can be taken a step further. Instead of typing the pangram in the program itself (as was done above), ask the user to enter it as input. In <code>my_count_problem2.py</code>, read a string from the user and print the letter counts. When you test your program, use the pangram you found as input.</span></h6>
-</section>
-<section id="video-4" class="level6">
-<h6 class="anchored" data-anchor-id="video-4"><span style="color:#8B4513;"><strong>5.28 Video:</strong></span></h6>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'Number of occurrences of '</span> <span class="op">+</span> letter <span class="op">+</span> <span class="st">' is '</span> <span class="op">+</span> <span class="bu">str</span>(k))</span></code></pre></div></li>
+</ul>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.26 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.26 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up the above idea <code>my_count_problem.py</code>. Then, find another pangram and apply the program to that pangram. Submit your program with the pangram shown above (not the one you found).</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.27 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.27 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This can be taken a step further. Instead of typing the pangram in the program itself (as was done above), ask the user to enter it as input. In <code>my_count_problem2.py</code>, read a string from the user and print the letter counts. When you test your program, use the pangram you found as input.</p>
+</div>
+</div>
+<section id="video-5" class="level6">
+<h6 class="anchored" data-anchor-id="video-5"><strong>0.5.28 Video</strong></h6>
 <div class="quarto-video"><video id="video_shortcode_videojs_video6" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/units/unit0/module5/u0-mod5.29.mp4"></video></div>
 <p>Lastly, we’ll point out a slightly more elegant way of iterating over the 26 letters:</p>
 <div class="sourceCode" id="cb50"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>ascii_a <span class="op">=</span> <span class="bu">ord</span>(<span class="st">'a'</span>)</span>
@@ -1081,55 +1259,109 @@ Note
 </section>
 </section>
 <section id="when-things-go-wrong" class="level2">
-<h2 class="anchored" data-anchor-id="when-things-go-wrong">5.8 When things go wrong</h2>
+<h2 class="anchored" data-anchor-id="when-things-go-wrong">0.5.8 When things go wrong</h2>
 <p>In each of the exercises below, try to identify the error before typing it up and confirming. Report the error in the module pdf. Then, fix the error in the code, using the specified program (.py) name.</p>
-<section id="excercise" class="level6">
-<h6 class="anchored" data-anchor-id="excercise"><span style="color:#8B4513;"><strong>5.30 Excercise:</strong> </span></h6>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.30 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.30 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div class="sourceCode" id="cb52"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'Hello'</span></span>
 <span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="st">'World'</span></span>
 <span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'x'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'y'</span></span></code></pre></div>
-<p><span style="color:#8B4513;">(This should print <code>Hello World</code>, with a space in between). Fix the error in <code>error1.py</code>.</span></p>
-</section>
-<section id="excercise-1" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-1"><span style="color:#8B4513;"><strong>5.31 Excercise:</strong> </span></h6>
+<p>(This should print <code>Hello World</code>, with a space in between). Fix the error in <code>error1.py</code>.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.31 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.31 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div class="sourceCode" id="cb53"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">8</span></span>
 <span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'There are '</span> <span class="op">+</span> k <span class="op">+</span> <span class="st">' planets in our solar system'</span></span>
 <span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code></pre></div>
-<p><span style="color:#8B4513;">Fix the error in <code>error2.py</code>.</span></p>
-</section>
-<section id="excercise-2" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-2"><span style="color:#8B4513;"><strong>5.32 Excercise:</strong> </span></h6>
+<p>Fix the error in <code>error2.py</code>.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.32 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.32 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div class="sourceCode" id="cb54"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>long_sentence <span class="op">=</span> <span class="st">'How'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'vexingly'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span></span>
 <span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>   <span class="co">'quick'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'daft'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'zebras'</span> <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="st">'jump'</span></span></code></pre></div>
-<p><span style="color:#8B4513;">Fix the error in <code>error3.py</code>.</span></p>
-</section>
-<section id="excercise-3" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-3"><span style="color:#8B4513;"><strong>5.33 Excercise:</strong> </span></h6>
+<p>Fix the error in <code>error3.py</code>.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.33 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.33 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div class="sourceCode" id="cb55"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter a number between 1 and 10'</span>)</span>
 <span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> x</span>
 <span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)</span></code></pre></div>
-<p><span style="color:#8B4513;">Fix the error in <code>error4.py</code>.</span></p>
-</section>
-<section id="excercise-4" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-4"><span style="color:#8B4513;"><strong>5.34 Excercise:</strong> </span></h6>
+<p>Fix the error in <code>error4.py</code>.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.34 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.34 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div class="sourceCode" id="cb56"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">6</span>):</span>
 <span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> s <span class="op">+</span> <span class="st">'**'</span></span>
 <span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code></pre></div>
-<p><span style="color:#8B4513;">(This should print a string with 10 asterisks). Fix the error in <code>error5.py</code>.</span></p>
-</section>
-<section id="excercise-5" class="level6">
-<h6 class="anchored" data-anchor-id="excercise-5"><span style="color:#8B4513;"><strong>5.35 Excercise:</strong> </span></h6>
+<p>(This should print a string with 10 asterisks). Fix the error in <code>error5.py</code>.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="0.5.35 Exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+0.5.35 Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div class="sourceCode" id="cb57"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>miles <span class="op">=</span> <span class="dv">10</span></span>
 <span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>feet per mile <span class="op">=</span> <span class="dv">5280</span></span>
 <span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>feet <span class="kw">in</span> ten miles <span class="op">=</span> miles <span class="op">*</span> feet per mile</span>
 <span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(feet <span class="kw">in</span> ten miles)</span></code></pre></div>
-<p><span style="color:#8B4513;">Fix the error in <code>error6.py</code>.</span></p>
+<p>Fix the error in <code>error6.py</code>.</p>
+</div>
+</div>
 <p><br> <a href="../../../units/unit0/modules/module0.4.html" class="button prev">Previous Module: <strong>Module 0.4</strong></a> <a href="../../../units/unit0/modules/module0.6.html" class="button next">Next Module: <strong>Module 0.6</strong></a></p>
 
 
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
