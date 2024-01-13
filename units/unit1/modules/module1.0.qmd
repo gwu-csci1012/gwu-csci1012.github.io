@@ -46,7 +46,7 @@ k = 100
 print(k)
 ```
 :::{.callout-caution appearance="simple" icon=false title="1.0.1 Exercise"}
-In `my_list1.py`, type up the above and examine the output. Then, inside the above for-loop, but before the first print statement, add an additional line of code to also print the value of i so that each value of i is printed on a line by itself. Report your output in `module1.pdf` and submit this modified version of `my_list1.py`.</span>
+In `my_list1.py`, type up the above and examine the output. Then, inside the above for-loop, but before the first print statement, add an additional line of code to also print the value of i so that each value of i is printed on a line by itself. Submit this modified version of `my_list1.py`.
 :::
 
 <br>Remember how we think of a variable as a box that stores values?
@@ -88,7 +88,7 @@ print('The list: ' + str(A))
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.2 Exercise"}
-Try out the above in `my_list2.py`.</span>
+Try out the above in `my_list2.py`.
 :::
 
 Let's point out:
@@ -132,11 +132,11 @@ Let's point out:
 - In the above example, there is no element `A[7]` in a list that only has 5 elements.
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.3 Exercise"}
-Type up the above in `my_list3.py`. Describe the error in your module pdf.</span>
+Type up the above in `my_list3.py`. Use comments (text followed by ‘#’ symbol) to describe the error.
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.4 Exercise"}
-In `my_list4.py`, make a list with the values 1,2,3,4,5,6,7,8,9,10. Then, set up a for-loop so that only the odd numbers are printed as in:</span>
+In `my_list4.py`, make a list with the values 1,2,3,4,5,6,7,8,9,10. Then, set up a for-loop so that only the odd numbers are printed as in:
 ```python
 1
 3
@@ -146,7 +146,7 @@ In `my_list4.py`, make a list with the values 1,2,3,4,5,6,7,8,9,10. Then, set up
 ```
 :::
 
-###### **1.0.5 Video**</span>
+###### **1.0.5 Video**
 {{< video ../../../media/units/unit1/module0/u1-mod0.5.mp4 aspect-ratio="21x9" >}}
 
 ## 1.0.1 More list examples
@@ -160,7 +160,7 @@ print(A)
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.6 Exercise"}
-Confirm the output by typing up the above in `my_list5.py`. Then, explore what would go wrong if you try and remove something that's not in the list. For example, change the line `A.remove(9)` to `A.remove(10)`. Report what you see in your module pdf. Submit your `my_list5.py` with the former (`A.remove(9)`).</span>
+Confirm the output by typing up the above in `my_list5.py`. Then, explore what would go wrong if you try and remove something that's not in the list. For example, change the line `A.remove(9)` to `A.remove(10)`. Use comments (text followed by ‘#’ symbol) to describe to report what you see in the output. Submit your `my_list5.py` with the former (`A.remove(9)`).
 :::
 
 :::{.callout-note}
@@ -183,7 +183,7 @@ print(B)
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.7 Exercise"}
-Type up the above in `my_list6.py`. Then, in your module pdf, trace through the changing values of i, k and the list B in each iteration of the for-loop.</span>
+Type up the above in `my_list6.py`. Trace through the changing values of i, k and the list B in each iteration of the for-loop in a spreadsheet or a document.
 :::
 
 :::{.callout-note}
@@ -204,18 +204,18 @@ Here, we've fed the arithmetic expression `(i+1) * (i+1)` directly into `append`
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.8 Exercise"}
-In `my_odd_list.py` fill in the necessary code below to create a list with the first N odd numbers:</span>
+In `my_odd_list.py` fill in the necessary code below to create a list with the first N odd numbers:
 ```python
 N = 10
 odd_numbers = []
 # WRITE YOUR CODE HERE
 print(odd_numbers)
 ```
-In this case, the output should be:</span>
+In this case, the output should be:
 ```python
 [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 ```
-(These are the first 10 odd numbers).</span>
+(These are the first 10 odd numbers).
 :::
 
 We do not need to traverse in exactly the order of elements in the list:
@@ -231,7 +231,7 @@ We do not need to traverse in exactly the order of elements in the list:
 - Here, we're starting at the last element, traversing the list from end to beginning in steps of 2.
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.10 Exercise"}
-Trace through the above code showing the values of i and A[i] at each iteration. Confirm by typing your code in `my_list7.py`.</span>
+Trace through the above code showing the values of i and A[i] at each iteration. Confirm by typing your code in `my_list7.py`.
 :::
 
 ## 1.0.2 A strange thing with lists
@@ -247,7 +247,7 @@ print(y)  # Does it affect what's in y?
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.11 Exercise"}
-Consider the example above. In your module pdf, draw two boxes, one for x and one for y. Show the contents of the two boxes and if they change, show how they change.</span>
+Consider the example above. In your module pdf, draw two boxes, one for x and one for y. Show the contents of the two boxes and if they change, show how they change. There is nothing to submit in this exercise.
 :::
 
 Next, consider this:
@@ -262,7 +262,7 @@ print(B)     # Does it affect what's in list B?
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.12 Exercise"}
-Type up the above in `my_list_copy.py` to find out whether any values have changed in list B.</span>
+Type up the above in `my_list_copy.py` to find out whether any values have changed in list B.
 :::
 
 Let's explain:
@@ -313,7 +313,7 @@ Nowhere in our code is the building number (4701) explicitly written. Building n
     ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.13 Exercise"}
-Type up the above in `my_list_copy2.py` to find out if any values have changed in list B.</span>
+Type up the above in `my_list_copy2.py` to find out if any values have changed in list B.
 :::
 
 So, which (`B = A` or `B = A.copy()`) do we use?
@@ -334,7 +334,7 @@ print(total)
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.14 Exercise"}
-Type up the above in `my_total_example1.py`. In your module pdf, trace through the values of i and total through each iteration of the loop.</span>
+Type up the above in `my_total_example1.py`. Trace through the changing values of i, k and total through each iteration of the loop in a spreadsheet or a document. 
 :::
 
 Now let's look at two different ways of writing the same loop (we'll only show the loop part):
@@ -383,13 +383,13 @@ Now let's look at two different ways of writing the same loop (we'll only show t
      - In some cases, however, you'll find index iteration is useful, especially when you need the <em>position</em> where something occurs in the list.
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.15 Exercise"}
-In `my_content_iteration.py`, use content-iteration to print the contents of the list A below:</span>
+In `my_content_iteration.py`, use content-iteration to print the contents of the list A below:
 ```python
 A = [2020, 2016, 2012, 2008, 2004, 2000]
 
 # Write your code here:
 ```
-The output should be one number per line in the order that the numbers appear in the list.</span>
+The output should be one number per line in the order that the numbers appear in the list.
 :::
 
 ## 1.0.4 Working with multiple lists
@@ -416,7 +416,7 @@ print(total)
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.17 Exercise"}
-First, in your module pdf, trace the values of k and total in each iteration of each loop. Type the above in `my_twolist1.py` to confirm.</span>
+First, try and trace through the changing values of i, k and total through each iteration of the loop in a spreadsheet or a document. Type the above in `my_twolist1.py` to confirm.
 :::
 
 :::{.callout-note}
@@ -447,10 +447,10 @@ print(C)
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.18 Exercise"}
-First, in your module pdf, trace the values of i and element_total in each iteration of the loop, and also show how the list C changes across the iterations. Type the above in `my_twolist2.py` to confirm. Print the list inside the loop, by adding a print statement right after the append occurs. (Submit your program with the added print statement.) Explain why, in this case index-iteration is a better choice than content iteration.</span>
+First, try and trace through the values of i and element_total in each iteration of the loop and see for yourself how the list C changes across the iterations. Do this as usual in a spreadsheet or a document. Type the above in `my_twolist2.py` to confirm. Print the list inside the loop, by adding a print statement right after the append occurs. (Submit your program with the added print statement.) Explain why, in this case index-iteration is a better choice than content iteration.
 :::
 
-###### **1.0.19 Video**</span>
+###### **1.0.19 Video**
 {{< video ../../../media/units/unit1/module0/u1-mod0.19.mp4 aspect-ratio="21x9" >}}
 
 ## 1.0.5 Moving elements around in a list
@@ -484,15 +484,16 @@ print(A)
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.20 Exercise"}
-In your module pdf, trace through the execution above showing the values in temp and the list after each line executes. Then, do the same if the middle three lines were replaced by:</span>
+Trace through the execution of the above showing the values in temp and the list after each line executes. Then, do the same if the middle three lines were replaced by:
 ```python
 A[1] = A[3]
 A[3] = A[1]
 ```
+There is nothing to submit in this exercise.
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.21 Exercise"}
-Use the "temp" variable idea to perform a left-rotate of a list in `my_left_rotate.py`. Thus, given </span>
+Use the "temp" variable idea to perform a left-rotate of a list in `my_left_rotate.py`. Thus, given 
 ```python
 A = [1, 4, 9, 16, 25]
 # ... your code here...
@@ -500,7 +501,7 @@ A = [1, 4, 9, 16, 25]
 print(A)
 # Should print [4, 9, 16, 25, 1]
 ```
-Thus everything but the first element moves leftwards and the first element gets to the last place. Use a for-loop to move most (but not all) elements.</span>
+Thus everything but the first element moves leftwards and the first element gets to the last place. Use a for-loop to move most (but not all) elements.
 :::
 
 ## 1.0.6 Lists of strings, characters, or real numbers
@@ -529,7 +530,7 @@ print('Average =', total/4)
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.23 Exercise"}
-Type the above in `my_other_lists.py`, while noticing the subtle change in how the last print statement is written. Insert spaces in the first loop so that the first thing printed is `cats and dogs`.</span>
+Type the above in `my_other_lists.py`, while noticing the subtle change in how the last print statement is written. Insert spaces in the first loop so that the first thing printed is `cats and dogs`.
 :::
 
 ## 1.0.7 A different version of print
@@ -545,7 +546,7 @@ print('I love', x, s, y)
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.24 Exercise"}
-Type the above in `my_print_example.py`.</span>
+Type the above in `my_print_example.py`.
 :::
 
 :::{.callout-note}
@@ -593,7 +594,7 @@ Let's use this feature first for a single roll of a die, and then two dice:
     ```
   
 :::{.callout-caution appearance="simple" icon=false title="1.0.25 Exercise"}
-Type the above in `my_die_roll.py`. Run the program several times to see that you are getting random selections from the list.</span>
+Type the above in `my_die_roll.py`. Run the program several times to see that you are getting random selections from the list.
 :::
 
 Next, let's use this to make a (ridiculously) simple game:
@@ -617,11 +618,11 @@ Next, let's use this to make a (ridiculously) simple game:
     ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.26 Exercise"}
-Type the above in `my_die_roll2.py` to observe the result. Report in your module pdf the average when you use a large number of trials (say, 1000).</span>
+Type the above in `my_die_roll2.py` to observe the result. Use comments (text followed by ‘#’ symbol) to describe to report the average when you use a large number of trials (say, 1000).
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.27 Exercise"}
-In `my_die_roll3.py`, change the game to the following: in each trial, each player rolls the die twice and adds the two numbers. The final score is the average across all trials. What is the average when you use a large number of trials (say, 1000)? In your module pdf, devise a more interesting 2-player game one could play solely using dice. (You don't have to write a program for this last part.)</span>
+In `my_die_roll3.py`, change the game to the following: in each trial, each player rolls the die twice and adds the two numbers. The final score is the average across all trials. What is the average when you use a large number of trials (say, 1000)? In your module pdf, devise a more interesting 2-player game one could play solely using dice. (You don't have to write a program for this last part.)
 :::
 
 ## 1.0.9 Some math via programming
@@ -648,7 +649,7 @@ dt.display()
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.29 Exercise"}
-Type up the above in `my_plot_example.py` to see what you get. You will also need to download <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> into the same folder.</span>
+Type up the above in `my_plot_example.py` to see what you get. You will also need to download <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> into the same folder.
 :::
 
 Now let's ask some basic questions:
@@ -764,7 +765,7 @@ Let's put these ideas to use:
     ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.30 Exercise"}
-Type up the above in `my_function_example.py`.</span>
+Type up the above in `my_function_example.py`.
 :::
 
 It is far more valuable to visualize, so let's set about plotting both together:
@@ -800,11 +801,11 @@ Let's point out:
 ![](../../../media/units/unit1/module0/funcplot-code.png)
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.31 Exercise"}
-Type up the above in `my_function_plot.py` and add code for the second function \(g(x)=x<sup>2</sup>\) to get a plot like:</span>
+Type up the above in `my_function_plot.py` and add code for the second function \(g(x)=x<sup>2</sup>\) to get a plot like:
 ![](../../../media/units/unit1/module0/func-exercise.png){width="60%"}
 :::
 
-###### **1.0.32 Video**</span>
+###### **1.0.32 Video**
 {{< video ../../../media/units/unit1/module0/u1-mod0.32.mp4 aspect-ratio="21x9" >}}
 
 Scale and axes:
@@ -823,7 +824,7 @@ to
     ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.33 Exercise"}
-In `my_function_plot2.py` change your code from the earlier exercise to make the scale the same along x and y axes.</span>
+In `my_function_plot2.py` change your code from the earlier exercise to make the scale the same along x and y axes.
 :::
 
 When to use different scales along the axes:
@@ -833,7 +834,7 @@ When to use different scales along the axes:
 - We can use different scales when we want to emphasize different aspects.
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.34 Exercise"}
-In `my_function_plot3.py`, add a third function \(h(x) = 2<sup>x</sup>\). Plot and take a screenshot once with the x and y range both as [0, 1200], and once with the x-range as [0,12] and the y-range as [0,1200]. This should show you how puny quadratic growth is compared to exponential growth. Submit your `my_function_plot3.py` with the former case when both ranges are the same.</span>
+In `my_function_plot3.py`, add a third function \(h(x) = 2<sup>x</sup>\). Plot and take a screenshot once with the x and y range both as [0, 1200], and once with the x-range as [0,12] and the y-range as [0,1200]. This should show you how puny quadratic growth is compared to exponential growth. Submit your `my_function_plot3.py` with the former case when both ranges are the same.
 :::
 
 ## 1.0.10 Mathematical art
@@ -872,7 +873,7 @@ So, for our art project:
 - Then, along a sine-curve, we'll draw small ellipses of different sizes. 
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.35 Exercise"}
-Download <a href="../../../media/units/unit1/module0/functional_art.py" download>**functional_art.py**</a> and run to see. Then in  `my_functional_art.py`, improve on the above by including your own functions and additional decoration by drawing.</span>
+Download <a href="../../../media/units/unit1/module0/functional_art.py" download>**functional_art.py**</a> and run to see. Then in  `my_functional_art.py`, improve on the above by including your own functions and additional decoration by drawing.
 :::
 
 ## 1.0.11 When things go wrong
@@ -884,11 +885,11 @@ A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 for i in range(1, 10):
     print(A[i])
 ```
-Identify and fix the error in `my_error1.py`.</span>
+Identify and fix the error in `my_error1.py`.
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.37 Exercise"}
-The following program intends to build the decreasing-order list [10, 9, 8, 7, 6, 5, 4, 3, 2, 1].</span>
+The following program intends to build the decreasing-order list [10, 9, 8, 7, 6, 5, 4, 3, 2, 1].
 ```python
 A = []
 n = 10
@@ -898,11 +899,11 @@ for i in range(n):
 
 print(A)
 ```
-Identify and fix the error in `my_error2.py`.</span>
+Identify and fix the error in `my_error2.py`.
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="1.0.38 Exercise"}
-The following program intends to add to N all the elements of the list A.</span>
+The following program intends to add to N all the elements of the list A.
 ```python
 N = 100
 A = [1, 4, 9, 16, 25]
@@ -912,7 +913,7 @@ for k in A:
 
 print(N)
 ```
-Identify and ix the error in `my_error3.py`.</span>
+Identify and ix the error in `my_error3.py`.
 :::
 
 ## 1.0.12 Meta
