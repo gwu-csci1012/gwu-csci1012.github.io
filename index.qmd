@@ -23,10 +23,10 @@ The course material is sourced from **Prof. Simha's** webpage: <https://www2.sea
     - The first meeting of the course will be during the labs on **Wednesday** _(01/17/2024)_ and **Friday** _(01/19/2024)_ [See [**Schedule**](schedule.qmd)]
     
 :::{.callout-warning}
-There is deliverable due on **January  22, 2024** by **11:59 PM**.
+There is a deliverable due on **January  22, 2024** by **11:59 PM**.
 :::
 
-- **Getting Started**: You will need to install a Python IDE or Integrated development environment.
+- **Getting Started**: You will need to install a Python IDE (Integrated Development Environment).
     - Follow the instructions on [**Installing an Editor**](units/unit0/editor.qmd).
     - Choose **Thonny** (for [_Mac_](units/unit0/guides/thonny-mac.qmd) or [_Windows_](units/unit0/guides/thonny-windows.qmd)) as your primary choice of IDE for its simplicity, especially if you are new to coding. However, you can choose, **Spyder** (for [_Mac_](units/unit0/guides/anaconda-mac.qmd) or [_Windows_](units/unit0/guides/anaconda-windows.qmd)) which is a more versatile alternative. 
     - The course is organized into Units and each Unit (0, 1 and 2), have modules in them. 
