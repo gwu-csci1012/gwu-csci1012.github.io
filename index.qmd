@@ -16,7 +16,7 @@ The course material is sourced from **Prof. Simha's** webpage: <https://www2.sea
 - **Student's main method of communication during the semester**: Our main method of communication is Ed, an online discussion board for questions and answers related to the course, whether technical or logistical in nature.
     - [**Join Ed here**](https://edstem.org/us/join/aNhz9P)
     - Do not post your source code to Ed. 
-    - Think through your questions. Post a general of the programming concept. 
+    - Think through your questions. Post a general concept of the programming concept. 
     - Your questions on Ed will be addressed within 24 hours.
 
 - **Course schedule**: The [**Schedule**](schedule.qmd) page outlines the weekly-schedule and what your deliverables are. It is YOUR job to keep to the schedule and submit work accordingly.
@@ -29,7 +29,7 @@ There is a deliverable due on **January  22, 2024** by **11:59 PM**.
 - **Getting Started**: You will need to install a Python IDE (Integrated Development Environment).
     - Follow the instructions on [**Installing an Editor**](units/unit0/editor.qmd).
     - Choose **Thonny** (for [_Mac_](units/unit0/guides/thonny-mac.qmd) or [_Windows_](units/unit0/guides/thonny-windows.qmd)) as your primary choice of IDE for its simplicity, especially if you are new to coding. However, you can choose, **Spyder** (for [_Mac_](units/unit0/guides/anaconda-mac.qmd) or [_Windows_](units/unit0/guides/anaconda-windows.qmd)) which is a more versatile alternative. 
-    - The course is organized into Units and each Unit (0, 1 and 2), have modules in them. 
+    - The course is organized into Units and each Unit (0, 1 and 2) has modules in them. 
 
 - **Submitting your work**: When you submit work, please follow the specific instructions outlined on [**how to submit your work**](submit-remember.qmd).
 
