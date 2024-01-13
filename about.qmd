@@ -56,7 +56,7 @@ Late work is not accepted, with the following exceptions:
 1. Every student many turn in as many as four assignments (modules or problem sets) up to 48 hours after the deadline with no penalty. Requesting an extension is not necessary in these cases.
 2. Extensions will be granted should there arise circumstances beyond your control that impede your ability to complete coursework and turn in a deliverable on time. Notify your professor as soon as feasible in these cases. Examples of such circumstances include (but are not limited to) illness, death in the family, and loss of housing. To ensure fairness toward all students, I will request documentation of such circumstances.
 
-## Accomodations
+## Accommodations
 We are committed to accommodating student needs in whatever ways are possible and fair. This includes, but is certainly not limited to, [Disability Support Services](https://www2.seas.gwu.edu/~cs4all/1012/syllabus.html#disability-support-services-dss) (DSS). Let your professor know of circumstances that may impact your academic commitments if and when such circumstances arise, or before the semester begins, as is appropriate. To ensure fairness toward all students, we will request documentation of such circumstances, either directly or via DSS.
 
 ## Minimum course load
