@@ -21,7 +21,7 @@ format:
 <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
   <a href="">Unit 0</a> &raquo;
-  <span class="current-page">Module 0.6
+  <span class="current-page">Module 0.6</span>
 </div>
 
 ## Objectives
