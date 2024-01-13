@@ -21,7 +21,7 @@ format:
 <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
   <a href="#">Unit 1</a> &raquo;
-  <span class="current-page">Module 1.2</span>
+  <span class="current-page">Module 1.5</span>
 </div>
 
 ## Objectives
@@ -335,7 +335,7 @@ printword(5)
 In `my_conditional.py`. rewrite the function so that it does the same thing but without using any elif's.
 :::
 
-### 1.5.2 Functions without parameters
+## 1.5.2 Functions without parameters
 Consider this example:
 ```python
 def print_two_xs():
