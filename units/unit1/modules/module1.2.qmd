@@ -46,7 +46,7 @@ When we come back to where the function was invoked, we continue execution just 
 
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.1 Exercise"}
-Please review that module. Now.</span>
+Please review that module. Now.
 :::
 
 ## 1.2.1 A simple example
@@ -63,7 +63,7 @@ j = 6
 increment_and_print(j)
 ```
 :::{.callout-caution appearance="simple" icon=false title="1.2.2 Exercise"}
-Type up the above in `my_func_example.py` Then, just before the j=6 statement, print the value of i.</span>
+Type up the above in `my_func_example.py` Then, just before the j=6 statement, print the value of i.
 :::
 
 Let's explain:
@@ -141,20 +141,20 @@ print_from_one_to(6)
 
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.3 Exercise"}
-What do each of the above two programs print? Type them up in `my_func_example2a.py` and `my_func_example2b.py` to find out.</span>
+What do each of the above two programs print? Type them up in `my_func_example2a.py` and `my_func_example2b.py` to find out.
 :::
 
-###### **1.2.4 Video**</span>
+###### **1.2.4 Video**
 {{< video ../../../media/units/unit1/module1.2/u1-mod2.4.mp4 aspect-ratio="21x9" >}}
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.5 Exercise"}
-In `my_func_example3.py`, fill in the code in the function below so that the output of the program is:</span>
+In `my_func_example3.py`, fill in the code in the function below so that the output of the program is:
 ```python
 *****
 ***
 *
 ```
-The partially-written program:</span>
+The partially-written program:
 
 ```python
 def print_stars(n):
@@ -166,7 +166,7 @@ print_stars(1)
 ```
 :::
 
-###### **1.2.6 Video**</span>
+###### **1.2.6 Video**
 {{< video ../../../media/units/unit1/module1.2/u1-mod2.6.mp4 aspect-ratio="21x9" >}}
 
 ## 1.2.2 Multiple parameters
@@ -204,7 +204,7 @@ check_pythagorean(6, 8, 20)
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.7 Exercise"}
-In `my_func_example4.py`, fill in the code in the function below so that the output of the program is:</span>
+In `my_func_example4.py`, fill in the code in the function below so that the output of the program is:
 
 ```python
 5
@@ -213,7 +213,7 @@ In `my_func_example4.py`, fill in the code in the function below so that the out
 0
 ```
 
-The partially written program is:</span>
+The partially written program is:
 
 ```python
 def print_profit_total(a,b):
@@ -225,10 +225,10 @@ print_profit_total(2, -3)
 print_profit_total(-2, -3)
 ```
 
-The idea is to compute the sum but only of the positive parameters; if neither value is positive, print 0.</span>
+The idea is to compute the sum but only of the positive parameters; if neither value is positive, print 0.
 :::
 
-###### **1.2.8 Video**</span>
+###### **1.2.8 Video**
 {{< video ../../../media/units/unit1/module1.2/u1-mod2.8.mp4 aspect-ratio="21x9" >}}
 
 ## 1.2.3 Return values
@@ -251,7 +251,7 @@ print(x)
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.9 Exercise"}
-Type up the above in `my_func_example5.py`. Then try sending 5,-6 instead of -5,6. Then try 5,6. In your module pdf, trace through the execution in each case. What does the `padd()` function achieve?</span>
+Type up the above in `my_func_example5.py`. Then try sending 5,-6 instead of -5,6. Then try 5,6. Try and answer the following for yourself: What does the `padd()` function achieve?
 :::
 
 Let's explain:
@@ -289,7 +289,7 @@ The result of invoking this function somehow results in `x` getting a value stor
 
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.10 Exercise"}
-In `my_func_example6.py`, complete the code in `sum_up_to()` so that it computes and then returns the sum of numbers from 1 to n (inclusive of 1 and n).</span>
+In `my_func_example6.py`, complete the code in `sum_up_to()` so that it computes and then returns the sum of numbers from 1 to n (inclusive of 1 and n).
 ```python
 def sum_up_to(n):
     # write your code here
@@ -301,7 +301,7 @@ print(result)            # should print 55
 ```
 :::
 
-###### **1.2.11 Video**</span>
+###### **1.2.11 Video**
 {{< video ../../../media/units/unit1/module1.2/u1-mod2.11.mp4 aspect-ratio="21x9" >}}
 
 Let's return to our earlier example and use the `padd()` function in different ways:
@@ -322,7 +322,7 @@ print(padd(padd(-5,6), padd(5,-6)))
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.12 Exercise"}
-Type up the above in `my_func_example7.py` and report what it prints in your module pdf.</span>
+Type up the above in `my_func_example7.py` and use comments (text followed by ‘#’ symbol) to report what it prints in the python-file. 
 :::
 
 Let's examine each of the last three statements:
@@ -441,7 +441,7 @@ print(result)
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.13 Exercise"}
-Type up the above in `my_func_example8.py` and report what it prints in your module pdf.</span>
+Type up the above in `my_func_example8.py` and use comments (text followed by ‘#’ symbol) to report what it prints in the python-file. 
 :::
 
 :::{.callout-note}
@@ -451,11 +451,11 @@ Type up the above in `my_func_example8.py` and report what it prints in your mod
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.14 Exercise"}
-In your module pdf, draw such a diagram for the other two function invocations.</span>
+Trying drawing a similar diagram for the other two function invocations in a separate document to help you understand the flow of the program. There is nothing to submit in this exercise.
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.15 Exercise"}
-In `my_func_example9.py`, complete the code below so that the function, when given three numbers, identifies the two larger ones and returns their sum.</span>
+In `my_func_example9.py`, complete the code below so that the function, when given three numbers, identifies the two larger ones and returns their sum.
 
 ```python
 def add_bigger_pair(a, b, c):
@@ -467,7 +467,7 @@ print(add_bigger_pair(2,1,4))  # Should print 6
 ```
 :::
 
-###### **1.2.16 Video**</span>
+###### **1.2.16 Video**
 {{< video ../../../media/units/unit1/module1.2/u1-mod2.16.mp4 aspect-ratio="21x9" >}}
 
 ## 1.2.5 Parameter and argument names
@@ -557,7 +557,7 @@ Because the value in x gets copied into the variable p, the value in x does not 
 
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.17 Exercise"}
-Just by reading, can you tell what the above program prints? Then, implement in `my_func_example10.py` and confirm.</span>
+Just by reading, can you tell what the above program prints? Then, implement in `my_func_example10.py` and confirm.
 :::
 
 ## 1.2.7 Functions and lists
@@ -579,11 +579,11 @@ print(t)
 
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.18 Exercise"}
-In your module pdf, trace the execution of the above program, including loop iterations. Type up the above in `my_func_example11.py`, including a `print(k)` in the loop to confirm your trace.</span>
+Try tracing through the execution of the above program, including loop interactions. Type up the above in `my_func_example11.py`, including a `print(k)` in the loop to confirm your trace.
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.19 Exercise"}
-In `my_even_numbers.py`, complete the code in the function below so that the even numbers in a list are printed out:</span>
+In `my_even_numbers.py`, complete the code in the function below so that the even numbers in a list are printed out:
 ```python
 def print_even(A):
     # Insert your code here
@@ -591,12 +591,12 @@ def print_even(A):
 A = [1, 3, 5, 6, 7, 8]
 print_even(A)
 ```
-Write the function so that the output is:</span>
+Write the function so that the output is:
 ```python
 Found even:  6
 Found even:  8
 ```
-Recall how to use the <em>remainder</em> operator from the previous module (conditionals and loops).</span>
+Recall how to use the <em>remainder</em> operator from the previous module (conditionals and loops).
 :::
 
 Next, let's look at an example where a list is returned:
@@ -612,7 +612,7 @@ print(build_odd_list(5))
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.21 Exercise"}
-Trace through the above in your module pdf, then type up in `my_odd_list.py` to confirm. Include a `print(k)` in the loop after the append.</span>
+Try tracing through the above, the type up in `my_odd_list.py` to confirm what you learned. Include a `print(k)` in the loop after the append.
 :::
 
 :::{.callout-note}
@@ -651,11 +651,11 @@ print(find_first_negative(C))
 ```  
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.22 Exercise"}
-Before typing this up in `my_first_negative.py` to confirm, try to trace through the program in your module pdf. That is, use the tracing approach we've used before: write out the values of variables and how they change from one iteration to the next. Then, replace the first comment so that you print(k) inside the loop. Explain what you see as a result in your module pdf. Then, move the print statement (still inside the loop) to after the `return k` statement. What do you observe? Explain in your module pdf.</span>
+Before typing this up in `my_first_negative.py` to confirm. That is, use the tracing approach we've used before: write out the values of variables and how they change from one iteration to the next. Then, replace the first comment so that you `print(k)` inside the loop. Then, move the print statement (still inside the loop) to after the `return k` statement. What do you observe? There is nothing to submit in this exercise.
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.23 Exercise"}
-In `my_last_negative.py`, modify the above program to find the last negative number (if one exists) in a list. So, after completing the code below</span>
+In `my_last_negative.py`, modify the above program to find the last negative number (if one exists) in a list. So, after completing the code below
 ```python
 def find_last_negative(A):
     # Insert your code here
@@ -663,7 +663,7 @@ def find_last_negative(A):
 B = [1, 2, -3, 4, -5, 6]
 C = [1, 2, 3, 4]
 ```
-it should print</span>
+it should print
 ```python
 -5
 0
@@ -687,7 +687,7 @@ print_first_negative(C)
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.25 Exercise"}
-Type up the above in `my_first_negative2.py`, execute and observe the output. Then, trace through the execution in your module pdf.</span>
+Type up the above in `my_first_negative2.py`, execute and check for any errors. Submit the code if there are no errors.
 :::
 
 Let's point out:
@@ -736,7 +736,7 @@ print(x, y)     # Will this print 5 and 6, or 6 and 5?
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.26 Exercise"}
-Before typing up the above in `my_swap_int.py`, can you guess what the output will be?</span>
+Before typing up the above in `my_swap_int.py` and submitting, can you guess what the output will be ?
 :::
 
 Let's explain:
@@ -759,7 +759,7 @@ Let's explain:
 
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.27 Exercise"}
-In your module pdf, draw the three boxes for a, b, and temp, at each step in the function's execution.</span>
+To help you understand the program, in a separate document draw the three boxes for a, b, and temp, at each step in the function’s execution. There is nothing to submit in this exercise.
 :::
 
 Now, consider a similar program with lists:
@@ -776,7 +776,7 @@ print(X, Y)
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.28 Exercise"}
-In your module pdf, draw the three boxes for a, b, and temp, at each step in the function's execution.</span>
+To help you understand the program, in a separate document draw the three boxes for a, b, and temp, at each step in the function’s execution. There is nothing to submit in this exercise.
 :::
 
 Let's see what's going on:
@@ -796,7 +796,7 @@ Let's see what's going on:
 - Notice that temp is a regular integer.
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.29 Exercise"}
-In your module pdf, draw the above diagram after each line in the function, showing how the list contents and temp change with each line of execution.</span>
+Type up the above in my_swap_list_first.py and submit. To help you understand the program, in a separate document draw the three boxes for a, b, and temp, at each step in the function’s execution.
 :::
 
 The key takeaways:
@@ -810,7 +810,7 @@ The key takeaways:
 
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.31 Exercise"}
-Consider the following program:</span>
+Consider the following program:
 ```python
 def change_int(a):
     a = a + 1
@@ -826,7 +826,7 @@ B = [1, 2, 3]
 change_list(B)
 print(B)
 ```
-In your module pdf, trace through the above program, showing boxes for the different variables changing as each line executes. Show these diagrams at the start of each function's execution and just before each function returns.</span>
+Type up the above in `my_change_list.py` and submit. 
 :::
 
 ## 1.2.10 Calling functions from functions
@@ -926,7 +926,7 @@ you do NOT have to use such shortcuts. Some shortcuts are an advanced topic and 
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.33 Exercise"}
-Consider the following program:</span>
+Consider the following program:
 ```python
 def decrement(a):
     return a - 1
@@ -939,10 +939,10 @@ def subtract(a, b):
 print(subtract(5, 9))
 print(subtract(3, 13))
 ```
-Type this up in `my_subtraction.py`. Then in your module pdf, trace the execution step by step. Draw diagrams showing the changing contents of variables a and b. (This exercise is a bit long, but worth doing because it will help your understanding.)</span>
+Type up the above in `my_subtraction.py` and submit. As with other tracing exercises this is also optional and in this particular case a bit long, but worth doing because it will help your understanding. Try tracing the execution step-by-step in a separate document.
 :::
 
-###### **1.2.34 Video**</span>
+###### **1.2.34 Video**
 {{< video ../../../media/units/unit1/module1.2/u1-mod2.34.mp4 aspect-ratio="21x9" >}}
 
 ## 1.2.11 More stats via programming
@@ -951,7 +951,7 @@ Armed with our new ability to work with functions and lists, we will see how eas
 Before we get to that, here's a small exercise.
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.35 Exercise"}
-Consider the following program:</span>
+Consider the following program:
 ```python
 def find_smallest(A):
     smallest = A[0]
@@ -963,7 +963,7 @@ def find_smallest(A):
 data = [-2.3, -1.22, 1.6, -10.5, 1.4, 2.5, -3.32, 11.03, 2, 2, -1.4]
 print(find_smallest(data))
 ```
-Type this up in `my_find_smallest.py`. Then trace through the execution in your module pdf. It's critical to understand how the variable `smallest` is changing through the loop, and why the function `find_smallest()` does in fact identify the smallest value in a list. (Remember: the more negative a number, the smaller. Thus, -10 is less than or "smaller" than -4.)</span>
+Type this up in `my_find_smallest.py`. It's critical to understand how the variable `smallest` is changing through the loop, and why the function `find_smallest()` does in fact identify the smallest value in a list. (Remember: the more negative a number, the smaller. Thus, -10 is less than or "smaller" than -4.)
 :::
 
 With that, consider this partially complete program:
@@ -989,10 +989,10 @@ print('span: ', find_span(data))
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.36 Exercise"}
-In `my_stats.py` complete the above so that the <em>span</em> of the data is computed and printed. This is the difference between the largest and smallest values. Then, use a table (as you have before) to trace through the execution in your module pdf.</span>
+In `my_stats.py` complete the above so that the <em>span</em> of the data is computed and printed. This is the difference between the largest and smallest values.
 :::
 
-###### **1.2.37 Video**</span>
+###### **1.2.37 Video**
 {{< video ../../../media/units/unit1/module1.2/u1-mod2.37.mp4 aspect-ratio="21x9" >}}
 
 Next, let's write some (partially complete) code for standard statistics:
@@ -1041,12 +1041,12 @@ print('standard deviation =', compute_std(data))
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.38 Exercise"}
-In `my_stats2.py` complete the code above. You should get as output, approximately</span>
+In `my_stats2.py` complete the code above. You should get as output, approximately
 ```python
 mean = 0.1627272727272727
 standard deviation = 4.955716792313685
 ```
-(Real numbers, what can you do?)</span>
+(Real numbers, what can you do?)
 :::
 
 Next, let's tackle the more challenging problem of identifying <em>outliers</em>:
@@ -1079,7 +1079,7 @@ def find_outliers(A):
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.39 Exercise"}
-In `my_stats3.py`, add the above to your code from the earlier exercise so that the output is:</span>
+In `my_stats3.py`, add the above to your code from the earlier exercise so that the output is:
 ```python
 mean = 0.1627272727272727
 standard deviation = 4.955716792313685
@@ -1106,7 +1106,7 @@ print(factorial(10))
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.40 Exercise"}
-Type up the above in `my_factorial.py`. Then, in your module pdf trace through what happens when `factorial(5)` is called. Remove the # symbol so that the print prints.</span>
+Type up the above in `my_factorial.py`. Remove the `#` symbol so that the print prints. Try tracing through what happens when `factorial(5)` is called.
 :::
 
 Let's point out:
@@ -1124,10 +1124,10 @@ Let's point out:
 - Surprisingly, many problems are solvable elegantly and efficiently using recursion.
 - It is possible to do recursion improperly, in which case a program is set up to recurse forever. In this case, Python will give up after too many recursions.
 
-###### **1.2.41 Video**</span>
+###### **1.2.41 Video**
 {{< video ../../../media/units/unit1/module1.2/u1-mod2.41.mp4 aspect-ratio="21x9" >}}
 
-## 2.13 Incribed geometric figures as art
+## 1.2.13 Incribed geometric figures as art
 Of course we're going to try and use functions and drawing.
 
 Consider this program:
@@ -1163,10 +1163,10 @@ dt.display()
 ```
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.42 Exercise"}
-Download <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> and <a href="../../../media/units/unit1/module1.2/circle_square.py" download>**circle_square.py**</a> and run the latter to get</span>
+Download <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> and <a href="../../../media/units/unit1/module1.2/circle_square.py" download>**circle_square.py**</a> and run the latter to get
 ![](../../../media/units/unit1/module1.2/kepler.png)
 
-Then, change n to n=10. Perhaps experiment with colors. Try to read the functions and figure out, not so much the calculation, as what they're doing.</span>
+Then, change n to n=10. Perhaps experiment with colors. Try to read the functions and figure out, not so much the calculation, as what they're doing.
 :::
 
 At first, this looks like a simple exercise in geometric art, or a depiction of the "evil eye" but there's more to it:
@@ -1197,7 +1197,7 @@ a = 5
 b = square_it(a)
 print(b)
 ```
-Identify and fix the error in `my_error1.py`.</span>
+Identify and fix the error in `my_error1.py`.
 :::
 
 :::{.callout-caution appearance="simple" icon=false title="1.2.44 Exercise"}
@@ -1210,10 +1210,10 @@ def bigger(x,y)
 
 print(bigger(4,5))
 ```
-Identify and fix the error in `my_error2.py`.</span>
+Identify and fix the error in `my_error2.py`.
 :::
 
-:::{.callout-caution appearance="simple" icon=false title="1.2.405Exercise"}
+:::{.callout-caution appearance="simple" icon=false title="1.2.45 Exercise"}
 ```python
 def find_smallest(A):
     smallest = 1000
@@ -1225,7 +1225,7 @@ def find_smallest(A):
 B = [2, 1, 4, 3]
 print(find_smallest(B))
 ```
-Does the above program work? What is the reasoning behind the line `smallest = 1000`? What would go wrong if you removed it altogether? Can you create a list (change the data in B) which will cause the function to fail to find the smallest number. Fix the issue in `my_error3.py`.</span>
+Does the above program work? What is the reasoning behind the line `smallest = 1000`? What would go wrong if you removed it altogether? Can you create a list (change the data in B) which will cause the function to fail to find the smallest number. Fix the issue in `my_error3.py`.
 :::
 
 <br>
