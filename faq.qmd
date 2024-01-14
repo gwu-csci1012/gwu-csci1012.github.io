@@ -2,6 +2,11 @@
 title: "FAQ"
 ---
 
+<div class="breadcrumbs">
+  <a href="./index.qmd">Home</a> &raquo;
+  <span class="current-page">FAQ</span>
+</div>
+
 ### What is this course all about?
 
 Very simply, it's about taking <em>first steps</em> towards programming computers. This is different from learning how to <em>use</em> computers in sophisticated ways, such as being an Excel expert. In this course, you will learn the tools with which applications like Excel are built.
