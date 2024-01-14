@@ -1,11 +1,11 @@
 ---
 title: "Schedule"
-format:
-  html:
-    code-copy: false
+# format:
+#   html:
+#     code-copy: false
 ---
 
-<html>
+<!-- <html>
 <head>
     <style>
         body {
@@ -16,7 +16,7 @@ format:
         }
     </style>
 </head>
-<body>
+<body> -->
 
 <div class="breadcrumbs">
   <a href="./index.qmd">Home</a> &raquo;
@@ -173,5 +173,5 @@ format:
     </tbody>
 </table>
 ```
-</body>
-</html>
+<!-- </body>
+</html> -->
