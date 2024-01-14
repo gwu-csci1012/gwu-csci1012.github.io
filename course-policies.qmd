@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Courses Policies"
 format:
   html:
     code-copy: false
