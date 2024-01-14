@@ -38,9 +38,10 @@ format:
 -	Professionalism: 10%
 
 :::{.callout-note}
-You must pass the examination with a score greater than 60% to pass the course.
+You must pass the examination with a score _greater than_ **60%** to pass the course.
+
 -	The lowest four modules are dropped.
--	The lowest problem set is dropped.
+-	The lowest assignment is dropped.
 -	The lowest four quizzes are dropped.
 (Low grades associated associated with academic integrity violations will not be dropped.)
 :::
