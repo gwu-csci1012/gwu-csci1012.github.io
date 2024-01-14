@@ -299,12 +299,12 @@ One of the most important things to observe about is that some code is <em>inden
 
 ## 0.1.5 A reminder about computerese
 As you complete Module 1 and ready that for submission you might want to review:
-- Did you make your `module1` folder? Did you ensure that the `m` in `module1` is lowercase and that there's no space `module` and `1`?
+
+- Did you make your `module1.0` folder? Did you ensure that the `m` in `module1.0` is lowercase and that there's no space `module` and `1.0`?
 - Are your Python programs from this module in that folder?
-- Did you make your `module1.pdf` in this folder? Does it have the non-coding questions answered within?
 - Do you recall how to make a zip?
 
-If it's a bit hazy, please make sure to review from the <b><a href="../module0/computerese.html">material on computerese</a></b> from Module 0.
+If it's a bit hazy, please make sure to review from the [**material on computerese**](../guides/computerese.qmd) from Module 0.0.
 
 <!-- [Here's more information about submitting Module 1]() -->
 
