@@ -1,11 +1,11 @@
 ---
 title: "**Module 1.4:** `while` loops, I/O"
-format:
-  html:
-    code-copy: false
+# format:
+#   html:
+#     code-copy: false
 ---
 
-<html>
+<!-- <html>
 <head>
     <style>
         body {
@@ -16,7 +16,7 @@ format:
         }
     </style>
 </head>
-<body>
+<body> -->
 
 <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
@@ -980,5 +980,5 @@ Identify and fix the error in `my_error3.py`.
 :::
 
 
-</body>
-</html>
+<!-- </body>
+</html> -->
