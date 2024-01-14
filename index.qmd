@@ -38,7 +38,7 @@ There is a deliverable due on **January  22, 2024** by **11:59 PM**.
     - Any direct email communication with the instruction team may not result in a response.
 
 :::{.callout-important}
-- Our staff is limiting the use of Linux OS-based laptops and cannot support them this semester. 
+<!-- - Our staff is limiting the use of Linux OS-based laptops and cannot support them this semester.  -->
 - We prefer that your computer has a standard US keyboard layout i.e, a QWERTY keyboard. 
     - The QWERTY (pronounced KWEHR-tee) keyboard is the standard typewriter and computer keyboard in countries that use a Latin-based alphabet.
 :::
