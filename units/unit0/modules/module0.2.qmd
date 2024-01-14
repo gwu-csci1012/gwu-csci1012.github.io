@@ -424,7 +424,7 @@ The term <em>recursion</em> is used when function calls itself:
 ## 0.2.5 Another reminder about computerese
 How is your computerese coming along? Are you now much more confident with folders, files, zip files and such? What about editing, and saving?
 
-Don't forget that you can always review the <b><a href="unit0/module0/computerese.html">material on computerese</a></b> from Module 0.
+Don't forget that you can always review the [**material on computerese**](../guides/computerese.qmd) from Module 0.0.
 
 Please check that your module2 folder has the right files before you zip and upload. Does it look like one of these sample screenshots: 
 
