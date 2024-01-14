@@ -2,6 +2,11 @@
 title: "About"
 ---
 
+<div class="breadcrumbs">
+  <a href="./index.qmd">Home</a> &raquo;
+  <span class="current-page">About</span>
+</div>
+
 ## Instructor
 ### **Dr. Kartik Bulusu**
 
@@ -16,7 +21,64 @@ title: "About"
 ## Time/Location of course
 
 ## Office Hours
-For information regarding the office hours, please refer the [Instruction Team](instructors.qmd) page.
+_Current Office Hour Schedule is listed below:_
+```{=html}
+<table style="width:100%">
+    <thead>
+        <tr class="table-info">
+            <th>Day(s)</th>
+            <th>Time</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tuesdays</td>
+            <td>4:00 PM to 5:00 PM</td>
+            <td>SEH 4th Floor</td>
+        </tr>
+        <tr class="table-active">
+            <td>Wednesdays</td>
+            <td>10:00 AM to 11:00 AM</td>
+            <td>SEH 4th Floor</td>
+        </tr>
+        <tr>
+            <td>Wednesdays</td>
+            <td>5:00 PM to 6:15 PM</td>
+            <td>SEH 4th Floor</td>
+        </tr>
+        <tr class="table-active">
+            <td>Thursdays</td>
+            <td>3:30 PM to 5:00 PM</td>
+            <td>SEH 4th Floor</td>
+        </tr>
+        <tr>
+            <td>Fridays</td>
+            <td>10:00 AM to 11:00 AM</td>
+            <td>SEH 4th Floor</td>
+        </tr>
+        <tr class="table-active">
+            <td>Fridays</td>
+            <td>11:00 AM to 1:00 PM</td>
+            <td>SEH 4th Floor</td>
+        </tr>
+        <tr>
+            <td>Fridays</td>
+            <td>12:00 PM to 1:00 PM</td>
+            <td>SEH 4th Floor</td>
+        </tr>
+        <tr class="table-active">
+            <td>Fridays</td>
+            <td>1:45 PM to 2:45 PM</td>
+            <td>SEH 4th Floor</td>
+        </tr>
+    </tbody>
+</table>
+```
+
+:::{.callout-note}
+Please be advised that the office hour schedule will be updated as the semester progresses.
+:::
 
 ## Why are there no recorded video lectures?
 Learning to program by watching some talk about it is less effective than learning by "doing programming". Thus, most of your learning will consist of reading a concept, seeing an example, and immediately following that with a programming exercise that really gets into the details. At the same time, we know it's useful to have hints and explanations to help you in your exercises, when you are particularly stuck. Accordingly, although most of the material is written, and includes elaborate instructions, there is recorded media that you can optionally view/listen if you need it. These are recorded from a student point of view (but carefully vetted by us), as you'll see.
