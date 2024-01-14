@@ -118,7 +118,7 @@ What we mean by _computerese_:
      - Uploading files to a website, downloading.
 
 :::{.callout-caution appearance="simple" icon=false title="0.0.2 Exercise"}
-Develop your computerese skills by following [these instructions.]()
+Develop your computerese skills by following [these instructions.](../guides/computerese.qmd)
 :::
 
 :::{.callout-note}
