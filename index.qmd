@@ -11,7 +11,9 @@ The course material is sourced from **Prof. Simha's** webpage: <https://www2.sea
 - **General information**: The course we will meet during lecture and laboratory times each week.
     - Most of our communication to you will be by Blackboard messaging and announcements.
     - Start by reading the [**About**](about.qmd) section. 
-    - Review the [**Course policies**](course-policies.qmd) and get familiar with the [**Instruction Team**](instructors.qmd). 
+    - Review the [**Course policies**](course-policies.qmd) and get familiar with the [**Instruction Team**](instructors.qmd).
+    - These are the current [**office hours**](about.qmd#office-hours) being made available. 
+    - They will be update as the semester progresses.
 
 - **Student's main method of communication during the semester**: Our main method of communication is Ed, an online discussion board for questions and answers related to the course, whether technical or logistical in nature.
     - [**Join Ed here**](https://edstem.org/us/join/aNhz9P)
