@@ -2,4 +2,30 @@
 title: "FAQ"
 ---
 
-About this site
+### What is this course all about?
+
+Very simply, it's about taking <em>first steps</em> towards programming computers. This is different from learning how to <em>use</em> computers in sophisticated ways, such as being an Excel expert. In this course, you will learn the tools with which applications like Excel are built.
+
+### What do you mean "first steps"? You mean there's more?
+
+Indeed. Programming is a skill, like playing a musical instrument or speaking a foreign language. It can't be mastered in a day or a month or single course. But this course will put you on the path towards mastering programming.
+
+### Who should take this course?</b>
+
+The course is designed to be open to all students from all majors, even those that think there couldn't be any connection between their major and programming. In fact, we'll show many examples that connect programming and <em>art</em>, to pick one major that appears distant from computer science.
+
+### What are the prerequisites? Do I need to have done some programming earlier?</b>
+
+None. You need no background other than good attitude and a willingness to work at acquiring a skill. You surely know students in high school who've done coding or courses in programming. Don't worry, you don't need to have done anything like this.
+
+### I've never done any kind of programming and find computers difficult to use. Will I be at a disadvantage?</b>
+
+Not at all. The course is expressly designed for the novice. We will start from scratch, and proceed at a pace appropriate to starting from scratch. Keep in mind, however, that any skill development takes time and that one can sometimes feel overwhelmed. It's perfectly OK and natural to <em>feel</em> overwhelmed. If you were learning a foreign language, and especially so while living in that country, you'd feel the same way.
+
+### Will I be able to work on my own computer?</b>
+
+You will be working on your own computer. There is, however, a minor learning curve in getting started - we will show you how you can use a Windows PC or Mac for the work in this course.
+
+### Why should I do after this course? What will I be able to do later?</b>
+
+As we said, it puts you on the path towards programming. If you take further coursework in computer science, you'll need about three courses in sequence to begin to be functional in your discipline or workplace. (Learning a foreign language is similar: you need at least three courses to become street-talk proficient). A few more courses beyond that gets you a Minor in Computer Science, which can help you become the "tech expert" in your discipline. Eventually, you may decide to go further and get a CS degree, with which you build robots that help you take over the world.
