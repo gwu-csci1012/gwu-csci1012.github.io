@@ -52,6 +52,7 @@ website:
             contents: 
               - ./units/unit2/modules/module2.0.qmd
               - ./units/unit2/modules/module2.1.qmd
+              - ./units/unit2/modules/module2.2.qmd
       - href: faq.qmd
         text: FAQ
 format:
