@@ -145,8 +145,8 @@ To apply you need:
 Minor applications are accepted on a rolling basis with a processing time of up to 2 weeks. Please include a copy of your unofficial transcript, your school's minor declaration form, the <a href="../../../media/units/unit2/module2.2/MinorForm.pdf">**SEAS CS minor declaration form**</a> and send to <b>seasadvising@gwu.edu</b>.
 
 
-Additional information: 
-<a href="../../../media/units/unit2/module2.2/CS-Minor-Flyer.pdf">**See this flyer**</a>
+<!-- Additional information: 
+<a href="../../../media/units/unit2/module2.2/CS-Minor-Flyer.pdf">**See this flyer**</a> -->
 
 
 ## 5 &nbsp;&nbsp; Important things to know for either the minor or second major
@@ -160,7 +160,7 @@ Additional information:
 - Because applying for the minor has a stringent GPA requirement, you might be better off transferring into SEAS.
 - Interested students must apply <b>no later</b> than the start of their 5th semester of study at GW, or completion of 60th credit, whichever comes later.
 
-If you have more questions, you can <a href="https://calendly.com/dginnetti">sign** up for an appointment with Dawn Ginnetti**</a>
+<!-- If you have more questions, you can <a href="https://calendly.com/dginnetti">**sign up for an appointment with Dawn Ginnetti**</a> -->
 
 
 ## 6 &nbsp;&nbsp; Post-graduation online programs
@@ -173,7 +173,7 @@ The Department of Computer Science offers two programs for students who cannot f
 
 Both are designed to be open to anyone, especially for those with no background at all in computing, and both are free of math requirements. They are online and can be taken at a gradual pace while working.
 
-## 7 &nbsp;&nbsp; FAQ 
+<!-- ## 7 &nbsp;&nbsp; FAQ 
 <div id="faq"></div>
 
 First, some advice about the <em>timing</em> in taking courses towards the minor/major:
@@ -238,4 +238,4 @@ Now for questions asked by students.
 #### <b>Questions about languages</b>
 
 - <i>**Does the CS minor offer a good foundation to learn newer languages, such as React Native? Do you recommend continuing with specifically python or diversifying into other computer programming languages such as Java?**</i>
-    <br> All you need to do is learn one language well, which generally takes three courses in that language, not that different from learning a foreign language. Doing that  positions you to learn any new language on your own. The CS department's 1111-1112-2113 sequence is all in Java (but you do learn a bit of the C language in 2113).
+    <br> All you need to do is learn one language well, which generally takes three courses in that language, not that different from learning a foreign language. Doing that  positions you to learn any new language on your own. The CS department's 1111-1112-2113 sequence is all in Java (but you do learn a bit of the C language in 2113). -->
