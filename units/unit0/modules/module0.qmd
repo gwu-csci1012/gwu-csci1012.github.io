@@ -1,5 +1,5 @@
 ---
-title: "**Module 0.0:** Your First Program"
+title: "**Module 0:** Your First Program"
 format:
   html:
     code-copy: false
@@ -21,7 +21,7 @@ format:
 <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
   <a href="#">Unit 0</a> &raquo;
-  <span class="current-page">Module 0.0</span>
+  <span class="current-page">Module 0</span>
 </div>
 
 ## Objectives
@@ -30,9 +30,9 @@ By the end of this module you will be able to:
 - Experince writing a really simple program.
 - Explain the difference between command-line outputs vs GUI for programs.
 
-### 0.0.0: Our First Program
+### 0.0: Our First Program
 Lets take a look at our first program as it appears in a textbook (like this one):
-```{python}
+```python
 print("Hello World")
 ```
 
@@ -65,7 +65,9 @@ For now, let's point out a few things:
 
 Next, you will try this yourself.
 
-:::{.callout-caution appearance="simple" icon=false title="0.0.1 Exercise"}
+::: {.callout-caution appearance="simple" icon=false}
+### Exercise 0.1
+
 Write and run the helloworld program using [these instructions]()
 :::
 
@@ -74,7 +76,7 @@ So, what's with printing the unusual phrase "Hello World!"?
 - It's a tradition in computer science that your first program will print "Hello World!".
 - It's meant to pretend that a program is a creature that's itself communicating to the outside world by saying hello.
 
-### 0.0.1 The recipe-cook-dish analogy
+### 0.1 The recipe-cook-dish analogy
 What just happened above?
 
 Let's use an analogy
@@ -102,7 +104,7 @@ The result of executing a program is the program's output
 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rArr;
 A program and the laptop are even more exacting: the slightest error can result in failure.
 
-### 0.0.2 Programming vs. computerese
+### 0.2 Programming vs. computerese
 What we mean by _computerese_:
 
 - The computer-related tasks and knowledge that are needed, but not the intellectual core of programming.
@@ -117,7 +119,9 @@ What we mean by _computerese_:
      - Handling the quirks of an operating system.
      - Uploading files to a website, downloading.
 
-:::{.callout-caution appearance="simple" icon=false title="0.0.2 Exercise"}
+:::{.callout-caution appearance="simple" icon=false}
+### Exercise 0.2
+
 Develop your computerese skills by following [these instructions.](../guides/computerese.qmd)
 :::
 
@@ -125,7 +129,7 @@ Develop your computerese skills by following [these instructions.](../guides/com
 There is nothing to submit for this particula exercise; it is aimed at generally helping you get proficien with using your computer for programming.
 :::
 
-### 0.0.3 A slight variation
+### 0.3 A slight variation
 We will now spend a bit of time trying a few variations, and also  examining what happens when typing mistakes are made.
 
 Consider this program:
@@ -133,7 +137,9 @@ Consider this program:
 print('Hello World!')
 print('My name is X')
 ```
-:::{.callout-caution appearance="simple" icon=false title="0.0.3 Exercise"}
+:::{.callout-caution appearance="simple" icon=false}
+### Exercise 0.3
+
 Type up this program but use your own name instead of X. Save the file in the `module0.0` folder as `myname.py`.
 :::
 
@@ -141,7 +147,7 @@ Type up this program but use your own name instead of X. Save the file in the `m
 In the future we will be asking you to "type up" programs; in all such cases, please also save the file (for eventual submission)
 :::
 
-### 0.0.4 What happens when things go (even slightly) wrong
+### 0.4 What happens when things go (even slightly) wrong
 We'll now deliberately make a few tiny errors and see what happens:
 
 - **Error #1:** forgetting to type the closing parenthesis.
@@ -162,11 +168,13 @@ print(Hello World!)
     - We get something quite similar:
     ![](../../../media/units/unit0/module0/error2.png)
 
-:::{.callout-caution appearance="simple" icon=false title="0.0.4 Exercise"}
+:::{.callout-caution appearance="simple" icon=false}
+### Exercise 0.4
+
 Confirm that you get the errors above by typing up the two programs as `error1.py` and save the programs in the `module0.0` folder.
 :::
 
-### 0.0.5 A peek at a more complex program
+### 0.5 A peek at a more complex program
 Just to see what's coming later, let's get a sense of what a more complex program _looks like_.
 
 Your goal is to look through it with bemused curiosity, as if studying an incomprensible work of abstract art.
@@ -176,8 +184,10 @@ We'll just examine the some surface features, as we would when examining some un
 
 Let's start by running the program.
 
-:::{.callout-caution appearance="simple" icon=false title="0.0.5 Exercise"}
-Download <a href="../../../media/units/unit0/module0/whackamole.py" download>**whackamole.py**</a> into your `module0.0` folder Then open it and run it. You should see
+:::{.callout-caution appearance="simple" icon=false}
+### Exercise 0.5
+
+Download <a href="../../../media/units/unit0/module0/whackamole.py" download>**whackamole.py**</a> into your `module0` folder Then open it and run it. You should see
 ![](../../../media/units/unit0/module0/whackamole.png)
 The purpose of the program and how you use it should be easy to figure out.
 :::
@@ -292,7 +302,7 @@ First, some features from the first half of the program:
 And some from the latter part:And some from the latter part:
 ![](../../../media/units/unit0/module0/whackamole3.png)
 
-### 0.0.6 GUI vs command-line
+### 0.6 GUI vs command-line
 GUI stands for: Graphical User Interface.
 
 And is pronounced like "gooey".
@@ -305,7 +315,7 @@ The difference between GUI and command-line programs:
 - We will spend quite a bit of time learning programming with simpler (albeit less exciting) command-line programs.
 - However, we will occasionally work with GUI programs because they are visually more interesting, and demonstrate applications.
 
-### 0.0.7 Computer science: beyond programming
+### 0.7 Computer science: beyond programming
 Is computer science the same as programming?
 
 Not at all:
@@ -333,7 +343,7 @@ But also electives among (to name a few):
 - Educational tools, health data systems.
 - Medical devices, prosthetics, control of mechanical systems
 
-### 0.0.8 How to succeed as a student
+### 0.8 How to succeed as a student
 The challenge in learning programming:
 
 **1:** it's an alien world.
@@ -379,8 +389,8 @@ How to succeed:
 [What to rememeber about submitting work](../../../submit-remember.qmd)
 :::
 
-<br>
-[Next Module: **Module 0.1**](./module0.1.qmd){.button .next}
+<!-- <br>
+[Next Module: **Module 0.1**](./module0.1.qmd){.button .next} -->
 
 </body>
 </html>
