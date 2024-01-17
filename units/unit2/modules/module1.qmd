@@ -727,5 +727,5 @@ Download <a href="../../../media/units/unit2/module2.1/parkingtickets_June2020.c
 ![](../../../media/units/unit2/module2.1/tilemap3.png)
 :::
 
-</body>
-</html>
+<!-- </body>
+</html> -->
