@@ -36,8 +36,8 @@ There is a deliverable due on **January  22, 2024** by **11:59 PM**.
 - **Submitting your work**: When you submit work, please follow the specific instructions outlined on [**how to submit your work**](submit-remember.qmd).
 
 - **Communication during extenuating circumstances**: When you need to communicate with us directly regarding extenuating circumstances, please use Blackboard or follow the specific instructions outlined in [**Blackboard**](https://blackboard.gwu.edu).
-    - The instructor will check emails on Mondays and may respond directly or have one of the GTAs respond. 
-    - Any direct email communication with the instruction team may not result in a response.
+    - The instructor will check emails on Mondays and may respond at their earliest convenience. 
+    - Any direct email communication with annyone from the instruction team may not result in a response.
 
 :::{.callout-important}
 <!-- - Our staff is limiting the use of Linux OS-based laptops and cannot support them this semester.  -->
