@@ -1,11 +1,11 @@
 ---
 title: "**Module 2:** What's next for you in Computing?"
-format:
-  html:
-    code-copy: false
+# format:
+#   html:
+#     code-copy: false
 ---
 
-<html>
+<!-- <html>
 <head>
     <style>
         body {
@@ -16,7 +16,7 @@ format:
         }
     </style>
 </head>
-<body>
+<body> -->
 
 <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
@@ -52,5 +52,5 @@ Neither program needs any background, and neither features any math at all. Both
 print('The future awaits you')
 ```
 
-</body>
-</html>
+<!-- </body>
+</html> -->
