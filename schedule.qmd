@@ -116,7 +116,7 @@ title: "Schedule"
             <td>Week 9 [03/18/2024]</td>
             <td>Functions</td>
             <td>03/20/2024</td>
-            <td>03/2/2024</td>
+            <td>03/22/2024</td>
             <td>Unit 1 » Module 2 (Due <b>March 25, 2024</b> by <b>11:59 PM</b>)</td>
         </tr>
         <tr>
@@ -136,8 +136,8 @@ title: "Schedule"
         <tr>
             <td>Week 12 [04/08/2024]</td>
             <td><code><b>numpy</b></code> Arrays</td>
-            <td>02/10/2024</td>
-            <td>02/12/2024</td>
+            <td>04/10/2024</td>
+            <td>04/12/2024</td>
             <td>Assignment 3 (Due <b>April 15, 2024</b> by <b>11:59 PM</b>)</td>
         </tr>
         <tr class="table-active">
