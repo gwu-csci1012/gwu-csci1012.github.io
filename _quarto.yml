@@ -50,9 +50,9 @@ website:
               - ./units/unit1/modules/module5.qmd
           - section: "**Unit 2:** Advanced Topics and Applications"
             contents: 
-              - ./units/unit2/modules/module2.0.qmd
-              - ./units/unit2/modules/module2.1.qmd
-              - ./units/unit2/modules/module2.2.qmd
+              - ./units/unit2/modules/module0.qmd
+              - ./units/unit2/modules/module1.qmd
+              - ./units/unit2/modules/module2.qmd
       - href: faq.qmd
         text: FAQ
 format:
