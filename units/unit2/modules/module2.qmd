@@ -1,0 +1,56 @@
+---
+title: "**Module 2:** What's next for you in Computing?"
+format:
+  html:
+    code-copy: false
+---
+
+<html>
+<head>
+    <style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
+</head>
+<body>
+
+<div class="breadcrumbs">
+  <a href="../../../index.qmd">Home</a> &raquo;
+  <a href="#">Unit 2</a> &raquo;
+  <span class="current-page">Module 2</span>
+</div>
+
+```python
+print('Congratulations!')
+```
+
+Yes, we'll say that again: **Congratulations!**
+
+- You have come a long way from the first day. Most likely you had not written much code before, but now have hundreds of exercises behind you.
+- You have also experienced <em>skill development over time</em>, which requires patience, willingness to persist, and lots of practice.
+    <br> Most importantly: you've seen that it's do-able and that it does NOT require any pre-determined aptitude.
+- You've also, hopefully, experienced the <em>joy</em> of programming: figuring something out and that special pleasure of getting a program to work. 
+- And you've gotten a glimpse of how powerful computational tools can be in any discipline.
+
+What you could do next:
+
+- Earlier in [**the webpage on advising**](advising.qmd), we explained how you can take your computing skills further. This page includes guidelines for:
+    - Transferring or adding CS as a major.
+    - Doing a minor in CS.
+    - CS courses available online in the summer.
+- Through the survey we discovered that many of you have no room in your schedule for additional computing during your degree program. If you nonetheless have developed a taste for programming and want to be the "programming/software" person in your domain, we have a <em>post-graduation</em> option for you:
+    - A fully online and asynchronous Gateway-to-CS certificate focused on programming skills (including web development) that you can take at your own pace.
+    - An online Master's in Applied Computer Science, if you want to go further.
+
+Neither program needs any background, and neither features any math at all. Both are focused on practical skills for the workplace.
+
+```python
+print('The future awaits you')
+```
+
+</body>
+</html>
