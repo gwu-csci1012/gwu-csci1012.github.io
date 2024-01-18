@@ -140,7 +140,7 @@ print('My name is X')
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.3
 
-Type up this program but use your own name instead of X. Save the file in the `module0` folder as `myname.py`.
+Type up this program but use your own name instead of X. Save the file in the `module0` folder as `myname.py`. There is nothing to submit in this exercise.
 :::
 
 :::{.callout-note}
