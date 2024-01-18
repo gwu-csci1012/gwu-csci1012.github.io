@@ -420,7 +420,7 @@ print_big_O()
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.15
 
-<em>Before doing this exercise</em>, please [**read this page**](../guides/stopping.qmd) on how to  stop endlessly running programs. Now, type up and execute the above program in `my_strange_example.py`. Use comments (text followed by ‘#’ symbol) to describe the error if any in the python-file.
+_Before doing this exercise_, please [**read this page**](../guides/stopping.qmd) on how to  stop endlessly running programs. Now, type up and execute the above program in `my_strange_example.py`.
 :::
 
 :::{.callout-tip title="Hint"}
@@ -446,13 +446,12 @@ Don't forget that you can always review the [**material on computerese**](../gui
 
 Please check that your module2 folder has the right files before you zip and upload. Does it look like one of these sample screenshots: 
 
-![Mac](../../../media/units/unit0/module2/mac-module2.png) 
+![Mac](../../../media/units/unit0/module2/mac-module2-23.png) 
 
 or
 
-![Windows](../../../media/units/unit0/module2/win-module2.png)
+![Windows](../../../media/units/unit0/module2/win-module2-23.png)
 
-?
 
 <!-- <br>
 [Previous Module: **Module 0.1**](./module0.1.qmd){.button .prev} [Next Module: **Module 0.3**](./module0.3.qmd){.button .next} -->
