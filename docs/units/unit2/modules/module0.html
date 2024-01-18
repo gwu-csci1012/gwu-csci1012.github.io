@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.2.280">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,10 +17,9 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -47,13 +46,43 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
+    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -89,8 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-submit-button-title": "Submit"
   }
 }</script>
 
@@ -102,16 +130,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Units</li><li class="breadcrumb-item"><a href="../../../units/unit2/modules/module0.html"><strong>Unit 2:</strong> Advanced Topics and Applications</a></li><li class="breadcrumb-item"><a href="../../../units/unit2/modules/module0.html"><strong>Module 0:</strong> Arrays, Tuples, Sets, and Dictionaries</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><strong>Module 0:</strong> Arrays, Tuples, Sets, and Dictionaries</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
       </button>
     </div>
   </nav>
@@ -119,212 +142,183 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../../../"><strong>CSCI1012</strong></a> 
     </div>
       </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
+      <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-        </div>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Home</span></a>
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">Home</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About</span></a>
+  <a href="../../../about.html" class="sidebar-item-text sidebar-link">About</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../schedule.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
+  <a href="../../../schedule.html" class="sidebar-item-text sidebar-link">Schedule</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../course-policies.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Course Policies</span></a>
+  <a href="../../../course-policies.html" class="sidebar-item-text sidebar-link">Course Policies</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../instructors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Instruction Team</span></a>
+  <a href="../../../instructors.html" class="sidebar-item-text sidebar-link">Instruction Team</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../submit-remember.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">What to remember about submitting work</span></a>
+  <a href="../../../submit-remember.html" class="sidebar-item-text sidebar-link">What to remember about submitting work</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/useful.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Useful tools</span></a>
+  <a href="../../../units/useful.html" class="sidebar-item-text sidebar-link">Useful tools</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
- <span class="menu-text">Getting Started</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">Getting Started</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/editor.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Installing an Editor</span></a>
+  <a href="../../../units/unit0/editor.html" class="sidebar-item-text sidebar-link">Installing an Editor</a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
- <span class="menu-text">Units</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Units</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
- <span class="menu-text"><strong>Unit 0:</strong> Getting Started With Programming</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false"><strong>Unit 0:</strong> Getting Started With Programming</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module0.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 0:</strong> Your First Program</span></a>
+  <a href="../../../units/unit0/modules/module0.html" class="sidebar-item-text sidebar-link"><strong>Module 0:</strong> Your First Program</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 1:</strong> A few more getting-started examples</span></a>
+  <a href="../../../units/unit0/modules/module1.html" class="sidebar-item-text sidebar-link"><strong>Module 1:</strong> A few more getting-started examples</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 2:</strong> Functions: a first look</span></a>
+  <a href="../../../units/unit0/modules/module2.html" class="sidebar-item-text sidebar-link"><strong>Module 2:</strong> Functions: a first look</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 3:</strong> Loops: the for-loop</span></a>
+  <a href="../../../units/unit0/modules/module3.html" class="sidebar-item-text sidebar-link"><strong>Module 3:</strong> Loops: the for-loop</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 4:</strong> Integers</span></a>
+  <a href="../../../units/unit0/modules/module4.html" class="sidebar-item-text sidebar-link"><strong>Module 4:</strong> Integers</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 5</strong>: Strings and Characters</span></a>
+  <a href="../../../units/unit0/modules/module5.html" class="sidebar-item-text sidebar-link"><strong>Module 5</strong>: Strings and Characters</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 6</strong>: Real Numbers</span></a>
+  <a href="../../../units/unit0/modules/module6.html" class="sidebar-item-text sidebar-link"><strong>Module 6</strong>: Real Numbers</a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
- <span class="menu-text"><strong>Unit 1:</strong> Key Building Blocks in Programming</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false"><strong>Unit 1:</strong> Key Building Blocks in Programming</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module0.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 0:</strong> A first look at lists</span></a>
+  <a href="../../../units/unit1/modules/module0.html" class="sidebar-item-text sidebar-link"><strong>Module 0:</strong> A first look at lists</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 1:</strong> Conditionals</span></a>
+  <a href="../../../units/unit1/modules/module1.html" class="sidebar-item-text sidebar-link"><strong>Module 1:</strong> Conditionals</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 2:</strong> Functions</span></a>
+  <a href="../../../units/unit1/modules/module2.html" class="sidebar-item-text sidebar-link"><strong>Module 2:</strong> Functions</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 3:</strong> Booleans, strings, built-in functions, types</span></a>
+  <a href="../../../units/unit1/modules/module3.html" class="sidebar-item-text sidebar-link"><strong>Module 3:</strong> Booleans, strings, built-in functions, types</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 4:</strong> <code>while</code> loops, I/O</span></a>
+  <a href="../../../units/unit1/modules/module4.html" class="sidebar-item-text sidebar-link"><strong>Module 4:</strong> <code>while</code> loops, I/O</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 5:</strong> Review</span></a>
+  <a href="../../../units/unit1/modules/module5.html" class="sidebar-item-text sidebar-link"><strong>Module 5:</strong> Review</a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
- <span class="menu-text"><strong>Unit 2:</strong> Advanced Topics and Applications</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true"><strong>Unit 2:</strong> Advanced Topics and Applications</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit2/modules/module0.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><strong>Module 0:</strong> Arrays, Tuples, Sets, and Dictionaries</span></a>
+  <a href="../../../units/unit2/modules/module0.html" class="sidebar-item-text sidebar-link active"><strong>Module 0:</strong> Arrays, Tuples, Sets, and Dictionaries</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit2/modules/module1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 1:</strong> Choropleth Maps</span></a>
+  <a href="../../../units/unit2/modules/module1.html" class="sidebar-item-text sidebar-link"><strong>Module 1:</strong> Choropleth Maps</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit2/modules/module2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 2:</strong> What’s next for you in Computing?</span></a>
+  <a href="../../../units/unit2/modules/module2.html" class="sidebar-item-text sidebar-link"><strong>Module 2:</strong> What’s next for you in Computing?</a>
   </div>
 </li>
       </ul>
@@ -333,14 +327,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../faq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">FAQ</span></a>
+  <a href="../../../faq.html" class="sidebar-item-text sidebar-link">FAQ</a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -370,7 +362,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><strong>Module 0:</strong> Arrays, Tuples, Sets, and Dictionaries</h1>
+<h1 class="title d-none d-lg-block"><strong>Module 0:</strong> Arrays, Tuples, Sets, and Dictionaries</h1>
 </div>
 
 
@@ -434,12 +426,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(evens)</span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Should print: [12, 4, 6, 8, 10, 12]```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.1
 </div>
 </div>
@@ -480,12 +472,12 @@ Exercise 0.1
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(A))     <span class="co"># 2</span></span>
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(A[<span class="dv">0</span>]))  <span class="co"># 5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Note
 </div>
 </div>
@@ -510,12 +502,12 @@ Note
 </ul>
 </div>
 </div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.2
 </div>
 </div>
@@ -601,12 +593,12 @@ Exercise 0.2
 <span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a><span class="co"># A[4] = 9</span></span>
 <span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a><span class="co"># A.append(9)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.4
 </div>
 </div>
@@ -675,12 +667,12 @@ Exercise 0.4
 <span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>E <span class="op">=</span> B <span class="op">-</span> A            <span class="co"># Elementwise subtraction</span></span>
 <span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(E)             <span class="co"># [3, 3, 3]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.5
 </div>
 </div>
@@ -688,12 +680,12 @@ Exercise 0.5
 <p>Type up the above in <code>my_array_example2.py</code> and add a line that multiplies the arrays <code>A</code> and <code>B</code> element-by-element, and prints the result ([ 4 10 18]).</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.6
 </div>
 </div>
@@ -731,12 +723,12 @@ Exercise 0.6
 <li><p>For example, suppose we roll a die 20 times and want to know whether a 6 occured:</p>
 <p><code>python   # Roll a die 20 times   A = np.random.randint(1, 7, size=20)     if 6 in A:       print('Yes, there was a 6')</code></p></li>
 </ul>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.7
 </div>
 </div>
@@ -818,12 +810,12 @@ Exercise 0.7
 <span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(num_cols):</span>
 <span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(A[i,j])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ul>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.9
 </div>
 </div>
@@ -837,12 +829,12 @@ Exercise 0.9
 <span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a><span class="op">-</span><span class="dv">4</span>  <span class="dv">4</span>  <span class="dv">5</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.10
 </div>
 </div>
@@ -882,12 +874,12 @@ Exercise 0.10
 <span id="cb49-13"><a href="#cb49-13" aria-hidden="true" tabindex="-1"></a>dt.draw_greyimage(greypixels)</span>
 <span id="cb49-14"><a href="#cb49-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb49-15"><a href="#cb49-15" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.12
 </div>
 </div>
@@ -921,12 +913,12 @@ Exercise 0.12
 <li>To give you a sense of how primitive these were, your laptop with 8GB RAM has more than 60 million times the memory of the ACE. And yet, the ACE was a landmark technological wonder at its time.</li>
 </ul></li>
 </ul>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.13
 </div>
 </div>
@@ -952,12 +944,12 @@ Exercise 0.13
 <span id="cb51-15"><a href="#cb51-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb51-16"><a href="#cb51-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Add code to print the number of rows, number of columns</span></span>
 <span id="cb51-17"><a href="#cb51-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Should print: rows = 189  columns = 267</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.14
 </div>
 </div>
@@ -1005,12 +997,12 @@ Exercise 0.14
 <span id="cb52-27"><a href="#cb52-27" aria-hidden="true" tabindex="-1"></a><span class="co"># dt.save_greyimage(greypixels2,'eniac-light.jpg')</span></span>
 <span id="cb52-28"><a href="#cb52-28" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb52-29"><a href="#cb52-29" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.15
 </div>
 </div>
@@ -1018,12 +1010,12 @@ Exercise 0.15
 <p>Type up the above in <code>my_image_example4.py</code> and try different values (in the range 10 to 100) of the <code>lightness_factor</code>. In your module pdf, explain the purpose of of the if-statement inside the loop.</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.16
 </div>
 </div>
@@ -1106,12 +1098,12 @@ Exercise 0.16
 <span id="cb53-18"><a href="#cb53-18" aria-hidden="true" tabindex="-1"></a>dt.draw_image(pixels)</span>
 <span id="cb53-19"><a href="#cb53-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb53-20"><a href="#cb53-20" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.17
 </div>
 </div>
@@ -1150,12 +1142,12 @@ Exercise 0.17
 <span id="cb54-27"><a href="#cb54-27" aria-hidden="true" tabindex="-1"></a>dt.save_greyimage(greypixels, <span class="st">'washdc-grey.png'</span>)</span>
 <span id="cb54-28"><a href="#cb54-28" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb54-29"><a href="#cb54-29" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.18
 </div>
 </div>
@@ -1188,12 +1180,12 @@ Exercise 0.18
 <span id="cb55-22"><a href="#cb55-22" aria-hidden="true" tabindex="-1"></a>dt.draw_image(pixels)</span>
 <span id="cb55-23"><a href="#cb55-23" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb55-24"><a href="#cb55-24" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.20
 </div>
 </div>
@@ -1209,12 +1201,12 @@ Exercise 0.20
 <li>Why is this useful? This is essentially what many satellite-image applications do: identify areas of interest for urban planning, crop surveys, environmental assessment (think: rainforest), and so on.</li>
 <li>Notice that this rule does not capture all greenery.</li>
 </ul>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.21
 </div>
 </div>
@@ -1244,12 +1236,12 @@ Exercise 0.21
 <span id="cb56-15"><a href="#cb56-15" aria-hidden="true" tabindex="-1"></a>B[<span class="dv">0</span>] <span class="op">=</span> <span class="dv">5</span>                   <span class="co"># What happens now?</span></span>
 <span id="cb56-16"><a href="#cb56-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(B)</span>
 <span id="cb56-17"><a href="#cb56-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(A)                   <span class="co"># What does this print?</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.23
 </div>
 </div>
@@ -1292,12 +1284,12 @@ Exercise 0.23
 <span id="cb59-13"><a href="#cb59-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(C)</span>
 <span id="cb59-14"><a href="#cb59-14" aria-hidden="true" tabindex="-1"></a>D <span class="op">=</span> A[:<span class="dv">3</span>,:<span class="dv">2</span>,:]    <span class="co"># The pixels in rows 0-2 and cols 0-1 </span></span>
 <span id="cb59-15"><a href="#cb59-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(D)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Note
 </div>
 </div>
@@ -1329,12 +1321,12 @@ Note
 <span id="cb61-14"><a href="#cb61-14" aria-hidden="true" tabindex="-1"></a>dt.draw_image(pixels2)</span>
 <span id="cb61-15"><a href="#cb61-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb61-16"><a href="#cb61-16" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.24
 </div>
 </div>
@@ -1446,12 +1438,12 @@ Exercise 0.24
 <span id="cb72-9"><a href="#cb72-9" aria-hidden="true" tabindex="-1"></a>(x,y) <span class="op">=</span> leftmost(list_of_points)</span>
 <span id="cb72-10"><a href="#cb72-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'leftmost:'</span>, (x,y) )</span>
 <span id="cb72-11"><a href="#cb72-11" aria-hidden="true" tabindex="-1"></a><span class="co"># leftmost: (1, 2)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.25
 </div>
 </div>
@@ -1459,12 +1451,12 @@ Exercise 0.25
 <p>Type up the above in <code>my_tuple_example.py</code>. Then trace through the iteration in your module pdf.</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.26
 </div>
 </div>
@@ -1510,12 +1502,12 @@ Exercise 0.26
 <span id="cb75-8"><a href="#cb75-8" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
 <span id="cb75-9"><a href="#cb75-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'they are not equal'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Given what we’ve said about sets, what will be printed?</p>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.27
 </div>
 </div>
@@ -1523,12 +1515,12 @@ Exercise 0.27
 <p>Type up the above in <code>my_set_example.py</code> to find out.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Note
 </div>
 </div>
@@ -1607,12 +1599,12 @@ Note
 <span id="cb81-23"><a href="#cb81-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(string_to_print)</span>
 <span id="cb81-24"><a href="#cb81-24" aria-hidden="true" tabindex="-1"></a><span class="co"># to this:</span></span>
 <span id="cb81-25"><a href="#cb81-25" aria-hidden="true" tabindex="-1"></a><span class="co"># print(percent_stopwords)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.28
 </div>
 </div>
@@ -1694,12 +1686,12 @@ orange</code></pre>
 <span id="cb90-27"><a href="#cb90-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'# kiwi:'</span>, num_kiwis)</span>
 <span id="cb90-28"><a href="#cb90-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'# oranges:'</span>, num_oranges)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ul>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.29
 </div>
 </div>
@@ -1730,12 +1722,12 @@ Exercise 0.29
 <span id="cb91-14"><a href="#cb91-14" aria-hidden="true" tabindex="-1"></a>        line <span class="op">=</span> data_file.readline()</span>
 <span id="cb91-15"><a href="#cb91-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb91-16"><a href="#cb91-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(counters)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.30
 </div>
 </div>
@@ -1799,12 +1791,12 @@ Exercise 0.30
 <span id="cb96-12"><a href="#cb96-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb96-13"><a href="#cb96-13" aria-hidden="true" tabindex="-1"></a>        line <span class="op">=</span> data_file.readline()    <span class="co"># Get the next line</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ul>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.31
 </div>
 </div>
@@ -1949,12 +1941,12 @@ Exercise 0.31
 <span id="cb102-25"><a href="#cb102-25" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb102-26"><a href="#cb102-26" aria-hidden="true" tabindex="-1"></a><span class="co"># The rest of the code is the same as before ... (read line by line etc)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ul>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.32
 </div>
 </div>
@@ -2023,12 +2015,12 @@ Exercise 0.32
 <li><p>One can access a variable in the other file as well.</p>
 <p><code>python   print(m.pi)</code></p></li>
 </ul>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.33
 </div>
 </div>
@@ -2047,12 +2039,12 @@ Exercise 0.33
 <span id="cb110-2"><a href="#cb110-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
 <span id="cb110-3"><a href="#cb110-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'i='</span>, i, <span class="st">'x='</span>, x)</span>
 <span id="cb110-4"><a href="#cb110-4" aria-hidden="true" tabindex="-1"></a>    x <span class="op">+=</span> <span class="fl">0.1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.34
 </div>
 </div>
@@ -2136,12 +2128,12 @@ Exercise 0.34
 <span id="cb118-5"><a href="#cb118-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
 <span id="cb118-6"><a href="#cb118-6" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> random.uniform(<span class="fl">1.0</span>, <span class="fl">10.0</span>)</span>
 <span id="cb118-7"><a href="#cb118-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 0.35
 </div>
 </div>
@@ -2218,23 +2210,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
+    target: function(trigger) {
+      return trigger.previousElementSibling;
     }
   });
   clipboard.on('success', function(e) {
@@ -2299,92 +2277,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -2427,13 +2319,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">The course material is sourced from <strong>Prof.&nbsp;Simha’s</strong> webpage: <a href="https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/" class="uri">https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/</a> <br>This is a Quarto website. To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</div>
-    <div class="nav-footer-right">
-      &nbsp;
-    </div>
+      <div class="nav-footer-center">The course material is sourced from <strong>Prof.&nbsp;Simha’s</strong> webpage: <a href="https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/" class="uri">https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/</a> <br>This is a Quarto website. To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</div>
   </div>
 </footer>
 

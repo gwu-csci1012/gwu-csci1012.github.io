@@ -77,7 +77,7 @@ There is one 75-minute class meeting per week and one 75-minute lab per week. St
 
 ## Additional important information about grading policy:
 
-- Late submissions on Homework and projects will not be acceptable.
+- Late submissions (See [Information in "About"](./about.qmd#late-work-policy)).
 - Any questions or follow up about the assignments will be done only within 2 weeks of submission deadline.
   - Following the week after the submission deadline no further discussion on the assignment will be done.
 

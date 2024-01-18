@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.2.280">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,10 +17,9 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -47,13 +46,43 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
+    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -91,8 +120,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-submit-button-title": "Submit"
   }
 }</script>
 
@@ -104,16 +132,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Units</li><li class="breadcrumb-item"><a href="../../../units/unit0/modules/module0.html"><strong>Unit 0:</strong> Getting Started With Programming</a></li><li class="breadcrumb-item"><a href="../../../units/unit0/modules/module3.html"><strong>Module 3:</strong> Loops: the for-loop</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><strong>Module 3:</strong> Loops: the for-loop</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
       </button>
     </div>
   </nav>
@@ -121,212 +144,183 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../../../"><strong>CSCI1012</strong></a> 
     </div>
       </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
+      <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-        </div>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Home</span></a>
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">Home</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About</span></a>
+  <a href="../../../about.html" class="sidebar-item-text sidebar-link">About</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../schedule.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
+  <a href="../../../schedule.html" class="sidebar-item-text sidebar-link">Schedule</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../course-policies.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Course Policies</span></a>
+  <a href="../../../course-policies.html" class="sidebar-item-text sidebar-link">Course Policies</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../instructors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Instruction Team</span></a>
+  <a href="../../../instructors.html" class="sidebar-item-text sidebar-link">Instruction Team</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../submit-remember.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">What to remember about submitting work</span></a>
+  <a href="../../../submit-remember.html" class="sidebar-item-text sidebar-link">What to remember about submitting work</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/useful.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Useful tools</span></a>
+  <a href="../../../units/useful.html" class="sidebar-item-text sidebar-link">Useful tools</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
- <span class="menu-text">Getting Started</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">Getting Started</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/editor.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Installing an Editor</span></a>
+  <a href="../../../units/unit0/editor.html" class="sidebar-item-text sidebar-link">Installing an Editor</a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
- <span class="menu-text">Units</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Units</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text"><strong>Unit 0:</strong> Getting Started With Programming</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true"><strong>Unit 0:</strong> Getting Started With Programming</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module0.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 0:</strong> Your First Program</span></a>
+  <a href="../../../units/unit0/modules/module0.html" class="sidebar-item-text sidebar-link"><strong>Module 0:</strong> Your First Program</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 1:</strong> A few more getting-started examples</span></a>
+  <a href="../../../units/unit0/modules/module1.html" class="sidebar-item-text sidebar-link"><strong>Module 1:</strong> A few more getting-started examples</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 2:</strong> Functions: a first look</span></a>
+  <a href="../../../units/unit0/modules/module2.html" class="sidebar-item-text sidebar-link"><strong>Module 2:</strong> Functions: a first look</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module3.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><strong>Module 3:</strong> Loops: the for-loop</span></a>
+  <a href="../../../units/unit0/modules/module3.html" class="sidebar-item-text sidebar-link active"><strong>Module 3:</strong> Loops: the for-loop</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 4:</strong> Integers</span></a>
+  <a href="../../../units/unit0/modules/module4.html" class="sidebar-item-text sidebar-link"><strong>Module 4:</strong> Integers</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 5</strong>: Strings and Characters</span></a>
+  <a href="../../../units/unit0/modules/module5.html" class="sidebar-item-text sidebar-link"><strong>Module 5</strong>: Strings and Characters</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 6</strong>: Real Numbers</span></a>
+  <a href="../../../units/unit0/modules/module6.html" class="sidebar-item-text sidebar-link"><strong>Module 6</strong>: Real Numbers</a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
- <span class="menu-text"><strong>Unit 1:</strong> Key Building Blocks in Programming</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false"><strong>Unit 1:</strong> Key Building Blocks in Programming</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module0.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 0:</strong> A first look at lists</span></a>
+  <a href="../../../units/unit1/modules/module0.html" class="sidebar-item-text sidebar-link"><strong>Module 0:</strong> A first look at lists</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 1:</strong> Conditionals</span></a>
+  <a href="../../../units/unit1/modules/module1.html" class="sidebar-item-text sidebar-link"><strong>Module 1:</strong> Conditionals</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 2:</strong> Functions</span></a>
+  <a href="../../../units/unit1/modules/module2.html" class="sidebar-item-text sidebar-link"><strong>Module 2:</strong> Functions</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 3:</strong> Booleans, strings, built-in functions, types</span></a>
+  <a href="../../../units/unit1/modules/module3.html" class="sidebar-item-text sidebar-link"><strong>Module 3:</strong> Booleans, strings, built-in functions, types</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 4:</strong> <code>while</code> loops, I/O</span></a>
+  <a href="../../../units/unit1/modules/module4.html" class="sidebar-item-text sidebar-link"><strong>Module 4:</strong> <code>while</code> loops, I/O</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 5:</strong> Review</span></a>
+  <a href="../../../units/unit1/modules/module5.html" class="sidebar-item-text sidebar-link"><strong>Module 5:</strong> Review</a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
- <span class="menu-text"><strong>Unit 2:</strong> Advanced Topics and Applications</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false"><strong>Unit 2:</strong> Advanced Topics and Applications</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit2/modules/module0.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 0:</strong> Arrays, Tuples, Sets, and Dictionaries</span></a>
+  <a href="../../../units/unit2/modules/module0.html" class="sidebar-item-text sidebar-link"><strong>Module 0:</strong> Arrays, Tuples, Sets, and Dictionaries</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit2/modules/module1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 1:</strong> Choropleth Maps</span></a>
+  <a href="../../../units/unit2/modules/module1.html" class="sidebar-item-text sidebar-link"><strong>Module 1:</strong> Choropleth Maps</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit2/modules/module2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 2:</strong> What’s next for you in Computing?</span></a>
+  <a href="../../../units/unit2/modules/module2.html" class="sidebar-item-text sidebar-link"><strong>Module 2:</strong> What’s next for you in Computing?</a>
   </div>
 </li>
       </ul>
@@ -335,14 +329,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../faq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">FAQ</span></a>
+  <a href="../../../faq.html" class="sidebar-item-text sidebar-link">FAQ</a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -367,7 +359,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><strong>Module 3:</strong> Loops: the for-loop</h1>
+<h1 class="title d-none d-lg-block"><strong>Module 3:</strong> Loops: the for-loop</h1>
 </div>
 
 
@@ -455,12 +447,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>print_big_M()</span>
 <span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">6</span>):</span>
 <span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    print_big_O()</span></code></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.1
 </div>
 </div>
@@ -468,12 +460,12 @@ Exercise 3.1
 <p>Type up the above in <code>animal_sounds_loop.py</code> and run it. Also save the file so that it can be submitted (You will need to save the appropriate files for every such “type up” exercise).</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.2
 </div>
 </div>
@@ -485,12 +477,12 @@ Exercise 3.2
 <p>To do so, we’ll write a different for-loop:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">6</span>):</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.3
 </div>
 </div>
@@ -517,12 +509,12 @@ Exercise 3.3
 <div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">6</span>):</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'Hello'</span>)</span></code></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.4
 </div>
 </div>
@@ -563,12 +555,12 @@ Exercise 3.4
 <p><strong>1.</strong> First, we could have named our for-loop variable</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> count <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">6</span>):</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(count)</span></code></pre></div>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Note
 </div>
 </div>
@@ -579,12 +571,12 @@ Note
 <p><strong>2.</strong> To go through a loop five times, any range of numbers will do:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>, <span class="dv">16</span>):</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code></pre></div>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Note
 </div>
 </div>
@@ -619,12 +611,12 @@ Note
 <li>In the last iteration, i becomes 11.</li>
 <li>Finally, when i is decremented to 10, the loop is ended.</li>
 </ul>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.6
 </div>
 </div>
@@ -632,12 +624,12 @@ Exercise 3.6
 <p>Type up the above four examples in <code>my_forloop_variation1.py</code>, <code>my_forloop_variation2.py</code>, <code>my_forloop_variation3.py</code>, and <code>my_forloop_variation4.py</code>. Run to confirm the output.</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.7
 </div>
 </div>
@@ -645,12 +637,12 @@ Exercise 3.7
 <p>In <code>count_odd_up.py</code>, write a loop to print the odd numbers from 1 to 25 (thus, skipping by 2, and including 1 and 25 in the output).</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.8
 </div>
 </div>
@@ -691,12 +683,12 @@ Exercise 3.8
 <li>One could use two double quotes in succession as well.</li>
 <li><code>print()</code> merely goes to the next line. <br>(Or, stated differently, ends the current line being printed.)</li>
 </ul>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.10
 </div>
 </div>
@@ -704,12 +696,12 @@ Exercise 3.10
 <p>Add a row for <code>5</code> (with five of them), writing your code in <code>my_forloop_print.py</code>.</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.11
 </div>
 </div>
@@ -742,12 +734,12 @@ When the value is 2, print a row of two 2’s <br>When the value is 3, print a r
 <section id="video-2" class="level6">
 <h6 class="anchored" data-anchor-id="video-2"><strong>3.12 Video</strong></h6>
 <div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/units/unit0/module3/u0-mod3.12.mp4"></video></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.13
 </div>
 </div>
@@ -794,12 +786,12 @@ Exercise 3.13
 <li><p>Since j is 2, it’s within the range, and we enter the outer for-loop.</p>
 <ul>
 <li><p>Now we encounter the inner for-loop, where i is set to 0</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Note
 </div>
 </div>
@@ -813,12 +805,12 @@ Note
 <li><p>So now inside the inner-loop, we print 2 again <img src="../../../media/units/unit0/module3/looptrace7.png" class="img-fluid"></p></li>
 <li><p>Then, at the end of the inner for-loop, we return to the top where i increments to 2.</p></li>
 <li><p>Since i is at the limit, we exit the inner for-loop. <img src="../../../media/units/unit0/module3/looptrace8.png" class="img-fluid"></p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Note
 </div>
 </div>
@@ -861,12 +853,12 @@ Note
 </ul>
 <p>Yes, that was long. But doing this many times will help you understand how to read programs. Later, you will become good at this and will, with a quick glance at the inner-loop, say “Oh, this prints 2 twice in the first iteration of the outer.”</p>
 <p><strong>Important:</strong> when you need to submit a program’s traced-out execution, use a shorter version. For example, <a href="../../../media/units/unit0/module3/TracingExample.pdf"><strong>see this PDF for the above program</strong></a>.</p>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.14
 </div>
 </div>
@@ -885,12 +877,12 @@ Exercise 3.14
 <section id="video-3" class="level6">
 <h6 class="anchored" data-anchor-id="video-3"><strong>3.15 Video</strong></h6>
 <div class="quarto-video"><video id="video_shortcode_videojs_video4" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/units/unit0/module3/u0-mod3.15.mp4"></video></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.16
 </div>
 </div>
@@ -904,12 +896,12 @@ Exercise 3.16
 <p>Use a nested for-loop as in earlier examples to print the requisite number of spaces before printing a digit. Write your code in <code>my_diagonal_print.py</code>.</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.17
 </div>
 </div>
@@ -932,12 +924,12 @@ Exercise 3.17
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(k, end<span class="op">=</span><span class="st">' '</span>)</span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="dv">2</span><span class="op">*</span>k)</span>
 <span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'-'</span>)</span></code></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.19
 </div>
 </div>
@@ -971,12 +963,12 @@ Exercise 3.19
 <span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">11</span>, <span class="dv">2</span>):</span>
 <span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>    functionThree()</span></code></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.20
 </div>
 </div>
@@ -993,12 +985,12 @@ Exercise 3.20
 <h2 class="anchored" data-anchor-id="when-things-go-wrong">3.5 When things go wrong</h2>
 <p>As code gets more complex, it gets easier to make mistakes, and harder to find them.</p>
 <p>In each of the programs below, try to determine the error without compiling the program. Then, write up the program, compile and see what the compiler says. After that, fix the error.</p>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.22
 </div>
 </div>
@@ -1008,12 +1000,12 @@ Exercise 3.22
 <p>Write your corrected code in <code>my_loop_exercise1.py</code>.</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.23
 </div>
 </div>
@@ -1023,12 +1015,12 @@ Exercise 3.23
 <p>Write your corrected code in <code>my_loop_exercise2.py</code>.</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.24
 </div>
 </div>
@@ -1038,12 +1030,12 @@ Exercise 3.24
 <p>Write your corrected code in <code>my_loop_exercise3.py</code>.</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.25
 </div>
 </div>
@@ -1053,12 +1045,12 @@ Exercise 3.25
 <p>Write your corrected code in <code>my_loop_exercise4.py</code>.</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.26
 </div>
 </div>
@@ -1068,12 +1060,12 @@ Exercise 3.26
 <p>Write your corrected code in <code>my_loop_exercise5.py</code>.</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.27
 </div>
 </div>
@@ -1091,12 +1083,12 @@ Exercise 3.27
 <li>The process of identifying and fixing logical errors is called <em>debugging</em>.</li>
 <li>A <em>bug</em> is a logical error.</li>
 </ul>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.28
 </div>
 </div>
@@ -1131,12 +1123,12 @@ Exercise 3.28
 <span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>draw_rectangles()</span>
 <span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.29
 </div>
 </div>
@@ -1159,12 +1151,12 @@ Exercise 3.29
 <li>In the second iteration i is 20, which means the top left corner is 60 from the left. And so on.</li>
 </ul></li>
 </ul>
-<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
+<div class="callout-caption-container flex-fill">
 Exercise 3.30
 </div>
 </div>
@@ -1329,92 +1321,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -1457,13 +1363,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">The course material is sourced from <strong>Prof.&nbsp;Simha’s</strong> webpage: <a href="https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/" class="uri">https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/</a> <br>This is a Quarto website. To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</div>
-    <div class="nav-footer-right">
-      &nbsp;
-    </div>
+      <div class="nav-footer-center">The course material is sourced from <strong>Prof.&nbsp;Simha’s</strong> webpage: <a href="https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/" class="uri">https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/</a> <br>This is a Quarto website. To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</div>
   </div>
 </footer>
 <script>videojs(video_shortcode_videojs_video1);</script>
