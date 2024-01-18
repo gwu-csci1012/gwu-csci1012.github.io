@@ -58,7 +58,7 @@ print('Something')
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.1
 
-Under your `unit0`, create a `module0.1` folder (if you haven't already), and then write up the above in `my_comments.py`. Fix the second comment to start at the beginning of the line, and add an entirely new comment line of your own.
+Under your `unit0`, create a `module1` folder (if you haven't already), and then write up the above in `my_comments.py`. Fix the second comment to start at the beginning of the line, and add an entirely new comment line of your own.
 :::
 
 Sometimes one needs a comment to spill over multiple lines, as in
