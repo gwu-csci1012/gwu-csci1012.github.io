@@ -122,7 +122,7 @@ What we mean by _computerese_:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.2
 
-Develop your computerese skills by following [these instructions.](../guides/computerese.qmd)
+Develop your computerese skills by following [these instructions.](../guides/computerese.qmd). There is nothing to submit in this exercise.
 :::
 
 :::{.callout-note}
@@ -140,7 +140,7 @@ print('My name is X')
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.3
 
-Type up this program but use your own name instead of X. Save the file in the `module0` folder as `myname.py`. There is nothing to submit in this exercise.
+Type up this program but use your own name instead of X. Save the file in the `module0` folder as `myname.py`.
 :::
 
 :::{.callout-note}
