@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>CSCI1012 - Instructions for typing and running your first program</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="../../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      **CSCI1012**
+      </li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../../"><strong>CSCI1012</strong></a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course-policies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Policies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../instructors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Instruction Team</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../submit-remember.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to remember about submitting work</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/useful.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Useful tools</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+ <span class="menu-text">Getting Started</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit0/editor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Installing an Editor</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text">Units</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text"><strong>Unit 0:</strong> Getting Started With Programming</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit0/modules/module0.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 0:</strong> Your First Program</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit0/modules/module1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 1:</strong> A few more getting-started examples</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit0/modules/module2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 2:</strong> Functions: a first look</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit0/modules/module3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 3:</strong> Loops: the for-loop</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit0/modules/module4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 4:</strong> Integers</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit0/modules/module5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 5</strong>: Strings and Characters</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit0/modules/module6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 6</strong>: Real Numbers</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text"><strong>Unit 1:</strong> Key Building Blocks in Programming</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit1/modules/module0.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 0:</strong> A first look at lists</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit1/modules/module1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 1:</strong> Conditionals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit1/modules/module2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 2:</strong> Functions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit1/modules/module3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 3:</strong> Booleans, strings, built-in functions, types</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit1/modules/module4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 4:</strong> <code>while</code> loops, I/O</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit1/modules/module5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 5:</strong> Review</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+ <span class="menu-text"><strong>Unit 2:</strong> Advanced Topics and Applications</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit2/modules/module0.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 0:</strong> Arrays, Tuples, Sets, and Dictionaries</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit2/modules/module1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 1:</strong> Choropleth Maps</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit2/modules/module2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 2:</strong> What’s next for you in Computing?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../faq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FAQ</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
+  <li><a href="#macos-users" id="toc-macos-users" class="nav-link" data-scroll-target="#macos-users">macOS Users</a>
+  <ul class="collapse">
+  <li><a href="#step-1-installing-anaconda" id="toc-step-1-installing-anaconda" class="nav-link" data-scroll-target="#step-1-installing-anaconda">Step 1: Installing Anaconda</a></li>
+  <li><a href="#step-2-installing-thonny" id="toc-step-2-installing-thonny" class="nav-link" data-scroll-target="#step-2-installing-thonny">Step 2: Installing Thonny</a></li>
+  <li><a href="#step-3-opening-thonny" id="toc-step-3-opening-thonny" class="nav-link" data-scroll-target="#step-3-opening-thonny">Step 3: Opening Thonny</a></li>
+  <li><a href="#step-4-option-a-helloworld-in-thonny" id="toc-step-4-option-a-helloworld-in-thonny" class="nav-link" data-scroll-target="#step-4-option-a-helloworld-in-thonny">Step 4 (Option A): Helloworld in Thonny</a></li>
+  <li><a href="#step-4-option-b-helloworld-in-spyder" id="toc-step-4-option-b-helloworld-in-spyder" class="nav-link" data-scroll-target="#step-4-option-b-helloworld-in-spyder">Step 4 (Option B): Helloworld in Spyder</a></li>
+  <li><a href="#step-5-installing-matplotlib-or-any-package-for-thonny-users" id="toc-step-5-installing-matplotlib-or-any-package-for-thonny-users" class="nav-link" data-scroll-target="#step-5-installing-matplotlib-or-any-package-for-thonny-users">Step 5: Installing Matplotlib (or any package) for Thonny Users</a></li>
+  </ul></li>
+  <li><a href="#windows-users" id="toc-windows-users" class="nav-link" data-scroll-target="#windows-users">Windows Users</a>
+  <ul class="collapse">
+  <li><a href="#step-1-installing-anaconda-1" id="toc-step-1-installing-anaconda-1" class="nav-link" data-scroll-target="#step-1-installing-anaconda-1">Step 1: Installing Anaconda</a></li>
+  <li><a href="#step-2-installing-thonny-1" id="toc-step-2-installing-thonny-1" class="nav-link" data-scroll-target="#step-2-installing-thonny-1">Step 2: Installing Thonny</a></li>
+  <li><a href="#step-3-opening-thonny-1" id="toc-step-3-opening-thonny-1" class="nav-link" data-scroll-target="#step-3-opening-thonny-1">Step 3: Opening Thonny</a></li>
+  <li><a href="#step-4-option-a-helloworld-in-thonny-1" id="toc-step-4-option-a-helloworld-in-thonny-1" class="nav-link" data-scroll-target="#step-4-option-a-helloworld-in-thonny-1">Step 4 (Option A): Helloworld in Thonny</a></li>
+  <li><a href="#step-4-option-b-helloworld-in-spyder-1" id="toc-step-4-option-b-helloworld-in-spyder-1" class="nav-link" data-scroll-target="#step-4-option-b-helloworld-in-spyder-1">Step 4 (Option B): Helloworld in Spyder</a></li>
+  <li><a href="#step-5-installing-matplotlib-for-thonny-users" id="toc-step-5-installing-matplotlib-for-thonny-users" class="nav-link" data-scroll-target="#step-5-installing-matplotlib-for-thonny-users">Step 5: Installing Matplotlib for Thonny Users</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Instructions for typing and running your first program</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="objectives" class="level2">
+<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
+<p>We will now have you <em>type</em>, run, and save your first <em>computer program</em>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Programs are <em>typed</em> in using your computer’s keyboard, just as you would type in an email or text document.</li>
+<li>And just as the “thing you are typing into” is different for email and for text-editing, there is a different “thing” to type programs into.</li>
+<li>The <em>typing</em> is one part of getting a program. If you just type your program, it will just be sitting there on your computer. But you want to go the next step and <em>run</em> (or, execute, as we say) the program. Typing and not-running is loosely analogous to typing an email but not <em>sending</em> it (the email will just remain in composed-form, but go nowhere). Similarly, typing text into Word doesn’t mean it gets “published”.</li>
+<li>The “thing” into which you type and run your program is called a <em>code editor</em> or an IDE (Integrated Development Environment, a mouthful).</li>
+<li>We are going to give you the option of using one of two code editors, <em>Thonny</em> or <em>Spyder</em>. Think of them as apps that help you type and run programs.</li>
+</ul>
+</div>
+</div>
+<p>Before we get to typing in a program, we first (if not already done) need to download and <em>install</em> Python and either <strong>Thonny</strong> or <strong>Spyder</strong>.</p>
+<ul>
+<li>The term <em>install</em> means: you download software on your computer and get it to run. This is something you do just once.</li>
+<li>When you need to run the software again, you search for it on your computer (since it’s already installed) and merely run it.</li>
+<li>Thus, you will perform <b>Steps 1 and 2 just once</b> for this course.</li>
+<li>And <b>Steps 3 and 4</b> repeatedly as you write code.</li>
+<li>Also, if you start off with one editor and change your mind, you can come back here to install the other editor and learn how to use it.</li>
+</ul>
+<section id="step-1-install-anaconda" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-install-anaconda"><strong>Step 1: Install Anaconda</strong></h4>
+<p>Pick between these two options and click through to follow instructions in installing Anaconda.</p>
+<ul>
+<li><a href="../../../units/unit0/guides/hello.html#install-anaconda-mac"><strong>Anaconda for Mac users</strong></a></li>
+<li><a href="../../../units/unit0/guides/hello.html#install-anaconda-win"><strong>Anaconda for Windows users</strong></a></li>
+</ul>
+<p><em>Then come back here and proceed with Step 2.</em></p>
+<p>Incidentally, you might be asking: what exactly is Anaconda and what does it have to do with Python other than its name?</p>
+<ul>
+<li>Python is a programming language. Typically a language alone is not enough to get many useful programming tasks done.</li>
+<li>We need additional software that’s useful. Anaconda is a bundle that includes Python and this additional software. You install it once on your computer and you can then avail of all kinds of useful things related to Python.</li>
+<li>The one thing it does not have, sadly, is the Thonny editor, so we’ll show you how to install that.</li>
+</ul>
+</section>
+<section id="step-2-install-a-code-editor" class="level4">
+<h4 class="anchored" data-anchor-id="step-2-install-a-code-editor"><strong>Step 2: Install a code editor</strong></h4>
+<p>Select ONE of the following options:</p>
+<ul>
+<li><p>Mac <em>(Option A)</em>: <a href="../../../units/unit0/guides/hello.html#install-thonny-mac"><strong>Thonny for Mac users</strong></a></p></li>
+<li><p>Mac <em>(Option B)</em>: <strong>There are no special instructions because Spyder comes bundled with Anaconda</strong>.</p></li>
+<li><p>Windows <em>(Option A)</em>: <a href="../../../units/unit0/guides/hello.html#install-thonny-win"><strong>Thonny for Windows users</strong></a></p></li>
+<li><p>Windows <em>(Option B)</em>: <strong>There are no special instructions because Spyder comes bundled with Anaconda</strong>.</p></li>
+</ul>
+</section>
+<section id="step-3-open-a-code-editor" class="level4">
+<h4 class="anchored" data-anchor-id="step-3-open-a-code-editor"><strong>Step 3: Open a code editor</strong></h4>
+<p>Choose between:</p>
+<ul>
+<li><p>Mac <em>(Option A)</em>: <a href="../../../units/unit0/guides/hello.html#open-thonny-mac"><strong>Looking for and opening Thonny</strong></a></p></li>
+<li><p>Mac <em>(Option B)</em>: Looking for, and opening Spyder on a Mac is similar to looking for and opening Thonny.</p></li>
+<li><p>Windows <em>(Option A)</em>: <a href="../../../units/unit0/guides/hello.html#open-thonny-win"><strong>Looking for and opening Thonny</strong></a></p></li>
+<li><p>Windows <em>(Option B)</em>: Looking for, and opening Spyder on Windows is similar to looking for and opening Thonny.</p></li>
+</ul>
+</section>
+<section id="step-4-type-and-execute-helloworld.py" class="level4">
+<h4 class="anchored" data-anchor-id="step-4-type-and-execute-helloworld.py"><strong>Step 4: Type and Execute <code>helloworld.py</code></strong></h4>
+<p>Choose between:</p>
+<ul>
+<li><p>Mac <em>(Option A)</em>: <a href="../../../units/unit0/guides/hello.html#hello-thonny-mac"><strong>Helloworld for Mac users using Thonny</strong></a></p></li>
+<li><p>Mac <em>(Option B)</em>: <a href="../../../units/unit0/guides/hello.html#hello-spyder-mac"><strong>Helloworld for Mac users using Spyder</strong></a></p></li>
+<li><p>Windows <em>(Option A)</em>: <a href="../../../units/unit0/guides/hello.html#hello-thonny-win"><strong>Helloworld for Windows users using Thonny</strong></a></p></li>
+<li><p>Windows <em>(Option B)</em>: <a href="../../../units/unit0/guides/hello.html#hello-spyder-win"><strong>Helloworld for Windows users using Spyder</strong></a></p></li>
+</ul>
+</section>
+<section id="step-5-install-matplotlib-for-thonny-users" class="level4">
+<h4 class="anchored" data-anchor-id="step-5-install-matplotlib-for-thonny-users"><strong>Step 5: Install matplotlib for Thonny users</strong></h4>
+<p>What is matplotlib? It’s a plotting package that we’ll use. This comes packaged with Spyder and so, only Thonny users need to download this. Thonny is a nice editor and so Thonny users cheerfully do this additional step in order to use plotting along with Thonny.</p>
+<ul>
+<li><p>Mac Users: <a href="../../../units/unit0/guides/hello.html#install-matplotlib-mac"><strong>Install matplotlib for Thonny</strong></a></p></li>
+<li><p>Windows Users: <a href="../../../units/unit0/guides/hello.html#install-matplotlib-win"><strong>Install matplotlib for Thonny</strong></a></p></li>
+</ul>
+</section>
+</section>
+<section id="macos-users" class="level2">
+<h2 class="anchored" data-anchor-id="macos-users">macOS Users</h2>
+<section id="step-1-installing-anaconda" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-installing-anaconda">Step 1: Installing Anaconda</h3>
+<div id="install-anaconda-mac">
+
+</div>
+<p>Learn how to install <strong>Anaconda</strong> and open <em>Spyder</em> (which comes bundled with Anaconda) by following <a href="../../../units/unit0/guides/anaconda-mac.html"><strong>this guide</strong></a>.</p>
+</section>
+<section id="step-2-installing-thonny" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-installing-thonny">Step 2: Installing Thonny</h3>
+<div id="install-thonny-mac">
+
+</div>
+<p>Learn how to install <strong>Thonny</strong> by following <a href="../../../units/unit0/guides/thonny-mac.html"><strong>this guide</strong></a>.</p>
+</section>
+<section id="step-3-opening-thonny" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-opening-thonny">Step 3: Opening Thonny</h3>
+<div id="open-thonny-mac">
+
+</div>
+<p>These screenshots explain how to open Thonny:</p>
+<section id="a.1" class="level4">
+<h4 class="anchored" data-anchor-id="a.1"><strong>3.A.1</strong></h4>
+<p><img src="../../../media/hello/spotlight-thonny-1.png" class="img-fluid"></p>
+</section>
+<section id="a.2" class="level4">
+<h4 class="anchored" data-anchor-id="a.2"><strong>3.A.2</strong></h4>
+<p><img src="../../../media/hello/spotlight-thonny-2.png" class="img-fluid"></p>
+</section>
+<section id="a.3" class="level4">
+<h4 class="anchored" data-anchor-id="a.3"><strong>3.A.3</strong></h4>
+<p><img src="../../../media/hello/spotlight-thonny-3.png" class="img-fluid"></p>
+</section>
+<section id="a.4" class="level4">
+<h4 class="anchored" data-anchor-id="a.4"><strong>3.A.4</strong></h4>
+<p>You now have opened Thonny <img src="../../../media/hello/spotlight-thonny-4.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>When you open Thonny you aren’t opening program files (yet). It’s similar to opening Word without naming a text file to work on.</li>
+<li>Your program files are going to be in specific folders. You need to look for them, and when you create new ones, save them in specific folders.</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="step-4-option-a-helloworld-in-thonny" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-option-a-helloworld-in-thonny">Step 4 (Option A): Helloworld in Thonny</h3>
+<div id="hello-thonny-mac">
+
+</div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/hello/u0-mod0-mac-thonny.mp4"></video></div>
+</section>
+<section id="step-4-option-b-helloworld-in-spyder" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-option-b-helloworld-in-spyder">Step 4 (Option B): Helloworld in Spyder</h3>
+<div id="hello-spyder-mac">
+
+</div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/hello/u0-mod0-mac-spyder.mp4"></video></div>
+</section>
+<section id="step-5-installing-matplotlib-or-any-package-for-thonny-users" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-installing-matplotlib-or-any-package-for-thonny-users">Step 5: Installing Matplotlib (or any package) for Thonny Users</h3>
+<div id="install-matplotlib-mac">
+
+</div>
+<p>How to add a package (like Matplotlib):</p>
+<ul>
+<li><p>To add a package (which will only be necessary for those using Thonny), first, open Thonny, and go to “<strong>Tools</strong>”. From there, click on “<strong>Manage Packages</strong>”. <img src="../../../media/hello/matplotlib/step1mac.jpg" class="img-fluid"></p></li>
+<li><p>Then, you will see a window like what is shown in the image above. Search for the “<strong>package</strong>” you need to install or remove. In this case, we have used the example of “<strong>Matplotlib</strong>”, which you will need to have installed for some exercises. Once you’ve typed the name of the package, click “<strong>Find package from PyPI</strong>” or press the enter/return key. <img src="../../../media/hello/matplotlib/step2.png" class="img-fluid"></p></li>
+<li><p>To add the package, click the install button. You will then see a small popup while the package is installed. <img src="../../../media/hello/matplotlib/step3add.png" class="img-fluid"></p></li>
+</ul>
+</section>
+</section>
+<section id="windows-users" class="level2">
+<h2 class="anchored" data-anchor-id="windows-users">Windows Users</h2>
+<section id="step-1-installing-anaconda-1" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-installing-anaconda-1">Step 1: Installing Anaconda</h3>
+<div id="install-anaconda-win">
+
+</div>
+<p>Learn how to installing Anaconda and open Spyder on Windows by following <a href="../../../units/unit0/guides/anaconda-windows.html"><strong>this guide</strong></a>.</p>
+</section>
+<section id="step-2-installing-thonny-1" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-installing-thonny-1">Step 2: Installing Thonny</h3>
+<div id="install-thonny-win">
+
+</div>
+<p>Learn how to installing Thonny on Windows by following <a href="../../../units/unit0/guides/thonny-windows.html"><strong>this guide</strong></a>.</p>
+</section>
+<section id="step-3-opening-thonny-1" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-opening-thonny-1">Step 3: Opening Thonny</h3>
+<div id="open-thonny-win">
+
+</div>
+<p>The following screenshots explain how to open Thonny:</p>
+<section id="a.1-1" class="level4">
+<h4 class="anchored" data-anchor-id="a.1-1"><strong>3.A.1</strong></h4>
+<p><img src="../../../media/hello/windows-thonny-1.png" class="img-fluid"></p>
+</section>
+<section id="a.2-1" class="level4">
+<h4 class="anchored" data-anchor-id="a.2-1"><strong>3.A.2</strong></h4>
+<p><img src="../../../media/hello/windows-thonny-2.png" class="img-fluid"></p>
+</section>
+<section id="a.3-1" class="level4">
+<h4 class="anchored" data-anchor-id="a.3-1"><strong>3.A.3</strong></h4>
+<p><img src="../../../media/hello/windows-thonny-3.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>When you open Thonny you aren’t opening program files (yet). It’s similar to opening Word without naming a text file to work on.</li>
+<li>Your program files are going to be in specific folders. You need to look for them, and when you create new ones, save them in specific folders.</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="step-4-option-a-helloworld-in-thonny-1" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-option-a-helloworld-in-thonny-1">Step 4 (Option A): Helloworld in Thonny</h3>
+<div id="hello-thonny-win">
+
+</div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/hello/u0-mod0-win-spyder.mp4"></video></div>
+</section>
+<section id="step-4-option-b-helloworld-in-spyder-1" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-option-b-helloworld-in-spyder-1">Step 4 (Option B): Helloworld in Spyder</h3>
+<div id="hello-spyder-win">
+
+</div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video4" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../../../media/hello/u0-mod0-win-spyder.mp4"></video></div>
+</section>
+<section id="step-5-installing-matplotlib-for-thonny-users" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-installing-matplotlib-for-thonny-users">Step 5: Installing Matplotlib for Thonny Users</h3>
+<div id="install-matplotlib-win">
+
+</div>
+<p>How to add a package (like Matplotlib):</p>
+<ul>
+<li><p>To add a package (which will only be necessary for those using Thonny), first, open Thonny, and go to “<strong>Tools</strong>”. From there, click on “<strong>Manage Packages</strong>”.</p>
+<p><img src="../../../media/hello/matplotlib/step1win.png" class="img-fluid"></p></li>
+<li><p>Then, you will see a window like what is shown in the image above. Search for the “<strong>package</strong>” you need to install or remove. In this case, we have used the example of “<strong>Matplotlib</strong>”, which you will need to have installed for some exercises. Once you’ve typed the name of the package, click “<strong>Find package from PyPI</strong>” or press the enter/return key.</p>
+<p><img src="../../../media/hello/matplotlib/step2.png" class="img-fluid"></p></li>
+<li><p>To add the package, click the install button. You will then see a small popup while the package is installed.</p>
+<p><img src="../../../media/hello/matplotlib/step3add.png" class="img-fluid"></p></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">The course material is sourced from <strong>Prof.&nbsp;Simha’s</strong> webpage: <a href="https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/" class="uri">https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/</a> <br>This is a Quarto website. To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>videojs(video_shortcode_videojs_video1);</script>
+<script>videojs(video_shortcode_videojs_video2);</script>
+<script>videojs(video_shortcode_videojs_video3);</script>
+<script>videojs(video_shortcode_videojs_video4);</script>
+
+
+
+</body></html>
