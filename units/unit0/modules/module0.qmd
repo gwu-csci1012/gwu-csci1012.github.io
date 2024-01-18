@@ -68,7 +68,7 @@ Next, you will try this yourself.
 ::: {.callout-caution appearance="simple" icon=false}
 ### Exercise 0.1
 
-Write and run the `helloworld` program by following [**these instructions**](../guides/hello.qmd), save it and submit it as `test1.py` in your `module0.zip`.
+Write and run the `helloworld` program by following [**these instructions**](../guides/hello.qmd), save it and submit it as `test.py` in your `module0.zip`.
 :::
 
 So, what's with printing the unusual phrase "Hello World!"?
