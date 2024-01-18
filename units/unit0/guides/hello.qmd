@@ -61,7 +61,7 @@ Choose between:
 
 
 
-#### **Step 4: Type and Execute `helloworld.py`**
+#### **Step 4: Type and Execute `test.py`**
 Choose between:
 
 - Mac _(Option A)_: [**Helloworld for Mac users using Thonny**](hello.qmd#hello-thonny-mac)
