@@ -169,11 +169,9 @@ Let's explain using an analogy:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.5
 
-Type up the above in `animal_sounds2.py` and run it.
+At which step (which step number) do we execute the last line in `print_big_O`? And then, at which step do we enter `print_big_O` the second time and print its first line? In `animal_sounds3.py` replace x and y with the correct step number. Use comments (text followed by ‘#’ symbol) to describe your answer.
 :::
 
-At which step (which step number) do we execute the last line
-in `print_big_O`? And then, at which step do we enter `print_big_O` the second time and print its first line? In `animal_sounds2.py` replace x and y with the correct step number. Don't forget: non-coding responses to exercises go into `module2.pdf` (one PDF per module).
 
 ###### **2.6 Video**
 {{< video ../../../media/units/unit0/module2/u0-mod2.6.mp4 aspect-ratio='21x9' >}}
@@ -210,11 +208,9 @@ print_two_big_Os()
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.7
 
-Type up the above in `animal_sounds2.py` and run it.
+Use this idea to rewrite your own animal sound in a file called `my_pet_sound2.py`. That is, add an additional function to your earlier program `my_pet_sound.py` that is analogous to `print_two_big_Os()` above.
 :::
 
-Use this idea to rewrite your own animal sound in a file
-called `my_pet_sound2.py`. That is, add an additional function to your earlier program `my_pet_sound.py` that is analogous to `print_two_big_Os()` above.
 
 - Once again, let's trace through some steps:
 ![](../../../media/units/unit0/module2/funcexecution2.png)
@@ -337,7 +333,7 @@ print_big_M()
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.11
 
-Type up the above exmaple in `animal_sounds3.py` and run it make sure there are no errors.
+Type up the above example in `animal_sounds4.py` and run it to make sure there are no errors.
 :::
 
 ## 2.3 A peek at the future
@@ -374,17 +370,17 @@ window.mainloop()
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.12
 
-Type up the above program in `random_art.py` and execute it.
+Type up the above program in `random_art.py` and execute it. When you quit your program, instead of x-ing out the window, use control-c ("control" key and "c" key pressed together) while the cursor is in the output window.
 :::
 
 Now let's point out a few features:
 ![](../../../media/units/unit0/module2/randomart.png)
 
-:::{.callout-caution appearance="simple" icon=false}
+<!-- :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.13
 
 Use the same code in `random_art2.py` and then add and modify it to create your own art, and include a screenshot in `module2.pdf`. When you quit your program, instead of x-ing out the window, type  `control-c` ("control" key and "c" key pressed together) while the cursor is in the output window.
-:::
+::: -->
 
 About <em>control-c</em>
 
