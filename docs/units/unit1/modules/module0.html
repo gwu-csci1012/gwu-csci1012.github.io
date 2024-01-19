@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.280">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,9 +17,10 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -46,43 +47,13 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
-    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -120,10 +91,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../../styles.css">
@@ -133,11 +106,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><strong>Module 0:</strong> A first look at lists</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Units</li><li class="breadcrumb-item"><a href="../../../units/unit1/modules/module0.html"><strong>Unit 1:</strong> Key Building Blocks in Programming</a></li><li class="breadcrumb-item"><a href="../../../units/unit1/modules/module0.html"><strong>Module 0:</strong> A first look at lists</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -145,183 +123,212 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../../../"><strong>CSCI1012</strong></a> 
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../index.html" class="sidebar-item-text sidebar-link">Home</a>
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../about.html" class="sidebar-item-text sidebar-link">About</a>
+  <a href="../../../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../schedule.html" class="sidebar-item-text sidebar-link">Schedule</a>
+  <a href="../../../schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../course-policies.html" class="sidebar-item-text sidebar-link">Course Policies</a>
+  <a href="../../../course-policies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Policies</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../instructors.html" class="sidebar-item-text sidebar-link">Instruction Team</a>
+  <a href="../../../instructors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Instruction Team</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../submit-remember.html" class="sidebar-item-text sidebar-link">What to remember about submitting work</a>
+  <a href="../../../submit-remember.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to remember about submitting work</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/useful.html" class="sidebar-item-text sidebar-link">Useful tools</a>
+  <a href="../../../units/useful.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Useful tools</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">Getting Started</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+ <span class="menu-text">Getting Started</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/editor.html" class="sidebar-item-text sidebar-link">Installing an Editor</a>
+  <a href="../../../units/unit0/editor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Installing an Editor</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Units</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Units</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false"><strong>Unit 0:</strong> Getting Started With Programming</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text"><strong>Unit 0:</strong> Getting Started With Programming</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module0.html" class="sidebar-item-text sidebar-link"><strong>Module 0:</strong> Your First Program</a>
+  <a href="../../../units/unit0/modules/module0.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 0:</strong> Your First Program</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module1.html" class="sidebar-item-text sidebar-link"><strong>Module 1:</strong> A few more getting-started examples</a>
+  <a href="../../../units/unit0/modules/module1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 1:</strong> A few more getting-started examples</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module2.html" class="sidebar-item-text sidebar-link"><strong>Module 2:</strong> Functions: a first look</a>
+  <a href="../../../units/unit0/modules/module2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 2:</strong> Functions: a first look</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module3.html" class="sidebar-item-text sidebar-link"><strong>Module 3:</strong> Loops: the for-loop</a>
+  <a href="../../../units/unit0/modules/module3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 3:</strong> Loops: the for-loop</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module4.html" class="sidebar-item-text sidebar-link"><strong>Module 4:</strong> Integers</a>
+  <a href="../../../units/unit0/modules/module4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 4:</strong> Integers</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module5.html" class="sidebar-item-text sidebar-link"><strong>Module 5</strong>: Strings and Characters</a>
+  <a href="../../../units/unit0/modules/module5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 5</strong>: Strings and Characters</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/modules/module6.html" class="sidebar-item-text sidebar-link"><strong>Module 6</strong>: Real Numbers</a>
+  <a href="../../../units/unit0/modules/module6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 6</strong>: Real Numbers</span></a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true"><strong>Unit 1:</strong> Key Building Blocks in Programming</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text"><strong>Unit 1:</strong> Key Building Blocks in Programming</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module0.html" class="sidebar-item-text sidebar-link active"><strong>Module 0:</strong> A first look at lists</a>
+  <a href="../../../units/unit1/modules/module0.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><strong>Module 0:</strong> A first look at lists</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module1.html" class="sidebar-item-text sidebar-link"><strong>Module 1:</strong> Conditionals</a>
+  <a href="../../../units/unit1/modules/module1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 1:</strong> Conditionals</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module2.html" class="sidebar-item-text sidebar-link"><strong>Module 2:</strong> Functions</a>
+  <a href="../../../units/unit1/modules/module2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 2:</strong> Functions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module3.html" class="sidebar-item-text sidebar-link"><strong>Module 3:</strong> Booleans, strings, built-in functions, types</a>
+  <a href="../../../units/unit1/modules/module3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 3:</strong> Booleans, strings, built-in functions, types</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module4.html" class="sidebar-item-text sidebar-link"><strong>Module 4:</strong> <code>while</code> loops, I/O</a>
+  <a href="../../../units/unit1/modules/module4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 4:</strong> <code>while</code> loops, I/O</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/modules/module5.html" class="sidebar-item-text sidebar-link"><strong>Module 5:</strong> Review</a>
+  <a href="../../../units/unit1/modules/module5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 5:</strong> Review</span></a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false"><strong>Unit 2:</strong> Advanced Topics and Applications</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+ <span class="menu-text"><strong>Unit 2:</strong> Advanced Topics and Applications</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit2/modules/module0.html" class="sidebar-item-text sidebar-link"><strong>Module 0:</strong> Arrays, Tuples, Sets, and Dictionaries</a>
+  <a href="../../../units/unit2/modules/module0.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 0:</strong> Arrays, Tuples, Sets, and Dictionaries</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit2/modules/module1.html" class="sidebar-item-text sidebar-link"><strong>Module 1:</strong> Choropleth Maps</a>
+  <a href="../../../units/unit2/modules/module1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 1:</strong> Choropleth Maps</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit2/modules/module2.html" class="sidebar-item-text sidebar-link"><strong>Module 2:</strong> What’s next for you in Computing?</a>
+  <a href="../../../units/unit2/modules/module2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Module 2:</strong> What’s next for you in Computing?</span></a>
   </div>
 </li>
       </ul>
@@ -330,12 +337,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../faq.html" class="sidebar-item-text sidebar-link">FAQ</a>
+  <a href="../../../faq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FAQ</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -364,7 +373,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><strong>Module 0:</strong> A first look at lists</h1>
+<h1 class="title"><strong>Module 0:</strong> A first look at lists</h1>
 </div>
 
 
@@ -416,12 +425,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># In contrast, a plain variable:</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">100</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(k)</span></code></pre></div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.1
 </div>
 </div>
@@ -438,12 +447,12 @@ Exercise 0.1
 <li>There is an implied order going from the first to the last element.</li>
 <li>It turns out, we can access individual elements in the list using <em>indices</em>: <img src="../../../media/units/unit1/module0/list3.png" class="img-fluid"></li>
 </ul>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -472,12 +481,12 @@ Note
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Change a particular element:</span></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">3</span>] <span class="op">=</span> <span class="dv">100</span></span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The list: '</span> <span class="op">+</span> <span class="bu">str</span>(A))</span></code></pre></div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.2
 </div>
 </div>
@@ -511,12 +520,12 @@ Exercise 0.2
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(A[i])</span></code></pre></div></li>
 <li><p>In the above example, there is no element <code>A[7]</code> in a list that only has 5 elements.</p></li>
 </ul>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.3
 </div>
 </div>
@@ -524,12 +533,12 @@ Exercise 0.3
 <p>Type up the above in <code>my_list3.py</code>. Use comments (text followed by ‘#’ symbol) to describe the error.</p>
 </div>
 </div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.4
 </div>
 </div>
@@ -555,12 +564,12 @@ Exercise 0.4
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>A.remove(<span class="dv">9</span>)</span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(A)</span></code></pre></div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.6
 </div>
 </div>
@@ -568,12 +577,12 @@ Exercise 0.6
 <p>Confirm the output by typing up the above in <code>my_list5.py</code>. Then, explore what would go wrong if you try and remove something that’s not in the list. For example, change the line <code>A.remove(9)</code> to <code>A.remove(10)</code>. Use comments (text followed by ‘#’ symbol) to describe to report what you see in the output. Submit your <code>my_list5.py</code> with the former (<code>A.remove(9)</code>).</p>
 </div>
 </div>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -595,12 +604,12 @@ Note
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> (i<span class="op">+</span><span class="dv">1</span>) <span class="op">*</span> (i<span class="op">+</span><span class="dv">1</span>) </span>
 <span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    B.append(k)</span>
 <span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(B)</span></code></pre></div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.7
 </div>
 </div>
@@ -608,12 +617,12 @@ Exercise 0.7
 <p>Type up the above in <code>my_list6.py</code>. Trace through the changing values of i, k and the list B in each iteration of the for-loop in a spreadsheet or a document.</p>
 </div>
 </div>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -630,12 +639,12 @@ Note
 </ul>
 </div>
 </div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.8
 </div>
 </div>
@@ -659,12 +668,12 @@ Exercise 0.8
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(A[i])</span></code></pre></div></li>
 <li><p>Here, we’re starting at the last element, traversing the list from end to beginning in steps of 2.</p></li>
 </ul>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.10
 </div>
 </div>
@@ -683,12 +692,12 @@ Exercise 0.10
 <span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">6</span>     <span class="co"># Change the value in x</span></span>
 <span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)  <span class="co"># Does it affect what's in y?</span></span></code></pre></div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.11
 </div>
 </div>
@@ -704,12 +713,12 @@ Exercise 0.11
 <span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">0</span>] <span class="op">=</span> <span class="dv">49</span>    <span class="co"># Change some value in list A</span></span>
 <span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(B)     <span class="co"># Does it affect what's in list B?</span></span></code></pre></div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.12
 </div>
 </div>
@@ -735,12 +744,12 @@ Exercise 0.12
 <div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">0</span>] <span class="op">=</span> <span class="dv">49</span>    <span class="co"># Change some value in list A</span></span></code></pre></div>
 <p>Then, we are achieving <img src="../../../media/units/unit1/module0/list9.png" class="img-fluid"></p></li>
 </ul>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -760,12 +769,12 @@ Note
 <span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(B)     <span class="co"># Does it affect what's in list B?</span></span></code></pre></div></li>
 </ul>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.13
 </div>
 </div>
@@ -789,12 +798,12 @@ Exercise 0.13
 <span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>    total <span class="op">=</span> total <span class="op">+</span> A[i]</span>
 <span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(total)</span></code></pre></div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.14
 </div>
 </div>
@@ -808,12 +817,12 @@ Exercise 0.14
 <div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(A)):</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    total <span class="op">=</span> total <span class="op">+</span> A[i]</span></code></pre></div></li>
 </ul>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -851,12 +860,12 @@ Note
 <li>In some cases, however, you’ll find index iteration is useful, especially when you need the <em>position</em> where something occurs in the list.</li>
 </ul></li>
 </ul>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.15
 </div>
 </div>
@@ -887,12 +896,12 @@ Exercise 0.15
 <span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>    total <span class="op">=</span> total <span class="op">+</span> k</span>
 <span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(total)</span></code></pre></div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.17
 </div>
 </div>
@@ -900,12 +909,12 @@ Exercise 0.17
 <p>First, try and trace through the changing values of i, k and total through each iteration of the loop in a spreadsheet or a document. Type the above in <code>my_twolist1.py</code> to confirm.</p>
 </div>
 </div>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -932,12 +941,12 @@ Note
 <span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>    C.append(element_total)</span>
 <span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(C)</span></code></pre></div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.18
 </div>
 </div>
@@ -971,12 +980,12 @@ Exercise 0.18
 <span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">3</span>] <span class="op">=</span> temp</span>
 <span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(A)</span></code></pre></div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.20
 </div>
 </div>
@@ -987,12 +996,12 @@ Exercise 0.20
 <p>There is nothing to submit in this exercise.</p>
 </div>
 </div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.21
 </div>
 </div>
@@ -1029,12 +1038,12 @@ Exercise 0.21
 <span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> x <span class="kw">in</span> C:</span>
 <span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a>    total <span class="op">=</span> total <span class="op">+</span> x</span>
 <span id="cb35-18"><a href="#cb35-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Average ='</span>, total<span class="op">/</span><span class="dv">4</span>)</span></code></pre></div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.23
 </div>
 </div>
@@ -1053,12 +1062,12 @@ Exercise 0.23
 <span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'I love '</span> <span class="op">+</span> <span class="bu">str</span>(x) <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> s <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> <span class="bu">str</span>(y))</span>
 <span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'I love'</span>, x, s, y)</span></code></pre></div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.24
 </div>
 </div>
@@ -1066,12 +1075,12 @@ Exercise 0.24
 <p>Type the above in <code>my_print_example.py</code>.</p>
 </div>
 </div>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -1106,12 +1115,12 @@ Note
 <span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>roll <span class="op">=</span> random.choice(die)</span>
 <span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(roll)</span></code></pre></div></li>
 </ul>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.25
 </div>
 </div>
@@ -1136,12 +1145,12 @@ Exercise 0.25
 <span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb42-12"><a href="#cb42-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Average score:'</span>, total<span class="op">/</span>num_trials)</span></code></pre></div></li>
 </ul>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.26
 </div>
 </div>
@@ -1149,12 +1158,12 @@ Exercise 0.26
 <p>Type the above in <code>my_die_roll2.py</code> to observe the result. Use comments (text followed by ‘#’ symbol) to describe to report the average when you use a large number of trials (say, 1000).</p>
 </div>
 </div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.27
 </div>
 </div>
@@ -1184,12 +1193,12 @@ Exercise 0.27
 <span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a>dt.draw_curve_as_points(x_coords, y_coords)</span>
 <span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.29
 </div>
 </div>
@@ -1291,12 +1300,12 @@ Exercise 0.29
 <span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'x ='</span>, x, <span class="st">' g(x) ='</span>, g)</span>
 <span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> x <span class="op">+</span> <span class="dv">1</span></span></code></pre></div></li>
 </ul>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.30
 </div>
 </div>
@@ -1332,12 +1341,12 @@ Exercise 0.30
 <span id="cb45-22"><a href="#cb45-22" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb45-23"><a href="#cb45-23" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <p>Let’s point out: <img src="../../../media/units/unit1/module0/funcplot-code.png" class="img-fluid"></p>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.31
 </div>
 </div>
@@ -1357,12 +1366,12 @@ Exercise 0.31
 <p>to</p>
 <div class="sourceCode" id="cb47"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>dt.set_XY_range(<span class="dv">0</span>,<span class="dv">100</span>, <span class="dv">0</span>,<span class="dv">100</span>)</span></code></pre></div></li>
 </ul>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.33
 </div>
 </div>
@@ -1376,12 +1385,12 @@ Exercise 0.33
 <li>But at the same time, some features like the point of intersection of the two curves is hard to see.</li>
 <li>We can use different scales when we want to emphasize different aspects.</li>
 </ul>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.34
 </div>
 </div>
@@ -1422,12 +1431,12 @@ Exercise 0.34
 <li>We’ll draw a background with randomly strewn yellow dots.</li>
 <li>Then, along a sine-curve, we’ll draw small ellipses of different sizes.</li>
 </ul>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.35
 </div>
 </div>
@@ -1439,12 +1448,12 @@ Exercise 0.35
 <section id="when-things-go-wrong" class="level2">
 <h2 class="anchored" data-anchor-id="when-things-go-wrong">0.11 When things go wrong</h2>
 <p>In each of the exercises below, first try to identify the error just by reading. Then type up the program to confirm, and after that, fix the error.</p>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.36
 </div>
 </div>
@@ -1455,12 +1464,12 @@ Exercise 0.36
 <p>Identify and fix the error in <code>my_error1.py</code>.</p>
 </div>
 </div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.37
 </div>
 </div>
@@ -1476,12 +1485,12 @@ Exercise 0.37
 <p>Identify and fix the error in <code>my_error2.py</code>.</p>
 </div>
 </div>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise 0.38
 </div>
 </div>
@@ -1609,6 +1618,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -1651,7 +1746,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center">The course material is sourced from <strong>Prof.&nbsp;Simha’s</strong> webpage: <a href="https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/" class="uri">https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/</a> <br>This is a Quarto website. To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</div>
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">The course material is sourced from <strong>Prof.&nbsp;Simha’s</strong> webpage: <a href="https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/" class="uri">https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/</a> <br>This is a Quarto website. To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 <script>videojs(video_shortcode_videojs_video1);</script>
