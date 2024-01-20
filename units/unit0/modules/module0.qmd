@@ -194,7 +194,7 @@ The purpose of the program and how you use it should be easy to figure out.
 
 Let's point out a few things:
 
-- Unlike the toy `helloworld.py` example, this program actually does something nontrivial.
+- Unlike the toy `test.py` example, this program actually does something nontrivial.
 - The program brings up a window, and allows a user to interact with it (the program).
 
 Now let's list the program and then point out some "surface" features.
@@ -309,7 +309,7 @@ And is pronounced like "gooey".
 
 The difference between GUI and command-line programs:
 
-- Programs like `helloworld.py` from earlier printed plain text. These are _Command-line_ programs.
+- Programs like `test.py` from earlier printed plain text. These are _Command-line_ programs.
 - Programs like `whackamole.py` bring up their own little window on your screen. These are called GUI programs.
 - GUI programs are typically more complicated because one has to specify all the elements (buttons etc) of the interface.
 - We will spend quite a bit of time learning programming with simpler (albeit less exciting) command-line programs.
