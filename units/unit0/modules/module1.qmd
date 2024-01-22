@@ -72,7 +72,7 @@ Notice the missing # in the second line of the comment.
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.2
 
-Write up the above in `comment_error.py`. Remember to save the file (and do this for every exercise in the future that involves a program). Use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
+Write up the above in `comment_error.py`. Remember to save the file (and do this for every exercise in the future that involves a program). 
 :::
 
 ## 1.1 Whitespace
@@ -85,7 +85,7 @@ Notice the spaces inserted in various places.
 :::{.callout-caution appearance="simple" icon=false} 
 ### Exercise 1.3
 
-Write up the above in `whitespace_example.py`. Does the program run? Use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
+Write up the above in `whitespace_example.py` and submit it if it runs.
 :::
 
 Consider this variation
@@ -221,11 +221,15 @@ The dromedary, two;
 Or else the other way around. 
 I’m never sure. Are you?')
 ```
+<a id="exercise-1.11">
+
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.11
 
-Write a program called `my_string_example4.py` with the above program and run it. Use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
+Write up a program called `my_string_example4.py` with the above program and run it. Submit the program. Observe the error the program generates to assess for yourself why the program returns the error.
 :::
+
+</a>
 
 To spread a single string over multiple lines, one uses a <em>triple quote</em> as in:
 ```python
@@ -238,7 +242,7 @@ I’m never sure. Are you?''')
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.12
 
-Write a program called `my_string_example5.py` with a 5-line limerick.
+Write up a program called `my_string_example5.py` with the 5-line limerick above program and run it. Observe that error the program doesn't not generate an error. Submit the program. Compare this program with [**Exercise 1.11**](./module1.qmd#exercise-1.11) to assess why there is no error in this program. You can discuss this program with your TA if you haven't figured it out for yourself.
 :::
 
 Empty strings:
@@ -312,7 +316,7 @@ window.mainloop()
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.15
 
-Write up the above program in `hello_gui.py` being careful to type it in exactly as shown above, paying attention to every keystroke. Run it to get something like: ![](../../../media/units/unit0/module1/hello-gui.png) If something went wrong with the typing, you can instead download <a href="../../../media/units/unit0/module1/hello_gui.py" download>**hello_gui.py**</a> but only after giving the typing a good try. 
+Write up the above program in `hello_gui.py` being careful to type it in exactly as shown above, paying attention to every keystroke. Run it to get something like: ![](../../../media/units/unit0/module1/hello-gui.png) If something went wrong with the typing, you can instead download <a href="../../../media/units/unit0/module1/hello_gui.py" download>**hello_gui.py**</a> but only after giving the typing a good try. When you quit your program, instead of x-ing out the window, use control-c ("control" key and "c" key pressed together) while the cursor is in the output window.
 :::
 
 Now let's point out a few features of the program, and we'll focus on the middle section:
