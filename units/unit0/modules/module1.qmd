@@ -85,7 +85,7 @@ Notice the spaces inserted in various places.
 :::{.callout-caution appearance="simple" icon=false} 
 ### Exercise 1.3
 
-Write up the above in `whitespace_example.py` and submit it if it runs.
+Write up the above in `whitespace_example.py` and submit.
 :::
 
 Consider this variation
