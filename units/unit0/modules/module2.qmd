@@ -299,7 +299,7 @@ Beware of name clashes:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.10
 
-Implement the above in `name_clash.py` and discuss the program to understand the comments (text followed by ‘#’ symbol) with your TA.
+Implement the above in `name_clash.py` along with the comments (text followed by '#' symbol) in it and run it. Submit your program. Discuss the program with your TA to understand the comments  in the program.
 :::
 
 - What we see is that the second definition replaces the first.
