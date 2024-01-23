@@ -18,7 +18,29 @@ title: "About"
 - Acquire familiarity with how programming can be applied to solve problems.
 
 
-## Time/Location of course
+## Time & Location of course
+- **Monday Lecture**
+    - Room [**1957 E Room 213**](https://it.gwu.edu/classroom-search/1957-e-street-213)
+
+:::{.callout-note}
+Lecture times are from **3:45 PM – 5:00 PM**
+:::
+
+- **Wednesday Lab**
+    - Section 30: Room [**1957 E Room 310**](https://it.gwu.edu/classroom-search/1957-e-street-310)
+    - Section 31: Room [**SEH 4040**](https://it.gwu.edu/classroom-search/science-and-engineering-hall-4040)
+    - Section 34: Room [**TOMP 310**](https://it.gwu.edu/classroom-search/tompkins-hall-310)
+    - Section 35: Room [**TOMP 204**](https://it.gwu.edu/classroom-search/tompkins-hall-204)
+
+- **Friday Lab**
+    - Section 32: Room [**SEH 4040**](https://it.gwu.edu/classroom-search/science-and-engineering-hall-4040)
+    - Section 33: Room [**1957 E Room 315**](https://it.gwu.edu/classroom-search/1957-e-street-315)
+    - Section 36: Room [**PHIL 348**](https://it.gwu.edu/classroom-search/phillips-hall-348)
+    - Section 37: Room [**TOMP 107**](https://it.gwu.edu/classroom-search/tompkins-hall-107)
+
+:::{.callout-note}
+All laboratory sections will meet from **3:45 PM – 5:00 PM**
+:::
 
 ## Office Hours
 _Current Office Hour Schedule is listed below:_
