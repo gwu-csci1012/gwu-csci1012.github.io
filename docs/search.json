@@ -924,18 +924,39 @@
     "text": "Installation instructions for Windows\n\nGo to https://www.anaconda.com/products/individual#macos, then scroll down near the bottom, and install the Python 64-Bit Graphical installer. This installs software to help you install Anaconda.\nFor “Select Installation Type” install for “Just Me” (recommended).\nChoose a destination folder to install Anaconda in. Our recommendation is to install it in C:\\Users\\YourName\\anaconda3.\nUnder “Advanced Installation Options” choose “Register Anaconda3 as my default Python 3.8” only.\nNow open Anaconda Navigator and click on the environments tab on the left hand side.\n\nClick on the environment that says “base (root)” and in the top center of the screen on the drop down menu, select “All” instead of “Installed”. \nIn the “Search Packages” bar, type in “pandas”. Select the checkbox next to the “pandas” package and click “Apply” in the bottom left corner of the interface. \nRepeat Steps 6 and 7, but this time instead of “pandas”, install “plotly”.\nRepeat Steps 6 and 7, and install the “networkx” package."
   },
   {
-    "objectID": "schedule copy.html",
-    "href": "schedule copy.html",
-    "title": "Schedule",
+    "objectID": "instructors.html",
+    "href": "instructors.html",
+    "title": "Instruction Team",
     "section": "",
-    "text": "Home » Schedule"
+    "text": "Home » Instruction Team"
   },
   {
-    "objectID": "schedule copy.html#schedule",
-    "href": "schedule copy.html#schedule",
-    "title": "Schedule",
-    "section": "Schedule",
-    "text": "Schedule\n\n\n\n\n\n\n\n\n\n\nDate\nTopic(s)\nWednesday Lab Date\nFriday Lab Date\nDeliverable(s)\n\n\n\n\nWeek 0\nYour First Program, print\n01/17/2024\n01/19/2024\nUnit 0 » Module 0 (Due January 24, 2024 by 11:59 PM)\n\n\nWeek 1 [01/22/2024]\nIntroduction to Functions\n01/24/2024\n01/26/2024\nUnit 0 » Module 1 & Module 2 (Due January 31, 2024 by 11:59 PM)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate\nTopic(s)\nWednesday Lab Date\nWednesday Lab Deliverable(s) Deadline\nFriday Lab Date\nFriday Lab Deliverable Deadline\nDeliverable(s)\n\n\n\n\nWeek 2 [01/29/2024]\nLooping: for Loops\n01/31/2024\n(Due February 04, 2024 by 11:59 PM)\n02/02/2024\n(Due February 06, 2024 by 11:59 PM)\nUnit 0 » Module 3\n\n\nWeek 3 [02/05/2024]\nIntegers\n02/07/2024\n02/09/2024\n\n\nUnit 0 » Module 4 & Assignment 0 (Due February 12, 2024 by 11:59 PM)\n\n\nWeek 4 [02/12/2024]\nString\n02/14/2024\n02/16/2024\nUnit 0 » Module 5 (Due February 19, 2024 by 11:59 PM)\n\n\n\n\nWeek 5 President's Day - No Class!\nFloating Points\n02/21/2024\n02/23/2024\nUnit 0 » Module 6 & Assignment 1 (Due February 26, 2024 by 11:59 PM)\n\n\n\n\nWeek 6 [02/26/2024]\nLists\n02/28/2024\n03/01/2024\nUnit 1 » Module 0 (Due March 04, 2024 by 11:59 PM)\n\n\n\n\nWeek 7 [03/04/2024]\nConditionals\n03/06/2024\n03/08/2024\nUnit 1 » Module 1 (Due March 11, 2024 by 11:59 PM)\n\n\n\n\nWeek 8\nSpring Break - No Class!\nNo Class\nNo Lab\nNo Lab\nNothing assigned\n\n\n\n\nWeek 9 [03/18/2024]\nFunctions\n03/20/2024\n03/22/2024\nUnit 1 » Module 2 (Due March 25, 2024 by 11:59 PM)\n\n\n\n\nWeek 10 [03/25/2024]\nBooleans & Built-ins\n03/27/2024\n03/29/2024\nUnit 1 » Module 3 & Assignment 2 (Due April 01, 2024 by 11:59 PM)\n\n\n\n\nWeek 11 [04/01/2024]\nwhile loops, I/O\n04/03/2024\n04/05/2024\nUnit 1 » Module 4 & Module 5 (Due April 08, 2024 by 11:59 PM)\n\n\n\n\nWeek 12 [04/08/2024]\nnumpy Arrays\n04/10/2024\n04/12/2024\nAssignment 3 (Due April 15, 2024 by 11:59 PM)\n\n\n\n\nWeek 13 [04/15/2024]\nExamination\n04/17/2024\n04/19/2024\nUnit 2 » Module 0 & Module 1 (Due April 22, 2024 by 11:59 PM)\n\n\n\n\nWeek 14 [04/22/2024]\nAdvanced Topics\n04/24/2024\n04/26/2024\nUnit 2 » Module 2 & Assignemnt 4 (Due May 01, 2024 by 11:59 PM)\n\n\n\n\nWeek 15 [04/29/2024]\nExtra Lecture\n\n\n\n\n\n\n\n[04/30/2024]\nMake up Day\n\n\n\n\n\n\n\n[05/01/2024]\nDesignated Monday\n\n\n\n\n\n\n\nWeek of May 04 to May 10\nExam Week"
+    "objectID": "instructors.html#dr.-kartik-bulusu-instructor",
+    "href": "instructors.html#dr.-kartik-bulusu-instructor",
+    "title": "Instruction Team",
+    "section": "Dr. Kartik Bulusu (Instructor)",
+    "text": "Dr. Kartik Bulusu (Instructor)\nDr. Kartik V. Bulusu is an Associate Professor of Practice in the Department of Computer Science (CS) and Associate Research Professor in the Department of Mechanical and Aerospace Engineering (MAE).\nHis research work entails human health and sustainable energy with a focus on biofluid mechanics, polymer rheology, low-cost energy technologies, and applications of wavelet transforms.\nHe is also working on AI-on-the-edge applications using low-power devices. In his free time, he loves to tinker with electronics and design low-cost experiments for research and education.\nDr. Bulusu has been developing low-cost ejector technologies refrigeration in disaster-prone regions and humanitarian needs.\nOffice Hours: On-Demand (Please reach out via email)\nLocation: Blackboard Collaborate Course Room\nCampus Address: SEH 3640\nEmail: bulusu@gwu.edu"
+  },
+  {
+    "objectID": "instructors.html#gtas",
+    "href": "instructors.html#gtas",
+    "title": "Instruction Team",
+    "section": "GTAs",
+    "text": "GTAs\n\nEthan Leider\n\n\nBoomika Karuppaiah\n\n\nAmal Alqahtani\n\n\nLexi Sun"
+  },
+  {
+    "objectID": "instructors.html#uta",
+    "href": "instructors.html#uta",
+    "title": "Instruction Team",
+    "section": "UTA",
+    "text": "UTA\n\nMarlee Alvino"
+  },
+  {
+    "objectID": "instructors.html#las",
+    "href": "instructors.html#las",
+    "title": "Instruction Team",
+    "section": "LAs",
+    "text": "LAs\n\nSteven Yoon\n\n\nGustavo Londono\n\n\nJonathan Nguyen\n\n\nEvelina Naumovich"
   },
   {
     "objectID": "course-policies.html",
@@ -999,41 +1020,6 @@
     "title": "Courses Policies",
     "section": "Academic Integrity Code",
     "text": "Academic Integrity Code\nContact information: rights@gwu.edu or 202-994-6757.\nAcademic dishonesty is defined as cheating of any kind, including misrepresenting one’s own work, taking credit for the work of others without crediting them and without appropriate authorization, and the fabrication of information. You are not allowed to collaborate on the home works and lab assignments; for programming projects and hardware lab assignments, you can work in teams only if they are designated as team projects (labs). Unless otherwise specified, you cannot search for solutions or code on the web – but you can use any code that is included in the textbook or lecture notes (but please cite them). I will be using a SW tool that checks for program code similarities – any pair of programs or written reports with greater than 10% similarity will be closely examined.\nThe Office of Academic Integrity maintains a permanent record of the violation. More information is available from the Office of Academic Integrity at https://studentconduct.gwu.edu/academic-integrity. The University’s “Guide of Academic Integrity in Online Learning Environments” is available at https://studentconduct.gwu.edu/guide-academic-integrity-online-learning-environments."
-  },
-  {
-    "objectID": "instructors.html",
-    "href": "instructors.html",
-    "title": "Instruction Team",
-    "section": "",
-    "text": "Home » Instruction Team"
-  },
-  {
-    "objectID": "instructors.html#dr.-kartik-bulusu-instructor",
-    "href": "instructors.html#dr.-kartik-bulusu-instructor",
-    "title": "Instruction Team",
-    "section": "Dr. Kartik Bulusu (Instructor)",
-    "text": "Dr. Kartik Bulusu (Instructor)\nDr. Kartik V. Bulusu is an Associate Professor of Practice in the Department of Computer Science (CS) and Associate Research Professor in the Department of Mechanical and Aerospace Engineering (MAE).\nHis research work entails human health and sustainable energy with a focus on biofluid mechanics, polymer rheology, low-cost energy technologies, and applications of wavelet transforms.\nHe is also working on AI-on-the-edge applications using low-power devices. In his free time, he loves to tinker with electronics and design low-cost experiments for research and education.\nDr. Bulusu has been developing low-cost ejector technologies refrigeration in disaster-prone regions and humanitarian needs.\nOffice Hours: On-Demand (Please reach out via email)\nLocation: Blackboard Collaborate Course Room\nCampus Address: SEH 3640\nEmail: bulusu@gwu.edu"
-  },
-  {
-    "objectID": "instructors.html#gtas",
-    "href": "instructors.html#gtas",
-    "title": "Instruction Team",
-    "section": "GTAs",
-    "text": "GTAs\n\nEthan Leider\n\n\nBoomika Karuppaiah\n\n\nAmal Alqahtani\n\n\nLexi Sun"
-  },
-  {
-    "objectID": "instructors.html#uta",
-    "href": "instructors.html#uta",
-    "title": "Instruction Team",
-    "section": "UTA",
-    "text": "UTA\n\nMarlee Alvino"
-  },
-  {
-    "objectID": "instructors.html#las",
-    "href": "instructors.html#las",
-    "title": "Instruction Team",
-    "section": "LAs",
-    "text": "LAs\n\nSteven Yoon\n\n\nGustavo Londono\n\n\nJonathan Nguyen\n\n\nEvelina Naumovich"
   },
   {
     "objectID": "index.html",
@@ -1792,11 +1778,11 @@
     "text": "Course Learning Outcomes\n\nDemonstrate familiarity with key concepts in a procedural programming language such as: variables, control structures, functions, input and output.\nDemonstrate the ability to use programming to solve problems appropriate to a beginning class in programming.\nAcquire familiarity with how programming can be applied to solve problems."
   },
   {
-    "objectID": "about.html#timelocation-of-course",
-    "href": "about.html#timelocation-of-course",
+    "objectID": "about.html#time-location-of-course",
+    "href": "about.html#time-location-of-course",
     "title": "About",
-    "section": "Time/Location of course",
-    "text": "Time/Location of course"
+    "section": "Time & Location of course",
+    "text": "Time & Location of course\n\nMonday Lecture\n\nRoom 1957 E Room 213\n\n\n\n\n\n\n\n\nNote\n\n\n\nLecture times are from 3:45 PM – 5:00 PM\n\n\n\nWednesday Lab\n\nSection 30: Room 1957 E Room 310\nSection 31: Room SEH 4040\nSection 34: Room TOMP 310\nSection 35: Room TOMP 204\n\nFriday Lab\n\nSection 32: Room SEH 4040\nSection 33: Room 1957 E Room 315\nSection 36: Room PHIL 348\nSection 37: Room TOMP 107\n\n\n\n\n\n\n\n\nNote\n\n\n\nAll laboratory sections will meet from 3:45 PM – 5:00 PM"
   },
   {
     "objectID": "about.html#office-hours",
