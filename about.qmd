@@ -18,7 +18,7 @@ title: "About"
 - Acquire familiarity with how programming can be applied to solve problems.
 
 
-## Time & Location of course
+## Time & Location of the course
 - **Monday Lecture**
     - Room [**1957 E Room 213**](https://it.gwu.edu/classroom-search/1957-e-street-213)
 
