@@ -84,16 +84,16 @@ _Current Office Hour Schedule is listed below:_
             <td>11:00 AM to 1:00 PM</td>
             <td>SEH 4th Floor</td>
         </tr>
-        <tr>
-            <td>Fridays</td>
-            <td>12:00 PM to 1:00 PM</td>
-            <td>SEH 4th Floor</td>
-        </tr>
         <tr class="table-active">
             <td>Fridays</td>
             <td>1:45 PM to 2:45 PM</td>
             <td>SEH 4th Floor</td>
         </tr>
+            <tr>
+                <td>Fridays</td>
+                <td>5:00 PM to 6:15 PM</td>
+                <td>SEH 4th Floor</td>
+            </tr>
     </tbody>
 </table>
 ```
