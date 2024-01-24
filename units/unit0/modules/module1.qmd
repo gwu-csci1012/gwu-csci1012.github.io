@@ -109,7 +109,7 @@ print('Hello     World!')
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.5
 
-Write up the above in `whitespace_example3.py`. Run and check if you are getting any errors.
+Write up the above program in `whitespace_example3.py`,  by including 5 empty spaces between `Hello` and `World`. Run and check if you are getting any errors.
 :::
 
 Let's point out a few things:
