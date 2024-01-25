@@ -1,5 +1,5 @@
 ---
-title: "**Assignment 1:** Problem Solving Example"
+title: "**Assignment 2:** Problem Solving Example"
 format:
   html:
     code-copy: false
@@ -21,161 +21,123 @@ format:
 <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
   <a href="">Unit 0</a> &raquo;
-  <a href="./assignment1.qmd">Assignment 1</a> &raquo;
+  <a href="./assignment1.qmd">Assignment 2</a> &raquo;
   <span class="current-page">Problem Solving</span>
 </div>
 
-
 With a challenging problem, what is often hardest is getting started. Where to begin?
 
-
 Let's start by examining the output more closely:
-![](../../../media/units/unit0/assignment1/arrowhead.png)
+![](../../../media/units/unit0/assignment2/charproblem-output.png)
 
-Let's try to get the top half of the arrowhead first:
+At this point, it's important NOT to think about coding details.
 
-- At first, let's not worry about the details of the start/end of loops.
-- As a "sketch" (not real code) we could write:
+This is a critically useful strategy that deserves some explanation:
+
+- The type of thinking you do when solving a problem at the higher level is different from the kind of nitpicky-language-level detail during coding.
+- Experience shows that it's best to avoid doing both simultaneously.
+- If you like analogies:
+    - It's best to develop an outline of an essay before focusing on sentences.
+    - Do the prep (chopping, organizing) before the actual cooking.
+
+So now, let's just think high level but a little code-like:
+
+- We call this <em>algorithmic thinking</em>.
+- Since there are 10 lines, we could say "we're doing something 10 times" (each time slightly differently).
+- In code-like structure, called <em>pseudcode</em>:
+  
+    ```python
+    for i going from 1 to 10
+        figure out and print the i-th line
+    ```
+- It's worth staring at the above for a few minutes. We'll point out that:
+    - This is NOT actual code but puts structure to the thought "we're doing something 10 times"
+    - The high level structure will later become an actual for-loop.
+    - Pseudocode doesn't get hung up on language minutiae like semi-colons.
+      All it needs to do is outline the main idea, like a sketch.
+
+
+Next, if we could somehow figure out the last letter in each line, we'd be in good shape, because:
+```python
+for i going from 1 to 10
+    figure out the last letter in line i
+    print from z down to that last letter
+```
+
+We need to figure out the last letter in the i-th line:
+
+- One problem: i is an integer.
+- But ... recall the connection between integers and characters?
+- To go from letter to number:
     
     ```python
-    for i in range(... to be determined ...):
-        # Print i *'
+    k = ord('a')       # k will turn out to have 97
     ```
-- Next, examine the problem of printing i asterisks on a single line.
-- If we just had print, say, 7 asterisks on a line, could we write a for-loop to do that?
-- Does this sketch work?
+- To go from number to letter:
     
     ```python
-    for j in range(... something to do with 7 ...):
-        print('*')
+    letter = chr(97)   # letter will turn out to have 'a'
     ```
-- Now let's work out the range: we want to run from either 1 through 7 (inclusive) or from 0 through 6.
-- Suppose we pick the 0 through 6 option and write:
+- So, now let's ask: how do we get the letter that's i spots behind 'z' in the alphabet?
+    - Let's first get the <em>number</em> (integer) corresponding to the letter 'z'
     
-    ```python
-    for j in range(0,7):
-        print('*')
-    ```
-- At this point we can try this and see what it does.
+        ```python
+        k = chr('z')
+        ```
+    - So, the <em>number</em> corresponding to the letter that's i spots behind 'z' must be
+        
+        ```python
+        k = chr('z')
+        j = k - i       # i spots behind (or less)
+        ```
+    - This might be easier to see in a picture:
+    ![](../../../media/units/unit0/assignment2/charproblem2.png)
+    - Let's convert that to a letter:
 
+        ```python
+        k = chr('z')
+        j = k - i
+        letter = chr(j) # the letter i spots behind
+        ```
+    - This can be printed.
 
-###### <span style="color:#8B4513;">**A1.1 Exercise:**</span>
-Write up the above in `my_demo_problem1.py`. What went wrong? Explain in your `assignment1.pdf`.
+Let's summarize what we have so far in pseudocode:
+```python
+for i going from 1 to 10
+    k = chr('z')
+    # the number of the letter i spots behind
+    j = k - i
+    Now print all the letters corresponding to the numbers from k to j
+```
 
-- Now let's generalize to printing a single line of i asterisks:
- 
+- Clearly, we want to print every letter corresponding to the numbers between k and j.
+- This means an inner for-loop because we're iterating from k to j.
+- Observe that j is smaller than k and so we have to <em>decrement</em> in this inner for-loop.
+- Thus, we can revise our pseudocode as:
+
     ```python
-    for j in range(0,i):
-        print('*', end='')
+    for i going from 1 to 10
+        k = chr('z')
+        # the number of the letter i spots behind
+        j = k - i
+        for n starting at k and going down to j
+            get the letter corresponding to n and print it
     ```
-- Next, we can use this as our inner loop in the overall top-half sketch:
-    
-    ```python
-    for i in range(... to be determined ...):
-        # Print i *'s
-        for j in range(0,i):
-            print('*', end='')
-    ```
-- Now let's determine the range of i (which we might get wrong the first try, but can fix easily).
-- We sense that the limit is 10. Could the following work?
-    
+- Finally, let's try and fill in the missing pieces:
+
     ```python
     for i in range(1, 10):
-        # Print i *'s
-        for j in range(0,i):
-            print('*', end='')
-    ```
-###### <span style="color:#8B4513;">**A1.2 Exercise:**</span>
-Write up the above in `my_demo_problem2.py`. What went wrong? Explain in your `assignment1.pdf`.
-
-- Let's fix the issue. We need to get to a new line every time the inner loop completes.
-- Does this work?
-
-    ```python
-    for i in range(1, 10):
-        # Print i *'s
-        for j in range(0,i):
-            print('*', end='')
-            print()
+        k = chr('z')
+        j = k - i
+        for n in range(k, j, -1):
+            c = chr(n)
+            print(c)
     ```
 
-###### <span style="color:#8B4513;">**A1.3 Exercise:**</span>
-Write up the above in `my_demo_problem3.py`. What went wrong?
+###### <span style="color:#8B4513;">**A2.1 Exercise:** Write up the above in `my_char_problem.py`. What do you notice?</span>
 
-- Next, we'll fix and write:
-    
-    ```python
-    for i in range(1, 10):
-        # Print i *'s
-        for j in range(0,i):
-            print('*', end='')
-        print()
-    ```
-- Does this work?
-
-###### <span style="color:#8B4513;">**A1.4 Exercise:**</span>
-Write up the above in `my_demo_problem4.py`. What went wrong?
-
-- We now have the solution to the top half:
- 
-    ```python
-    for i in range(1, 11):
-        # Print i *'s
-        for j in range(0,i):
-            print('*', end='')
-        print()
-    ```
-Next, let's tackle the bottom half:
-
-- Again, we see that each particular line prints a number of *'s.
-- As long as we can figure out <em>how many</em> are needed in each line, we can reduce each line by 1.
-- That suggests an outer loop that starts big and grows small.
-- Let's sketch this out as:
-    
-    ```python
-    # Code for top half here ...
-
-    # Code for bottom half:
-    for i in range(... to be determined ...):
-        # Print i *'
-    ```
-- But we already know how to print i *'s because we solved that in the top half:
-    
-    ```python
-    # Code for top half here ...
-
-    # Code for bottom half:
-    for i in range(... to be determined ...):
-        # Print i *'
-        for j in range(0,i):
-            print('*', end='')
-        print()
-    ```
-- So all that's left is to determine the range of i so that it starts at 10 and goes down to 1.
-- Since going down in a range requires a negative step, we could write something like
-    
-    ```python
-    for i in range(10, 1, -1):
-    ```
-- Clearly, we want to start at 10. But should the range end with 1 or 0? We'll leave this unanswered for now.
-- Let's put it all together:
-    
-    ```python
-    # Code for top half:
-    for i in range(1, 11):
-        for j in range(0, i):
-            print('*', end='')
-        print()
-
-    # Code for bottom half:
-    for i in range(10, 1, -1):
-        for j in range(0, i):
-            print('*', end='')
-        print()
-    ```
-
-###### <span style="color:#8B4513;">**A1.5 Exercise:**</span>
-Write up the above in `my_demo_problem5.py`. Did it work? Submit your final version in `my_arrowhead.py`.
+###### <span style="color:#8B4513;">**A2.2 Exercise:** We deliberately left in two unaddressed problems above. Fix the problems in `my_char_problem2.py`.
+</span>
 
 </body>
 </html>

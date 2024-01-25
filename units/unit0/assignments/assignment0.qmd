@@ -1,0 +1,189 @@
+---
+title: "Assignment 0"
+# format:
+#   html:
+#     code-copy: false
+---
+
+<!-- <html>
+<head>
+    <style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
+</head>
+<body> -->
+
+<div class="breadcrumbs">
+  <a href="../../../index.qmd">Home</a> &raquo;
+  <a href="">Unit 0</a> &raquo;
+  <span class="current-page">Assignment 0</span>
+</div>
+
+## Objectives and example
+Assignments are designed to strengthen your problem-solving skills and build <em>independence</em>. While the module exercises are small variations of explained module examples, a single assignment will have multiple problems, all of which are intended to be more challenging than the module exercises, and will feature less detailed guidance. This is a good thing because ultimately, you'll have to solve problems on your own. Facing and overcoming challenging problems cheerfully is the key to building problem-solving skill.
+
+In each such assignment set, we will help develop your problem-solving skills by showing you how to solve one problem, the first and often hardest problem. <em>However, the solution will include some exercises for you that you will need to submit</em>.
+
+
+## Assignment problems
+
+### 1. Demo problem
+Suppose we want to use for-loops to produce this arrow-head like pattern:
+```python
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+**********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+```
+At this point, do not read further and try to address the following:
+
+- First understand what is being asked.
+- Do you see a for-loop or two at work where, as the loops are printing, you'll get the output shown above?
+- Can the problem be broken down into parts, where you can solve the parts and put the solution together afterwards?
+- Try writing some code to get at least some of the output.
+
+[**Now examine the solution**](./assignment0-solution.qmd)
+
+Don't forget to submit your solutions to the exercises within.
+
+### 2. In `my_nested.py` use nested loops in print the following pattern:
+```python
+1  1
+2  1
+3  1
+4  1
+1  2
+2  2
+3  2
+4  2
+1  3
+2  3
+3  3
+4  3
+1  4
+2  4
+3  4
+4  4
+```
+
+### 3. In `my_nested2.py`, write a program that uses nested for-loops to print the following pattern:
+```python
+* * * * * * * * * * 10
+  * * * * * * * * * 9
+    * * * * * * * * 8
+      * * * * * * * 7
+        * * * * * * 6
+          * * * * * 5
+            * * * * 4
+              * * * 3
+                * * 2
+                  * 1
+```
+
+Notice the spaces between asterisks, the spaces leading up to the first asterisk in each line, and the number at the end.
+
+### 4. In this exercise you will use a drawing tool and a for-loop to draw a series of rectangles. The goal is to draw this:
+![](../../../media/units/unit0/assignment1/rectangles.png)
+
+The code for drawing a single rectangle is:
+```python
+from drawtool import DrawTool 
+
+dt = DrawTool()
+dt.set_XY_range(0,100, 0,100)
+
+dt.draw_rectangle(10, 20, 5, 10)
+
+dt.display()
+```
+This produces (we've added some markup to explain):
+
+<!-- ![]() -->
+
+As a first step, download <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> into your assignment1 folder and type up the above single-rectangle example in `my_rectangle_example.py`. This way, you know that the download worked and that drawing works. Now you can focus on the many-rectangle problem. Think about how the for-loop needs to range so that you can draw the rectangles in the loop. Write your program in `my_rectangle_pattern.py`.
+
+### 5. The following program intends to print 
+  ```python
+hello
+how're
+you?
+```
+This is the alleged program:
+```python
+print('hello")
+print('how're')
+print('you?)
+```
+There are several errors above. Point them out in your assignment pdf. Then fix them in `fixed_hello.py`.
+
+### 6. The following program intends to print the following five times as in:
+  ```python
+xyz
+xyz
+xyz
+xyz
+xyz
+```
+
+This is the alleged program:
+```python
+Def print_one_line():
+for i in range(1,5):
+    print(xyz)
+
+print_one_line
+```
+
+There are several errors above. Point them out in your assignment pdf. Then fix them in `fixed_xyz.py`.
+
+
+### 7. The following program intends to print the numbers 5 through 0 as in:
+```python
+5
+4
+3
+2
+1
+0
+```
+This is the alleged program:
+```python
+def function#2()
+    for i in range(5,-1, 0):
+        print(i)
+
+function#2()
+```
+There are several errors above. Point them out in your assignment pdf. Then fix them in `fixed_downprint.py`.
+
+<!-- ### 8. In each assignment, we will include a sometimes whimsical, sometimes serious non-coding exploration to encourage creativity and curiousity. For this assignment, in your `assignment1.pdf`, make a cartoon that makes light of "frustration with computers". You can use a simple drawing tool, or find images that are copyright-free (please include the link to images/cartoons). Make sure the caption is <em>original</em> (this is the whole point). We'll post some of the funniest ones. -->
+
+
+## How to submit:
+
+<!-- - Write all your programs and `assignment1.pdf` in a directory called `assignment1`. -->
+- Make a zip of the directory and submit that.
+
+<!-- </body>
+</html> -->
