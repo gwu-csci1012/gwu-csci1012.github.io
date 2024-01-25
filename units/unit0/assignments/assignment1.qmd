@@ -116,7 +116,7 @@ dt.draw_circle(10, 20, 5)
 ```
 (Try it).
 
-### 5. **Art project**.
+### 5. Art project
 In `my_geometric_art2.py`, use the ability to draw rectangles and circles, changing colors where needed, to make a far more impressive work of art. You are also welcome to use other functions in drawtool such as:
 ```python
 dt.draw_filled_circle(10, 20, 5)
