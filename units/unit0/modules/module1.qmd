@@ -268,7 +268,7 @@ print('Hello World!')
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.13
 
-Write up the above program in `case_error.py` and run it. Use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
+Write up the above program `case_error.py` using uppercase P instead of lowercase p, in print and run it. Use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
 :::
 
 What if we changed the case inside a string?
