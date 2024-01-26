@@ -303,7 +303,7 @@ Add a row for `5` (with five of them), writing your code in `my_forloop_print.py
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 3.11
 
-Just for the heck of it, could one use a for-loop to achieve the printing of `1` all by itself? That is, can a for-loop be set up so that you go into it exactly once? Write you code in `my_foorloop_print2.py`
+Just for the heck of it, could one use a for-loop to achieve the printing of `1` all by itself? That is, can a for-loop be set up so that you go into it exactly once? Write you code in `my_forloop_print2.py`
 :::
 
 Next, observe that the upper-limits of the for-loops are themselves increasing:
