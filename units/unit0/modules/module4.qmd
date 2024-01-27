@@ -121,7 +121,7 @@ Is it possible to not have a value in a variable? Consider this program:
 i
 print(i)
 ```
-Type up the program in  `my_variable_example3.py`. Use comments (text followed by ‘#’ symbol) to describe the error if any in the python-file.
+Type up the program in  `my_variable_example3.py` and run it to check if there are any errors to confirm if it is possible to not have a value in a variable. Submit the program.
 :::
 
 Thus: when you make a variable, you need to put something in it.
@@ -154,7 +154,7 @@ j = i
 print(j)
 print(i)   # Did i lose its value?
 ```
-Type up the program in `my_variable_example4.py` and use comments (text followed by ‘#’ symbol) to describe what happens with print(i) # Did i lose its value?
+Type up the program in `my_variable_example4.py` and use comments (text followed by ‘#’ symbol) to describe what happens with `print(i)`. Include ‘Yes’ or ‘No’ at the end of the comment, # Did I lose its value?  Submit the python file.
 :::
 
 The above example illustrates that the value in `i` gets copied into the variable `j`, which means that the value 5 is still in  the variable `i`.
@@ -277,7 +277,11 @@ print(n)      # what does this print?
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.10
 
-Type up the above in `my_variable_example8.py`. What is the value of n printed? Change i to 21. What is the value of n printed? Change i to 21. Use comments (text followed by ‘#’ symbol) to describe what happens when you change i to 21. Submit your code with i set to 5.
+Type up the above in `my_variable_example8.py`. Run the program and answer the following questions for yourself:
+
+- What is the value of `n` printed?
+- Change `i` to `21`. What is the value of `n` printed ?
+- Submit your code with `i` set to `5`.
 :::
 
 
@@ -450,7 +454,7 @@ print(s)
 Trace the changing values of `s` in the above program using the following kind of table:
 ![](../../../media/units/unit0/module4/tracetable.PNG)
 
- Try writing up the table in a spreadsheet or a document. There is nothing to submit in this exercise.
+There is nothing to submit in this exercise, but it is highly recommended that you complete the tracing exercise using a spreadsheet or a document.
 :::
 
 :::{.callout-note}
@@ -471,7 +475,7 @@ print(s)
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.18
 
-Write up the above program in my_expression_example4.py, edit the code to create an outer loop that varies N from 1 to 10... That is, make N a new for-loop variable that ranges between 1 and 10 (inclusive), and ensure that you properly indent the inner (nested) loop that uses i. Observe the pattern in the output and follow what the program is doing.
+Write up the above program in `my_expression_example4.py`, edit the code to create an outer loop that varies N from 1 to 10... That is, make N a new for-loop variable that ranges between 1 and 10 (inclusive), and ensure that you properly indent the inner (nested) loop that uses i. Observe the pattern in the output and follow what the program is doing.
 :::
 
 ###### **4.19 Video**
@@ -508,7 +512,7 @@ We'll solve it in the following steps:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.20
 
-Trace the values of i and k in the program above using a table in a spreadsheet or a document. Write up the above program in `loop_exercise1.py`. There is nothing to submit in this exercise
+Trace the values of `i` and `k` in the program above using a table in a spreadsheet or a document. It is highly recommended that you complete the tracing exercise using a spreadsheet or a document, though you are not submitting the tracing spreadsheet or document. Write up the above program in `loop_exercise1.py`and submit it.
 :::
 
 ## 4.6 A problem-solving example with variables and nested for-loops
@@ -556,7 +560,7 @@ As a first step, let's see if we can use a loop to compute a single power of 2:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.21
 
-Trace the changing values of p in the above program using a table in a spreadsheet or a document. Write up the above program in my_powerof2.py to confirm and submit.
+Trace the changing values of `p` in the above program using a table in a spreadsheet or a document. It is highly recommended that you complete the tracing exercise using a spreadsheet or a document, though you are not submitting the tracing spreadsheet or document. Write up the above program in `my_powerof2.py` and submit it.
 :::
 
 ###### **4.22 Video**
@@ -593,16 +597,19 @@ Trace the changing values of p in the above program using a table in a spreadshe
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.23
 
-Make a table with columns labeled `k, i, p` and `s` and trace the program, filling in the table step-by-step. There is nothing to submit in this exercise.
+Make a table with columns labeled `k, i, p` and `s` and trace the program, filling in the table step-by-step. It is highly recommended that you complete the tracing exercise using a spreadsheet or a document, though you are not submitting the tracing spreadsheet or document.
 :::
 
 ###### **4.24 Video:**
+<div id="video-4.24"></div>
 {{< video ../../../media/units/unit0/module4/u0-mod4.24.mp4 aspect-ratio="21x9" >}}
+
+<div id="exercise-4.25"></div>
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.25
 
-Watch the video above and try a few other values of n, e.g., n = 3 or n =4. Try to guess the mathematical formula for 1 + 2<sup>1</sup> + 2<sup>2</sup> + 2<sup>3</sup> + ... + 2<sup>n</sup>
+Watch the video above and try a few other values of n, e.g., n = 3 or n =4. Try to guess the mathematical formula for 1 + 2<sup>1</sup> + 2<sup>2</sup> + 2<sup>3</sup> + ... + 2<sup>n</sup>. There is nothing to submit in this exercise.
 :::
 
 :::{.callout-tip}
@@ -638,7 +645,7 @@ d /= 2         # Same as d = d / 2
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.26
 
-In `my_sum_powerof2.py` rewrite the example code that computes the sum of power of 2, using shortcut operators where possible.
+Using shortcut operators discussed above, in `my_sum_powerof2.py` rewrite the example code that computes the sum of the power of 2, as shown in the [**Video 4.24**](./module4.qmd#video-4.24) and [**Exercise 4.25**](./module4.qmd#exercise-4.25).
 :::
 
 ## 4.8 When things go wrong
@@ -655,7 +662,7 @@ i = j
 j = 4
 print(i)
 ```
-Type it up in `error1.py` to confirm. Use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
+Type up the above program in `error1.py` to confirm the error and submit.
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
@@ -668,7 +675,7 @@ j = 3
 k = ( (i + j) * (i - j) / 2
 print(k)
 ```
-Type it up in `error2.py` to confirm. Use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
+Type up the above program in `error2.py` to confirm the error and submit.
 :::
 
 We'll now see a different kind of error:
@@ -682,7 +689,7 @@ for i in range(1, n+1):
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.29
 
-Type it up in `error3.py` to confirm. Trace through the program to understand why there is an error. Use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
+Type up the above program in `error3.py` to confirm the error and submit. Trace through the program to understand why there is an error. It is highly recommended that you complete the tracing, though you are not submitting the tracing spreadsheet or document. See hint below.
 :::
 
 :::{.callout-tip title="Hint"}
