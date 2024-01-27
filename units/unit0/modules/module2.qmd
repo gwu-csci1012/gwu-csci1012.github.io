@@ -218,7 +218,7 @@ Use this idea to rewrite your own animal sound in a file called `my_pet_sound2.p
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.8
 
-Look at the example above. What step number is represented by the question mark (?) next to the second `print_big_O()` inside the `print_two_big_Os()` function? What line in the program represents step 15? Discuss the program to correctly identify “step-15” with your TAs.
+Look at the example above. What step number is represented by the question mark (?) next to the second `print_big_O()` inside the `print_two_big_Os()` function? What line in the program represents step 15? Discuss the program to correctly identify “step-15” with your TAs. There is nothing to submit in this exercise.
 :::
 
 ###### **2.9 Video**
