@@ -871,7 +871,7 @@ Exercise 3.14
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Consider this program:</p>
+<p>The discussion presented before this exercise was meant for you to develop an understanding of how to read programs. Tracing a program before running it is good way to read through the program and understand how it works. Now consider this program:</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">6</span>):</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(i, <span class="dv">0</span>, <span class="op">-</span><span class="dv">1</span>):</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">'*'</span>, end<span class="op">=</span><span class="st">''</span>)</span>
@@ -879,7 +879,17 @@ Exercise 3.14
 <span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, i):</span>
 <span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">'-'</span>, end<span class="op">=</span><span class="st">''</span>)</span>
 <span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>()</span></code></pre></div>
-<p>First, trace through the values of i and j by hand and try to figure out what gets printed. Do this painstakingly for each possible value of i and j, remembering that i is now the name of the outerloop variable. You can use the shorter “table” format. See <a href="../../../media/units/unit0/module3/TracingExample.pdf"><strong>this PDF for the above program</strong></a> Then edit, compile and execute the above program in <code>my_forloop_trace.py</code>. Discuss the program with your TA if you are encountering any errors or for any questions.</p>
+<p>Firstly, type up the program in <code>my_forloop_trace.py</code> and run it. If you are encountering any errors discuss with your TA and make sure there aren’t any errors before submitting the program.</p>
+<p>Secondly, trace through the values of i and j using approach presented in the PDF of the example program presented earlier. See <a href="../../../media/units/unit0/module3/TracingExample.pdf"><strong>this PDF for the above program</strong></a>.</p>
+<ul>
+<li>Discuss the tracing steps with your colleagues in the laboratory in groups of two or three.</li>
+<li>You can use the same table format presented therein.</li>
+<li>Do this painstakingly for each possible value of i and j.</li>
+<li>Consult your TA if you have any questions.</li>
+</ul>
+<p>Programs with nested loops can get complicated and challenging. The ultimate goal of this exercise is to get you to understand how to read programs especially when nested loops are involved.</p>
+
+<!-- First, trace through the values of i and j by hand and try to figure out what gets printed. Do this painstakingly for each possible value of i and j, remembering that i is now the name of the outerloop variable. You can use the shorter “table” format. See [**this PDF for the above program**](../../../media/units/unit0/module3/TracingExample.pdf)  Then edit, compile and execute the above program in `my_forloop_trace.py`. Discuss the program with your TA if you are encountering any errors or for any questions. -->
 </div>
 </div>
 <section id="video-3" class="level6">
@@ -1003,6 +1013,7 @@ Exercise 3.22
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<p>The following program is intended to go through a loop five times and print the numbers 0 through 5:</p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span> <span class="dv">6</span>):</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code></pre></div>
 <p>Write your corrected code in <code>my_loop_exercise1.py</code>.</p>
@@ -1018,7 +1029,8 @@ Exercise 3.23
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">6</span>)</span>
+<p>The following program is intended to go through a loop six times and print the numbers 1 through 6:</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code></pre></div>
 <p>Write your corrected code in <code>my_loop_exercise2.py</code>.</p>
 </div>
@@ -1033,7 +1045,8 @@ Exercise 3.24
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">6</span>:</span>
+<p>The following program is intended to go through a loop and print the numbers 15 through 19, with increments of 2, i.e., <code>15, 17, 19</code>:</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">15</span>, <span class="dv">20</span>, <span class="dv">2</span>:</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code></pre></div>
 <p>Write your corrected code in <code>my_loop_exercise3.py</code>.</p>
 </div>
@@ -1048,7 +1061,8 @@ Exercise 3.25
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">6</span>):</span>
+<p>The following program is intended to go through a loop and print the numbers 6 through 1, decrementing by 1, i.e., <code>6, 5, 4, 3, 2, 1</code>:</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">6</span>, <span class="dv">0</span>, <span class="op">-</span><span class="dv">1</span>):</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(i)</span></code></pre></div>
 <p>Write your corrected code in <code>my_loop_exercise4.py</code>.</p>
 </div>
@@ -1063,7 +1077,8 @@ Exercise 3.26
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">6</span>):</span>
+<p>The following program is intended to go through a loop and print the numbers 6 through 1, decrementing by 2, i.e., <code>6, 4, 2</code></p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">6</span>, <span class="dv">0</span>, <span class="op">-</span><span class="dv">2</span>):</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code></pre></div>
 <p>Write your corrected code in <code>my_loop_exercise5.py</code>.</p>
 </div>
@@ -1078,8 +1093,9 @@ Exercise 3.27
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">6</span>):</span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span> i</span></code></pre></div>
+<p>The following program is intended to go through a loop and print the numbers 10 through18, incrementing by 2, i.e., <code>10, 12, 14, 16, 18</code>:</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> count <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">2</span>):</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span> count</span></code></pre></div>
 <p>Write your corrected code in <code>my_loop_exercise6.py</code>.</p>
 </div>
 </div>
