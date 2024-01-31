@@ -37,6 +37,8 @@ By the end of this module, for simple HelloWorld-like programs, you will be able
 - Identify and correct syntax errors related to above objectives.
 - Distinguish between syntax errors and debugging.
 
+[**Instructor's lecture slide deck**](../../additional-resources/insructor-notes/week-2.qmd)
+
 ## 3.0 An example 
 
 Consider the following program:
