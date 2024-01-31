@@ -76,12 +76,12 @@ class DrawTool:
         plt.arrow(x1,y1,x2,y2, head_width=hw, head_length=hl, color=self.draw_color)
 
     def draw_ellipse(self, x, y, width, height):
-        e = Ellipse((x,y), width, height, self.angle, color=self.draw_color, fill=False)
+        e = Ellipse((x,y), width, height, angle=self.angle, color=self.draw_color, fill=False)
         e.set_clip_box(self.a.bbox)
         self.a.add_artist(e)
 
     def draw_filled_ellipse(self, x, y, width, height):
-        e = Ellipse((x,y), width, height, self.angle, color=self.draw_color, fill=True)
+        e = Ellipse((x,y), width, height, angle=self.angle, color=self.draw_color, fill=True)
         e.set_clip_box(self.a.bbox)
         self.a.add_artist(e)
 
@@ -93,12 +93,12 @@ class DrawTool:
 
 
     def draw_rectangle(self, x, y, width, height):
-        r = Rectangle((x,y), width, height, self.angle, color=self.draw_color, fill=False)
+        r = Rectangle((x,y), width, height, angle=self.angle, color=self.draw_color, fill=False)
         r.set_clip_box(self.a.bbox)
         self.a.add_artist(r)
 
     def draw_filled_rectangle(self, x, y, width, height):
-        r = Rectangle((x,y), width, height, self.angle, color=self.draw_color, fill=True)
+        r = Rectangle((x,y), width, height, angle=self.angle, color=self.draw_color, fill=True)
         r.set_clip_box(self.a.bbox)
         self.a.add_artist(r)
 
