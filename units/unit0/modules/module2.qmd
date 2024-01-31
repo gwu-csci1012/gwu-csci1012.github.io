@@ -33,6 +33,8 @@ programs, you will be able to:
 - Add numbered comments to show an execution trace.
 - Identify and correct syntax errors related to the above objectives.
 
+[**Instructor's lecture slide deck**](../../additional-resources/insructor-notes/week-1.qmd)
+
 ## 2.0 An example with function calls
 Consider the following program:
 ```python
