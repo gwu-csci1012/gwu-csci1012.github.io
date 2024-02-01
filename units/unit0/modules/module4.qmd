@@ -24,6 +24,10 @@ format:
   <span class="current-page">Module 4</span>
 </div>
 
+:::{.callout-warning}
+Before proceeding with Module 4 you would need to install `matplotlib` library. Follow these guides to learn about how to install packages in Thonny on a [**Mac**](../guides/thonny-mac-matplotlib.qmd) or [**Windows**](../guides/thonny-win-matplotlib.qmd) computer.
+:::
+
 ## Objectives
 By the end of this module, for simple HelloWorld-like programs, you will be able to:
 
