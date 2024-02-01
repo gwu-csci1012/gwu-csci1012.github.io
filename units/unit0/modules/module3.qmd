@@ -121,7 +121,7 @@ Type up the above in `my_forloop_example.py` and run it. You should observe this
 4
 5
 ```
-In the place in the code where you see the number 6, replace 6 with  10 and then run the program. Next, try 2 instead of 6. Finally, try 0 instead of 6. What is the output in each case? Discuss the program with your TA to understand what happens when you replace the number 6 with 10 and 2.
+In the place in the code where you see the number 6, replace 6 with  10 and then run the program. Next, try 2 instead of 6. Finally, try 0 instead of 6. What is the output in each case? Discuss the program with your TA to understand what happens when you replace the number 6 with 10 and 2. Submit your working program with the value 6 as the parameter in range() function in the for loop.
 :::
 
 Let's now examine elements of the loop:
@@ -488,6 +488,8 @@ Secondly, trace through the values of i and j using approach presented in the PD
 
 Programs with nested loops can get complicated and challenging. The ultimate goal of this exercise is to get you to understand how to read programs especially when nested loops are involved. 
 
+You are to only submit the working program `my_forloop_trace.py`. The tracing table need not be submitted.
+
 <!-- First, trace through the values of i and j by hand and try to figure out what gets printed. Do this painstakingly for each possible value of i and j, remembering that i is now the name of the outerloop variable. You can use the shorter “table” format. See [**this PDF for the above program**](../../../media/units/unit0/module3/TracingExample.pdf)  Then edit, compile and execute the above program in `my_forloop_trace.py`. Discuss the program with your TA if you are encountering any errors or for any questions. --> 
 :::
 
@@ -822,6 +824,10 @@ What to keep in mind:
 - Finally, think about this:
   - Anyone can acquire both programming and problem-solving skills with sufficient dedication. So why not you?
   - If you get past these hurdles with determination, you will leave in the dust all those who gave up earlier.
+
+:::{.callout-warning}
+Before proceeding with Module 4 you would need to install `matplotlib` library. Follow these guides to learn about how to install packages in Thonny on a [**Mac**](../guides/thonny-mac-matplotlib.qmd) or [**Windows**](../guides/thonny-win-matplotlib.qmd) computer.
+:::
 
 <!-- <br>
 [Previous Module: **Module 0.2**](./module0.2.qmd){.button .prev} [Next Module: **Module 0.4**](./module0.4.qmd){.button .next} -->
