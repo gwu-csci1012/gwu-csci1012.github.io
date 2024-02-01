@@ -365,7 +365,7 @@ The key to working them out is to use <b>extra</b> parentheses in the right way.
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.12
 
-Use the PEMDAS rule to evaluate mentally or by hand the expression,  `i*j - i+1*j-1` when `i = 7` and `j = 3`. Write a code to evaluate the expression and compare your answer.
+Use the PEMDAS rule to evaluate mentally or by hand the expression,  `i*j - i+1*j-1` when `i = 7` and `j = 3`. Write up python program `my_expression_example1.py` to evaluate the expression and compare your answer.
 :::
 
 ###### **4.13 Video**
@@ -475,7 +475,7 @@ print(s)
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.18
 
-Write up the above program in `my_expression_example4.py`, edit the code to create an outer loop that varies N from 1 to 10... That is, make N a new for-loop variable that ranges between 1 and 10 (inclusive), and ensure that you properly indent the inner (nested) loop that uses i. Observe the pattern in the output and follow what the program is doing.
+Write up the above program in `my_expression_example4.py`, edit the code to create an outer loop that varies N from 1 to 10... That is, make N a new for-loop variable that ranges between 1 and 10 (inclusive), and ensure that you properly indent the inner (nested) loop that uses i. Review [**Section 3.3**](https://gwu-csci1012.github.io/units/unit0/modules/module3.html#tracing-through-a-program-in-detail) in **Unit0 » Module3** to understand how the inner and outer loop are indented in a `nested-for-loop` and ensure that the inner for-loop that uses I is properly indented. Submit a working program.
 :::
 
 ###### **4.19 Video**
