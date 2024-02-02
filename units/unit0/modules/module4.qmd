@@ -479,7 +479,11 @@ print(s)
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.18
 
-Write up the above program in `my_expression_example4.py`, edit the code to create an outer loop that varies N from 1 to 10... That is, make N a new for-loop variable that ranges between 1 and 10 (inclusive), and ensure that you properly indent the inner (nested) loop that uses i. Review [**Section 3.3**](https://gwu-csci1012.github.io/units/unit0/modules/module3.html#tracing-through-a-program-in-detail) in **Unit0 » Module3** to understand how the inner and outer loop are indented in a `nested-for-loop` and ensure that the inner for-loop that uses I is properly indented. Submit a working program.
+Write up the above program in `my_expression_example4.py`, edit the code to create an outer loop that varies N from 1 to 10... That is, make N a new for-loop variable that ranges between 1 and 10 (inclusive), and ensure that you properly indent the inner (nested) loop that uses i. 
+
+Review [**Section 3.3**](https://gwu-csci1012.github.io/units/unit0/modules/module3.html#tracing-through-a-program-in-detail) in **Unit0 » Module3** to understand how the inner and outer loop are indented in a `nested-for-loop` and ensure that the inner for-loop that uses I is properly indented. 
+
+Submit a working program as `my_expression_example4.py`.
 :::
 
 ###### **4.19 Video**
@@ -704,15 +708,15 @@ The above is an example of a <em>runtime error</em>:
 - This causes a runtime error, meaning the program runs fine until the particular occurence of divide-by-zero.
 :::
 
-## 4.9 Python files vs module pdf
+<!-- ## 4.9 Python files vs module pdf
 **Important:**
 
 - By now it should be clear what you type into a Python file (ends with `.py`) verses what goes into your module pdf.
 - Code goes into the specified Python file (example: `error3.py`) and all other answers go into your module pdf (numbered by module#, such as: `module4.pdf`).
 - Your module pdf (a single pdf per module) will have all the non-coding answers for a module. Whereas, a module can have many different Python files.
-- Thus, in future modules, we will only specify the Python filename with the understanding that you know how to name your module pdf.
+- Thus, in future modules, we will only specify the Python filename with the understanding that you know how to name your module pdf. -->
 
-## 4.10 A peek at the future
+## 4.9 A peek at the future
 Let's now revisit some earlier code <a href="../../../media/units/unit0/module1/hello_gui.py" download >**hello_gui.py**</a> and apply what've learned about integers, arithmetic, and for-loops:
 ![](../../../media/units/unit0/module4/for-loop.png)
 
@@ -756,7 +760,7 @@ Let's point out:
 
 - We will occasionally write programs that work with numbers and quantitative concepts. As a result, we'll encounter mathematical ideas in a different way, through programming.
 
-## 4.11 Meta
+## 4.10 Meta
 Another in our series of occasional "meta" sections that will step back from the material to comment on how we can learn better.
 
 This was a loooong module with lots of exercises and details. Let's review:
