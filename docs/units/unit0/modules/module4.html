@@ -178,13 +178,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
  <span class="menu-text">Getting Started</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../units/unit0/editor.html" class="sidebar-item-text sidebar-link">
@@ -364,8 +364,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Lab Notes</span></span>
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">
+ <span class="menu-text">Lab Notes</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">
+ <span class="menu-text">Amal Alqahtani</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth4 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/additional-resources/lab-notes/amal/week-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week-1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
   </li>
       </ul>
   </li>
@@ -397,9 +421,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#a-problem-solving-example-with-variables-and-nested-for-loops" id="toc-a-problem-solving-example-with-variables-and-nested-for-loops" class="nav-link" data-scroll-target="#a-problem-solving-example-with-variables-and-nested-for-loops">4.6 A problem-solving example with variables and nested for-loops</a></li>
   <li><a href="#shortcut-operators" id="toc-shortcut-operators" class="nav-link" data-scroll-target="#shortcut-operators">4.7 Shortcut operators</a></li>
   <li><a href="#when-things-go-wrong" id="toc-when-things-go-wrong" class="nav-link" data-scroll-target="#when-things-go-wrong">4.8 When things go wrong</a></li>
-  <li><a href="#python-files-vs-module-pdf" id="toc-python-files-vs-module-pdf" class="nav-link" data-scroll-target="#python-files-vs-module-pdf">4.9 Python files vs module pdf</a></li>
-  <li><a href="#a-peek-at-the-future" id="toc-a-peek-at-the-future" class="nav-link" data-scroll-target="#a-peek-at-the-future">4.10 A peek at the future</a></li>
-  <li><a href="#meta" id="toc-meta" class="nav-link" data-scroll-target="#meta">4.11 Meta</a></li>
+  <li><a href="#a-peek-at-the-future" id="toc-a-peek-at-the-future" class="nav-link" data-scroll-target="#a-peek-at-the-future">4.9 A peek at the future</a></li>
+  <li><a href="#meta" id="toc-meta" class="nav-link" data-scroll-target="#meta">4.10 Meta</a></li>
   </ul>
 </nav>
     </div>
@@ -1016,7 +1039,9 @@ Exercise 4.18
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Write up the above program in <code>my_expression_example4.py</code>, edit the code to create an outer loop that varies N from 1 to 10… That is, make N a new for-loop variable that ranges between 1 and 10 (inclusive), and ensure that you properly indent the inner (nested) loop that uses i. Review <a href="https://gwu-csci1012.github.io/units/unit0/modules/module3.html#tracing-through-a-program-in-detail"><strong>Section 3.3</strong></a> in <strong>Unit0 » Module3</strong> to understand how the inner and outer loop are indented in a <code>nested-for-loop</code> and ensure that the inner for-loop that uses I is properly indented. Submit a working program.</p>
+<p>Write up the above program in <code>my_expression_example4.py</code>, edit the code to create an outer loop that varies N from 1 to 10… That is, make N a new for-loop variable that ranges between 1 and 10 (inclusive), and ensure that you properly indent the inner (nested) loop that uses i.</p>
+<p>Review <a href="https://gwu-csci1012.github.io/units/unit0/modules/module3.html#tracing-through-a-program-in-detail"><strong>Section 3.3</strong></a> in <strong>Unit0 » Module3</strong> to understand how the inner and outer loop are indented in a <code>nested-for-loop</code> and ensure that the inner for-loop that uses I is properly indented.</p>
+<p>Submit a working program as <code>my_expression_example4.py</code>.</p>
 </div>
 </div>
 </section>
@@ -1283,19 +1308,16 @@ Hint
 </ul>
 </div>
 </div>
-</section>
-<section id="python-files-vs-module-pdf" class="level2">
-<h2 class="anchored" data-anchor-id="python-files-vs-module-pdf">4.9 Python files vs module pdf</h2>
-<p><strong>Important:</strong></p>
-<ul>
-<li>By now it should be clear what you type into a Python file (ends with <code>.py</code>) verses what goes into your module pdf.</li>
-<li>Code goes into the specified Python file (example: <code>error3.py</code>) and all other answers go into your module pdf (numbered by module#, such as: <code>module4.pdf</code>).</li>
-<li>Your module pdf (a single pdf per module) will have all the non-coding answers for a module. Whereas, a module can have many different Python files.</li>
-<li>Thus, in future modules, we will only specify the Python filename with the understanding that you know how to name your module pdf.</li>
-</ul>
+<!-- ## 4.9 Python files vs module pdf
+**Important:**
+
+- By now it should be clear what you type into a Python file (ends with `.py`) verses what goes into your module pdf.
+- Code goes into the specified Python file (example: `error3.py`) and all other answers go into your module pdf (numbered by module#, such as: `module4.pdf`).
+- Your module pdf (a single pdf per module) will have all the non-coding answers for a module. Whereas, a module can have many different Python files.
+- Thus, in future modules, we will only specify the Python filename with the understanding that you know how to name your module pdf. -->
 </section>
 <section id="a-peek-at-the-future" class="level2">
-<h2 class="anchored" data-anchor-id="a-peek-at-the-future">4.10 A peek at the future</h2>
+<h2 class="anchored" data-anchor-id="a-peek-at-the-future">4.9 A peek at the future</h2>
 <p>Let’s now revisit some earlier code <a href="../../../media/units/unit0/module1/hello_gui.py" download=""><strong>hello_gui.py</strong></a> and apply what’ve learned about integers, arithmetic, and for-loops: <img src="../../../media/units/unit0/module4/for-loop.png" class="img-fluid"></p>
 <p>Next, consider this program that uses a for-loop to plot points:</p>
 <div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> drawtool <span class="im">import</span> DrawTool </span>
@@ -1342,7 +1364,7 @@ Exercise 4.30
 </ul>
 </section>
 <section id="meta" class="level2">
-<h2 class="anchored" data-anchor-id="meta">4.11 Meta</h2>
+<h2 class="anchored" data-anchor-id="meta">4.10 Meta</h2>
 <p>Another in our series of occasional “meta” sections that will step back from the material to comment on how we can learn better.</p>
 <p>This was a loooong module with lots of exercises and details. Let’s review:</p>
 <ul>
