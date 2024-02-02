@@ -11,7 +11,7 @@ website:
   search: true
   sidebar:
     style: floating
-    collapse-level: 1
+    # collapse-level: 2
     contents: 
       - href: index.qmd
         text: Home
@@ -62,7 +62,11 @@ website:
                   - href: units/additional-resources/insructor-notes/week-2.qmd
                     text: "Week-2"
               - section: "Lab Notes"
-              - contents: 
+                contents: 
+                  - section: "Amal Alqahtani"
+                    contents: 
+                      - href: ./units/additional-resources/lab-notes/amal/week-1.qmd
+                        text: "Week-1"
       - href: faq.qmd
         text: FAQ
 format:
