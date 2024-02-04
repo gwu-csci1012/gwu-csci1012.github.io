@@ -18,11 +18,11 @@ title: "**Module 2:** What's next for you in Computing?"
 </head>
 <body> -->
 
-<div class="breadcrumbs">
+<!-- <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
   <a href="#">Unit 2</a> &raquo;
   <span class="current-page">Module 2</span>
-</div>
+</div> -->
 
 ```python
 print('Congratulations!')
