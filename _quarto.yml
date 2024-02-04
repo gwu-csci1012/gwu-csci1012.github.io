@@ -9,6 +9,8 @@ website:
   # back-to-top-navigation: true
   page-footer: "The course material is sourced from **Prof. Simha's** webpage: <https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/> <br>This is a Quarto website. To learn more about Quarto websites visit <https://quarto.org/docs/websites>."
   search: true
+  page-navigation: true
+  bread-crumbs: true
   sidebar:
     style: floating
     # collapse-level: 2
@@ -23,12 +25,11 @@ website:
         text: Course Policies
       - href: instructors.qmd
         text: Instruction Team
-
       - ./submit-remember.qmd
       - ./units/useful.qmd
       - section: "Getting Started"
         contents: 
-        - ./units/unit0/editor.qmd
+          - ./units/unit0/editor.qmd
       - section: "Units"
         contents: 
           - section: "**Unit 0:** Getting Started With Programming"
