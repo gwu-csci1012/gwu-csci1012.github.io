@@ -18,10 +18,10 @@ format:
 </head>
 <body>
 
-<div class="breadcrumbs">
+<!-- <div class="breadcrumbs">
   <a href="./index.qmd">Home</a> &raquo;
   <span class="current-page">Instruction Team</span>
-</div>
+</div> -->
 
 ## Dr. Kartik Bulusu (Instructor)
 **Dr. Kartik V. Bulusu** is an Associate Professor of Practice in the Department of Computer Science (CS) and Associate Research Professor in the Department of Mechanical and Aerospace Engineering (MAE).
