@@ -45,7 +45,7 @@ title: "Schedule"
             <th>Topic(s)</th>
             <th>Wednesday Lab Date</th>
             <th>Friday Lab Date</th>
-            <th>Assignment(s)</th>
+            <th>Deliverable(s)</th>
         </tr>
     </thead>
     <tbody>
