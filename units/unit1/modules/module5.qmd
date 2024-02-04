@@ -18,11 +18,11 @@ title: "**Module 5:** Review"
 </head>
 <body> -->
 
-<div class="breadcrumbs">
+<!-- <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
   <a href="#">Unit 1</a> &raquo;
   <span class="current-page">Module 5</span>
-</div>
+</div> -->
 
 ## Objectives
 
