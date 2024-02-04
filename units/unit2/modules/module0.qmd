@@ -18,11 +18,11 @@ title: "**Module 0:** Arrays, Tuples, Sets, and Dictionaries"
 </head>
 <body> -->
 
-<div class="breadcrumbs">
+<!-- <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
   <a href="#">Unit 2</a> &raquo;
   <span class="current-page">Module 0</span>
-</div>
+</div> -->
 
 ## Objectives
 The goal of this module is to introduce the all important feature called <em>arrays</em>, of central importance in working with numeric data.
