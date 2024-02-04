@@ -2,10 +2,10 @@
 title: "FAQ"
 ---
 
-<div class="breadcrumbs">
+<!-- <div class="breadcrumbs">
   <a href="./index.qmd">Home</a> &raquo;
   <span class="current-page">FAQ</span>
-</div>
+</div> -->
 
 ### What is this course all about?
 
