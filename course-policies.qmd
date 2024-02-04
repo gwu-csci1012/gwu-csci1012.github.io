@@ -18,10 +18,10 @@ format:
 </head>
 <body>
 
-<div class="breadcrumbs">
+<!-- <div class="breadcrumbs">
   <a href="./index.qmd">Home</a> &raquo;
   <span class="current-page">Course Policies</span>
-</div>
+</div> -->
 
 ## Assessments and Grading
 ### Assessments
