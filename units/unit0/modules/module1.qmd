@@ -17,11 +17,11 @@ format:
 </head>
 <body>
 
-<div class="breadcrumbs">
+<!-- <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
   <a href="#">Unit 0</a> &raquo;
   <span class="current-page">Module 1</span>
-</div>
+</div> -->
 
 ## Objectives
 
