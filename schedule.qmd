@@ -18,10 +18,10 @@ title: "Schedule"
 </head>
 <body> -->
 
-<div class="breadcrumbs">
+<!-- <div class="breadcrumbs">
   <a href="./index.qmd">Home</a> &raquo;
   <span class="current-page">Schedule</span>
-</div>
+</div> -->
 
 :::{.callout-warning}
 - The course schedule is subject to changes during the semester. Please check the schedule at least **twice** a week.
