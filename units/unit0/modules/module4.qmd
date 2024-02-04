@@ -3,6 +3,7 @@ title: "**Module 4:** Integers"
 format:
   html:
     code-copy: false
+    bread-crumbs: true
 ---
 
 <html>
@@ -18,11 +19,11 @@ format:
 </head>
 <body>
 
-<div class="breadcrumbs">
+<!-- <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
   <a href="">Unit 0</a> &raquo;
   <span class="current-page">Module 4</span>
-</div>
+</div> -->
 
 :::{.callout-warning}
 Before proceeding with Module 4 you would need to install `matplotlib` library. Follow these guides to learn about how to install packages in Thonny on a [**Mac**](../guides/thonny-mac-matplotlib.qmd) or [**Windows**](../guides/thonny-win-matplotlib.qmd) computer.
