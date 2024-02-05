@@ -10,7 +10,7 @@ Reposting and circulation of these additional resources outside to the class and
 :::{.callout}
 **Referencing this presentation:**
 
-Amal Alqahtani. (2024, January 24). Lab Week-1 Activity Summary: CSCI1012 Introduction to Programming with Python [Week-1: Introduction to Programming with Python]. Department of Computer Science, The George Washington University. [https://gwu-csci1012.github.io/](https://gwu-csci1012.github.io/)
+Amal AlQahtani. (2024, January 24). Lab Week-1 Activity Summary: CSCI1012 Introduction to Programming with Python [Week-1: Introduction to Programming with Python]. Department of Computer Science, The George Washington University. [https://gwu-csci1012.github.io/](https://gwu-csci1012.github.io/)
 :::
 
 
