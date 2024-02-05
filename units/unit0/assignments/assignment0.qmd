@@ -75,7 +75,7 @@ At this point, do not read further and try to address the following:
 Don't forget to submit your solutions to the exercises within the demo problem while you are being asked to examine the solution through the guided exercises presented to you [**here**](assignment0-solution.qmd).
 :::
 
-### 2. In `my_nested.py` use nested loops in print the following pattern:
+### 2. In `my_nested.py` use nested loops to print the following pattern:
 ```python
 10 1 10
 20 1 10
