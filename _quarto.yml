@@ -68,6 +68,9 @@ website:
                     contents: 
                       - href: ./units/additional-resources/lab-notes/amal/week-1.qmd
                         text: "Week-1"
+      - section: "Assignments"
+        contents:
+          - ./units/unit0/assignments/assignment0.qmd
       - href: faq.qmd
         text: FAQ
 format:
