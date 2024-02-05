@@ -37,7 +37,6 @@ In this assignment set, we will help develop your problem-solving skills by show
 
 ## Assignment problems
 
-<!-- :::{.callout-caution appearance="simple" icon=false} -->
 ### 1. Demo problem
 Suppose we want to use for-loops to produce this arrow-head like pattern:
 ```python
@@ -75,9 +74,7 @@ At this point, do not read further and try to address the following:
 ### You are required to submit your solutions to the **exercises** within this demo problem.
 Don't forget to submit your solutions to the exercises within the demo problem while you are being asked to examine the solution through the guided exercises presented to you [**here**](assignment0-solution.qmd).
 :::
-<!-- ::: -->
 
-<!-- :::{.callout-caution appearance="simple" icon=false} -->
 ### 2. In `my_nested.py` use nested loops in print the following pattern:
 ```python
 10 1 10
@@ -97,9 +94,7 @@ Don't forget to submit your solutions to the exercises within the demo problem w
 30 4 40
 40 4 40
 ```
-<!-- ::: -->
 
-<!-- :::{.callout-caution appearance="simple" icon=false} -->
 ### 3. In `my_nested2.py`, write a program that uses nested for-loops to print the following pattern:
 
 ```python
@@ -116,12 +111,13 @@ Don't forget to submit your solutions to the exercises within the demo problem w
 ```
 
 Notice that the each of row of **\*-characters** is ending with the count or the number of *-characters at the end is particular way.
-<!-- ::: -->
 
-<!-- :::{.callout-caution appearance="simple" icon=false} -->
 ### 4. In this exercise you will use a drawing tool and a for-loop to draw a series of rectangles. The goal is to draw this:
 
-<!-- ![](../../../media/units/unit0/assignment1/rectangles.png) -->
+:::{.callout-tip}
+Before proceeding with this question you would need to install `matplotlib` library. Follow these guides to learn about how to install packages in Thonny on a [**Mac**](../guides/thonny-mac-matplotlib.qmd) or [**Windows**](../guides/thonny-win-matplotlib.qmd) computer.
+:::
+
 ![](../../../media/units/unit0/assignment0/Figure_Assign0Prob4.png)
 
 The code for drawing a single rectangle is:
@@ -144,9 +140,7 @@ As a first step, download <a href="../../../media/useful/drawtool.py" download>*
   - `drawtool.py`
   - `my_rectangle_example.py`
   - `my_rectangle_pattern.py`
-<!-- ::: -->
 
-<!-- :::{.callout-caution appearance="simple" icon=false} -->
 ### 5. The python program below intends to print a few lines from a poem by Rudyard Kipling in the manner presented:
 
 ```python
@@ -165,9 +159,7 @@ print("And so hold on when there is nothing in you')
 print(' Except the Will which says to them: 'Hold on!)
 ```
 There are several errors in the above program. Fix the program and save it in `fixed_KiplingPoemLines.py`. Submit your working program.
-<!-- ::: -->
 
-<!-- :::{.callout-caution appearance="simple" icon=false} -->
 ### 6. The following program intends to print the following five times as in:
 
   ```python
@@ -187,9 +179,7 @@ for i in range(1,5):
 print_GWUEmail
 ```
 There are several errors in the above program. Fix the program and save it in `fixed_GWUEmail.py`. Submit your working program.
-<!-- ::: -->
 
-<!-- :::{.callout-caution appearance="simple" icon=false} -->
 ### 7. The python program below intends to print the numbers 5 through 0 in the manner presented:
 ```python
      5
@@ -209,7 +199,6 @@ def function#2()
 function#2()
 ```
 There are several errors in the above program. Fix the program and save it in `fixed_downprint.py`. Submit your working program.
-<!-- ::: -->
 
 <!-- ### 8. In each assignment, we will include a sometimes whimsical, sometimes serious non-coding exploration to encourage creativity and curiousity. For this assignment, in your `assignment1.pdf`, make a cartoon that makes light of "frustration with computers". You can use a simple drawing tool, or find images that are copyright-free (please include the link to images/cartoons). Make sure the caption is <em>original</em> (this is the whole point). We'll post some of the funniest ones. -->
 
