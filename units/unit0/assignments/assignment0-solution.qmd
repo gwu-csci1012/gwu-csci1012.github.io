@@ -1,5 +1,5 @@
 ---
-title: "**Assignment 1:** Problem Solving Example"
+title: "**Assignment 0:** Problem Solving Example"
 format:
   html:
     code-copy: false
@@ -18,19 +18,24 @@ format:
 </head>
 <body>
 
-<div class="breadcrumbs">
+<!-- <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
   <a href="">Unit 0</a> &raquo;
   <a href="./assignment1.qmd">Assignment 1</a> &raquo;
   <span class="current-page">Problem Solving</span>
-</div>
+</div> -->
 
+::: {.callout-important}
+- You are here to solve the demo problem only. 
+- Once you are done with this demo problem you need to go back tothe remaning problems in `assignment0`, found [here](assignment0.qmd) and complete them.
+:::
 
 With a challenging problem, what is often hardest is getting started. Where to begin?
 
 
 Let's start by examining the output more closely:
-![](../../../media/units/unit0/assignment1/arrowhead.png)
+<!-- ![](../../../media/units/unit0/assignment1/arrowhead.png) -->
+![](../../../media/units/unit0/assignment0/arrowhead.png)
 
 Let's try to get the top half of the arrowhead first:
 
@@ -58,10 +63,12 @@ Let's try to get the top half of the arrowhead first:
     ```
 - At this point we can try this and see what it does.
 
+:::{.callout-caution appearance="simple" icon=false}
+###### <span style="color:#8B4513;">**A0.1.1 Exercise:**</span>
+Write up the above in `my_demo_problem1.py` and save it. 
 
-###### <span style="color:#8B4513;">**A1.1 Exercise:**</span>
-Write up the above in `my_demo_problem1.py`. What went wrong? Explain in your `assignment1.pdf`.
-
+At this stage, we should assess the output generated and proceed toward improving our program.
+:::
 - Now let's generalize to printing a single line of i asterisks:
  
     ```python
@@ -85,9 +92,14 @@ Write up the above in `my_demo_problem1.py`. What went wrong? Explain in your `a
         for j in range(0,i):
             print('*', end='')
     ```
-###### <span style="color:#8B4513;">**A1.2 Exercise:**</span>
-Write up the above in `my_demo_problem2.py`. What went wrong? Explain in your `assignment1.pdf`.
 
+:::{.callout-caution appearance="simple" icon=false}
+###### <span style="color:#8B4513;">**A0.1.2 Exercise:**</span>
+Write up the above in `my_demo_problem2.py` and save it. 
+
+Something does not look correct at this stage. However, we are building up our code in stages and should think about how to correct it and proceed further. 
+<!--  Explain in your `assignment1.pdf`. -->
+:::
 - Let's fix the issue. We need to get to a new line every time the inner loop completes.
 - Does this work?
 
@@ -99,9 +111,13 @@ Write up the above in `my_demo_problem2.py`. What went wrong? Explain in your `a
             print()
     ```
 
-###### <span style="color:#8B4513;">**A1.3 Exercise:**</span>
-Write up the above in `my_demo_problem3.py`. What went wrong?
 
+:::{.callout-caution appearance="simple" icon=false}
+###### <span style="color:#8B4513;">**A0.1.3 Exercise:**</span>
+Write up the above in `my_demo_problem3.py` and save it. 
+
+Again, we can assess from the output that something does not look correct at this stage. However, we can assess what went wrong and proceed toward correcting it in  stages.
+:::
 - Next, we'll fix and write:
     
     ```python
@@ -111,12 +127,12 @@ Write up the above in `my_demo_problem3.py`. What went wrong?
             print('*', end='')
         print()
     ```
+
 - Does this work?
 
-###### <span style="color:#8B4513;">**A1.4 Exercise:**</span>
-Write up the above in `my_demo_problem4.py`. What went wrong?
+The output generated looks promising but is not correct. Count the number of rows in the output. 
 
-- We now have the solution to the top half:
+- At this stage let's determine how we can proceed toward correcting it.
  
     ```python
     for i in range(1, 11):
@@ -125,6 +141,15 @@ Write up the above in `my_demo_problem4.py`. What went wrong?
             print('*', end='')
         print()
     ```
+- We now have the solution to the top half:
+
+:::{.callout-caution appearance="simple" icon=false}
+###### <span style="color:#8B4513;">**A0.1.4 Exercise:**</span>
+Write up the above in `my_demo_problem4.py` and save it. 
+
+We are only half way through in completing this program. We made good progress and now are ready for the next stage.
+:::
+
 Next, let's tackle the bottom half:
 
 - Again, we see that each particular line prints a number of *'s.
@@ -174,8 +199,21 @@ Next, let's tackle the bottom half:
         print()
     ```
 
-###### <span style="color:#8B4513;">**A1.5 Exercise:**</span>
-Write up the above in `my_demo_problem5.py`. Did it work? Submit your final version in `my_arrowhead.py`.
+:::{.callout-caution appearance="simple" icon=false}
+###### <span style="color:#8B4513;">**A0.1.5 Exercise:**</span>
+Write up the above in `my_demo_problem5.py`. Did it work? Look closely at your output. Figure out how to fix the code.
+:::
 
+:::{.callout-caution appearance="simple" icon=false}
+###### <span style="color:#8B4513;">**A0.1.6 Exercise:**</span>
+Once you've fixed the code, submit your final version in `my_arrowhead.py`.
+:::
+
+:::{.callout-note}
+### If you got this far successfully, congratulations!
+- Remember: You are saving all the programs in a directory called `assignment0`.
+- You need to start addressing the remaning problems in `assignment0`, found [here](assignment0.qmd).
+- After completing the remaining problems in this assignment, make a `zip` of the directory as `assignment0.zip` and submit it.
+:::
 </body>
 </html>
