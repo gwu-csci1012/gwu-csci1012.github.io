@@ -64,7 +64,7 @@ website:
                     text: "Week-2"
               - section: "Lab Notes"
                 contents: 
-                  - section: "Amal Alqahtani"
+                  - section: "Amal AlQahtani"
                     contents: 
                       - href: ./units/additional-resources/lab-notes/amal/week-1.qmd
                         text: "Week-1"
