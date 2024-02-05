@@ -110,7 +110,7 @@ Don't forget to submit your solutions to the exercises within the demo problem w
 *         1
 ```
 
-Notice that the each of row of **\*-characters** is ending with the count or the number of *-characters at the end is particular way.
+Notice that the each row of **\*-characters** is ending with the count or the number of ***-characters** in that particular row.
 
 ### 4. In this exercise you will use a drawing tool and a for-loop to draw a series of rectangles. The goal is to draw this:
 
