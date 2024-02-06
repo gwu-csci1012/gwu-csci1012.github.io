@@ -30,6 +30,7 @@ website:
       - section: "Getting Started"
         contents: 
           - ./units/unit0/editor.qmd
+          - ./units/unit0/guides/hello.qmd
       - section: "Units"
         contents: 
           - section: "**Unit 0:** Getting Started With Programming"
