@@ -3,6 +3,7 @@ title: "Installing an Editor"
 format:
   html:
     code-copy: false
+    bread-crumbs: true
 ---
 
 <html>
