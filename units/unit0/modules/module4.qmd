@@ -377,7 +377,7 @@ The key to working them out is to use <b>extra</b> parentheses in the right way.
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.12
 
-Use the PEMDAS rule to evaluate mentally or by hand the expression,  `i*j - i+1*j-1` when `i = 7` and `j = 3`. Write up python program `my_expression_example1.py` to evaluate the expression and compare your answer.
+Use the PEMDAS rule to evaluate mentally or by hand the expression,  `i*j - i+1*j-1` when `i = 7` and `j = 3`. Write a Python program `my_expression_example1.py` to evaluate the expression and print your answer.
 :::
 
 ###### **4.13 Video**
