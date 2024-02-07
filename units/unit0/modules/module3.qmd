@@ -37,7 +37,9 @@ By the end of this module, for simple HelloWorld-like programs, you will be able
 - Identify and correct syntax errors related to above objectives.
 - Distinguish between syntax errors and debugging.
 
+:::{.callout-tip}
 [**Instructor's lecture slide deck**](../../additional-resources/insructor-notes/week-2.qmd)
+:::
 
 ## 3.0 An example 
 
@@ -462,7 +464,9 @@ Ready? Let's trace through:
 
 Yes, that was long. But doing this many times will help you understand how to read programs. Later, you will become good at this and will, with a quick glance at the inner-loop, say "Oh, this prints 2 twice in the first iteration of the outer."
 
-**Important:** when you need to submit a program's traced-out execution, use a shorter version. For example, [**see this PDF for the above program**](../../../media/units/unit0/module3/TracingExample.pdf).
+:::{.callout-important}
+When you need to submit a program's traced-out execution, use a shorter version. For example, [**see this PDF for the above program**](../../../media/units/unit0/module3/TracingExample.pdf).
+:::
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 3.14

@@ -35,8 +35,9 @@ By the end of this module you will be able to:
 - Write a function and examine proper indentation.
 - Find and fix errors
 
+:::{.callout-tip}
 [**Instructor's lecture slide deck**](../../additional-resources/insructor-notes/week-1.qmd)
-
+:::
 
 ## 1.0 comments
 A <em>comment</em> is like a note-to-self that you include directly in a program as a way to explain something to yourself for later, or to someone else who reads your program.

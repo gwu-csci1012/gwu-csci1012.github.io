@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources: 
     - "*.mp4"
+    - "*.mov"
 
 website:
   title: "**CSCI1012**"

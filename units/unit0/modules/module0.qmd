@@ -30,7 +30,9 @@ By the end of this module you will be able to:
 - Experince writing a really simple program.
 - Explain the difference between command-line outputs vs GUI for programs.
 
+:::{.callout-tip}
 [**Instructor's lecture slide deck**](../../additional-resources/insructor-notes/week-1.qmd)
+:::
 
 ### 0.0: Our First Program
 Lets take a look at our first program as it appears in a textbook (like this one):

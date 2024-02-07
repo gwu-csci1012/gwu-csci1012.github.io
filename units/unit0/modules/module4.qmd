@@ -46,7 +46,12 @@ By the end of this module, for simple HelloWorld-like programs, you will be able
 
 And, once we've worked with integers, we'll also do some "number crunching".
 
-[**Lecture video for `for-loop` with tracing**](https://drive.google.com/file/d/1L5ZVpVb_yDJ6Ijihp3I4lTFak3G8rST4/view)
+:::{.callout-tip}
+[**Instructor's lecture slide deck**](../../additional-resources/insructor-notes/week-3.qmd)
+:::
+
+<!-- #### **Lecture video for `for-loop` with tracing**
+{{< video ../../../media/units/unit0/module4/Tracing_Demo1_SumOfIntegers.mov aspect-ratio="21x9" >}} -->
 
 ## 4.0 First, an analogy
 Suppose we have boxes. Consider the following rules about "boxes":
