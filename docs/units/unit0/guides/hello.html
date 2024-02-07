@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -424,6 +458,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#step-4-option-a-helloworld-in-thonny" id="toc-step-4-option-a-helloworld-in-thonny" class="nav-link" data-scroll-target="#step-4-option-a-helloworld-in-thonny">Step 4 (Option A): Helloworld in Thonny</a></li>
   <li><a href="#step-4-option-b-helloworld-in-spyder" id="toc-step-4-option-b-helloworld-in-spyder" class="nav-link" data-scroll-target="#step-4-option-b-helloworld-in-spyder">Step 4 (Option B): Helloworld in Spyder</a></li>
   <li><a href="#step-5-installing-matplotlib-or-any-package-for-thonny-users" id="toc-step-5-installing-matplotlib-or-any-package-for-thonny-users" class="nav-link" data-scroll-target="#step-5-installing-matplotlib-or-any-package-for-thonny-users">Step 5: Installing Matplotlib (or any package) for Thonny Users</a></li>
+  <li><a href="#step-6-installing-matplotlib-on-spyder" id="toc-step-6-installing-matplotlib-on-spyder" class="nav-link" data-scroll-target="#step-6-installing-matplotlib-on-spyder">Step 6: Installing Matplotlib on Spyder</a></li>
   </ul></li>
   <li><a href="#windows-users" id="toc-windows-users" class="nav-link" data-scroll-target="#windows-users">Windows Users</a>
   <ul class="collapse">
@@ -433,6 +468,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#step-4-option-a-helloworld-in-thonny-1" id="toc-step-4-option-a-helloworld-in-thonny-1" class="nav-link" data-scroll-target="#step-4-option-a-helloworld-in-thonny-1">Step 4 (Option A): Helloworld in Thonny</a></li>
   <li><a href="#step-4-option-b-helloworld-in-spyder-1" id="toc-step-4-option-b-helloworld-in-spyder-1" class="nav-link" data-scroll-target="#step-4-option-b-helloworld-in-spyder-1">Step 4 (Option B): Helloworld in Spyder</a></li>
   <li><a href="#step-5-installing-matplotlib-for-thonny-users" id="toc-step-5-installing-matplotlib-for-thonny-users" class="nav-link" data-scroll-target="#step-5-installing-matplotlib-for-thonny-users">Step 5: Installing Matplotlib for Thonny Users</a></li>
+  <li><a href="#step-6-installing-matplotlib-on-spyder-1" id="toc-step-6-installing-matplotlib-on-spyder-1" class="nav-link" data-scroll-target="#step-6-installing-matplotlib-on-spyder-1">Step 6: Installing Matplotlib on Spyder</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -457,6 +493,18 @@ ul.task-list li input[type="checkbox"] {
 
 
 </header>
+
+
+
+
+<style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
 
 
 <section id="objectives" class="level2">
@@ -542,6 +590,14 @@ Note
 <li><p>Windows Users: <a href="../../../units/unit0/guides/hello.html#install-matplotlib-win"><strong>Install matplotlib for Thonny</strong></a></p></li>
 </ul>
 </section>
+<section id="step-6-install-matplotlib-on-spyder" class="level4">
+<h4 class="anchored" data-anchor-id="step-6-install-matplotlib-on-spyder"><strong>Step 6: Install matplotlib on Spyder</strong></h4>
+<p>If you are using Spyder that comes bundled with Anaconda Navigator you don’t have to do anything extra as matplotlib comes packaged with Spyder. You can verify that you have matplotlib on your computer by following these steps:</p>
+<ul>
+<li><p>Mac Users: <a href="../../../units/unit0/guides/hello.html#install-matplotlib-spyder-mac"><strong>Install matplotlib on Spyder</strong></a></p></li>
+<li><p>Windows Users: <a href="../../../units/unit0/guides/hello.html#install-matplotlib-spyder-win"><strong>Install matplotlib on Spyder</strong></a></p></li>
+</ul>
+</section>
 </section>
 <section id="macos-users" class="level2">
 <h2 class="anchored" data-anchor-id="macos-users">macOS Users</h2>
@@ -624,6 +680,15 @@ Tip
 <li><p>To add the package, click the install button. You will then see a small popup while the package is installed. <img src="../../../media/hello/matplotlib/step3add.png" class="img-fluid"></p></li>
 </ul>
 </section>
+<section id="step-6-installing-matplotlib-on-spyder" class="level3">
+<h3 class="anchored" data-anchor-id="step-6-installing-matplotlib-on-spyder">Step 6: Installing Matplotlib on Spyder</h3>
+<div id="install-matplotlib-spyder-mac">
+
+</div>
+<p>Matplotlib comes packaged with Spyder if accessed through Anaconda Navigator, so you dont really have to do anything extra. To verify you have matplotlib, try importing matplotlib in your console</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib</span></code></pre></div>
+<p><img src="../../../media/hello/spyder-import-matplotlib.png" class="img-fluid"></p>
+</section>
 </section>
 <section id="windows-users" class="level2">
 <h2 class="anchored" data-anchor-id="windows-users">Windows Users</h2>
@@ -704,6 +769,15 @@ Tip
 <li><p>To add the package, click the install button. You will then see a small popup while the package is installed.</p>
 <p><img src="../../../media/hello/matplotlib/step3add.png" class="img-fluid"></p></li>
 </ul>
+</section>
+<section id="step-6-installing-matplotlib-on-spyder-1" class="level3">
+<h3 class="anchored" data-anchor-id="step-6-installing-matplotlib-on-spyder-1">Step 6: Installing Matplotlib on Spyder</h3>
+<div id="install-matplotlib-spyder-win">
+
+</div>
+<p>Matplotlib comes packaged with Spyder if accessed through Anaconda Navigator, so you dont really have to do anything extra. To verify you have matplotlib, try importing matplotlib in your console</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib</span></code></pre></div>
+<p><img src="../../../media/hello/spyder-import-matplotlib.png" class="img-fluid"></p>
 
 
 </section>
@@ -737,58 +811,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
