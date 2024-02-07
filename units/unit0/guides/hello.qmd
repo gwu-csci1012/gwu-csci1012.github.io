@@ -1,6 +1,23 @@
 ---
 title: "Instructions for typing and running your first program"
+format:
+  html:
+    code-copy: false
+    bread-crumbs: true
 ---
+
+<html>
+<head>
+    <style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
+</head>
+<body>
 
 ## Objectives
 We will now have you <em>type</em>, </em>run</em>, and save your first <em>computer program</em>.
@@ -80,6 +97,13 @@ What is matplotlib? It's a plotting package that we'll use. This comes packaged 
 
 - Windows Users: [**Install matplotlib for Thonny**](hello.qmd#install-matplotlib-win)
 
+#### **Step 6: Install matplotlib on Spyder**
+If you are using Spyder that comes bundled with Anaconda Navigator you don't have to do anything extra as matplotlib comes packaged with Spyder. You can verify that you have matplotlib on your computer by following these steps:
+
+- Mac Users: [**Install matplotlib on Spyder**](hello.qmd#install-matplotlib-spyder-mac)
+
+- Windows Users: [**Install matplotlib on Spyder**](hello.qmd#install-matplotlib-spyder-win)
+
 
 ## macOS Users
 ### Step 1: Installing Anaconda
@@ -130,7 +154,7 @@ You now have opened Thonny
 {{< video ../../../media/hello/u0-mod0-mac-spyder.mp4 aspect-ratio="21x9" >}}
 
 
-### Step 5: Installing Matplotlib (or any package) for  Thonny Users
+### Step 5: Installing Matplotlib (or any package) for Thonny Users
 <div id="install-matplotlib-mac"></div>
 
 How to add a package (like Matplotlib):
@@ -143,6 +167,17 @@ How to add a package (like Matplotlib):
 
 - To add the package, click the install button. You will then see a small popup while the package is installed.
     ![](../../../media/hello/matplotlib/step3add.png)
+
+### Step 6: Installing Matplotlib on Spyder
+<div id="install-matplotlib-spyder-mac"></div>
+
+Matplotlib comes packaged with Spyder if accessed through Anaconda Navigator, so you dont really have to do anything extra. To verify you have matplotlib, try importing matplotlib in your console
+
+```python
+import matplotlib
+```
+
+![](../../../media/hello/spyder-import-matplotlib.png)
 
 
 ## Windows Users
@@ -202,3 +237,14 @@ How to add a package (like Matplotlib):
 - To add the package, click the install button. You will then see a small popup while the package is installed.
     
     ![](../../../media/hello/matplotlib/step3add.png)
+
+### Step 6: Installing Matplotlib on Spyder
+<div id="install-matplotlib-spyder-win"></div>
+
+Matplotlib comes packaged with Spyder if accessed through Anaconda Navigator, so you dont really have to do anything extra. To verify you have matplotlib, try importing matplotlib in your console
+
+```python
+import matplotlib
+```
+
+![](../../../media/hello/spyder-import-matplotlib.png)
