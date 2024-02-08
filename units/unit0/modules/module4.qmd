@@ -50,8 +50,8 @@ And, once we've worked with integers, we'll also do some "number crunching".
 [**Instructor's lecture slide deck**](../../additional-resources/insructor-notes/week-3.qmd)
 :::
 
-<!-- #### **Lecture video for `for-loop` with tracing**
-{{< video ../../../media/units/unit0/module4/Tracing_Demo1_SumOfIntegers.mov aspect-ratio="21x9" >}} -->
+#### **Lecture video for `for-loop` with tracing**
+{{< video ../../../media/units/unit0/module4/Tracing_Demo1_SumOfIntegers.mp4 aspect-ratio="21x9" >}}
 
 ## 4.0 First, an analogy
 Suppose we have boxes. Consider the following rules about "boxes":
