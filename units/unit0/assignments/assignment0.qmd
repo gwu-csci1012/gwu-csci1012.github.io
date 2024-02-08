@@ -134,12 +134,16 @@ dt.display()
 This produces (we've added some markup to explain):
 ![](../../../media/units/unit0/assignment0/FigureExplan_Assign0Prob4.png)
 
-As a first step, download <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> into your assignment0 folder and type up the above single-rectangle example in `my_rectangle_example.py`. This way, you know that the download worked and that drawing works. Now you can focus on the many-rectangle problem. Think about how the for-loop needs to range so that you can draw the rectangles in the loop. Write your program in `my_rectangle_pattern.py`.
+As a first step, download <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> into your `assignment0` folder and type up the above single-rectangle example in `my_rectangle_example.py`. This way, you know that the download worked and that drawing works. Now you can focus on the many-rectangle problem. Think about how the for-loop needs to range so that you can draw the rectangles in the loop. Write your program in `my_rectangle_pattern.py`.
 
 - For this problem you are saving the following three files toward the submission:
   - `drawtool.py`
   - `my_rectangle_example.py`
   - `my_rectangle_pattern.py`
+
+:::{.callout-tip}
+Use `dt.draw_filled_rectangle()` to implement a filled rectangle in your python script.
+:::
 
 ### 5. The python program below intends to print a few lines from a poem by Rudyard Kipling in the manner presented:
 
