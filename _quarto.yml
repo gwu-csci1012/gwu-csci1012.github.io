@@ -66,6 +66,8 @@ website:
                     text: "Week-2"
                   - href: units/additional-resources/insructor-notes/week-3.qmd
                     text: "Week-3"
+                  - href: units/additional-resources/insructor-notes/week-4.qmd
+                    text: "Week-4"
               - section: "Lab Notes"
                 contents: 
                   - section: "Amal AlQahtani"
