@@ -105,7 +105,15 @@ Quick review of some relevant math:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.2
 
-Type up the above in `my_real_example2.py`. What is the output? Consider 2.56<sup>x</sup> = y. Can you guess what approximate value of x would make `y` become 400? Play around with the number 6.4 in the program above and see if you can guess approximately what value would make `y` become 400. 
+Type up the above in `my_real_example2.py`.
+
+Now consider 2.56<sup>x</sup> = y.
+
+- Try the number `x = 6.4` in the equation above.
+- Use Python to compute the value of `y` including it in the program `my_real_example2.py`
+- Check if the value of `y` is approximately `400` by changing the the value of `x` from `6.4`.
+- You don’t have to be accurate.
+- Submit the program `my_real_example2.py` with value of `x` that in your attempts gets the value of `y` closest to the `400`.
 :::
 
 Let's explore further:
