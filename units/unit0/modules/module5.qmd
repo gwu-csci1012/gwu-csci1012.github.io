@@ -745,7 +745,7 @@ print(n)
   x = 'helloooooooo'
   print(x.count('o'))    # Number of o's in string x
   y = 'missisippi'
-  print(y.count('i'))    # Number of i's in string x
+  print(y.count('i'))    # Number of i's in string y
   ```
 :::
 
