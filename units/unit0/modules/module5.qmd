@@ -850,7 +850,7 @@ We'll understand this better once we see functions in more detail.
 Finally, we've written a program to solve an actual problem. Perhaps there's a market out there for pangram-checkers?
 
 ## 5.8 When things go wrong
-In each of the exercises below, try to identify the error before typing it up and confirming. Report the error in the module pdf. Then, fix the error in the code, using the specified program (.py) name.
+In each of the exercises below, try to identify the error before typing it up and confirming. Then, fix the error in the code, using the specified program (`.py`) name.
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 5.30
