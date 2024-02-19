@@ -38,6 +38,10 @@ By the end of this module, for simple programs with real numbers, you will be ab
 - Produce desired output using for-loops and calculations.
 - Identify new syntactic elements related to the above.
 
+:::{.callout-tip}
+[**Instructor's video lectures**](../../additional-resources/insructor-notes/week-5.qmd)
+:::
+
 ## 6.0 What are real numbers?
 Let's start with some math facts:
 
