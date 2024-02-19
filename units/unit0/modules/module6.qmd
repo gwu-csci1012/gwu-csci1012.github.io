@@ -71,7 +71,7 @@ Let's start with some math facts:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.1
 
-Type up the above in `my_real_example1.py`. What is the output?
+Type up and submit the above in `my_real_example1.py`. Confirm that the operations on real number should output a real number in this exercise.
 :::
 
 :::{.callout-note}
@@ -105,15 +105,15 @@ Quick review of some relevant math:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.2
 
-Type up the above in `my_real_example2.py`.
+Type up the above in `my_real_example2.py`. 
 
-Now consider 2.56<sup>x</sup> = y.
-
-- Try the number `x = 6.4` in the equation above.
-- Use Python to compute the value of `y` including it in the program `my_real_example2.py`
-- Check if the value of `y` is approximately `400` by changing the the value of `x` from `6.4`.
-- You don’t have to be accurate.
-- Submit the program `my_real_example2.py` with value of `x` that in your attempts gets the value of `y` closest to the `400`.
+- Don't submit it yet. 
+- Now consider the equation 2.56<sup>z</sup> = y. You need to use Python to provide a real number input to the value z such that the value of y becomes 400. 
+- Type up you lines of Python code to compute the value of y and include them below what you typed already. 
+- Check if the value of y is approximately 400 by initalizing the value of z = 6.4. 
+- You don't have to be accurate. Try chaning the value of z to a number greater than 6.4 and then lower than 6.4 to see how close you can get to 400. 
+- Again, don't worry about the correct answer and focus on the syntax and the outout of your program.
+- Submit hte program `my_real_example2.py` with the value of x that in your attempts gets the value of y closest to 400. 
 :::
 
 Let's explore further:
@@ -139,7 +139,9 @@ Let's explore further:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.3
 
-In `my_real_example3.py`, fill in code below
+Compute the square root of 2 in this exercise. 
+
+In `my_real_example3.py`, fill in code below that prints the square root of the number 2 (and only the square root - just one number).
 
 ```python
 import math
@@ -148,7 +150,6 @@ import math
 
 print(x)
 ```
-to compute the square root of 2 and print the square root (and only the square root - just one number).
 :::
 
 ###### **6.4 Video**
@@ -177,7 +178,23 @@ print('Rounding up x gives ' + str(j))
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.5
 
-Type the above in `my_real_example4.py`. Then, add additional lines of code to print the floor and ceiling of 2.718 in the same way that the floor and ceiling of 3.141 were printed above.
+Type the above in `my_real_example4.py`. 
+
+- Don't submit it yet. 
+- Add additional lines of code to print the floor and ceiling of 2.718 in the same way that the floor and ceiling of 3.141 were printed above. 
+- The lines of code shown below are incomplete. 
+- You should complete the additional lines of the code required in this exercise, and run the program to make sure you are getting the output desired. 
+- Submit `my_real_example4.py`
+
+```python
+y = 2.718
+print('y=' + str(y))
+
+m = math.floor()
+n = math.ceil()
+print('Rounding down x gives ' + str(m))
+print('Rounding up x gives ' + str(n))
+```
 :::
 
 Let's point out a few things:
@@ -241,7 +258,13 @@ print('The square of the number you entered is: ' + str(x*x))
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.6
 
-What is the error in the above program? Now change the second statement from `y = x / 2` to `y = x * 2`. What do you see? Write your code in `my_real_example5.py`. Submit the version with `y = x / 2`, use comments (text followed by ‘#’ symbol) to describe the error in the python-file.
+Type up the above program in `my_real_example5.py` 
+
+- There is an error in the above program that should be fixed. Fix it and make sure you program is running correctly.
+- Don't submit it yet. 
+- Add a few lines of code to print the output of `y = x * 2`. What do you see? Write your code in `my_real_example5.py`. 
+- You should complete the additional lines of the code required in this exercise, and run the program to make sure you are getting the output desired. 
+- Submit `my_real_example5.py`
 :::
 
 The last exercise illustrates the strange way in which operators like + and * are repurposed for strings when used with strings:
@@ -260,7 +283,8 @@ The last exercise illustrates the strange way in which operators like + and * ar
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.7
 
-Type up the above in `my_string_example.py` and confirm.
+Type up the above in `my_string_example.py`, including the comments provided and submit your program.
+
 :::
 
 ###### **6.8 Video**
@@ -271,7 +295,7 @@ Now, back to real numbers.
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.9
 
-In `my_conversion_example.py` write a program that asks the user to enter a distance in kilometers, and then converts to miles and prints that number.
+In `my_conversion_example.py` write a program that asks the user to enter a distance in kilometers, and then converts to miles and prints that number. Submit `my_conversion_example.py`. 
 :::
 
 ## 6.2 Real numbers and loops
@@ -308,7 +332,12 @@ for year in range(1, num_years + 1):
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.11
 
-Type up the above in `my_compound_interest.py`. What is the final amount printed? Trace through the iterations above using a table in a spreadsheet or a document, tracking the variables year, amount, interest.
+Type up the above in `my_compound_interest.py`. 
+
+- Submit `my_compound_interest.py` to complete this exercise.
+- The following part of the exercise is not required for submission. However, it is important for you to complete it on your own to understand the working of the program `my_compound_interest.py`. 
+- To confirm your output can you calculate the final amount printed?- Trace through the iterations above using a table in a spreadsheet or a document, tracking the variables year, amount, interest.
+- The tracing exercise need to be submitted in this exercise.
 :::
 
 Let's point out:
@@ -317,7 +346,10 @@ Let's point out:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.12
 
-In `my_compound_interest2.py`, write two successive (not nested) for-loops to compare what happens when $1000 is invested for 20 years in each of two mutual funds, one of which has an annual growth rate of 3%, and the other 8%. Write your program so that it only prints at the end of the program, and prints the amount by which the 8% fund exceeds the 3% fund (at the end of 20 years). Now you know what a 401-K program is about.
+In `my_compound_interest2.py`, write two successive (not nested) for-loops to compare what happens when $1000 is invested for 20 years in each of two mutual funds, one of which has an annual growth rate of 3%, and the other 8%. 
+
+- Write your program so that it only prints at the end of the program, and prints the amount by which the 8% fund exceeds the 3% fund (at the end of 20 years). 
+- Now you know what a 401-K program is about.
 :::
 
 ## 6.3 Some Greek history via programming
@@ -368,7 +400,12 @@ Zeno's paradox:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.14
 
-Type up the above in `my_zeno.py`. Trace through the values of each of the variables using a table in a spreadsheet or a document
+Type up the above in `my_zeno.py` and submit it.
+
+- The following part of the exercise is not required for submission. However, it is important for you to complete it on your own to understand the working of the program `my_compound_interest.py`. 
+- To confirm your output can you calculate the final amount printed? 
+- Trace through the values of each of the variables using a table in a spreadsheet or a document.
+- The tracing exercise need to be submitted in this exercise.
 :::
 
 Let's point out:
@@ -393,13 +430,17 @@ print('Average=' + str(avg))
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.15
 
-Type up the above in `my_stats1.py`. What is the average?
+Type up the above in `my_stats1.py` to calculate the average and submit it.
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.16
 
-In `my_stats2.py`, modify the above code to compute the average of odd numbers from 1 through 9, and check against the answer you get computing by hand. Then, use your program to compute the average of odd numbers between 1 and 100.
+In `my_stats2.py`, modify the above code to compute the average of odd numbers from 1 through 9, and check against the answer you get computing by hand. 
+
+- Now, use your program to compute the average of odd numbers between 1 and 100.
+- Your final `my_stats2.py` should compute the average of odd numbers between 1 and 100.
+- Submit `my_stats2.py`
 :::
 
 We'll next look at a problem at the intersection of language and statistics:
@@ -431,13 +472,22 @@ We'll next look at a problem at the intersection of language and statistics:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.17
 
-Fill in the missing line and write up the program in `my_stats3.py`. You will need to download <a href="../../../media/useful/wordtool.py" download >**wordtool.py**</a> and <a href="../../../media/useful/wordsWithPOS.txt" download>**wordsWithPOS.txt**</a>.
+Fill in the missing line and write up the program in `my_stats3.py`. 
+
+- You will need to download <a href="../../../media/useful/wordtool.py" download >**wordtool.py**</a> and <a href="../../../media/useful/wordsWithPOS.txt" download>**wordsWithPOS.txt**</a>.
+- Submit `my_stats3.py` after completing and running the program.
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.18
 
-In `my_stats4.py`, modify the above to estimate the average length of verbs. Compare the average length of nouns to the average length of verbs. Do you think n=10 is enough of a random sample? Try higher values of n. What should n be to feel assured that you have a sound comparison?
+In `my_stats4.py`, modify the above to estimate the average length of verbs. 
+
+- Compare the average length of nouns to the average length of verbs. 
+- Check if n = 10 is enough of a random sample in your program. 
+- Submit `my_stats4.py` with n = 10.
+- Try higher values of n to get some understanding of what should n be to feel assured that you have a sound comparison.
+
 :::
 
 ## 6.5 Plotting a function
@@ -512,7 +562,9 @@ to
 ```python
 for k in range(1, N+1):
 ```
-Use comments (text followed by ‘#’ symbol) to explain why this does not change the results in the python-file.
+- Submit `my_functionplot.py`
+
+- Review the change in the for-loop statement and explain to yourself why this does not change the results in the python-file. You can discuss this aspect of the exercise with your TA, if necessary.
 :::
 
 Let's point out:
@@ -650,7 +702,11 @@ dt.display()
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.23
 
-You already have <a href="../../../media/useful/drawtool.py" download >**drawtool.py**</a> in your module6 folder. Type up the above in `my_dataplot.py` and run. Do you see the points "sort of" along a jagged line? This is actual scientific data from observations made in 1929. It utterly shattered our perception of the world. Can you identify what this was about and explain the significance?
+You already have <a href="../../../media/useful/drawtool.py" download >**drawtool.py**</a> in your module6 folder. Type up the above in `my_dataplot.py` and run. 
+
+- Submit `my_dataplot.py`
+- Observe the points "sort of" along a jagged line. 
+- This is actual scientific data from observations made in 1929 by a scientist named Edwin HUbble. It utterly shattered our perception of the world. For the purposes of understanding data do some research on your own to identify what this was about and undestand its' significance?
 :::
 
 ## 6.7 When things go wrong
@@ -663,7 +719,7 @@ In each of the exercises below, first try to identify the error just by reading.
 x = 2 *** 6
 print(x)
 ```
-Fix the error in `my_error1.py`.
+Fix the error in `my_error1.py` and submit it.
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
@@ -674,7 +730,7 @@ x = 100
 y = 0.1 * x
 print('y=' + y)
 ```
-Fix the error in `my_error2.py`.
+Fix the error in `my_error2.py` and submit it.
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
@@ -686,7 +742,7 @@ x = input('Enter your height in inches: ')
 y = math.floor(x / 12)
 print('You are at least ' + str(y) + ' feet tall')
 ```
-Fix the error in `my_error3.py`.
+Fix the error in `my_error3.py` and submit it.
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
@@ -696,7 +752,7 @@ Fix the error in `my_error3.py`.
 for x in range(1.0, 2.0, 0.1):
     print(x)
 ```
-Fix the error in `my_error4.py` so that the numbers 1.0, 1.1, 1.2, ..., 2.0 are printed out.
+Fix the error in `my_error4.py` so that the numbers 1.0, 1.1, 1.2, ..., 2.0 are printed out. Submit the program after the error is fixed.
 :::
 
 :::{.callout-tip}
