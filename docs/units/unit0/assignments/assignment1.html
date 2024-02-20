@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CSCI1012 - Assignment 0</title>
+<title>CSCI1012 - Assignment 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../units/unit0/assignments/assignment1.html" rel="next">
-<link href="../../../units/additional-resources/lab-notes/amal/week-1.html" rel="prev">
+<link href="../../../faq.html" rel="next">
+<link href="../../../units/unit0/assignments/assignment0.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -116,7 +116,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../units/unit0/assignments/assignment0.html">Assignments</a></li><li class="breadcrumb-item"><a href="../../../units/unit0/assignments/assignment0.html">Assignment 0</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../units/unit0/assignments/assignment0.html">Assignments</a></li><li class="breadcrumb-item"><a href="../../../units/unit0/assignments/assignment1.html">Assignment 1</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -437,13 +437,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/assignments/assignment0.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../units/unit0/assignments/assignment0.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Assignment 0</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit0/assignments/assignment1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/assignments/assignment1.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Assignment 1</span></a>
   </div>
 </li>
@@ -465,16 +465,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#objectives-and-example" id="toc-objectives-and-example" class="nav-link active" data-scroll-target="#objectives-and-example">Objectives and example</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
   <li><a href="#assignment-problems" id="toc-assignment-problems" class="nav-link" data-scroll-target="#assignment-problems">Assignment problems</a>
   <ul>
-  <li><a href="#demo-problem" id="toc-demo-problem" class="nav-link" data-scroll-target="#demo-problem">1. Demo problem</a></li>
-  <li><a href="#in-my_nested.py-use-nested-loops-to-print-the-following-pattern" id="toc-in-my_nested.py-use-nested-loops-to-print-the-following-pattern" class="nav-link" data-scroll-target="#in-my_nested.py-use-nested-loops-to-print-the-following-pattern">2. In <code>my_nested.py</code> use nested loops to print the following pattern:</a></li>
-  <li><a href="#in-my_nested2.py-write-a-program-that-uses-nested-for-loops-to-print-the-following-pattern" id="toc-in-my_nested2.py-write-a-program-that-uses-nested-for-loops-to-print-the-following-pattern" class="nav-link" data-scroll-target="#in-my_nested2.py-write-a-program-that-uses-nested-for-loops-to-print-the-following-pattern">3. In <code>my_nested2.py</code>, write a program that uses nested for-loops to print the following pattern:</a></li>
-  <li><a href="#in-this-exercise-you-will-use-a-drawing-tool-and-a-for-loop-to-draw-a-series-of-rectangles.-the-goal-is-to-draw-this" id="toc-in-this-exercise-you-will-use-a-drawing-tool-and-a-for-loop-to-draw-a-series-of-rectangles.-the-goal-is-to-draw-this" class="nav-link" data-scroll-target="#in-this-exercise-you-will-use-a-drawing-tool-and-a-for-loop-to-draw-a-series-of-rectangles.-the-goal-is-to-draw-this">4. In this exercise you will use a drawing tool and a for-loop to draw a series of rectangles. The goal is to draw this:</a></li>
-  <li><a href="#the-python-program-below-intends-to-print-a-few-lines-from-a-poem-by-rudyard-kipling-in-the-manner-presented" id="toc-the-python-program-below-intends-to-print-a-few-lines-from-a-poem-by-rudyard-kipling-in-the-manner-presented" class="nav-link" data-scroll-target="#the-python-program-below-intends-to-print-a-few-lines-from-a-poem-by-rudyard-kipling-in-the-manner-presented">5. The python program below intends to print a few lines from a poem by Rudyard Kipling in the manner presented:</a></li>
-  <li><a href="#the-following-program-intends-to-print-the-following-five-times-as-in" id="toc-the-following-program-intends-to-print-the-following-five-times-as-in" class="nav-link" data-scroll-target="#the-following-program-intends-to-print-the-following-five-times-as-in">6. The following program intends to print the following five times as in:</a></li>
-  <li><a href="#the-python-program-below-intends-to-print-the-numbers-5-through-0-in-the-manner-presented" id="toc-the-python-program-below-intends-to-print-the-numbers-5-through-0-in-the-manner-presented" class="nav-link" data-scroll-target="#the-python-program-below-intends-to-print-the-numbers-5-through-0-in-the-manner-presented">7. The python program below intends to print the numbers 5 through 0 in the manner presented:</a></li>
+  <li><a href="#demo-problem." id="toc-demo-problem." class="nav-link" data-scroll-target="#demo-problem.">1. Demo problem.</a></li>
+  <li><a href="#write-a-program-to-compute-the-sum-of-all-odd-and-even-numbers-in-a-given-range.-heres-part-of-the-code" id="toc-write-a-program-to-compute-the-sum-of-all-odd-and-even-numbers-in-a-given-range.-heres-part-of-the-code" class="nav-link" data-scroll-target="#write-a-program-to-compute-the-sum-of-all-odd-and-even-numbers-in-a-given-range.-heres-part-of-the-code">2. Write a program to compute the sum of all odd and even numbers in a given range. Here’s part of the code:</a>
+  <ul>
+  <li><a href="#initialize-m-10-and-n-20-and-compute-the-sum-of-odd-and-even-numbers-within-that-range-in-a-program-called-my_oddeven_sum1.py-using-one-for-loop." id="toc-initialize-m-10-and-n-20-and-compute-the-sum-of-odd-and-even-numbers-within-that-range-in-a-program-called-my_oddeven_sum1.py-using-one-for-loop." class="nav-link" data-scroll-target="#initialize-m-10-and-n-20-and-compute-the-sum-of-odd-and-even-numbers-within-that-range-in-a-program-called-my_oddeven_sum1.py-using-one-for-loop."><strong>2.1 Initialize m = 10 and n = 20 and compute the sum of odd and even numbers within that range in a program called <code>my_oddeven_sum1.py</code> using one for-loop.</strong></a></li>
+  <li><a href="#now-create-a-similar-program-with-m100-and-and-n200-and-save-it-as-my_oddeven_sum2.py." id="toc-now-create-a-similar-program-with-m100-and-and-n200-and-save-it-as-my_oddeven_sum2.py." class="nav-link" data-scroll-target="#now-create-a-similar-program-with-m100-and-and-n200-and-save-it-as-my_oddeven_sum2.py."><strong>2.2 Now create a similar program with m=100 and and n=200 and save it as <code>my_oddeven_sum2.py</code>.</strong></a></li>
+  <li><a href="#finally-create-one-more-program-with-m1000-and-and-n2000-and-save-it-as-my_oddeven_sum3.py." id="toc-finally-create-one-more-program-with-m1000-and-and-n2000-and-save-it-as-my_oddeven_sum3.py." class="nav-link" data-scroll-target="#finally-create-one-more-program-with-m1000-and-and-n2000-and-save-it-as-my_oddeven_sum3.py."><strong>2.3 Finally, create one more program with m=1000 and and n=2000 and save it as <code>my_oddeven_sum3.py</code>.</strong></a></li>
+  </ul></li>
+  <li><a href="#review-the-examples-in-module-5-where-we-made-random-sentences.-after-pulling-out-random-nouns-a-verb-etc-we-built-a-sentences-using-the-incomplete-code-below" id="toc-review-the-examples-in-module-5-where-we-made-random-sentences.-after-pulling-out-random-nouns-a-verb-etc-we-built-a-sentences-using-the-incomplete-code-below" class="nav-link" data-scroll-target="#review-the-examples-in-module-5-where-we-made-random-sentences.-after-pulling-out-random-nouns-a-verb-etc-we-built-a-sentences-using-the-incomplete-code-below">3. Review the examples in <code>Module 5</code> where we made random sentences. After pulling out random nouns, a verb etc, we built a sentences using the (incomplete) code below:</a>
+  <ul>
+  <li><a href="#create-a-program-my_avg_sentenceadj_length1.py-that" id="toc-create-a-program-my_avg_sentenceadj_length1.py-that" class="nav-link" data-scroll-target="#create-a-program-my_avg_sentenceadj_length1.py-that"><strong>3.1 Create a program <code>my_avg_SentenceAdj_length1.py</code> that</strong></a></li>
+  <li><a href="#create-a-program-my_avg_sentenceadj_length2.pythat-has-the-same-requirements-as-exercise-3.1-but-with-100-sentences." id="toc-create-a-program-my_avg_sentenceadj_length2.pythat-has-the-same-requirements-as-exercise-3.1-but-with-100-sentences." class="nav-link" data-scroll-target="#create-a-program-my_avg_sentenceadj_length2.pythat-has-the-same-requirements-as-exercise-3.1-but-with-100-sentences."><strong>3.2 Create a program <code>my_avg_SentenceAdj_length2.py</code>that has the same requirements as exercise 3.1 but with 100 sentences.</strong></a></li>
+  <li><a href="#create-a-program-my_avg_sentenceadj_length3.pythat-has-the-same-requirements-as-exercise-3.1-but-with-1000-sentences." id="toc-create-a-program-my_avg_sentenceadj_length3.pythat-has-the-same-requirements-as-exercise-3.1-but-with-1000-sentences." class="nav-link" data-scroll-target="#create-a-program-my_avg_sentenceadj_length3.pythat-has-the-same-requirements-as-exercise-3.1-but-with-1000-sentences."><strong>3.3 Create a program <code>my_avg_SentenceAdj_length3.py</code>that has the same requirements as exercise 3.1 but with 1000 sentences.</strong></a></li>
+  </ul></li>
+  <li><a href="#use-the-sample-code-provided-below-and-write-up-a-python-program-my_geometric_art1.py-and-submit-it." id="toc-use-the-sample-code-provided-below-and-write-up-a-python-program-my_geometric_art1.py-and-submit-it." class="nav-link" data-scroll-target="#use-the-sample-code-provided-below-and-write-up-a-python-program-my_geometric_art1.py-and-submit-it.">4. Use the sample code provided below and write up a python program <code>my_geometric_art1.py</code> and submit it.</a>
+  <ul>
+  <li><a href="#writing-a-function-draw_random_rectanglecolor-in-the-above-program-and-save-it-as-my_geometric_art2.py" id="toc-writing-a-function-draw_random_rectanglecolor-in-the-above-program-and-save-it-as-my_geometric_art2.py" class="nav-link" data-scroll-target="#writing-a-function-draw_random_rectanglecolor-in-the-above-program-and-save-it-as-my_geometric_art2.py"><strong>4.1 Writing a function <code>draw_random_rectangle(color)</code> in the above program and save it as <code>my_geometric_art2.py</code></strong></a></li>
+  <li><a href="#art-project" id="toc-art-project" class="nav-link" data-scroll-target="#art-project"><strong>4.2 Art project</strong></a></li>
+  <li><a href="#art-project-1" id="toc-art-project-1" class="nav-link" data-scroll-target="#art-project-1"><strong>4.3 Art project</strong></a></li>
+  </ul></li>
+  <li><a href="#the-following-program-intends-to-print-the-integer-value-of-a-letter-character-along-with-the-corresponding-letter-separately-for-uppercase-first-and-then-lowercase.-the-output-edited-for-length-is-something-like" id="toc-the-following-program-intends-to-print-the-integer-value-of-a-letter-character-along-with-the-corresponding-letter-separately-for-uppercase-first-and-then-lowercase.-the-output-edited-for-length-is-something-like" class="nav-link" data-scroll-target="#the-following-program-intends-to-print-the-integer-value-of-a-letter-character-along-with-the-corresponding-letter-separately-for-uppercase-first-and-then-lowercase.-the-output-edited-for-length-is-something-like">5. The following program intends to print the integer value of a letter (character) along with the corresponding letter, separately for uppercase first, and then lowercase. The output (edited for length) is something like:</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -482,9 +495,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../units/unit0/assignments/assignment0.html">Assignments</a></li><li class="breadcrumb-item"><a href="../../../units/unit0/assignments/assignment0.html">Assignment 0</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../units/unit0/assignments/assignment0.html">Assignments</a></li><li class="breadcrumb-item"><a href="../../../units/unit0/assignments/assignment1.html">Assignment 1</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Assignment 0</h1>
+<h1 class="title">Assignment 1</h1>
 </div>
 
 
@@ -516,7 +529,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
   <a href="">Unit 0</a> &raquo;
-  <span class="current-page">Assignment 0</span>
+  <span class="current-page">Assignment 1</span>
 </div> -->
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -531,105 +544,82 @@ Warning
 <p>Do this assignment on your own. You may not consult any other students. You are not allowed to use any online resources to complete this assignment other than the course website. This assignment is to be completed and submitted on Blackboard. All examinations, papers, quizzes and other graded work products and assignments are to be completed in conformance with The George Washington University Code of Academic Integrity. Any violations will be treated as violations of the Code of Academic Integrity.</p>
 </div>
 </div>
-<section id="objectives-and-example" class="level2">
-<h2 class="anchored" data-anchor-id="objectives-and-example">Objectives and example</h2>
-<p>Assignments are designed to strengthen your problem-solving skills and build <em>independence</em>. While the module exercises are small variations of explained module examples, a single assignment will have multiple problems, all of which are intended to be more challenging than the module exercises, and will feature less detailed guidance. This is a good thing because ultimately, you’ll have to solve problems on your own. Facing and overcoming challenging problems cheerfully is the key to building problem-solving skill.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Tip">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>In this assignment set, we will help develop your problem-solving skills by showing you how to solve one problem, the first and often hardest problem. <em>However, the solution will include some exercises for you that you will need to submit</em>.</p>
-</div>
-</div>
+<section id="objectives" class="level2">
+<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
+<p>As usual, in each such assignment set, we will help develop your problem-solving skills by showing you how to solve one problem, the first and often hardest problem. <em>However, the solution will include some exercises for you that you will need to submit</em>.</p>
 </section>
 <section id="assignment-problems" class="level2">
 <h2 class="anchored" data-anchor-id="assignment-problems">Assignment problems</h2>
-<section id="demo-problem" class="level3">
-<h3 class="anchored" data-anchor-id="demo-problem">1. Demo problem</h3>
-<p>Suppose we want to use for-loops to produce this arrow-head like pattern:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">*</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">**</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">***</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">****</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">*****</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="op">******</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">*******</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="op">********</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="op">*********</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="op">**********</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="op">**********</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="op">*********</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="op">********</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="op">*******</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="op">******</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="op">*****</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="op">****</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="op">***</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="op">**</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="op">*</span></span></code></pre></div>
+<section id="demo-problem." class="level3">
+<h3 class="anchored" data-anchor-id="demo-problem.">1. Demo problem.</h3>
+<p>Consider this coding puzzle. Suppose we’re asked to print out lines in a pattern like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>z</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>zy</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>zyx</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>zyxw</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>zyxwv</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>zyxwvu</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>zyxwvut</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>zyxwvuts</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>zyxwvutsr</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>zyxwvutsrq</span></code></pre></div>
+<p>And suppose we want to use for-loops to achieve this. How do we go about solving this problem?</p>
 <p>At this point, do not read further and try to address the following:</p>
 <ul>
 <li>First understand what is being asked.</li>
-<li>Do you see a for-loop or two at work where, as the loops are printing, you’ll get the output shown above?</li>
+<li>Do see a for-loop or two at work where, as the loops are printing, you’ll get the output shown above?</li>
 <li>Can the problem be broken down into parts, where you can solve the parts and put the solution together afterwards?</li>
 <li>Try writing some code to get at least some of the output.</li>
+<li>What are the issues related to strings?</li>
 </ul>
-<p><a href="../../../units/unit0/assignments/assignment0-solution.html"><strong>Now examine the solution through various guided exercises presented here</strong></a></p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<p><a href="../../../units/unit0/assignments/assignment1-solution.html"><strong>Now examine the solution</strong></a></p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-You are required to submit your solutions to the <strong>exercises</strong> within this demo problem.
+<span style="color:#8B4513;">You are required to submit your solutions to the <strong>exercises</strong> within this demo problem.</span>
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<p>Don’t forget to submit your solutions to the exercises within the demo problem while you are being asked to examine the solution through the guided exercises presented to you <a href="../../../units/unit0/assignments/assignment0-solution.html"><strong>here</strong></a>.</p>
+<p>Don’t forget to submit your solutions to the exercises within the demo problem while you are being asked to examine the solution through the guided exercises presented to you <a href="../../../units/unit0/assignments/assignment1-solution.html"><strong>here</strong></a>.</p>
 </div>
 </div>
+</div>
 </section>
-<section id="in-my_nested.py-use-nested-loops-to-print-the-following-pattern" class="level3">
-<h3 class="anchored" data-anchor-id="in-my_nested.py-use-nested-loops-to-print-the-following-pattern">2. In <code>my_nested.py</code> use nested loops to print the following pattern:</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span> <span class="dv">1</span> <span class="dv">10</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dv">20</span> <span class="dv">1</span> <span class="dv">10</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="dv">30</span> <span class="dv">1</span> <span class="dv">10</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="dv">40</span> <span class="dv">1</span> <span class="dv">10</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span> <span class="dv">2</span> <span class="dv">20</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="dv">20</span> <span class="dv">2</span> <span class="dv">20</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="dv">30</span> <span class="dv">2</span> <span class="dv">20</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="dv">40</span> <span class="dv">2</span> <span class="dv">20</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span> <span class="dv">3</span> <span class="dv">30</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="dv">20</span> <span class="dv">3</span> <span class="dv">30</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="dv">30</span> <span class="dv">3</span> <span class="dv">30</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="dv">40</span> <span class="dv">3</span> <span class="dv">30</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span> <span class="dv">4</span> <span class="dv">40</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="dv">20</span> <span class="dv">4</span> <span class="dv">40</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="dv">30</span> <span class="dv">4</span> <span class="dv">40</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="dv">40</span> <span class="dv">4</span> <span class="dv">40</span></span></code></pre></div>
-</section>
-<section id="in-my_nested2.py-write-a-program-that-uses-nested-for-loops-to-print-the-following-pattern" class="level3">
-<h3 class="anchored" data-anchor-id="in-my_nested2.py-write-a-program-that-uses-nested-for-loops-to-print-the-following-pattern">3. In <code>my_nested2.py</code>, write a program that uses nested for-loops to print the following pattern:</h3>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">**********</span><span class="dv">10</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="op">*********</span> <span class="dv">9</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="op">********</span>  <span class="dv">8</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="op">*******</span>   <span class="dv">7</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="op">******</span>    <span class="dv">6</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="op">*****</span>     <span class="dv">5</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="op">****</span>      <span class="dv">4</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="op">***</span>       <span class="dv">3</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="op">**</span>        <span class="dv">2</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="op">*</span>         <span class="dv">1</span></span></code></pre></div>
-<p>Notice that the each row of <strong>*-characters</strong> is ending with the count or the number of *<strong>-characters</strong> in that particular row.</p>
-</section>
-<section id="in-this-exercise-you-will-use-a-drawing-tool-and-a-for-loop-to-draw-a-series-of-rectangles.-the-goal-is-to-draw-this" class="level3">
-<h3 class="anchored" data-anchor-id="in-this-exercise-you-will-use-a-drawing-tool-and-a-for-loop-to-draw-a-series-of-rectangles.-the-goal-is-to-draw-this">4. In this exercise you will use a drawing tool and a for-loop to draw a series of rectangles. The goal is to draw this:</h3>
+<section id="write-a-program-to-compute-the-sum-of-all-odd-and-even-numbers-in-a-given-range.-heres-part-of-the-code" class="level3">
+<h3 class="anchored" data-anchor-id="write-a-program-to-compute-the-sum-of-all-odd-and-even-numbers-in-a-given-range.-heres-part-of-the-code">2. Write a program to compute the sum of all odd and even numbers in a given range. Here’s part of the code:</h3>
+<p>You need to submit the following programs:</p>
+<section id="initialize-m-10-and-n-20-and-compute-the-sum-of-odd-and-even-numbers-within-that-range-in-a-program-called-my_oddeven_sum1.py-using-one-for-loop." class="level4">
+<h4 class="anchored" data-anchor-id="initialize-m-10-and-n-20-and-compute-the-sum-of-odd-and-even-numbers-within-that-range-in-a-program-called-my_oddeven_sum1.py-using-one-for-loop."><strong>2.1 Initialize m = 10 and n = 20 and compute the sum of odd and even numbers within that range in a program called <code>my_oddeven_sum1.py</code> using one for-loop.</strong></h4>
+<ul>
+<li><p>Your python program should include the following comments</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">20</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Code to add up the even and odd numbers between m and n</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># using one for-loop </span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># WRITE CODE BELOW THIS COMMENT</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># WRITE CODE ABOVE THIS COMMENT</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># When m=10, and n=20, </span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># the sum of even numbers is 70 and </span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># the sum of odd numbers is 75.</span></span></code></pre></div></li>
+<li><p>Your output should look like how it is shown below:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span> <span class="dv">10</span> <span class="dv">11</span> <span class="dv">11</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="dv">12</span> <span class="dv">22</span> <span class="dv">13</span> <span class="dv">24</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="dv">14</span> <span class="dv">36</span> <span class="dv">15</span> <span class="dv">39</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="dv">16</span> <span class="dv">52</span> <span class="dv">17</span> <span class="dv">56</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="dv">18</span> <span class="dv">70</span> <span class="dv">19</span> <span class="dv">75</span></span></code></pre></div></li>
+</ul>
+<p><strong>Now examine the output</strong></p>
+<p><img src="../../../media/units/unit0/assignment1/Assignment_Problem2ai.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -640,29 +630,65 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Before proceeding with this question you would need to install <code>matplotlib</code> library. Follow these guides to learn about how to install packages in Thonny on a <a href="../../../units/unit0/guides/thonny-mac-matplotlib.html"><strong>Mac</strong></a> or <a href="../../../units/unit0/guides/thonny-win-matplotlib.html"><strong>Windows</strong></a> computer.</p>
-</div>
-</div>
-<p><img src="../../../media/units/unit0/assignment0/Figure_Assign0Prob4.png" class="img-fluid"></p>
-<p>The code for drawing a single rectangle is:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> drawtool <span class="im">import</span> DrawTool </span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> DrawTool()</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>dt.set_XY_range(<span class="dv">0</span>,<span class="dv">100</span>, <span class="dv">0</span>,<span class="dv">100</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>dt.draw_rectangle(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">5</span>, <span class="dv">10</span>)</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
-<p>This produces (we’ve added some markup to explain): <img src="../../../media/units/unit0/assignment0/FigureExplan_Assign0Prob4.png" class="img-fluid"></p>
-<p>As a first step, download <a href="../../../media/useful/drawtool.py" download=""><strong>drawtool.py</strong></a> into your <code>assignment0</code> folder and type up the above single-rectangle example in <code>my_rectangle_example.py</code>. This way, you know that the download worked and that drawing works. Now you can focus on the many-rectangle problem. Think about how the for-loop needs to range so that you can draw the rectangles in the loop. Write your program in <code>my_rectangle_pattern.py</code>.</p>
+<!-- ![](Assignment1_DemoPic1.png) -->
 <ul>
-<li>For this problem you are saving the following three files toward the submission:
+<li>Notice that the first column has even numbers between 10 and 20 and not including 20.
 <ul>
-<li><code>drawtool.py</code></li>
-<li><code>my_rectangle_example.py</code></li>
-<li><code>my_rectangle_pattern.py</code></li>
+<li>The second column has the cumulative sum of the even numbers. When m=10, and n=20, the sum of the first two even numbers is 22, the first three even numbers is 36 and so on until the sum of all even numbers within the range is 70.</li>
+</ul></li>
+<li>The third column has odd numbers between 10 and 20.
+<ul>
+<li>Similarly, when m=10, and n=20, the sum of all odd numbers within that range is 75.</li>
 </ul></li>
 </ul>
+</div>
+</div>
+</section>
+<section id="now-create-a-similar-program-with-m100-and-and-n200-and-save-it-as-my_oddeven_sum2.py." class="level4">
+<h4 class="anchored" data-anchor-id="now-create-a-similar-program-with-m100-and-and-n200-and-save-it-as-my_oddeven_sum2.py."><strong>2.2 Now create a similar program with m=100 and and n=200 and save it as <code>my_oddeven_sum2.py</code>.</strong></h4>
+</section>
+<section id="finally-create-one-more-program-with-m1000-and-and-n2000-and-save-it-as-my_oddeven_sum3.py." class="level4">
+<h4 class="anchored" data-anchor-id="finally-create-one-more-program-with-m1000-and-and-n2000-and-save-it-as-my_oddeven_sum3.py."><strong>2.3 Finally, create one more program with m=1000 and and n=2000 and save it as <code>my_oddeven_sum3.py</code>.</strong></h4>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You will be submitting the following three programs in this assignment exercise:</p>
+<ol type="1">
+<li><code>my_oddeven_sum1.py</code></li>
+<li><code>my_oddeven_sum2.py</code></li>
+<li><code>my_oddeven_sum3.py</code></li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+<section id="review-the-examples-in-module-5-where-we-made-random-sentences.-after-pulling-out-random-nouns-a-verb-etc-we-built-a-sentences-using-the-incomplete-code-below" class="level3">
+<h3 class="anchored" data-anchor-id="review-the-examples-in-module-5-where-we-made-random-sentences.-after-pulling-out-random-nouns-a-verb-etc-we-built-a-sentences-using-the-incomplete-code-below">3. Review the examples in <code>Module 5</code> where we made random sentences. After pulling out random nouns, a verb etc, we built a sentences using the (incomplete) code below:</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wordtool</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Write some code to invoke functions in wordtool to pick random words </span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># See examples in module-5 is find those functions and implement them here</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter your name: '</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>sentence <span class="op">=</span> (</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Hi '</span> <span class="op">+</span> name <span class="op">+</span> <span class="st">', you are a '</span><span class="op">+</span> adj <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> noun <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span><span class="st">'that '</span> <span class="op">+</span> verb <span class="op">+</span> <span class="st">'s'</span> <span class="op">+</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">' '</span> <span class="op">+</span> prep <span class="op">+</span> <span class="st">' a '</span> <span class="op">+</span> noun2 <span class="op">+</span> <span class="st">'.'</span>)</span></code></pre></div>
+<p>You need to fix the above code and submit the following programs:</p>
+<section id="create-a-program-my_avg_sentenceadj_length1.py-that" class="level4">
+<h4 class="anchored" data-anchor-id="create-a-program-my_avg_sentenceadj_length1.py-that"><strong>3.1 Create a program <code>my_avg_SentenceAdj_length1.py</code> that</strong></h4>
+<ul>
+<li>implements a for-loop and builds 10 sentences.</li>
+<li>prints each sentence</li>
+<li>computes the average sentence length and average adjective length and</li>
+<li>prints the two averages at the end.</li>
+</ul>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -673,56 +699,205 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Use <code>dt.draw_filled_rectangle()</code> to implement a filled rectangle in your python script.</p>
+<p>You should use the sentence construction shown in the incomplete sample code above. Notice that the sample code also has an <code>input()</code> function asking the user’s name. Note that the sentences constructed using the sample code above will include spaces that will be counted in the sentence length.</p>
 </div>
 </div>
 </section>
-<section id="the-python-program-below-intends-to-print-a-few-lines-from-a-poem-by-rudyard-kipling-in-the-manner-presented" class="level3">
-<h3 class="anchored" data-anchor-id="the-python-program-below-intends-to-print-a-few-lines-from-a-poem-by-rudyard-kipling-in-the-manner-presented">5. The python program below intends to print a few lines from a poem by Rudyard Kipling in the manner presented:</h3>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>If you can force your heart <span class="kw">and</span> nerve <span class="kw">and</span> sinew</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a> To serve your turn <span class="bu">long</span> after they are gone,   </span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>And so hold on when there <span class="kw">is</span> nothing <span class="kw">in</span> you</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a> Except the Will which says to them: <span class="st">'Hold on!'</span></span></code></pre></div>
-<p>Notice that even numbered lines are indented by one space.</p>
-<p>The alleged program is presented below:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'If you can force your heart and nerve and sinew")</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="er">print</span>(<span class="st">'To serve your turn long after they are gone,'</span>)   </span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"And so hold on when there is nothing in you')</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="er">print</span>(<span class="st">' Except the Will which says to them: '</span>Hold on<span class="op">!</span>)</span></code></pre></div>
-<p>There are several errors in the above program. Fix the program and save it in <code>fixed_KiplingPoemLines.py</code>. Submit your working program.</p>
+<section id="create-a-program-my_avg_sentenceadj_length2.pythat-has-the-same-requirements-as-exercise-3.1-but-with-100-sentences." class="level4">
+<h4 class="anchored" data-anchor-id="create-a-program-my_avg_sentenceadj_length2.pythat-has-the-same-requirements-as-exercise-3.1-but-with-100-sentences."><strong>3.2 Create a program <code>my_avg_SentenceAdj_length2.py</code>that has the same requirements as exercise 3.1 but with 100 sentences.</strong></h4>
 </section>
-<section id="the-following-program-intends-to-print-the-following-five-times-as-in" class="level3">
-<h3 class="anchored" data-anchor-id="the-following-program-intends-to-print-the-following-five-times-as-in">6. The following program intends to print the following five times as in:</h3>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>GeorgeWashington<span class="op">@</span>gwu.edu</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>GeorgeWashington<span class="op">@</span>gwu.edu</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>GeorgeWashington<span class="op">@</span>gwu.edu</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>GeorgeWashington<span class="op">@</span>gwu.edu</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>GeorgeWashington<span class="op">@</span>gwu.edu</span></code></pre></div>
-<p>The alleged program is presented below:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>Def print_GWUEmail():</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">5</span>):</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(GeorgeWashington, gwu.edu, sep<span class="op">=</span><span class="st">'@'</span>)</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>print_GWUEmail</span></code></pre></div>
-<p>There are several errors in the above program. Fix the program and save it in <code>fixed_GWUEmail.py</code>. Submit your working program.</p>
+<section id="create-a-program-my_avg_sentenceadj_length3.pythat-has-the-same-requirements-as-exercise-3.1-but-with-1000-sentences." class="level4">
+<h4 class="anchored" data-anchor-id="create-a-program-my_avg_sentenceadj_length3.pythat-has-the-same-requirements-as-exercise-3.1-but-with-1000-sentences."><strong>3.3 Create a program <code>my_avg_SentenceAdj_length3.py</code>that has the same requirements as exercise 3.1 but with 1000 sentences.</strong></h4>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You will be submitting the following three programs in this assignment exercise:</p>
+<ol type="1">
+<li><code>my_avg_SentenceAdj_length1.py</code></li>
+<li><code>my_avg_SentenceAdj_length2.py</code></li>
+<li><code>my_avg_SentenceAdj_length3.py</code></li>
+</ol>
+</div>
+</div>
 </section>
-<section id="the-python-program-below-intends-to-print-the-numbers-5-through-0-in-the-manner-presented" class="level3">
-<h3 class="anchored" data-anchor-id="the-python-program-below-intends-to-print-the-numbers-5-through-0-in-the-manner-presented">7. The python program below intends to print the numbers 5 through 0 in the manner presented:</h3>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>     <span class="dv">5</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="dv">4</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>   <span class="dv">3</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="dv">2</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a> <span class="dv">1</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span></span></code></pre></div>
-<p>The number of empty-spaces is printed at the end of the row.<br>
-The alleged program is presented below:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> function<span class="co">#2()</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>,<span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>):</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(i)</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>function<span class="co">#2()</span></span></code></pre></div>
-<p>There are several errors in the above program. Fix the program and save it in <code>fixed_downprint.py</code>. Submit your working program.</p>
-<!-- ### 8. In each assignment, we will include a sometimes whimsical, sometimes serious non-coding exploration to encourage creativity and curiousity. For this assignment, in your `assignment1.pdf`, make a cartoon that makes light of "frustration with computers". You can use a simple drawing tool, or find images that are copyright-free (please include the link to images/cartoons). Make sure the caption is <em>original</em> (this is the whole point). We'll post some of the funniest ones. -->
+</section>
+<section id="use-the-sample-code-provided-below-and-write-up-a-python-program-my_geometric_art1.py-and-submit-it." class="level3">
+<h3 class="anchored" data-anchor-id="use-the-sample-code-provided-below-and-write-up-a-python-program-my_geometric_art1.py-and-submit-it.">4. Use the sample code provided below and write up a python program <code>my_geometric_art1.py</code> and submit it.</h3>
+<p>Here’s some code to get started with:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random <span class="im">as</span> rand</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>window <span class="op">=</span> tk.Tk()</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> <span class="dv">500</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>h <span class="op">=</span> <span class="dv">400</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>canvas <span class="op">=</span> tk.Canvas(master<span class="op">=</span>window, width<span class="op">=</span>w, height<span class="op">=</span>h)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>canvas.pack()</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># A function that draws a random circle</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> draw_random_circle(color):</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> rand.randint(<span class="dv">0</span>, w)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> rand.randint(<span class="dv">0</span>, h)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    size <span class="op">=</span> rand.randint(<span class="dv">0</span>, w<span class="op">/</span><span class="dv">10</span>)</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    canvas.create_oval(x,y, x<span class="op">+</span>size, y<span class="op">+</span>size, fill<span class="op">=</span>color)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="co"># WRITE YOUR FUNCTION TO DRAW A RANDOM RECTANGLE HERE. </span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Name the function, draw_random_rectangle(color)</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="co"># draw N circles</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(N):</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    draw_random_circle(<span class="st">"magenta"</span>)</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Standard colors: "black", "red", "green", "blue", </span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="co"># "cyan", "yellow", "magenta"</span></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>window.mainloop()</span></code></pre></div>
+<p>The program will generate an image with 10 circle, filled with magenta color as shown below:</p>
+<p><img src="../../../media/units/unit0/assignment1/artwork1.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You may refer section 2.3 in <code>module 2</code> to understand how the program <code>my_geometric_art1.py</code> is executed</p>
+</div>
+</div>
+<section id="writing-a-function-draw_random_rectanglecolor-in-the-above-program-and-save-it-as-my_geometric_art2.py" class="level4">
+<h4 class="anchored" data-anchor-id="writing-a-function-draw_random_rectanglecolor-in-the-above-program-and-save-it-as-my_geometric_art2.py"><strong>4.1 Writing a function <code>draw_random_rectangle(color)</code> in the above program and save it as <code>my_geometric_art2.py</code></strong></h4>
+<ul>
+<li><p><code>draw_random_rectangle(color)</code>should that the following expressions</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># A function that draws a random rectangle</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> draw_random_rectangle(color):</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="co"># A random top left x-coordinate of the rectangle</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="co"># A random top left y-coordinate of the rectangle</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    h_dist <span class="op">=</span> <span class="co"># A random horizontal distance of the rectangle</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    v_dist <span class="op">=</span> <span class="co"># A random vertical distance of the rectangle</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    canvas.create_rectangle(x, y, h_dist, v_dist, outline<span class="op">=</span>color)</span></code></pre></div></li>
+<li><p><code>my_geometric_art2.py</code> should generate 10 circles filled with magenta color and 10 rectangles with red outline and not filled with any color as shown in the example image below:</p></li>
+</ul>
+<p><img src="../../../media/units/unit0/assignment1/artwork2.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You may refer section 3.6 in <code>module 3</code> to understand how the function <code>canvas.create_rectangle()</code> draws a rectangle.</p>
+</div>
+</div>
+<!-- Start by downloading <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> into your assignment folder. Then, write the above code in `my_geometric_art.py` to see that a part of the drawing has been made for you. You can draw a circle with center at (10,20) with radius 5 using the line:
+```python
+dt.draw_circle(10, 20, 5)
+```
+(Try it). -->
+</section>
+<section id="art-project" class="level4">
+<h4 class="anchored" data-anchor-id="art-project"><strong>4.2 Art project</strong></h4>
+<p>In <code>my_geometric_art3.py</code>, use the ability to draw rectangles and circles, changing colors where needed, to make a far more impressive work of art.</p>
+<ul>
+<li><code>my_geometric_art3.py</code> should output an image with 100 filled, circles in cyan color and 100 rectangles, not-filled and outlined in red color</li>
+</ul>
+</section>
+<section id="art-project-1" class="level4">
+<h4 class="anchored" data-anchor-id="art-project-1"><strong>4.3 Art project</strong></h4>
+<p>In <code>my_geometric_art4.py</code>, use the ability to draw rectangles and circles, changing colors where needed, to make a far more impressive work of art.</p>
+<ul>
+<li><code>my_geometric_art3.py</code> should output an image with 1000 filled, circles in green color and 100 rectangles, not-filled and outlined in blue color</li>
+</ul>
+<!-- You are also welcome to use other functions in drawtool such as:
+```python
+dt.draw_filled_circle(10, 20, 5)
+dt.draw_filled_rectangle(40, 50, 5, 5)
+``` -->
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>With a limited color and geometric palette, we’re confident you can make something <a href="https://en.wikipedia.org/wiki/Mark_Rothko">Mark Rothko</a> or <a href="https://en.wikipedia.org/wiki/Piet_Mondrian">Piet Mondrian</a> would be proud of.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You will be submitting the following four programs in this assignment exercise:</p>
+<ol type="1">
+<li><code>my_geometric_art1.py</code></li>
+<li><code>my_geometric_art2.py</code></li>
+<li><code>my_geometric_art3.py</code></li>
+<li><code>my_geometric_art4.py</code></li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+<section id="the-following-program-intends-to-print-the-integer-value-of-a-letter-character-along-with-the-corresponding-letter-separately-for-uppercase-first-and-then-lowercase.-the-output-edited-for-length-is-something-like" class="level3">
+<h3 class="anchored" data-anchor-id="the-following-program-intends-to-print-the-integer-value-of-a-letter-character-along-with-the-corresponding-letter-separately-for-uppercase-first-and-then-lowercase.-the-output-edited-for-length-is-something-like">5. The following program intends to print the integer value of a letter (character) along with the corresponding letter, separately for uppercase first, and then lowercase. The output (edited for length) is something like:</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dv">65</span><span class="op">-</span>A</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="dv">66</span><span class="op">-</span>B</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="dv">67</span><span class="op">-</span>C</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="dv">90</span><span class="op">-</span>Z</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="dv">97</span><span class="op">-</span>a</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="dv">98</span><span class="op">-</span>b</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="dv">99</span><span class="op">-</span>c</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="dv">122</span><span class="op">-</span>z</span></code></pre></div>
+<p>Here’s the program with errors:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">65</span>,<span class="dv">91</span>):</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i<span class="op">+</span> <span class="st">"-"</span> <span class="op">+</span> <span class="bu">chr</span>(i)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">ord</span>(<span class="st">'a'</span>),<span class="bu">ord</span>(<span class="st">'z'</span>)):</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> char(j)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="bu">str</span>(i)<span class="op">+</span> <span class="st">"-"</span> <span class="op">+</span> x)</span></code></pre></div>
+<p>Find and fix the errors in above program to match the output shown in this exercise. Save the program as <code>fixed_errors1.py</code> and submit it.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You will be submitting the following program in this assignment exercise:</p>
+<ol type="1">
+<li><code>fixed_errors1.py</code></li>
+</ol>
+</div>
+</div>
+<!-- ### 7. In `assignment2.pdf`, explore geometric art and the general topic of computer-generated art. What were you able to find? Write a paragraph on a well-known artist and provide a link to the sources you found. Explain what you like in this artist's work and why. -->
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -734,13 +909,13 @@ How to submit:
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Write all your programs in a directory called <code>assignment0</code>.</li>
+<li>Write all your programs in a directory called <code>assignment1</code>.</li>
 <li>After completing the all problems in this assignment, make a <code>zip</code> of the directory as <code>assignment0.zip</code> and submit it on Blackboard.</li>
 </ul>
 </div>
 </div>
-
-
+<!-- </body>
+</html> -->
 
 
 </section>
@@ -1084,13 +1259,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../units/additional-resources/lab-notes/amal/week-1.html" class="pagination-link  aria-label=" week-1"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week-1</span>
+      <a href="../../../units/unit0/assignments/assignment0.html" class="pagination-link  aria-label=" assignment="" 0"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Assignment 0</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../units/unit0/assignments/assignment1.html" class="pagination-link" aria-label="Assignment 1">
-        <span class="nav-page-text">Assignment 1</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../faq.html" class="pagination-link" aria-label="FAQ">
+        <span class="nav-page-text">FAQ</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

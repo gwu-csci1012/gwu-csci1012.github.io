@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CSCI1012 - Instruction Team</title>
+<title>CSCI1012 - Assignment 1: Problem Solving Example</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./submit-remember.html" rel="next">
-<link href="./course-policies.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -70,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -82,7 +114,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./instructors.html">Instruction Team</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      **CSCI1012**
+      </li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -97,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./"><strong>CSCI1012</strong></a> 
+      <a href="../../../"><strong>CSCI1012</strong></a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -109,43 +143,43 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./schedule.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../schedule.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schedule</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-policies.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../course-policies.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course Policies</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./instructors.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../instructors.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Instruction Team</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./submit-remember.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../submit-remember.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What to remember about submitting work</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/useful.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/useful.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Useful tools</span></a>
   </div>
 </li>
@@ -160,13 +194,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/editor.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/editor.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Installing an Editor</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/guides/hello.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/guides/hello.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Instructions for typing and running your first program</span></a>
   </div>
 </li>
@@ -192,43 +226,43 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/modules/module0.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/modules/module0.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 0:</strong> Your First Program</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/modules/module1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/modules/module1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 1:</strong> A few more getting-started examples</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/modules/module2.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/modules/module2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 2:</strong> Functions: a first look</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/modules/module3.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/modules/module3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 3:</strong> Loops: the for-loop</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/modules/module4.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/modules/module4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 4:</strong> Integers</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/modules/module5.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/modules/module5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 5</strong>: Strings and Characters</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/modules/module6.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/modules/module6.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 6</strong>: Real Numbers</span></a>
   </div>
 </li>
@@ -245,37 +279,37 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit1/modules/module0.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit1/modules/module0.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 0:</strong> A first look at lists</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit1/modules/module1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit1/modules/module1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 1:</strong> Conditionals</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit1/modules/module2.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit1/modules/module2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 2:</strong> Functions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit1/modules/module3.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit1/modules/module3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 3:</strong> Booleans, strings, built-in functions, types</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit1/modules/module4.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit1/modules/module4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 4:</strong> <code>while</code> loops, I/O</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit1/modules/module5.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit1/modules/module5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 5:</strong> Review</span></a>
   </div>
 </li>
@@ -292,19 +326,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit2/modules/module0.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit2/modules/module0.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 0:</strong> Arrays, Tuples, Sets, and Dictionaries</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit2/modules/module1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit2/modules/module1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 1:</strong> Choropleth Maps</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit2/modules/module2.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit2/modules/module2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>Module 2:</strong> What’s next for you in Computing?</span></a>
   </div>
 </li>
@@ -330,31 +364,31 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/additional-resources/insructor-notes/week-1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/additional-resources/insructor-notes/week-1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week-1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/additional-resources/insructor-notes/week-2.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/additional-resources/insructor-notes/week-2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week-2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/additional-resources/insructor-notes/week-3.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/additional-resources/insructor-notes/week-3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week-3</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/additional-resources/insructor-notes/week-4.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/additional-resources/insructor-notes/week-4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week-4</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/additional-resources/insructor-notes/week-5.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/additional-resources/insructor-notes/week-5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week-5</span></a>
   </div>
 </li>
@@ -380,7 +414,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth4 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/additional-resources/lab-notes/amal/week-1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/additional-resources/lab-notes/amal/week-1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week-1</span></a>
   </div>
 </li>
@@ -403,13 +437,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/assignments/assignment0.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/assignments/assignment0.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Assignment 0</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./units/unit0/assignments/assignment1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit0/assignments/assignment1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Assignment 1</span></a>
   </div>
 </li>
@@ -417,7 +451,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./faq.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../faq.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FAQ</span></a>
   </div>
 </li>
@@ -427,44 +461,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#dr.-kartik-bulusu-instructor" id="toc-dr.-kartik-bulusu-instructor" class="nav-link active" data-scroll-target="#dr.-kartik-bulusu-instructor">Dr.&nbsp;Kartik Bulusu (Instructor)</a></li>
-  <li><a href="#gtas" id="toc-gtas" class="nav-link" data-scroll-target="#gtas">GTAs</a>
-  <ul>
-  <li><a href="#ethan-leider" id="toc-ethan-leider" class="nav-link" data-scroll-target="#ethan-leider">Ethan Leider</a></li>
-  <li><a href="#boomika-karuppaiah" id="toc-boomika-karuppaiah" class="nav-link" data-scroll-target="#boomika-karuppaiah">Boomika Karuppaiah</a></li>
-  <li><a href="#amal-alqahtani" id="toc-amal-alqahtani" class="nav-link" data-scroll-target="#amal-alqahtani">Amal Alqahtani</a></li>
-  <li><a href="#lexi-sun" id="toc-lexi-sun" class="nav-link" data-scroll-target="#lexi-sun">Lexi Sun</a></li>
-  </ul></li>
-  <li><a href="#uta" id="toc-uta" class="nav-link" data-scroll-target="#uta">UTA</a>
-  <ul>
-  <li><a href="#marlee-alvino" id="toc-marlee-alvino" class="nav-link" data-scroll-target="#marlee-alvino">Marlee Alvino</a></li>
-  </ul></li>
-  <li><a href="#las" id="toc-las" class="nav-link" data-scroll-target="#las">LAs</a>
-  <ul>
-  <li><a href="#steven-yoon" id="toc-steven-yoon" class="nav-link" data-scroll-target="#steven-yoon">Steven Yoon</a></li>
-  <li><a href="#gustavo-londono" id="toc-gustavo-londono" class="nav-link" data-scroll-target="#gustavo-londono">Gustavo Londono</a></li>
-  <li><a href="#jonathan-nguyen" id="toc-jonathan-nguyen" class="nav-link" data-scroll-target="#jonathan-nguyen">Jonathan Nguyen</a></li>
-  <li><a href="#evelina-naumovich" id="toc-evelina-naumovich" class="nav-link" data-scroll-target="#evelina-naumovich">Evelina Naumovich</a></li>
-  <li><a href="#isabella-dayrit" id="toc-isabella-dayrit" class="nav-link" data-scroll-target="#isabella-dayrit">Isabella Dayrit</a></li>
-  <li><a href="#petra-chuenarrom" id="toc-petra-chuenarrom" class="nav-link" data-scroll-target="#petra-chuenarrom">Petra Chuenarrom</a></li>
-  </ul></li>
-  <li><a href="#grader" id="toc-grader" class="nav-link" data-scroll-target="#grader">Grader</a>
-  <ul>
-  <li><a href="#rutvik-solanki" id="toc-rutvik-solanki" class="nav-link" data-scroll-target="#rutvik-solanki">Rutvik Solanki</a></li>
-  </ul></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Instruction Team</h1>
+<h1 class="title"><strong>Assignment 1:</strong> Problem Solving Example</h1>
 </div>
 
 
@@ -494,70 +498,137 @@ ul.task-list li input[type="checkbox"] {
 
 
 <!-- <div class="breadcrumbs">
-  <a href="./index.qmd">Home</a> &raquo;
-  <span class="current-page">Instruction Team</span>
+  <a href="../../../index.qmd">Home</a> &raquo;
+  <a href="">Unit 0</a> &raquo;
+  <a href="./assignment1.qmd">Assignment 2</a> &raquo;
+  <span class="current-page">Problem Solving</span>
 </div> -->
-<section id="dr.-kartik-bulusu-instructor" class="level2">
-<h2 class="anchored" data-anchor-id="dr.-kartik-bulusu-instructor">Dr.&nbsp;Kartik Bulusu (Instructor)</h2>
-<p><strong>Dr.&nbsp;Kartik V. Bulusu</strong> is an Associate Professor of Practice in the Department of Computer Science (CS) and Associate Research Professor in the Department of Mechanical and Aerospace Engineering (MAE).</p>
-<p>His research work entails human health and sustainable energy with a focus on biofluid mechanics, polymer rheology, low-cost energy technologies, and applications of wavelet transforms.</p>
-<p>He is also working on AI-on-the-edge applications using low-power devices. In his free time, he loves to tinker with electronics and design low-cost experiments for research and education.</p>
-<p>Dr.&nbsp;Bulusu has been developing low-cost ejector technologies refrigeration in disaster-prone regions and humanitarian needs.</p>
-<p><strong>Office Hours:</strong> On-Demand (Please reach out via email)</p>
-<p><strong>Location:</strong> Blackboard Collaborate Course Room</p>
-<p><strong>Campus Address:</strong> SEH 3640</p>
-<p><strong>Email</strong>: <a href="mailto:bulusu@gwu.edu">bulusu@gwu.edu</a></p>
-</section>
-<section id="gtas" class="level2">
-<h2 class="anchored" data-anchor-id="gtas">GTAs</h2>
-<section id="ethan-leider" class="level3">
-<h3 class="anchored" data-anchor-id="ethan-leider">Ethan Leider</h3>
-</section>
-<section id="boomika-karuppaiah" class="level3">
-<h3 class="anchored" data-anchor-id="boomika-karuppaiah">Boomika Karuppaiah</h3>
-</section>
-<section id="amal-alqahtani" class="level3">
-<h3 class="anchored" data-anchor-id="amal-alqahtani">Amal Alqahtani</h3>
-</section>
-<section id="lexi-sun" class="level3">
-<h3 class="anchored" data-anchor-id="lexi-sun">Lexi Sun</h3>
-</section>
-</section>
-<section id="uta" class="level2">
-<h2 class="anchored" data-anchor-id="uta">UTA</h2>
-<section id="marlee-alvino" class="level3">
-<h3 class="anchored" data-anchor-id="marlee-alvino">Marlee Alvino</h3>
-</section>
-</section>
-<section id="las" class="level2">
-<h2 class="anchored" data-anchor-id="las">LAs</h2>
-<section id="steven-yoon" class="level3">
-<h3 class="anchored" data-anchor-id="steven-yoon">Steven Yoon</h3>
-</section>
-<section id="gustavo-londono" class="level3">
-<h3 class="anchored" data-anchor-id="gustavo-londono">Gustavo Londono</h3>
-</section>
-<section id="jonathan-nguyen" class="level3">
-<h3 class="anchored" data-anchor-id="jonathan-nguyen">Jonathan Nguyen</h3>
-</section>
-<section id="evelina-naumovich" class="level3">
-<h3 class="anchored" data-anchor-id="evelina-naumovich">Evelina Naumovich</h3>
-</section>
-<section id="isabella-dayrit" class="level3">
-<h3 class="anchored" data-anchor-id="isabella-dayrit">Isabella Dayrit</h3>
-</section>
-<section id="petra-chuenarrom" class="level3">
-<h3 class="anchored" data-anchor-id="petra-chuenarrom">Petra Chuenarrom</h3>
-</section>
-</section>
-<section id="grader" class="level2">
-<h2 class="anchored" data-anchor-id="grader">Grader</h2>
-<section id="rutvik-solanki" class="level3">
-<h3 class="anchored" data-anchor-id="rutvik-solanki">Rutvik Solanki</h3>
+<p>With a challenging problem, what is often hardest is getting started. Where to begin?</p>
+<p>Let’s start by examining the output more closely: <img src="../../../media/units/unit0/assignment1/Assignment1_DemoPic1.png" class="img-fluid"></p>
+<p>At this point, it’s important NOT to think about coding details.</p>
+<p>This is a critically useful strategy that deserves some explanation:</p>
+<ul>
+<li>The type of thinking you do when solving a problem at the higher level is different from the kind of nitpicky-language-level detail during coding.</li>
+<li>Experience shows that it’s best to avoid doing both simultaneously.</li>
+<li>If you like analogies:
+<ul>
+<li>It’s best to develop an outline of an essay before focusing on sentences.</li>
+<li>Do the prep (chopping, organizing) before the actual cooking.</li>
+</ul></li>
+</ul>
+<p>So now, let’s just think high level but a little code-like:</p>
+<ul>
+<li><p>We call this <em>algorithmic thinking</em>.</p></li>
+<li><p>Since there are 10 lines, we could say “we’re doing something 10 times” (each time slightly differently).</p></li>
+<li><p>In code-like structure, called <em>pseudcode</em>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i going <span class="im">from</span> <span class="dv">1</span> to <span class="dv">10</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    figure out <span class="kw">and</span> <span class="bu">print</span> the i<span class="op">-</span>th line</span></code></pre></div></li>
+<li><p>It’s worth staring at the above for a few minutes. We’ll point out that:</p>
+<ul>
+<li>This is NOT actual code but puts structure to the thought “we’re doing something 10 times”</li>
+<li>The high level structure will later become an actual for-loop.</li>
+<li>Pseudocode doesn’t get hung up on language minutiae like semi-colons. All it needs to do is outline the main idea, like a sketch.</li>
+</ul></li>
+</ul>
+<p>Next, if we could somehow figure out the last letter in each line, we’d be in good shape, because:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i going <span class="im">from</span> <span class="dv">1</span> to <span class="dv">10</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    figure out the last letter <span class="kw">in</span> line i</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span> <span class="im">from</span> z down to that last letter</span></code></pre></div>
+<p>We need to figure out the last letter in the i-th line:</p>
+<ul>
+<li><p>One problem: i is an integer.</p></li>
+<li><p>But … recall the connection between integers and characters?</p></li>
+<li><p>To go from letter to number:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">ord</span>(<span class="st">'a'</span>)       <span class="co"># k will turn out to have 97</span></span></code></pre></div></li>
+<li><p>To go from number to letter:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>letter <span class="op">=</span> <span class="bu">chr</span>(<span class="dv">97</span>)   <span class="co"># letter will turn out to have 'a'</span></span></code></pre></div></li>
+<li><p>So, now let’s ask: how do we get the letter that’s i spots behind ‘z’ in the alphabet?</p>
+<ul>
+<li><p>Let’s first get the <em>number</em> (integer) corresponding to the letter ‘z’</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">ord</span>(<span class="st">'z'</span>)</span></code></pre></div></li>
+<li><p>So, the <em>number</em> corresponding to the letter that’s i spots behind ‘z’ must be</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">ord</span>(<span class="st">'z'</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>j <span class="op">=</span> k <span class="op">-</span> i       <span class="co"># i spots behind (or less)</span></span></code></pre></div></li>
+<li><p>This might be easier to see in a picture: <img src="../../../media/units/unit0/assignment1/Assignment1_DemoPic2.png" class="img-fluid"></p></li>
+<li><p>Let’s convert that to a letter:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">ord</span>(<span class="st">'z'</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>j <span class="op">=</span> k <span class="op">-</span> i</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>letter <span class="op">=</span> <span class="bu">chr</span>(j) <span class="co"># the letter i spots behind</span></span></code></pre></div></li>
+<li><p>This can be printed.</p></li>
+</ul></li>
+</ul>
+<p>Let’s summarize what we have so far in pseudocode:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i going <span class="im">from</span> <span class="dv">1</span> to <span class="dv">10</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> <span class="bu">ord</span>(<span class="st">'z'</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># the number of the letter i spots behind</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    j <span class="op">=</span> k <span class="op">-</span> i</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    Now <span class="bu">print</span> <span class="bu">all</span> the letters corresponding to the numbers <span class="im">from</span> k to j</span></code></pre></div>
+<ul>
+<li><p>Clearly, we want to print every letter corresponding to the numbers between k and j.</p></li>
+<li><p>This means an inner for-loop because we’re iterating from k to j.</p></li>
+<li><p>Observe that j is smaller than k and so we have to <em>decrement</em> in this inner for-loop.</p></li>
+<li><p>Thus, we can revise our pseudocode as:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i going <span class="im">from</span> <span class="dv">1</span> to <span class="dv">10</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> <span class="bu">ord</span>(<span class="st">'z'</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># the number of the letter i spots behind</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    j <span class="op">=</span> k <span class="op">-</span> i</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> n starting at k <span class="kw">and</span> going down to j</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>        get the letter corresponding to n <span class="kw">and</span> <span class="bu">print</span> it</span></code></pre></div></li>
+<li><p>Finally, let’s try and fill in the missing pieces:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">10</span>):</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> <span class="bu">ord</span>(<span class="st">'z'</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    j <span class="op">=</span> k <span class="op">-</span> i</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> n <span class="kw">in</span> <span class="bu">range</span>(k, j, <span class="op">-</span><span class="dv">1</span>):</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>        c <span class="op">=</span> <span class="bu">chr</span>(n)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(c)</span></code></pre></div></li>
+</ul>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span style="color:#8B4513;"><strong>A2.1 Exercise:</strong> </span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Write up the above in <code>my_char_problem1.py</code>. The output does not match what the desired output as shown <a href="../../../media/units/unit0/assignment1/Assignment1_DemoPic1.png">here</a>. However, type up the program and submit it.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span style="color:#8B4513;"><strong>A2.2 Exercise:</strong> </span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Some unaddressed problems were deliberately left in the program above. Write a program <code>my_char_problem2.py</code> to fix the problems in the program above. This program should build on the previously saved program and match the desired output shown <a href="../../../media/units/unit0/assignment1/Assignment1_DemoPic1.png">here</a>. Submit <code>my_char_problem2.py</code>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You will be submitting the following two programs in this assignment exercise:</p>
+<ol type="1">
+<li><code>my_char_problem1.py</code></li>
+<li><code>my_char_problem2.py</code></li>
+</ol>
+</div>
+</div>
 
 
-</section>
-</section>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -895,18 +966,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./course-policies.html" class="pagination-link  aria-label=" course="" policies"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Course Policies</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./submit-remember.html" class="pagination-link" aria-label="What to remember about submitting work">
-        <span class="nav-page-text">What to remember about submitting work</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
