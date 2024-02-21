@@ -520,7 +520,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><p>We call this <em>algorithmic thinking</em>.</p></li>
 <li><p>Since there are 10 lines, we could say “we’re doing something 10 times” (each time slightly differently).</p></li>
-<li><p>In code-like structure, called <em>pseudcode</em>:</p>
+<li><p>In code-like structure, called <em>pseudocode</em>:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i going <span class="im">from</span> <span class="dv">1</span> to <span class="dv">10</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    figure out <span class="kw">and</span> <span class="bu">print</span> the i<span class="op">-</span>th line</span></code></pre></div></li>
 <li><p>It’s worth staring at the above for a few minutes. We’ll point out that:</p>
@@ -539,9 +539,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>One problem: i is an integer.</p></li>
 <li><p>But … recall the connection between integers and characters?</p></li>
 <li><p>To go from letter to number:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">ord</span>(<span class="st">'a'</span>)       <span class="co"># k will turn out to have 97</span></span></code></pre></div></li>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="bu">ord</span>(<span class="st">'a'</span>)       <span class="co"># k will turn out to be 97</span></span></code></pre></div></li>
 <li><p>To go from number to letter:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>letter <span class="op">=</span> <span class="bu">chr</span>(<span class="dv">97</span>)   <span class="co"># letter will turn out to have 'a'</span></span></code></pre></div></li>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>letter <span class="op">=</span> <span class="bu">chr</span>(<span class="dv">97</span>)   <span class="co"># letter will turn out to be 'a'</span></span></code></pre></div></li>
 <li><p>So, now let’s ask: how do we get the letter that’s i spots behind ‘z’ in the alphabet?</p>
 <ul>
 <li><p>Let’s first get the <em>number</em> (integer) corresponding to the letter ‘z’</p>
