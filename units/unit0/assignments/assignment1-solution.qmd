@@ -44,7 +44,7 @@ So now, let's just think high level but a little code-like:
 
 - We call this <em>algorithmic thinking</em>.
 - Since there are 10 lines, we could say "we're doing something 10 times" (each time slightly differently).
-- In code-like structure, called <em>pseudcode</em>:
+- In code-like structure, called <em>pseudocode</em>:
   
     ```python
     for i going from 1 to 10
@@ -71,12 +71,12 @@ We need to figure out the last letter in the i-th line:
 - To go from letter to number:
     
     ```python
-    k = ord('a')       # k will turn out to have 97
+    k = ord('a')       # k will turn out to be 97
     ```
 - To go from number to letter:
     
     ```python
-    letter = chr(97)   # letter will turn out to have 'a'
+    letter = chr(97)   # letter will turn out to be 'a'
     ```
 - So, now let's ask: how do we get the letter that's i spots behind 'z' in the alphabet?
     - Let's first get the <em>number</em> (integer) corresponding to the letter 'z'
