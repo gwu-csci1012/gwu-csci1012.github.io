@@ -336,7 +336,7 @@ You will be submitting the following program in this assignment exercise:
 :::{.callout-warning}
 ## How to submit:
 - Write all your programs in a directory called `assignment1`.
-- After completing the all problems in this assignment, make a `zip` of the directory as `assignment0.zip` and submit it on Blackboard.
+- After completing the all problems in this assignment, make a `zip` of the directory as `assignment1.zip` and submit it on Blackboard.
 :::
 
 <!-- </body>
