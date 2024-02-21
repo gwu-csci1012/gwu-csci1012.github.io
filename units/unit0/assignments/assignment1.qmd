@@ -279,7 +279,7 @@ In `my_geometric_art3.py`, use the ability to draw rectangles and circles, chang
 #### **4.3 Art project**
 In `my_geometric_art4.py`, use the ability to draw rectangles and circles, changing colors where needed, to make a far more impressive work of art. 
 
-- `my_geometric_art3.py` should output an image with 1000 circles filled with green color and 100 rectangles, not-filled and outlined in blue color
+- `my_geometric_art4.py` should output an image with 1000 circles filled with green color and 100 rectangles, not-filled and outlined in blue color
 
 
 <!-- You are also welcome to use other functions in drawtool such as:
