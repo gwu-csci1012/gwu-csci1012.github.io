@@ -54,7 +54,7 @@ And suppose we want to use for-loops to achieve this. How do we go about solving
 At this point, do not read further and try to address the following:
 
 - First understand what is being asked.
-- Do see a for-loop or two at work where, as the loops are printing, you'll get the output shown above?
+- Do you see a for-loop or two at work where, as the loops are printing, you'll get the output shown above?
 - Can the problem be broken down into parts, where you can solve the parts and put the solution together afterwards?
 - Try writing some code to get at least some of the output.
 - What are the issues related to strings?
@@ -63,15 +63,15 @@ At this point, do not read further and try to address the following:
 
 ::: {.callout-caution collapse="false"}
 ###### <span style="color:#8B4513;">You are required to submit your solutions to the **exercises** within this demo problem.</span>
-Don't forget to submit your solutions to the exercises within the demo problem while you are being asked to examine the solution through the guided exercises presented to you [**here**](./assignment1-solution.qmd).
+Don't forget to submit your solutions to the exercises within the demo problem where you are being asked to examine the solution through the guided exercises presented to you [**here**](./assignment1-solution.qmd).
 :::
 
 
-### 2. Write a program to compute the sum of all odd and even numbers in a given range. Here's part of the code:
+### 2. Write a program to compute the sum of all odd and even numbers in a given range.
 
 You need to submit the following programs: 
 
-#### **2.1 Initialize m = 10 and n = 20 and compute the sum of odd and even numbers within that range in a program called `my_oddeven_sum1.py` using one for-loop.**
+#### **2.1 Initialize m = 10 and n = 20 and individually compute the sums of the odd and even numbers within that range in a program called `my_oddeven_sum1.py`. Use one for-loop.**
 
 - Your python program should include the following comments 
 
@@ -108,7 +108,7 @@ You need to submit the following programs:
 :::{.callout-tip}
 <!-- ![](Assignment1_DemoPic1.png) -->
 - Notice that the first column has even numbers between 10 and 20 and not including 20. 
-     - The second column has the cumulative sum of the even numbers. When m=10, and n=20, the sum of the first two even numbers is 22, the first three even numbers is 36 and so on until the sum of all even numbers within the range is 70. 
+     - The second column has the cumulative sum of the even numbers. When m=10, and n=20, the sum of the first two even numbers is 22, that of the first three even numbers is 36, and so on. The sum of all even numbers within the range is 70. 
 - The third column has odd numbers between 10 and 20. 
     - Similarly, when m=10, and n=20, the sum of all odd numbers within that range is 75.
 :::
@@ -117,7 +117,7 @@ You need to submit the following programs:
 
 #### **2.3 Finally, create one more program with m=1000 and and n=2000 and save it as `my_oddeven_sum3.py`.** 
 
-:::{.callout-warning}
+:::{.callout-tip title="Submission files for this exercise"}
 You will be submitting the following three programs in this assignment exercise: 
 
 1. `my_oddeven_sum1.py`
@@ -125,35 +125,76 @@ You will be submitting the following three programs in this assignment exercise:
 3. `my_oddeven_sum3.py`
 :::
 
-### 3. Review the examples in `Module 5` where we made random sentences. After pulling out random nouns, a verb etc, we built a sentences using the (incomplete) code below:
+### 3. Review the examples in `Module 5` where we made random sentences. After pulling out random nouns, a verb, etc., we built sentences using the (incomplete) code below:
 ```python
 import wordtool
 
-# Write some code to invoke functions in wordtool to pick random words 
-# See examples in module-5 is find those functions and implement them here
+# Write some code to invoke functions in wordtool to pick random words. 
+# See examples in module-5. Find those functions and implement them here.
 
 name = input('Enter your name: ')
+
+# Initialize a variable N for the number of times the for-loop should iterate
+# Implement a for-loop here as, for i in range(N): 
+
 sentence = (
     'Hi ' + name + ', you are a '+ adj + ' ' + noun + ' ' +'that ' + verb + 's' +
     ' ' + prep + ' a ' + noun2 + '.')
+
+t1 = len(sentence)
+t2 = len(adj)    
 ```
 You need to fix the above code and submit the following programs: 
 
 #### **3.1 Create a program `my_avg_SentenceAdj_length1.py` that** 
-- implements a for-loop and builds 10 sentences. 
+- asks for your name as a user-input
+- implements a for-loop and builds N=10 sentences. 
 - prints each sentence 
 - computes the average sentence length and average adjective length and 
 - prints the two averages at the end.
 
-:::{.callout-tip}
-You should use the sentence construction shown in the incomplete sample code above. Notice that the sample code also has an `input()` function asking the user's name. Note that the sentences constructed using the sample code above will include spaces that will be counted in the sentence length.
+:::{.callout-tip title="Hint"}
+Below is an example of how the average length of the sentences can be compute with a for-loop.
+```python
+t1 = t1 + len(sentence)
+t1_avg = t1/N
+
+t2 = t2 + len(adj)
+t2_avg = t2/N
+```    
+:::
+
+An example of the expected output is presented below.
+```python
+Enter your name: Kartik
+Hi Kartik, you are a symphonic tumble that forswears minus a rhapsodic.
+Hi Kartik, you are a downright guise that retrospects out a earthquake.
+Hi Kartik, you are a compensable refugee that twinges fore a depositor.
+Hi Kartik, you are a penal downturn that dissipates aboard a tangible.
+Hi Kartik, you are a infeasible two that nears of a gardenia.
+Hi Kartik, you are a buttery cinch that twinkles amongst a author.
+Hi Kartik, you are a murky concomitant that lingers pro a epidermis.
+Hi Kartik, you are a rudimentary weird that sheers pro a guess.
+Hi Kartik, you are a coronary renown that races but a botfly.
+Hi Kartik, you are a paperback song that glorifys to a assurance.
+
+ Average length of sentence =  66.7
+
+ Average length of adjective =  8.4
+ ```
+
+
+
+:::{.callout-note}
+- `len(sentence)`, will count the number of characters including the empty spaces in the sentence.
+- `len(adj)`, will count the number of charactera in the adjective.
 :::
 
 #### **3.2 Create a program `my_avg_SentenceAdj_length2.py`that has the same requirements as exercise 3.1 but with 100 sentences.**
 
 #### **3.3 Create a program `my_avg_SentenceAdj_length3.py`that has the same requirements as exercise 3.1 but with 1000 sentences.**
 
-:::{.callout-warning}
+:::{.callout-tip title="Submission files for this exercise"}
 You will be submitting the following three programs in this assignment exercise: 
 
 1. `my_avg_SentenceAdj_length1.py`
@@ -202,8 +243,8 @@ The program will generate an image with 10 circle, filled with magenta color as 
 You may refer section 2.3 in `module 2` to understand how the program `my_geometric_art1.py` is executed
 :::
 
-#### **4.1 Writing a function `draw_random_rectangle(color)` in the above program and save it as `my_geometric_art2.py`** 
-- `draw_random_rectangle(color)`should that the following expressions
+#### **4.1 Write a function `draw_random_rectangle(color)` in the above program and save it as `my_geometric_art2.py`** 
+- `draw_random_rectangle(color)`should include the following expressions
     
     ```python
     # A function that draws a random rectangle
@@ -221,7 +262,7 @@ You may refer section 2.3 in `module 2` to understand how the program `my_geomet
 ![](../../../media/units/unit0/assignment1/artwork2.png)
 
 :::{.callout-tip}
-You may refer section 3.6 in `module 3` to understand how the function `canvas.create_rectangle()` draws a rectangle. 
+You may refer to section 3.6 in `module 3` to understand how the function `canvas.create_rectangle()` draws a rectangle. 
 :::
 
 <!-- Start by downloading <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> into your assignment folder. Then, write the above code in `my_geometric_art.py` to see that a part of the drawing has been made for you. You can draw a circle with center at (10,20) with radius 5 using the line:
@@ -233,12 +274,12 @@ dt.draw_circle(10, 20, 5)
 #### **4.2 Art project**
 In `my_geometric_art3.py`, use the ability to draw rectangles and circles, changing colors where needed, to make a far more impressive work of art. 
 
-- `my_geometric_art3.py` should output an image with 100 filled, circles in cyan color and 100 rectangles, not-filled and outlined in red color
+- `my_geometric_art3.py` should output an image with 100 circles filled with cyan color and 100 rectangles, not-filled and outlined in red color
 
 #### **4.3 Art project**
 In `my_geometric_art4.py`, use the ability to draw rectangles and circles, changing colors where needed, to make a far more impressive work of art. 
 
-- `my_geometric_art3.py` should output an image with 1000 filled, circles in green color and 100 rectangles, not-filled and outlined in blue color
+- `my_geometric_art3.py` should output an image with 1000 circles filled with green color and 100 rectangles, not-filled and outlined in blue color
 
 
 <!-- You are also welcome to use other functions in drawtool such as:
@@ -250,7 +291,7 @@ dt.draw_filled_rectangle(40, 50, 5, 5)
 With a limited color and geometric palette, we're confident you can make something [Mark Rothko](https://en.wikipedia.org/wiki/Mark_Rothko) or [Piet Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian) would be proud of.
 :::
 
-:::{.callout-warning}
+:::{.callout-tip title="Submission files for this exercise"}
 You will be submitting the following four programs in this assignment exercise: 
 
 1. `my_geometric_art1.py`
@@ -283,7 +324,7 @@ for j in range(ord('a'),ord('z')):
 ```
 Find and fix the errors in above program to match the output shown in this exercise. Save the program as `fixed_errors1.py` and submit it.
 
-:::{.callout-warning}
+:::{.callout-tip title="Submission files for this exercise"}
 You will be submitting the following program in this assignment exercise: 
 
 1. `fixed_errors1.py` 
