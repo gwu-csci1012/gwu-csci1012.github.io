@@ -152,5 +152,12 @@ You will be submitting the following two programs in this assignment exercise:
 2. `my_char_problem2.py`
 :::
 
+:::{.callout-note}
+### If you got this far successfully, congratulations!
+- Remember: You are saving all the programs in a directory called `assignment1`.
+- You need to start addressing the remaning problems in `assignment1`, found [here](assignment1.qmd).
+- After completing the remaining problems in this assignment, make a `zip` of the directory as `assignment1.zip` and submit it.
+:::
+
 </body>
 </html>
