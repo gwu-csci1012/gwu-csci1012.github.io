@@ -819,10 +819,6 @@ Note
 </ul></li>
 <li><p>We cannot use <code>some_string</code> in arithmetic.</p>
 </li></ul></li>
-<li><p>The following does NOT work:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'3.141'</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> x <span class="op">/</span> <span class="dv">2</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)</span></code></pre></div></li>
 </ul>
 </div>
 </div>
@@ -836,11 +832,15 @@ Exercise 6.6
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<p>The following does NOT work:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">'3.141'</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> x <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)</span></code></pre></div>
 <p>Type up the above program in <code>my_real_example5.py</code></p>
 <ul>
-<li>There is an error in the above program that should be fixed. Fix it and make sure you program is running correctly.</li>
+<li>Fix it and make sure you program is running correctly.</li>
 <li>Don’t submit it yet.</li>
-<li>Add a few lines of code to print the output of <code>y = x * 2</code>. What do you see? Write your code in <code>my_real_example5.py</code>.</li>
+<li>Add a few lines of code to print the output of <code>z = x * 2</code>, correctly.</li>
 <li>You should complete the additional lines of the code required in this exercise, and run the program to make sure you are getting the output desired.</li>
 <li>Submit <code>my_real_example5.py</code></li>
 </ul>
@@ -1069,7 +1069,7 @@ Exercise 6.16
 <span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, n<span class="op">+</span><span class="dv">1</span>):</span>
 <span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>    word <span class="op">=</span> wordtool.get_random_noun()</span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># FILL IN THE MISSING LINE HERE:</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># FILL IN THE MISSING LINES HERE:</span></span>
 <span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>avg <span class="op">=</span> total <span class="op">/</span> n</span>
 <span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Average word length = '</span> <span class="op">+</span> <span class="bu">str</span>(avg))</span></code></pre></div></li>
@@ -1085,11 +1085,15 @@ Exercise 6.17
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Fill in the missing line and write up the program in <code>my_stats3.py</code>.</p>
+<p>Type up the above program in <code>my_stats3.py</code>.</p>
+<p>Download <a href="../../../media/useful/wordtool.py" download=""><strong>wordtool.py</strong></a> and <a href="../../../media/useful/wordsWithPOS.txt" download=""><strong>wordsWithPOS.txt</strong></a> to the same folder where <code>my_stats3.py</code> is saved.</p>
+<p>Complete the missing lines in <code>my_stats3.py</code> to</p>
 <ul>
-<li>You will need to download <a href="../../../media/useful/wordtool.py" download=""><strong>wordtool.py</strong></a> and <a href="../../../media/useful/wordsWithPOS.txt" download=""><strong>wordsWithPOS.txt</strong></a>.</li>
-<li>Submit <code>my_stats3.py</code> after completing and running the program.</li>
+<li>print 10 words that are nouns and</li>
+<li>calculate the average length of the 10 words</li>
+<li>print the average length of the 10 words</li>
 </ul>
+<p>Submit <code>my_stats3.py</code> after completing and running the program.</p>
 </div>
 </div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
@@ -1102,12 +1106,28 @@ Exercise 6.18
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In <code>my_stats4.py</code>, modify the above to estimate the average length of verbs.</p>
+<p>In the earlier program <code>my_stats3.py</code>, you</p>
 <ul>
-<li>Compare the average length of nouns to the average length of verbs.</li>
-<li>Check if n = 10 is enough of a random sample in your program.</li>
-<li>Submit <code>my_stats4.py</code> with n = 10.</li>
-<li>Try higher values of n to get some understanding of what should n be to feel assured that you have a sound comparison.</li>
+<li>printed 10 nouns and</li>
+<li>estimated the average length of 10 nouns.</li>
+</ul>
+<p>In <code>my_stats4.py</code>, modify the above program <code>my_stats3.py</code> and have it also estimate the average length of verbs.</p>
+<p>This means you will have to add a few more lines of code within the for-loop that does the following:</p>
+<ul>
+<li>print 10 nouns</li>
+<li>calculate the average length of the 10 nouns</li>
+<li>print 10 verbs</li>
+<li>calculate the average length of the 10 verbs</li>
+<li>print the average length of the 10 nouns</li>
+<li>print the average length of the 10 verbs</li>
+</ul>
+<p>You will need <a href="../../../media/useful/wordtool.py" download=""><strong>wordtool.py</strong></a> and <a href="../../../media/useful/wordsWithPOS.txt" download=""><strong>wordsWithPOS.txt</strong></a> again for this exercise. However, you don’t need to download them again. Just save <code>my_stats4.py</code> in the same folder where you downloaded <strong>wordtool.py</strong>, <strong>wordsWithPOS.txt</strong> and <code>my_stats3.py</code>.</p>
+<p><strong>Submit <code>my_stats4.py</code> with n = 10.</strong></p>
+<p>Try this experiment; you don’t need to submit the following part of the exercise:</p>
+<ul>
+<li>Since the program prints out the average length of the 10 nouns and 10 verbs, you can see the results and mentally compare the average lengths.</li>
+<li>Try changing n = 100 and see if the results of average lengths are any different.</li>
+<li>Try a higher number for n.&nbsp;You may end up spending more time waiting for the program to complete its execution.</li>
 </ul>
 </div>
 </div>
