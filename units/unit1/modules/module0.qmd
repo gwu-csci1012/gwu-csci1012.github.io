@@ -92,7 +92,7 @@ print('The list: ' + str(A))
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.2
 
-Try out the above in `my_list2.py`.
+Type up the above in program `my_list2.py` and submit it.
 :::
 
 Let's point out:
@@ -138,7 +138,7 @@ Let's point out:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.3
 
-Type up the above in `my_list3.py`. Use comments (text followed by ‘#’ symbol) to describe the error.
+Type up the above in `my_list3.py` and run it. The list `A` has only has 5 elements. Hence, there is no element `A[7]` in the list. The program would return an error. Fix the error by replacing i = 7  with another number (not 3). Make sure the program does not return an error. Submit your modified `my_list3.py`. 
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
@@ -170,7 +170,8 @@ print(A)
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.6
 
-Confirm the output by typing up the above in `my_list5.py`. Then, explore what would go wrong if you try and remove something that's not in the list. For example, change the line `A.remove(9)` to `A.remove(10)`. Use comments (text followed by ‘#’ symbol) to describe to report what you see in the output. Submit your `my_list5.py` with the former (`A.remove(9)`).
+Confirm the output by typing up the above in `my_list5.py`. Then, explore what would go wrong if you try and remove something that's not in the list. For example, change the line `A.remove(9)` to `A.remove(10)`. Submit your `my_list5.py` with the former (`A.remove(9)`).
+ <!-- Use comments (text followed by ‘#’ symbol) to describe to report what you see in the output. -->
 :::
 
 :::{.callout-note}
@@ -195,7 +196,13 @@ print(B)
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.7
 
-Type up the above in `my_list6.py`. Trace through the changing values of i, k and the list B in each iteration of the for-loop in a spreadsheet or a document.
+Type up the above in `my_list6.py`. Notice that the lists A and B have the same elements. Submit `my_list6.py`. 
+
+The following part of the exercise is not required for submission:
+
+However, it is important for you to complete it on your own to understand the working of the program `my_list6.py`. 
+
+- To confirm your output, trace through the changing values of i, k and the list B in each iteration of the for-loop in a spreadsheet or a document.
 :::
 
 :::{.callout-note}
@@ -245,9 +252,16 @@ We do not need to traverse in exactly the order of elements in the list:
 - Here, we're starting at the last element, traversing the list from end to beginning in steps of 2.
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.10
+### Exercise 0.9
 
-Trace through the above code showing the values of i and A[i] at each iteration. Confirm by typing your code in `my_list7.py`.
+Type up the above program in `my_list7.py` and submit it. 
+
+The following part of the exercise is not required for submission:
+
+However, it is important for you to complete it on your own to understand the working of the program `my_list7.py`. 
+
+- To confirm your output, trace through the above code showing the values of i and A[i] at each iteration.
+- Confirm with the resutl from your code, `my_list7.py`.
 :::
 
 ## 0.2 A strange thing with lists
@@ -259,33 +273,69 @@ y = x     # Copy the value in x into y
 
 x = 6     # Change the value in x
 
+print(x)  # x is no longer equal 5. Now, x = 6
 print(y)  # Does it affect what's in y?
+          # No. y = 5. y retains the value of x it was assigned (x = 5) 
+
 ```
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.11
+### Exercise 0.10
 
-Consider the example above. In your module pdf, draw two boxes, one for x and one for y. Show the contents of the two boxes and if they change, show how they change. There is nothing to submit in this exercise.
+Consider the example above that involves copying a variable. 
+The following can be observed in the program: 
+
+- First, the value of variable x is initialized, i.e., x = 5. 
+- Next, the value associated with variable x is assigned to a variable y, i.e., value of x is copied into y.  
+- Then, the value of x is changed, i.e., x = 6. 
+- Finally, the values of y and x is printed using `print(y)` and `print(x)`.
+- Type up program above in `my_variable_copy.py` and run it. 
+- When you run the program you will notice that the value of y is the same as the value of x that was copied into it. 
+    - Any changes to x after its value was copied into y did not change the value of y. 
+
+Submit `my_variable_copy.py`.
+
+<!-- In your module pdf, draw two boxes, one for x and one for y. Show the contents of the two boxes and if they change, show how they change. There is nothing to submit in this exercise. -->
 :::
 
 Next, consider this:
 ```python
-A = [1, 4, 9, 16, 25]
+    A = [1, 4, 9, 16, 25]
+    print(A)	# A = [1, 4, 9, 16, 25]
 
-B = A
+    B = A
 
-A[0] = 49    # Change some value in list A
+    A[0] = 49   # Change some value in list A
 
-print(B)     # Does it affect what's in list B?
+    print(A)    # A = [49, 4, 9, 16, 25]
+    print(B)    # Does it affect what's in list B?
+                # Yes, B = [49, 4, 9, 16, 25]
+                # After the line of code B = A,
+                # any change in elements of A also 
+                # made a corresponding 
+                # change in elements of B.
 ```
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.12
+### Exercise 0.11
+Now consider another example above that involves copying a list.
 
-Type up the above in `my_list_copy.py` to find out whether any values have changed in list B.
+The following can be observed in the program: 
+
+- First, the a list of 5 elements is initialized, i.e., A = [1, 4, 9, 16, 25]. 
+- The list A is printed using `print(A)` and returns [1, 4, 9, 16, 25].
+- Next, a list B is assigned to list A, i.e., B = A.  
+- Then, the element A[0] is changed, i.e., A[0] = 49. 
+- List A is printed again and now returns [49, 4, 9, 16, 25].
+- Finally, the list B is printed using `print(B)`.
+- Type up the above in `my_list_copy.py` nd run it. 
+- When you run the program you will notice something different than the prevous exercise 0.10. 
+    - Following the line of code where you typed, B = A, the change in the elements of A affected the same change in elements of B. 
+
+Submit `my_list_copy.py`.
 :::
 
-Let's explain:
+Let's explain further:
 
 - Clearly something strange is going on with lists.
 - One way to think of it is to go back to our picture of a list:
@@ -324,18 +374,26 @@ Nowhere in our code is the building number (4701) explicitly written. Building n
     
     ```python
     A = [1, 4, 9, 16, 25]
+    print(A)	 # A = [1, 4, 9, 16, 25]
 
-    B = A.copy()
+    B = A.copy() # This is NOT the same as B = A
 
     A[0] = 49    # Change some value in list A
 
+    print(A)     # A = [49, 4, 9, 16, 25]
     print(B)     # Does it affect what's in list B?
+                 # No, B = [1, 4, 9, 16, 25]
+                 # After the line of code B = A.copy(),
+                 # any change in elements of A, DOES NOT make
+                 # a corresponding change in elements of B.
     ```
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.13
+### Exercise 0.12
 
 Type up the above in `my_list_copy2.py` to find out if any values have changed in list B.
+
+Submit `my_list_copy2.py`.
 :::
 
 So, which (`B = A` or `B = A.copy()`) do we use?
@@ -356,9 +414,15 @@ print(total)
 ```
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.14
+### Exercise 0.13
 
-Type up the above in `my_total_example1.py`. Trace through the changing values of i, k and total through each iteration of the loop in a spreadsheet or a document. 
+Type up the above in `my_total_example1.py` and submit it.  
+
+The following part of the exercise is not required for submission:
+
+However, it is important for you to complete it on your own to understand the working of the program `my_total_example1.py`. 
+
+- To confirm your output, trace through the changing values of i, A and total through each iteration of the loop in a spreadsheet or a document. 
 :::
 
 Now let's look at two different ways of writing the same loop (we'll only show the loop part):
@@ -407,7 +471,7 @@ Now let's look at two different ways of writing the same loop (we'll only show t
      - In some cases, however, you'll find index iteration is useful, especially when you need the <em>position</em> where something occurs in the list.
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.15
+### Exercise 0.14
 
 In `my_content_iteration.py`, use content-iteration to print the contents of the list A below:
 ```python
@@ -415,7 +479,16 @@ A = [2020, 2016, 2012, 2008, 2004, 2000]
 
 # Write your code here:
 ```
-The output should be one number per line in the order that the numbers appear in the list.
+The output should be one number per line in the order that the numbers appear in the list as shown below.
+
+```python
+2020
+2016
+2012
+2008
+2004
+2000
+```
 :::
 
 ## 0.4 Working with multiple lists
@@ -442,9 +515,14 @@ print(total)
 ```
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.17
+### Exercise 0.15
+Type the above in `my_twolist1.py` and submit the program. 
 
-First, try and trace through the changing values of i, k and total through each iteration of the loop in a spreadsheet or a document. Type the above in `my_twolist1.py` to confirm.
+The following part of the exercise is not required for submission:
+
+However, it is important for you to complete it on your own to understand the working of the program `my_twolist1.py`. 
+
+- To confirm your output, trace through the changing values of i, k and total through each iteration of the loop in a spreadsheet or a document. 
 :::
 
 :::{.callout-note}
@@ -453,10 +531,10 @@ First, try and trace through the changing values of i, k and total through each 
 - What if we want a third list whose elements are the additions of corresponding elements from each list?
 
     ```python
-        1    4    9    16    25
-        1    3    5     7    11
-        -----------------------
-        2    7   14    23    36
+    1    4    9    16    25
+    1    3    5     7    11
+    -----------------------
+    2    7   14    23    36
     ```
     Here, the last row is a new (third) list.
 :::
@@ -475,12 +553,21 @@ print(C)
 ```
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.18
+### Exercise 0.16
+Type the above in `my_twolist2.py`. 
 
-First, try and trace through the values of i and element_total in each iteration of the loop and see for yourself how the list C changes across the iterations. Do this as usual in a spreadsheet or a document. Type the above in `my_twolist2.py` to confirm. Print the list inside the loop, by adding a print statement right after the append occurs. (Submit your program with the added print statement.) Explain why, in this case index-iteration is a better choice than content iteration.
+- Print the list inside the loop, by adding a print statement right after the append occurs. 
+- Submit your program `my_twolist2.py` with the added print statement. 
+
+The following part of the exercise is not required for submission:
+
+However, it is important for you to complete it on your own to understand the working of the program `my_twolist2.py`. 
+
+- Try and trace through the values of i and element_total in each iteration of the loop and see for yourself how the list C changes across the iterations. Do this as usual in a spreadsheet or a document.
+- Explain to yourself why, in this case index-iteration is a better choice than content iteration.
 :::
 
-###### **0.19 Video**
+###### **0.17 Video**
 {{< video ../../../media/units/unit1/module0/u1-mod0.19.mp4 aspect-ratio="21x9" >}}
 
 ## 0.5 Moving elements around in a list
@@ -514,18 +601,39 @@ print(A)
 ```
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.20
+### Exercise 0.18
+Type the above in `my_list_swap1.py`. 
 
-Trace through the execution of the above showing the values in temp and the list after each line executes. Then, do the same if the middle three lines were replaced by:
-```python
-A[1] = A[3]
-A[3] = A[1]
-```
-There is nothing to submit in this exercise.
+The following part of the exercise is not required for submission:
+
+However, it is important for you to complete it on your own to understand the working of the program `my_listswap.py`. 
+
+- Try and trace through the execution of the above showing the values in temp and the list after each line executes. 
+-  Do this as usual in a spreadsheet or a document.
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.21
+### Exercise 0.19
+Type the code you just wrote, i.e., `my_list_swap1.py` again, in `my_list_swap2.py`.
+
+- Then, replace the middle three lines with following:
+    
+    ```python
+    A[1] = A[3]
+    A[3] = A[1]
+    
+    ```
+- You should notice that the program `my_list_swap1.py`, swapped the elements in the list. But `my_list_swap2.py` copied the the elements in the list.
+- The output of `my_list_swap2.py` should be shown below.
+
+    ```python
+    [1, 16, 9, 16, 25]
+    ```
+- Submit `my_list_swap2.py`
+:::
+
+:::{.callout-caution appearance="simple" icon=false}
+### Exercise 0.20
 
 Use the "temp" variable idea to perform a left-rotate of a list in `my_left_rotate.py`. Thus, given 
 ```python
@@ -543,30 +651,44 @@ We have thus far seen lists of integers. One can make a list of other kinds of e
 
 For example:
 ```python
-# A list of strings:
-A = ['cats', 'and', 'dogs']
-s = ''
-for w in A:
-    s += w
-print(s)
-
-# A way to extract the characters in a string into a list:
-s = 'abcdef'
-B = list(s)
-print(B)
-
 # Some real numbers:
 C = [1.1, 2.22, 3.333, 4.4444]
 total = 0
 for x in C:
     total = total + x
 print('Average =', total/4)
+
+# A way to extract the characters in a string into a list:
+s = 'abcdef'
+B = list(s)
+print(B)
+
+# A list of strings:
+A = ['cats', 'and', 'dogs']
+s = ''
+for w in A:
+    s += w
+print(s)
 ```
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.23
+### Exercise 0.21
 
-Type the above in `my_other_lists.py`, while noticing the subtle change in how the last print statement is written. Insert spaces in the first loop so that the first thing printed is `cats and dogs`.
+Type the following program above in `my_other_lists.py`:
+
+```python
+A = ['chutes', 'and', 'ladders']
+s = ''
+for w in A:
+    s += w
+print(s)
+```
+
+Notice that the program will print `chutesandladders`. 
+
+Insert spaces in the for-loop so that `chutes and ladders` is printed.
+
+Submit `my_other_lists.py`.
 :::
 
 ## 0.7 A different version of print
@@ -582,9 +704,9 @@ print('I love', x, s, y)
 ```
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.24
+### Exercise 0.22
 
-Type the above in `my_print_example.py`.
+Type the above in `my_print_example.py` and submit it.
 :::
 
 :::{.callout-note}
@@ -632,7 +754,7 @@ Let's use this feature first for a single roll of a die, and then two dice:
     ```
   
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.25
+### Exercise 0.23
 
 Type the above in `my_die_roll.py`. Run the program several times to see that you are getting random selections from the list.
 :::
@@ -658,15 +780,31 @@ Next, let's use this to make a (ridiculously) simple game:
     ```
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.26
+### Exercise 0.24
+The program above prints out the average score from the number of trials. 
 
-Type the above in `my_die_roll2.py` to observe the result. Use comments (text followed by ‘#’ symbol) to describe to report the average when you use a large number of trials (say, 1000).
+Type the above in `my_die_roll2.py` to observe the result. 
+
+**Submit `my_die_roll2.py` with num_trials = 10.**
+
+Try this experiment; you don't need to submit the following part of the exercise:
+
+- Try changing num_trials = 100 and see if the results of aaverage score  is any different from your program with num_trials = 10
+- Try a higher number for num_trials (say, 1000). You may end up spending more time waiting for the program to complete its execution.
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.27
+### Exercise 0.25
 
-In `my_die_roll3.py`, change the game to the following: in each trial, each player rolls the die twice and adds the two numbers. The final score is the average across all trials. What is the average when you use a large number of trials (say, 1000)? In your module pdf, devise a more interesting 2-player game one could play solely using dice. (You don't have to write a program for this last part.)
+In `my_die_roll3.py`, change the game to the following: 
+
+- In each trial, each player rolls the die twice and adds the two numbers. 
+- The final score is the average across all trials. 
+- Let your program estimate the average score  when you use a large number of trials (say, num_trials = 1000).  
+
+**Submit `my_die_roll2.py` with num_trials = 1000.**
+
+<!-- In your module pdf, devise a more interesting 2-player game one could play solely using dice. (You don't have to write a program for this last part.) -->
 :::
 
 ## 0.9 Some math via programming
@@ -693,9 +831,11 @@ dt.display()
 ```
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.29
+### Exercise 0.26
 
 Type up the above in `my_plot_example.py` to see what you get. You will also need to download <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> into the same folder.
+
+Submit `my_plot_example.py`
 :::
 
 Now let's ask some basic questions:
@@ -811,51 +951,52 @@ Let's put these ideas to use:
     ```
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.30
+### Exercise 0.27
 
-Type up the above in `my_function_example.py`.
+Type up the above in `my_function_example.py` and submit it.
 :::
 
 It is far more valuable to visualize, so let's set about plotting both together:
 
 - To plot, we'll need to construct the list of x and y coordinates:
-```python
-from drawtool import DrawTool
 
-dt = DrawTool()
-dt.set_XY_range(1,10, 0,100)
+    ```python
+    from drawtool import DrawTool
 
-x = 0
-x_coords = []
-y_coords = []
-for i in range(11):
-    x_coords.append(x)
-    f = 2*x + 3
-    y_coords.append(f)
-    x = x + 1
+    dt = DrawTool()
+    dt.set_XY_range(1,10, 0,100)
 
-dt.draw_curve_as_lines(x_coords, y_coords)
+    x = 0
+    x_coords = []
+    y_coords = []
+    for i in range(11):
+        x_coords.append(x)
+        f = 2*x + 3
+        y_coords.append(f)
+        x = x + 1
 
-dt.set_color('r')
+    dt.draw_curve_as_lines(x_coords, y_coords)
 
-# WRITE CODE HERE for the second function
+    dt.set_color('r')
 
-dt.draw_curve_as_lines(x_coords, y_coords)
+    # WRITE CODE HERE for the second function
 
-dt.display()
-```
+    dt.draw_curve_as_lines(x_coords, y_coords)
+
+    dt.display()
+    ```
 
 Let's point out:
 ![](../../../media/units/unit1/module0/funcplot-code.png)
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.31
+### Exercise 0.28
 
 Type up the above in `my_function_plot.py` and add code for the second function \(g(x)=x<sup>2</sup>\) to get a plot like:
 ![](../../../media/units/unit1/module0/func-exercise.png){width="60%"}
 :::
 
-###### **0.32 Video**
+###### **0.29 Video**
 {{< video ../../../media/units/unit1/module0/u1-mod0.32.mp4 aspect-ratio="21x9" >}}
 
 Scale and axes:
@@ -874,9 +1015,16 @@ to
     ```
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.33
+### Exercise 0.30
 
-In `my_function_plot2.py` change your code from the earlier exercise to make the scale the same along x and y axes.
+In `my_plot_example2.py` change your code from the earlier exercise to make the scale the same along x and y axes.
+
+For example, you can try one of the following options:
+
+- `dt.set_XY_range(1,10, 0,10)`
+- `dt.set_XY_range(1,100, 0,100)`
+
+**Submit `my_plot_example2.py` with `dt.set_XY_range(1,100, 0,100)`.**
 :::
 
 When to use different scales along the axes:
@@ -886,9 +1034,19 @@ When to use different scales along the axes:
 - We can use different scales when we want to emphasize different aspects.
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.34
+### Exercise 0.31
 
-In `my_function_plot3.py`, add a third function \(h(x) = 2<sup>x</sup>\). Plot and take a screenshot once with the x and y range both as [0, 1200], and once with the x-range as [0,12] and the y-range as [0,1200]. This should show you how puny quadratic growth is compared to exponential growth. Submit your `my_function_plot3.py` with the former case when both ranges are the same.
+In `my_function_plot2.py`, add a third function \(h(x) = 2<sup>x</sup>\). 
+
+Try out the following options:
+
+- Create the plot with the scale of x and y axes with same range as [0, 1200] as shown below.
+    - `dt.set_XY_range(1,1200, 0,1200)`
+- Create the plot with the different ranges for scale of x and y axes
+    - Set x-range as [0,12] and the y-range as [0,1200] i.e., `dt.set_XY_range(1,12, 0,1200)`.
+    - This should show you how puny quadratic growth is compared to exponential growth. 
+
+**Submit your `my_function_plot2.py` by setting the scale of x and y axes with same range as [0, 100] i.e., `dt.set_XY_range(1,100, 0,100)`**
 :::
 
 ## 0.10 Mathematical art
@@ -927,9 +1085,20 @@ So, for our art project:
 - Then, along a sine-curve, we'll draw small ellipses of different sizes. 
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 0.35
+### Exercise 0.32
 
-Download <a href="../../../media/units/unit1/module0/functional_art.py" download>**functional_art.py**</a> and run to see. Then in  `my_functional_art.py`, improve on the above by including your own functions and additional decoration by drawing.
+Download <a href="../../../media/units/unit1/module0/functional_art.py" download>**functional_art.py**</a> and run to see a plot like the one shown below. 
+
+![](../../../media/units/unit1/module0/Ex032_pic1.png)
+
+If you examine and understand the program `functional_art.py`, you will see that `random.random()`  and `math.sin()` functions were used to generate the plot above.
+
+Now create a program `my_functional_art.py`, by improving on the program `functional_art.py` and including a `math.cos()` function as your additional decoration on the mathematic art of a plot.
+
+Your new plot should look like the one shown below.
+![](../../../media/units/unit1/module0/Ex032_pic2.png)
+
+**Submit your `functional_art.py` and  `my_functional_art.py`.**
 :::
 
 ## 0.11 When things go wrong
