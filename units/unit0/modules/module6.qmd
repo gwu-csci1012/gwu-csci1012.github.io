@@ -258,23 +258,21 @@ print('The square of the number you entered is: ' + str(x*x))
 <ul>
 - We cannot use `some_string` in arithmetic.
 </ul>
-- The following does NOT work:
-
-    ```python
-    x = '3.141'
-    y = x / 2
-    print(y)
-```
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.6
-
+The following does NOT work:
+```python
+x = '3.141'
+y = x / 2
+print(y)
+```
 Type up the above program in `my_real_example5.py` 
 
-- There is an error in the above program that should be fixed. Fix it and make sure you program is running correctly.
+- Fix it and make sure you program is running correctly.
 - Don't submit it yet. 
-- Add a few lines of code to print the output of `y = x * 2`. What do you see? Write your code in `my_real_example5.py`. 
+- Add a few lines of code to print the output of `z = x * 2`, correctly. 
 - You should complete the additional lines of the code required in this exercise, and run the program to make sure you are getting the output desired. 
 - Submit `my_real_example5.py`
 :::
@@ -471,7 +469,7 @@ We'll next look at a problem at the intersection of language and statistics:
 
     for k in range(1, n+1):
         word = wordtool.get_random_noun()
-        # FILL IN THE MISSING LINE HERE:
+        # FILL IN THE MISSING LINES HERE:
 
     avg = total / n
     print('Average word length = ' + str(avg))
@@ -481,23 +479,46 @@ We'll next look at a problem at the intersection of language and statistics:
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.17
+Type up the above program in `my_stats3.py`.
 
-Fill in the missing line and write up the program in `my_stats3.py`. 
+Download <a href="../../../media/useful/wordtool.py" download >**wordtool.py**</a> and <a href="../../../media/useful/wordsWithPOS.txt" download>**wordsWithPOS.txt**</a> to the same folder where `my_stats3.py` is saved.
 
-- You will need to download <a href="../../../media/useful/wordtool.py" download >**wordtool.py**</a> and <a href="../../../media/useful/wordsWithPOS.txt" download>**wordsWithPOS.txt**</a>.
-- Submit `my_stats3.py` after completing and running the program.
+Complete the missing lines in `my_stats3.py` to
+
+- print 10 words that are nouns and 
+- calculate the average length of the 10 words
+- print the average length of the 10 words
+
+Submit `my_stats3.py` after completing and running the program.
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 6.18
+In the earlier program `my_stats3.py`, you 
 
-In `my_stats4.py`, modify the above to estimate the average length of verbs. 
+- printed 10 nouns and 
+- estimated the average length of 10 nouns.
 
-- Compare the average length of nouns to the average length of verbs. 
-- Check if n = 10 is enough of a random sample in your program. 
-- Submit `my_stats4.py` with n = 10.
-- Try higher values of n to get some understanding of what should n be to feel assured that you have a sound comparison.
+In `my_stats4.py`, modify the above program `my_stats3.py` and have it also estimate the average length of verbs. 
 
+This means you will have to add a few more lines of code within the for-loop that does the following:  
+
+- print 10 nouns
+- calculate the average length of the 10 nouns
+- print 10 verbs
+- calculate the average length of the 10 verbs
+- print the average length of the 10 nouns
+- print the average length of the 10 verbs
+
+You will need <a href="../../../media/useful/wordtool.py" download >**wordtool.py**</a> and <a href="../../../media/useful/wordsWithPOS.txt" download>**wordsWithPOS.txt**</a> again for this exercise. However, you don't need to download them again. Just save `my_stats4.py` in the same folder where you downloaded **wordtool.py**, **wordsWithPOS.txt** and `my_stats3.py`.
+
+**Submit `my_stats4.py` with n = 10.**
+
+Try this experiment; you don't need to submit the following part of the exercise:
+
+- Since the program prints out the average length of the 10 nouns and 10 verbs, you can see the results and mentally compare the average lengths. 
+- Try changing n = 100 and see if the results of average lengths are any different.
+- Try a higher number for n. You may end up spending more time waiting for the program to complete its execution.
 :::
 
 ## 6.5 Plotting a function
