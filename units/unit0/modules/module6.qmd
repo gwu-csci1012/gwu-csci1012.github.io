@@ -204,8 +204,8 @@ print('y=' + str(y))
 
 m = math.floor()
 n = math.ceil()
-print('Rounding down x gives ' + str(m))
-print('Rounding up x gives ' + str(n))
+print('Rounding down y gives ' + str(m))
+print('Rounding up y gives ' + str(n))
 ```
 :::
 
