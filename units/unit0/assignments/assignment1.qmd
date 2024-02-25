@@ -200,6 +200,7 @@ You will be submitting the following three programs in this assignment exercise:
 1. `my_avg_SentenceAdj_length1.py`
 2. `my_avg_SentenceAdj_length2.py`
 3. `my_avg_SentenceAdj_length3.py`
+4. Include <a href="../../../media/useful/wordtool.py" download >**wordtool.py**</a> and <a href="../../../media/useful/wordsWithPOS.txt" download>**wordsWithPOS.txt**</a>  in your submission
 :::
 
 ### 4. Use the sample code provided below and write up a python program `my_geometric_art1.py` and submit it.
