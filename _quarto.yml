@@ -24,6 +24,8 @@ website:
         text: Schedule
       - href: course-policies.qmd
         text: Course Policies
+      - href: ./units/unit2/modules/advising.qmd
+        text: CS Minor advising
       - href: instructors.qmd
         text: Instruction Team
       - ./submit-remember.qmd
