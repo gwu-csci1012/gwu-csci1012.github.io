@@ -1037,7 +1037,7 @@ to
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.30
 
-In `my_plot_example2.py` change your code from the earlier exercise (`my_function_example.py`) to make the scale the same along the x and y axes.
+In `my_plot_example2.py` change your code from the earlier exercise (`my_function_plot.py`) to make the scale the same along the x and y axes.
 
 For example, you can try one of the following options:
 
