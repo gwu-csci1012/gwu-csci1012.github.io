@@ -346,7 +346,8 @@ Type up the above in `my_compound_interest.py`.
 
 - Submit `my_compound_interest.py` to complete this exercise.
 - The following part of the exercise is not required for submission. However, it is important for you to complete it on your own to understand the working of the program `my_compound_interest.py`. 
-- To confirm your output can you calculate the final amount printed?- Trace through the iterations above using a table in a spreadsheet or a document, tracking the variables year, amount, interest.
+- To confirm your output can you calculate the final amount printed?
+- Trace through the iterations above using a table in a spreadsheet or a document, tracking the variables year, amount, interest.
 :::
 
 Let's point out:
