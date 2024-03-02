@@ -200,7 +200,6 @@ You will be submitting the following three programs in this assignment exercise:
 1. `my_avg_SentenceAdj_length1.py`
 2. `my_avg_SentenceAdj_length2.py`
 3. `my_avg_SentenceAdj_length3.py`
-4. Include <a href="../../../media/useful/wordtool.py" download >**wordtool.py**</a> and <a href="../../../media/useful/wordsWithPOS.txt" download>**wordsWithPOS.txt**</a>  in your submission
 :::
 
 ### 4. Use the sample code provided below and write up a python program `my_geometric_art1.py` and submit it.
@@ -280,7 +279,11 @@ In `my_geometric_art3.py`, use the ability to draw rectangles and circles, chang
 #### **4.3 Art project**
 In `my_geometric_art4.py`, use the ability to draw rectangles and circles, changing colors where needed, to make a far more impressive work of art. 
 
-- `my_geometric_art4.py` should output an image with 1000 circles filled with green color and 100 rectangles, not-filled and outlined in blue color
+- `my_geometric_art4.py` should output an image with 1000 circles filled with green color and (say) 100 rectangles, not-filled and outlined in blue color. 
+
+- In `my_geometric_art4.py`, you may choose to draw a higher number of rectangles such as 500 or 1000. 
+
+- We are only looking for a working program i.e., `my_geometric_art4.py`.
 
 
 <!-- You are also welcome to use other functions in drawtool such as:
