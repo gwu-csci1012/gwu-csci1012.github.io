@@ -8,6 +8,32 @@ title: "CS 1012: Introduction to Programming with Python"
 The course material is sourced from **Prof. Simha's** webpage: <https://www2.seas.gwu.edu/~simhaweb/onlinecs1012/>
 :::
 
+:::{.callout-important title="Make-up Quiz (03/04/2024)" icon="false"}
+Make-up Quiz for all students on **Monday, 03/04/2024**
+
+- A make up quiz will be given to all students during the lecture on **Monday, 03/04/2024**
+- The quiz will be for the duration of **15 mins**.
+- The quiz will start at the beginning of the lecture time and end in **15 mins**.
+    - You should not have any mobile devices (_laptops, cell phones, iPads, other smart devices etc_) in your possession during your quiz.
+    - You will not be using any IDE or accessing internet during the quiz.
+- You should return the quiz to the proctors or the professor and cannot hold on to it once done.
+
+Format of the make-up quiz:
+
+- The Quiz will be in same format as the quizzes offered during labs
+    - The students will get to answer _4 questions_.
+    - Each question will carry _2.5 points_.
+
+**The make up quiz is being given under the following conditions**
+
+- The quiz score can count toward one missed quiz until **03/08/2024** <u>OR</u> the lowest score on a quiz until **03/08/2024**, if you get a better score.
+- The make-up is only valid until **03/08/2024**; it will not count toward any quiz from thereon until the end of the course.
+
+The four lowest quizzes will still be dropped before the final grade.
+
+The regular lab quiz on Wednesday and Friday this week will still be given out.
+:::
+
 - **General information**: The course we will meet during lecture and laboratory times each week.
     - Most of our communication to you will be by Blackboard messaging and announcements.
     - Start by reading the [**About**](about.qmd) section. 
