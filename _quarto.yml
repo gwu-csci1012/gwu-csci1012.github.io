@@ -74,6 +74,8 @@ website:
                     text: "Week-5"
                   - href: units/additional-resources/insructor-notes/week-6.qmd
                     text: "Week-6"
+                  - href: units/additional-resources/insructor-notes/week-7.qmd
+                    text: "Week-7"
               - section: "Lab Notes"
                 contents: 
                   - section: "Amal AlQahtani"
