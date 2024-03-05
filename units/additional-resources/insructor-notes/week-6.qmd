@@ -10,7 +10,7 @@ Reposting and circulation of these additional resources outside to the class and
 :::{.callout}
 **Referencing this presentation:**
 
-Bulusu, Kartik V. (2024, February 26). Week-4 Presentation: CSCI1012 Introduction to Programming with Python [Week-6: Introduction to Programming with Python]. Department of Computer Science, The George Washington University. [https://gwu-csci1012.github.io/](https://gwu-csci1012.github.io/)
+Bulusu, Kartik V. (2024, February 26). Week-6 Presentation: CSCI1012 Introduction to Programming with Python [Week-6: Introduction to Programming with Python]. Department of Computer Science, The George Washington University. [https://gwu-csci1012.github.io/](https://gwu-csci1012.github.io/)
 :::
 
 
