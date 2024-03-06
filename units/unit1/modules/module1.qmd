@@ -568,9 +568,19 @@ print(diff)
 
 **Case-1:** Use conditionals to print out the absolute difference between the two numbers. Note: In the above case, the difference is 1. 
 
-**Case-2:** Use a=3, b=4, the difference is also 1. 
+- **Hint**: Use logic operator, `>=` to print the variable `diff` . Use the code structure shown below that compares a variable to a value and prints the value when conditions are met.
 
-**Case-3:** When a=-3, b=4, the difference is 7.
+    ```python
+    if <variable> >= value:
+        print(<variable>) 
+    ```
+
+**Case-2:** Use `a=3`, `b=4`, the difference is also 1. 
+
+**Case-3:** When `a=-3`, `b=4`, the difference is 7.
+
+Submit `my_boolean5.py` with `a = -3` and `b = -4`.
+
 :::
 
 ###### **1.17 Video**
