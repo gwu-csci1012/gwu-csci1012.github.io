@@ -412,7 +412,7 @@ if (a <= 0) or (a >= 1):
 Type up the above in `my_boolean2.py`. 
 Then do the following: try a=0.5.
 
-1. Chnage the value of a to 0.5 and run the program to examine the output.
+1. Change the value of a = 0.5 and run the program to examine the output.
 2. Submit the program with the modification in point #1.
 :::
 
