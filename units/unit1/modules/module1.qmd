@@ -697,7 +697,7 @@ Type up the above program in `my_listcheck.py`, run it for the following user in
 
 Run each case listed above and understand the output or error you are getting.
 
-Submit the program with the case suggested in point #3. 
+Submit the program `my_listcheck.py` with the case suggested in point #3. 
 :::
 
 :::{.callout-note}
