@@ -692,10 +692,12 @@ else:
 Type up the above program in `my_listcheck.py`, run it for the following user inputs and examine the output in each case:
 
 1. 100
-2. 35.364
+2. 35.364 (For a float-type input explain to yourself why you may get an error.)
 3. 4 
 
-Submit the program with the case outlined in point #3. 
+Run each case listed above and understand the output or error you are getting.
+
+Submit the program with the case suggested in point #3. 
 :::
 
 :::{.callout-note}
