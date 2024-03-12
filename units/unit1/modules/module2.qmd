@@ -27,6 +27,7 @@ format:
 ## Objectives
 
 By the end of this module you will be able to:
+
 - Enhance your understanding of how to use def to write functions, then invoke them.
 - Write code with function definitions and invocations.
 - Write and debug code with functions
@@ -48,7 +49,8 @@ When we come back to where the function was invoked, we continue execution just 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.1
 
-Please review that module. Now.
+Please review [**Module 2 of Unit-0**](../../unit0/modules/module2.qmd).
+There is nothing to submit in this exercise.
 :::
 
 ## 2.1 A simple example
@@ -67,7 +69,14 @@ increment_and_print(j)
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.2
 
-Type up the above in `my_func_example.py` Then, just before the j=6 statement, print the value of i.
+Type up the above in `my_func_example.py`.
+
+Then do the following:
+
+- Just before the line where the variable assignment `j = 6` is shown, print the value of i.
+- Execute the program `my_func_example.py`.
+
+Submit the program `my_func_example.py`.
 :::
 
 Let's explain:
@@ -93,10 +102,10 @@ Let's explain:
 ![](../../../media/units/unit1/module1.2/func-code6.png)
 
 :::{.callout-note}
-Did you notice that neither `i` nor `j` was affected by the incrementing of `a`?
+Did you notice that neither `i` nor `j` was affected by the incrementing of the value of variable `a`?
 
-- This is because the value in `i` was copied into the freshly-created `a` at the moment the function was invoked.
-- Even though `a` got incremented, that did not affect `i`.
+- This is because the value in `i` was copied into the newly-created variable `a` when the function was invoked.
+- Even though variable `a` got incremented, that did not affect `i`.
 :::
 - Variables like `a` that appear in the parentheses of a function definition are called <em>parameters</em>.
 
@@ -113,7 +122,7 @@ def print_from_one_to(a):
 print_from_one_to(5)
 print_from_one_to(6)
 ```
-- Here, we used the parameter `a` in setting the upper limit of a for-loop.
+- Here, we used the parameter **`a`** in setting the upper limit of a for-loop.
 
 :::{.callout-note}
 - When a function is defined with a parameter, the intent is that some code <em>outside</em> the function will set the <em>value</em> of the parameter.
@@ -130,7 +139,7 @@ print_from_one_to(6)
         print_from_one_to(5)
         print_from_one_to(6)
         ```
-    - Yes, this runs, but the whole point is for some other code to tell the function, "hey, I'm going to set a, and <em>then</em> you do your printing with the value I set".
+    - Yes, this runs, but the whole point is for some other code to tell the function, "Hey, I'm going to set variable **`a`**, and <em>then</em> you do your printing with the value I set".
     - And so, when we write
 
         ```python
@@ -148,6 +157,11 @@ print_from_one_to(6)
 ### Exercise 2.3
 
 What do each of the above two programs print? Type them up in `my_func_example2a.py` and `my_func_example2b.py` to find out.
+
+Submit the following programs in this exercise:
+
+1. `my_func_example2a.py` 
+2. `my_func_example2b.py`
 :::
 
 ###### **2.4 Video**
@@ -162,7 +176,7 @@ In `my_func_example3.py`, fill in the code in the function below so that the out
 ***
 *
 ```
-The partially-written program:
+The partially-written program is as shown below.
 
 ```python
 def print_stars(n):
@@ -172,6 +186,11 @@ print_stars(5)
 print_stars(3)
 print_stars(1)
 ```
+
+- Complete the above program by including your code under the comment (i.e., text followed by the #-symbol)
+- You can include the comment in the your code.
+- Execute the program `my_func_example3.py`.
+- Submit your program `my_func_example3.py`.
 :::
 
 ###### **2.6 Video**
@@ -199,11 +218,12 @@ check_pythagorean(6, 8, 20)
 ```
 
 :::{.callout-note}
-- This time, we've defined a method that takes three parameters:
+- This time, we've defined a <em>function</em> that takes three parameters:
 
     ```python
     def check_pythagorean(a, b, c):
-        # Write your function code here
+        # The comments here are indented by a tab space. 
+        # The function code replaces these comments as shown below.
     ```
 - Notice the commas separating the three variables.
 - Consider the first invocation:
@@ -223,7 +243,9 @@ In `my_func_example4.py`, fill in the code in the function below so that the out
 0
 ```
 
-The partially written program is:
+**Hint:** The idea is to compute the sum but only of the positive parameters; if neither value is positive, print `0`.
+
+The partially written program is as shown below.
 
 ```python
 def print_profit_total(a,b):
@@ -235,7 +257,10 @@ print_profit_total(2, -3)
 print_profit_total(-2, -3)
 ```
 
-The idea is to compute the sum but only of the positive parameters; if neither value is positive, print 0.
+- Complete the above program by including your code under the comment (i.e., text followed by the #-symbol)
+- You can include the comment in the your code.
+- Execute the program `my_func_example4.py`.
+- Submit your program `my_func_example4.py`.
 :::
 
 ###### **2.8 Video**
@@ -263,7 +288,17 @@ print(x)
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.9
 
-Type up the above in `my_func_example5.py`. Then try sending 5,-6 instead of -5,6. Then try 5,6. Try and answer the following for yourself: What does the `padd()` function achieve?
+Type up the above in `my_func_example5.py`. 
+
+**Try and answer the following for yourself:** What does the `padd()` function achieve by reviewing the program?
+
+Then do the following: 
+
+- First, execute the program `my_func_example5.py`. 
+- Next, replace the function parameters with `5, -6`.
+- Finally, replace the function parameters with `5, 6`. 
+
+**Submit your program `my_func_example5.py`.**
 :::
 
 Let's explain:
@@ -282,21 +317,23 @@ The result of invoking this function somehow results in `x` getting a value stor
 
 - When the return statement executes, the value returned (the value of `total` gets copied into `x`)
 ![](../../../media/units/unit1/module1.2/return-code3.png)
-- One way to think about it:
+- One way to think about it is presented below:
 
-    - When we see 
+    - Consider the following function invocation:
 
         ```python
         x = padd(-5, 6)
         ```
-    then think of execution going to the function `padd`
-    - After it executes, it returns the value in one of its variables: in this case 6
-    - That, behind the scenes, replaces the function invocation:
+    - Then look at the function definition and the code block that is executed under **`def padd(a, b):`**.
+    - After the function **`padd(-5, 6)`** is executed, it returns the value in one of its variables (i.e., **`total`**). 
+    - In this case where the function is **`padd(-5, 6)`**, the value **`6`** is returned.
+    <!-- - That, behind the scenes, replaces the function invocation: -->
+    - The value **`6`** is now assigned to the the variable **`x`** as shown below.
     
         ```python
         x = 6
         ```
-    - And thus, the value 6 gets copied into `x`
+    - And thus, the value **`6`** gets copied into the variable **`x`**.
 
 
 
@@ -338,102 +375,101 @@ print(padd(padd(-5,6), padd(5,-6)))
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.12
 
-Type up the above in `my_func_example7.py` and use comments (text followed by ‘#’ symbol) to report what it prints in the python-file. 
+Type up the above in `my_func_example7.py`.
+
+Then do the following:
+
+- Execute the program `my_func_example7.py`.
+- Submit the program `my_func_example7.py`.
 :::
 
-Let's examine each of the last three statements:
+Let's examine each of the last four statements in the program `my_func_example7.py`:
 
-- The first one:
+- First, let us look at the following statement in the program `my_func_example7.py`:
 
     ```python
     print(padd(-5, 6))
     ```
-In this case:
+    - In this case, the invocation of the function **`padd()`** occurs inside the **`print()`** statement.
 
-- The invocation to `padd()` occurs first:
+    - The function **`padd(-5, 6)`** executes and returns the value **`6`**.
+
+    - Then the **`print()`** statement is executed as shown below with the value **`6`**.
     
-    ```python
-    print(padd(-5, 6))
-    ```
-- That function executes and returns 6.
-- So, we can think of the result of that as:
-    
-    ```python
-    print( 6 )
-    ```
-- Which sends 6 to the `print()` function.
-- Which prints 6.
-- Next consider
+        ```python
+        print( 6 )
+        ```
+
+    - The value **`6`** is the output of the **`print()`** function.
+
+- Next, let us examine the following statement in the program `my_func_example7.py`: 
     
     ```python
     x = padd(padd(-5,6), 7)              
     ```
 
-    In this case:
-
-    - The innermost `padd()` is first invoked:
+    - In this case,  the innermost **`padd()`** function is invoked first, i.e., **`padd(-5, 6)`** in 
 
         ```python
         x = padd( padd(-5,6), 7 )
         ```
-    - That takes execution into `padd()` with parameter values `padd(-5, 6)`.
-    - The function returns 6, and so, we could think of the result as 
+
+    - The parameter values **`5` & `6`** are input into the function **`padd(-5, 6)`**.
+    - The function **`padd(-5, 6)`** returns the value **`6`**, and the statement takes the form as shown below:
 
         ```python
         x = padd( 6, 7 )
         ```
-    - This now results in another invocation to `padd()` with parameter values `padd(6, 7)`.
-    - The function now executes again and returns 13.
-    - The result is
+
+    - Now the outermost **`padd()`** function has the value values **`6` & `7`** as its' parameters.
+    - This results in another invocation to **`padd()`** with parameter values **`6` & `7`** i.e., **`padd( 6, 7 )`**.
+    - The function **`padd( 6, 7 )`** is executed and it returns the value **`13`**.
+    - The result is assigned to the variable **`x`** as shown below:
     
         ```python
         x = 13
         ```
 
-- Finally, consider the third example:
+- Finally, consider the last statement in the program `my_func_example7.py` as shown below:
 
     ```python
     print(padd(padd(-5,6), padd(5,-6)))  
     ```
-    In this case:
 
-    - There are two innermost invocations:
-
-        ```python
-        print(padd( padd(-5,6), padd(5,-6) ))  
-        ```
-    - The left one is called first:
+    - In this case, there are two innermost invocations of the `padd()` functions. These are **`padd(-5, 6)` & `padd(5, -6)`** located inside the outermost `padd()` function as shown below:
 
         ```python
         print(padd( padd(-5,6), padd(5,-6) ))  
         ```
-    - Resulting in a return value of 6:
+
+    - In the statement above the first function to be invoked is **`padd(-5, 6)`**. 
+
+    - The function **`padd(-5, 6)`** returns the value **`6`** and the statement takes the following form: 
 
         ```python
         print(padd( 6, padd(5,-6) ))  
         ```
-    - Then, the other one is invoked, sending 5,-6 to the function:
-        
-        ```python
-        print(padd( 6, padd(5,-6) ))  
-        ```
-    - Which will cause 5 to be returned:
+
+    - Next, the function **`padd(5, -6)`** is invoked
+    
+    - The function **`padd(5, -6)`** returns the value **`5`** and the statement takes the following form inside the **`print()`** statement: 
         
         ```python
         print(padd( 6, 5 ))  
         ```
-    - Now, these results (6 and 5) are sent once again to the third invocation:
-        
-        ```python
-        print( padd( 6, 5 ) )  
-        ```
-    - This returns 11.
-        
+
+    - Now, the values **`6 & 5`** become the parameters for the third invocation of the function **`padd()`**.
+    
+    - This invocation of the function **`padd( 6, 5 )`** returns the value **`11`** 
+    
+    - The **`print()`** statement is now executed with the returned output from the function **`padd( 6, 5 )`** as shown below: 
+
         ```python
         print( 11 )  
         ```
     - And so 11 gets sent to print, which prints it.
     - Whew!
+
 
 ## 2.4 Multiple returns in a function
 Take a moment to go back up and quickly glance through the Pythagorean example.
@@ -459,7 +495,11 @@ print(result)
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.13
 
-Type up the above in `my_func_example8.py` and use comments (text followed by ‘#’ symbol) to report what it prints in the python-file. 
+Type up the above in `my_func_example8.py`.
+
+Execute the program `my_func_example8.py`.
+
+Submit the program `my_func_example8.py`. 
 :::
 
 :::{.callout-note}
@@ -471,7 +511,9 @@ Type up the above in `my_func_example8.py` and use comments (text followed by �
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.14
 
-Trying drawing a similar diagram for the other two function invocations in a separate document to help you understand the flow of the program. There is nothing to submit in this exercise.
+Trying drawing a similar diagram for the other two function invocations in a separate document to help you understand the flow of the program. 
+
+**There is nothing to submit in this exercise.**
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
@@ -487,6 +529,11 @@ print(add_bigger_pair(2,3,4))  # Should print 7
 print(add_bigger_pair(2,3,1))  # Should print 5
 print(add_bigger_pair(2,1,4))  # Should print 6
 ```
+
+- Complete the above program by including your code under the comment (i.e., text followed by the #-symbol)
+- You can include the comment in the your code.
+- Execute the program `my_func_example9.py`.
+- Submit your program `my_func_example9.py`.
 :::
 
 ###### **2.16 Video**
@@ -508,14 +555,14 @@ z = subtract(x, y)
 - We refer to `a` and `b` as <em>parameters</em> in the definition of the function:
     
     ```python
-    def subtract(<b>a, b</b>):
+    def subtract(a, b):
     ```
-- When function is invoked,
+- When function is invoked as shown below,
 
     ```python
-    subtract(<b>x, y</b>):
+    subtract(x, y):
     ```
-we sometimes use the term <em>function arguments</em> for `x` and `y`.
+we  use the term <em>function arguments</em> for `x` and `y`.
 :::
 
 The names given to parameters have <em>no relation</em> to the names used for arguments:
@@ -526,8 +573,8 @@ The names given to parameters have <em>no relation</em> to the names used for ar
     
     ```python
     def subtract(a, b):
-    c = b - a
-    return c
+        c = b - a
+        return c
 
     a = 5
     b = 6
@@ -554,14 +601,17 @@ Generally, the purpose of parameter variables is this:
     x = 6
     silly_func(x, 8)
     ```
-- From the point of view of the function, `silly_func` thinks "Someone is going to put values into my variables a and b, and then I'll do stuff like calculate and print".
-- From the point of view of code that is <em>using</em> the function, as in
+- From the point of view of the <em>definition of the function</em>, `silly_func(a, b)` thinks "Someone is going to put values into my variables `a` and `b`, and then I'll do stuff like calculate and print".
+
+- From the point of view of code that is <em>using the function</em> or the invocation of the function, `silly_func(3, 4)` is saying "We'll set the function's parameter `a` to `3`, and `b` parameter to `4`, and then let the function do its thing". 
 
     ```python
     silly_func(3, 4)
     ```
-This is saying "we'll set the function's a parameter to 3, and b parameter to 4, and then let the function do its thing".
-- Now, functions can use its parameter variables just like any other variable and <em>change its value</em>, as in:
+
+    - Note that the values `3` and `4` are called the arguments of the invoked-function `silly_func(3, 4)`.
+
+- Functions can use its parameter variables just like any other variable and <em>change its value</em>, as in:
 
     ```python
     def crazy_func(p, q):
@@ -575,13 +625,20 @@ This is saying "we'll set the function's a parameter to 3, and b parameter to 4,
     y = 7
     crazy_func(x, y)
     ```
-Because the value in x gets copied into the variable p, the value in x does not get changed even though the function changes the value in p.
+Because the value in `x` gets copied into the variable `p`, the value in `x` does not get changed even though the function changes the value in `p`.
 
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.17
 
-Just by reading, can you tell what the above program prints? Then, implement in `my_func_example10.py` and confirm.
+Just by reading the above program, can you tell what the above program prints? 
+The above question is for you understand the execution of the program and you don't need to submit a written answer. However, it is encouraged that you try it to fully-understand the execution of the above program and to confirm your result. 
+
+**The following portion of the exercise is required for submission of this exercise:**
+
+- Implement the above program in `my_func_example10.py`.
+
+- Submit your program `my_func_example10.py`.
 :::
 
 ## 2.7 Functions and lists
@@ -600,12 +657,15 @@ t = compute_total(A)
 print(t)
 ```
 
-
-
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.18
 
-Try tracing through the execution of the above program, including loop interactions. Type up the above in `my_func_example11.py`, including a `print(k)` in the loop to confirm your trace.
+Try tracing through the execution of the above program, including loop interactions. The tracing activity is for you understand the execution of the program and you don't need to submit a written answer. However, it is encouraged that you try it to fully-understand the execution of the above program and to confirm your result. 
+
+**The following portion of the exercise is required for submission of this exercise:**
+
+- Type up the above in `my_func_example11.py` by including a `print(k)` inside the for-loop.
+- Submit your program `my_func_example11.py`. 
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
@@ -619,12 +679,17 @@ def print_even(A):
 A = [1, 3, 5, 6, 7, 8]
 print_even(A)
 ```
-Write the function so that the output is:
+Write the function so that the output is as shown below:
 ```python
 Found even:  6
 Found even:  8
 ```
-Recall how to use the <em>remainder</em> operator from the previous module (conditionals and loops).
+**Hint:** Recall how to use the <em>remainder</em> operator from the previous module (conditionals and loops).
+
+- Complete the above program by including your code under the comment (i.e., text followed by the #-symbol)
+- You can include the comment in the your code.
+- Execute the program `my_even_numbers.py`.
+- Submit your program `my_even_numbers.py`.
 :::
 
 Next, let's look at an example where a list is returned:
@@ -642,7 +707,14 @@ print(build_odd_list(5))
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.21
 
-Try tracing through the above, the type up in `my_odd_list.py` to confirm what you learned. Include a `print(k)` in the loop after the append.
+<!-- Try tracing through the above, the type up in `my_odd_list.py` to confirm what you learned. Include a `print(k)` in the loop after the append. -->
+
+Try tracing through the execution of the above program, including loop interactions. The tracing activity is for you understand the execution of the program and you don't need to submit a written answer. However, it is encouraged that you try it to fully-understand the execution of the above program and to confirm your result. 
+
+**The following portion of the exercise is required for submission of this exercise:**
+
+- Type up the above in `my_odd_list.py` by including a `print(k)` inside the for-loop after the `L.append(k)`.
+- Submit your program ``my_odd_list.py`. 
 :::
 
 :::{.callout-note}
@@ -684,6 +756,17 @@ print(find_first_negative(C))
 ### Exercise 2.22
 
 Before typing this up in `my_first_negative.py` to confirm. That is, use the tracing approach we've used before: write out the values of variables and how they change from one iteration to the next. Then, replace the first comment so that you `print(k)` inside the loop. Then, move the print statement (still inside the loop) to after the `return k` statement. What do you observe? There is nothing to submit in this exercise.
+
+Type up the above program in `my_first_negative.py`. 
+Then do the following: 
+
+1. Execute the program and examine the output.
+2. Next, replace the first comment so that you `print(k)` inside the if-conditional. 
+3. Execute your program `my_first_negative.py` and examine the output.
+4. Then, delete the `print(k)` you wrote in place of the first comment. 
+5. Now replace the second comment with `print(k)` statement so that it appears after the `return k` statement. 
+6. Exceute your program `my_first_negative.py` and examine the output for any change with the earlier execution. 
+7. Submit your program `my_first_negative.py` with the modification suggested in point #5.
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
@@ -702,6 +785,7 @@ it should print
 -5
 0
 ```
+**Submit your program `my_last_negative.py`.**
 :::
 
 ## 2.8 returns that don't return anything
@@ -723,14 +807,16 @@ print_first_negative(C)
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.25
 
-Type up the above in `my_first_negative2.py`, execute and check for any errors. Submit the code if there are no errors.
+Type up the above in `my_first_negative2.py`, execute and check for any errors. 
+
+**Submit your program `my_first_negative2.py` if there are no errors.**
 :::
 
 Let's point out:
 
 - Whenever a `return` statement is executed in a function, execution exits the function right away.
 - When a `return` statement does not return a variable's value, execution leaves the function but does not give a value back to the invoking code.
-- Thus the `return` here:
+- Thus the `return` statement in the program below, does not return a value but merely causes execution to leave the function and get back to line <em>just after</em> the function was invoked.
 
     ```python
     def print_first_negative(A):
@@ -740,7 +826,7 @@ Let's point out:
                 return
         print('No negatives found')
     ```
-    does not return a value but merely causes execution to leave the function and to back to <em>just after</em> where the function was invoked.
+    
 - Although it's not needed, one could return at the end of a non-value-returning function:
 
     ```python
@@ -754,7 +840,7 @@ Let's point out:
     ```
 - Why do we have multiple return's in a function? Why not always wait until execution reaches the end of a function?
     - It is very useful to be able to return from anywhere in a function's code.
-    - The reason is: as soon as the function's "job" is done (example: finding the first negative), we want to leave the function.
+    - The reason is, as soon as the function's "job" is done (example: finding the first negative), we want to leave the function.
 
 ## 2.9 A fundamental difference between list and basic parameters
 Consider this program:
@@ -775,6 +861,9 @@ print(x, y)     # Will this print 5 and 6, or 6 and 5?
 ### Exercise 2.26
 
 Before typing up the above in `my_swap_int.py` and submitting, can you guess what the output will be ?
+
+- Type up and execute the program `my_swap_int.py`.
+- Submit your program `my_swap_int.py`. 
 :::
 
 Let's explain:
@@ -785,6 +874,7 @@ Let's explain:
     x = 5
     ```
 - When the function is called soon after:
+    
     ```python
     swapint(x, y)
     ```
@@ -798,8 +888,9 @@ Let's explain:
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.27
+To help you understand the program, in a separate document draw the three boxes for `a, b,` and `temp`, at each step in the function’s execution. 
 
-To help you understand the program, in a separate document draw the three boxes for a, b, and temp, at each step in the function’s execution. There is nothing to submit in this exercise.
+**There is nothing to submit in this exercise.**
 :::
 
 Now, consider a similar program with lists:
@@ -818,7 +909,9 @@ print(X, Y)
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.28
 
-To help you understand the program, in a separate document draw the three boxes for a, b, and temp, at each step in the function’s execution. There is nothing to submit in this exercise.
+To help you understand the above program, in a separate document draw the three boxes for `A, B,` and `temp`, at each step in the function’s execution. 
+
+**There is nothing to submit in this exercise.**
 :::
 
 Let's see what's going on:
@@ -840,18 +933,21 @@ Let's see what's going on:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.29
 
-Type up the above in my_swap_list_first.py and submit. To help you understand the program, in a separate document draw the three boxes for a, b, and temp, at each step in the function’s execution.
+Type up the above program with the function `swap_list_first(A, B)` in `my_swap_list_first.py`. 
+
+- Execute the program and examine the output. 
+- Submit your program `my_swap_list_first.py`. 
+
+<!-- To help you understand the program, in a separate document draw the three boxes for a, b, and temp, at each step in the function’s execution. -->
 :::
 
-The key takeaways:
+**The key takeaways:**
 
 - When you send number variables to a function, they get copied, and so the function can't "do" anything to the variables you present as arguments.
 - But if you send a list, a function can change the contents.
 - This means you need to be careful about <em>intent</em> when writing functions that involve larger entities like lists.
-    <br> (There are other such "grouped data" entities, called <em>objects</em>.)
-- If the intent is to change contents, that's fine, we should know that.
-
-
+<!--     <br> (There are other such "grouped data" entities, called <em>objects</em>.)
+- If the intent is to change contents, that's fine, we should know that. -->
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.31
@@ -872,7 +968,10 @@ B = [1, 2, 3]
 change_list(B)
 print(B)
 ```
-Type up the above in `my_change_list.py` and submit. 
+
+- Type up the above in `my_change_list.py`. 
+- Execute the program `my_change_list.py` and examine the output. 
+- Submit your program `my_change_list.py`.
 :::
 
 ## 2.10 Calling functions from functions
@@ -968,7 +1067,7 @@ In addition, observe the following:
     ```
 
 :::{.callout-tip}
-you do NOT have to use such shortcuts. Some shortcuts are an advanced topic and may in fact make your code harder to read, and harder to fix mistakes in.
+You do NOT have to use such shortcuts. Some shortcuts are an advanced topic and may in fact make your code harder to read, and harder to fix mistakes in.
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
@@ -987,7 +1086,13 @@ def subtract(a, b):
 print(subtract(5, 9))
 print(subtract(3, 13))
 ```
-Type up the above in `my_subtraction.py` and submit. As with other tracing exercises this is also optional and in this particular case a bit long, but worth doing because it will help your understanding. Try tracing the execution step-by-step in a separate document.
+
+- Type up the above in `my_subtraction.py`. 
+- Execute the program `my_subtraction.py` and examine the output. 
+- Submit your program `my_subtraction.py`.
+
+
+**Recommended but not required for submission in this exercise:** As with other tracing exercises this is also optional and in this particular case a bit long, but worth doing because it will help your understanding. Try tracing the execution step-by-step in a separate document.
 :::
 
 ###### **2.34 Video**
@@ -1013,7 +1118,12 @@ def find_smallest(A):
 data = [-2.3, -1.22, 1.6, -10.5, 1.4, 2.5, -3.32, 11.03, 2, 2, -1.4]
 print(find_smallest(data))
 ```
-Type this up in `my_find_smallest.py`. It's critical to understand how the variable `smallest` is changing through the loop, and why the function `find_smallest()` does in fact identify the smallest value in a list. (Remember: the more negative a number, the smaller. Thus, -10 is less than or "smaller" than -4.)
+
+- Type up the above in `my_find_smallest.py`. 
+- Execute the program `my_find_smallest.py` and examine the output. 
+- Submit your program `my_find_smallest.py`.
+
+**Recommended but not required for submission in this exercise:** It's critical to understand how the variable `smallest` is changing through the loop, and why the function `find_smallest()` does in fact identify the smallest value in a list. Remember: the more negative a number, the smaller. Thus, -10 is less than or "smaller" than -4.
 :::
 
 With that, consider this partially complete program:
@@ -1042,6 +1152,10 @@ print('span: ', find_span(data))
 ### Exercise 2.36
 
 In `my_stats.py` complete the above so that the <em>span</em> of the data is computed and printed. This is the difference between the largest and smallest values.
+
+- Type up the above in `my_stats.py`.
+- Execute the program `my_stats.py` and examine the output to check if the <em>span</em> of the data is computed and printed. 
+- Submit your program `my_stats.py`.
 :::
 
 ###### **2.37 Video**
@@ -1095,12 +1209,18 @@ print('standard deviation =', compute_std(data))
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.38
 
-In `my_stats2.py` complete the code above. You should get as output, approximately
-```python
-mean = 0.1627272727272727
-standard deviation = 4.955716792313685
-```
-(Real numbers, what can you do?)
+- Complete the code above and type it up in `my_stats2.py`.
+- Execute the program `my_stats2.py` and examine the output to check if the <em>mean</em> and <em>standard deviation</em> of the data are computed and printed. 
+- You should get as output as shown below:
+
+    ```python
+    mean = 0.1627272727272727
+    standard deviation = 4.955716792313685
+    ```
+    (Real numbers, what can you do?)
+
+- Submit your program `my_stats2.py`.
+
 :::
 
 Next, let's tackle the more challenging problem of identifying <em>outliers</em>:
@@ -1108,13 +1228,15 @@ Next, let's tackle the more challenging problem of identifying <em>outliers</em>
 - Take a closer look at the data:
 
     ```python
-    data = [-2.3, -1.22, 1.6, <b>-10.5</b>, 1.4, 2.5, -3.32, <b>11.03</b>, 2, 2, -1.4]
+    data = [-2.3, -1.22, 1.6, -10.5, 1.4, 2.5, -3.32, 11.03, 2, 2, -1.4]
     ```
-    We see that two data values seem to be far outside the range of the other data.
+    
+- We see that two data values **`-10.5`** & **`11.03`** seem to be far outside the range of the other data.
+
 - Suppose we use the following approach to identifying outliers:
     - Compute the mean and standard deviation.
     - Identify those data that lie further than two standard deviations away from the mean.
-    - Call these outliers.
+    - Call these <em>outliers</em>.
 
 :::{.callout-note}
 The traditional definition uses <em>three</em> standard deviations, but we'll stick with two because it makes our example easy to work with.
@@ -1135,19 +1257,29 @@ def find_outliers(A):
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.39
 
-In `my_stats3.py`, add the above to your code from the earlier exercise so that the output is:
-```python
-mean = 0.1627272727272727
-standard deviation = 4.955716792313685
-Found outlier:  -10.5
-Found outlier:  11.03
-```
+- In `my_stats2.py`, add the above to your code and save your program as `my_stats3.py`.
+
+- Execute the program `my_stats.py` and examine the output to check if the <em>mean</em>, <em>standard deviation</em> and <em>outliers</em> of the data are computed and printed.
+
+-  The output of your program should be as shown below:
+
+    ```python
+    mean = 0.1627272727272727
+    standard deviation = 4.955716792313685
+    Found outlier:  -10.5
+    Found outlier:  11.03
+    ```
+- Submit your program `my_stats.py`.
+
 :::
 
 ## 2.12 A function that calls itself
-This is a somewhat advanced topic (not on any exam or assignment!). We will only present a simple example only so that you see what it's like.
+**This is a somewhat advanced topic (not on any exam or assignment!).**
 
-Consider this example:
+We will only present a simple example only so that you see what it's like.
+
+Consider the following example:
+
 ```python
 def factorial(n):
     # print(n)
@@ -1164,7 +1296,15 @@ print(factorial(10))
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.40
 
-Type up the above in `my_factorial.py`. Remove the `#` symbol so that the print prints. Try tracing through what happens when `factorial(5)` is called.
+- Type up the above in `my_factorial.py`. 
+
+- Remove the `#` symbol to allow `print(n)` statement to return the value of `n`. 
+
+- Execute the program `my_factorial.py`. 
+
+- Submit your program `my_factorial.py`. 
+
+**Recommended but not required for submission in this exercise:** Try tracing through what happens when `factorial(5)` is called.
 :::
 
 Let's point out:
@@ -1185,7 +1325,7 @@ Let's point out:
 ###### **2.41 Video**
 {{< video ../../../media/units/unit1/module1.2/u1-mod2.41.mp4 aspect-ratio="21x9" >}}
 
-## 2.13 Incribed geometric figures as art
+## 2.13 Inscribed geometric figures as art
 Of course we're going to try and use functions and drawing.
 
 Consider this program:
@@ -1226,7 +1366,13 @@ dt.display()
 Download <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> and <a href="../../../media/units/unit1/module1.2/circle_square.py" download>**circle_square.py**</a> and run the latter to get
 ![](../../../media/units/unit1/module1.2/kepler.png)
 
-Then, change n to n=10. Perhaps experiment with colors. Try to read the functions and figure out, not so much the calculation, as what they're doing.
+Then do the following:
+
+- Change n to `n = 20` in the program `circle_square.py`. 
+- Execute the program `circle_square.py`. 
+- Submit your program `circle_square.py` along with `drawtool.py`. 
+
+**Recommended but not required for submission in this exercise:** Perhaps experiment with colors. Try to read the functions and figure out, not so much the calculation, as what they're doing.
 :::
 
 At first, this looks like a simple exercise in geometric art, or a depiction of the "evil eye" but there's more to it:
