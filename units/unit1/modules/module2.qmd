@@ -1259,7 +1259,7 @@ def find_outliers(A):
 
 - In `my_stats2.py`, add the above to your code and save your program as `my_stats3.py`.
 
-- Execute the program `my_stats.py` and examine the output to check if the <em>mean</em>, <em>standard deviation</em> and <em>outliers</em> of the data are computed and printed.
+- Execute the program `my_stats3.py` and examine the output to check if the <em>mean</em>, <em>standard deviation</em> and <em>outliers</em> of the data are computed and printed.
 
 -  The output of your program should be as shown below:
 
@@ -1269,7 +1269,7 @@ def find_outliers(A):
     Found outlier:  -10.5
     Found outlier:  11.03
     ```
-- Submit your program `my_stats.py`.
+- Submit your program `my_stats3.py`.
 
 :::
 
