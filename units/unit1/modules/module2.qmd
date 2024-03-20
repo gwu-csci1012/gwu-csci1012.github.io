@@ -755,7 +755,7 @@ print(find_first_negative(C))
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 2.22
 
-Before typing this up in `my_first_negative.py` to confirm. That is, use the tracing approach we've used before: write out the values of variables and how they change from one iteration to the next. Then, replace the first comment so that you `print(k)` inside the loop. Then, move the print statement (still inside the loop) to after the `return k` statement. What do you observe? There is nothing to submit in this exercise.
+Before typing this up in `my_first_negative.py` to confirm. That is, use the tracing approach we've used before: write out the values of variables and how they change from one iteration to the next. Then, replace the first comment so that you `print(k)` inside the loop. Then, move the print statement (still inside the loop) to after the `return k` statement. What do you observe? There is nothing to submit in the above portion of this exercise.
 
 Type up the above program in `my_first_negative.py`. 
 Then do the following: 
