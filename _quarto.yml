@@ -88,6 +88,7 @@ website:
         contents:
           - ./units/unit0/assignments/assignment0.qmd
           - ./units/unit0/assignments/assignment1.qmd
+          - ./units/unit1/assignments/assignment2.qmd
       - href: faq.qmd
         text: FAQ
 format:
