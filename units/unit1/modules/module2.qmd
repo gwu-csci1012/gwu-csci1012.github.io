@@ -298,7 +298,7 @@ Then do the following:
 - Next, replace the function parameters with `5, -6`.
 - Finally, replace the function parameters with `5, 6`. 
 
-**Submit your program `my_func_example5.py`.**
+**Submit your program `my_func_example5.py` with function parameters `padd(5, 6)`.**
 :::
 
 Let's explain:
