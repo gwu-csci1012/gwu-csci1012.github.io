@@ -4,11 +4,11 @@ title: "Advising Information: if you want to continue with some computing in the
 
 :::{.callout-note}
 ## Mid Semester Survey
-Please take a few moments to complete the Mid-Semester Survey for our course. Your input will help us understand if you need advising regarding a minor in Computer Science. Plus, here's some extra incentive: filling out the survey will count as one of your quizzes for the course, and you'll earn 10 points!
+- Please take a few moments to complete the Mid-Semester Survey for our course before **Saturday 03/30/2024** by **11:59 PM**. 
+- Your input will help us understand if you need advising regarding a minor in Computer Science. Plus, here's some extra incentive: filling out the survey will count as one of your quizzes for the course, and you'll earn 10 points!
+- Scan the QR code below or click [here](https://docs.google.com/forms/d/e/1FAIpQLSfDnmqZVCGIu28xacTCAEaazVbNQRp35XHTQ0GNk7LB6FGnmA/viewform?usp=sf_link) to access the survey:
 
-Scan the QR code below or click [here](https://docs.google.com/forms/d/e/1FAIpQLSfDnmqZVCGIu28xacTCAEaazVbNQRp35XHTQ0GNk7LB6FGnmA/viewform?usp=sf_link) to access the survey:
-
-![](../../../media/advising/CS1012-Spring2024_MidSemSurvey.png){width="30%"}
+    ![](../../../media/advising/CS1012-Spring2024_MidSemSurvey.png){width="30%"}
 :::
 
 _Quick links_
