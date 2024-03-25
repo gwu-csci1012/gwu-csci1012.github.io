@@ -8,7 +8,7 @@ Please take a few moments to complete the Mid-Semester Survey for our course. Yo
 
 Scan the QR code below or click [here](https://docs.google.com/forms/d/e/1FAIpQLSfDnmqZVCGIu28xacTCAEaazVbNQRp35XHTQ0GNk7LB6FGnmA/viewform?usp=sf_link) to access the survey:
 
-![](./media/advising/CS1012-Spring2024_MidSemSurvey.png){width="30%"}
+![](../../../media/advising/CS1012-Spring2024_MidSemSurvey.png){width="30%"}
 :::
 
 _Quick links_
