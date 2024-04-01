@@ -1,11 +1,11 @@
 ---
 title: "**Module 0:** Arrays, Tuples, Sets, and Dictionaries"
-# format:
-#   html:
-#     code-copy: false
+format:
+  html:
+    code-copy: false
 ---
 
-<!-- <html>
+<html>
 <head>
     <style>
         body {
@@ -16,7 +16,7 @@ title: "**Module 0:** Arrays, Tuples, Sets, and Dictionaries"
         }
     </style>
 </head>
-<body> -->
+<body>
 
 <!-- <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
@@ -1896,5 +1896,5 @@ Do you need to learn more? Is what we've learned enough to achieve a good deal?
 
 We'll have more to say about this in a later module.
 
-<!-- </body>
-</html> -->
+</body>
+</html>
