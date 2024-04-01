@@ -535,9 +535,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<!-- <html>
-<head>
-    <style>
+
+
+<style>
         body {
             -webkit-user-select: none; /* Safari */
             -moz-user-select: none; /* Firefox */
@@ -545,8 +545,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             user-select: none; /* Standard */
         }
     </style>
-</head>
-<body> -->
+
+
 <!-- <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
   <a href="#">Unit 2</a> &raquo;
@@ -727,11 +727,11 @@ Guangzhou,23.1288,113.259,China,CN,CHN,20902000</code></pre>
 <li>You can see why <strong>CSV</strong> stands for “<strong>Comma Separated Values</strong>”.</li>
 </ul>
 <p>Next, let’s write some code to work with CSV files.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'cities.csv'</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>dt.print_data()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>dt.print_data()</span></code></pre></div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -746,13 +746,13 @@ Exercise 1.2
 </div>
 </div>
 <p>It is often convenient CSV data into an array, as in this example:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'cities.csv'</span>)</span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>D <span class="op">=</span> dt.get_data_as_array()</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(D)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(D)</span></code></pre></div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -771,7 +771,7 @@ Exercise 1.3
 <h2 class="anchored" data-anchor-id="using-datatool-for-plotting">1.2 Using <code>datatool</code> for plotting</h2>
 <p>Often, one of the first things we do with data is to plot the data, or at least parts of it.</p>
 <p>With datatool, that is as simple as this:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'simpledata.csv'</span>)</span>
@@ -779,7 +779,7 @@ Exercise 1.3
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># A basic line graph. 'X' and 'Y' are the column headers.</span></span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>dt.line_graph(<span class="st">'Y'</span>, <span class="st">'X'</span>)</span>
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <p>Let’s examine the data:</p>
 <ul>
 <li><p>The CSV file looks like this:</p>
@@ -823,14 +823,14 @@ Tip
 </div>
 </div>
 <p>One can plot <em>categorical</em> (non-numeric) data as well:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'cities.csv'</span>)</span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>dt.line_graph(<span class="st">'city'</span>, <span class="st">'population'</span>)</span>
 <span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -860,7 +860,7 @@ Exercise 1.5
 10,89,1,88</code></pre></li>
 <li><p>Here, there are four columns.</p></li>
 <li><p>We will plot the 2nd, 3rd, and 4th columns against the 1st:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -873,7 +873,7 @@ Exercise 1.5
 <span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>dt.line_graph(<span class="st">'X'</span>, <span class="st">'Z'</span>)</span>
 <span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>dt.line_graph(<span class="st">'X'</span>, <span class="st">'W'</span>)</span>
 <span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div></li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -889,7 +889,7 @@ Tip
 </div>
 </div>
 <p>Next, let’s use datatool to plot a bar chart:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -898,7 +898,7 @@ Tip
 <span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>dt.bar_chart(<span class="st">'X'</span>, <span class="st">'Y'</span>)</span>
 <span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>dt.bar_chart(<span class="st">'X'</span>, <span class="st">'Z'</span>)</span>
 <span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <p>Which produces <img src="../../../media/units/unit2/module2.1/barchart.png" class="img-fluid"></p>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -914,7 +914,7 @@ Exercise 1.6
 </div>
 </div>
 <p>Next up: bubble charts</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
 <span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -922,7 +922,7 @@ Exercise 1.6
 <span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>dt.bubble_chart(<span class="st">'X'</span>, <span class="st">'Y'</span>, bubblesize<span class="op">=</span><span class="st">'Y'</span>)</span>
 <span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <p>Which produces <img src="../../../media/units/unit2/module2.1/bubblechart.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -957,7 +957,7 @@ Exercise 1.7
 <section id="using-datatool-for-drawing" class="level2">
 <h2 class="anchored" data-anchor-id="using-datatool-for-drawing">1.3 Using datatool for drawing</h2>
 <p>Datatool as drawing functions similar to drawtool:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -980,25 +980,25 @@ Exercise 1.7
 <span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Draw text </span></span>
 <span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>dt.draw_text(<span class="fl">8.5</span>, <span class="dv">4</span>, <span class="st">'Bullseye'</span>)</span>
 <span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <p>Which produces <img src="../../../media/units/unit2/module2.1/drawing.png" class="img-fluid"></p>
 </section>
 <section id="using-datatool-with-generated-data" class="level2">
 <h2 class="anchored" data-anchor-id="using-datatool-with-generated-data">1.4 Using datatool with generated data</h2>
 <p>In some situations, we end up <em>generating data</em> with our code. This means the data is not in some CSV file.</p>
 <p>For example, suppose we want to plot the numbers 0 through 10 and their squares using:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">11</span>):</span>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">11</span>):</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> i</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> x <span class="op">*</span> x        <span class="co"># The square of x</span></span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co"># We'd like to plot these x,y values as points in a graph</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co"># We'd like to plot these x,y values as points in a graph</span></span></code></pre></div>
 <p>There are two options:</p>
 <ul>
 <li>Create a CSV from the above program, and then load that into datatool.</li>
 <li>Avoid creating a file and directly feed the data into datatool.</li>
 </ul>
 <p>Let’s use the latter approach since it avoids having to create a file.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
@@ -1021,7 +1021,7 @@ Exercise 1.7
 <span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>dt.line_graph(<span class="st">'X'</span>, <span class="st">'Y'</span>)</span>
 <span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <p>Which produces <img src="../../../media/units/unit2/module2.1/generated.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1035,19 +1035,19 @@ Note
 <div class="callout-body-container callout-body">
 <ul>
 <li><p>Notice how we ask Numpy to create an array of the right size:</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.zeros( <span class="op">&lt;</span>b<span class="op">&gt;</span>(<span class="dv">11</span>, <span class="dv">2</span>)<span class="op">&lt;/</span>b<span class="op">&gt;</span>, dtype<span class="op">=</span><span class="st">'f'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.zeros( <span class="op">&lt;</span>b<span class="op">&gt;</span>(<span class="dv">11</span>, <span class="dv">2</span>)<span class="op">&lt;/</span>b<span class="op">&gt;</span>, dtype<span class="op">=</span><span class="st">'f'</span>)</span></code></pre></div>
 <p>That is, <b>11</b> rows for the numbers 0 through 10 and <b>2</b> columns for the x,y values.</p></li>
 <li><p>Notice that <b>(11, 2)</b> is specified as a <em>tuple</em>. <br>(Recall tuples from Module 1 of this unit.)</p></li>
 <li><p>The array A now has 11 rows and 2 columns, with each entry set to 0.</p></li>
 <li><p>After that, we fill in the values we generate:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">11</span>):</span>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">11</span>):</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> i</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> x <span class="op">*</span> x</span>
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    A[i,<span class="dv">0</span>] <span class="op">=</span> x  </span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    A[i,<span class="dv">1</span>] <span class="op">=</span> y  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    A[i,<span class="dv">1</span>] <span class="op">=</span> y  </span></code></pre></div></li>
 <li><p>Which we could shorten to:</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>A[i,<span class="dv">0</span>] <span class="op">=</span> i  </span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>A[i,<span class="dv">1</span>] <span class="op">=</span> i <span class="op">*</span> i  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>A[i,<span class="dv">0</span>] <span class="op">=</span> i  </span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>A[i,<span class="dv">1</span>] <span class="op">=</span> i <span class="op">*</span> i  </span></code></pre></div></li>
 <li><p>The CSV equivalent (which we don’t need here) would look like this:</p>
 <pre><code>0,0
 1,1
@@ -1088,7 +1088,7 @@ Note
 </ul>
 <p>Because of these and other differences, map drawing can sometimes be confusing.</p>
 <p>Let’s look at an example of a simple line-map:</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
 <span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -1098,7 +1098,7 @@ Note
 <span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="co"># the latitude and longitude, respectively.</span></span>
 <span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>dt.linemap(<span class="st">'lat'</span>, <span class="st">'long'</span>)</span>
 <span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1139,13 +1139,13 @@ Mexico City,19.4333,-99.1333,Mexico,MX,MEX,20996000
 Guangzhou,23.1288,113.259,China,CN,CHN,20902000</code></pre></li>
 <li><p>The columns that have the latitude and longitude happen to be called <code>lat</code> and <code>long</code>.</p></li>
 <li><p>Which is what we need to tell datatool:</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>dt.linemap(<span class="op">&lt;</span>b<span class="op">&gt;</span><span class="st">'lat'</span>, <span class="st">'long'</span><span class="op">&lt;/</span>b<span class="op">&gt;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>dt.linemap(<span class="op">&lt;</span>b<span class="op">&gt;</span><span class="st">'lat'</span>, <span class="st">'long'</span><span class="op">&lt;/</span>b<span class="op">&gt;</span>)</span></code></pre></div>
 <p>Datatool then (via Plotly) draws a world map as default with one red dot per latitude-longitude pair extracted from those columns.</p></li>
 </ul>
 </div>
 </div>
 <p>Next, let’s label the cities and draw a line:</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
 <span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -1156,7 +1156,7 @@ Guangzhou,23.1288,113.259,China,CN,CHN,20902000</code></pre></li>
 <span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="co"># This needs to come &lt;b&gt;after&lt;/b&gt; the linemap() function call.</span></span>
 <span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>dt.linemap_add_line(<span class="op">-</span><span class="fl">23.5504</span>,<span class="op">-</span><span class="fl">46.6339</span>, <span class="fl">19.4333</span>,<span class="op">-</span><span class="fl">99.1333</span>)</span>
 <span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1184,7 +1184,7 @@ Note
 </div>
 </div>
 <p>There is a more detailed version of linemap drawing that allows one to set the size of labels (markers), create “hover” text, and so on:</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>dt.linemap_detailed(</span>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>dt.linemap_detailed(</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'lat'</span>, </span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'long'</span>, </span>
 <span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    marker_color<span class="op">=</span><span class="st">'Red'</span>, </span>
@@ -1192,14 +1192,14 @@ Note
 <span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>    marker_text<span class="op">=</span><span class="st">'city'</span>, </span>
 <span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    marker_text_size<span class="op">=</span><span class="dv">9</span>, </span>
 <span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>    hovertext<span class="op">=</span>[<span class="st">'city'</span>, <span class="st">'population'</span>], </span>
-<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>    showlegend<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>    showlegend<span class="op">=</span><span class="va">False</span>)</span></code></pre></div>
 </section>
 <section id="choropleth-maps" class="level2">
 <h2 class="anchored" data-anchor-id="choropleth-maps">1.6 Choropleth maps</h2>
 <p>A <a href="https://en.wikipedia.org/wiki/Choropleth_map#:~:text=A%20choropleth%20map%20(from%20Greek,each%20area%2C%20such%20as%20population"><strong>choropleth map</strong></a> shows regions in colors that imply a quantity associated with a region.</p>
 <p>Datatool displays choropleths using linemaps.</p>
 <p>For example, let’s show country populations from our running example in a choropleth map:</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
 <span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -1214,13 +1214,13 @@ Note
 <span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a><span class="co"># like coloring. The third is what to show when the mouse hovers.</span></span>
 <span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>dt.choropleth_iso3(<span class="st">'countrycode'</span>, <span class="st">'pop'</span>, <span class="st">'country'</span>)</span>
 <span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <p>Which produces: <img src="../../../media/units/unit2/module2.1/choropleth.png" class="img-fluid"></p>
 </section>
 <section id="using-datatool-for-maps-tilemaps" class="level2">
 <h2 class="anchored" data-anchor-id="using-datatool-for-maps-tilemaps">1.7 Using datatool for maps: tilemaps</h2>
 <p>Let’s look at our 10 cities using a tilemap:</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
 <span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -1232,7 +1232,7 @@ Note
 <span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>dt.tilemap()</span>
 <span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1263,7 +1263,7 @@ Exercise 1.10
 </div>
 </div>
 <p>Now let’s draw a line between two cities:</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
 <span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -1276,7 +1276,7 @@ Exercise 1.10
 <span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>dt.tilemap()</span>
 <span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1292,22 +1292,22 @@ Exercise 1.11
 </div>
 <p>The above shows the full world map centered at latitude 0, longitude 0.</p>
 <p>A more detailed version of the tilemap function allows you to set the zoom and center, among other items:</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>dt.tilemap_attach_col_lat_long(<span class="st">'lat'</span>, <span class="st">'long'</span>, <span class="st">'city'</span>)</span>
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>dt.tilemap_attach_col_lat_long(<span class="st">'lat'</span>, <span class="st">'long'</span>, <span class="st">'city'</span>)</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a different center:</span></span>
 <span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="bu">dict</span>(lat <span class="op">=</span> <span class="dv">30</span>, lon <span class="op">=</span> <span class="dv">120</span>)</span>
 <span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="co"># The detailed version specifies hover data, the center, a zoom level</span></span>
-<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>dt.tilemap_detailed(hover_name<span class="op">=</span><span class="st">'city'</span>, hover_data<span class="op">=</span>[<span class="st">'city'</span>], center<span class="op">=</span>c, zoom<span class="op">=</span><span class="dv">2</span>, title<span class="op">=</span><span class="st">'Some cities'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>dt.tilemap_detailed(hover_name<span class="op">=</span><span class="st">'city'</span>, hover_data<span class="op">=</span>[<span class="st">'city'</span>], center<span class="op">=</span>c, zoom<span class="op">=</span><span class="dv">2</span>, title<span class="op">=</span><span class="st">'Some cities'</span>)</span></code></pre></div>
 <p>There is also an intermediate-detail version with just center, zoom and title:</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>dt.tilemap_attach_col_lat_long(<span class="st">'lat'</span>, <span class="st">'long'</span>, <span class="st">'city'</span>)</span>
+<div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>dt.tilemap_attach_col_lat_long(<span class="st">'lat'</span>, <span class="st">'long'</span>, <span class="st">'city'</span>)</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="bu">dict</span>(lat <span class="op">=</span> <span class="dv">30</span>, lon <span class="op">=</span> <span class="dv">120</span>)</span>
 <span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Intermediate-detail: center, zoom, title:</span></span>
-<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>dt.tilemap_czt(center<span class="op">=</span>c, zoom<span class="op">=</span><span class="dv">2</span>, title<span class="op">=</span><span class="st">'Some cities'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>dt.tilemap_czt(center<span class="op">=</span>c, zoom<span class="op">=</span><span class="dv">2</span>, title<span class="op">=</span><span class="st">'Some cities'</span>)</span></code></pre></div>
 <p>Finally, let’s look at an example with street maps, where tilemaps really stand out:</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
 <span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -1325,7 +1325,7 @@ Exercise 1.11
 <span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a>    zoom<span class="op">=</span><span class="dv">11</span>, </span>
 <span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">'DC Parking Violations June 2020'</span>)</span>
 <span id="cb30-18"><a href="#cb30-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-19"><a href="#cb30-19" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb30-19"><a href="#cb30-19" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1339,8 +1339,8 @@ Exercise 1.13
 <p>Download <a href="../../../media/units/unit2/module2.1/parkingtickets_June2020.csv" download=""><strong>parkingtickets_June2020.csv</strong></a> and type up the above in <code>my_tilemap_example3.py</code> Run and confirm that you see: <img src="../../../media/units/unit2/module2.1/tilemap3.png" class="img-fluid"></p>
 </div>
 </div>
-<!-- </body>
-</html> -->
+
+
 
 
 </section>
@@ -1373,58 +1373,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
