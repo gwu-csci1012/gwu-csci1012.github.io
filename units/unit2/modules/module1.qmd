@@ -1,11 +1,11 @@
 ---
 title: "**Module 1:** Choropleth Maps"
-# format:
-#   html:
-#     code-copy: false
+format:
+  html:
+    code-copy: false
 ---
 
-<!-- <html>
+<html>
 <head>
     <style>
         body {
@@ -16,7 +16,7 @@ title: "**Module 1:** Choropleth Maps"
         }
     </style>
 </head>
-<body> -->
+<body>
 
 <!-- <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
@@ -727,5 +727,5 @@ Download <a href="../../../media/units/unit2/module2.1/parkingtickets_June2020.c
 ![](../../../media/units/unit2/module2.1/tilemap3.png)
 :::
 
-<!-- </body>
-</html> -->
+</body>
+</html>
