@@ -1,11 +1,11 @@
 ---
 title: "**Module 5:** Review"
-# format:
-#   html:
-#     code-copy: false
+format:
+  html:
+    code-copy: false
 ---
 
-<!-- <html>
+<html>
 <head>
     <style>
         body {
@@ -16,7 +16,7 @@ title: "**Module 5:** Review"
         }
     </style>
 </head>
-<body> -->
+<body>
 
 <!-- <div class="breadcrumbs">
   <a href="../../../index.qmd">Home</a> &raquo;
@@ -746,5 +746,5 @@ How do you know when to create functions vs. writing long code?
 - Use functions when breaking things into functions greatly improves readability.
 
 
-<!-- </body>
-</html> -->
+</body>
+</html>
