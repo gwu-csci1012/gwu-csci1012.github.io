@@ -1,0 +1,17 @@
+---
+title: "Week-11"
+---
+:::{.callout-warning}
+The slide decks are to be considered an additional resource to what's being presented in the Unit modules. They are designed to support students of CSCI1012 - Section 10 in the Spring 2024 semester. 
+
+Reposting and circulation of these additional resources outside to the class and on other platforms is not permitted without proper referencing.
+:::
+
+:::{.callout}
+**Referencing this presentation:**
+
+Bulusu, Kartik V. (2024, April 01). Week-11 Presentation: CSCI1012 Introduction to Programming with Python [Week-11: Introduction to Programming with Python]. Department of Computer Science, The George Washington University. [https://gwu-csci1012.github.io/](https://gwu-csci1012.github.io/)
+:::
+
+
+![](../../../media/additional-resources/instructor-notes/CS1012_Week11.pdf){width="100%" height="800px"}
