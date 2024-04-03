@@ -35,9 +35,9 @@ By the end of this module you will be able to:
 ## 4.0 `while` loops: An example
 The numbers 1, 4, 9, 16, 25, and so on are <em>squares</em>, with the next one being 36 (which is 6<sup>2</sup>).
 
-Suppose we want to identify the largest square that's less than 1000.
+**Suppose our goal is to identify the largest square that's less than 1000.**
 
-We'll first show how this can be solved with a new kind of loop: the <em>while-loop</em>, and then try the same problem with a for-loop.
+We'll first show how this can be solved with a new kind of loop: the <em>while-loop</em>, and then try the same problem with a <em>for-loop</em>.
 
 The program:
 ```python
@@ -55,6 +55,8 @@ print('largest square < 1000:', k*k, '= square of', k)
 ### Exercise 4.1
 
 Type up the above in `my_while_example.py`.
+
+Submit your progam `my_while_example.py`.
 :::
 
 How does a while-loop work?
@@ -70,14 +72,14 @@ How does a while-loop work?
 - Notice that `k` is incremented (or changed) <em>inside</em> the loop:
   ```python
   while k*k < 1000:
-  k = k + 1
+      k = k + 1
   ```
 - Thus, eventually `k`will get large enough so that `k*k` will be larger than 1000.
 - When k is 32, in fact, 32*32 = 1024, which will cause the condition `k*k < 1000`to evaluate to False.
 - At this moment, execution exits the loop to the whatever code follows:
   ![](../../../media/units/unit1/module1.4/while-code2.png)
 
-Let's examine a simpler while-loop:
+**Let's now examine a simpler while-loop:**
 ```python
 k = 1
 while k < 6:
@@ -88,20 +90,36 @@ while k < 6:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.2
 
-Trace the execution of each iteration in your module pdf. Then confirm by typing up the above in `my_while_example2.py`.
+**Confirm by typing up the above in `my_while_example2.py`.**
+
+- **Submit your program `my_while_example2.py`.**
+
+- **Answering the following part of the exercise is recommended but not required for submission:** 
+
+  - Trace the execution of each iteration and develop your understanding of how the while-loop is executed.
+
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.3
 
-Consider this variation:
+Consider the following <em>while-loop</em>:
 ```python
 k = 7
 while k < 6:
   print(k)
   k = k + 1
 ```
-Trace the execution of the above program in your module pdf. Then confirm by typing up the above in `my_while_example3.py`.
+- **Type up the above in `my_while_example3.py`.**
+
+- **Submit your program `my_while_example3.py`.**
+
+- **Answering the following part of the exercise is recommended but not required for submission:** 
+
+  - Trace the execution of each iteration and develop your understanding of how the while-loop is executed.
+
+
+
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
@@ -113,19 +131,29 @@ k = 1
 while k < 6:
   print(k)
 ```
-Trace the execution of a few iterations of the above program in your module pdf. Then confirm by typing up the above in `my_while_example4.py`. After a minute, you may need to terminate the execution of the program by hand (by getting rid of the window itself).
+- **Type up the above in `my_while_example4.py`.**
+
+- **When you execute this program**,  you may need to terminate the execution of the program by hand (by getting rid of the window itself).
+
+- **Submit your program `my_while_example4.py`.** 
+
+  - After a minute, you may need to terminate the execution of the program by pressing the keys `Control` & `C` on your keyboard or closing the IDE completely.
+
+- **Answering the following part of the exercise is recommended but not required for submission:** 
+
+  - Trace the execution of each iteration and develop your understanding of how the while-loop is executed.
 :::
 
-Keep in mind:
+**Keep in mind while you examine the example discussed below:**
 
-- A while-loop typically must feature some kind of <em>initialization before the loop</em> as in:
+- **A while-loop typically must feature some kind of <em>initialization before the loop</em> as shown below:**
   ```python
   k = 1
   while k < 6:
     print(k)
     k = k + 1
   ```
-- The variable that's involved in the condition should be changed inside the loop so that the condition eventually evaluates to False:
+- **The variable that's involved in the condition should be changed inside the loop so that the condition eventually evaluates to `False`:**
   ```python
   k = 1
   while k < 6:
@@ -133,31 +161,32 @@ Keep in mind:
     k = k + 1
   ```
 
-- Another important thing to remember: if you forget to change a variable like k inside the loop, the condition will never becomes False, which means the loop will iterate forever:
+- **Another important thing to remember:** If you forget to change a variable like `k` inside the loop, the condition will never becomes `False`, which means the loop will iterate forever:
   ```python
   k = 1
   while k < 6:
     print(k)
     i = k + 1   # Error!
   ```
-  Here
+**In the example discussed above**
 
-    - The incremented value k+1 does not get stored in k.
-    - Which means k never gets large enough.
-    - Therefore k &lt; 6 will always be True.
+    - The incremented value `k+1` does not get stored in `k`.
+    - Which means `k` never gets large enough.
+    - Therefore `k` &lt; `6` will always be True.
     - Thus, we get an <em>infinite loop</em> (that iterates forever).    
 
-- It's alright, but probably not useful, if the condition never evaluates to True even once:
-  ```python
-  k = 6
-  while k < 6:
-    print(k)
-    k = k + 1
-  ```
-  The code still runs but the while-loop is not executed at all.
+  - It's alright, but probably not useful, if the condition never evaluates to `True` even once:
+    
+    ```python
+    k = 6
+    while k < 6:
+      print(k)
+      k = k + 1
+    ```
+  - The code still runs but the while-loop is not executed at all.
 
 ## 4.1 `while` loops: an example with floating point variables 
-Consider this example:
+Consider the following example:
 ```python
 x = 0.5
 s = 0
@@ -168,9 +197,18 @@ print('s =', s)
   ```
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 4.6
+### Exercise 4.5
 
-Try to guess the output before confirming in `my_while_example5.py`.
+**Try to guess the output before confirming in `my_while_example5.py`.**
+
+- **Type up the above in `my_while_example5.py`.**
+
+- **Submit your program `my_while_example5.py`.**
+
+- **Answering the following part of the exercise is recommended but not required for submission:** 
+
+  - Trace the execution of each iteration and develop your understanding of how the while-loop is executed.
+
 :::
 
 :::{.callout-note}
@@ -179,7 +217,7 @@ Try to guess the output before confirming in `my_while_example5.py`.
 - At this time, we stay for one more iteration, after which s becomes 2.5.
 :::
 
-Let's look at a more illustrative version now:
+**Let's look at a more illustrative version now:**
 ```python
 x = 0.5
 s = 0
@@ -195,14 +233,19 @@ Here, we've added a <em>counter</em> variable to track each
 loop iteration.
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 4.7
+### Exercise 4.6
+- **Type up the above in `my_while_example6.py`.**
 
-Trace the values of the three variables in your module pdf. Then confirm in `my_while_example6.py`.
+- **Submit your program `my_while_example6.py`.**
+
+- **Answering the following part of the exercise is recommended but not required for submission:** 
+
+  - Trace the execution of each iteration and develop your understanding of how the while-loop is executed.
 :::
 
-So far it's been straightforward. Let's now solve a problem:
+**So far it's been straightforward. Let's now solve a problem:**
 
-- Remember [**Zeno's paradox**](../../unit0/modules/module6.qmd#zeno)?
+- **Remember [**Zeno's paradox**](../../unit0/modules/module6.qmd#zeno)?**
 - To summarize one version, Zeno said (with a wry smile, probably):
 
   - To walk a mile, you'd have to first walk half the remaining distance (0.5 miles).
@@ -211,8 +254,8 @@ So far it's been straightforward. Let's now solve a problem:
   - ... and so on.
   - So, the total distance would be an infinite sum: 0.5 + 0.25 + 0.125 + ...
   - Which is infinite [he said]
-- Let's count <em>how many</em> successive halvings add up to, say, 0.9.
-- Here's the code:
+- **Let's count <em>how many</em> successive halvings add up to, say, 0.9.**
+- **Examine the code shown below:**
   ```python
   x = 1
   s = 0
@@ -225,18 +268,23 @@ So far it's been straightforward. Let's now solve a problem:
   print(k)
   ```
 
-  - We accumulate the sum in s.
-  - Note that we start with x = 1 because we perform the halving <em>before</em> adding to s.
-  - This means the first value added into s is 0.5 (as intended).
-  - Each such addition into s get counted in k.
+  - We accumulate the sum in `s`.
+  - Note that we start with `x = 1` because we perform the halving <em>before</em> adding to `s`.
+  - This means the first value added into `s` is `0.5` (as intended).
+  - Each such addition into `s` get counted in `k`.
 
 :::{.callout-caution appearance="simple" icon=false}
-### Exercise 4.8
+### Exercise 4.7
+- **Type up the above in `my_while_example7.py`.**
 
-Trace the values of the three variables in your module pdf. Then confirm in `my_while_example7.py`.
+- **Submit your program `my_while_example7.py`.**
+
+- **Answering the following part of the exercise is recommended but not required for submission:** 
+
+  - Trace the execution of the three variables and develop your understanding of how the while-loop is executed in `my_while_example7.py`.
 :::
 
-A few comments that go beyond the scope of the course (just for curiosity):
+**A few comments that go beyond the scope of the course (just for curiosity):**
 
 - The infinite sum, in fact, adds up to 1.
 - It took centuries for mathematics to develop to a point where one can prove that infinite sums are acceptable and can have finite results.
@@ -249,7 +297,7 @@ A few comments that go beyond the scope of the course (just for curiosity):
   ```python
   while s < 1:
   ```
-- Theoretical math would say that the while-loop would execute forever, but because there limits to what's representable on a computer, the loop will indeed terminate.
+- Theoretical math would say that the <em>while-loop</em> would execute forever, but because there limits to what's representable on a computer, the loop will indeed terminate.
 
 ## 4.2 for vs. while
 Let's contrast for-loops and while-loops by writing a for-loop as a while-loop, and vice-versa.
@@ -268,13 +316,13 @@ while k < 11:
 ```
 
 :::{.callout-note}
-- The for-loop is simpler to write.
+- **The <em>for-loop</em> is simpler to write.**
 
-- The while-loop must make explicit three things:
+- **The <em>while-loop</em> must make explicit three things:**
 
   - The initialization:
     ```python
-    k = 0
+    k = 0 # --> initialization
     while k < 11:
       print(k)
       k = k + 1
@@ -282,7 +330,7 @@ while k < 11:
   - The termination condition:
     ```python
     k = 0
-    while k < 11:
+    while k < 11: # --> condition
       print(k)
       k = k + 1
     ```
@@ -291,30 +339,34 @@ while k < 11:
     k = 0
     while k < 11:
       print(k)
-      k = k + 1
+      k = k + 1 # --> variable change
     ```
-- All of this is hidden in the for-loop.
-- Underneath the hood, it turns out, the for-loop also has these three elements. 
+- All of this is hidden in the <em>for-loop</em>.
+- Underneath the hood, it turns out, the <em>for-loop</em> also has these three elements. 
 - It's just that <em>we</em> don't have to write them, Python does so behind the scenes.
-- When you write while-loops, ask yourself: "Do I have the three elements (initialization, condition, variable-change)?"
-- A really common mistake: forgetting the change, as in:
+- When you write <em>while-loop</em>, ask yourself: "Do I have the three elements (initialization, condition, variable-change)?"
+- **A really common mistake:**
   ```python
   k = 0
   while k < 11:
     print(k)
   ```
-  This loop runs forever!
+  **This loop runs forever!**
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.10
 
-Consider this for-loop:
+**Consider the following <em>for-loop</em>:**
 ```python
 for k in range(5, 20, 2):
   print(k)
 ```
-In `my_for_while.py`, write the while-loop equivalent.
+- **In `my_for_while.py`, write the while-loop equivalent.**
+
+- **Submit your program, `my_for_while.py`.**
+
+
 :::
 
 Next, let's go from `while` to `for`:
@@ -361,15 +413,20 @@ Here:
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.11
+- **Type up the above program involving the <em>for-loop</em> and <em>while-loop</em>  in the same program,  `my_for_while2.py`.**
 
-Trace through both loops in your module pdf before confirming both in `my_for_while2.py`.
+- **Submit your program `my_for_while2.py`.**
+
+- **Answering the following part of the exercise is recommended but not required for submission:** 
+
+  - Trace the execution of both the <em>for-loop</em> and <em>while-loop</em> and develop your understanding of how the loops are executed in `my_for_while2.py`.
 :::
 
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.12
 
-Consider the following program with a while-loop:
+**Consider the following program with a <em>while-loop</em>:**
 ```python
 def func(A):
   k = 0
@@ -384,7 +441,15 @@ B = ['hello', 'hey there', 'howdy', 'huzzah', 'hi', 'greetings']
 func(B)
 func2(B)
 ```
-Trace through the first loop (in `func`) in your module pdf, to see that the loop keeps printing strings from a list as long as the strings start with 'h' and have length at least 5. Then, in `my_for_while3.py`, complete the code in `func2` using a for-loop to achieve the same result.
+- **Complete the above program with the missing <em>for-loop</em> and save it as `my_for_while3.py`.**
+
+- **Submit your program `my_for_while3.py`.**
+
+- **Answering the following part of the exercise is recommended but not required for submission:** 
+
+  - Trace the execution of both the <em>for-loop</em> and <em>while-loop</em> and develop your understanding of how the loops are executed in `my_for_while3.py`.
+    - You may consider tracing the <em>while-loop</em>loop (in `func`), to see that the loop keeps printing strings from a list as long as the strings start with `h` and have length at least `5`. 
+    - Then, trace the code in `func2` involving the <em>for-loop</em> to achieve the same result in your program, `my_for_while3.py`.
 :::
 
 
@@ -393,7 +458,7 @@ Trace through the first loop (in `func`) in your module pdf, to see that the loo
 {{< video ../../../media/units/unit1/module1.4/u1-mod4.13.mp4 aspect-ratio="21x9" >}}
 
 ## 4.3 Using `break` in loops
-Let's return to our first example of finding the last square that's less than 1000.
+**Let's return to our first example of finding the last square that's less than 1000.**
 
 Recall what we wrote:
 ```python
@@ -405,11 +470,11 @@ k = k - 1
 print('largest square < 1000:', k*k, '= square of', k)
 ```
 
-One can use a `break` statement as an alternative to writing the "loop exit" condition as the while condition.
+**One can use a `break` statement as an alternative to writing the "loop exit" condition as the while condition.**
 
-We'll first do this with a for-loop, and then see something unusual with the while-loop version.
+- We'll first do this with a <em>for-loop</em>, and then see something unusual with the <em>while-loop</em> version.
 
-To simplify tracing, let's rephrase to "largest square less than 50".
+- To simplify tracing, let's rephrase to "largest square less than 50".
 
 First, the for-loop version:
 ```python
@@ -427,15 +492,17 @@ print(k)
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.14
 
-Type up the above in `my_break.py`, removing the # to un-comment the print's, so that you can see exactly what happens when the if-condition triggers.
+- **Type up the above in `my_break.py`, removing the # to un-comment the print-statements so that you can see exactly what happens when the if-condition triggers.**
+
+- **Submit your program `my_break.py`.**
 :::
 
 
-Let's point out:
+**Let's point out some salient features of the `break`-statement:**
 
-- A break-statement is the reserved word `break` all by itself on a line, as seen above.
-- When a break statement executes, Python looks for the loop that encloses the break and abruptly, right there and then, exits the loop.
-- Break-statements are useful to check for conditions that should result in leaving the loop immediately.
+- A `break`-statement is the reserved word `break` all by itself on a line, as seen above.
+- When a `break`-statement is executed, Python looks for the loop that encloses the `break` and abruptly, right there and then, exits the loop.
+- The `break`-statements are useful to check for conditions that should result in leaving the loop immediately.
 - One could write code like this, but it would make no sense:
   ```python
   for k in range(10):
@@ -443,14 +510,14 @@ Let's point out:
     break
   ```
   This would cause the first value (0) to print, and a break right out of the loop.
-- As a mathematical aside, we know that we don't really need the for-loop range to be as high as 50:
+- As a mathematical aside, we know that we don't really need the <em>for-loop</em> range to be as high as `50`:
   ```python
   for k in range(1, 50):
     if k*k > 50:
         break
   ```
-  After all, as k gets close to 50, there is no way k*k would be less than 50. However, we'll leave it as is, for the sake of simplicity.
-- There are options in writing the loop. Consider this one:
+  After all, as `k` gets close to `50`, there is no way k*k would be less than `50`. However, we'll leave it as is, for the sake of simplicity.
+- There are options in writing the loop. Consider the following case:
   ```python
   for k in range(1, 50):
     if (k+1)*(k+1) > 50:
@@ -461,11 +528,16 @@ Let's point out:
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.15
+- **Type up the above program in `my_break2.py`.**
 
-Trace the execution of the above loop in you module pdf, The type it up in `my_break2.py`, to confirm.
+- **Submit your program `my_break2.py`.**
+
+- **Answering the following part of the exercise is recommended but not required for submission:** 
+
+  - Trace the execution of the above program and develop your understanding of how the <em>for-loop</em> and `break` statements are executed in `my_break2.py`.
 :::
 
-Next, let's look at a while-loop version of the original
+**Next, let's look at a <em>while-loop</em> version of the program:**
 
 - Here's the code:
   ```python
@@ -480,20 +552,30 @@ Next, let's look at a while-loop version of the original
   ```
 - Observe:
   ![](../../../media/units/unit1/module1.4/while-code3.png)
+
 - Was it surprising that we deliberately set up a loop to appear to run forever?
 - This is entirely do-able and often desirable, <em>provided</em> we are real careful to set up a condition <em>inside</em> the loop to break out eventually.
 - We need to be sure we hit that condition eventually.
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.16
+- **This exercise is to help you develop an understanding of what can go wrong with <em>while-loop</em> execution in the above program.**  
 
-In your module pdf, describe what would go wrong if the statement `k = k + 1` was mistakenly typed in as  `k = k - 1`.
+  - Try and understand for yourself what would go wrong if the statement `k = k + 1` was mistakenly typed in as  `k = k - 1`.
+
+- **There is nothing to submit in this exercise.**
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.17
+- **In Exercise 4.17, go back to the earlier Exercise 4.12 where you wrote a while-loop to print strings of length at least 5, and starting with 'h'.**
 
-In `my_break3.py`, go back to the earlier exercise (4.12) where you wrote a while-loop to print strings of length at least 5, and starting with 'h'. Rewrite the while-loop to use a break-statement instead.
+- **Rewrite the while-loop implementing a `break`-statement instead.**
+
+- **Save your program as `my_break3.py` and submit it.**
+
+<!-- Answering the following is to develop an understanding of what can go wrong with <em>while-loop</em> execution in the above program.** 
+In `my_break3.py`, go back to the earlier exercise (4.12) where you wrote a while-loop to print strings of length at least 5, and starting with 'h'. Rewrite the while-loop to use a break-statement instead. -->
 :::
 
 ## 4.4 Loops within loops
@@ -512,8 +594,10 @@ while m <= 10000:
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.19
+- **Type up the above program in `my_nested_loop.py` .**
 
-Type the above in `my_nested_loop.py` and try to make sense of it.
+- **Submit your program `my_nested_loop.py` .**
+<!-- Type the above in `my_nested_loop.py` and try to make sense of it. -->
 :::
 
 Let's explain:
@@ -527,37 +611,44 @@ Let's explain:
 ![](../../../media/units/unit1/module1.4/while-code6.png)
 
 :::{.callout-tip}
-The break in the for-loop exits the for-loop (the enclosing loop), which means we'll still be inside the while-loop (where m changes).
+The `break`-statement in the <em>for-loop</em> exits the <em>for-loop</em> (the enclosing loop), which means we'll still be inside the <em>while-loop</em> (where `m` changes).
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.20
 
-In `my_nested_loop2.py`, change the inner loop to a while loop so that we get the same output.
+- **Start with the program `my_nested_loop.py` from Exercise 4.19 and change the inner loop to a `while` loop so that we get the same output.**
+
+- **Save your program as `my_nested_loop3.py` and submit it.**
+
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.21
+- **This exercise is to help you develop an understanding of the complexity in programs invovling loops.**  
+  - In `my_nested_loop3.py` earlier, change the code so that both the outer-loop and inner-loop are for-loops. 
+  - One way to solve this problem: 
+    - Use a variable called `j` to range through the outer <em>for-loop</em> and then ensure that the inner-loop executes only when `j` happens to equal `m`. (Aren't you glad we have <em>while-loops</em> ?)
 
-In `my_nested_loop3.py`, change the code so that both the outerloop and innerloop are for-loops. One way to solve this problem: use a variable called j to range through the outer for-loop and then ensure that the innerloop executes only when j happens to equal m. (Aren't you glad we have while-loops?)
+- **There is nothing to submit in this exercise.**
 :::
 
 ## 4.5 More stats via programming
-Consider the following problem: 
+**Consider the following problem:** 
 
 - An experiment consists of flipping three coins.
 - The experiment is repeated until all three are "heads"
 - On average, how many experiments are needed until all three turn up "heads"?
 
-One way to think about this problem "statistically" is this:
+**One way to think about this problem "statistically" is as described below:**
 
 - Suppose we hire a thousand people to each perform repeated three-coin flips.
 - For very few of these people, they'll get "heads-heads-heads" the very first experiment.
 - For others, they might have to repeat 10 times before they see this.
 - Each person counts how many experiments had to be tried before getting three-heads.
-- The result is the average number across the thousand people: the <em>average</em> number of 3-coin flips needed to see three heads.
+- The result is the average number across the thousand people: the <em>average</em> number of three-coin flips needed to see three heads.
 
-Instead of calculating by hand, we will write a program to estimate this number:
+**Instead of calculating by hand, we will write a program to estimate this number:**
 ```python
 import random
 
@@ -583,10 +674,15 @@ print('estimate', estimate)
 :::{.callout-caution appearance="simple"}
 ### Exercise 4.23
 
-Type up the above in `my_coin_flips.py` to get an estimate. (Submit the program with 1000 trials.) Then, increase the number of trials to get a more accurate estimate, and report that in your module pdf.  Can you explain the result intuitively?
+- **Type up the above in `my_coin_flips.py` to get an estimate.**
+- **Submit the program `my_coin_flips.py` with 1000 trials.**
+
+- **Answering the following part of the exercise is recommended but not required for submission:** 
+  - Increase the number of trials to 10000 get a more accurate estimate.
+  -  Can you explain the result intuitively?
 :::
 
-Let's point out:
+**Let's try and understand the execution of the above program:**
 
 - First, let's point out the process of estimation (the outer loop) that we'd use in any estimation problem:
   ```python
@@ -604,39 +700,49 @@ Let's point out:
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.24
+- **Start with the program `my_coin_flips.py` from Exercise 4.23 and instead of using a <em>flag variable</em>, use a `break`-statement to exit the loop.**
+  - You might have to make a small adjustment to get the correct result.
 
-In `my_coin_flips2.py`, instead of using a flag variable, use a break statement to exit the loop. You might have to make a small adjustment to get the correct result.
+- **Save your program as `my_coin_flips2.py` abd submit it.**
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.25
 
-Consider an experiment where you roll a die twice to see if you get 6 and 6. In `my_dierolls.py`, estimate the average number of experiments needed to get two sixes.
+**In this exercise, consider an experiment where you roll a die twice to see if you get `6` and `6`.** 
+
+- **In `my_dierolls.py`, estimate the average number of experiments needed to get two sixes.**
+- **Submit your program, `my_dierolls.py`.** 
 :::
 
 ## 4.6 New topic: reading from a file
-Very often, data is collected and stored in files, and so it's desirable to learn how write code that plucks data right out of such files.
+**Very often, data is collected and stored in files, and so it's desirable to learn how write code that plucks data right out of such files.**
 
-Let's start with a simple test file of plain text.
+**Let's start with a simple test file of plain text.**
 
-First, examine the file <a href="../../../media/units/unit1/module1.4/testfile.txt" download>**testfile.txt**</a> to see that it's a file consisting of four lines of text. (From the poet Ogden Nash.)
+- First, examine the file <a href="../../../media/units/unit1/module1.4/testfile.txt" download>**testfile.txt**</a> to see that it's a file consisting of four lines of text. (From the poet Ogden Nash.)
 
 
-We will look at a few different versions of reading from this file.
+**We will look at a few different versions of reading from this file.**
 
-Here's the first:
-```python
-with open('testfile.txt', 'r') as in_file:
-  lines = in_file.read()
+- Here's the first example:
 
-print(type(lines))
-print(lines)
-```
+  ```python
+  with open('testfile.txt', 'r') as in_file:
+    lines = in_file.read()
+
+  print(type(lines))
+  print(lines)
+  ```
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.27
 
-Type up the above in `my_file_read.py`. What is the type of the variable `lines`?
+- **Type up the above program in `my_file_read.py`.**
+- **Submit your program, `my_file_read.py`.**
+
+- **Answering the following part of the exercise is recommended but not required for submission:** 
+  - What is the type of the variable `lines`?
 :::
 
 
@@ -686,18 +792,22 @@ print(lines)
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.28
 
-Type up the above in `my_file_read2.py`. What is the type of the variable `lines`?
+- **Type up the above program in `my_file_read2.py`.**
+- **Submit your program, `my_file_read2.py`.**
+
+- **Answering the following part of the exercise is recommended but not required for submission:** 
+  - What is the type of the variable `lines`?
 :::
 
 :::{.callout-note}
 - Here, we're reading one line at a time and appending to a running list, which is the `lines` variable.
 - The problem is, for any general file, we won't know in advance <em>how many</em> lines of text are in the file.
-- A while-loop to the rescue!
+- A <em>while-loop</em> to the rescue!
 - Thus, we keep reading from the file as long as a read operation produces a line:
 ![](../../../media/units/unit1/module1.4/while-code8.png)
 :::
 
-Writing to a file:
+**We will now look at how to write to a file.**
 
 - Suppose we've read a text file into a list of strings.
 - Let's now write these to a new file:
@@ -735,10 +845,12 @@ Writing to a file:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.29
 
-In `my_file_readwrite.py`, combine the reading and writing so that the program as whole results in copying from `testfile.txt` to `testcopy.txt`.
+- **In `my_file_readwrite.py`, combine the reading and writing so that the program as whole results in copying from `testfile.txt` to `testcopy.txt`.**
+
+- **Submit your program, `my_file_readwrite.py`.**
 :::
 
-Next, let's read from a file of numbers and perform some basic stats:
+**Next, let's read from a file of numbers and perform some basic stats:**
 
 - First, examine the file <a href="../../../media/units/unit1/module1.4/data.txt" download>**data.txt**</a> and see that it's a collection of numbers, one per line.
 - We'll read line by line as a string, and then convert to a floating-point number:
@@ -758,11 +870,19 @@ Next, let's read from a file of numbers and perform some basic stats:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.30
 
-In `my_file_data.py`, add code to compute the average of the numbers and print it. Compute the total as you iterate in the while-loop.
+- **Type up the above program in `my_file_data.py`**. 
+- **Add code to compute the average of the numbers and print the average.** 
+  - **Compute the total as you iterate in the <em>while-loop</em>.**
+  - **The program should print the average of the data and the data as shown below**
+    
+    ```python
+    5.485714285714287
+    [5.0, 1.3, 6.77, 12.3, 2.01, 3.14, 7.88]
+    ```
 :::
 
 ## 4.7 Extracting multiple data from each line
-Consider a data file that looks like this, with three numbers on each line:
+**Consider a data file that looks like this, with three numbers on each line:**
 ```python
 6.0 6.0 9.0
 4 6 8  
@@ -771,54 +891,62 @@ Consider a data file that looks like this, with three numbers on each line:
 0.1 0.5 0.3
 ```
 
-What we'd like to do is compute the average of the numbers in each line. So, the output should be something like:
-```python
-Average of 6.0 6.0 9.0 is: 7.0
-Average of 4.0 6.0 8.0 is: 6.0
-Average of 24.0 16.0 2.0 is: 14.0
-Average of 3.0 3.0 3.0 is: 3.0
-Average of 0.1 0.5 0.3 is: 0.3
-```
-
-Therefore, what need to do is not only read a line at a time, but be able to extract multiple items <em>from within a line</em>.
-
-
-We can <em>split</em> a string as follows:
+- **What we'd like to do is compute the average of the numbers in each line. So, the output should be something like:**
   
-- Consider this example:
+  ```python
+  Average of 6.0 6.0 9.0 is: 7.0
+  Average of 4.0 6.0 8.0 is: 6.0
+  Average of 24.0 16.0 2.0 is: 14.0
+  Average of 3.0 3.0 3.0 is: 3.0
+  Average of 0.1 0.5 0.3 is: 0.3
+  ```
+
+- **Therefore, what need to do is not only read a line at a time, but be able to extract multiple items <em>from within a line</em>.**
+
+
+- **We can <em>split</em> a string as follows:**
+  
+- **Consider the following example:**
   ```python
   s = '6.0 6.0 9.0'
   data = s.split()    # data is a list
   print(data)        
   ```
 
-- Here, the split() function in strings, looks for whitespace within and separates out into a list those items separated by this whitespace.
-- So, in the above example, we'll have the string '6.0 6.0 9.0' split into a list of three strings ['6.0', '6.0', '9.0']
-- Having a list of strings is not enough to compute the average of the <em>numbers</em> in those strings.
-- We need to convert into numbers:
-  ```python
-  s = '6.0 6.0 9.0'
-  data = s.split()    # data is a list
-  print(data)    
-  x = float(data[0])
-  y = float(data[1])
-  z = float(data[2])  # x, y, z are numbers  
-  avg = (x + y + z) / 3.0
-  print(avg)
-  ```
-- We can now read one line at a time from the data file, split each line, convert to numbers, and then calculate the average for each line.
+  - Here, the `split()` function in strings, looks for whitespace within and separates out into a list those items separated by this whitespace.
+  - So, in the above example, we'll have the string `6.0 6.0 9.0` split into a list of three strings `['6.0', '6.0', '9.0']`
+  - Having a list of strings is not enough to compute the average of the <em>numbers</em> in those strings.
+  - We need to convert into numbers:
+  
+    ```python
+    s = '6.0 6.0 9.0'
+    data = s.split()    # data is a list
+    print(data)    
+    x = float(data[0])
+    y = float(data[1])
+    z = float(data[2])  # x, y, z are numbers  
+    avg = (x + y + z) / 3.0
+    print(avg)
+    ```
+  
+  - We can now read one line at a time from the data file, split each line, convert to numbers, and then calculate the average for each line.
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.32
 
-Type up the above in `my_split_example.py` to see. Next, examine the file <a href="../../../media/units/unit1/module1.4/data2.txt">**data2.txt**</a> in a text editor and try and identify all the (unnecessary) whitespace within.
+- **Type up the above program in `my_split_example.py`**. 
+
+- **Submit your program`my_split_example.py`**. 
+
 :::
 
-We'll now tackle one additional complication:
+**We'll now tackle one additional complication:**
 
+- **Download and examine the file <a href="../../../media/units/unit1/module1.4/data2.txt">data2.txt**</a> in a text editor.
+  - Identify all the (unnecessary) whitespace within.
 - It is common for real data to be acquired or presented with mistakes, missing entries, or weird whitespacing.
 - The missing entry problem is somewhat harder to tackle, so we'll postpone that for another time.
-- But we can easily eliminate whitespace using strip().
+- But we can easily eliminate whitespace using `strip()`.
 - For example consider:
 ![](../../../media/units/unit1/module1.4/datafile.png)
 - Thus, we need to worry about when a line is all whitespace but not empty.
@@ -844,14 +972,17 @@ We'll now tackle one additional complication:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.33
 
-Type up the above in `my_file_data2.py`. You already have saved the file data2.txt in the same folder.
+- **Type up the above in `my_file_data2.py`.** 
+  - You should have already downloaded the file <a href="../../../media/units/unit1/module1.4/data2.txt">data2.txt</a>  in the same folder.
+
+- **Submit your program `my_file_data2.py`.** 
 :::
 
 
-We'll point out a few things:
+**We'll point out a few things as shown below:**
 ![](../../../media/units/unit1/module1.4/avg-code.png)
 
-- We have two print's in there to see what we get as a result of strip() and split():
+- We have two print's in there to see what we get as a result of `strip()` and `split()`:
   ```python
   line = line.strip()
   print('[', line, ']', sep='')
@@ -859,22 +990,22 @@ We'll point out a few things:
   data = line.split()
   print(data)
   ```
-- Recall: the sep='' (empty separation) parameter tells print() not to add its own whitespace between different arguments.
+- Recall: the `sep=''` (empty separation) parameter tells `print()` not to add its own whitespace between different arguments.
 
 - Notice also that we have deliberately added in our printing,a pair of brackets:
   ```python 
   print('[', line, ']', sep='')
   ```
-  This is a common programming technique when you want to identify whitespace: put something around it that is actually visible.
-- You also noticed that split() produces a list, and that each string in the list has already had whitespace removed on either side.
-
+  - This is a common programming technique when you want to identify whitespace: put something around it that is actually visible.
+- You also noticed that `split()` produces a `list`, and that each string in the list has already had whitespace removed on either side.
 
 ## 4.8 While-loops when files are large
-Let's return to a problem we've seen before: identifying the longest sentence in a text file.
+**Let's return to a problem we've seen before i.e., identifying the longest sentence in a text file.**
 
-Take a moment to <a href="../module3/module3.html#longest"> review that section</a>
+**Take a moment to <a href="https://gwu-csci1012.github.io/units/unit1/modules/module3.html#a-text-application"> review that section</a>**
 
-Observe:
+<!-- http://localhost:5578/units/unit1/module3/module3.html#finding-the-longest-sentence -->
+**Let's understand the following from the review:**
   
 - To find the longest sentence, we read the whole file into one giant list of sentences.
 - Then, we went through the list, recording the longest sentence.
@@ -906,19 +1037,26 @@ Observe:
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.34
-
-In `my_text_analysis.py`, count the number of sentences that have length greater than 280 characters (more than a tweet) in <a href="../../../media/units/unit1/module1.4/federalist_papers.txt" download>**federalist_papers.txt**</a>. You will need to download <a href="../../../media/useful/wordtool.py" download>**wordtool.py**</a> and <a href="../../../media/useful/wordsWithPOS.txt" download>**wordsWithPOS.txt**</a>.
+- You will need to download the following files for this exercise:
+  1. <a href="../../../media/units/unit1/module1.4/federalist_papers.txt" download>**federalist_papers.txt**</a>
+  2. <a href="../../../media/useful/wordtool.py" download>**wordtool.py**</a> and 
+  3. <a href="../../../media/useful/wordsWithPOS.txt" download>**wordsWithPOS.txt**</a>.
+- **Type up the above in `my_text_analysis.py`.** 
+  - The program`my_text_analysis.py`, counts the number of sentences that have length greater than 280 characters (more than a tweet) in <a href="../../../media/units/unit1/module1.4/federalist_papers.txt" download>**federalist_papers.txt**</a>. 
+  - It will print the longest sentence with the number of characters in it.
+- **Submit your program `my_text_analysis.py`.** 
 :::
 
 ## 4.9 Random walks and art
-But of course. We're somehow going to combine while-loops with our recurring themes (algorithmic art, randomness).
 
-This time, we will use a well-known idea from science called a <em>random walk</em>:
+But of course, we're somehow going to combine while-loops with our recurring themes (algorithmic art, randomness).
+
+This time, **we will use a well-known idea from science called a <em>random walk</em>:**
 
 - Imagine standing at the origin:
 ![](../../../media/units/unit1/module1.4/randomwalk.png)
 - Then, we choose a random <em>direction</em> from among: North, South, East, West.
-- Once such a direction is randomly chosen: we take a fixed-size step in that direction, and mark the spot:
+- Once such a direction is randomly chosen and we take a fixed-size step in that direction, and mark the spot:
 ![](../../../media/units/unit1/module1.4/randomwalk2.png)
 - Here's what it might look like after 5 steps:
 ![](../../../media/units/unit1/module1.4/randomwalk3.png)
@@ -960,10 +1098,25 @@ This time, we will use a well-known idea from science called a <em>random walk</
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.35
 
-Type up the above in `my_randomwalk.py` and try out a larger number of steps. You will also need <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a>. Call `do_walk()` twice and change the draw color in between using `dt.set_color('r')`.
+- You will need to download <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a>. for this exercise.
+
+- **Type up the above program in `my_randomwalk.py`.** 
+
+- **Submit your program `my_randomwalk.py`.** 
+
+**Recommended but not required for submission in this exercise:**
+
+- Try out a larger number of steps i.e., change the argument in function `do_walk(5)` to `do_walk(10)` and `do_walk(100)`. 
+- Change the draw color using `dt.set_color('r')`.
+- Call `do_walk()` again following `dt.set_color('r')`.
 :::
 
-Instead of running the random walk for a fixed number of steps, we'll now run the random walk until it "hits" one of the sides and stop.
+:::{.callout-tip}
+- The submission requires only the program `my_randomwalk.py` that when executed will generate the expected graphs as described in the problem.
+- **You are not required submit any graphs generated by the program.**   
+:::
+
+**Instead of running the random walk for a fixed number of steps, we'll now run the random walk until it "hits" one of the sides and stop.**
 
 - To do this, we'll use the approach of:
   ```python
@@ -977,20 +1130,41 @@ Instead of running the random walk for a fixed number of steps, we'll now run th
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.36
 
-Try out <a href="../../../media/units/unit1/module1.4/random_walk_demo2.py" download>**random_walk_demo2.py**</a> several times. Then, change the code so that the function `do_walk()` takes in the starting point as a parameter. Call `do_walk()` several times with different starting points.
+- Download and try out <a href="../../../media/units/unit1/module1.4/random_walk_demo2.py" download>**random_walk_demo2.py**</a> several times. 
+
+- Modify the code so that the function `do_walk()` takes in the starting point `(X,Y)` as parameters i.e., `do_walk(X,Y)`
+
+- Call `do_walk(X,Y)` three times with different starting points.
+
+- **Submit your program `random_walk_demo2.py`.** with the above modifications.
 :::
 
-We're now finally ready for the art project:
+:::{.callout-tip}
+- The submission requires only the program `random_walk_demo2.py` with modifications outlined herein. 
+- When executed the code will generate the expected graphs as described in the problem.
+- **You are not required submit any graphs generated by the program.**   
+:::
+
+**We're now finally ready for the art project:**
 
 - We'll start different random walks at randomly selected starting points, and then draw each in a random color.
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.37
+- **This exercise is to help you develop an understanding of random walks through an art form.**  
 
-Try out <a href="../../../media/units/unit1/module1.4/random_walk_art.py">**random_walk_art.py**</a> several times. Try to modify it to improve the (artistic) outcome. Describe what you did in your module pdf and submit a screenshot.
+  - Download and try out <a href="../../../media/units/unit1/module1.4/random_walk_art.py">**random_walk_art.py**</a> several times. 
+
+  - Try to modify it to improve the (artistic) outcome. 
+  - Understand how the changes you made affected the art you created and enjoy you results.
+  - Print out your art form and frame it when you complete this module!
+
+- **There is nothing to submit in this exercise.**
+
+<!-- Describe what you did in your module pdf and submit a screenshot. -->
 :::
 
-About random walks (in science):
+**About random walks (in science):**
 
 - Although a random walk might seem like a silly exercise, the idea has had significant scientific impact.
 - For example, a version of random walk is the basis for modeling <em>diffusion</em> and <em>osmosis</em>.
