@@ -576,8 +576,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="while-loops-an-example" class="level2">
 <h2 class="anchored" data-anchor-id="while-loops-an-example">4.0 <code>while</code> loops: An example</h2>
 <p>The numbers 1, 4, 9, 16, 25, and so on are <em>squares</em>, with the next one being 36 (which is 6<sup>2</sup>).</p>
-<p>Suppose we want to identify the largest square that’s less than 1000.</p>
-<p>We’ll first show how this can be solved with a new kind of loop: the <em>while-loop</em>, and then try the same problem with a for-loop.</p>
+<p><strong>Suppose our goal is to identify the largest square that’s less than 1000.</strong></p>
+<p>We’ll first show how this can be solved with a new kind of loop: the <em>while-loop</em>, and then try the same problem with a <em>for-loop</em>.</p>
 <p>The program:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> k<span class="op">*</span>k <span class="op">&lt;</span> <span class="dv">1000</span>:</span>
@@ -598,6 +598,7 @@ Exercise 4.1
 </div>
 <div class="callout-body-container callout-body">
 <p>Type up the above in <code>my_while_example.py</code>.</p>
+<p>Submit your progam <code>my_while_example.py</code>.</p>
 </div>
 </div>
 <p>How does a while-loop work?</p>
@@ -609,12 +610,12 @@ Exercise 4.1
 <p>Thus, as long as the value of <code>k</code> is such that <code>k*k</code> is less than 1000, execution enters and stays inside the loop.</p></li>
 <li><p>Notice that <code>k</code> is incremented (or changed) <em>inside</em> the loop:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> k<span class="op">*</span>k <span class="op">&lt;</span> <span class="dv">1000</span>:</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> k <span class="op">+</span> <span class="dv">1</span></span></code></pre></div></li>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> k <span class="op">+</span> <span class="dv">1</span></span></code></pre></div></li>
 <li><p>Thus, eventually <code>k</code>will get large enough so that <code>k*k</code> will be larger than 1000.</p></li>
 <li><p>When k is 32, in fact, 32*32 = 1024, which will cause the condition <code>k*k &lt; 1000</code>to evaluate to False.</p></li>
 <li><p>At this moment, execution exits the loop to the whatever code follows: <img src="../../../media/units/unit1/module1.4/while-code2.png" class="img-fluid"></p></li>
 </ul>
-<p>Let’s examine a simpler while-loop:</p>
+<p><strong>Let’s now examine a simpler while-loop:</strong></p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> k <span class="op">&lt;</span> <span class="dv">6</span>:</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(k)</span>
@@ -629,7 +630,14 @@ Exercise 4.2
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Trace the execution of each iteration in your module pdf. Then confirm by typing up the above in <code>my_while_example2.py</code>.</p>
+<p><strong>Confirm by typing up the above in <code>my_while_example2.py</code>.</strong></p>
+<ul>
+<li><p><strong>Submit your program <code>my_while_example2.py</code>.</strong></p></li>
+<li><p><strong>Answering the following part of the exercise is recommended but not required for submission:</strong></p>
+<ul>
+<li>Trace the execution of each iteration and develop your understanding of how the while-loop is executed.</li>
+</ul></li>
+</ul>
 </div>
 </div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
@@ -642,12 +650,19 @@ Exercise 4.3
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Consider this variation:</p>
+<p>Consider the following <em>while-loop</em>:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">7</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> k <span class="op">&lt;</span> <span class="dv">6</span>:</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(k)</span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  k <span class="op">=</span> k <span class="op">+</span> <span class="dv">1</span></span></code></pre></div>
-<p>Trace the execution of the above program in your module pdf. Then confirm by typing up the above in <code>my_while_example3.py</code>.</p>
+<ul>
+<li><p><strong>Type up the above in <code>my_while_example3.py</code>.</strong></p></li>
+<li><p><strong>Submit your program <code>my_while_example3.py</code>.</strong></p></li>
+<li><p><strong>Answering the following part of the exercise is recommended but not required for submission:</strong></p>
+<ul>
+<li>Trace the execution of each iteration and develop your understanding of how the while-loop is executed.</li>
+</ul></li>
+</ul>
 </div>
 </div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
@@ -664,44 +679,55 @@ Exercise 4.4
 <div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> k <span class="op">&lt;</span> <span class="dv">6</span>:</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(k)</span></code></pre></div>
-<p>Trace the execution of a few iterations of the above program in your module pdf. Then confirm by typing up the above in <code>my_while_example4.py</code>. After a minute, you may need to terminate the execution of the program by hand (by getting rid of the window itself).</p>
-</div>
-</div>
-<p>Keep in mind:</p>
 <ul>
-<li><p>A while-loop typically must feature some kind of <em>initialization before the loop</em> as in:</p>
+<li><p><strong>Type up the above in <code>my_while_example4.py</code>.</strong></p></li>
+<li><p><strong>When you execute this program</strong>, you may need to terminate the execution of the program by hand (by getting rid of the window itself).</p></li>
+<li><p><strong>Submit your program <code>my_while_example4.py</code>.</strong></p>
+<ul>
+<li>After a minute, you may need to terminate the execution of the program by pressing the keys <code>Control</code> &amp; <code>C</code> on your keyboard or closing the IDE completely.</li>
+</ul></li>
+<li><p><strong>Answering the following part of the exercise is recommended but not required for submission:</strong></p>
+<ul>
+<li>Trace the execution of each iteration and develop your understanding of how the while-loop is executed.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p><strong>Keep in mind while you examine the example discussed below:</strong></p>
+<ul>
+<li><p><strong>A while-loop typically must feature some kind of <em>initialization before the loop</em> as shown below:</strong></p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> k <span class="op">&lt;</span> <span class="dv">6</span>:</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(k)</span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  k <span class="op">=</span> k <span class="op">+</span> <span class="dv">1</span></span></code></pre></div></li>
-<li><p>The variable that’s involved in the condition should be changed inside the loop so that the condition eventually evaluates to False:</p>
+<li><p><strong>The variable that’s involved in the condition should be changed inside the loop so that the condition eventually evaluates to <code>False</code>:</strong></p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> k <span class="op">&lt;</span> <span class="dv">6</span>:</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(k)</span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  k <span class="op">=</span> k <span class="op">+</span> <span class="dv">1</span></span></code></pre></div></li>
-<li><p>Another important thing to remember: if you forget to change a variable like k inside the loop, the condition will never becomes False, which means the loop will iterate forever:</p>
+<li><p><strong>Another important thing to remember:</strong> If you forget to change a variable like <code>k</code> inside the loop, the condition will never becomes <code>False</code>, which means the loop will iterate forever:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> k <span class="op">&lt;</span> <span class="dv">6</span>:</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(k)</span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  i <span class="op">=</span> k <span class="op">+</span> <span class="dv">1</span>   <span class="co"># Error!</span></span></code></pre></div>
-<p>Here</p>
+<p><strong>In the example discussed above</strong></p>
 <ul>
-<li>The incremented value k+1 does not get stored in k.</li>
-<li>Which means k never gets large enough.</li>
-<li>Therefore k &lt; 6 will always be True.</li>
-<li>Thus, we get an <em>infinite loop</em> (that iterates forever).</li>
-</ul></li>
-<li><p>It’s alright, but probably not useful, if the condition never evaluates to True even once:</p>
+<li><p>The incremented value <code>k+1</code> does not get stored in <code>k</code>.</p></li>
+<li><p>Which means <code>k</code> never gets large enough.</p></li>
+<li><p>Therefore <code>k</code> &lt; <code>6</code> will always be True.</p></li>
+<li><p>Thus, we get an <em>infinite loop</em> (that iterates forever).</p></li>
+<li><p>It’s alright, but probably not useful, if the condition never evaluates to <code>True</code> even once:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">6</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> k <span class="op">&lt;</span> <span class="dv">6</span>:</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(k)</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  k <span class="op">=</span> k <span class="op">+</span> <span class="dv">1</span></span></code></pre></div>
-<p>The code still runs but the while-loop is not executed at all.</p></li>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  k <span class="op">=</span> k <span class="op">+</span> <span class="dv">1</span></span></code></pre></div></li>
+<li><p>The code still runs but the while-loop is not executed at all.</p></li>
+</ul></li>
 </ul>
 </section>
 <section id="while-loops-an-example-with-floating-point-variables" class="level2">
 <h2 class="anchored" data-anchor-id="while-loops-an-example-with-floating-point-variables">4.1 <code>while</code> loops: an example with floating point variables</h2>
-<p>Consider this example:</p>
+<p>Consider the following example:</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="fl">0.5</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> s <span class="op">&lt;=</span> <span class="dv">2</span>:</span>
@@ -714,11 +740,19 @@ Exercise 4.4
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exercise 4.6
+Exercise 4.5
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Try to guess the output before confirming in <code>my_while_example5.py</code>.</p>
+<p><strong>Try to guess the output before confirming in <code>my_while_example5.py</code>.</strong></p>
+<ul>
+<li><p><strong>Type up the above in <code>my_while_example5.py</code>.</strong></p></li>
+<li><p><strong>Submit your program <code>my_while_example5.py</code>.</strong></p></li>
+<li><p><strong>Answering the following part of the exercise is recommended but not required for submission:</strong></p>
+<ul>
+<li>Trace the execution of each iteration and develop your understanding of how the while-loop is executed.</li>
+</ul></li>
+</ul>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -738,7 +772,7 @@ Note
 </ul>
 </div>
 </div>
-<p>Let’s look at a more illustrative version now:</p>
+<p><strong>Let’s look at a more illustrative version now:</strong></p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="fl">0.5</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">0</span></span>
@@ -754,16 +788,23 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exercise 4.7
+Exercise 4.6
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Trace the values of the three variables in your module pdf. Then confirm in <code>my_while_example6.py</code>.</p>
-</div>
-</div>
-<p>So far it’s been straightforward. Let’s now solve a problem:</p>
 <ul>
-<li><p>Remember <a href="../../../units/unit0/modules/module6.html#zeno"><strong>Zeno’s paradox</strong></a>?</p></li>
+<li><p><strong>Type up the above in <code>my_while_example6.py</code>.</strong></p></li>
+<li><p><strong>Submit your program <code>my_while_example6.py</code>.</strong></p></li>
+<li><p><strong>Answering the following part of the exercise is recommended but not required for submission:</strong></p>
+<ul>
+<li>Trace the execution of each iteration and develop your understanding of how the while-loop is executed.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p><strong>So far it’s been straightforward. Let’s now solve a problem:</strong></p>
+<ul>
+<li><p><strong>Remember <a href="../../../units/unit0/modules/module6.html#zeno"><strong>Zeno’s paradox</strong></a>?</strong></p></li>
 <li><p>To summarize one version, Zeno said (with a wry smile, probably):</p>
 <ul>
 <li>To walk a mile, you’d have to first walk half the remaining distance (0.5 miles).</li>
@@ -773,8 +814,8 @@ Exercise 4.7
 <li>So, the total distance would be an infinite sum: 0.5 + 0.25 + 0.125 + …</li>
 <li>Which is infinite [he said]</li>
 </ul></li>
-<li><p>Let’s count <em>how many</em> successive halvings add up to, say, 0.9.</p></li>
-<li><p>Here’s the code:</p>
+<li><p><strong>Let’s count <em>how many</em> successive halvings add up to, say, 0.9.</strong></p></li>
+<li><p><strong>Examine the code shown below:</strong></p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">0</span></span>
@@ -785,10 +826,10 @@ Exercise 4.7
 <span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(k)</span></code></pre></div>
 <ul>
-<li>We accumulate the sum in s.</li>
-<li>Note that we start with x = 1 because we perform the halving <em>before</em> adding to s.</li>
-<li>This means the first value added into s is 0.5 (as intended).</li>
-<li>Each such addition into s get counted in k.</li>
+<li>We accumulate the sum in <code>s</code>.</li>
+<li>Note that we start with <code>x = 1</code> because we perform the halving <em>before</em> adding to <code>s</code>.</li>
+<li>This means the first value added into <code>s</code> is <code>0.5</code> (as intended).</li>
+<li>Each such addition into <code>s</code> get counted in <code>k</code>.</li>
 </ul></li>
 </ul>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
@@ -797,14 +838,21 @@ Exercise 4.7
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exercise 4.8
+Exercise 4.7
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Trace the values of the three variables in your module pdf. Then confirm in <code>my_while_example7.py</code>.</p>
+<ul>
+<li><p><strong>Type up the above in <code>my_while_example7.py</code>.</strong></p></li>
+<li><p><strong>Submit your program <code>my_while_example7.py</code>.</strong></p></li>
+<li><p><strong>Answering the following part of the exercise is recommended but not required for submission:</strong></p>
+<ul>
+<li>Trace the execution of the three variables and develop your understanding of how the while-loop is executed in <code>my_while_example7.py</code>.</li>
+</ul></li>
+</ul>
 </div>
 </div>
-<p>A few comments that go beyond the scope of the course (just for curiosity):</p>
+<p><strong>A few comments that go beyond the scope of the course (just for curiosity):</strong></p>
 <ul>
 <li><p>The infinite sum, in fact, adds up to 1.</p></li>
 <li><p>It took centuries for mathematics to develop to a point where one can prove that infinite sums are acceptable and can have finite results.</p></li>
@@ -813,7 +861,7 @@ Exercise 4.8
 <div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> s <span class="op">&lt;</span> <span class="fl">0.9</span>:</span></code></pre></div>
 <p>to</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> s <span class="op">&lt;</span> <span class="dv">1</span>:</span></code></pre></div></li>
-<li><p>Theoretical math would say that the while-loop would execute forever, but because there limits to what’s representable on a computer, the loop will indeed terminate.</p></li>
+<li><p>Theoretical math would say that the <em>while-loop</em> would execute forever, but because there limits to what’s representable on a computer, the loop will indeed terminate.</p></li>
 </ul>
 </section>
 <section id="for-vs.-while" class="level2">
@@ -840,34 +888,34 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>The for-loop is simpler to write.</p></li>
-<li><p>The while-loop must make explicit three things:</p>
+<li><p><strong>The <em>for-loop</em> is simpler to write.</strong></p></li>
+<li><p><strong>The <em>while-loop</em> must make explicit three things:</strong></p>
 <ul>
 <li><p>The initialization:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">0</span></span>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">0</span> <span class="co"># --&gt; initialization</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> k <span class="op">&lt;</span> <span class="dv">11</span>:</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(k)</span>
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  k <span class="op">=</span> k <span class="op">+</span> <span class="dv">1</span></span></code></pre></div></li>
 <li><p>The termination condition:</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> k <span class="op">&lt;</span> <span class="dv">11</span>:</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> k <span class="op">&lt;</span> <span class="dv">11</span>: <span class="co"># --&gt; condition</span></span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(k)</span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  k <span class="op">=</span> k <span class="op">+</span> <span class="dv">1</span></span></code></pre></div></li>
 <li><p>And the variable change (that will ultimately cause the condition to become False):</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> k <span class="op">&lt;</span> <span class="dv">11</span>:</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(k)</span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  k <span class="op">=</span> k <span class="op">+</span> <span class="dv">1</span></span></code></pre></div></li>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  k <span class="op">=</span> k <span class="op">+</span> <span class="dv">1</span> <span class="co"># --&gt; variable change</span></span></code></pre></div></li>
 </ul></li>
-<li><p>All of this is hidden in the for-loop.</p></li>
-<li><p>Underneath the hood, it turns out, the for-loop also has these three elements.</p></li>
+<li><p>All of this is hidden in the <em>for-loop</em>.</p></li>
+<li><p>Underneath the hood, it turns out, the <em>for-loop</em> also has these three elements.</p></li>
 <li><p>It’s just that <em>we</em> don’t have to write them, Python does so behind the scenes.</p></li>
-<li><p>When you write while-loops, ask yourself: “Do I have the three elements (initialization, condition, variable-change)?”</p></li>
-<li><p>A really common mistake: forgetting the change, as in:</p>
+<li><p>When you write <em>while-loop</em>, ask yourself: “Do I have the three elements (initialization, condition, variable-change)?”</p></li>
+<li><p><strong>A really common mistake:</strong></p>
 <div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> k <span class="op">&lt;</span> <span class="dv">11</span>:</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(k)</span></code></pre></div>
-<p>This loop runs forever!</p></li>
+<p><strong>This loop runs forever!</strong></p></li>
 </ul>
 </div>
 </div>
@@ -881,10 +929,13 @@ Exercise 4.10
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Consider this for-loop:</p>
+<p><strong>Consider the following <em>for-loop</em>:</strong></p>
 <div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>, <span class="dv">20</span>, <span class="dv">2</span>):</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(k)</span></code></pre></div>
-<p>In <code>my_for_while.py</code>, write the while-loop equivalent.</p>
+<ul>
+<li><p><strong>In <code>my_for_while.py</code>, write the while-loop equivalent.</strong></p></li>
+<li><p><strong>Submit your program, <code>my_for_while.py</code>.</strong></p></li>
+</ul>
 </div>
 </div>
 <p>Next, let’s go from <code>while</code> to <code>for</code>:</p>
@@ -939,7 +990,14 @@ Exercise 4.11
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Trace through both loops in your module pdf before confirming both in <code>my_for_while2.py</code>.</p>
+<ul>
+<li><p><strong>Type up the above program involving the <em>for-loop</em> and <em>while-loop</em> in the same program, <code>my_for_while2.py</code>.</strong></p></li>
+<li><p><strong>Submit your program <code>my_for_while2.py</code>.</strong></p></li>
+<li><p><strong>Answering the following part of the exercise is recommended but not required for submission:</strong></p>
+<ul>
+<li>Trace the execution of both the <em>for-loop</em> and <em>while-loop</em> and develop your understanding of how the loops are executed in <code>my_for_while2.py</code>.</li>
+</ul></li>
+</ul>
 </div>
 </div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
@@ -952,7 +1010,7 @@ Exercise 4.12
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Consider the following program with a while-loop:</p>
+<p><strong>Consider the following program with a <em>while-loop</em>:</strong></p>
 <div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> func(A):</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  k <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> A[k].startswith(<span class="st">'h'</span>) <span class="kw">and</span> (<span class="bu">len</span>(A[k]) <span class="op">&gt;</span> <span class="dv">4</span>) <span class="kw">and</span> (k <span class="op">&lt;</span> <span class="bu">len</span>(A)):</span>
@@ -965,7 +1023,18 @@ Exercise 4.12
 <span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>B <span class="op">=</span> [<span class="st">'hello'</span>, <span class="st">'hey there'</span>, <span class="st">'howdy'</span>, <span class="st">'huzzah'</span>, <span class="st">'hi'</span>, <span class="st">'greetings'</span>]</span>
 <span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>func(B)</span>
 <span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>func2(B)</span></code></pre></div>
-<p>Trace through the first loop (in <code>func</code>) in your module pdf, to see that the loop keeps printing strings from a list as long as the strings start with ‘h’ and have length at least 5. Then, in <code>my_for_while3.py</code>, complete the code in <code>func2</code> using a for-loop to achieve the same result.</p>
+<ul>
+<li><p><strong>Complete the above program with the missing <em>for-loop</em> and save it as <code>my_for_while3.py</code>.</strong></p></li>
+<li><p><strong>Submit your program <code>my_for_while3.py</code>.</strong></p></li>
+<li><p><strong>Answering the following part of the exercise is recommended but not required for submission:</strong></p>
+<ul>
+<li>Trace the execution of both the <em>for-loop</em> and <em>while-loop</em> and develop your understanding of how the loops are executed in <code>my_for_while3.py</code>.
+<ul>
+<li>You may consider tracing the <em>while-loop</em>loop (in <code>func</code>), to see that the loop keeps printing strings from a list as long as the strings start with <code>h</code> and have length at least <code>5</code>.</li>
+<li>Then, trace the code in <code>func2</code> involving the <em>for-loop</em> to achieve the same result in your program, <code>my_for_while3.py</code>.</li>
+</ul></li>
+</ul></li>
+</ul>
 </div>
 </div>
 <section id="video" class="level6">
@@ -975,7 +1044,7 @@ Exercise 4.12
 </section>
 <section id="using-break-in-loops" class="level2">
 <h2 class="anchored" data-anchor-id="using-break-in-loops">4.3 Using <code>break</code> in loops</h2>
-<p>Let’s return to our first example of finding the last square that’s less than 1000.</p>
+<p><strong>Let’s return to our first example of finding the last square that’s less than 1000.</strong></p>
 <p>Recall what we wrote:</p>
 <div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> k<span class="op">*</span>k <span class="op">&lt;</span> <span class="dv">1000</span>:</span>
@@ -983,9 +1052,11 @@ Exercise 4.12
 <span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> k <span class="op">-</span> <span class="dv">1</span></span>
 <span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'largest square &lt; 1000:'</span>, k<span class="op">*</span>k, <span class="st">'= square of'</span>, k)</span></code></pre></div>
-<p>One can use a <code>break</code> statement as an alternative to writing the “loop exit” condition as the while condition.</p>
-<p>We’ll first do this with a for-loop, and then see something unusual with the while-loop version.</p>
-<p>To simplify tracing, let’s rephrase to “largest square less than 50”.</p>
+<p><strong>One can use a <code>break</code> statement as an alternative to writing the “loop exit” condition as the while condition.</strong></p>
+<ul>
+<li><p>We’ll first do this with a <em>for-loop</em>, and then see something unusual with the <em>while-loop</em> version.</p></li>
+<li><p>To simplify tracing, let’s rephrase to “largest square less than 50”.</p></li>
+</ul>
 <p>First, the for-loop version:</p>
 <div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">50</span>):</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># print('Before-if: k =', k)</span></span>
@@ -1005,25 +1076,28 @@ Exercise 4.14
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Type up the above in <code>my_break.py</code>, removing the # to un-comment the print’s, so that you can see exactly what happens when the if-condition triggers.</p>
-</div>
-</div>
-<p>Let’s point out:</p>
 <ul>
-<li><p>A break-statement is the reserved word <code>break</code> all by itself on a line, as seen above.</p></li>
-<li><p>When a break statement executes, Python looks for the loop that encloses the break and abruptly, right there and then, exits the loop.</p></li>
-<li><p>Break-statements are useful to check for conditions that should result in leaving the loop immediately.</p></li>
+<li><p><strong>Type up the above in <code>my_break.py</code>, removing the # to un-comment the print-statements so that you can see exactly what happens when the if-condition triggers.</strong></p></li>
+<li><p><strong>Submit your program <code>my_break.py</code>.</strong></p></li>
+</ul>
+</div>
+</div>
+<p><strong>Let’s point out some salient features of the <code>break</code>-statement:</strong></p>
+<ul>
+<li><p>A <code>break</code>-statement is the reserved word <code>break</code> all by itself on a line, as seen above.</p></li>
+<li><p>When a <code>break</code>-statement is executed, Python looks for the loop that encloses the <code>break</code> and abruptly, right there and then, exits the loop.</p></li>
+<li><p>The <code>break</code>-statements are useful to check for conditions that should result in leaving the loop immediately.</p></li>
 <li><p>One could write code like this, but it would make no sense:</p>
 <div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(k)</span>
 <span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">break</span></span></code></pre></div>
 <p>This would cause the first value (0) to print, and a break right out of the loop.</p></li>
-<li><p>As a mathematical aside, we know that we don’t really need the for-loop range to be as high as 50:</p>
+<li><p>As a mathematical aside, we know that we don’t really need the <em>for-loop</em> range to be as high as <code>50</code>:</p>
 <div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">50</span>):</span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> k<span class="op">*</span>k <span class="op">&gt;</span> <span class="dv">50</span>:</span>
 <span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>      <span class="cf">break</span></span></code></pre></div>
-<p>After all, as k gets close to 50, there is no way k*k would be less than 50. However, we’ll leave it as is, for the sake of simplicity.</p></li>
-<li><p>There are options in writing the loop. Consider this one:</p>
+<p>After all, as <code>k</code> gets close to <code>50</code>, there is no way k*k would be less than <code>50</code>. However, we’ll leave it as is, for the sake of simplicity.</p></li>
+<li><p>There are options in writing the loop. Consider the following case:</p>
 <div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">50</span>):</span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (k<span class="op">+</span><span class="dv">1</span>)<span class="op">*</span>(k<span class="op">+</span><span class="dv">1</span>) <span class="op">&gt;</span> <span class="dv">50</span>:</span>
 <span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(k)</span>
@@ -1040,10 +1114,17 @@ Exercise 4.15
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Trace the execution of the above loop in you module pdf, The type it up in <code>my_break2.py</code>, to confirm.</p>
+<ul>
+<li><p><strong>Type up the above program in <code>my_break2.py</code>.</strong></p></li>
+<li><p><strong>Submit your program <code>my_break2.py</code>.</strong></p></li>
+<li><p><strong>Answering the following part of the exercise is recommended but not required for submission:</strong></p>
+<ul>
+<li>Trace the execution of the above program and develop your understanding of how the <em>for-loop</em> and <code>break</code> statements are executed in <code>my_break2.py</code>.</li>
+</ul></li>
+</ul>
 </div>
 </div>
-<p>Next, let’s look at a while-loop version of the original</p>
+<p><strong>Next, let’s look at a <em>while-loop</em> version of the program:</strong></p>
 <ul>
 <li><p>Here’s the code:</p>
 <div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">1</span></span>
@@ -1069,7 +1150,13 @@ Exercise 4.16
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In your module pdf, describe what would go wrong if the statement <code>k = k + 1</code> was mistakenly typed in as <code>k = k - 1</code>.</p>
+<ul>
+<li><p><strong>This exercise is to help you develop an understanding of what can go wrong with <em>while-loop</em> execution in the above program.</strong></p>
+<ul>
+<li>Try and understand for yourself what would go wrong if the statement <code>k = k + 1</code> was mistakenly typed in as <code>k = k - 1</code>.</li>
+</ul></li>
+<li><p><strong>There is nothing to submit in this exercise.</strong></p></li>
+</ul>
 </div>
 </div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
@@ -1082,7 +1169,13 @@ Exercise 4.17
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In <code>my_break3.py</code>, go back to the earlier exercise (4.12) where you wrote a while-loop to print strings of length at least 5, and starting with ‘h’. Rewrite the while-loop to use a break-statement instead.</p>
+<ul>
+<li><p><strong>In Exercise 4.17, go back to the earlier Exercise 4.12 where you wrote a while-loop to print strings of length at least 5, and starting with ‘h’.</strong></p></li>
+<li><p><strong>Rewrite the while-loop implementing a <code>break</code>-statement instead.</strong></p></li>
+<li><p><strong>Save your program as <code>my_break3.py</code> and submit it.</strong></p></li>
+</ul>
+<!-- Answering the following is to develop an understanding of what can go wrong with <em>while-loop</em> execution in the above program.** 
+In `my_break3.py`, go back to the earlier exercise (4.12) where you wrote a while-loop to print strings of length at least 5, and starting with 'h'. Rewrite the while-loop to use a break-statement instead. -->
 </div>
 </div>
 </section>
@@ -1107,7 +1200,10 @@ Exercise 4.19
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Type the above in <code>my_nested_loop.py</code> and try to make sense of it.</p>
+<ul>
+<li><p><strong>Type up the above program in <code>my_nested_loop.py</code> .</strong></p></li>
+<li><p><strong>Submit your program <code>my_nested_loop.py</code> .</strong> <!-- Type the above in `my_nested_loop.py` and try to make sense of it. --></p></li>
+</ul>
 </div>
 </div>
 <p>Let’s explain:</p>
@@ -1127,7 +1223,7 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The break in the for-loop exits the for-loop (the enclosing loop), which means we’ll still be inside the while-loop (where m changes).</p>
+<p>The <code>break</code>-statement in the <em>for-loop</em> exits the <em>for-loop</em> (the enclosing loop), which means we’ll still be inside the <em>while-loop</em> (where <code>m</code> changes).</p>
 </div>
 </div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
@@ -1140,7 +1236,10 @@ Exercise 4.20
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In <code>my_nested_loop2.py</code>, change the inner loop to a while loop so that we get the same output.</p>
+<ul>
+<li><p><strong>Start with the program <code>my_nested_loop.py</code> from Exercise 4.19 and change the inner loop to a <code>while</code> loop so that we get the same output.</strong></p></li>
+<li><p><strong>Save your program as <code>my_nested_loop3.py</code> and submit it.</strong></p></li>
+</ul>
 </div>
 </div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
@@ -1153,27 +1252,37 @@ Exercise 4.21
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In <code>my_nested_loop3.py</code>, change the code so that both the outerloop and innerloop are for-loops. One way to solve this problem: use a variable called j to range through the outer for-loop and then ensure that the innerloop executes only when j happens to equal m. (Aren’t you glad we have while-loops?)</p>
+<ul>
+<li><strong>This exercise is to help you develop an understanding of the complexity in programs invovling loops.</strong>
+<ul>
+<li>In <code>my_nested_loop3.py</code> earlier, change the code so that both the outer-loop and inner-loop are for-loops.</li>
+<li>One way to solve this problem:
+<ul>
+<li>Use a variable called <code>j</code> to range through the outer <em>for-loop</em> and then ensure that the inner-loop executes only when <code>j</code> happens to equal <code>m</code>. (Aren’t you glad we have <em>while-loops</em> ?)</li>
+</ul></li>
+</ul></li>
+<li><strong>There is nothing to submit in this exercise.</strong></li>
+</ul>
 </div>
 </div>
 </section>
 <section id="more-stats-via-programming" class="level2">
 <h2 class="anchored" data-anchor-id="more-stats-via-programming">4.5 More stats via programming</h2>
-<p>Consider the following problem:</p>
+<p><strong>Consider the following problem:</strong></p>
 <ul>
 <li>An experiment consists of flipping three coins.</li>
 <li>The experiment is repeated until all three are “heads”</li>
 <li>On average, how many experiments are needed until all three turn up “heads”?</li>
 </ul>
-<p>One way to think about this problem “statistically” is this:</p>
+<p><strong>One way to think about this problem “statistically” is as described below:</strong></p>
 <ul>
 <li>Suppose we hire a thousand people to each perform repeated three-coin flips.</li>
 <li>For very few of these people, they’ll get “heads-heads-heads” the very first experiment.</li>
 <li>For others, they might have to repeat 10 times before they see this.</li>
 <li>Each person counts how many experiments had to be tried before getting three-heads.</li>
-<li>The result is the average number across the thousand people: the <em>average</em> number of 3-coin flips needed to see three heads.</li>
+<li>The result is the average number across the thousand people: the <em>average</em> number of three-coin flips needed to see three heads.</li>
 </ul>
-<p>Instead of calculating by hand, we will write a program to estimate this number:</p>
+<p><strong>Instead of calculating by hand, we will write a program to estimate this number:</strong></p>
 <div class="sourceCode" id="cb35"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>num_trials <span class="op">=</span> <span class="dv">1000</span></span>
@@ -1203,10 +1312,18 @@ Exercise 4.23
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Type up the above in <code>my_coin_flips.py</code> to get an estimate. (Submit the program with 1000 trials.) Then, increase the number of trials to get a more accurate estimate, and report that in your module pdf. Can you explain the result intuitively?</p>
+<ul>
+<li><p><strong>Type up the above in <code>my_coin_flips.py</code> to get an estimate.</strong></p></li>
+<li><p><strong>Submit the program <code>my_coin_flips.py</code> with 1000 trials.</strong></p></li>
+<li><p><strong>Answering the following part of the exercise is recommended but not required for submission:</strong></p>
+<ul>
+<li>Increase the number of trials to 10000 get a more accurate estimate.</li>
+<li>Can you explain the result intuitively?</li>
+</ul></li>
+</ul>
 </div>
 </div>
-<p>Let’s point out:</p>
+<p><strong>Let’s try and understand the execution of the above program:</strong></p>
 <ul>
 <li><p>First, let’s point out the process of estimation (the outer loop) that we’d use in any estimation problem:</p>
 <div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>num_trials <span class="op">=</span> <span class="dv">1000</span></span>
@@ -1229,7 +1346,13 @@ Exercise 4.24
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In <code>my_coin_flips2.py</code>, instead of using a flag variable, use a break statement to exit the loop. You might have to make a small adjustment to get the correct result.</p>
+<ul>
+<li><strong>Start with the program <code>my_coin_flips.py</code> from Exercise 4.23 and instead of using a <em>flag variable</em>, use a <code>break</code>-statement to exit the loop.</strong>
+<ul>
+<li>You might have to make a small adjustment to get the correct result.</li>
+</ul></li>
+<li><strong>Save your program as <code>my_coin_flips2.py</code> abd submit it.</strong></li>
+</ul>
 </div>
 </div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
@@ -1242,22 +1365,30 @@ Exercise 4.25
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Consider an experiment where you roll a die twice to see if you get 6 and 6. In <code>my_dierolls.py</code>, estimate the average number of experiments needed to get two sixes.</p>
+<p><strong>In this exercise, consider an experiment where you roll a die twice to see if you get <code>6</code> and <code>6</code>.</strong></p>
+<ul>
+<li><strong>In <code>my_dierolls.py</code>, estimate the average number of experiments needed to get two sixes.</strong></li>
+<li><strong>Submit your program, <code>my_dierolls.py</code>.</strong></li>
+</ul>
 </div>
 </div>
 </section>
 <section id="new-topic-reading-from-a-file" class="level2">
 <h2 class="anchored" data-anchor-id="new-topic-reading-from-a-file">4.6 New topic: reading from a file</h2>
-<p>Very often, data is collected and stored in files, and so it’s desirable to learn how write code that plucks data right out of such files.</p>
-<p>Let’s start with a simple test file of plain text.</p>
-<p>First, examine the file <a href="../../../media/units/unit1/module1.4/testfile.txt" download=""><strong>testfile.txt</strong></a> to see that it’s a file consisting of four lines of text. (From the poet Ogden Nash.)</p>
-<p>We will look at a few different versions of reading from this file.</p>
-<p>Here’s the first:</p>
+<p><strong>Very often, data is collected and stored in files, and so it’s desirable to learn how write code that plucks data right out of such files.</strong></p>
+<p><strong>Let’s start with a simple test file of plain text.</strong></p>
+<ul>
+<li>First, examine the file <a href="../../../media/units/unit1/module1.4/testfile.txt" download=""><strong>testfile.txt</strong></a> to see that it’s a file consisting of four lines of text. (From the poet Ogden Nash.)</li>
+</ul>
+<p><strong>We will look at a few different versions of reading from this file.</strong></p>
+<ul>
+<li><p>Here’s the first example:</p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'testfile.txt'</span>, <span class="st">'r'</span>) <span class="im">as</span> in_file:</span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>  lines <span class="op">=</span> in_file.read()</span>
 <span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(lines))</span>
-<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(lines)</span></code></pre></div>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(lines)</span></code></pre></div></li>
+</ul>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1268,7 +1399,14 @@ Exercise 4.27
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Type up the above in <code>my_file_read.py</code>. What is the type of the variable <code>lines</code>?</p>
+<ul>
+<li><p><strong>Type up the above program in <code>my_file_read.py</code>.</strong></p></li>
+<li><p><strong>Submit your program, <code>my_file_read.py</code>.</strong></p></li>
+<li><p><strong>Answering the following part of the exercise is recommended but not required for submission:</strong></p>
+<ul>
+<li>What is the type of the variable <code>lines</code>?</li>
+</ul></li>
+</ul>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -1327,7 +1465,14 @@ Exercise 4.28
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Type up the above in <code>my_file_read2.py</code>. What is the type of the variable <code>lines</code>?</p>
+<ul>
+<li><p><strong>Type up the above program in <code>my_file_read2.py</code>.</strong></p></li>
+<li><p><strong>Submit your program, <code>my_file_read2.py</code>.</strong></p></li>
+<li><p><strong>Answering the following part of the exercise is recommended but not required for submission:</strong></p>
+<ul>
+<li>What is the type of the variable <code>lines</code>?</li>
+</ul></li>
+</ul>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -1343,12 +1488,12 @@ Note
 <ul>
 <li>Here, we’re reading one line at a time and appending to a running list, which is the <code>lines</code> variable.</li>
 <li>The problem is, for any general file, we won’t know in advance <em>how many</em> lines of text are in the file.</li>
-<li>A while-loop to the rescue!</li>
+<li>A <em>while-loop</em> to the rescue!</li>
 <li>Thus, we keep reading from the file as long as a read operation produces a line: <img src="../../../media/units/unit1/module1.4/while-code8.png" class="img-fluid"></li>
 </ul>
 </div>
 </div>
-<p>Writing to a file:</p>
+<p><strong>We will now look at how to write to a file.</strong></p>
 <ul>
 <li><p>Suppose we’ve read a text file into a list of strings.</p></li>
 <li><p>Let’s now write these to a new file:</p>
@@ -1387,10 +1532,13 @@ Exercise 4.29
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In <code>my_file_readwrite.py</code>, combine the reading and writing so that the program as whole results in copying from <code>testfile.txt</code> to <code>testcopy.txt</code>.</p>
+<ul>
+<li><p><strong>In <code>my_file_readwrite.py</code>, combine the reading and writing so that the program as whole results in copying from <code>testfile.txt</code> to <code>testcopy.txt</code>.</strong></p></li>
+<li><p><strong>Submit your program, <code>my_file_readwrite.py</code>.</strong></p></li>
+</ul>
 </div>
 </div>
-<p>Next, let’s read from a file of numbers and perform some basic stats:</p>
+<p><strong>Next, let’s read from a file of numbers and perform some basic stats:</strong></p>
 <ul>
 <li><p>First, examine the file <a href="../../../media/units/unit1/module1.4/data.txt" download=""><strong>data.txt</strong></a> and see that it’s a collection of numbers, one per line.</p></li>
 <li><p>We’ll read line by line as a string, and then convert to a floating-point number:</p>
@@ -1415,44 +1563,55 @@ Exercise 4.30
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In <code>my_file_data.py</code>, add code to compute the average of the numbers and print it. Compute the total as you iterate in the while-loop.</p>
+<ul>
+<li><strong>Type up the above program in <code>my_file_data.py</code></strong>.</li>
+<li><strong>Add code to compute the average of the numbers and print the average.</strong>
+<ul>
+<li><p><strong>Compute the total as you iterate in the <em>while-loop</em>.</strong></p></li>
+<li><p><strong>The program should print the average of the data and the data as shown below</strong></p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fl">5.485714285714287</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>[<span class="fl">5.0</span>, <span class="fl">1.3</span>, <span class="fl">6.77</span>, <span class="fl">12.3</span>, <span class="fl">2.01</span>, <span class="fl">3.14</span>, <span class="fl">7.88</span>]</span></code></pre></div></li>
+</ul></li>
+</ul>
 </div>
 </div>
 </section>
 <section id="extracting-multiple-data-from-each-line" class="level2">
 <h2 class="anchored" data-anchor-id="extracting-multiple-data-from-each-line">4.7 Extracting multiple data from each line</h2>
-<p>Consider a data file that looks like this, with three numbers on each line:</p>
-<div class="sourceCode" id="cb48"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fl">6.0</span> <span class="fl">6.0</span> <span class="fl">9.0</span></span>
-<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span> <span class="dv">6</span> <span class="dv">8</span>  </span>
-<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a><span class="dv">24</span> <span class="dv">16</span> <span class="dv">2</span>  </span>
-<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="fl">3.0</span> <span class="dv">3</span></span>
-<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a><span class="fl">0.1</span> <span class="fl">0.5</span> <span class="fl">0.3</span></span></code></pre></div>
-<p>What we’d like to do is compute the average of the numbers in each line. So, the output should be something like:</p>
-<div class="sourceCode" id="cb49"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>Average of <span class="fl">6.0</span> <span class="fl">6.0</span> <span class="fl">9.0</span> <span class="kw">is</span>: <span class="fl">7.0</span></span>
-<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>Average of <span class="fl">4.0</span> <span class="fl">6.0</span> <span class="fl">8.0</span> <span class="kw">is</span>: <span class="fl">6.0</span></span>
-<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>Average of <span class="fl">24.0</span> <span class="fl">16.0</span> <span class="fl">2.0</span> <span class="kw">is</span>: <span class="fl">14.0</span></span>
-<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>Average of <span class="fl">3.0</span> <span class="fl">3.0</span> <span class="fl">3.0</span> <span class="kw">is</span>: <span class="fl">3.0</span></span>
-<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>Average of <span class="fl">0.1</span> <span class="fl">0.5</span> <span class="fl">0.3</span> <span class="kw">is</span>: <span class="fl">0.3</span></span></code></pre></div>
-<p>Therefore, what need to do is not only read a line at a time, but be able to extract multiple items <em>from within a line</em>.</p>
-<p>We can <em>split</em> a string as follows:</p>
+<p><strong>Consider a data file that looks like this, with three numbers on each line:</strong></p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fl">6.0</span> <span class="fl">6.0</span> <span class="fl">9.0</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span> <span class="dv">6</span> <span class="dv">8</span>  </span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="dv">24</span> <span class="dv">16</span> <span class="dv">2</span>  </span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="fl">3.0</span> <span class="dv">3</span></span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a><span class="fl">0.1</span> <span class="fl">0.5</span> <span class="fl">0.3</span></span></code></pre></div>
 <ul>
-<li><p>Consider this example:</p>
-<div class="sourceCode" id="cb50"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'6.0 6.0 9.0'</span></span>
-<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> s.split()    <span class="co"># data is a list</span></span>
-<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(data)        </span></code></pre></div></li>
-<li><p>Here, the split() function in strings, looks for whitespace within and separates out into a list those items separated by this whitespace.</p></li>
-<li><p>So, in the above example, we’ll have the string ‘6.0 6.0 9.0’ split into a list of three strings [‘6.0’, ‘6.0’, ‘9.0’]</p></li>
-<li><p>Having a list of strings is not enough to compute the average of the <em>numbers</em> in those strings.</p></li>
-<li><p>We need to convert into numbers:</p>
+<li><p><strong>What we’d like to do is compute the average of the numbers in each line. So, the output should be something like:</strong></p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>Average of <span class="fl">6.0</span> <span class="fl">6.0</span> <span class="fl">9.0</span> <span class="kw">is</span>: <span class="fl">7.0</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>Average of <span class="fl">4.0</span> <span class="fl">6.0</span> <span class="fl">8.0</span> <span class="kw">is</span>: <span class="fl">6.0</span></span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>Average of <span class="fl">24.0</span> <span class="fl">16.0</span> <span class="fl">2.0</span> <span class="kw">is</span>: <span class="fl">14.0</span></span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>Average of <span class="fl">3.0</span> <span class="fl">3.0</span> <span class="fl">3.0</span> <span class="kw">is</span>: <span class="fl">3.0</span></span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>Average of <span class="fl">0.1</span> <span class="fl">0.5</span> <span class="fl">0.3</span> <span class="kw">is</span>: <span class="fl">0.3</span></span></code></pre></div></li>
+<li><p><strong>Therefore, what need to do is not only read a line at a time, but be able to extract multiple items <em>from within a line</em>.</strong></p></li>
+<li><p><strong>We can <em>split</em> a string as follows:</strong></p></li>
+<li><p><strong>Consider the following example:</strong></p>
 <div class="sourceCode" id="cb51"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'6.0 6.0 9.0'</span></span>
 <span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> s.split()    <span class="co"># data is a list</span></span>
-<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(data)    </span>
-<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="bu">float</span>(data[<span class="dv">0</span>])</span>
-<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="bu">float</span>(data[<span class="dv">1</span>])</span>
-<span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> <span class="bu">float</span>(data[<span class="dv">2</span>])  <span class="co"># x, y, z are numbers  </span></span>
-<span id="cb51-7"><a href="#cb51-7" aria-hidden="true" tabindex="-1"></a>avg <span class="op">=</span> (x <span class="op">+</span> y <span class="op">+</span> z) <span class="op">/</span> <span class="fl">3.0</span></span>
-<span id="cb51-8"><a href="#cb51-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(avg)</span></code></pre></div></li>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(data)        </span></code></pre></div>
+<ul>
+<li><p>Here, the <code>split()</code> function in strings, looks for whitespace within and separates out into a list those items separated by this whitespace.</p></li>
+<li><p>So, in the above example, we’ll have the string <code>6.0 6.0 9.0</code> split into a list of three strings <code>['6.0', '6.0', '9.0']</code></p></li>
+<li><p>Having a list of strings is not enough to compute the average of the <em>numbers</em> in those strings.</p></li>
+<li><p>We need to convert into numbers:</p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">'6.0 6.0 9.0'</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> s.split()    <span class="co"># data is a list</span></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(data)    </span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="bu">float</span>(data[<span class="dv">0</span>])</span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="bu">float</span>(data[<span class="dv">1</span>])</span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> <span class="bu">float</span>(data[<span class="dv">2</span>])  <span class="co"># x, y, z are numbers  </span></span>
+<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a>avg <span class="op">=</span> (x <span class="op">+</span> y <span class="op">+</span> z) <span class="op">/</span> <span class="fl">3.0</span></span>
+<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(avg)</span></code></pre></div></li>
 <li><p>We can now read one line at a time from the data file, split each line, convert to numbers, and then calculate the average for each line.</p></li>
+</ul></li>
 </ul>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1464,32 +1623,39 @@ Exercise 4.32
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Type up the above in <code>my_split_example.py</code> to see. Next, examine the file <a href="../../../media/units/unit1/module1.4/data2.txt"><strong>data2.txt</strong></a> in a text editor and try and identify all the (unnecessary) whitespace within.</p>
-</div>
-</div>
-<p>We’ll now tackle one additional complication:</p>
 <ul>
+<li><p><strong>Type up the above program in <code>my_split_example.py</code></strong>.</p></li>
+<li><p><strong>Submit your program<code>my_split_example.py</code></strong>.</p></li>
+</ul>
+</div>
+</div>
+<p><strong>We’ll now tackle one additional complication:</strong></p>
+<ul>
+<li><p><strong>Download and examine the file <a href="../../../media/units/unit1/module1.4/data2.txt">data2.txt</a></strong> in a text editor.</p>
+<ul>
+<li>Identify all the (unnecessary) whitespace within.</li>
+</ul></li>
 <li><p>It is common for real data to be acquired or presented with mistakes, missing entries, or weird whitespacing.</p></li>
 <li><p>The missing entry problem is somewhat harder to tackle, so we’ll postpone that for another time.</p></li>
-<li><p>But we can easily eliminate whitespace using strip().</p></li>
+<li><p>But we can easily eliminate whitespace using <code>strip()</code>.</p></li>
 <li><p>For example consider: <img src="../../../media/units/unit1/module1.4/datafile.png" class="img-fluid"></p></li>
 <li><p>Thus, we need to worry about when a line is all whitespace but not empty.</p></li>
 <li><p>Let’s put these ideas into code:</p>
-<div class="sourceCode" id="cb52"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'data2.txt'</span>,<span class="st">'r'</span>) <span class="im">as</span> in_file:</span>
-<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>  line <span class="op">=</span> in_file.readline()</span>
-<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> line <span class="op">!=</span> <span class="va">None</span>:</span>
-<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> line.strip()</span>
-<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'['</span>, line, <span class="st">']'</span>, sep<span class="op">=</span><span class="st">''</span>)</span>
-<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(line) <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a>      <span class="cf">break</span></span>
-<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> line.split()</span>
-<span id="cb52-9"><a href="#cb52-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(data)</span>
-<span id="cb52-10"><a href="#cb52-10" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="bu">float</span>(data[<span class="dv">0</span>])</span>
-<span id="cb52-11"><a href="#cb52-11" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="bu">float</span>(data[<span class="dv">1</span>])</span>
-<span id="cb52-12"><a href="#cb52-12" aria-hidden="true" tabindex="-1"></a>    z <span class="op">=</span> <span class="bu">float</span>(data[<span class="dv">2</span>])</span>
-<span id="cb52-13"><a href="#cb52-13" aria-hidden="true" tabindex="-1"></a>    avg <span class="op">=</span> (x <span class="op">+</span> y <span class="op">+</span> z) <span class="op">/</span> <span class="fl">3.0</span></span>
-<span id="cb52-14"><a href="#cb52-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'Average of '</span>, x, <span class="st">' '</span>, y, <span class="st">' '</span>, z, <span class="st">' is: '</span>, avg, sep<span class="op">=</span><span class="st">''</span>)</span>
-<span id="cb52-15"><a href="#cb52-15" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> in_file.readline()</span></code></pre></div></li>
+<div class="sourceCode" id="cb53"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'data2.txt'</span>,<span class="st">'r'</span>) <span class="im">as</span> in_file:</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>  line <span class="op">=</span> in_file.readline()</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> line <span class="op">!=</span> <span class="va">None</span>:</span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> line.strip()</span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'['</span>, line, <span class="st">']'</span>, sep<span class="op">=</span><span class="st">''</span>)</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(line) <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a>      <span class="cf">break</span></span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> line.split()</span>
+<span id="cb53-9"><a href="#cb53-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(data)</span>
+<span id="cb53-10"><a href="#cb53-10" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="bu">float</span>(data[<span class="dv">0</span>])</span>
+<span id="cb53-11"><a href="#cb53-11" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="bu">float</span>(data[<span class="dv">1</span>])</span>
+<span id="cb53-12"><a href="#cb53-12" aria-hidden="true" tabindex="-1"></a>    z <span class="op">=</span> <span class="bu">float</span>(data[<span class="dv">2</span>])</span>
+<span id="cb53-13"><a href="#cb53-13" aria-hidden="true" tabindex="-1"></a>    avg <span class="op">=</span> (x <span class="op">+</span> y <span class="op">+</span> z) <span class="op">/</span> <span class="fl">3.0</span></span>
+<span id="cb53-14"><a href="#cb53-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'Average of '</span>, x, <span class="st">' '</span>, y, <span class="st">' '</span>, z, <span class="st">' is: '</span>, avg, sep<span class="op">=</span><span class="st">''</span>)</span>
+<span id="cb53-15"><a href="#cb53-15" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> in_file.readline()</span></code></pre></div></li>
 </ul>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1501,55 +1667,64 @@ Exercise 4.33
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Type up the above in <code>my_file_data2.py</code>. You already have saved the file data2.txt in the same folder.</p>
-</div>
-</div>
-<p>We’ll point out a few things: <img src="../../../media/units/unit1/module1.4/avg-code.png" class="img-fluid"></p>
 <ul>
-<li><p>We have two print’s in there to see what we get as a result of strip() and split():</p>
-<div class="sourceCode" id="cb53"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>line <span class="op">=</span> line.strip()</span>
-<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'['</span>, line, <span class="st">']'</span>, sep<span class="op">=</span><span class="st">''</span>)</span>
-<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> line.split()</span>
-<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(data)</span></code></pre></div></li>
-<li><p>Recall: the sep=’’ (empty separation) parameter tells print() not to add its own whitespace between different arguments.</p></li>
+<li><strong>Type up the above in <code>my_file_data2.py</code>.</strong>
+<ul>
+<li>You should have already downloaded the file <a href="../../../media/units/unit1/module1.4/data2.txt">data2.txt</a> in the same folder.</li>
+</ul></li>
+<li><strong>Submit your program <code>my_file_data2.py</code>.</strong></li>
+</ul>
+</div>
+</div>
+<p><strong>We’ll point out a few things as shown below:</strong> <img src="../../../media/units/unit1/module1.4/avg-code.png" class="img-fluid"></p>
+<ul>
+<li><p>We have two print’s in there to see what we get as a result of <code>strip()</code> and <code>split()</code>:</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>line <span class="op">=</span> line.strip()</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'['</span>, line, <span class="st">']'</span>, sep<span class="op">=</span><span class="st">''</span>)</span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> line.split()</span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(data)</span></code></pre></div></li>
+<li><p>Recall: the <code>sep=''</code> (empty separation) parameter tells <code>print()</code> not to add its own whitespace between different arguments.</p></li>
 <li><p>Notice also that we have deliberately added in our printing,a pair of brackets:</p>
-<div class="sourceCode" id="cb54"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'['</span>, line, <span class="st">']'</span>, sep<span class="op">=</span><span class="st">''</span>)</span></code></pre></div>
-<p>This is a common programming technique when you want to identify whitespace: put something around it that is actually visible.</p></li>
-<li><p>You also noticed that split() produces a list, and that each string in the list has already had whitespace removed on either side.</p></li>
+<div class="sourceCode" id="cb55"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'['</span>, line, <span class="st">']'</span>, sep<span class="op">=</span><span class="st">''</span>)</span></code></pre></div>
+<ul>
+<li>This is a common programming technique when you want to identify whitespace: put something around it that is actually visible.</li>
+</ul></li>
+<li><p>You also noticed that <code>split()</code> produces a <code>list</code>, and that each string in the list has already had whitespace removed on either side.</p></li>
 </ul>
 </section>
 <section id="while-loops-when-files-are-large" class="level2">
 <h2 class="anchored" data-anchor-id="while-loops-when-files-are-large">4.8 While-loops when files are large</h2>
-<p>Let’s return to a problem we’ve seen before: identifying the longest sentence in a text file.</p>
-<p>Take a moment to <a href="../module3/module3.html#longest"> review that section</a></p>
-<p>Observe:</p>
+<p><strong>Let’s return to a problem we’ve seen before i.e., identifying the longest sentence in a text file.</strong></p>
+<p><strong>Take a moment to <a href="https://gwu-csci1012.github.io/units/unit1/modules/module3.html#a-text-application"> review that section</a></strong></p>
+<!-- http://localhost:5578/units/unit1/module3/module3.html#finding-the-longest-sentence -->
+<p><strong>Let’s understand the following from the review:</strong></p>
 <ul>
 <li><p>To find the longest sentence, we read the whole file into one giant list of sentences.</p></li>
 <li><p>Then, we went through the list, recording the longest sentence.</p></li>
 <li><p>For a really large text file, the list could be too long to fit into memory.</p></li>
 <li><p>Let’s use a different version that reads sentence-by-sentence:</p>
-<div class="sourceCode" id="cb55"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wordtool <span class="im">as</span> wt</span>
-<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_longest_sentence(filename):</span>
-<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Initiate the reading of the file</span></span>
-<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>  sentences <span class="op">=</span> wt.open_file_bysentence(filename)</span>
-<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a>  maxL <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Get first sentence</span></span>
-<span id="cb55-9"><a href="#cb55-9" aria-hidden="true" tabindex="-1"></a>  s <span class="op">=</span> wt.next_sentence()</span>
-<span id="cb55-10"><a href="#cb55-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> s <span class="op">!=</span> <span class="va">None</span>:</span>
-<span id="cb55-11"><a href="#cb55-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(s) <span class="op">&gt;</span> maxL:       <span class="co"># Possibly update maxS</span></span>
-<span id="cb55-12"><a href="#cb55-12" aria-hidden="true" tabindex="-1"></a>      maxL <span class="op">=</span> <span class="bu">len</span>(s)</span>
-<span id="cb55-13"><a href="#cb55-13" aria-hidden="true" tabindex="-1"></a>      maxS <span class="op">=</span> s</span>
-<span id="cb55-14"><a href="#cb55-14" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> wt.next_sentence()  <span class="co"># next one</span></span>
-<span id="cb55-15"><a href="#cb55-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb55-16"><a href="#cb55-16" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> maxS</span>
-<span id="cb55-17"><a href="#cb55-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb55-18"><a href="#cb55-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb55-19"><a href="#cb55-19" aria-hidden="true" tabindex="-1"></a>book <span class="op">=</span> <span class="st">'federalist_papers.txt'</span></span>
-<span id="cb55-20"><a href="#cb55-20" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> get_longest_sentence(book)</span>
-<span id="cb55-21"><a href="#cb55-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Longest sentence in'</span>, book, <span class="st">'with'</span>, <span class="bu">len</span>(s), <span class="st">'chars:</span><span class="ch">\n</span><span class="st">'</span>, s)</span></code></pre></div></li>
+<div class="sourceCode" id="cb56"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wordtool <span class="im">as</span> wt</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_longest_sentence(filename):</span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Initiate the reading of the file</span></span>
+<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>  sentences <span class="op">=</span> wt.open_file_bysentence(filename)</span>
+<span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a>  maxL <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-8"><a href="#cb56-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Get first sentence</span></span>
+<span id="cb56-9"><a href="#cb56-9" aria-hidden="true" tabindex="-1"></a>  s <span class="op">=</span> wt.next_sentence()</span>
+<span id="cb56-10"><a href="#cb56-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> s <span class="op">!=</span> <span class="va">None</span>:</span>
+<span id="cb56-11"><a href="#cb56-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(s) <span class="op">&gt;</span> maxL:       <span class="co"># Possibly update maxS</span></span>
+<span id="cb56-12"><a href="#cb56-12" aria-hidden="true" tabindex="-1"></a>      maxL <span class="op">=</span> <span class="bu">len</span>(s)</span>
+<span id="cb56-13"><a href="#cb56-13" aria-hidden="true" tabindex="-1"></a>      maxS <span class="op">=</span> s</span>
+<span id="cb56-14"><a href="#cb56-14" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> wt.next_sentence()  <span class="co"># next one</span></span>
+<span id="cb56-15"><a href="#cb56-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-16"><a href="#cb56-16" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> maxS</span>
+<span id="cb56-17"><a href="#cb56-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-18"><a href="#cb56-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-19"><a href="#cb56-19" aria-hidden="true" tabindex="-1"></a>book <span class="op">=</span> <span class="st">'federalist_papers.txt'</span></span>
+<span id="cb56-20"><a href="#cb56-20" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> get_longest_sentence(book)</span>
+<span id="cb56-21"><a href="#cb56-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Longest sentence in'</span>, book, <span class="st">'with'</span>, <span class="bu">len</span>(s), <span class="st">'chars:</span><span class="ch">\n</span><span class="st">'</span>, s)</span></code></pre></div></li>
 </ul>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1561,51 +1736,64 @@ Exercise 4.34
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In <code>my_text_analysis.py</code>, count the number of sentences that have length greater than 280 characters (more than a tweet) in <a href="../../../media/units/unit1/module1.4/federalist_papers.txt" download=""><strong>federalist_papers.txt</strong></a>. You will need to download <a href="../../../media/useful/wordtool.py" download=""><strong>wordtool.py</strong></a> and <a href="../../../media/useful/wordsWithPOS.txt" download=""><strong>wordsWithPOS.txt</strong></a>.</p>
+<ul>
+<li>You will need to download the following files for this exercise:
+<ol type="1">
+<li><a href="../../../media/units/unit1/module1.4/federalist_papers.txt" download=""><strong>federalist_papers.txt</strong></a></li>
+<li><a href="../../../media/useful/wordtool.py" download=""><strong>wordtool.py</strong></a> and</li>
+<li><a href="../../../media/useful/wordsWithPOS.txt" download=""><strong>wordsWithPOS.txt</strong></a>.</li>
+</ol></li>
+<li><strong>Type up the above in <code>my_text_analysis.py</code>.</strong>
+<ul>
+<li>The program<code>my_text_analysis.py</code>, counts the number of sentences that have length greater than 280 characters (more than a tweet) in <a href="../../../media/units/unit1/module1.4/federalist_papers.txt" download=""><strong>federalist_papers.txt</strong></a>.</li>
+<li>It will print the longest sentence with the number of characters in it.</li>
+</ul></li>
+<li><strong>Submit your program <code>my_text_analysis.py</code>.</strong></li>
+</ul>
 </div>
 </div>
 </section>
 <section id="random-walks-and-art" class="level2">
 <h2 class="anchored" data-anchor-id="random-walks-and-art">4.9 Random walks and art</h2>
-<p>But of course. We’re somehow going to combine while-loops with our recurring themes (algorithmic art, randomness).</p>
-<p>This time, we will use a well-known idea from science called a <em>random walk</em>:</p>
+<p>But of course, we’re somehow going to combine while-loops with our recurring themes (algorithmic art, randomness).</p>
+<p>This time, <strong>we will use a well-known idea from science called a <em>random walk</em>:</strong></p>
 <ul>
 <li><p>Imagine standing at the origin: <img src="../../../media/units/unit1/module1.4/randomwalk.png" class="img-fluid"></p></li>
 <li><p>Then, we choose a random <em>direction</em> from among: North, South, East, West.</p></li>
-<li><p>Once such a direction is randomly chosen: we take a fixed-size step in that direction, and mark the spot: <img src="../../../media/units/unit1/module1.4/randomwalk2.png" class="img-fluid"></p></li>
+<li><p>Once such a direction is randomly chosen and we take a fixed-size step in that direction, and mark the spot: <img src="../../../media/units/unit1/module1.4/randomwalk2.png" class="img-fluid"></p></li>
 <li><p>Here’s what it might look like after 5 steps: <img src="../../../media/units/unit1/module1.4/randomwalk3.png" class="img-fluid"></p></li>
 <li><p>Here’s the program:</p>
-<div class="sourceCode" id="cb56"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
-<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> drawtool <span class="im">import</span> DrawTool</span>
-<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> DrawTool()</span>
-<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>dt.set_XY_range(<span class="op">-</span><span class="dv">5</span>,<span class="dv">5</span>, <span class="op">-</span><span class="dv">5</span>,<span class="dv">5</span>)</span>
-<span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a>dt.set_aspect(<span class="st">'equal'</span>)</span>
-<span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb56-8"><a href="#cb56-8" aria-hidden="true" tabindex="-1"></a>step <span class="op">=</span> <span class="dv">1</span></span>
-<span id="cb56-9"><a href="#cb56-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb56-10"><a href="#cb56-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> do_walk(max_steps):</span>
-<span id="cb56-11"><a href="#cb56-11" aria-hidden="true" tabindex="-1"></a>  x <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb56-12"><a href="#cb56-12" aria-hidden="true" tabindex="-1"></a>  y <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb56-13"><a href="#cb56-13" aria-hidden="true" tabindex="-1"></a>  num_steps <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb56-14"><a href="#cb56-14" aria-hidden="true" tabindex="-1"></a>  dt.draw_point(x, y)</span>
-<span id="cb56-15"><a href="#cb56-15" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> num_steps <span class="op">&lt;</span> max_steps:</span>
-<span id="cb56-16"><a href="#cb56-16" aria-hidden="true" tabindex="-1"></a>    direction <span class="op">=</span> random.choice([<span class="st">'N'</span>,<span class="st">'S'</span>,<span class="st">'W'</span>,<span class="st">'E'</span>])</span>
-<span id="cb56-17"><a href="#cb56-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> direction <span class="op">==</span> <span class="st">'N'</span>:</span>
-<span id="cb56-18"><a href="#cb56-18" aria-hidden="true" tabindex="-1"></a>      y <span class="op">+=</span> step</span>
-<span id="cb56-19"><a href="#cb56-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> direction <span class="op">==</span> <span class="st">'S'</span>:</span>
-<span id="cb56-20"><a href="#cb56-20" aria-hidden="true" tabindex="-1"></a>      y <span class="op">-=</span> step</span>
-<span id="cb56-21"><a href="#cb56-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> direction <span class="op">==</span> <span class="st">'E'</span>:</span>
-<span id="cb56-22"><a href="#cb56-22" aria-hidden="true" tabindex="-1"></a>      x <span class="op">+=</span> step</span>
-<span id="cb56-23"><a href="#cb56-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb56-24"><a href="#cb56-24" aria-hidden="true" tabindex="-1"></a>      x <span class="op">-=</span> step</span>
-<span id="cb56-25"><a href="#cb56-25" aria-hidden="true" tabindex="-1"></a>    dt.draw_point(x, y)</span>
-<span id="cb56-26"><a href="#cb56-26" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(direction, x, y)</span>
-<span id="cb56-27"><a href="#cb56-27" aria-hidden="true" tabindex="-1"></a>    num_steps <span class="op">+=</span> <span class="dv">1</span></span>
-<span id="cb56-28"><a href="#cb56-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb56-29"><a href="#cb56-29" aria-hidden="true" tabindex="-1"></a>do_walk(<span class="dv">5</span>)</span>
-<span id="cb56-30"><a href="#cb56-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb56-31"><a href="#cb56-31" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div></li>
+<div class="sourceCode" id="cb57"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> drawtool <span class="im">import</span> DrawTool</span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> DrawTool()</span>
+<span id="cb57-5"><a href="#cb57-5" aria-hidden="true" tabindex="-1"></a>dt.set_XY_range(<span class="op">-</span><span class="dv">5</span>,<span class="dv">5</span>, <span class="op">-</span><span class="dv">5</span>,<span class="dv">5</span>)</span>
+<span id="cb57-6"><a href="#cb57-6" aria-hidden="true" tabindex="-1"></a>dt.set_aspect(<span class="st">'equal'</span>)</span>
+<span id="cb57-7"><a href="#cb57-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-8"><a href="#cb57-8" aria-hidden="true" tabindex="-1"></a>step <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb57-9"><a href="#cb57-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-10"><a href="#cb57-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> do_walk(max_steps):</span>
+<span id="cb57-11"><a href="#cb57-11" aria-hidden="true" tabindex="-1"></a>  x <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb57-12"><a href="#cb57-12" aria-hidden="true" tabindex="-1"></a>  y <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb57-13"><a href="#cb57-13" aria-hidden="true" tabindex="-1"></a>  num_steps <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb57-14"><a href="#cb57-14" aria-hidden="true" tabindex="-1"></a>  dt.draw_point(x, y)</span>
+<span id="cb57-15"><a href="#cb57-15" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> num_steps <span class="op">&lt;</span> max_steps:</span>
+<span id="cb57-16"><a href="#cb57-16" aria-hidden="true" tabindex="-1"></a>    direction <span class="op">=</span> random.choice([<span class="st">'N'</span>,<span class="st">'S'</span>,<span class="st">'W'</span>,<span class="st">'E'</span>])</span>
+<span id="cb57-17"><a href="#cb57-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> direction <span class="op">==</span> <span class="st">'N'</span>:</span>
+<span id="cb57-18"><a href="#cb57-18" aria-hidden="true" tabindex="-1"></a>      y <span class="op">+=</span> step</span>
+<span id="cb57-19"><a href="#cb57-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> direction <span class="op">==</span> <span class="st">'S'</span>:</span>
+<span id="cb57-20"><a href="#cb57-20" aria-hidden="true" tabindex="-1"></a>      y <span class="op">-=</span> step</span>
+<span id="cb57-21"><a href="#cb57-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> direction <span class="op">==</span> <span class="st">'E'</span>:</span>
+<span id="cb57-22"><a href="#cb57-22" aria-hidden="true" tabindex="-1"></a>      x <span class="op">+=</span> step</span>
+<span id="cb57-23"><a href="#cb57-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb57-24"><a href="#cb57-24" aria-hidden="true" tabindex="-1"></a>      x <span class="op">-=</span> step</span>
+<span id="cb57-25"><a href="#cb57-25" aria-hidden="true" tabindex="-1"></a>    dt.draw_point(x, y)</span>
+<span id="cb57-26"><a href="#cb57-26" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(direction, x, y)</span>
+<span id="cb57-27"><a href="#cb57-27" aria-hidden="true" tabindex="-1"></a>    num_steps <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb57-28"><a href="#cb57-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-29"><a href="#cb57-29" aria-hidden="true" tabindex="-1"></a>do_walk(<span class="dv">5</span>)</span>
+<span id="cb57-30"><a href="#cb57-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-31"><a href="#cb57-31" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div></li>
 </ul>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1617,15 +1805,42 @@ Exercise 4.35
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Type up the above in <code>my_randomwalk.py</code> and try out a larger number of steps. You will also need <a href="../../../media/useful/drawtool.py" download=""><strong>drawtool.py</strong></a>. Call <code>do_walk()</code> twice and change the draw color in between using <code>dt.set_color('r')</code>.</p>
+<ul>
+<li><p>You will need to download <a href="../../../media/useful/drawtool.py" download=""><strong>drawtool.py</strong></a>. for this exercise.</p></li>
+<li><p><strong>Type up the above program in <code>my_randomwalk.py</code>.</strong></p></li>
+<li><p><strong>Submit your program <code>my_randomwalk.py</code>.</strong></p></li>
+</ul>
+<p><strong>Recommended but not required for submission in this exercise:</strong></p>
+<ul>
+<li>Try out a larger number of steps i.e., change the argument in function <code>do_walk(5)</code> to <code>do_walk(10)</code> and <code>do_walk(100)</code>.</li>
+<li>Change the draw color using <code>dt.set_color('r')</code>.</li>
+<li>Call <code>do_walk()</code> again following <code>dt.set_color('r')</code>.</li>
+</ul>
 </div>
 </div>
-<p>Instead of running the random walk for a fixed number of steps, we’ll now run the random walk until it “hits” one of the sides and stop.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>The submission requires only the program <code>my_randomwalk.py</code> that when executed will generate the expected graphs as described in the problem.</li>
+<li><strong>You are not required submit any graphs generated by the program.</strong><br>
+</li>
+</ul>
+</div>
+</div>
+<p><strong>Instead of running the random walk for a fixed number of steps, we’ll now run the random walk until it “hits” one of the sides and stop.</strong></p>
 <ul>
 <li><p>To do this, we’ll use the approach of:</p>
-<div class="sourceCode" id="cb57"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">True</span>:</span>
-<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># get a random direction and move</span></span>
-<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># if we hit one of the sides, then break</span></span></code></pre></div></li>
+<div class="sourceCode" id="cb58"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># get a random direction and move</span></span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># if we hit one of the sides, then break</span></span></code></pre></div></li>
 <li><p>We’ll also enlarge the box to be bigger and make the step size smaller (so as to fill the space with dots).</p></li>
 </ul>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
@@ -1638,10 +1853,33 @@ Exercise 4.36
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Try out <a href="../../../media/units/unit1/module1.4/random_walk_demo2.py" download=""><strong>random_walk_demo2.py</strong></a> several times. Then, change the code so that the function <code>do_walk()</code> takes in the starting point as a parameter. Call <code>do_walk()</code> several times with different starting points.</p>
+<ul>
+<li><p>Download and try out <a href="../../../media/units/unit1/module1.4/random_walk_demo2.py" download=""><strong>random_walk_demo2.py</strong></a> several times.</p></li>
+<li><p>Modify the code so that the function <code>do_walk()</code> takes in the starting point <code>(X,Y)</code> as parameters i.e., <code>do_walk(X,Y)</code></p></li>
+<li><p>Call <code>do_walk(X,Y)</code> three times with different starting points.</p></li>
+<li><p><strong>Submit your program <code>random_walk_demo2.py</code>.</strong> with the above modifications.</p></li>
+</ul>
 </div>
 </div>
-<p>We’re now finally ready for the art project:</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>The submission requires only the program <code>random_walk_demo2.py</code> with modifications outlined herein.</li>
+<li>When executed the code will generate the expected graphs as described in the problem.</li>
+<li><strong>You are not required submit any graphs generated by the program.</strong><br>
+</li>
+</ul>
+</div>
+</div>
+<p><strong>We’re now finally ready for the art project:</strong></p>
 <ul>
 <li>We’ll start different random walks at randomly selected starting points, and then draw each in a random color.</li>
 </ul>
@@ -1655,10 +1893,20 @@ Exercise 4.37
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Try out <a href="../../../media/units/unit1/module1.4/random_walk_art.py"><strong>random_walk_art.py</strong></a> several times. Try to modify it to improve the (artistic) outcome. Describe what you did in your module pdf and submit a screenshot.</p>
+<ul>
+<li><p><strong>This exercise is to help you develop an understanding of random walks through an art form.</strong></p>
+<ul>
+<li><p>Download and try out <a href="../../../media/units/unit1/module1.4/random_walk_art.py"><strong>random_walk_art.py</strong></a> several times.</p></li>
+<li><p>Try to modify it to improve the (artistic) outcome.</p></li>
+<li><p>Understand how the changes you made affected the art you created and enjoy you results.</p></li>
+<li><p>Print out your art form and frame it when you complete this module!</p></li>
+</ul></li>
+<li><p><strong>There is nothing to submit in this exercise.</strong></p></li>
+</ul>
+<!-- Describe what you did in your module pdf and submit a screenshot. -->
 </div>
 </div>
-<p>About random walks (in science):</p>
+<p><strong>About random walks (in science):</strong></p>
 <ul>
 <li>Although a random walk might seem like a silly exercise, the idea has had significant scientific impact.</li>
 <li>For example, a version of random walk is the basis for modeling <em>diffusion</em> and <em>osmosis</em>.</li>
@@ -1682,10 +1930,10 @@ Exercise 4.38
 </div>
 <div class="callout-body-container callout-body">
 <p>The following code wants to print the numbers from 10 to 1 in descending order:</p>
-<div class="sourceCode" id="cb58"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> k <span class="op">&gt;</span> <span class="dv">0</span>:</span>
-<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(k)</span>
-<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a>  k <span class="op">=</span> k <span class="op">-</span> <span class="dv">1</span></span></code></pre></div>
+<div class="sourceCode" id="cb59"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> k <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(k)</span>
+<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a>  k <span class="op">=</span> k <span class="op">-</span> <span class="dv">1</span></span></code></pre></div>
 <p>Identify and fix the error in <code>my_error1.py</code>.</p>
 </div>
 </div>
@@ -1700,12 +1948,12 @@ Exercise 4.39
 </div>
 <div class="callout-body-container callout-body">
 <p>The following code wants to print the numbers from 1 through 10, along with each number’s “double” (twice the number).</p>
-<div class="sourceCode" id="cb59"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> <span class="dv">1</span></span>
-<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">2</span></span>
-<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> (m <span class="op">&lt;=</span> <span class="dv">10</span>) <span class="kw">or</span> (n <span class="op">&lt;=</span> <span class="dv">20</span>):</span>
-<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(m, <span class="dv">2</span><span class="op">*</span>n)</span>
-<span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a>  m <span class="op">=</span> m <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb59-6"><a href="#cb59-6" aria-hidden="true" tabindex="-1"></a>  n <span class="op">=</span> n <span class="op">+</span> <span class="dv">1</span></span></code></pre></div>
+<div class="sourceCode" id="cb60"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> (m <span class="op">&lt;=</span> <span class="dv">10</span>) <span class="kw">or</span> (n <span class="op">&lt;=</span> <span class="dv">20</span>):</span>
+<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(m, <span class="dv">2</span><span class="op">*</span>n)</span>
+<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a>  m <span class="op">=</span> m <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb60-6"><a href="#cb60-6" aria-hidden="true" tabindex="-1"></a>  n <span class="op">=</span> n <span class="op">+</span> <span class="dv">1</span></span></code></pre></div>
 <p>Identify and fix the error in <code>my_error2.py</code>.</p>
 </div>
 </div>
@@ -1720,12 +1968,12 @@ Exercise 4.40
 </div>
 <div class="callout-body-container callout-body">
 <p>The following code wants to print the odd numbers from 1 through 9.</p>
-<div class="sourceCode" id="cb60"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">1</span></span>
-<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> x <span class="op">&lt;</span> <span class="dv">10</span>:</span>
-<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> x <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">1</span>:     <span class="co"># Test whether odd</span></span>
-<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x)</span>
-<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>:</span>
-<span id="cb60-6"><a href="#cb60-6" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> x <span class="op">+</span> <span class="dv">1</span></span></code></pre></div>
+<div class="sourceCode" id="cb61"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> x <span class="op">&lt;</span> <span class="dv">10</span>:</span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> x <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">1</span>:     <span class="co"># Test whether odd</span></span>
+<span id="cb61-4"><a href="#cb61-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x)</span>
+<span id="cb61-5"><a href="#cb61-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>:</span>
+<span id="cb61-6"><a href="#cb61-6" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> x <span class="op">+</span> <span class="dv">1</span></span></code></pre></div>
 <p>Identify and fix the error in <code>my_error3.py</code>.</p>
 </div>
 </div>
