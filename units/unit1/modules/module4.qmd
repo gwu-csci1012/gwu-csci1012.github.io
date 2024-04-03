@@ -671,7 +671,7 @@ estimate = total / num_trials
 print('estimate', estimate)
 ```
 
-:::{.callout-caution appearance="simple"}
+:::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.23
 
 - **Type up the above in `my_coin_flips.py` to get an estimate.**
