@@ -131,7 +131,7 @@ title: "Schedule"
             <td><code><b>while</b></code> loops, I/O</td>
             <td>04/03/2024</td>
             <td>04/05/2024</td>
-            <td>Unit 1 » Module 4 & Module 5 (Due <b>April 08, 2024</b> by <b>11:59 PM</b>)</td>
+            <td>Unit 1 » Module 4 & Module 5 (Due <b>April 10, 2024</b> by <b>11:59 PM</b>)</td>
         </tr>
         <tr>
             <td>Week 12 [04/08/2024]</td>
