@@ -26,10 +26,15 @@ format:
 
 ## Objectives
 
-The main goal of this module is to step back and review core concepts in programming: loops, conditionals, lists, functions
+**The main goal of this module is to step back and review the following core concepts in programming:**
+
+1. Loops 
+2. Conditionals
+3. Lists 
+4. Functions
 
 ## 5.0 Variables
-Consider:
+**Consider the following program:**
 ```python
 a = 3                
 x = 3.14
@@ -42,19 +47,19 @@ odds[2] = 9
 ```
 
 
-Variables have four aspects to them:
+**The variables in the above program have the following <em>four</em> aspects to them:**
 
-- A <em>name</em>, like `x` or `this_is_fun` above.
+1. A <em>name</em>, like `x` or `this_is_fun` above.
     <br>&nbsp;&nbsp;&nbsp;&nbsp;
-	&rArr; Variable names don't change during execution, they are given by the programmer
-- A current <em>value</em>. 
+	&rArr; Variable names don't change during execution, they are given by the programmer.
+2. A current <em>value</em>. 
     <br>&nbsp;&nbsp;&nbsp;&nbsp;
 	&rArr; At any moment during execution, a variable has a value.
     <br> This value can change (often does) during execution.
-- A <em>scope</em>. More about this in Unit-2.
-- A <em>type</em>, such as integer, float, string, Boolean, list (and there are a few more, an advanced topic).
+3. A <em>scope</em>. More about this in Unit-2.
+4. A <em>type</em>, such as `int` (integer), `float` (floating point number), `str` (string), `bool` (Boolean), `list` (and there are a few more to be covered in an advanced topic).
 
-Let's examine what happens when each line in the above program executes:
+**Let's examine what happens when each line in the above program executes:**
 
 - When the first line executes:
 ![](../../../media/units/unit1/module1.5/variables.png)
@@ -77,7 +82,7 @@ Let's examine what happens when each line in the above program executes:
     - Underneath the hood, in fact, string and list variables are a bit different.
 - So, for the sake of completeness, we'll just point out this more detailed version:
 ![](../../../media/units/unit1/module1.5/variables8.png)
-    Here:
+- In the above program:
 
     - String and list variables are themselves small boxes.
     - These variables contain a <em>reference</em> (conceptualized by the black arrow above) to the actual data.
@@ -86,7 +91,7 @@ Let's examine what happens when each line in the above program executes:
 
 
 ## 5.1 How to read and mentally execute programs
-Let's start with a simple example:
+**Let's start with a simple example:**
 ```python
 x = 2
 y = 3
@@ -98,11 +103,11 @@ for i in range(6):
 print('x =', x)
 ```
 
-Let's look at this in steps:
+**Let's look at this in steps:**
 
 - First, start by noticing the chunks of code:
 ![](../../../media/units/unit1/module1.5/execution.png)
-- Next, walk through the execution of the first chunk, and notice that the value of x is what's used later:
+- Second, walk through the execution of the first chunk, and notice that the value of x is what's used later:
 ![](../../../media/units/unit1/module1.5/execution2.png)
 
 :::{.callout-note}
@@ -136,7 +141,7 @@ Let's look at this in steps:
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 5.1
 
-Examine and mentally execute the following:
+- **Examine and mentally execute the following program:**
 ```python
 i = 1
 j = 4
@@ -148,10 +153,14 @@ for k in range(i, j+1):
 
 print('total =', total)
 ```
-Then confirm by writing in `my_execution_practice.py`.
+- **Then, type up the above program in `my_execution_practice.py`.**
+    - Execute your program `my_execution_practice.py` and check if the result matches what you expected.
+    - Try doing this a few times until you are certain. 
+
+- **Submit your program `my_execution_practice.py`.**
 :::
 
-Next, let's look at reading a complex conditional:
+**Now, let's look at reading a program with a conditional that is more complex:**
 ```python
 x = 7
 y = 6
@@ -173,38 +182,38 @@ else:
     print('ok, that is enough')
 ```
 
-We'll do this in steps, working from the "outside going in":
+**We'll do this in steps, working from the "outside going in":**
 
 - We'll start by noticing some variables and values being assigned, followed by a large nested conditional:
 ![](../../../media/units/unit1/module1.5/conditional.png)
 
 :::{.callout-note}
-- The conditional has both an elif and an else-part.
-- The conditions depend on the variables above.
+- The conditional has both an `elif and an `else` code block.
+- The conditions depend on the variables that precede it.
 :::
 
 - Next, we identify which part of the outer conditional executes:
 ![](../../../media/units/unit1/module1.5/conditional2.png)
-- Then, working inwards, we examine and see that the elif's code block is itself a big conditional:
+- Then, working inwards, we examine and see that the `elif` code block is itself a big conditional:
 ![](../../../media/units/unit1/module1.5/conditional3.png)
-- The combined Boolean expression 
+    - The combined Boolean expression 
     
-    ```python
-    if (x > 0) and (x+y > z):
-    ```
-    does turn out to be true, and so we enter the if-block:
+        ```python
+        if (x > 0) and (x+y > z):
+        ```
+    does turn out to be `True`, and so we enter the `if`-block that follows:
 ![](../../../media/units/unit1/module1.5/conditional4.png)
-- The if-condition fails:
+    - The `if`-condition below fails:
     
-    ```python
-    if c == 'a':
-    ```
-    and so execution proceeds into the else-block:
+        ```python
+        if c == 'a':
+        ```
+    and so execution proceeds into the `else`-block:
 ![](../../../media/units/unit1/module1.5/conditional5.png)
  
-:::{.callout-note}
-There's no else-part (which is allowed).
-:::
+<!-- :::{.callout-note}
+The else-part (which is allowed).
+::: -->
 
 - Clearly, in this case, the condition succeeds and we get to the print:
 ![](../../../media/units/unit1/module1.5/conditional6.png)
@@ -220,45 +229,87 @@ There's no else-part (which is allowed).
 This example illustrates how critical it is to make sure the <em>indentation</em> is correct. 
 :::
   
-- For example, consider these three variations:
+- **For example, consider these three variations:**
 
-    - Indent-case #1:
+    - **Indent-case #1:**
     
-    ```python
-    if c == 'a':
-        print('yes, a')
-    else:
-        if c == 'b':
-            print('no, b')
+        ```python
+        if c == 'a':
+            print('yes, a')
+        else:
+            if c == 'b':
+                print('no, b')
+                print('hello')
+        ```
+    - **Indent case #2:**
+    
+        ```python
+        if c == 'a':
+            print('yes, a')
+        else:
+            if c == 'b':
+                print('no, b')
             print('hello')
-    ```
-    - Indent case #2:
+        ```
+    - **Indent case #3:**
     
-    ```python
-    if c == 'a':
-        print('yes, a')
-    else:
-        if c == 'b':
-            print('no, b')
-        print('hello')
-    ```
-    - Indent case #3:
-    
-    ```python
+        ```python
         if c == 'a':
             print('yes, a')
         else:
             if c == 'b':
                 print('no, b')
         print('hello')
-    ```
-      Can you see why they're all different?
+        ```
+    Can you see why they're all different?
 
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 5.2
 
-Type up the above in `my_execution_practice2.py`. Then, try different assignments to c. That is, try c = 'a', then c = 'b'. Show and then explain in your module pdf why the above are different. (Submit your program with c = 'a').
+- **Type up the following program in `my_execution_practice2.py`.** 
+
+```python
+x = 7
+y = 6
+z = 5
+c = 'b'
+
+if x < 5:
+    x = x + 10
+elif x > y:
+    if (x > 0) and (x+y > z):
+        if c == 'a':
+            print('yes, a')
+        else:
+            if c == 'b':
+                print('no, b')
+    else:
+        print('boo')
+else:
+    print('ok, that is enough')
+```
+- Execute your program `my_execution_practice2.py` and examine the output as shown below:
+    
+    ```python
+    no, b
+    ``` 
+
+- Modify your program by replacing the inner-most `if-else` code block with <em>Indent case #3</em> described above.
+
+- Exceute your modified program and observe the output that is now changed to the following:
+    
+    ```python
+    no, b
+    hello
+    ``` 
+
+- **Submit your modified program `my_execution_practice2.py`.**
+
+- **Answering the following part of the exercise is recommended but not required for submission:** 
+    - Try different assignments to `c` in the inner-most `if-else` code block. 
+    - That is, try `c = 'a'`, then `c = 'b'`. 
+    - Explain to yourself why these may result in different outputs.
 :::
 
 Consider this variation (we've added a few print's):
@@ -294,13 +345,22 @@ print('seven')
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 5.3
 
-Which of the above added print's execute? See if you can identify them just by reading. Then confirm in `my_execution_practice3.py`.
+- **Mentally execute the above program and indentify the `print` statements that get executed.**
+
+- **Type up the above program in `my_execution_practice3.py`.** 
+
+- **Execute your program `my_execution_practice3.py` and check if the results match what you expected.**
+    - Execute the program until all outputs are understood.
+
+- **Submit your program `my_execution_practice3.py`.**  
+
+<!-- Which of the above added print's execute? See if you can identify them just by reading. Then confirm in `my_execution_practice3.py`. -->
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 5.4
 
-Examine and mentally execute the following:
+- **Examine and mentally execute the following program:**
 ```python
 A = [-1, 2, 3, -5, 6, 7]
 
@@ -316,13 +376,18 @@ for i in range(len(A)):
 
 print(total)
 ```
-Then confirm by writing in `my_execution_practice4.py`.
+- **Type up the above program in `my_execution_practice4.py`.** 
+
+- **Execute your program `my_execution_practice4.py` and check if the results match what you expected.**
+    - Execute the program until all outputs are understood.
+
+- **Submit your program `my_execution_practice4.py`.**  
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 5.6
 
-Consider the following program:
+**Consider the following program:**
 ```python
 def printword(n):
     if n == 1:
@@ -342,11 +407,13 @@ printword(3)
 printword(4)
 printword(5)
 ```
-In `my_conditional.py`. rewrite the function so that it does the same thing but without using any elif's.
+- **In `my_conditional.py`, rewrite the function `printword(n)` so that it does the same thing but without using any `elif` code blocks.**
+
+- **Submit your program, `my_conditional.py`.**
 :::
 
 ## 5.2 Functions without parameters
-Consider this example:
+**Consider the following example:**
 ```python
 def print_two_xs():
     print('xx')
@@ -357,21 +424,21 @@ print_two_xs()
 print('end')
 ```
 
-Let's look at the execution step by step:
+**Let's look at the execution step by step:**
 
 - First, Python reads through and stores the function <em>definition</em>:
 ![](../../../media/units/unit1/module1.5/function.png)
 - Then execution starts with the first print, followed by the first <em>function call</em> (or <em>function invocation</em>, if you like big words).
-- At this point, execution enters the function:  
+    - At this point, execution enters the function:  
 ![](../../../media/units/unit1/module1.5/function2.png)
-- After the function executes, execution proceeds to <em>just after the function call:</em>
+    - After the function executes, execution proceeds to <em>just after the function call:</em>
 ![](../../../media/units/unit1/module1.5/function3.png)
-- In this particular case, the very next line is a call to the same function:
+    - In this particular case, the very next line is a call to the same function:
 ![](../../../media/units/unit1/module1.5/function4.png)
-- After which:
+    - After which:
 ![](../../../media/units/unit1/module1.5/function5.png)
 
-Consider this program:
+**Consider the following program:**
 ```python
 def print_two_xs():
     print('xx')
@@ -400,11 +467,19 @@ print('end')
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 5.8
 
-Examine and mentally execute the above program. Then confirm by writing it up in `my_execution_practice5.py`.
+- **Examine and mentally execute the above program.** 
+
+- **Type up the above program in `my_execution_practice5.py`.** 
+
+- **Execute your program `my_execution_practice5.py` and check if the results match what you expected.**
+    - Execute the program until all outputs are understood.
+
+- **Submit your program `my_execution_practice5.py`.**  
+
 :::
 
 ## 5.3 Functions with parameters
-Here's an example:
+**Here's an example of a function with parameters:**
 ```python
 def print_stuff(n):
     print('n =', n)
@@ -419,19 +494,24 @@ print_stuff(m)
 print(m)
 ```
 
-Let's point out:
+**Let's point out what we can understand in the above program:**
 
-- The parameter variable n gets its value from the argument variable:
+- The parameter variable `n` gets its value from the argument variable:
 ![](../../../media/units/unit1/module1.5/parameter.png)
-- Recall: // is the integer-division operator.
+- Recall: `//` is the integer-division operator.
 - Later in the function, the parameter variable gets its value changed:
 ![](../../../media/units/unit1/module1.5/parameter2.png)
-- It's important to realize that we could have named the argument variable n as well:
+- It's important to realize that we could have named the argument variable `n` as well:
 ![](../../../media/units/unit1/module1.5/parameter3.png)
 
-Any code <em>inside</em> the function that uses or modifies n affects only the parameter variable n (the n inside the function and not the n outside the function).
+**Any code <em>inside</em> the function that uses or modifies `n` affects only the parameter variable `n` (the `n` inside the function and not the `n` outside the function).**
 
-Let's emphasize one more thing by looking at:
+
+
+:::{.callout-caution appearance="simple" icon=false}
+### Exercise 5.10
+
+**Consider the following program:**
 ```python
 def print_stuff(n):
     print('n =', n)
@@ -448,10 +528,15 @@ print(m)
 print('n =', n)       # Trying to access n
 ```
 
-:::{.callout-caution appearance="simple" icon=false}
-### Exercise 5.10
+- **Type up the above program in `my_variable_access.py`.** 
 
-Type up the above in `my_variable_access.py`. Also, in your module pdf, explain why half of the original n is calculated as n // 4.
+- **Execute your program `my_variable_access.py`.**
+    - Identify the errors and understand why you were getting them.  
+    - Make one modification to the program to eliminate the errors. 
+
+- **Submit your program `my_variable_access.py` without any errors.**
+
+<!-- Also, in your module pdf, explain why half of the original n is calculated as n // 4. -->
 :::
 
 :::{.callout-note}
@@ -460,7 +545,7 @@ Type up the above in `my_variable_access.py`. Also, in your module pdf, explain 
 :::
 
 ## 5.4 Functions that return values
-Let's look at an example:
+**Let's look at an example:**
 ```python
 def incr(n):
     m = n + 1
@@ -472,56 +557,51 @@ k = incr( incr( incr(j) ) )
 print(k)
 ```
 
-Consider the moment the first call to the incr() function occurs:
+**Consider the moment the first call to the `incr()` function occurs:**
 ```python
 j = incr(i)
 ```
 
-- Here, the value in argument variable i is copied into parameter variable n:
+- Here, the value in argument variable `i` is copied into parameter variable `n`:
 ![](../../../media/units/unit1/module1.5/return.png)
-- Then, the value m becomes 6, which is returned when the `return` statement executes:
+- Then, the value `m` becomes `6`, which is returned when the `return` statement executes:
 ![](../../../media/units/unit1/module1.5/return2.png)
 - Moments later (in a tiny fraction of a second), you can think of the function call itself as replaced by the return value:
 ![](../../../media/units/unit1/module1.5/return3.png)
 - After the return occurs, remember that the parameter and other function-defined variables disappear.
     <br> (Fresh versions will be created whenever another function call occurs.)
-- Now let's examine
+- Now let's examine the following code block:
     
     ```python
     k = incr( incr( incr(j) ) )
     ```
-    At this moment j has the value 6.
-- The innermost call happens first:
+    At this moment `j` has the value `6`.
+- The inner-most call happens first:
     
     ```python
-    k = incr( incr( incr(j) ) )
+    k = incr( incr( incr(6) ) )
     ```
-    which goes to incr(), which returns 7, which results in 
-    
-    ```python
-    k = incr( incr( 7 ) )
-    ```
-- Then, for the next call to incr(), the value 7 is copied into the parameter variable, resulting in:
+    which goes to `incr()`, which returns `7`, which results in 
     
     ```python
     k = incr( incr( 7 ) )
     ```
-    which goes to incr(), which returns 8, which results in 
+- Then, for the next call to `incr()`, the value `7` is copied into the parameter variable
+<!--, resulting in:
+         ```python
+    k = incr( incr( 7 ) )
+    ``` -->
+ which returns `8` as shown below:
     
     ```python
     k = incr( 8 )
     ```
-- And finally, 
-    
-    ```python
-    k = incr( 8 )
-    ```
-    results in 
+- And finally `k = incr( 8 )` results in 
     
     ```python
     k = 9
     ```
-- Lastly, remember that a `return` statement can have expressions. Which means we can shorten incr() to:
+- Lastly, remember that a `return` statement can have expressions. Which means we can shorten `incr()` to:
       
     ```python
     def incr(n):
@@ -547,7 +627,7 @@ j = incr(i)
         return k
     ```
 
-Now consider a function with multiple returns:
+**Now consider a function with multiple returns:**
 ```python
 def strange(n):
     print('start-of-strange')
@@ -567,17 +647,17 @@ print(strange(0))
 print(strange(3))
 ```
 
-In the first call to the function strange(), the parameter n will have the value -3.
+**In the first call to the function `strange()`, the parameter `n` will have the value `-3`.**
 
 - In this case, we see 'start-of-strange' printed.
-- The if-condition is true, which means the first `return` executes:
+- The if-condition is `True`, which means the first `return` executes:
     
     ```python
     def strange(n):
         print('start-of-strange')
         if n < 0:
             return 0  
-        <font color="#888888">elif n == 0:
+        elif n == 0:
             return 1
         else:
             s = 1
@@ -585,13 +665,21 @@ In the first call to the function strange(), the parameter n will have the value
                 s = s + k
             return s
         print('end-of-strange')
+
+    print(strange(-3))    
     ```
 - Execution leaves the function immediately, which means nothing else in the function executes.
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 5.11
 
-For each of the three calls to the function strange(), can you tell whether 'end-of-strange' gets printed? Then confirm by typing it up in `my_strange_example.py`.
+- **Type up the above program in `my_strange_example.py`.** 
+
+- **Execute your program `my_strange_example.py`.**
+    - For the remaining two calls to the function `strange()` with arguments `0` and `3`, can you tell whether 'end-of-strange' gets printed or not? 
+
+- **Submit your program `my_variable_access.py`.**
+
 :::
 
 ## 5.5 Lists are different
@@ -618,27 +706,29 @@ print(B)
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 5.12
 
-Type up the above in `my_list_example.py`.
+- **Type up the above program in `my_list_example.py`.**
+
+- **Submit your program `my_list_example.py`.**
 :::
 
 
 Observe:
 
-- The add_one() function has no effect on the variable p, since the value in p gets copied into n.
-- The parameter variable n does get 1 added (as the print in add_one()) confirms.
-- One the other hand, print(B) shows that the elements of B have 1 added to each of them.
+- The `add_one()` function has no effect on the variable `p`, since the value in `p` gets copied into `n`.
+- The parameter variable `n` does get `1` added (as the print in `add_one()` confirms.
+- One the other hand, `print(B)` shows that the elements of `B` have `1` added to each of them.
 - Why is this? Why are lists different as parameters?
     - List variables are actually <em>references</em>, sometimes called <em>pointers</em>.
-    - Think of a reference or pointer as a special token that provides access to the list elements.
-    - Whoever has the token can access the list elements.
-    - When the variable B's contents are copied into parameter variable A, then the variable A has the special token.
-    - Which means variable A access the list elements and can change those.
+    - Think of a reference or pointer as a special token that provides access to the `list` elements.
+    - Whoever has the token can access the `list` elements.
+    - When the contents of variable `B` are copied into parameter variable `A`, then the variable `A` has the special token.
+    - Which means variable `A` access the list elements and can change those.
 - Why was the Python language designed this way?
     - It turns out that copying over big lists into parameter variables can greatly slow down execution.
-    - Thus, lists (and other such complex objects) don't have their elements copied.
+    - Thus, `lists` (and other such complex objects) don't have their elements copied.
     - Instead, it's only the reference (which is really a single number, under the hood) gets copied.
 
-For practice, let's look at a list example with Boolean values (True, False):
+**For practice, let's look at a list example with Boolean values (`True`, `False`):**
 ```python
 def list_or(A):
     x = True
@@ -653,10 +743,13 @@ print(list_or(B))
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 5.13
 
-Trace through each iteration of the loop in the function list_or(), showing x, k, and each A[k]. Then confirm in `my_list_example2.py`.
+- **Type up the above program in `my_list_example2.py`.**
+- **Submit your modified program `my_list_example2.py`.**
+- **Answering the following part of the exercise is recommended but not required for submission:** 
+    - Trace through each iteration of the loop in the function `list_or()`, showing `x`, `k`, and each `A[k]`.
 :::
 
-And another example for practice:
+**And another example for practice:**
 ```python
 def within1(x, y):
     # Write your code here to return True or False
@@ -681,14 +774,22 @@ print(first_diff(X,Z))    # Should print 2
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 5.14
 
-The function first_diff() is intended to take two lists, compare elements in the same positions, and identify the first position where the two lists differ by more than 1. Ifno such difference exists, the function should return -1. In `my_list_example3.py`, complete the code in the within1() function so that it returns True only when the difference between x and y is 1 or less. Thus, True when x=1, y=2, or when x=4, y=3, or when x=5, y=5. After that trace through the iteration in the while-loop.
+- **In the above program, the function `first_diff()` is intended to take two `lists`** 
+    - Compare elements in the same positions, and 
+    - Identify the first position where the two lists differ by more than `1`. 
+    - If no such difference exists, the function should return `-1`. 
+
+In `my_list_example3.py`, complete the code in the `within1()` function so that it returns `True` only when the difference between `x` and `y` is `1` or less. Thus, True when `x=1`, `y=2`, or when `x=4`, `y=3`, or when `x=5`, `y=5`. 
+
+
+After that trace through the iteration in the while-loop.
 :::
 
 ## 5.6 Why are functions useful?
-Functions are very useful for four different reasons:
+**Functions are very useful for four different reasons:**
 
-1. Code written in a function can be re-used.
-2. For example, compare 
+1. Code written in a function can be <i>re-used</i>.
+    - For example, compare the following programs:
     
     ```python
     X = [1, 3, 5, 7]
@@ -719,26 +820,26 @@ with
     Y = [2, 4, 6, 8, 10]
     print(mean(Y))
     ```
-3. The second big reason is <i>composability</i>, as this example shows:
+2. The second big reason is <i>composability</i>, as the following example shows:
     
     ```python
     z = incr( diff(x, y) )
     ```
-    (You can imagine what the functions incr() and diff() do.)
-4. Another example showing compactness with functions:
+    (You can imagine what the functions `incr()` and `diff()` do.)
+3. Another example showing <i>compactness</i> with functions:
     
     ```python
     s = '  hello  '
     print(len(s.strip()))
     ```
 
-5. A long program broken up into functions will make the program more readable and therefore more easily understood.
+4. A long program broken up into functions will make the program more <i>readable</i> and therefore more easily understood.
 6. The biggest reason, perhaps, is that it has become one of two important ways by which multiple programmers use each others' code.
 
     **Example**: you have used functions in `drawtool` and Python functions like `math.random()`.
 
 
-How do you know when to create functions vs. writing long code?
+**How do you know when to create functions vs. writing long code?**
 
 - There are no rules. The judgement comes with practice.
 - Generally, tiny computations like increment don't need functions.
