@@ -942,7 +942,7 @@ print(lines)
 
 **We'll now tackle one additional complication:**
 
-- **Download and examine the file <a href="../../../media/units/unit1/module1.4/data2.txt">data2.txt**</a> in a text editor.
+- **Download and examine the file <a href="../../../media/units/unit1/module1.4/data2.txt" download>data2.txt**</a> in a text editor.
   - Identify all the (unnecessary) whitespace within.
 - It is common for real data to be acquired or presented with mistakes, missing entries, or weird whitespacing.
 - The missing entry problem is somewhat harder to tackle, so we'll postpone that for another time.
@@ -973,7 +973,7 @@ print(lines)
 ### Exercise 4.33
 
 - **Type up the above in `my_file_data2.py`.** 
-  - You should have already downloaded the file <a href="../../../media/units/unit1/module1.4/data2.txt">data2.txt</a>  in the same folder.
+  - You should have already downloaded the file <a href="../../../media/units/unit1/module1.4/data2.txt" download>**data2.txt**</a>  in the same folder.
 
 - **Submit your program `my_file_data2.py`.** 
 :::
