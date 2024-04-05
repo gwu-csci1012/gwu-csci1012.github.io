@@ -18,12 +18,6 @@ format:
 </head>
 <body>
 
-<!-- <div class="breadcrumbs">
-  <a href="../../../index.qmd">Home</a> &raquo;
-  <a href="">Unit 0</a> &raquo;
-  <span class="current-page">Assignment 1</span>
-</div> -->
-
 ::: {.callout-warning}
 Do this assignment on your own. You may not consult any other students. You are not allowed to use any online resources to complete this assignment other than the course website. This assignment is to be completed and submitted on Blackboard. All examinations, papers, quizzes and other graded work products and assignments are to be completed in conformance with The George Washington University Code of Academic Integrity. Any violations will be treated as violations of the Code of Academic Integrity.
 :::
