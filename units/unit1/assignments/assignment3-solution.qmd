@@ -1,0 +1,151 @@
+---
+title: "**Assignment 3:** Problem Solving Example"
+format:
+  html:
+    code-copy: false
+---
+
+<html>
+<head>
+    <style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
+</head>
+<body>
+
+Let's start with the outer while loop that reads an integer from the user each time:
+
+- In pseudocode first:
+    
+    ```python
+    read an integer n
+    while n > 0:
+        compute number of divides
+        read another integer into n
+    ```
+
+- Which we can flesh out as:
+    
+    ```python
+    n = int(input('Enter an integer: '))
+
+    while n > 0:
+        # Compute and print number of divides.
+        n = int(input('Enter an integer: '))
+    ```
+
+- Notice how we've combined function calls. We could have written
+    
+    ```python
+    n = int(input('Enter an integer: '))
+    ```
+    as
+    
+    ```python
+    n_str = input('Enter an integer: ')
+    n = int(n_str)
+    ```
+The first call prompts the user and gets a string. The second converts the string into an integer.
+
+:::{.callout-caution appearance="simple" icon="false"}
+###### <span style="color:#8B4513;">**A3.1.1 Exercise:** </span>
+Write up the above in `my_demo_problem1.py` and test out the while loop.
+:::
+
+Next, we want to successively divide by 2 (using integer division):
+
+- The pseudocode for that part could be:
+ 
+    ```python
+    count = 0
+    while n > 1:
+        # divide by 2, increment count
+    print(count)
+    ```
+
+- In more detail:
+    
+    ```python
+    count = 0
+    while n > 1:
+        n = n // 2
+        count += 1
+    print('Number of divides for n=', n, ': ', count, sep='')
+    ```
+
+- We can now include this in our outer while-loop as:
+    
+    ```python
+    n = int(input('Enter an integer: '))
+
+    while n > 0:
+        # Compute and print number of divides.
+        count = 0
+        while n > 1:
+            n = n // 2
+            count += 1
+        print('Number of divides for n=', n, ': ', count, sep='')
+        # Get the next one.
+        n = int(input('Enter an integer: '))
+
+    print('Thank you!')
+    ```
+
+:::{.callout-caution appearance="simple" icon="false"}
+###### <span style="color:#8B4513;">**A3.1.2 Exercise:** </span>
+Does this work? Write up the above in `my_demo_problem2.py` and find out. Then explain what went wrong in your `assignment2.pdf`.
+:::
+
+:::{.callout-caution appearance="simple" icon="false"}
+###### <span style="color:#8B4513;">**A3.1.3 Exercise:** </span>
+In `my_demo_problem3.py` fix the problem by rewriting the inner while-loop so that the output is correct (as shown in the problem description).
+:::
+
+That solves the problem. However, we'll now explore a few alternative ways of writing the code:
+
+- First, let's write the dividing part in a function:
+    
+    ```python
+    def num_divides(n):
+        count = 0
+        while n > 1:
+            n = n // 2
+            count += 1
+        return count
+
+    n = int(input('Enter an integer: '))
+
+    while n > 0:
+        count = num_divides(n)
+        print('Number of divides for n=', n, ': ', count, sep='')
+        n = int(input('Enter an integer: '))
+
+    print('Thank you!')
+    ```
+
+:::{.callout-caution appearance="simple" icon="false"}
+###### <span style="color:#8B4513;">**A3.1.4 Exercise:** </span>
+Write up the above in `my_demo_problem4.py` and explain in `assignment2.pdf` why we were able to use the same variable n in the function.
+:::
+
+
+Finally, noticing that we get input once outside and then again inside the loop, we could ask: can we rewrite the outer loop so that we get input only inside the loop?
+
+- That is, can the outer loop structure look like this:
+    
+    ```python
+    while n > 0:
+        n = int(input('Enter an integer: '))
+        # Do stuff ...
+    ```
+
+:::{.callout-caution appearance="simple" icon="false"}
+###### <span style="color:#8B4513;">**A3.1.5 Exercise:** </span>
+In `my_demo_problem5.py` show that this can indeed be done, using a break statement. Use the function `num_divides()` as given to you above.
+:::
+
