@@ -617,9 +617,9 @@ The `break`-statement in the <em>for-loop</em> exits the <em>for-loop</em> (the 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.20
 
-- **Start with the program `my_nested_loop2.py` from Exercise 4.19 and change the inner loop to a `while` loop so that we get the same output.**
+- **Start with the program `my_nested_loop.py` from Exercise 4.19 and change the inner loop to a `while` loop so that we get the same output.**
 
-- **Save your program as `my_nested_loop3.py` and submit it.**
+- **Save your program as `my_nested_loop2.py` and submit it.**
 
 :::
 
