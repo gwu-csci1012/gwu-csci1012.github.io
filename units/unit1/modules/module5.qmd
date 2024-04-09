@@ -678,7 +678,7 @@ print(strange(3))
 - **Execute your program `my_strange_example.py`.**
     - For the remaining two calls to the function `strange()` with arguments `0` and `3`, can you tell whether 'end-of-strange' gets printed or not? 
 
-- **Submit your program `my_variable_access.py`.**
+- **Submit your program `my_strange_example.py`.**
 
 :::
 
