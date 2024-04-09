@@ -9,6 +9,42 @@ The course material is sourced from **Prof. Simha's** webpage: <https://www2.sea
 :::
 
 :::{.callout-note}
+## Exam on 04/15/2024 (Mandatory for all students-no exceptions)
+- **Exam on Monday, 04/15 will be held during the lecture.**
+- **Location:** 1957 E street Room 213 
+- **Duration:** 60 minutes 
+- **Start time:** 3:45 PM
+- **Paper exam**
+    - Closed everything (no notes, no Thonny, no smart and handheld devices)
+    - Multiple choice/ fill in the blanks/ write the output – similar to quizzes
+    - You will be required to sign the Academic Integrity Pledge
+    - **25 questions**
+        - Answer as many as you can; Up to 20 correct answers will be graded for 5 points each
+    -  **Total:** 100 points
+- **60 % needed to Pass the Exam and the course**
+- **Final grade will be according to the [grading-policy and -scale](course-policies.qmd) outlined inthe course**
+:::
+
+:::{.callout-note}
+## Make-up Exam on 05/06/2024 (ONLY for students who Fail Exam on 04/15)
+- **Make-up Exam on Monday, 05/06 (exam week)**
+    - **This exam is offered ONLY to students who Fail the exam on 04/15**
+    - **If you don’t appear for the Exam on 04/15, you will NOT be permitted to take the Make-up Exam** 
+- **Location:** 1957 E street Room 213 
+- **Duration:** 50 minutes; Start time: 5:20 PM
+- **Paper exam**
+    - Closed everything (no notes, no Thonny, no smart and handheld devices)
+    - Multiple choice/ fill in the blanks/ write the output – similar to quizzes
+    - You will be required to sign the Academic Integrity Pledge
+    - **20 questions (no choice, 5 points each)**
+    - **Total:** 100 points
+- **60 % needed to Pass the Make-up Exam and the course**
+- **Final grade if you pass** 
+    - Will NOT be higher than the lowest grade of the students who passed the exam on 04/15
+    - Will be in accordance with the [grading-policy and -scale](course-policies.qmd) outlined in the course.
+:::
+
+<!-- :::{.callout-note}
 ## Mid Semester Survey
 - Please take a few moments to complete the Mid-Semester Survey for our course before **Saturday 03/30/2024** by **11:59 PM**. 
 
@@ -17,7 +53,7 @@ The course material is sourced from **Prof. Simha's** webpage: <https://www2.sea
 - Scan the QR code below or click [here](https://docs.google.com/forms/d/e/1FAIpQLSfDnmqZVCGIu28xacTCAEaazVbNQRp35XHTQ0GNk7LB6FGnmA/viewform?usp=sf_link) to access the survey:
 
     ![](./media/advising/CS1012-Spring2024_MidSemSurvey.png){width="30%"}
-:::
+::: -->
 
 <!-- :::{.callout-important title="Make-up Quiz (03/04/2024)" icon="false"}
 **Make-up Quiz for all students on Monday, 03/04/2024**
