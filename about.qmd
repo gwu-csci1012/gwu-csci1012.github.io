@@ -2,10 +2,6 @@
 title: "About"
 ---
 
-<!-- <div class="breadcrumbs">
-  <a href="./index.qmd">Home</a> &raquo;
-  <span class="current-page">About</span>
-</div> -->
 
 ## Instructor
 ### **Dr. Kartik Bulusu**
