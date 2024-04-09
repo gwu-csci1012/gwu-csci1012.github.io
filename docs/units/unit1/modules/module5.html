@@ -1082,23 +1082,23 @@ Exercise 5.10
 <span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> n <span class="op">//</span> <span class="dv">4</span></span>
 <span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'half n ='</span>, n)</span>
 <span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'m ='</span>, m)   <span class="co"># Trying to access m</span></span>
-<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> <span class="dv">4</span></span>
-<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(m)</span>
-<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>print_stuff(m)</span>
-<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(m)</span>
-<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'n ='</span>, n)       <span class="co"># Trying to access n</span></span></code></pre></div>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(m)</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>print_stuff(m)</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(m)</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'n ='</span>, n)       <span class="co"># Trying to access n will generate an error and should be deleted for this program to work</span></span></code></pre></div>
 <ul>
-<li><p><strong>Type up the above program in <code>my_variable_access.py</code>.</strong></p></li>
-<li><p><strong>Execute your program <code>my_variable_access.py</code>.</strong></p>
+<li><strong>Type up the above program in <code>my_variable_access.py</code>.</strong></li>
+<li><strong>Execute your program <code>my_variable_access.py</code>.</strong>
 <ul>
-<li>Identify the errors and understand why you were getting them.<br>
-</li>
-<li>Make one modification to the program to eliminate the errors.</li>
+<li>Make the modification suggested in the last line of the program to eliminate the error.</li>
 </ul></li>
-<li><p><strong>Submit your program <code>my_variable_access.py</code> without any errors.</strong></p></li>
+<li><strong>Submit your program <code>my_variable_access.py</code> without any errors.</strong></li>
+<li><strong>Answering the following part of the exercise is recommended but not required for submission:</strong>
+<ul>
+<li>Identify the errors and understand why you were getting them. <!-- Also, in your module pdf, explain why half of the original n is calculated as n // 4. --></li>
+</ul></li>
 </ul>
-<!-- Also, in your module pdf, explain why half of the original n is calculated as n // 4. -->
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -1301,7 +1301,7 @@ Exercise 5.13
 <div class="callout-body-container callout-body">
 <ul>
 <li><strong>Type up the above program in <code>my_list_example2.py</code>.</strong></li>
-<li><strong>Submit your modified program <code>my_list_example2.py</code>.</strong></li>
+<li><strong>Submit your program <code>my_list_example2.py</code>.</strong></li>
 <li><strong>Answering the following part of the exercise is recommended but not required for submission:</strong>
 <ul>
 <li>Trace through each iteration of the loop in the function <code>list_or()</code>, showing <code>x</code>, <code>k</code>, and each <code>A[k]</code>.</li>
@@ -1345,9 +1345,13 @@ Exercise 5.14
 <li>Identify the first position where the two lists differ by more than <code>1</code>.</li>
 <li>If no such difference exists, the function should return <code>-1</code>.</li>
 </ul></li>
+<li>In <code>my_list_example3.py</code>, complete the code in the <code>within1()</code> function so that it returns <code>True</code> only when the difference between <code>x</code> and <code>y</code> is <code>1</code> or less. Thus, True when <code>x=1</code>, <code>y=2</code>, or when <code>x=4</code>, <code>y=3</code>, or when <code>x=5</code>, <code>y=5</code>.</li>
+<li><strong>Submit your program <code>my_list_example3.py</code>.</strong></li>
+<li><strong>Answering the following part of the exercise is recommended but not required for submission:</strong>
+<ul>
+<li>Trace through the iteration in the while-loop.</li>
+</ul></li>
 </ul>
-<p>In <code>my_list_example3.py</code>, complete the code in the <code>within1()</code> function so that it returns <code>True</code> only when the difference between <code>x</code> and <code>y</code> is <code>1</code> or less. Thus, True when <code>x=1</code>, <code>y=2</code>, or when <code>x=4</code>, <code>y=3</code>, or when <code>x=5</code>, <code>y=5</code>.</p>
-<p>After that trace through the iteration in the while-loop.</p>
 </div>
 </div>
 </section>
