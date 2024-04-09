@@ -18,12 +18,6 @@ format:
 </head>
 <body>
 
-<!-- <div class="breadcrumbs">
-  <a href="../../../index.qmd">Home</a> &raquo;
-  <a href="#">Unit 1</a> &raquo;
-  <span class="current-page">Module 5</span>
-</div> -->
-
 ## Objectives
 
 **The main goal of this module is to step back and review the following core concepts in programming:**
