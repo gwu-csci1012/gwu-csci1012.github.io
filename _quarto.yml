@@ -82,12 +82,16 @@ website:
                     text: "Week-10"
                   - href: units/additional-resources/insructor-notes/week-11.qmd
                     text: "Week-11"
+                  - href: units/additional-resources/insructor-notes/week-12.qmd
+                    text: "Week-12"
               - section: "Lab Notes"
                 contents: 
                   - section: "Amal AlQahtani"
                     contents: 
                       - href: ./units/additional-resources/lab-notes/amal/week-1.qmd
                         text: "Week-1"
+              - href: units/additional-resources/minor-advising.qmd
+                text: "Computer Science Minor Advising"
       - section: "Assignments"
         contents:
           - ./units/unit0/assignments/assignment0.qmd
