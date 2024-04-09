@@ -510,7 +510,6 @@ print(m)
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 5.10
-
 **Consider the following program:**
 ```python
 def print_stuff(n):
@@ -520,22 +519,18 @@ def print_stuff(n):
     n = n // 4
     print('half n =', n)
     print('m =', m)   # Trying to access m
-
 m = 4
 print(m)
 print_stuff(m)
 print(m)
-print('n =', n)       # Trying to access n
+print('n =', n)       # Trying to access n will generate an error and should be deleted for this program to work
 ```
-
-- **Type up the above program in `my_variable_access.py`.** 
-
+- **Type up the above program in `my_variable_access.py`.**
 - **Execute your program `my_variable_access.py`.**
-    - Identify the errors and understand why you were getting them.  
-    - Make one modification to the program to eliminate the errors. 
-
+    - Make the modification suggested in the last line of the program to eliminate the error.
 - **Submit your program `my_variable_access.py` without any errors.**
-
+- **Answering the following part of the exercise is recommended but not required for submission:**
+    - Identify the errors and understand why you were getting them.
 <!-- Also, in your module pdf, explain why half of the original n is calculated as n // 4. -->
 :::
 
@@ -744,8 +739,8 @@ print(list_or(B))
 ### Exercise 5.13
 
 - **Type up the above program in `my_list_example2.py`.**
-- **Submit your modified program `my_list_example2.py`.**
-- **Answering the following part of the exercise is recommended but not required for submission:** 
+- **Submit your program `my_list_example2.py`.**
+- **Answering the following part of the exercise is recommended but not required for submission:**
     - Trace through each iteration of the loop in the function `list_or()`, showing `x`, `k`, and each `A[k]`.
 :::
 
@@ -774,15 +769,14 @@ print(first_diff(X,Z))    # Should print 2
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 5.14
 
-- **In the above program, the function `first_diff()` is intended to take two `lists`** 
-    - Compare elements in the same positions, and 
-    - Identify the first position where the two lists differ by more than `1`. 
-    - If no such difference exists, the function should return `-1`. 
-
-In `my_list_example3.py`, complete the code in the `within1()` function so that it returns `True` only when the difference between `x` and `y` is `1` or less. Thus, True when `x=1`, `y=2`, or when `x=4`, `y=3`, or when `x=5`, `y=5`. 
-
-
-After that trace through the iteration in the while-loop.
+- **In the above program, the function `first_diff()` is intended to take two `lists`**
+    - Compare elements in the same positions, and
+    - Identify the first position where the two lists differ by more than `1`.
+    - If no such difference exists, the function should return `-1`.
+- In `my_list_example3.py`, complete the code in the `within1()` function so that it returns `True` only when the difference between `x` and `y` is `1` or less. Thus, True when `x=1`, `y=2`, or when `x=4`, `y=3`, or when `x=5`, `y=5`.
+- **Submit your program `my_list_example3.py`.**
+- **Answering the following part of the exercise is recommended but not required for submission:**
+    - Trace through the iteration in the while-loop.
 :::
 
 ## 5.6 Why are functions useful?
