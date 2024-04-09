@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CSCI1012 - Module 1: Choropleth Maps</title>
+<title>CSCI1012 - Module 1: Tuples, Sets, Dictionaries and Choropleth Maps</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,7 +116,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Units</li><li class="breadcrumb-item"><a href="../../../units/unit2/modules/module0.html"><strong>Unit 2:</strong> Advanced Topics and Applications</a></li><li class="breadcrumb-item"><a href="../../../units/unit2/modules/module1.html"><strong>Module 1:</strong> Choropleth Maps</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Units</li><li class="breadcrumb-item"><a href="../../../units/unit2/modules/module0.html"><strong>Unit 2:</strong> Advanced Topics and Applications</a></li><li class="breadcrumb-item"><a href="../../../units/unit2/modules/module1.html"><strong>Module 1:</strong> Tuples, Sets, Dictionaries and Choropleth Maps</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -333,13 +333,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../units/unit2/modules/module0.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Module 0:</strong> Arrays, Tuples, Sets, and Dictionaries</span></a>
+ <span class="menu-text"><strong>Module 0:</strong> Arrays</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../units/unit2/modules/module1.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><strong>Module 1:</strong> Choropleth Maps</span></a>
+ <span class="menu-text"><strong>Module 1:</strong> Tuples, Sets, Dictionaries and Choropleth Maps</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -520,23 +520,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#getting-set-up-for-datatool" id="toc-getting-set-up-for-datatool" class="nav-link" data-scroll-target="#getting-set-up-for-datatool">1.0 Getting set up for datatool</a></li>
-  <li><a href="#csv-data" id="toc-csv-data" class="nav-link" data-scroll-target="#csv-data">1.1 CSV data</a></li>
-  <li><a href="#using-datatool-for-plotting" id="toc-using-datatool-for-plotting" class="nav-link" data-scroll-target="#using-datatool-for-plotting">1.2 Using <code>datatool</code> for plotting</a></li>
-  <li><a href="#using-datatool-for-drawing" id="toc-using-datatool-for-drawing" class="nav-link" data-scroll-target="#using-datatool-for-drawing">1.3 Using datatool for drawing</a></li>
-  <li><a href="#using-datatool-with-generated-data" id="toc-using-datatool-with-generated-data" class="nav-link" data-scroll-target="#using-datatool-with-generated-data">1.4 Using datatool with generated data</a></li>
-  <li><a href="#using-datatool-for-maps" id="toc-using-datatool-for-maps" class="nav-link" data-scroll-target="#using-datatool-for-maps">1.5 Using datatool for maps</a></li>
-  <li><a href="#choropleth-maps" id="toc-choropleth-maps" class="nav-link" data-scroll-target="#choropleth-maps">1.6 Choropleth maps</a></li>
-  <li><a href="#using-datatool-for-maps-tilemaps" id="toc-using-datatool-for-maps-tilemaps" class="nav-link" data-scroll-target="#using-datatool-for-maps-tilemaps">1.7 Using datatool for maps: tilemaps</a></li>
+  <li><a href="#tuples" id="toc-tuples" class="nav-link" data-scroll-target="#tuples">1.0 Tuples</a></li>
+  <li><a href="#sets" id="toc-sets" class="nav-link" data-scroll-target="#sets">1.1 Sets</a></li>
+  <li><a href="#dictionaries" id="toc-dictionaries" class="nav-link" data-scroll-target="#dictionaries">1.2 Dictionaries</a></li>
+  <li><a href="#advanced-topic-global-variables" id="toc-advanced-topic-global-variables" class="nav-link" data-scroll-target="#advanced-topic-global-variables">1.3 Advanced topic: global variables</a></li>
+  <li><a href="#multiple-files" id="toc-multiple-files" class="nav-link" data-scroll-target="#multiple-files">1.4 Multiple files</a></li>
+  <li><a href="#string-formatting-and-numbers" id="toc-string-formatting-and-numbers" class="nav-link" data-scroll-target="#string-formatting-and-numbers">1.5 String formatting and numbers</a></li>
+  <li><a href="#randomness" id="toc-randomness" class="nav-link" data-scroll-target="#randomness">1.6 Randomness</a></li>
+  <li><a href="#what-else-is-there-in-python" id="toc-what-else-is-there-in-python" class="nav-link" data-scroll-target="#what-else-is-there-in-python">1.7 What else is there in Python?</a></li>
+  <li><a href="#getting-set-up-for-datatool" id="toc-getting-set-up-for-datatool" class="nav-link" data-scroll-target="#getting-set-up-for-datatool">1.8 Getting set up for datatool</a></li>
+  <li><a href="#csv-data" id="toc-csv-data" class="nav-link" data-scroll-target="#csv-data">1.9 CSV data</a></li>
+  <li><a href="#using-datatool-for-plotting" id="toc-using-datatool-for-plotting" class="nav-link" data-scroll-target="#using-datatool-for-plotting">1.10 Using <code>datatool</code> for plotting</a></li>
+  <li><a href="#using-datatool-for-drawing" id="toc-using-datatool-for-drawing" class="nav-link" data-scroll-target="#using-datatool-for-drawing">1.11 Using datatool for drawing</a></li>
+  <li><a href="#using-datatool-with-generated-data" id="toc-using-datatool-with-generated-data" class="nav-link" data-scroll-target="#using-datatool-with-generated-data">1.12 Using datatool with generated data</a></li>
+  <li><a href="#using-datatool-for-maps" id="toc-using-datatool-for-maps" class="nav-link" data-scroll-target="#using-datatool-for-maps">1.13 Using datatool for maps</a></li>
+  <li><a href="#choropleth-maps" id="toc-choropleth-maps" class="nav-link" data-scroll-target="#choropleth-maps">1.14 Choropleth maps</a></li>
+  <li><a href="#using-datatool-for-maps-tilemaps" id="toc-using-datatool-for-maps-tilemaps" class="nav-link" data-scroll-target="#using-datatool-for-maps-tilemaps">1.15 Using datatool for maps: tilemaps</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Units</li><li class="breadcrumb-item"><a href="../../../units/unit2/modules/module0.html"><strong>Unit 2:</strong> Advanced Topics and Applications</a></li><li class="breadcrumb-item"><a href="../../../units/unit2/modules/module1.html"><strong>Module 1:</strong> Choropleth Maps</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Units</li><li class="breadcrumb-item"><a href="../../../units/unit2/modules/module0.html"><strong>Unit 2:</strong> Advanced Topics and Applications</a></li><li class="breadcrumb-item"><a href="../../../units/unit2/modules/module1.html"><strong>Module 1:</strong> Tuples, Sets, Dictionaries and Choropleth Maps</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><strong>Module 1:</strong> Choropleth Maps</h1>
+<h1 class="title"><strong>Module 1:</strong> Tuples, Sets, Dictionaries and Choropleth Maps</h1>
 </div>
 
 
@@ -565,11 +573,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </style>
 
 
-<!-- <div class="breadcrumbs">
-  <a href="../../../index.qmd">Home</a> &raquo;
-  <a href="#">Unit 2</a> &raquo;
-  <span class="current-page">Module 1</span>
-</div> -->
 <section id="objectives" class="level2">
 <h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
 <!-- :::{.callout-note}
@@ -614,8 +617,850 @@ Note
 <li>Also, you will need to be connected (online) because datatool downloads map data from certain websites.</li>
 </ul>
 </section>
+<section id="tuples" class="level2">
+<h2 class="anchored" data-anchor-id="tuples">1.0 Tuples</h2>
+<p>In this section and the ones that follow, we’ll touch lightly upon a few topics that are “not on the final exam” but will be useful in general.</p>
+<p>Some of these concepts will be directly used in the next module.</p>
+<p>Suppose we want to write a function that computes both the square and cube of a number:</p>
+<ul>
+<li><p>One option is to write two separate functions</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> square(x):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x<span class="op">*</span>x</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> cube(x):</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x<span class="op">*</span>x<span class="op">*</span>x</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x, square(x), cube(x))</span></code></pre></div></li>
+<li><p>We can alternatively write one function that computes and returns <em>two things</em>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> do_both(x):</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    square <span class="op">=</span> x<span class="op">*</span>x</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    cube <span class="op">=</span> square<span class="op">*</span>x </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (square, cube)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>(y, z) <span class="op">=</span> do_both(x)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x, y, z)</span></code></pre></div></li>
+<li><p>Notice that the return statement returns a <em>pair</em> of values:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> (square, cube)</span></code></pre></div>
+<p>And that the pair is enclosed in parentheses.</p></li>
+<li><p>And notice that, since two values are being returned, we need a pair to capture the return values:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>(y, z) <span class="op">=</span> do_both(x)</span></code></pre></div></li>
+<li><p>We can go beyond a pair to any number of such “grouped” variables:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> do_more(x):</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    square <span class="op">=</span> x<span class="op">*</span>x</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    cube <span class="op">=</span> square<span class="op">*</span>x </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    fourth <span class="op">=</span> cube<span class="op">*</span>x</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    fifth <span class="op">=</span> fourth<span class="op">*</span>x</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (square, cube, fourth, fifth)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>(a, b, c, d) <span class="op">=</span> do_more(x)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x, a, b, c, d)</span></code></pre></div></li>
+<li><p>Such a grouping of variables is called a <em>tuple</em>.</p></li>
+</ul>
+<p>Tuples are similar to lists in many ways, but different in one crucial aspect:</p>
+<ul>
+<li><p>First, let’s examine how to write the same <code>do_both()</code> function above but using lists:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> do_both_list(x):</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    square <span class="op">=</span> x<span class="op">*</span>x</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    cube <span class="op">=</span> square<span class="op">*</span>x </span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [square, cube]</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>[y, z] <span class="op">=</span> do_both_list(x)</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x, y, z)</span></code></pre></div>
+<p>This works just fine.</p></li>
+<li><p>Another way in which a tuple is like a list is in using square-brackets and position indices to access individual elements, as in:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># List version:</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> do_both_list(x)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(L[<span class="dv">0</span>], L[<span class="dv">1</span>])      <span class="co"># L[0] has the square, L[1] has the cube</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Tuple version:</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> do_both(x)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t[<span class="dv">0</span>], t[<span class="dv">1</span>])      <span class="co"># t[0] has the square, t[1] has the cube</span></span></code></pre></div></li>
+<li><p>However, here’s the difference:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># List version:</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> do_both_list(x)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>L[<span class="dv">0</span>] <span class="op">=</span> <span class="dv">0</span>              <span class="co"># This is allowed</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Tuple version:</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> do_both(x)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>t[<span class="dv">0</span>] <span class="op">=</span> <span class="dv">0</span>              <span class="co"># This is NOT allowed</span></span></code></pre></div>
+<p>Thus, you can replace a list element but you cannot replace a tuple element.</p></li>
+<li><p>This is in fact a bit subtle, as this example shows:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> (x, y)   <span class="co"># The tuple's value is now fixed.</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)     <span class="co"># (3, 4)</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)     <span class="co"># (3, 4)</span></span></code></pre></div>
+<p>Once the tuple is <em>instantiated</em> (that’s the technical term for “made”) then the tuple’s value cannot be changed.</p></li>
+<li><p>You can of course assign a different tuple value to a tuple variable as in:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">2</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> (<span class="dv">3</span>, <span class="dv">4</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t)</span></code></pre></div>
+<p>Here, we’re simply replacing one fixed-value tuple with another.</p></li>
+<li><p>Tuples are therefore said to be an <em>immutable</em> type (along with strings).</p></li>
+<li><p>Why use tuples at all? It’s to allow programmers to signal clearly that their tuples shouldn’t be changed.</p></li>
+<li><p>This turns out to be convenient for <em>mathematical tuples</em> (like points on a graph), which are similar.</p></li>
+</ul>
+<p>Groups of tuples can be combined into lists and other data structures.</p>
+<p>It’s very useful in working with points (the mathematical point you draw with coordinates) and other mathematical structures that need more than one number to describe.</p>
+<p>For example, here’s a program that, given a list of points, finds the leftmost point (the one with the least x value).</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> leftmost(L):</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    leftmost_guess <span class="op">=</span> L[<span class="dv">0</span>]</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> q <span class="kw">in</span> L:</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> q[<span class="dv">0</span>] <span class="op">&lt;</span> leftmost_guess[<span class="dv">0</span>]:</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>            leftmost_guess <span class="op">=</span> q</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> leftmost_guess</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>list_of_points <span class="op">=</span> [(<span class="dv">3</span>,<span class="dv">4</span>), (<span class="dv">1</span>,<span class="dv">2</span>), (<span class="dv">3</span>,<span class="dv">2</span>), (<span class="dv">4</span>,<span class="dv">3</span>), (<span class="dv">5</span>,<span class="dv">6</span>)]</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>(x,y) <span class="op">=</span> leftmost(list_of_points)</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'leftmost:'</span>, (x,y) )</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="co"># leftmost: (1, 2)</span></span></code></pre></div>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exercise 1.1
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up the above in <code>my_tuple_example.py</code>. Then trace through the iteration in your module pdf.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exercise 1.2
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Consider the following:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> distance(p, q):</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> math.sqrt( (p[<span class="dv">0</span>]<span class="op">-</span>q[<span class="dv">0</span>])<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> (p[<span class="dv">1</span>]<span class="op">-</span>q[<span class="dv">1</span>])<span class="op">**</span><span class="dv">2</span> )</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> find_closest_point(p, L):</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Write your code here to find the closest point in L to p</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># and to return both the point and the distance to it from p.</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>list_of_points <span class="op">=</span> [(<span class="dv">3</span>,<span class="dv">4</span>), (<span class="dv">1</span>,<span class="dv">2</span>), (<span class="dv">3</span>,<span class="dv">2</span>), (<span class="dv">4</span>,<span class="dv">3</span>), (<span class="dv">5</span>,<span class="dv">6</span>)]</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>query_point <span class="op">=</span> (<span class="dv">5</span>,<span class="dv">4</span>)</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>(c, d) <span class="op">=</span> find_closest_point(query_point, list_of_points)</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'closest:'</span>,c,<span class="st">' at distance'</span>, d)</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Should print: </span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="co"># closest: (4, 3)  at distance 1.4142135623730951</span></span></code></pre></div>
+<p>In <code>my_tuple_example2.py</code>, fill in the missing code to find the closest point in a list of points to a given query point. Return both the closest point and the distance to the query point as a tuple.</p>
+</div>
+</div>
+</section>
+<section id="sets" class="level2">
+<h2 class="anchored" data-anchor-id="sets">1.1 Sets</h2>
+<p>The general mathematical term <em>set</em> means a “collection of like things but without duplicates”.</p>
+<p>Python has special syntax and operations to support this mathematical notion:</p>
+<ul>
+<li><p>Here are two sets being defined:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> {<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">8</span>}       <span class="co"># Curly brackets</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>B <span class="op">=</span> {<span class="st">'hello'</span>, <span class="st">'hi'</span>, <span class="st">'hey'</span>, <span class="st">'howdy'</span>}</span></code></pre></div></li>
+<li><p>The first set contains five numbers, whereas the second contains four strings.</p></li>
+</ul>
+<p>Consider this variation</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> {<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">8</span>}</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>B <span class="op">=</span> {<span class="st">'hello'</span>, <span class="st">'hi'</span>, <span class="st">'hey'</span>, <span class="st">'howdy'</span>}</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>C <span class="op">=</span> {<span class="dv">8</span>, <span class="dv">5</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">5</span>}</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(C)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> A <span class="op">==</span> C:</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'they are equal'</span>)</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'they are not equal'</span>)</span></code></pre></div>
+<p>Given what we’ve said about sets, what will be printed?</p>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exercise 1.3
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up the above in <code>my_set_example.py</code> to find out.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Even though a set may not have duplicates, we are actually allowed to <em>try</em> to create duplicates:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>C <span class="op">=</span> {<span class="dv">8</span>, <span class="dv">5</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">5</span>}</span></code></pre></div>
+<p>Python simply removes the duplicates.</p></li>
+<li><p>Python also organizes sets so that sets can be compared for equality: Thus, printing the set</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>C <span class="op">=</span> {<span class="dv">8</span>, <span class="dv">5</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">5</span>}</span></code></pre></div>
+<p>actually results in</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>{<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">8</span>}</span></code></pre></div></li>
+</ul>
+</div>
+</div>
+<p>What can we do with sets?</p>
+<ul>
+<li><p>The most common operation is to see whether some value is in some set we’ve defined using the keyword in:</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> check_vowel(x):</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    vowels <span class="op">=</span> {<span class="st">'a'</span>,<span class="st">'e'</span>,<span class="st">'i'</span>,<span class="st">'o'</span>,<span class="st">'u'</span>}</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> x <span class="kw">in</span> vowels:</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(x, <span class="st">'is a vowel'</span>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(x, <span class="st">'is not a vowel'</span>)</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>check_vowel(<span class="st">'a'</span>)</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>check_vowel(<span class="st">'b'</span>)</span></code></pre></div></li>
+<li><p>Other, more mathematical operations, feature different ways of combining sets. For example:</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> {<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">8</span>}</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>B <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">6</span>}</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>D <span class="op">=</span> A <span class="op">|</span> B    <span class="co"># union</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(D)</span></code></pre></div>
+<p>Here, D contains every element across both sets.</p></li>
+<li><p>Other such operators include:</p>
+<ul>
+<li>intersection (elements that are in both sets)</li>
+<li>difference (elements in one set that are not in the other)</li>
+</ul></li>
+<li><p>Since our goal is merely to give you a taste of these advanced topics, we won’t say much more about these operations.</p></li>
+</ul>
+<p>Instead, let’s look at an application:</p>
+<ul>
+<li>In <em>text processing</em>, the term <em>stopword</em> is often used to describe commonly used words that serve little or no purpose in text analysis:
+<ul>
+<li>When you analyze digitized texts for meaning, topic and dialogue (for example), words like “the”, “of”, “and” get in the way of analysis.</li>
+<li>They are often discarded from text analysis that seeks to analyze more significant words.</li>
+</ul></li>
+<li>We’ll ask the question: what proportion of text typically consists of stopwords? <br>(The answer is surprising, as we’ll see).</li>
+<li>To answer the question, we’ll scan text word-by-word and see if each word is in the <em>set</em> of stopwords.</li>
+<li>Although there are hundreds of stopwords, we’ll keep things simple by targeting a few.</li>
+</ul>
+<p>Let’s write this up:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wordtool <span class="im">as</span> wt </span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="co"># The 25 most common stopwords</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>stopwords <span class="op">=</span> {<span class="st">'the'</span>,<span class="st">'be'</span>,<span class="st">'to'</span>,<span class="st">'of'</span>,<span class="st">'and'</span>,<span class="st">'a'</span>,<span class="st">'in'</span>,<span class="st">'that'</span>,<span class="st">'have'</span>,<span class="st">'I'</span>,</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>             <span class="st">'it'</span>,<span class="st">'for'</span>,<span class="st">'not'</span>,<span class="st">'on'</span>,<span class="st">'with'</span>,<span class="st">'he'</span>,<span class="st">'she'</span>,<span class="st">'you'</span>,<span class="st">'do'</span>,<span class="st">'as'</span>,</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>             <span class="st">'at'</span>,<span class="st">'his'</span>,<span class="st">'her'</span>,<span class="st">'they'</span>,<span class="st">'by'</span>}</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>wt.open_file_byword(<span class="st">'alice.txt'</span>)</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> wt.next_word()</span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>num_stopwords <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>total_words <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> s <span class="op">!=</span> <span class="va">None</span>:</span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> s <span class="kw">in</span> stopwords:</span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>        num_stopwords <span class="op">+=</span> <span class="dv">1</span>   <span class="co"># Count stopwords</span></span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>    total_words <span class="op">+=</span> <span class="dv">1</span>         <span class="co"># And all words</span></span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> wt.next_word()</span>
+<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a>percent_stopwords <span class="op">=</span> <span class="dv">100</span> <span class="op">*</span> (num_stopwords<span class="op">/</span>total_words)</span>
+<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Compare this:</span></span>
+<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a>string_to_print <span class="op">=</span> <span class="st">'</span><span class="sc">% o</span><span class="st">f stopwords:</span><span class="sc">{0:.2f}</span><span class="st">'</span>.<span class="bu">format</span>(percent_stopwords)</span>
+<span id="cb20-23"><a href="#cb20-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(string_to_print)</span>
+<span id="cb20-24"><a href="#cb20-24" aria-hidden="true" tabindex="-1"></a><span class="co"># to this:</span></span>
+<span id="cb20-25"><a href="#cb20-25" aria-hidden="true" tabindex="-1"></a><span class="co"># print(percent_stopwords)</span></span></code></pre></div>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exercise 1.4
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up the above in <code>my_stopwords.py</code>. Then, compare the percentage of stopwords in these two famous texts: <a href="../../../media/units/unit2/module2.1/alice.txt"><strong>Alice in Wonderland</strong></a> and Darwin’s <a href="../../../media/units/unit2/module2.1/darwin.txt"><strong>The Origin of the Species</strong></a>. Try two other texts from Project Gutenberg, and report the results in your module pdf.</p>
+</div>
+</div>
+<p>As an aside, we’ll point out something about <em>string formatting</em>, which is also an advanced topic:</p>
+<ul>
+<li><p>It’s plain ugly (and often useless) to print out all the digits in a floating number like:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span> of stopwords: <span class="fl">31.969357958208498</span></span></code></pre></div></li>
+<li><p>Instead, we’d like</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span> of stopwords: <span class="fl">31.97</span></span></code></pre></div></li>
+<li><p>Specifying to Python how you’d like a number <em>formatted</em>, unfortunately, is a bit of a chore using somewhat cryptic commands embedded within strings:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>string_to_print <span class="op">=</span> <span class="st">'</span><span class="sc">% o</span><span class="st">f stopwords:</span><span class="sc">{0:.2f}</span><span class="st">'</span>.<span class="bu">format</span>(percent_stopwords)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(string_to_print)</span></code></pre></div>
+<p>We’ll explain this one with the understanding that a proper look into this topic is beyond the scope of this course:</p>
+<ul>
+<li><p>First, one builds the target strings using typical quotes, as in:</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>string_to_print <span class="op">=</span> <span class="st">'</span><span class="sc">% o</span><span class="st">f stopwords: '</span></span></code></pre></div></li>
+<li><p>Then, attach the format function with the desired variable whose value we wish to print nicely:</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>string_to_print <span class="op">=</span> <span class="st">'</span><span class="sc">% o</span><span class="st">f stopwords: '</span>.<span class="bu">format</span>(percent_stopwords)</span></code></pre></div></li>
+<li><p>Then, figure out where in the string you want the resulting number and use curly brackets:</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>string_to_print <span class="op">=</span> <span class="st">'</span><span class="sc">% o</span><span class="st">f stopwords: </span><span class="sc">{0}</span><span class="st">'</span>.<span class="bu">format</span>(percent_stopwords)</span></code></pre></div>
+<p>Here, 0 means the first such number. If had a second number, we’d use 1, and so on.</p></li>
+<li><p>Finally, specify both how many digits after the decimal point, and that this number is a float:</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>string_to_print <span class="op">=</span> <span class="st">'</span><span class="sc">% o</span><span class="st">f stopwords: </span><span class="sc">{0:.2f}</span><span class="st">'</span>.<span class="bu">format</span>(percent_stopwords)</span></code></pre></div></li>
+</ul></li>
+<li><p>Yes, a bit cryptic and difficult to understand. But eventually, when you get used to it, it’s powerful when you are doing a lot of text output.</p></li>
+</ul>
+</section>
+<section id="dictionaries" class="level2">
+<h2 class="anchored" data-anchor-id="dictionaries">1.2 Dictionaries</h2>
+<p>Consider this problem:</p>
+<ul>
+<li><p>We have a data file that looks like this:</p>
+<pre><code>apple
+banana
+apple
+pear
+banana
+banana
+apple
+kiwi
+orange
+orange
+orange
+kiwi
+orange</code></pre>
+<p>This might represent, for example, a record of sales at a fruit stand.</p></li>
+<li><p>We’d like to count how many of each fruit.</p></li>
+<li><p>One way would be to define a counter for each kind:</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>num_apples <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>num_bananas <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>num_pears <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>num_kiwis <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>num_oranges <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'fruits.txt'</span>,<span class="st">'r'</span>) <span class="im">as</span> data_file:</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> data_file.readline()</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> line <span class="op">!=</span> <span class="st">''</span>:</span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>        fruit <span class="op">=</span> line.strip()</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> fruit <span class="op">==</span> <span class="st">'apple'</span>:</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>            num_apples <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> fruit <span class="op">==</span> <span class="st">'banana'</span>:</span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>            num_bananas <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> fruit <span class="op">==</span> <span class="st">'pear'</span>:</span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>            num_pears <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> fruit <span class="op">==</span> <span class="st">'kiwi'</span>:</span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a>            num_kiwis <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> fruit <span class="op">==</span> <span class="st">'orange'</span>:</span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a>            num_oranges <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb29-20"><a href="#cb29-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb29-21"><a href="#cb29-21" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">'unknown fruit:'</span>, fruit)</span>
+<span id="cb29-22"><a href="#cb29-22" aria-hidden="true" tabindex="-1"></a>        line <span class="op">=</span> data_file.readline()</span>
+<span id="cb29-23"><a href="#cb29-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-24"><a href="#cb29-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'# apples:'</span>, num_apples)</span>
+<span id="cb29-25"><a href="#cb29-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'# bananas:'</span>, num_bananas)</span>
+<span id="cb29-26"><a href="#cb29-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'# pears:'</span>, num_pears)</span>
+<span id="cb29-27"><a href="#cb29-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'# kiwi:'</span>, num_kiwis)</span>
+<span id="cb29-28"><a href="#cb29-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'# oranges:'</span>, num_oranges)</span></code></pre></div></li>
+</ul>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exercise 1.5
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up the above in <code>my_fruits.py</code> and use the data file <a href="../../../media/units/unit2/module2.1/fruits.txt" download=""><strong>fruits.txt</strong></a> to confirm. Next, in <code>my_fruits2.py</code>, change the program to accommodate the additional fruits in <a href="../../../media/units/unit2/module2.1/fruits2.txt" download=""><strong>fruits2.txt</strong></a>.</p>
+</div>
+</div>
+<p>Aside from being tedious, this approach has other issues:</p>
+<ul>
+<li>One would like to be able to write a general program that does not need to know which fruits are in a file.</li>
+<li>What if there were a thousand different kinds of items (not fruits, say, but department-store items)?</li>
+<li>A single mistake in a variable can cause the counts to be wrong.</li>
+</ul>
+<p>Fortunately, the use of <em>dictionaries</em> will make it easy:</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make an empty dictionary</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>counters <span class="op">=</span> <span class="bu">dict</span>()</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'fruits.txt'</span>,<span class="st">'r'</span>) <span class="im">as</span> data_file:</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> data_file.readline()</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> line <span class="op">!=</span> <span class="st">''</span>:</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>        fruit <span class="op">=</span> line.strip()</span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> fruit <span class="kw">in</span> counters.keys():</span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>            <span class="co"># If we've seen the fruit before, increment.</span></span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>            counters[fruit] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>            <span class="co"># If this is the first time, set the counter to 1</span></span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a>            counters[fruit] <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a>        line <span class="op">=</span> data_file.readline()</span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(counters)</span></code></pre></div>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exercise 1.6
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up the above in <code>my_fruits3.py</code> and first apply it to <a href="../../../media/units/unit2/module2.1/fruits.txt" download=""><strong>fruits.txt</strong></a> and then to <a href="../../../media/units/unit2/module2.1/fruits2.txt" download=""><strong>fruits2.txt</strong></a>. (Submit your program with the latter file as the input file.) In your module pdf, describe what you had to change in the code to make it work for the second file.</p>
+</div>
+</div>
+<p>Now let’s explain:</p>
+<ul>
+<li><p>A <em>dictionary</em> is a technical term that is only somewhat related to an actual English dictionary.</p></li>
+<li><p>Think of an English dictionary as something where you <em>look up</em> a word and <em>receive</em> its meaning.</p></li>
+<li><p>They operations here are <em>look up</em> and <em>receive</em> an associated <em>value</em> (the word’s meaning, in this case).</p></li>
+<li><p>In Python, a dictionary is a structure that lets you associate one kind of data with another.</p></li>
+<li><p>The technical equivalent of a word is called a <em>key</em> and the equivalent of the meaning is called the <em>value</em>.</p></li>
+<li><p>So, a dictionary is a collection of key-value pairs.</p></li>
+<li><p>Here’s an example:</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> {<span class="st">'apple'</span>: <span class="dv">3</span>, <span class="st">'banana'</span>: <span class="dv">3</span>, <span class="st">'pear'</span>: <span class="dv">1</span>, <span class="st">'kiwi'</span>: <span class="dv">2</span>, <span class="st">'orange'</span>: <span class="dv">4</span>}</span></code></pre></div>
+<p>In this case, we’re associating</p>
+<ul>
+<li>The value 3 with the key ‘apple’</li>
+<li>The value 3 with the key ‘banana’</li>
+<li>The value 1 with the key ‘pear’</li>
+<li>The value 2 with the key ‘kiwi’</li>
+<li>The value 4 with the key ‘orange’</li>
+</ul></li>
+<li><p>Conveniently, Python allows array indexing using the key:</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> {<span class="st">'apple'</span>: <span class="dv">3</span>, <span class="st">'banana'</span>: <span class="dv">3</span>, <span class="st">'pear'</span>: <span class="dv">1</span>, <span class="st">'kiwi'</span>: <span class="dv">2</span>, <span class="st">'orange'</span>: <span class="dv">4</span>}</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(d[<span class="st">'apple'</span>])  <span class="co"># Prints 3</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>d[<span class="st">'banana'</span>] <span class="op">=</span> <span class="dv">0</span>    </span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Which changes the value associated with 'banana' to 3</span></span></code></pre></div></li>
+<li><p>The above is an example of a dictionary that’s already built (after we’ve processed the data).</p></li>
+<li><p>To process data on-the-fly, we need an additional operation that an English dictionary does not really have: we need to be able to <em>add</em> something that’s not already there.</p></li>
+<li><p>To add a new key, we simply use it as an index:</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> {<span class="st">'apple'</span>: <span class="dv">3</span>, <span class="st">'banana'</span>: <span class="dv">3</span>, <span class="st">'pear'</span>: <span class="dv">1</span>, <span class="st">'kiwi'</span>: <span class="dv">2</span>, <span class="st">'orange'</span>: <span class="dv">4</span>}</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>d[<span class="st">'plum'</span>] <span class="op">=</span> <span class="dv">0</span></span></code></pre></div>
+<p>With this understanding we can now revisit the code in the fruit example:</p></li>
+<li><p>We’ve seen how to read a file line-by-line before</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'fruits.txt'</span>,<span class="st">'r'</span>) <span class="im">as</span> data_file:</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> data_file.readline()</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> line <span class="op">!=</span> <span class="st">''</span>:</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>        fruit <span class="op">=</span> line.strip()           <span class="co"># Remove whitespace on either side</span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>        <span class="co"># This is where we'd do something with the datda</span></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>        line <span class="op">=</span> data_file.readline()    <span class="co"># Get the next line</span></span></code></pre></div></li>
+<li><p>The rest is merely the dictionary part:</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'fruits.txt'</span>,<span class="st">'r'</span>) <span class="im">as</span> data_file:</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> data_file.readline()</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> line <span class="op">!=</span> <span class="st">''</span>:</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>        fruit <span class="op">=</span> line.strip()           <span class="co"># Remove whitespace on either side</span></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> fruit <span class="kw">in</span> counters.keys():</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>            <span class="co"># If we've seen the fruit before, increment.</span></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>            counters[fruit] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>            <span class="co"># If this is the first time, set the counter to 1</span></span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>         counters[fruit] <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a>        line <span class="op">=</span> data_file.readline()    <span class="co"># Get the next line</span></span></code></pre></div></li>
+</ul>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exercise 1.7
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In <code>my_stopwords2.py</code>, write code that uses a dictionary to compare the relative occurrence of stopwords in <code>alice.txt</code> and <code>darwin.txt</code>. In particular, we’d like to know: what percentage of the stopword occurence can be attributed to ‘the’, what percentage to ‘and’, and so on. For <code>alice.txt</code> the output should look <a href="../../../media/units/unit2/module2.1/alice_output.txt" download=""><strong>like this</strong></a> (not necessarily in the same order) using the string formatting from the previous section. In your module pdf, compare the outputs for the two texts: do the stopwords occur with similar relative frequencies across the two texts?</p>
+</div>
+</div>
+</section>
+<section id="advanced-topic-global-variables" class="level2">
+<h2 class="anchored" data-anchor-id="advanced-topic-global-variables">1.3 Advanced topic: global variables</h2>
+<p>Suppose we have the following application:</p>
+<ul>
+<li><p>We prompt the user to enter the parameters (the coordinates of the center, and radius) of circle that needs to be drawn.</p></li>
+<li><p>We do this repeatedly until the user is done (empty input) and then draw all the circles.</p></li>
+<li><p>This is the kind of code we’d like to write:</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ... For brevity, we're not showing the import, setting up drawtool etc ...</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Read circle data from the user:</span></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>line <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter circle parameters: '</span>)</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> line <span class="op">!=</span> <span class="st">''</span>:</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>    process_line(line)</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter circle parameters: '</span>)</span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a><span class="co"># A method that'll access the list of circles</span></span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>draw_circles()</span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div></li>
+<li><p>What we’ll do is have a <em>list</em> of circles:</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The list of circles</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>circles <span class="op">=</span> []</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process_line(line):</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Code for extracting the center coordinates and radius</span></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># This will add to the list circles</span></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> draw_circles():</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Code for drawing the circles: will access the list circles</span></span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>line <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter circle parameters: '</span>)</span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> line <span class="op">!=</span> <span class="st">''</span>:</span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>    process_line(line)</span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter circle parameters: '</span>)</span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a>draw_circles()</span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div></li>
+<li><p>Here, the variable <code>circles</code> is called a <em>global</em> variable because it can be access inside other functions defined in the file.</p></li>
+<li><p>So, what would be an example of a non-global variable?</p></li>
+<li><p>Let’s fill out the code and see:</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>circles <span class="op">=</span> []                      <span class="co"># The global variable</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process_line(line):</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>    parts <span class="op">=</span> line.split()          <span class="co"># parts is a local variable</span></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="bu">float</span>(parts[<span class="dv">0</span>])</span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="bu">float</span>(parts[<span class="dv">1</span>])</span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> <span class="bu">float</span>(parts[<span class="dv">2</span>])</span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>    circle <span class="op">=</span> (x,y,r)              <span class="co"># We've used a tuple here!</span></span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>    circles.append (circle)       <span class="co"># Accessing global circles</span></span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> draw_circles():</span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a>    dt.set_color(<span class="st">'b'</span>)</span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> c <span class="kw">in</span> circles:             <span class="co"># Accessing global circles</span></span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a>        dt.draw_circle(c[<span class="dv">0</span>], c[<span class="dv">1</span>], c[<span class="dv">2</span>])</span>
+<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-16"><a href="#cb38-16" aria-hidden="true" tabindex="-1"></a>line <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter circle parameters: '</span>)</span>
+<span id="cb38-17"><a href="#cb38-17" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> line <span class="op">!=</span> <span class="st">''</span>:</span>
+<span id="cb38-18"><a href="#cb38-18" aria-hidden="true" tabindex="-1"></a>    process_line(line)</span>
+<span id="cb38-19"><a href="#cb38-19" aria-hidden="true" tabindex="-1"></a>    line <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter circle parameters: '</span>)</span>
+<span id="cb38-20"><a href="#cb38-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-21"><a href="#cb38-21" aria-hidden="true" tabindex="-1"></a>draw_circles()</span>
+<span id="cb38-22"><a href="#cb38-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-23"><a href="#cb38-23" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div></li>
+</ul>
+<p>Let’s create a simpler example to illustrate:</p>
+<ul>
+<li><p>Consider this:</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> some_func():</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> x <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(y)</span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> some_other_func():</span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>    z <span class="op">=</span> x <span class="op">+</span> <span class="dv">2</span></span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(z)</span>
+<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># print(y)         # This would fail: we can't access y here</span></span>
+<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-12"><a href="#cb39-12" aria-hidden="true" tabindex="-1"></a>some_func()          <span class="co"># Prints 6</span></span>
+<span id="cb39-13"><a href="#cb39-13" aria-hidden="true" tabindex="-1"></a>some_other_func()    <span class="co"># Prints 7</span></span></code></pre></div></li>
+<li><p>Let’s point out: <img src="../../../media/units/unit2/module2.1/globals-code.png" class="img-fluid"></p></li>
+<li><p>Thus: to share variables across functions, define the variables <em>outside</em> the functions.</p></li>
+<li><p>In which case they become global variables.</p></li>
+</ul>
+<p>That would be the end of it, but there’s one more complication:</p>
+<ul>
+<li><p>You cannot <em>modify</em> a global variable inside a function without explicitly stating an intention to do so.</p></li>
+<li><p>So, suppose we wanted to modify x in the example:</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> some_func():</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">global</span> x        <span class="co"># Explicit statement of intent to modify</span></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> x <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> x <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(y)</span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> some_other_func():</span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a>    z <span class="op">=</span> x <span class="op">+</span> <span class="dv">2</span></span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(z)</span>
+<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-13"><a href="#cb40-13" aria-hidden="true" tabindex="-1"></a>some_func()         <span class="co"># Prints 7</span></span>
+<span id="cb40-14"><a href="#cb40-14" aria-hidden="true" tabindex="-1"></a>some_other_func()   <span class="co"># Prints 8</span></span></code></pre></div></li>
+</ul>
+<p>Now let’s go back to the circle-drawing example to see an instance where modifying a global is useful:</p>
+<ul>
+<li><p>Suppose we want to track the smallest circle (smallest radius) and draw that circle in red.</p></li>
+<li><p>Thus, as we get user input line-by-line, we’ll need to update the smallest.</p></li>
+<li><p>Here’s part of the code:</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># For brevity, we're not showing the import, setting up drawtool etc</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ... (stuff left out) ... </span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Global variable circles (a list) available to all functions</span></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>circles <span class="op">=</span> []</span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>smallest_r <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>smallest <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process_line(line):</span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">global</span> smallest_r, smallest   <span class="co"># Identify globals being modified</span></span>
+<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a>    parts <span class="op">=</span> line.split()</span>
+<span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="bu">float</span>(parts[<span class="dv">0</span>])</span>
+<span id="cb41-14"><a href="#cb41-14" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="bu">float</span>(parts[<span class="dv">1</span>])</span>
+<span id="cb41-15"><a href="#cb41-15" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> <span class="bu">float</span>(parts[<span class="dv">2</span>])</span>
+<span id="cb41-16"><a href="#cb41-16" aria-hidden="true" tabindex="-1"></a>    circle <span class="op">=</span> (x,y,r) </span>
+<span id="cb41-17"><a href="#cb41-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> r <span class="op">&lt;</span> smallest_r:</span>
+<span id="cb41-18"><a href="#cb41-18" aria-hidden="true" tabindex="-1"></a>        smallest_r <span class="op">=</span> r            <span class="co"># Modifying global smallest_r</span></span>
+<span id="cb41-19"><a href="#cb41-19" aria-hidden="true" tabindex="-1"></a>        smallest <span class="op">=</span> circle         <span class="co"># Modifying global smallest</span></span>
+<span id="cb41-20"><a href="#cb41-20" aria-hidden="true" tabindex="-1"></a>    circles.append (circle)       <span class="co"># Accessing global circles</span></span>
+<span id="cb41-21"><a href="#cb41-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-22"><a href="#cb41-22" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> draw_circles():</span>
+<span id="cb41-23"><a href="#cb41-23" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Fill in the code here to draw the smallest in red</span></span>
+<span id="cb41-24"><a href="#cb41-24" aria-hidden="true" tabindex="-1"></a>    <span class="co"># and the other circles in blue.</span></span>
+<span id="cb41-25"><a href="#cb41-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-26"><a href="#cb41-26" aria-hidden="true" tabindex="-1"></a><span class="co"># The rest of the code is the same as before ... (read line by line etc)</span></span></code></pre></div></li>
+</ul>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exercise 1.8
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In <code>my_circles.py</code>, copy over the above and from the earlier example, and then fill in code in the <code>draw_circles()</code> function to complete the program. When the user types, for example,</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>Enter circle parameters: <span class="dv">3</span> <span class="dv">4</span> <span class="dv">3</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>Enter circle parameters: <span class="dv">4</span> <span class="dv">3</span> <span class="dv">1</span></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>Enter circle parameters: <span class="dv">5</span> <span class="dv">7</span> <span class="dv">2</span></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>Enter circle parameters: </span></code></pre></div>
+<p>the output should be: <img src="../../../media/units/unit2/module2.1/draw-circles.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="multiple-files" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-files">1.4 Multiple files</h2>
+<p>Large Python applications consists of tens of thousands of lines of code.</p>
+<p>Most such applications actually consist of hundreds of Python programs bundled together and where one program can call functions in another.</p>
+<p>We’ve already seen examples with the use of drawtool and wordtool.</p>
+<p>Why are applications broken into multiple files?</p>
+<ul>
+<li>One large file is unwieldy to understand and work with in an editor (imagine the scrolling difficult with a thousand lines).</li>
+<li>It’s much easier to separate out functionality and test each piece. Robustly tested programs can be left alone while refining those that need work.</li>
+<li>Separated functionality is useful in other projects.</li>
+<li>If one piece needs upgrading, you can upgrade just that part if it’s in a separate file.</li>
+</ul>
+<p>Let’s build a simple example:</p>
+<ul>
+<li><p>Suppose we put together a file called <code>my_math_functions.py</code> which has</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>pi <span class="op">=</span> <span class="fl">3.141</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> square(x):</span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x<span class="op">*</span>x</span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> cube(x):</span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x<span class="op">*</span>x<span class="op">*</span>x</span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> distance(x1, y1, x2, y2):</span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Write your code here</span></span></code></pre></div></li>
+<li><p>Then in an another file called <code>my_math_application.py</code> you could write:</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> my_math_functions <span class="im">as</span> m</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> m.square(<span class="dv">5</span>)</span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)</span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>x2 <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>y2 <span class="op">=</span> m.cube(x2)</span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y2)</span>
+<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> m.distance(x,y, x2, y2)</span>
+<span id="cb44-12"><a href="#cb44-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(d)</span></code></pre></div></li>
+<li><p>Notice the <code>import</code> statement at the top of the file:</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> my_math_functions <span class="im">as</span> m</span></code></pre></div>
+<p>This has the <code>import</code> keyword, the name of the other file, and a shortcut.</p></li>
+<li><p>If we did not have the shortcut, we’d have to write code like:</p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> my_math_functions </span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> my_math_functions.square(<span class="dv">5</span>)</span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)</span></code></pre></div>
+<p>Which is perfectly legit but a bit tedious.</p></li>
+<li><p>To access something from another file, we use the dot (period):</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> m.square(<span class="dv">5</span>)</span></code></pre></div></li>
+<li><p>One can access a variable in the other file as well.</p>
+<p><code>python   print(m.pi)</code></p></li>
+</ul>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exercise 1.9
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Complete the code for the <code>distance()</code> function and write the above two programs (using the file names as above) so that the output is:</p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="dv">25</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="dv">27</span></span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a><span class="fl">2.23606797749979</span></span></code></pre></div>
+</div>
+</div>
+</section>
+<section id="string-formatting-and-numbers" class="level2">
+<h2 class="anchored" data-anchor-id="string-formatting-and-numbers">1.5 String formatting and numbers</h2>
+<p>Consider this program:</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'i='</span>, i, <span class="st">'x='</span>, x)</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>    x <span class="op">+=</span> <span class="fl">0.1</span></span></code></pre></div>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exercise 1.10
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up and run in <code>my_format.py</code>.</p>
+</div>
+</div>
+<p>You observed output like:</p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>i<span class="op">=</span> <span class="dv">0</span> x<span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>i<span class="op">=</span> <span class="dv">1</span> x<span class="op">=</span> <span class="fl">0.1</span></span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>i<span class="op">=</span> <span class="dv">2</span> x<span class="op">=</span> <span class="fl">0.2</span></span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>i<span class="op">=</span> <span class="dv">3</span> x<span class="op">=</span> <span class="fl">0.30000000000000004</span></span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>i<span class="op">=</span> <span class="dv">4</span> x<span class="op">=</span> <span class="fl">0.4</span></span></code></pre></div>
+<p>Why the ugly output?</p>
+<ul>
+<li>There are really three questions here, the second of which is a bit subtle.</li>
+<li>The first one is: why doesn’t Python see that most of the other values are bring printed nice, so why not print <code>0.3</code> instead of <code>0.30000000000000004</code>?</li>
+<li>The second, more sutble one, is: our for-loop clearly wants to increment by 0.1, which means x should be 0.3 and not 0.30000000000000004.</li>
+<li>The third implied question is: how do we actually limit the number of digits printed after the decimal?</li>
+</ul>
+<p>Let’s answer these questions:</p>
+<ol type="1">
+<li><p><em>Why doesn’t Python recognize unnecessary digits?</em></p>
+<ul>
+<li>This is because Python does not want to second guess the programmer’s intent.</li>
+<li>Maybe you do want the digits.</li>
+</ul></li>
+<li><p><em>How did 0.3 become 0.30000000000000004?</em></p>
+<ul>
+<li>A computer’s memory has two kinds of limitations, and one “feature”.</li>
+<li>One: it cannot store beyond a certain accuracy (and computers differ based on their hardware).</li>
+<li>Two: when calculations are performed, this storage limitation forces some arithmetic to be slightly wrong (many digits after the decimal point).</li>
+<li>The “feature” is that computers store binary numbers, not our kind of decimal numbers. This means a decimal version of a binary number might have to be an approximation.</li>
+</ul></li>
+<li><p>OK, how do we actually print nicely?</p>
+<ul>
+<li>This is a bit of an advanced topic, so we’ll only provide a simple example.</li>
+<li>The solution is to use a special set of <em>formatting</em> commands, like the ones you saw a long time ago (remember ?)</li>
+</ul></li>
+</ol>
+<p>Here’s how it works for the above program:</p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>    format_string <span class="op">=</span> <span class="st">'i = </span><span class="sc">{0:2d}</span><span class="st">  x = </span><span class="sc">{1:.2f}</span><span class="st">'</span></span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>    string_to_print <span class="op">=</span> format_string.<span class="bu">format</span>(i, x)</span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(string_to_print)</span>
+<span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a>    x <span class="op">+=</span> <span class="fl">0.1</span></span></code></pre></div>
+<p>Let’s explain:</p>
+<ul>
+<li><p>A format string is the eventual desired string that needs to be printed but with some placeholders:</p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>format_string <span class="op">=</span> <span class="st">'i = </span><span class="sc">{0:2d}</span><span class="st">  x = </span><span class="sc">{1:.2f}</span><span class="st">'</span></span></code></pre></div></li>
+<li><p>In this case, there are two placeholders:</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>format_string <span class="op">=</span> <span class="st">'i = </span><span class="sc">{0:2d}</span><span class="st">  x = </span><span class="sc">{1:.2f}</span><span class="st">'</span></span></code></pre></div>
+<p>Placeholders are enclosed in curly brackets.</p></li>
+<li><p>Each placeholder begins with a number that will eventually determine which variable gets its value into the placeholder.</p></li>
+<li><p>So, here we have variables 0 and 1:</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>format_string <span class="op">=</span> <span class="st">'i = </span><span class="sc">{0:2d}</span><span class="st">  x = </span><span class="sc">{1:.2f}</span><span class="st">'</span></span></code></pre></div></li>
+<li><p>We feed the <em>values</em> via the <code>format()</code> function:</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>format_string <span class="op">=</span> <span class="st">'i = </span><span class="sc">{0:2d}</span><span class="st">  x = </span><span class="sc">{1:.2f}</span><span class="st">'</span></span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>string_to_print <span class="op">=</span> format_string.<span class="bu">format</span>(i, x)</span></code></pre></div>
+<p>This is what lets <code>format()</code> put the value of i in place of the “0” and the value of x in place of the “1”.</p></li>
+<li><p>All that’s left to explain are the cryptic commands that follow the “0” and “1” respectively:</p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>format_string <span class="op">=</span> <span class="st">'i = </span><span class="sc">{0:2d}</span><span class="st">  x = </span><span class="sc">{1:.2f}</span><span class="st">'</span></span></code></pre></div>
+<p>The first one says, in effect, “use a minimum of 2 spaces and expect an integer”. The second says “expect a float and restrict the number of post-decimal digits to 2”.</p></li>
+</ul>
+<p>String formatting has more to it, but that’s all we’ll say about it here.</p>
+</section>
+<section id="randomness" class="level2">
+<h2 class="anchored" data-anchor-id="randomness">1.6 Randomness</h2>
+<p>As we’ve seen throughout the course, it is useful to be able to have Python generate random numbers:</p>
+<ul>
+<li>We use random numbers to answer statistical questions.</li>
+<li>Random numbers were also useful in creating patterns, as in art.</li>
+</ul>
+<p>However, there’s an important thing to know about random generation.</p>
+<p>Consider this program:</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a><span class="co">#random.seed(123)</span></span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-5"><a href="#cb57-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb57-6"><a href="#cb57-6" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> random.uniform(<span class="fl">1.0</span>, <span class="fl">10.0</span>)</span>
+<span id="cb57-7"><a href="#cb57-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x)</span></code></pre></div>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exercise 1.11
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type up the above <code>my_random_example.py</code>. Run it multiple times and observe the output. Next, un-comment the line</p>
+<div class="sourceCode" id="cb58"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co">#random.seed(123)</span></span></code></pre></div>
+<p>and run it again multiple times. Then, change the number 123 in the seed to any number between 1 and 1000, and once more run the program many times.</p>
+</div>
+</div>
+<p>How random generation works:</p>
+<ul>
+<li>Python uses a mathematical function with a so-called “seed” to produce random numbers.</li>
+<li>The numbers aren’t really random, because a particular seed will produce the same numbers, which is why they’re called pseudorandom numbers.</li>
+<li>However, if we’re doing things like computing averages, a pseudorandom sequence, provided it’s long enough, is a reasonably good approximation.</li>
+<li>Is there ever a reason to fix a seed?
+<ul>
+<li>Turns out, yes. It’s very useful for debugging.</li>
+<li>Using a seed causes your program to be <em>repeatable</em> (with the same pseudorandom sequence).</li>
+<li>So, typically, one uses a seed when getting your program to work.</li>
+<li>After it’s working, you can comment out the seed.</li>
+</ul></li>
+<li>If a seed is not provided, Python uses the local time or something like that as the seed, so that repeated runs produce different results.</li>
+</ul>
+</section>
+<section id="what-else-is-there-in-python" class="level2">
+<h2 class="anchored" data-anchor-id="what-else-is-there-in-python">1.7 What else is there in Python?</h2>
+<p>Our goal in this almost-final module was to:</p>
+<ul>
+<li>Introduce the all-important topic of <em>arrays</em>.</li>
+<li>Lightly sketch a few advanced topics to introduce ideas and show some examples, without expecting mastery of all the details.</li>
+</ul>
+<p>In the next module, we will dive into examples from across the disciplines. Some of these advanced topics will be useful</p>
+<p>So, one might ask: what’s left in Python to learn?</p>
+<p>Quite a bit it turns out:</p>
+<ul>
+<li>Like many modern programming languages, Python is large enough that one needs a few courses to experience all of it.</li>
+<li>Some concepts are advanced enough to need weeks to cover (example: <em>objects</em>).</li>
+<li>Others need a background in <em>data structures</em> to understand <em>how</em> they work (example: dictionaries).</li>
+<li>Yet others involve library functions and external packages.</li>
+</ul>
+<p>Do you need to learn more? Is what we’ve learned enough to achieve a good deal?</p>
+<p>We’ll have more to say about this in a later module.</p>
+</section>
 <section id="getting-set-up-for-datatool" class="level2">
-<h2 class="anchored" data-anchor-id="getting-set-up-for-datatool">1.0 Getting set up for datatool</h2>
+<h2 class="anchored" data-anchor-id="getting-set-up-for-datatool">1.8 Getting set up for datatool</h2>
 <p>If you’ve downloaded Anaconda as directed earlier in the course, you should already have <em>Pandas</em> and <em>Plotly</em> installed.</p>
 <p>Let’s give this a test.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -641,7 +1486,7 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exercise 1.1
+Exercise 1.12
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -664,7 +1509,7 @@ Tip
 </div>
 </section>
 <section id="csv-data" class="level2">
-<h2 class="anchored" data-anchor-id="csv-data">1.1 CSV data</h2>
+<h2 class="anchored" data-anchor-id="csv-data">1.9 CSV data</h2>
 <p>When hearing buzzwords like “data science” or “data analytics”, one is led to ask: exactly what is meant by data, and what form does it take on computers?</p>
 <p>We need to be aware of two such forms:</p>
 <ul>
@@ -745,18 +1590,18 @@ Guangzhou,23.1288,113.259,China,CN,CHN,20902000</code></pre>
 <li>You can see why <strong>CSV</strong> stands for “<strong>Comma Separated Values</strong>”.</li>
 </ul>
 <p>Next, let’s write some code to work with CSV files.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'cities.csv'</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>dt.print_data()</span></code></pre></div>
+<div class="sourceCode" id="cb62"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
+<span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'cities.csv'</span>)</span>
+<span id="cb62-5"><a href="#cb62-5" aria-hidden="true" tabindex="-1"></a>dt.print_data()</span></code></pre></div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exercise 1.2
+Exercise 1.13
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -764,20 +1609,20 @@ Exercise 1.2
 </div>
 </div>
 <p>It is often convenient CSV data into an array, as in this example:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'cities.csv'</span>)</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>D <span class="op">=</span> dt.get_data_as_array()</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(D)</span></code></pre></div>
+<div class="sourceCode" id="cb63"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
+<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'cities.csv'</span>)</span>
+<span id="cb63-5"><a href="#cb63-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb63-6"><a href="#cb63-6" aria-hidden="true" tabindex="-1"></a>D <span class="op">=</span> dt.get_data_as_array()</span>
+<span id="cb63-7"><a href="#cb63-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(D)</span></code></pre></div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exercise 1.3
+Exercise 1.14
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -786,18 +1631,18 @@ Exercise 1.3
 </div>
 </section>
 <section id="using-datatool-for-plotting" class="level2">
-<h2 class="anchored" data-anchor-id="using-datatool-for-plotting">1.2 Using <code>datatool</code> for plotting</h2>
+<h2 class="anchored" data-anchor-id="using-datatool-for-plotting">1.10 Using <code>datatool</code> for plotting</h2>
 <p>Often, one of the first things we do with data is to plot the data, or at least parts of it.</p>
 <p>With datatool, that is as simple as this:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'simpledata.csv'</span>)</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># A basic line graph. 'X' and 'Y' are the column headers.</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>dt.line_graph(<span class="st">'Y'</span>, <span class="st">'X'</span>)</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
+<div class="sourceCode" id="cb64"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
+<span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'simpledata.csv'</span>)</span>
+<span id="cb64-5"><a href="#cb64-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb64-6"><a href="#cb64-6" aria-hidden="true" tabindex="-1"></a><span class="co"># A basic line graph. 'X' and 'Y' are the column headers.</span></span>
+<span id="cb64-7"><a href="#cb64-7" aria-hidden="true" tabindex="-1"></a>dt.line_graph(<span class="st">'Y'</span>, <span class="st">'X'</span>)</span>
+<span id="cb64-8"><a href="#cb64-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb64-9"><a href="#cb64-9" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <p>Let’s examine the data:</p>
 <ul>
 <li><p>The CSV file looks like this:</p>
@@ -820,7 +1665,7 @@ Exercise 1.3
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exercise 1.4
+Exercise 1.15
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -841,21 +1686,21 @@ Tip
 </div>
 </div>
 <p>One can plot <em>categorical</em> (non-numeric) data as well:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'cities.csv'</span>)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>dt.line_graph(<span class="st">'city'</span>, <span class="st">'population'</span>)</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
+<div class="sourceCode" id="cb66"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
+<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'cities.csv'</span>)</span>
+<span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-6"><a href="#cb66-6" aria-hidden="true" tabindex="-1"></a>dt.line_graph(<span class="st">'city'</span>, <span class="st">'population'</span>)</span>
+<span id="cb66-7"><a href="#cb66-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-8"><a href="#cb66-8" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exercise 1.5
+Exercise 1.16
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -878,20 +1723,20 @@ Exercise 1.5
 10,89,1,88</code></pre></li>
 <li><p>Here, there are four columns.</p></li>
 <li><p>We will plot the 2nd, 3rd, and 4th columns against the 1st:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'simpledata2.csv'</span>)</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Note: how to place a title on a graph:</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>dt.set_title(<span class="st">'X vs Y, W, Z'</span>)</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>dt.line_graph(<span class="st">'X'</span>, <span class="st">'Y'</span>)</span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>dt.line_graph(<span class="st">'X'</span>, <span class="st">'Z'</span>)</span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>dt.line_graph(<span class="st">'X'</span>, <span class="st">'W'</span>)</span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div></li>
+<div class="sourceCode" id="cb68"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
+<span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-5"><a href="#cb68-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'simpledata2.csv'</span>)</span>
+<span id="cb68-6"><a href="#cb68-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-7"><a href="#cb68-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Note: how to place a title on a graph:</span></span>
+<span id="cb68-8"><a href="#cb68-8" aria-hidden="true" tabindex="-1"></a>dt.set_title(<span class="st">'X vs Y, W, Z'</span>)</span>
+<span id="cb68-9"><a href="#cb68-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-10"><a href="#cb68-10" aria-hidden="true" tabindex="-1"></a>dt.line_graph(<span class="st">'X'</span>, <span class="st">'Y'</span>)</span>
+<span id="cb68-11"><a href="#cb68-11" aria-hidden="true" tabindex="-1"></a>dt.line_graph(<span class="st">'X'</span>, <span class="st">'Z'</span>)</span>
+<span id="cb68-12"><a href="#cb68-12" aria-hidden="true" tabindex="-1"></a>dt.line_graph(<span class="st">'X'</span>, <span class="st">'W'</span>)</span>
+<span id="cb68-13"><a href="#cb68-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-14"><a href="#cb68-14" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div></li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -907,16 +1752,16 @@ Tip
 </div>
 </div>
 <p>Next, let’s use datatool to plot a bar chart:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'simpledata2.csv'</span>)</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>dt.bar_chart(<span class="st">'X'</span>, <span class="st">'Y'</span>)</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>dt.bar_chart(<span class="st">'X'</span>, <span class="st">'Z'</span>)</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
+<div class="sourceCode" id="cb69"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
+<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'simpledata2.csv'</span>)</span>
+<span id="cb69-6"><a href="#cb69-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-7"><a href="#cb69-7" aria-hidden="true" tabindex="-1"></a>dt.bar_chart(<span class="st">'X'</span>, <span class="st">'Y'</span>)</span>
+<span id="cb69-8"><a href="#cb69-8" aria-hidden="true" tabindex="-1"></a>dt.bar_chart(<span class="st">'X'</span>, <span class="st">'Z'</span>)</span>
+<span id="cb69-9"><a href="#cb69-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-10"><a href="#cb69-10" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <p>Which produces <img src="../../../media/units/unit2/module2.1/barchart.png" class="img-fluid"></p>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -924,7 +1769,7 @@ Tip
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exercise 1.6
+Exercise 1.17
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -932,15 +1777,15 @@ Exercise 1.6
 </div>
 </div>
 <p>Next up: bubble charts</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'simpledata2.csv'</span>)</span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>dt.bubble_chart(<span class="st">'X'</span>, <span class="st">'Y'</span>, bubblesize<span class="op">=</span><span class="st">'Y'</span>)</span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
+<div class="sourceCode" id="cb70"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
+<span id="cb70-4"><a href="#cb70-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-5"><a href="#cb70-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'simpledata2.csv'</span>)</span>
+<span id="cb70-6"><a href="#cb70-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-7"><a href="#cb70-7" aria-hidden="true" tabindex="-1"></a>dt.bubble_chart(<span class="st">'X'</span>, <span class="st">'Y'</span>, bubblesize<span class="op">=</span><span class="st">'Y'</span>)</span>
+<span id="cb70-8"><a href="#cb70-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-9"><a href="#cb70-9" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <p>Which produces <img src="../../../media/units/unit2/module2.1/bubblechart.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -964,7 +1809,7 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exercise 1.7
+Exercise 1.18
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -973,73 +1818,73 @@ Exercise 1.7
 </div>
 </section>
 <section id="using-datatool-for-drawing" class="level2">
-<h2 class="anchored" data-anchor-id="using-datatool-for-drawing">1.3 Using datatool for drawing</h2>
+<h2 class="anchored" data-anchor-id="using-datatool-for-drawing">1.11 Using datatool for drawing</h2>
 <p>Datatool as drawing functions similar to drawtool:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Set the range along each axis:</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>dt.set_x_range(<span class="dv">0</span>, <span class="dv">10</span>)</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>dt.set_y_range(<span class="dv">0</span>, <span class="dv">10</span>) </span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Set line width:</span></span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>dt.set_draw_width(<span class="dv">2</span>)</span>
-<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Draw some lines and shapes</span></span>
-<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>dt.set_draw_color(<span class="st">'blue'</span>)</span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>dt.draw_line(<span class="dv">2</span>,<span class="dv">3</span>, <span class="dv">8</span>,<span class="dv">9</span>)</span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>dt.set_draw_color(<span class="st">'green'</span>)</span>
-<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>dt.draw_rectangle(<span class="dv">7</span>,<span class="dv">2</span>, <span class="dv">3</span>,<span class="dv">4</span>)</span>
-<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>dt.draw_ellipse(<span class="dv">7</span>,<span class="dv">2</span>, <span class="dv">3</span>,<span class="dv">4</span>)</span>
-<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>dt.set_draw_color(<span class="st">'red'</span>)</span>
-<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>dt.draw_arrow(<span class="dv">3</span>,<span class="dv">8</span>, <span class="dv">5</span>,<span class="dv">7</span>, <span class="dv">5</span>, <span class="dv">2</span>)</span>
-<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Draw text </span></span>
-<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>dt.draw_text(<span class="fl">8.5</span>, <span class="dv">4</span>, <span class="st">'Bullseye'</span>)</span>
-<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
+<div class="sourceCode" id="cb71"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
+<span id="cb71-4"><a href="#cb71-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-5"><a href="#cb71-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Set the range along each axis:</span></span>
+<span id="cb71-6"><a href="#cb71-6" aria-hidden="true" tabindex="-1"></a>dt.set_x_range(<span class="dv">0</span>, <span class="dv">10</span>)</span>
+<span id="cb71-7"><a href="#cb71-7" aria-hidden="true" tabindex="-1"></a>dt.set_y_range(<span class="dv">0</span>, <span class="dv">10</span>) </span>
+<span id="cb71-8"><a href="#cb71-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-9"><a href="#cb71-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Set line width:</span></span>
+<span id="cb71-10"><a href="#cb71-10" aria-hidden="true" tabindex="-1"></a>dt.set_draw_width(<span class="dv">2</span>)</span>
+<span id="cb71-11"><a href="#cb71-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-12"><a href="#cb71-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Draw some lines and shapes</span></span>
+<span id="cb71-13"><a href="#cb71-13" aria-hidden="true" tabindex="-1"></a>dt.set_draw_color(<span class="st">'blue'</span>)</span>
+<span id="cb71-14"><a href="#cb71-14" aria-hidden="true" tabindex="-1"></a>dt.draw_line(<span class="dv">2</span>,<span class="dv">3</span>, <span class="dv">8</span>,<span class="dv">9</span>)</span>
+<span id="cb71-15"><a href="#cb71-15" aria-hidden="true" tabindex="-1"></a>dt.set_draw_color(<span class="st">'green'</span>)</span>
+<span id="cb71-16"><a href="#cb71-16" aria-hidden="true" tabindex="-1"></a>dt.draw_rectangle(<span class="dv">7</span>,<span class="dv">2</span>, <span class="dv">3</span>,<span class="dv">4</span>)</span>
+<span id="cb71-17"><a href="#cb71-17" aria-hidden="true" tabindex="-1"></a>dt.draw_ellipse(<span class="dv">7</span>,<span class="dv">2</span>, <span class="dv">3</span>,<span class="dv">4</span>)</span>
+<span id="cb71-18"><a href="#cb71-18" aria-hidden="true" tabindex="-1"></a>dt.set_draw_color(<span class="st">'red'</span>)</span>
+<span id="cb71-19"><a href="#cb71-19" aria-hidden="true" tabindex="-1"></a>dt.draw_arrow(<span class="dv">3</span>,<span class="dv">8</span>, <span class="dv">5</span>,<span class="dv">7</span>, <span class="dv">5</span>, <span class="dv">2</span>)</span>
+<span id="cb71-20"><a href="#cb71-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-21"><a href="#cb71-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Draw text </span></span>
+<span id="cb71-22"><a href="#cb71-22" aria-hidden="true" tabindex="-1"></a>dt.draw_text(<span class="fl">8.5</span>, <span class="dv">4</span>, <span class="st">'Bullseye'</span>)</span>
+<span id="cb71-23"><a href="#cb71-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-24"><a href="#cb71-24" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <p>Which produces <img src="../../../media/units/unit2/module2.1/drawing.png" class="img-fluid"></p>
 </section>
 <section id="using-datatool-with-generated-data" class="level2">
-<h2 class="anchored" data-anchor-id="using-datatool-with-generated-data">1.4 Using datatool with generated data</h2>
+<h2 class="anchored" data-anchor-id="using-datatool-with-generated-data">1.12 Using datatool with generated data</h2>
 <p>In some situations, we end up <em>generating data</em> with our code. This means the data is not in some CSV file.</p>
 <p>For example, suppose we want to plot the numbers 0 through 10 and their squares using:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">11</span>):</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> i</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> x <span class="op">*</span> x        <span class="co"># The square of x</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co"># We'd like to plot these x,y values as points in a graph</span></span></code></pre></div>
+<div class="sourceCode" id="cb72"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">11</span>):</span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> i</span>
+<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> x <span class="op">*</span> x        <span class="co"># The square of x</span></span>
+<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb72-5"><a href="#cb72-5" aria-hidden="true" tabindex="-1"></a><span class="co"># We'd like to plot these x,y values as points in a graph</span></span></code></pre></div>
 <p>There are two options:</p>
 <ul>
 <li>Create a CSV from the above program, and then load that into datatool.</li>
 <li>Avoid creating a file and directly feed the data into datatool.</li>
 </ul>
 <p>Let’s use the latter approach since it avoids having to create a file.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Make an empty array with zeroes (dtype='f' means float numbers)</span></span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Other kinds are 'int'</span></span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.zeros( (<span class="dv">11</span>, <span class="dv">2</span>), dtype<span class="op">=</span><span class="st">'f'</span>)</span>
-<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Now fill the array with generated data:</span></span>
-<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">11</span>):</span>
-<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> i</span>
-<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> x <span class="op">*</span> x</span>
-<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>    A[i,<span class="dv">0</span>] <span class="op">=</span> x     <span class="co"># First col has x</span></span>
-<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>    A[i,<span class="dv">1</span>] <span class="op">=</span> y     <span class="co"># Second has y</span></span>
-<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a><span class="co"># We now want to plot the second column in A against the first</span></span>
-<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Hand the array over to datatool, specifying column names:</span></span>
-<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>dt.set_data_from_array(A, col_headers<span class="op">=</span>[<span class="st">'X'</span>,<span class="st">'Y'</span>])</span>
-<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>dt.line_graph(<span class="st">'X'</span>, <span class="st">'Y'</span>)</span>
-<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
+<div class="sourceCode" id="cb73"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb73-4"><a href="#cb73-4" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
+<span id="cb73-5"><a href="#cb73-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb73-6"><a href="#cb73-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Make an empty array with zeroes (dtype='f' means float numbers)</span></span>
+<span id="cb73-7"><a href="#cb73-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Other kinds are 'int'</span></span>
+<span id="cb73-8"><a href="#cb73-8" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.zeros( (<span class="dv">11</span>, <span class="dv">2</span>), dtype<span class="op">=</span><span class="st">'f'</span>)</span>
+<span id="cb73-9"><a href="#cb73-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb73-10"><a href="#cb73-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Now fill the array with generated data:</span></span>
+<span id="cb73-11"><a href="#cb73-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">11</span>):</span>
+<span id="cb73-12"><a href="#cb73-12" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> i</span>
+<span id="cb73-13"><a href="#cb73-13" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> x <span class="op">*</span> x</span>
+<span id="cb73-14"><a href="#cb73-14" aria-hidden="true" tabindex="-1"></a>    A[i,<span class="dv">0</span>] <span class="op">=</span> x     <span class="co"># First col has x</span></span>
+<span id="cb73-15"><a href="#cb73-15" aria-hidden="true" tabindex="-1"></a>    A[i,<span class="dv">1</span>] <span class="op">=</span> y     <span class="co"># Second has y</span></span>
+<span id="cb73-16"><a href="#cb73-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb73-17"><a href="#cb73-17" aria-hidden="true" tabindex="-1"></a><span class="co"># We now want to plot the second column in A against the first</span></span>
+<span id="cb73-18"><a href="#cb73-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb73-19"><a href="#cb73-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Hand the array over to datatool, specifying column names:</span></span>
+<span id="cb73-20"><a href="#cb73-20" aria-hidden="true" tabindex="-1"></a>dt.set_data_from_array(A, col_headers<span class="op">=</span>[<span class="st">'X'</span>,<span class="st">'Y'</span>])</span>
+<span id="cb73-21"><a href="#cb73-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb73-22"><a href="#cb73-22" aria-hidden="true" tabindex="-1"></a>dt.line_graph(<span class="st">'X'</span>, <span class="st">'Y'</span>)</span>
+<span id="cb73-23"><a href="#cb73-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb73-24"><a href="#cb73-24" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <p>Which produces <img src="../../../media/units/unit2/module2.1/generated.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1053,19 +1898,19 @@ Note
 <div class="callout-body-container callout-body">
 <ul>
 <li><p>Notice how we ask Numpy to create an array of the right size:</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.zeros( <span class="op">&lt;</span>b<span class="op">&gt;</span>(<span class="dv">11</span>, <span class="dv">2</span>)<span class="op">&lt;/</span>b<span class="op">&gt;</span>, dtype<span class="op">=</span><span class="st">'f'</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb74"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.zeros( <span class="op">&lt;</span>b<span class="op">&gt;</span>(<span class="dv">11</span>, <span class="dv">2</span>)<span class="op">&lt;/</span>b<span class="op">&gt;</span>, dtype<span class="op">=</span><span class="st">'f'</span>)</span></code></pre></div>
 <p>That is, <b>11</b> rows for the numbers 0 through 10 and <b>2</b> columns for the x,y values.</p></li>
 <li><p>Notice that <b>(11, 2)</b> is specified as a <em>tuple</em>. <br>(Recall tuples from Module 1 of this unit.)</p></li>
 <li><p>The array A now has 11 rows and 2 columns, with each entry set to 0.</p></li>
 <li><p>After that, we fill in the values we generate:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">11</span>):</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> i</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> x <span class="op">*</span> x</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    A[i,<span class="dv">0</span>] <span class="op">=</span> x  </span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    A[i,<span class="dv">1</span>] <span class="op">=</span> y  </span></code></pre></div></li>
+<div class="sourceCode" id="cb75"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">11</span>):</span>
+<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> i</span>
+<span id="cb75-3"><a href="#cb75-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> x <span class="op">*</span> x</span>
+<span id="cb75-4"><a href="#cb75-4" aria-hidden="true" tabindex="-1"></a>    A[i,<span class="dv">0</span>] <span class="op">=</span> x  </span>
+<span id="cb75-5"><a href="#cb75-5" aria-hidden="true" tabindex="-1"></a>    A[i,<span class="dv">1</span>] <span class="op">=</span> y  </span></code></pre></div></li>
 <li><p>Which we could shorten to:</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>A[i,<span class="dv">0</span>] <span class="op">=</span> i  </span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>A[i,<span class="dv">1</span>] <span class="op">=</span> i <span class="op">*</span> i  </span></code></pre></div></li>
+<div class="sourceCode" id="cb76"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a>A[i,<span class="dv">0</span>] <span class="op">=</span> i  </span>
+<span id="cb76-2"><a href="#cb76-2" aria-hidden="true" tabindex="-1"></a>A[i,<span class="dv">1</span>] <span class="op">=</span> i <span class="op">*</span> i  </span></code></pre></div></li>
 <li><p>The CSV equivalent (which we don’t need here) would look like this:</p>
 <pre><code>0,0
 1,1
@@ -1083,7 +1928,7 @@ Note
 </div>
 </section>
 <section id="using-datatool-for-maps" class="level2">
-<h2 class="anchored" data-anchor-id="using-datatool-for-maps">1.5 Using datatool for maps</h2>
+<h2 class="anchored" data-anchor-id="using-datatool-for-maps">1.13 Using datatool for maps</h2>
 <p>One of the more exciting uses of Plotly is to display maps and draw on them.</p>
 <p>Let’s think about what a map really is:</p>
 <ul>
@@ -1106,24 +1951,24 @@ Note
 </ul>
 <p>Because of these and other differences, map drawing can sometimes be confusing.</p>
 <p>Let’s look at an example of a simple line-map:</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'cities.csv'</span>)</span>
-<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="co"># We need to specify which columns of cities.csv have</span></span>
-<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="co"># the latitude and longitude, respectively.</span></span>
-<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>dt.linemap(<span class="st">'lat'</span>, <span class="st">'long'</span>)</span>
-<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
+<div class="sourceCode" id="cb78"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
+<span id="cb78-4"><a href="#cb78-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb78-5"><a href="#cb78-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'cities.csv'</span>)</span>
+<span id="cb78-6"><a href="#cb78-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb78-7"><a href="#cb78-7" aria-hidden="true" tabindex="-1"></a><span class="co"># We need to specify which columns of cities.csv have</span></span>
+<span id="cb78-8"><a href="#cb78-8" aria-hidden="true" tabindex="-1"></a><span class="co"># the latitude and longitude, respectively.</span></span>
+<span id="cb78-9"><a href="#cb78-9" aria-hidden="true" tabindex="-1"></a>dt.linemap(<span class="st">'lat'</span>, <span class="st">'long'</span>)</span>
+<span id="cb78-10"><a href="#cb78-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb78-11"><a href="#cb78-11" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exercise 1.8
+Exercise 1.19
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1157,31 +2002,31 @@ Mexico City,19.4333,-99.1333,Mexico,MX,MEX,20996000
 Guangzhou,23.1288,113.259,China,CN,CHN,20902000</code></pre></li>
 <li><p>The columns that have the latitude and longitude happen to be called <code>lat</code> and <code>long</code>.</p></li>
 <li><p>Which is what we need to tell datatool:</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>dt.linemap(<span class="op">&lt;</span>b<span class="op">&gt;</span><span class="st">'lat'</span>, <span class="st">'long'</span><span class="op">&lt;/</span>b<span class="op">&gt;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb80"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>dt.linemap(<span class="op">&lt;</span>b<span class="op">&gt;</span><span class="st">'lat'</span>, <span class="st">'long'</span><span class="op">&lt;/</span>b<span class="op">&gt;</span>)</span></code></pre></div>
 <p>Datatool then (via Plotly) draws a world map as default with one red dot per latitude-longitude pair extracted from those columns.</p></li>
 </ul>
 </div>
 </div>
 <p>Next, let’s label the cities and draw a line:</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'cities.csv'</span>)</span>
-<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>dt.linemap(<span class="st">'lat'</span>, <span class="st">'long'</span>, <span class="st">'city'</span>)</span>
-<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="co"># This needs to come &lt;b&gt;after&lt;/b&gt; the linemap() function call.</span></span>
-<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>dt.linemap_add_line(<span class="op">-</span><span class="fl">23.5504</span>,<span class="op">-</span><span class="fl">46.6339</span>, <span class="fl">19.4333</span>,<span class="op">-</span><span class="fl">99.1333</span>)</span>
-<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
+<div class="sourceCode" id="cb81"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<span id="cb81-2"><a href="#cb81-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-3"><a href="#cb81-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
+<span id="cb81-4"><a href="#cb81-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-5"><a href="#cb81-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'cities.csv'</span>)</span>
+<span id="cb81-6"><a href="#cb81-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-7"><a href="#cb81-7" aria-hidden="true" tabindex="-1"></a>dt.linemap(<span class="st">'lat'</span>, <span class="st">'long'</span>, <span class="st">'city'</span>)</span>
+<span id="cb81-8"><a href="#cb81-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-9"><a href="#cb81-9" aria-hidden="true" tabindex="-1"></a><span class="co"># This needs to come &lt;b&gt;after&lt;/b&gt; the linemap() function call.</span></span>
+<span id="cb81-10"><a href="#cb81-10" aria-hidden="true" tabindex="-1"></a>dt.linemap_add_line(<span class="op">-</span><span class="fl">23.5504</span>,<span class="op">-</span><span class="fl">46.6339</span>, <span class="fl">19.4333</span>,<span class="op">-</span><span class="fl">99.1333</span>)</span>
+<span id="cb81-11"><a href="#cb81-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-12"><a href="#cb81-12" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exercise 1.9
+Exercise 1.20
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1202,55 +2047,55 @@ Note
 </div>
 </div>
 <p>There is a more detailed version of linemap drawing that allows one to set the size of labels (markers), create “hover” text, and so on:</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>dt.linemap_detailed(</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'lat'</span>, </span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'long'</span>, </span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    marker_color<span class="op">=</span><span class="st">'Red'</span>, </span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>    marker_size<span class="op">=</span><span class="dv">10</span>, </span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>    marker_text<span class="op">=</span><span class="st">'city'</span>, </span>
-<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    marker_text_size<span class="op">=</span><span class="dv">9</span>, </span>
-<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>    hovertext<span class="op">=</span>[<span class="st">'city'</span>, <span class="st">'population'</span>], </span>
-<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>    showlegend<span class="op">=</span><span class="va">False</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb82"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a>dt.linemap_detailed(</span>
+<span id="cb82-2"><a href="#cb82-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'lat'</span>, </span>
+<span id="cb82-3"><a href="#cb82-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'long'</span>, </span>
+<span id="cb82-4"><a href="#cb82-4" aria-hidden="true" tabindex="-1"></a>    marker_color<span class="op">=</span><span class="st">'Red'</span>, </span>
+<span id="cb82-5"><a href="#cb82-5" aria-hidden="true" tabindex="-1"></a>    marker_size<span class="op">=</span><span class="dv">10</span>, </span>
+<span id="cb82-6"><a href="#cb82-6" aria-hidden="true" tabindex="-1"></a>    marker_text<span class="op">=</span><span class="st">'city'</span>, </span>
+<span id="cb82-7"><a href="#cb82-7" aria-hidden="true" tabindex="-1"></a>    marker_text_size<span class="op">=</span><span class="dv">9</span>, </span>
+<span id="cb82-8"><a href="#cb82-8" aria-hidden="true" tabindex="-1"></a>    hovertext<span class="op">=</span>[<span class="st">'city'</span>, <span class="st">'population'</span>], </span>
+<span id="cb82-9"><a href="#cb82-9" aria-hidden="true" tabindex="-1"></a>    showlegend<span class="op">=</span><span class="va">False</span>)</span></code></pre></div>
 </section>
 <section id="choropleth-maps" class="level2">
-<h2 class="anchored" data-anchor-id="choropleth-maps">1.6 Choropleth maps</h2>
+<h2 class="anchored" data-anchor-id="choropleth-maps">1.14 Choropleth maps</h2>
 <p>A <a href="https://en.wikipedia.org/wiki/Choropleth_map#:~:text=A%20choropleth%20map%20(from%20Greek,each%20area%2C%20such%20as%20population"><strong>choropleth map</strong></a> shows regions in colors that imply a quantity associated with a region.</p>
 <p>Datatool displays choropleths using linemaps.</p>
 <p>For example, let’s show country populations from our running example in a choropleth map:</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'2011_population.csv'</span>)</span>
-<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Changes the colorscale of the choropleth_iso3()</span></span>
-<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>dt.set_color_scale(<span class="st">'rainbow'</span>)</span>
-<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="co"># More choices here: https://plotly.com/python/builtin-colorscales/</span></span>
-<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a><span class="co"># The choropleth_iso3() function uses a standard code for countries.</span></span>
-<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a><span class="co"># The second parameter describes which column to use for heat-map</span></span>
-<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a><span class="co"># like coloring. The third is what to show when the mouse hovers.</span></span>
-<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>dt.choropleth_iso3(<span class="st">'countrycode'</span>, <span class="st">'pop'</span>, <span class="st">'country'</span>)</span>
-<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
+<div class="sourceCode" id="cb83"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb83-3"><a href="#cb83-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
+<span id="cb83-4"><a href="#cb83-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb83-5"><a href="#cb83-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'2011_population.csv'</span>)</span>
+<span id="cb83-6"><a href="#cb83-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb83-7"><a href="#cb83-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Changes the colorscale of the choropleth_iso3()</span></span>
+<span id="cb83-8"><a href="#cb83-8" aria-hidden="true" tabindex="-1"></a>dt.set_color_scale(<span class="st">'rainbow'</span>)</span>
+<span id="cb83-9"><a href="#cb83-9" aria-hidden="true" tabindex="-1"></a><span class="co"># More choices here: https://plotly.com/python/builtin-colorscales/</span></span>
+<span id="cb83-10"><a href="#cb83-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb83-11"><a href="#cb83-11" aria-hidden="true" tabindex="-1"></a><span class="co"># The choropleth_iso3() function uses a standard code for countries.</span></span>
+<span id="cb83-12"><a href="#cb83-12" aria-hidden="true" tabindex="-1"></a><span class="co"># The second parameter describes which column to use for heat-map</span></span>
+<span id="cb83-13"><a href="#cb83-13" aria-hidden="true" tabindex="-1"></a><span class="co"># like coloring. The third is what to show when the mouse hovers.</span></span>
+<span id="cb83-14"><a href="#cb83-14" aria-hidden="true" tabindex="-1"></a>dt.choropleth_iso3(<span class="st">'countrycode'</span>, <span class="st">'pop'</span>, <span class="st">'country'</span>)</span>
+<span id="cb83-15"><a href="#cb83-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb83-16"><a href="#cb83-16" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <p>Which produces: <img src="../../../media/units/unit2/module2.1/choropleth.png" class="img-fluid"></p>
 </section>
 <section id="using-datatool-for-maps-tilemaps" class="level2">
-<h2 class="anchored" data-anchor-id="using-datatool-for-maps-tilemaps">1.7 Using datatool for maps: tilemaps</h2>
+<h2 class="anchored" data-anchor-id="using-datatool-for-maps-tilemaps">1.15 Using datatool for maps: tilemaps</h2>
 <p>Let’s look at our 10 cities using a tilemap:</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'cities.csv'</span>)</span>
-<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="co"># The first two identify the lat/long columns. The third</span></span>
-<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a><span class="co"># is the column with the data to be drawn.</span></span>
-<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>dt.tilemap_attach_col_lat_long(<span class="st">'lat'</span>, <span class="st">'long'</span>, <span class="st">'city'</span>)</span>
-<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>dt.tilemap()</span>
-<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
+<div class="sourceCode" id="cb84"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb84-3"><a href="#cb84-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
+<span id="cb84-4"><a href="#cb84-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb84-5"><a href="#cb84-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'cities.csv'</span>)</span>
+<span id="cb84-6"><a href="#cb84-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb84-7"><a href="#cb84-7" aria-hidden="true" tabindex="-1"></a><span class="co"># The first two identify the lat/long columns. The third</span></span>
+<span id="cb84-8"><a href="#cb84-8" aria-hidden="true" tabindex="-1"></a><span class="co"># is the column with the data to be drawn.</span></span>
+<span id="cb84-9"><a href="#cb84-9" aria-hidden="true" tabindex="-1"></a>dt.tilemap_attach_col_lat_long(<span class="st">'lat'</span>, <span class="st">'long'</span>, <span class="st">'city'</span>)</span>
+<span id="cb84-10"><a href="#cb84-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb84-11"><a href="#cb84-11" aria-hidden="true" tabindex="-1"></a>dt.tilemap()</span>
+<span id="cb84-12"><a href="#cb84-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb84-13"><a href="#cb84-13" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1273,7 +2118,7 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exercise 1.10
+Exercise 1.21
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1281,27 +2126,27 @@ Exercise 1.10
 </div>
 </div>
 <p>Now let’s draw a line between two cities:</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'cities.csv'</span>)</span>
-<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>dt.tilemap_attach_col_lat_long(<span class="st">'lat'</span>, <span class="st">'long'</span>, <span class="st">'city'</span>)</span>
-<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a><span class="co"># For tilemaps, line drawing must &lt;b&gt;precede&lt;/b&gt; the call to tilemap.</span></span>
-<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>dt.tilemap_add_line(<span class="op">-</span><span class="fl">23.5504</span>,<span class="op">-</span><span class="fl">46.6339</span>, <span class="fl">19.4333</span>,<span class="op">-</span><span class="fl">99.1333</span>)</span>
-<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>dt.tilemap()</span>
-<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
+<div class="sourceCode" id="cb85"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-3"><a href="#cb85-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
+<span id="cb85-4"><a href="#cb85-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-5"><a href="#cb85-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'cities.csv'</span>)</span>
+<span id="cb85-6"><a href="#cb85-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-7"><a href="#cb85-7" aria-hidden="true" tabindex="-1"></a>dt.tilemap_attach_col_lat_long(<span class="st">'lat'</span>, <span class="st">'long'</span>, <span class="st">'city'</span>)</span>
+<span id="cb85-8"><a href="#cb85-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-9"><a href="#cb85-9" aria-hidden="true" tabindex="-1"></a><span class="co"># For tilemaps, line drawing must &lt;b&gt;precede&lt;/b&gt; the call to tilemap.</span></span>
+<span id="cb85-10"><a href="#cb85-10" aria-hidden="true" tabindex="-1"></a>dt.tilemap_add_line(<span class="op">-</span><span class="fl">23.5504</span>,<span class="op">-</span><span class="fl">46.6339</span>, <span class="fl">19.4333</span>,<span class="op">-</span><span class="fl">99.1333</span>)</span>
+<span id="cb85-11"><a href="#cb85-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-12"><a href="#cb85-12" aria-hidden="true" tabindex="-1"></a>dt.tilemap()</span>
+<span id="cb85-13"><a href="#cb85-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-14"><a href="#cb85-14" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exercise 1.11
+Exercise 1.22
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1310,47 +2155,47 @@ Exercise 1.11
 </div>
 <p>The above shows the full world map centered at latitude 0, longitude 0.</p>
 <p>A more detailed version of the tilemap function allows you to set the zoom and center, among other items:</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>dt.tilemap_attach_col_lat_long(<span class="st">'lat'</span>, <span class="st">'long'</span>, <span class="st">'city'</span>)</span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a different center:</span></span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="bu">dict</span>(lat <span class="op">=</span> <span class="dv">30</span>, lon <span class="op">=</span> <span class="dv">120</span>)</span>
-<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="co"># The detailed version specifies hover data, the center, a zoom level</span></span>
-<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>dt.tilemap_detailed(hover_name<span class="op">=</span><span class="st">'city'</span>, hover_data<span class="op">=</span>[<span class="st">'city'</span>], center<span class="op">=</span>c, zoom<span class="op">=</span><span class="dv">2</span>, title<span class="op">=</span><span class="st">'Some cities'</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb86"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a>dt.tilemap_attach_col_lat_long(<span class="st">'lat'</span>, <span class="st">'long'</span>, <span class="st">'city'</span>)</span>
+<span id="cb86-2"><a href="#cb86-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb86-3"><a href="#cb86-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a different center:</span></span>
+<span id="cb86-4"><a href="#cb86-4" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="bu">dict</span>(lat <span class="op">=</span> <span class="dv">30</span>, lon <span class="op">=</span> <span class="dv">120</span>)</span>
+<span id="cb86-5"><a href="#cb86-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb86-6"><a href="#cb86-6" aria-hidden="true" tabindex="-1"></a><span class="co"># The detailed version specifies hover data, the center, a zoom level</span></span>
+<span id="cb86-7"><a href="#cb86-7" aria-hidden="true" tabindex="-1"></a>dt.tilemap_detailed(hover_name<span class="op">=</span><span class="st">'city'</span>, hover_data<span class="op">=</span>[<span class="st">'city'</span>], center<span class="op">=</span>c, zoom<span class="op">=</span><span class="dv">2</span>, title<span class="op">=</span><span class="st">'Some cities'</span>)</span></code></pre></div>
 <p>There is also an intermediate-detail version with just center, zoom and title:</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>dt.tilemap_attach_col_lat_long(<span class="st">'lat'</span>, <span class="st">'long'</span>, <span class="st">'city'</span>)</span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="bu">dict</span>(lat <span class="op">=</span> <span class="dv">30</span>, lon <span class="op">=</span> <span class="dv">120</span>)</span>
-<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Intermediate-detail: center, zoom, title:</span></span>
-<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>dt.tilemap_czt(center<span class="op">=</span>c, zoom<span class="op">=</span><span class="dv">2</span>, title<span class="op">=</span><span class="st">'Some cities'</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb87"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a>dt.tilemap_attach_col_lat_long(<span class="st">'lat'</span>, <span class="st">'long'</span>, <span class="st">'city'</span>)</span>
+<span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb87-3"><a href="#cb87-3" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="bu">dict</span>(lat <span class="op">=</span> <span class="dv">30</span>, lon <span class="op">=</span> <span class="dv">120</span>)</span>
+<span id="cb87-4"><a href="#cb87-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb87-5"><a href="#cb87-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Intermediate-detail: center, zoom, title:</span></span>
+<span id="cb87-6"><a href="#cb87-6" aria-hidden="true" tabindex="-1"></a>dt.tilemap_czt(center<span class="op">=</span>c, zoom<span class="op">=</span><span class="dv">2</span>, title<span class="op">=</span><span class="st">'Some cities'</span>)</span></code></pre></div>
 <p>Finally, let’s look at an example with street maps, where tilemaps really stand out:</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
-<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'parkingtickets_June2020.csv'</span>)</span>
-<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>dt.tilemap_attach_col_lat_long(<span class="st">'LATITUDE'</span>, <span class="st">'LONGITUDE'</span>, <span class="st">'FINE_AMOUNT'</span>)</span>
-<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a><span class="co"># DC's lat/long:</span></span>
-<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>dc_latlong <span class="op">=</span> <span class="bu">dict</span>(lat <span class="op">=</span> <span class="fl">38.92</span>, lon <span class="op">=</span> <span class="op">-</span><span class="fl">77.07</span>)</span>
-<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>dt.tilemap_detailed(</span>
-<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a>    hover_name<span class="op">=</span><span class="st">'LOCATION'</span>, </span>
-<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a>    hover_data<span class="op">=</span>[<span class="st">'VIOLATION_PROC_DESC'</span>],</span>
-<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a>    center<span class="op">=</span>dc_latlong, </span>
-<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a>    zoom<span class="op">=</span><span class="dv">11</span>, </span>
-<span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">'DC Parking Violations June 2020'</span>)</span>
-<span id="cb30-18"><a href="#cb30-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-19"><a href="#cb30-19" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
+<div class="sourceCode" id="cb88"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datatool <span class="im">import</span> datatool</span>
+<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-3"><a href="#cb88-3" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> datatool()</span>
+<span id="cb88-4"><a href="#cb88-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-5"><a href="#cb88-5" aria-hidden="true" tabindex="-1"></a>dt.load_csv(<span class="st">'parkingtickets_June2020.csv'</span>)</span>
+<span id="cb88-6"><a href="#cb88-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-7"><a href="#cb88-7" aria-hidden="true" tabindex="-1"></a>dt.tilemap_attach_col_lat_long(<span class="st">'LATITUDE'</span>, <span class="st">'LONGITUDE'</span>, <span class="st">'FINE_AMOUNT'</span>)</span>
+<span id="cb88-8"><a href="#cb88-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-9"><a href="#cb88-9" aria-hidden="true" tabindex="-1"></a><span class="co"># DC's lat/long:</span></span>
+<span id="cb88-10"><a href="#cb88-10" aria-hidden="true" tabindex="-1"></a>dc_latlong <span class="op">=</span> <span class="bu">dict</span>(lat <span class="op">=</span> <span class="fl">38.92</span>, lon <span class="op">=</span> <span class="op">-</span><span class="fl">77.07</span>)</span>
+<span id="cb88-11"><a href="#cb88-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-12"><a href="#cb88-12" aria-hidden="true" tabindex="-1"></a>dt.tilemap_detailed(</span>
+<span id="cb88-13"><a href="#cb88-13" aria-hidden="true" tabindex="-1"></a>    hover_name<span class="op">=</span><span class="st">'LOCATION'</span>, </span>
+<span id="cb88-14"><a href="#cb88-14" aria-hidden="true" tabindex="-1"></a>    hover_data<span class="op">=</span>[<span class="st">'VIOLATION_PROC_DESC'</span>],</span>
+<span id="cb88-15"><a href="#cb88-15" aria-hidden="true" tabindex="-1"></a>    center<span class="op">=</span>dc_latlong, </span>
+<span id="cb88-16"><a href="#cb88-16" aria-hidden="true" tabindex="-1"></a>    zoom<span class="op">=</span><span class="dv">11</span>, </span>
+<span id="cb88-17"><a href="#cb88-17" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">'DC Parking Violations June 2020'</span>)</span>
+<span id="cb88-18"><a href="#cb88-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-19"><a href="#cb88-19" aria-hidden="true" tabindex="-1"></a>dt.display()</span></code></pre></div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exercise 1.13
+Exercise 1.23
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1701,8 +2546,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../units/unit2/modules/module0.html" class="pagination-link  aria-label=" **module="" 0:**="" arrays,="" tuples,="" sets,="" and="" dictionaries"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><strong>Module 0:</strong> Arrays, Tuples, Sets, and Dictionaries</span>
+      <a href="../../../units/unit2/modules/module0.html" class="pagination-link  aria-label=" **module="" 0:**="" arrays"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><strong>Module 0:</strong> Arrays</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
