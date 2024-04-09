@@ -568,13 +568,12 @@ print(k)
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 4.17
-- **In Exercise 4.17, go back to the earlier Exercise 4.12 where you wrote a while-loop to print strings of length at least 5, and starting with 'h'.**
-
+- **In Exercise 4.17, go back to the earlier Exercise 4.12 where you wrote a `while` loop to print strings of length at least 5, and starting with 'h'.**
 - **Rewrite the while-loop implementing a `break`-statement instead.**
-
+  - Make a modification in Ex 4.12 to the function `func(A)` that has a `while` loop implementation.
+  - The modification should print just the first word from the list `B` that starts with an 'h'
 - **Save your program as `my_break3.py` and submit it.**
-
-<!-- Answering the following is to develop an understanding of what can go wrong with <em>while-loop</em> execution in the above program.** 
+<!-- Answering the following is to develop an understanding of what can go wrong with <em>while-loop</em> execution in the above program.**
 In `my_break3.py`, go back to the earlier exercise (4.12) where you wrote a while-loop to print strings of length at least 5, and starting with 'h'. Rewrite the while-loop to use a break-statement instead. -->
 :::
 
