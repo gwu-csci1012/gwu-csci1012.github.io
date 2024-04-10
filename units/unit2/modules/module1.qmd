@@ -20,33 +20,25 @@ format:
 
 
 ## Objectives
+Our goal in this almost-final module was to:
 
-<!-- :::{.callout-note}
-The topics are introduced with a "not on the final exam" intent, for your understanding and use in the next module's exercises, but not tested on the final exam.
-::: -->
+- Introduce the all-important topic of <em>arrays</em>.
+- Lightly sketch a few advanced topics to introduce ideas and show some examples, without expecting mastery of all the details.
 
-This is a somewhat light module aimed at introducing a new member of the family: <b>datatool</b>
+In the next module, we will dive into examples from across the disciplines. Some of these advanced topics will be useful
 
-- We've already worked with drawtool and wordtool.
-- Drawtool is based on a popular Python graphing package called <em>Matplotlib</em>:
-    - Matplotlib is a powerful package for all kinds of plotting.
-    - However, it can be difficult to understand how to use effectively.
-    - To simplify, we developed drawtool so that you can perform both plotting and simple drawing.
-- <em>Plotly</em> is a recent competitor of Matplotlib:
-    - Plotly is designed to be web-friendly, to let Python programs have output that renders in a browser, so that websites can display nice graphics.
-    - Plotly has stronger support for maps (as in geographic maps) than Matplotlib.
-    - However, just like Matplotlib, it can be difficult to use, especially since there are two fundamentally different kinds of maps.
-- <em>Pandas</em> is perhaps the most popular Python package aimed at data handling and data science applications. It too takes a while to learn.
-- Thus, to simplify, we have developed <b>datatool</b>, to make it easy to do typical things like plotting graphs but also to work with data files, and especially, maps.
+So, one might ask: what's left in Python to learn?
 
-:::{.callout-note}
-Datatool does not display via its own GUI. Instead, datatool uses a browser, depending on whether you are using Mac or Windows:
+Quite a bit it turns out:
 
-- **Mac/Linux:** <em>If you don't have Firefox, you will need to <a href="https://www.mozilla.org/en-US/firefox/new/">**install Firefox**</a> and have that running (open a tab to any webpage).</em>
-- **Windows:** Your default browser will do.
-:::
+- Like many modern programming languages, Python is large enough that one needs a few courses to experience all of it.
+- Some concepts are advanced enough to need weeks to cover (example: <em>objects</em>).
+- Others need a background in <em>data structures</em> to understand <em>how</em> they work (example: dictionaries).
+- Yet others involve library functions and external packages.
 
-- Also, you will need to be connected (online) because datatool downloads map data from certain websites.
+Do you need to learn more? Is what we've learned enough to achieve a good deal?
+
+We'll have more to say about this in a later module.
 
 ## 1.0 Tuples
 In this section and the ones that follow, we'll touch lightly upon a few topics that are "not on the final exam" but will be useful in general.
