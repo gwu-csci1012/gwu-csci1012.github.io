@@ -38,24 +38,46 @@ Consider a number like 14. We're going to iteratively divide by 2 using <em>inte
 
 Here, it took three successive "divides" by 2 for 14 to reach 1.
 
-In your `assignment2.pdf`, work through how many divides it takes for 1000.
+<!-- In your `assignment2.pdf`, work through how many divides it takes for 1000. -->
 
-For the programming part, we will prompt the user for an integer and count the number of divides (when dividing by 2). In fact, we will keep prompting the user for integers, computing and reporting the number of divides for each, until the user decides "enough". When the user types a negative number to indicate "enough" we stop prompting. Here is sample output:
-<pre lang="python"><code>
-Enter an integer: <b>14</b>
+**Goals of this problem:** 
+
+- You need to write a program that will prompt the user for an integer and count the number of divides (when dividing by 2). 
+- The user should keep getting prompted for integers, computing and reporting the number of divides for each, until the user decides "enough". 
+- When the user types a negative number to indicate "enough" we stop prompting. 
+
+**Here is a sample output:**
+<!-- <pre lang="python"><code> -->
+
+```python
+Enter an integer: 14
 Number of divides for n=14: 3
-Enter an integer: <b>64</b>
+Enter an integer: 64
 Number of divides for n=64: 6
-Enter an integer: <b>33</b>
+Enter an integer: 33
 Number of divides for n=33: 5
 Enter an integer: -1
 Thank you!
-</code></pre>
-Here, the user first entered 14 (resulting in 3 divides), then entered 64 (resulting in 6 divides), then 33 (resulting in 5 divides), -1 to stop.
+```
+<!-- </code></pre> -->
 
-There are two while-loops at work, one in iterating over user input, and the other in iterative divides.
+:::{.callout-note}
+**In the sample output presented above, the user**
 
-At this point, do not read further and try to write down pseudocode to solve the problem.
+- first entered `14` (resulting in `3` divides), 
+- next entered `64` (resulting in `6` divides), 
+- then `33` (resulting in `5` divides) and 
+- finally, `-1` to stop.
+:::
+
+:::{.callout-tip title="Initial insights on this problem"}
+**There are two `while`-loops at work,** 
+
+- one in iterating over user `input`, and 
+- the other in iterative divides.
+:::
+
+**At this point, do not read further and try to write down pseudocode to solve the problem.**
 
 [**Now examine the solution**](./assignment3-solution.qmd)
 
@@ -64,8 +86,100 @@ At this point, do not read further and try to write down pseudocode to solve the
 Don't forget to submit your solutions to the exercises within the demo problem where you are being asked to examine the solution through the guided exercises presented to you [**here**](./assignment3-solution.qmd).
 :::
 
-### 2. The United States tax system will use the following tax table in tax year 2022 for a single-person household ([IRS](https://irs.gov)):
 
+
+::: {.callout-important title="Important: You can answer any one of the two questions that follow in this assignment"}
+###### <span style="color:#8B4513;"> Yes! You got it right! Choose either exercise 2 or exercise 3 to complete this assignment.</span>
+Follow the instructions provided in either of the two questions and complete them. Grade for this assignment will entail the submission of exercises in the demo problem and one of the two problems that follow. 
+Keep up your good work! All the best!
+:::
+
+
+### 2. In this exercise you are expected to write a program `my_avgData.py` that prints the data row-by-row and calculates the average of row-wise data from file and save the outputs to another `data3.txt`. 
+
+**Description of the data:**
+
+Data that are made available, acquired or presented for analysis may contain with irregularities, mistakes, missing entries, or weird whitespacing. 
+
+- You are provided file `data3.txt` that has some "numbers" arranged row-wise.
+    - Each row has data of different lengths. 
+    - Each row of data has (unnecessary) whitespaces and irrgular spaces between the entries. 
+- **Download <a href="../../../media/useful/data3.txt" download>data3.txt</a>.**
+    - **Make sure that `data3.txt` and the code you are writing for this exercise are located in the same folder on your computer.**    
+- Open the file `data3.txt` and examine all those irregularities. 
+    - The data though numeric are of string object-type and as shown below.
+
+    ```python
+    6.0 6.0 9.0 4 6 8  0.1 0.5 0.3 6.0 6.0 9.0 4 6 8  0.1 0.5 0.3
+    4 6 8  24  16 2 
+    24  16 2  0.1 0.5 0.3
+     3 3.0 3 6.0 6.0 9.0 4 6 8 
+    0.1 0.5 0.3 24  16 2 
+     3 3.0 3 4 6 8  24  16 2 
+    4 6 8  24  16 2 
+    24  16 2  0.1 0.5 0.3
+     3 3.0 3 6.0 6.0 9.0 4 6 8 
+    0.1 0.5 0.3 24  16 2 
+     3 3.0 3 4 6 8  24  16 2 
+    ``` 
+
+**Goals of this problem:** 
+
+- **You need to write a program that will import the data from the `data3.txt` file.**
+    - The program should read the string data line-by-line, and then convert each data entry to a floating-point number. 
+    - Review the following code provided to you and understand its content: 
+
+        ```python
+        with open('data3.txt','r') as in_file:
+            line = in_file.readline()
+                while line != None:
+                    s = line.strip()    # Remove leading/trailing whitespace
+                    if len(s) == 0:     # Exit the loop if length of the line is 0.
+                        break
+                    data = s.split()
+                    print(data)
+
+                    # 1. Declare a empty list 
+                    # 2. Write a for-loop 
+                    # 2.1 to convert string to float for each data entry 
+                    # 2.2 to append the data of each row to the empty list
+                    # 3. Calcuate the average of each row in the data file
+                    # 4. Print the data in each row and its average 
+
+                    line = in_file.readline() # Get the next line
+        ```  
+        
+- **You need to complete the above program by replacing the following comments with appropriate lines of code:**
+    1. Declare a empty list 
+    2. Write a for-loop 
+        2.1 to convert string to float for each data entry 
+        2.2 to append the data of each row to the empty list
+    3. Calcuate the average of each row in the data file
+    4. Print the data in each row and its average
+
+::: {.callout-tip}
+Refer to Unit 1, Module 4, Section 4.6
+:::
+
+- **A sample output of the program is presented below:** 
+
+    ```
+    ['4', '6', '8', '24', '16', '2']
+    Average of row  [4.0, 6.0, 8.0, 24.0, 16.0, 2.0]  is: 10.0
+    ['24', '16', '2', '0.1', '0.5', '0.3']
+    Average of row  [24.0, 16.0, 2.0, 0.1, 0.5, 0.3]  is: 7.1499999999999995
+    ['3', '3.0', '3', '6.0', '6.0', '9.0', '4', '6', '8']
+    Average of row  [3.0, 3.0, 3.0, 6.0, 6.0, 9.0, 4.0, 6.0, 8.0]  is: 5.333333333333333
+    ```
+
+- **Save your program in `my_avgData.py`.**
+
+- **Submit your program `my_avgData.py`**
+
+
+
+<!-- ## 2. The United States tax system will use the following tax table in tax year 2022 for a single-person household ([IRS](https://irs.gov)):
+<!-- 
 ```{=html}
 <table>
     <thead>
@@ -105,33 +219,35 @@ Don't forget to submit your solutions to the exercises within the demo problem w
         </tr>
     </tbody>
 </table>
-```
+``` -->
 
 
-The United States Federal Income Tax is a "progressive" system of taxation.  People sometimes misunderstand the tax bracket system and think that earning more money can cause someone to take home less (after taxes) because of moving to a higher tax bracket. This is <em>not</em> the case: the tax bracket system works by taxing the fraction of income in each bracket at that bracket's rate.  Someone who earns more money only pays the higer rate on the extra income.
+<!-- The United States Federal Income Tax is a "progressive" system of taxation.  People sometimes misunderstand the tax bracket system and think that earning more money can cause someone to take home less (after taxes) because of moving to a higher tax bracket. This is <em>not</em> the case: the tax bracket system works by taxing the fraction of income in each bracket at that bracket's rate.  Someone who earns more money only pays the higer rate on the extra income. -->
 
 
-For example, someone who has a taxable income $40,000 falls into the 12% tax bracket.  That does not mean that his entire income is taxed at 12%!
+<!-- For example, someone who has a taxable income $40,000 falls into the 12% tax bracket.  That does not mean that his entire income is taxed at 12%! -->
 
-The first $10,275 is taxed at 10%. $10,275 x 10% = $1,027.50
+<!-- The first $10,275 is taxed at 10%. $10,275 x 10% = $1,027.50
+ -->
 
-The next $29,725 (the amount greater than or equal to $10,276)is taxed at 12%. $29,725 x 10% = $3,447
+<!-- The next $29,725 (the amount greater than or equal to $10,276)is taxed at 12%. $29,725 x 10% = $3,447 -->
 
-The total tax is $3,447 + $1,027.50 = $4474.50
+<!-- The total tax is $3,447 + $1,027.50 = $4474.50
+ -->
 
-Dividing $4474.50 by the income of $40,000 yields an effective tax rate of 11.19%.  This makes intuitive sense: some of the income is in the 10% bracket, and some is in the 12% bracket, so the effective tax rate ends up being in between 10% and 12%.
+<!-- Dividing $4474.50 by the income of $40,000 yields an effective tax rate of 11.19%.  This makes intuitive sense: some of the income is in the 10% bracket, and some is in the 12% bracket, so the effective tax rate ends up being in between 10% and 12%. -->
 
-Here is another example, shown graphically, for someone with a taxable income of $100,000:
+<!-- Here is another example, shown graphically, for someone with a taxable income of $100,000: -->
 
-![](../../../media/units/unit1/assignment3/graphs.png)
+<!-- ![](../../../media/units/unit1/assignment3/graphs.png)
 
-![](../../../media/units/unit1/assignment3/calcs.png)
+![](../../../media/units/unit1/assignment3/calcs.png) -->
 
-You are encouraged to work through the calculations by hand to understand how the system works.
+<!-- You are encouraged to work through the calculations by hand to understand how the system works.
 
 You will write a program that given the income and the tax bracket table, computes the total tax and effective tax rate according to the 2022 US Federal progressive tax rate.
-
-Here is some code to get you started:
+ -->
+<!-- Here is some code to get you started:
 ```python
 def report_tax_data(brackets, income):
     # Write your code here
@@ -143,68 +259,79 @@ report_tax_data(ustaxtable2022, 50000)
 report_tax_data(ustaxtable2022, 100000)
 report_tax_data(ustaxtable2022, 250000)
 report_tax_data(ustaxtable2022, 1000000)
-```
+``` -->
 
-Your `report_tax_data` function must print, in a space separated format, the following values in column format:  the total tax in dollars, the top bracket rate applied in percentage, the effective tax rate in percentage, the original income, and the effective income after taxes.  Here is what your output for the above program should look like:
+<!-- Your `report_tax_data` function must print, in a space separated format, the following values in column format:  the total tax in dollars, the top bracket rate applied in percentage, the effective tax rate in percentage, the original income, and the effective income after taxes.  Here is what your output for the above program should look like: -->
 
-```python
+<!-- ```python
 1714.48 12 10.7155 16000 14285.52
 6616.879999999999 22 13.233759999999997 50000 43383.12
 17835.36 24 17.83536 100000 82164.64
 61252.75 35 24.5011 250000 188747.25
 332954.73 37 33.295473 1000000 667045.27
-```
-:::{.callout-tip}
+```  -->
+
+<!-- :::{.callout-tip}
 This output shows some error in the calculation due to floating point approximation which will be fine if the margin of error is very small. For example, 6616.879999999999 in the second row will be compared to and considered equal to 6616.88.  As long as rounding to two decimal places approximates the correct answer, your answer will be considered correct.
 :::
 
-Write your code in `tax_calculations.py`.
+Write your code in `tax_calculations.py`. -->
 
 ### 3. We've used wordtool before to loop through nouns and verbs. For example, let's print the first 10 nouns:
-  
+
 ```python
 words = wordtool.get_nouns()
 for i in range(10):
     print(words[i])
 ```
+**Goals of this problem:**
 
-Consider the following:
-```python
-import wordtool
+- The main goal of this problem is to determine whether a given word contains all the characters from a list that is provided.
 
-def has_all_characters(word, chlist):
+- You will need <a href="../../../media/useful/wordtool.py" download>**wordtool.py**</a> and <a href="../../../media/useful/wordsWithPOS.txt" download>**wordsWithPOS.txt**</a>.
+
+- You must use a `while` loop in the `find_word_containing` function and this function must use the `has_all_characters` function in its process to determine whether a given word contains all the characters from `chlist`.
+
+- Write your code in `words_with_certain_characters.py` and start by considering the following pseudocode:
+
+    ```python
+    import wordtool
+
+    def has_all_characters(word, chlist):
+        
+        # Write code so that this function
+        # returns True if the word contains
+        # all characters in the character list
+        # otherwise returns false
+
+    def find_word_containing(words, chlist):
+        position = -1
+        
+        
+        # Write a while loop here to find the 
+        # last word (alphabetically) that contains
+        # all of the characters in the character list
+        # and set the variable `position` to its index
+        # otherwise, do not change `position`` from -1
+
     
-      # Write code so that this function
-      # returns True if the word contains
-      # all characters in the character list
-      # otherwise returns false
+        # This branch prints the result in expected format
+        if position >= 0:
+            print('Found', words[position], 'at position', position, 'containing', ', '.join(chlist))
+        else:
+            print('Did not find a word containing', ', '.join(chlist))
+        
+    words = wordtool.get_nouns()
 
-def find_word_containing(words, chlist):
-    position = -1
-    
-    
-      # Write a while loop here to find the 
-      # last word (alphabetically) that contains
-      # all of the characters in the character list
-      # and set the variable `position` to its index
-      # otherwise, do not change `position`` from -1
+    find_word_containing(words, ['a','e','i','o','u'])
+    find_word_containing(words, ['a','s','d','f','g'])
+    find_word_containing(words, ['q','w','e','r','t'])
+    find_word_containing(words, ['l','m','n','o','p'])
+    find_word_containing(words, ['a','d','z','e'])
+    ```
 
- 
-    # This branch prints the result in expected format
-    if position >= 0:
-        print('Found', words[position], 'at position', position, 'containing', ', '.join(chlist))
-    else:
-        print('Did not find a word containing', ', '.join(chlist))
-    
-words = wordtool.get_nouns()
-
-find_word_containing(words, ['a','e','i','o','u'])
-find_word_containing(words, ['a','s','d','f','g'])
-find_word_containing(words, ['q','w','e','r','t'])
-find_word_containing(words, ['l','m','n','o','p'])
-find_word_containing(words, ['a','d','z','e'])
-```
 Your program should produce the following output when executed:
+
 ```python
 Found tambourine at position 9489 containing a, e, i, o, u
 Found safeguard at position 8177 containing a, s, d, f, g
@@ -212,20 +339,21 @@ Did not find a word containing q, w, e, r, t
 Found proclamation at position 7455 containing l, m, n, o, p
 Found dazzle at position 2615 containing a, d, z, e
 ```
+
 :::{.callout-tip}
-The output formatting is provided in the branch at the end of the `find_word_containing` function and this branch is driven by whether or not the variable `position` is non-negative.  If `position` is non-negative once the branch is reached, the word is assumed to be found at the index defined by `position` in the list of `words`; however, if `position` is negative, that is the indicator to the branch that no word was found from the list of `words` that contains the characters in `chlist`.
+- The output formatting is provided in the branch at the end of the `find_word_containing` function 
+    - This branch is driven by whether or not the variable `position` is non-negative.  
+
+- If `position` is non-negative once the branch is reached, the word is assumed to be found at the index defined by `position` in the list of `words`. 
+    - However, if `position` is negative, that is the indicator to the branch that no word was found from the list of `words` that contains the characters in `chlist`.
 :::
 
-You must use a `while` loop in the `find_word_containing` function and this function must use the `has_all_characters` function in its process to determine whether a given word contains all the characters from `chlist`.
+**Submit your program `words_with_certain_characters.py`.**
 
-You will need <a href="../../../media/useful/wordtool.py" download>**wordtool.py**</a> and <a href="../../../media/useful/wordsWithPOS.txt" download>**wordsWithPOS.txt**</a>.
-
-Write your code in `words_with_certain_characters.py`.
-
-- This next problem is about processing data from text files.
+<!-- - This next problem is about processing data from text files.
 To start, download <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> and <a href="../../../media/units/unit1/assignment3/circles.py" download>**circles.py**</a>, and then read through the latter. Then download these four files: <a href="../../../media/units/unit1/assignment3/circles0.txt" download>**circles0.txt**</a>, <a href="../../../media/units/unit1/assignment3/circles1.txt" download>**circles1.txt**</a>, <a href="../../../media/units/unit1/assignment3/circles2.txt" download>**circles2.txt**</a>, <a href="../../../media/units/unit1/assignment3/circles3.txt" download>**circles3.txt**</a>, as well. Examine the data files to see that each line except the first has data about a single circle: the x,y coordinates of the origin, and the radius.
-
-For example, the first file is:
+ -->
+<!-- For example, the first file is:
 ```python
 2
 3 6 2
@@ -236,8 +364,8 @@ This indicates 2 circles. One with origin at (3, 6) and radius 2. One with origi
 Now run the `circles.py` program. Then, in the program, change `circles0.txt` to `circles1.txt`. and then to `circles2.txt`. And once again to `circles3.txt`. You can then look at the files and confirm that you are indeed seeing the circles in those files. You should also see some circles overlap with others, while some circles are entirely isolated.
 
 Now for the assignment. Your goal is to identify which circles overlap another, and to draw them in red. You'll see that all you have to write is the code that determines the overlaps.
-
-:::{.callout-tip}
+ -->
+<!-- :::{.callout-tip}
 Use while loops instead of for loops in your part of the code.
 :::
 
@@ -258,7 +386,7 @@ Submit your solution including all files necessary to run the program.  In your 
 Identify five lines of work that involve computer programming, other than simply "computer programmer."
   
 Write 1-2 sentences describing each job and how computing fits into the role, such that they're clearly distinguished from each other.  Include this in your `assignment2.pdf` submission.
-
+ -->
 
 :::{.callout-warning}
 ## How to submit:
