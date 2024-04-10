@@ -501,6 +501,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Assignment 2</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../units/unit1/assignments/assignment3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignment 3</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
@@ -551,26 +557,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </style>
 
 
-<p>Let’s start with the outer while loop that reads an integer from the user each time:</p>
+<p><strong>Let’s start with the outer while loop that reads an integer from the user each time:</strong></p>
 <ul>
-<li><p>In pseudocode first:</p>
+<li><p><strong>First review the pseudocode shown below:</strong></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>read an integer n</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> n <span class="op">&gt;</span> <span class="dv">0</span>:</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    compute number of divides</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    read another integer into n</span></code></pre></div></li>
-<li><p>Which we can flesh out as:</p>
+<li><p><strong>We can start writing the above pseudocode in Python in the following manner:</strong></p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">'Enter an integer: '</span>))</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> n <span class="op">&gt;</span> <span class="dv">0</span>:</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Compute and print number of divides.</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">'Enter an integer: '</span>))</span></code></pre></div></li>
-<li><p>Notice how we’ve combined function calls. We could have written</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">'Enter an integer: '</span>))</span></code></pre></div>
-<p>as</p>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>In the above code segment we have combined function calls.</strong></p>
+<ul>
+<li><p><strong>Consider the following line of Python code:</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">'Enter an integer: '</span>))</span></code></pre></div></li>
+<li><p><strong>The above line of Python code could also have been written in the following manner:</strong></p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>n_str <span class="op">=</span> <span class="bu">input</span>(<span class="st">'Enter an integer: '</span>)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">int</span>(n_str)</span></code></pre></div>
-<p>The first call prompts the user and gets a string. The second converts the string into an integer.</p></li>
+<ul>
+<li>The first call prompts the user and gets a string.</li>
+<li>The second converts the string into an integer.</li>
+</ul></li>
 </ul>
+</div>
+</div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -581,23 +605,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Write up the above in <code>my_demo_problem1.py</code> and test out the while loop.</p>
-</div>
-</div>
-<p>Next, we want to successively divide by 2 (using integer division):</p>
 <ul>
-<li><p>The pseudocode for that part could be:</p>
+<li><strong>Write up the above in <code>my_demo_problem1.py</code> and test out the <code>while</code> loop.</strong></li>
+<li><strong>Submit your program <code>my_demo_problem1.py</code>.</strong></li>
+</ul>
+</div>
+</div>
+<p><strong>Now, we want to successively divide by 2 (using integer division):</strong></p>
+<ul>
+<li><p><strong>Review the pseudocode as shown below:</strong></p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> n <span class="op">&gt;</span> <span class="dv">1</span>:</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># divide by 2, increment count</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(count)</span></code></pre></div></li>
-<li><p>In more detail:</p>
+<li><p><strong>We can start writing the above pseudocode in Python in the following manner:</strong></p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> n <span class="op">&gt;</span> <span class="dv">1</span>:</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> n <span class="op">//</span> <span class="dv">2</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    count <span class="op">+=</span> <span class="dv">1</span></span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Number of divides for n='</span>, n, <span class="st">': '</span>, count, sep<span class="op">=</span><span class="st">''</span>)</span></code></pre></div></li>
-<li><p>We can now include this in our outer while-loop as:</p>
+<li><p><strong>We can now include this in our outer <code>while</code>-loop as presented below:</strong></p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">'Enter an integer: '</span>))</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> n <span class="op">&gt;</span> <span class="dv">0</span>:</span>
@@ -622,7 +649,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Does this work? Write up the above in <code>my_demo_problem2.py</code> and find out. Then explain what went wrong in your <code>assignment2.pdf</code>.</p>
+<ul>
+<li><p><strong>Write up the above in program in <code>my_demo_problem2.py</code></strong></p></li>
+<li><p><strong>Submit your program <code>my_demo_problem2.py</code></strong></p></li>
+<li><p><strong>Answering the following part of the exercise is recommended but not required for submission - It will help address the next exercise:</strong></p>
+<ul>
+<li><p>Examine the following sample output in the problem description and try to run your program <code>my_demo_problem2.py</code> with the inputs shown therein:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>Enter an integer: <span class="dv">14</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>Number of divides <span class="cf">for</span> n<span class="op">=</span><span class="dv">14</span>: <span class="dv">3</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>Enter an integer: <span class="dv">64</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>Number of divides <span class="cf">for</span> n<span class="op">=</span><span class="dv">64</span>: <span class="dv">6</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>Enter an integer: <span class="dv">33</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>Number of divides <span class="cf">for</span> n<span class="op">=</span><span class="dv">33</span>: <span class="dv">5</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>Enter an integer: <span class="op">-</span><span class="dv">1</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>Thank you<span class="op">!</span></span></code></pre></div></li>
+<li><p>Notice the output will not match exactly.</p></li>
+</ul></li>
+</ul>
 </div>
 </div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
@@ -635,27 +678,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In <code>my_demo_problem3.py</code> fix the problem by rewriting the inner while-loop so that the output is correct (as shown in the problem description).</p>
-</div>
-</div>
-<p>That solves the problem. However, we’ll now explore a few alternative ways of writing the code:</p>
 <ul>
-<li><p>First, let’s write the dividing part in a function:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> num_divides(n):</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    count <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> n <span class="op">&gt;</span> <span class="dv">1</span>:</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>        n <span class="op">=</span> n <span class="op">//</span> <span class="dv">2</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>        count <span class="op">+=</span> <span class="dv">1</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> count</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">'Enter an integer: '</span>))</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> n <span class="op">&gt;</span> <span class="dv">0</span>:</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    count <span class="op">=</span> num_divides(n)</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'Number of divides for n='</span>, n, <span class="st">': '</span>, count, sep<span class="op">=</span><span class="st">''</span>)</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">'Enter an integer: '</span>))</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Thank you!'</span>)</span></code></pre></div></li>
+<li><p><strong>In <code>my_demo_problem3.py</code></strong></p>
+<ul>
+<li>Modify the inner <code>while</code>-loop of the program <code>my_demo_problem2.py</code> to match the sample output for shown in earlier exercise <strong>A3.1.2</strong> (as also shown in the problem description).</li>
+</ul></li>
+<li><p><strong>Submit your program <code>my_demo_problem3.py</code>.</strong><br>
+</p></li>
+</ul>
+</div>
+</div>
+<p><strong>That solves the problem!</strong></p>
+<p><strong>Let’s now explore a few alternative ways of writing the code:</strong></p>
+<ul>
+<li><p><strong>First, let’s write the dividing part in a function as shown below:</strong></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> num_divides(n):</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> n <span class="op">&gt;</span> <span class="dv">1</span>:</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>        n <span class="op">=</span> n <span class="op">//</span> <span class="dv">2</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>        count <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> count</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">'Enter an integer: '</span>))</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> n <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    count <span class="op">=</span> num_divides(n)</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'Number of divides for n='</span>, n, <span class="st">': '</span>, count, sep<span class="op">=</span><span class="st">''</span>)</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">'Enter an integer: '</span>))</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Thank you!'</span>)</span></code></pre></div></li>
 </ul>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -667,16 +718,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Write up the above in <code>my_demo_problem4.py</code> and explain in <code>assignment2.pdf</code> why we were able to use the same variable n in the function.</p>
-</div>
-</div>
-<p>Finally, noticing that we get input once outside and then again inside the loop, we could ask: can we rewrite the outer loop so that we get input only inside the loop?</p>
 <ul>
-<li><p>That is, can the outer loop structure look like this:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> n <span class="op">&gt;</span> <span class="dv">0</span>:</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">'Enter an integer: '</span>))</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Do stuff ...</span></span></code></pre></div></li>
+<li><p><strong>Write up the above in <code>my_demo_problem4.py</code>.</strong></p></li>
+<li><p><strong>Submit your program <code>my_demo_problem4.py</code>.</strong></p></li>
+<li><p><strong>Answering the following part of the exercise is recommended but not required for submission:</strong></p>
+<ul>
+<li>Explain to yourself why we were able to use the same variable <code>n</code> in the function, <code>num_divides()</code>.</li>
+</ul></li>
 </ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>We can observe the following in the above program:</strong></p>
+<ul>
+<li>The <code>input</code>-statement outside the loop and</li>
+<li>Then again, inside the loop.</li>
+</ul>
+<p><strong>We could ask the following question:</strong></p>
+<ul>
+<li><p>Can we rewrite the <code>while</code> loop so that we get <code>input</code> only inside the loop?</p></li>
+<li><p>That is, can the outer loop structure look like this:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> n <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">'Enter an integer: '</span>))</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Do stuff ...</span></span></code></pre></div></li>
+</ul>
+</div>
+</div>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -687,7 +763,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In <code>my_demo_problem5.py</code> show that this can indeed be done, using a break statement. Use the function <code>num_divides()</code> as given to you above.</p>
+<p><strong>In <code>my_demo_problem5.py</code> show that this can indeed be done.</strong></p>
+<ul>
+<li>Use a <code>break</code> statement.</li>
+<li>Use the function <code>num_divides()</code> as given to you in the previous exercise A3.1.4.</li>
+</ul>
+<p><strong>Submit your program <code>my_demo_problem5.py</code>.</strong></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+If you got this far successfully, congratulations!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Remember: You are saving all the programs in a directory called <code>assignment1</code>.</li>
+<li>You need to start addressing the remaning problems in <code>assignment3</code>, found <a href="../../../units/unit1/assignments/assignment3.html">here</a>.</li>
+<li>After completing the remaining problems in this assignment, make a <code>zip</code> of the directory as <code>assignment3.zip</code> and submit it.</li>
+</ul>
 </div>
 </div>
 
