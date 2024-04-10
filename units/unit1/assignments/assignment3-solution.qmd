@@ -18,9 +18,9 @@ format:
 </head>
 <body>
 
-Let's start with the outer while loop that reads an integer from the user each time:
+**Let's start with the outer while loop that reads an integer from the user each time:**
 
-- In pseudocode first:
+- **First review the pseudocode shown below:**
     
     ```python
     read an integer n
@@ -29,7 +29,7 @@ Let's start with the outer while loop that reads an integer from the user each t
         read another integer into n
     ```
 
-- Which we can flesh out as:
+- **We can start writing the above pseudocode in Python in the following manner:**
     
     ```python
     n = int(input('Enter an integer: '))
@@ -39,27 +39,34 @@ Let's start with the outer while loop that reads an integer from the user each t
         n = int(input('Enter an integer: '))
     ```
 
-- Notice how we've combined function calls. We could have written
+:::{.callout-note}
+**In the above code segment we have combined function calls.** 
+
+- **Consider the following line of Python code:**
     
     ```python
     n = int(input('Enter an integer: '))
     ```
-    as
-    
+- **The above line of Python code could also have been written in the following manner:**
+
     ```python
     n_str = input('Enter an integer: ')
     n = int(n_str)
     ```
-The first call prompts the user and gets a string. The second converts the string into an integer.
+    - The first call prompts the user and gets a string. 
+    - The second converts the string into an integer.
+:::
 
 :::{.callout-caution appearance="simple" icon="false"}
 ###### <span style="color:#8B4513;">**A3.1.1 Exercise:** </span>
-Write up the above in `my_demo_problem1.py` and test out the while loop.
+
+- **Write up the above in `my_demo_problem1.py` and test out the `while` loop.**
+- **Submit your program `my_demo_problem1.py`.**
 :::
 
-Next, we want to successively divide by 2 (using integer division):
+**Now, we want to successively divide by 2 (using integer division):**
 
-- The pseudocode for that part could be:
+- **Review the pseudocode as shown below:**
  
     ```python
     count = 0
@@ -68,7 +75,7 @@ Next, we want to successively divide by 2 (using integer division):
     print(count)
     ```
 
-- In more detail:
+- **We can start writing the above pseudocode in Python in the following manner:**
     
     ```python
     count = 0
@@ -78,7 +85,7 @@ Next, we want to successively divide by 2 (using integer division):
     print('Number of divides for n=', n, ': ', count, sep='')
     ```
 
-- We can now include this in our outer while-loop as:
+- **We can now include this in our outer `while`-loop as presented below:**
     
     ```python
     n = int(input('Enter an integer: '))
@@ -98,17 +105,41 @@ Next, we want to successively divide by 2 (using integer division):
 
 :::{.callout-caution appearance="simple" icon="false"}
 ###### <span style="color:#8B4513;">**A3.1.2 Exercise:** </span>
-Does this work? Write up the above in `my_demo_problem2.py` and find out. Then explain what went wrong in your `assignment2.pdf`.
+
+- **Write up the above in program in `my_demo_problem2.py`** 
+
+- **Submit your program `my_demo_problem2.py`** 
+
+- **Answering the following part of the exercise is recommended but not required for submission - It will help address the next exercise:**  
+    - Examine the following sample output in the problem description and try to run your program `my_demo_problem2.py` with the inputs shown therein: 
+
+        ```python
+        Enter an integer: 14
+        Number of divides for n=14: 3
+        Enter an integer: 64
+        Number of divides for n=64: 6
+        Enter an integer: 33
+        Number of divides for n=33: 5
+        Enter an integer: -1
+        Thank you!
+        ``` 
+    - Notice the output will not match exactly. 
 :::
 
 :::{.callout-caution appearance="simple" icon="false"}
 ###### <span style="color:#8B4513;">**A3.1.3 Exercise:** </span>
-In `my_demo_problem3.py` fix the problem by rewriting the inner while-loop so that the output is correct (as shown in the problem description).
+- **In `my_demo_problem3.py`** 
+
+    - Modify the inner `while`-loop of the program `my_demo_problem2.py` to match the sample output for shown in earlier exercise **A3.1.2** (as also shown in the problem description).
+
+- **Submit your program `my_demo_problem3.py`.**    
 :::
 
-That solves the problem. However, we'll now explore a few alternative ways of writing the code:
+**That solves the problem!** 
 
-- First, let's write the dividing part in a function:
+**Let's now explore a few alternative ways of writing the code:**
+
+- **First, let's write the dividing part in a function as shown below:**
     
     ```python
     def num_divides(n):
@@ -130,12 +161,24 @@ That solves the problem. However, we'll now explore a few alternative ways of wr
 
 :::{.callout-caution appearance="simple" icon="false"}
 ###### <span style="color:#8B4513;">**A3.1.4 Exercise:** </span>
-Write up the above in `my_demo_problem4.py` and explain in `assignment2.pdf` why we were able to use the same variable n in the function.
+- **Write up the above in `my_demo_problem4.py`.** 
+
+- **Submit your program `my_demo_problem4.py`.**
+
+- **Answering the following part of the exercise is recommended but not required for submission:** 
+
+    - Explain to yourself why we were able to use the same variable `n` in the function, `num_divides()`.
 :::
 
+:::{.callout-note}
+**We can observe the following in the above program:** 
 
-Finally, noticing that we get input once outside and then again inside the loop, we could ask: can we rewrite the outer loop so that we get input only inside the loop?
+- The `input`-statement outside the loop and 
+- Then again, inside the loop. 
 
+**We could ask the following question:** 
+
+- Can we rewrite the `while` loop so that we get `input` only inside the loop?
 - That is, can the outer loop structure look like this:
     
     ```python
@@ -143,9 +186,21 @@ Finally, noticing that we get input once outside and then again inside the loop,
         n = int(input('Enter an integer: '))
         # Do stuff ...
     ```
+:::
 
 :::{.callout-caution appearance="simple" icon="false"}
 ###### <span style="color:#8B4513;">**A3.1.5 Exercise:** </span>
-In `my_demo_problem5.py` show that this can indeed be done, using a break statement. Use the function `num_divides()` as given to you above.
+**In `my_demo_problem5.py` show that this can indeed be done.** 
+
+- Use a `break` statement. 
+- Use the function `num_divides()` as given to you in the previous exercise A3.1.4.
+
+**Submit your program `my_demo_problem5.py`.** 
 :::
 
+:::{.callout-note}
+### If you got this far successfully, congratulations!
+- Remember: You are saving all the programs in a directory called `assignment1`.
+- You need to start addressing the remaning problems in `assignment3`, found [here](assignment3.qmd).
+- After completing the remaining problems in this assignment, make a `zip` of the directory as `assignment3.zip` and submit it.
+:::
