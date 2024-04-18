@@ -95,7 +95,7 @@ Keep up your good work! All the best!
 :::
 
 
-### 2. In this exercise you are expected to write a program `my_avgData.py` that prints the data row-by-row and calculates the average of row-wise data from file and save the outputs to another `data3.txt`. 
+### 2. In this exercise you are expected to write a program `my_avgData.py` that prints the data row-by-row and calculates the average of row-wise data from file `data3.txt`. 
 
 **Description of the data:**
 
