@@ -57,44 +57,48 @@ print(evens)
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.1
 
-First, in `my_list_example.py`, type up the above to see what it prints (without including the missing code). Then, in `my_list_example2.py`, add the missing code to increment each list element by 2.
+- First, in `my_list_example.py`, type up the above to see what it prints (without including the missing code). 
+- Then, in `my_list_example2.py`, add the missing code to increment each list element by 2.
+
+**Submit the following two programs:**
+
+1. `my_list_example.py`
+2. `my_list_example.py`
 :::
 
 Let's recall a few things we learned about lists via this example:
 ![](../../../media/units/unit2/module2.0/list-code.png)
 
-Why are lists useful?
+**Why are lists useful?**
 
-- The real power comes from being able to use a loop to
-    - Create elements, as in:
+- **The real power comes from being able to use a loop to do th following:**
+    - **Create elements, as shown below.**
     
         ```python
         for i in range(1, 10, 2):
             A.append(2*i)
         ```
-    - Perform some action on each element, as in:
+    - **Perform some action on each element, as show below.**
         
         ```python
         for i in range(len(A)):
             A[i] = 2 * A[i]
         ```
-- And one can use multiple lists as well, as in:
+    - **Create multiple lists as shown below.**
  
-     ```python
-    for i in range(len(A)):
-        B[i] = A[i] + 5
-    ```
-- Lists allow both index iteration as above but also content iteration:
+         ```python
+        for i in range(len(A)):
+            B[i] = A[i] + 5
+        ```
+    - **Perform list iterations over indices as shown above and over content as shown below.**
   
-    ```python
-    total = 0
-    for k in A:
-        total = total + k
-    ```
+        ```python
+        total = 0
+        for k in A:
+            total = total + k
+        ```
 
-As it turns out, we can make a list of lists.
-
-That is, a list whose elements are themselves lists.
+**As it turns out, we can make a "list-of-lists", i.e., a list whose elements are themselves lists.**
 
 For example:
 ```python
@@ -149,7 +153,7 @@ print(len(A[0]))  # 5
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.2
 
-Consider the following code:
+**Consider the following code:**
 ```python
 A = [[1,2,3,4], [4,5,6,7], [8,9,10,11,12]]
 x = A[?][?]
@@ -161,86 +165,93 @@ print(x)     # Should print 7
 print(A)
 # Output should be: [2, 3, 4, 5], [5, 6, 7, 8], [9, 10, 11, 12, 13]]
 ```
-In `my_list_example3.py`, add the right numbers to replace the question marks. Then, write a nested for-loop to increment every element of every constituent list.
+- In `my_list_example3.py`, add the right numbers to replace the question marks. 
+- Then, write a nested for-loop to increment every element of every constituent list.
+
+**Submit your program `my_list_example3.py`.**
 :::
 
-Can one make a list of lists of lists?
+**Can one make a list-of-lists-of-lists?**
 
-- Think of a single list as <em>one dimensional</em>:
+- **Think of a single list as <em>one dimensional</em>.**
     
     ```python
     A = [2, 4, 6, 8, 10]
     print(A[3])
     ```
-- In a one-dimensional list, we need a single number to access a data value in the list:
+- **In a one-dimensional list, we need a single number to access a data value in the list.**
   
     ```python
     print(A[3])
     ```
-- And a list of lists as <em>two dimensional</em>:
+- **A list of lists is <em>two dimensional</em>.**
   
     ```python
     A = [ [2,4,6,8,10], [1,3,5,7,9] ]
     print(A[0][2])
     ```
-- In a two-dimensional list, we need two numbers to access a data value in the list:
+- **In a two-dimensional list, we need two numbers to access a data value in the list.**
   
     ```python
     print(A[0][2])
     ```
-- Think of a list of lists of lists as <em>three-dimensional</em>, which means three numbers fix the position of a element.
-- For example:
+- **Think of a list of lists of lists as <em>three-dimensional</em>, which means three numbers fix the position of a element.**
+    - For example:
   
-    ```python
-    A = [ [ [1,2], [3,4], [5,6] ], [ [7,8], [9,10], [11,12] ] ]
+        ```python
+        A = [ [ [1,2], [3,4], [5,6] ], [ [7,8], [9,10], [11,12] ] ]
 
-    print(A[0][2][1])     # Prints 6
-    ```
-- It's a bit hard to see the list of lists of lists:
-    - First, there's the outermost list with two elements:
+        print(A[0][2][1])     # Prints 6
+        ```
+    It's a bit hard to see the list of lists of lists:
+    
+    - **There's the outermost list with two elements. The first element of the outer list is `A[0]`.**
   
         ```python
         A = [ [ [1,2], [3,4], [5,6] ], [ [7,8], [9,10], [11,12] ] ]
         ```
-    - The first element of the outer list is A[0]
-    - Then, looking inside A[0], we see a list of lists:
+    
+    - **Looking inside A[0], we see a list of lists:**
   
         ```python
         A = [ [ [1,2], [3,4], [5,6] ], [ [7,8], [9,10], [11,12] ] ]
         ```
-    - The third element of this is A[0][2]:
+    - **The third element of the list is `A[0][2]`, that is also a list `[5,6]`:**
   
         ```python
         A = [ [ [1,2], [3,4], [5,6] ], [ [7,8], [9,10], [11,12] ] ]
         ```
-    Which is the list[5,6]
-    - And the 2nd element inside this list is A[0][2][1]:
+    <!-- Which is the list[5,6] -->
+    - **And the 2nd element inside this list is `A[0][2][1]`:**
   
         ```python
         A = [ [ [1,2], [3,4], [5, 6] ], [ [7,8], [9,10], [11,12] ] ]
         ```
+
+:::{.callout-note}
 - So think of `A[0][2][1]`:
     - Get the first outer list `A[0]` (which is a list)
-    - Get the this list's 3rd element A[0][2] (this produces a list)
-    - Get this last list's 2nd element A[0][2][1].
+    - Get the this list's 3rd element `A[0][2]` (this produces a list)
+    - Get this last list's 2nd element `A[0][2][1]`.
+:::    
 
 ## 0.1 Arrays: a more efficient type of list 
-While lists are useful and easy to use, they are a bit inefficient "under the hood":
+**While lists are useful and easy to use, they are a bit inefficient "under the hood":**
 
 - Very large lists (million elements and higher) can slow down a program.
 - And a list-of-lists is even slower for large sizes, and takes up unneccessary extra space (compared to arrays).
 - Some of the most compelling uses involve the array equivalent of a list-of-lists-of-lists: an image.
 - As we will see, a regular color image will turn out to be a <em>three dimensional array</em> while a black-and-white image will turn out to be a <em>two-dimensional array</em>.
 
-About arrays:
+**About arrays:**
   
-- Arrays were created as a separate structure in Python to enable efficient processing of lists of numbers, especially multidimensional lists.
-- Because arrays are in a separate part of Python, the syntax around arrays is a bit different, for example:
+- <em>Arrays</em> were created as a separate structure in Python to enable efficient processing of lists of numbers, especially multidimensional lists.
+- Because <em>arrays</em> are in a separate part of Python, the syntax around arrays is a bit different, for example:
   
     ```python
     A = np.array([1,2,3,4])
     ```
-- Arrays constitute a large topic in Python, and its advanced features can be fairly complex.
+- <em>Arrays</em> constitute a large topic in Python, and its advanced features can be fairly complex.
 - Our goal here is only a light introduction so that we can work with images.
 
 Let's start with an example of a single dimensional array, the cousin of a plain list:
@@ -262,31 +273,38 @@ print('len(A)=',len(A))    # 4
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.4
 
-Type up the above in `my_array_example.py`. Try un-commenting in turn each of the two commented-out lines at the end, and report the errors in your module pdf. (Restore your program by commenting out both.)
+- **Type up the above in `my_array_example.py` along with the comments.**
+- **Submit your program `my_array_example.py`.**
+
+- **Answering the following part of the exercise is recommended but not required for submission:**
+    - Try un-commenting in turn each of the two commented-out lines at the end, and understand the errors that were produced. 
+    - Restore your program by commenting out both.
 :::
 
-Let's point out a few things:
+**Let's point out a few things:**
 
-- To gain efficiency, arrays trade away some flexibility and ease of use. 
-- For example, we now need to import this special package called `numpy`:
+- **To gain efficiency, arrays trade away some flexibility and ease of use.** 
+- **For example, we now need to import this special package called `numpy`:**
   
     ```python
     import numpy as np
     ```
-- Once we do this, the syntax for making an array with actual data is, as we've seen:
+- **Once we do this, the syntax for making an array with actual data is, as we've seen:**
   
     ```python
     A = np.array([1,2,3,4])
     ```
-- A brief aside on the Python keyword as:
-    - We use as to create shortcuts.
-    - We could write code like this:
+:::{.callout-note}    
+    **A brief aside on the Python keyword `as`:**
+
+    - We use `as` to create shortcuts.
+    - We could write the above code as show below:
   
         ```python
         import numpy
         A = numpy.array([1,2,3,4])
         ```
-    - The as keyword lets us create a short form.
+    - The `as` keyword lets us create a short form.
     - We could have made it even shorter:
   
         ```python
@@ -297,25 +315,27 @@ Let's point out a few things:
     - Over time, a sort-of convention about naming has taken place in Pythonworld. 
     - Which is why you'll see all example code using `numpy as np`.
     End of digression.
+:::
 
-- Notice that that actual data is fed into `numpy's` `array` function as a list:
+- **Notice that that actual data that is fed into an `array` function of `numpy` is a `list`:**
   
     ```python
     import numpy as np
     A = np.array( [1,2,3,4] )
     ```
     The actual array so created is in fact in the variable `A`.
-- To work with elements in the array, we use square brackets with the variable `A`:
+
+- **To work with elements in the array, we use square brackets with the variable `A`:**
   
     ```python
     A[1] = 5                   # Replace 2nd element
     ```
-- The standard function `len()` works as we expect:
+- **The standard function `len()` works as we expect:**
   
     ```python
     print('len(A)=',len(A))
     ```
-- However, the array has a feature that is more general called <em>shape</em>:     
+- **However, the `array` has a feature that is more general called <em>shape</em>:**     
   
     ```python
     print(A.shape[0])          # 4
@@ -326,20 +346,20 @@ Let's point out a few things:
     - `shape[0]`has the first dimension (the length of the array along the first dimension).
     - `shape[1]`has the length along the second-dimension, and so on.
     - Of course, for a single dimensional array, there's only `shape[0]`.
-- One of the efficiency tradeoffs is that an array has a fixed size. Which means, to add a new element, we have to rebuild the array.
-- Thus, to add an element in the above example, we need to write:
+- **One of the efficiency tradeoffs is that an array has a fixed size. Which means, to add a new element, we have to rebuild the array.**
+- **Thus, to add an element in the above example, we need to write:**
   
     ```python
     A = np.append(A, 9)
     print(A)        # [1 5 3 4 9]
     ```
     This creates a new array with the added element.
-- Typically most scientific applications do not change sizes on the fly, and so, this is not a serious restriction.
+- **Typically most scientific applications do not change sizes on the fly, and so, this is not a serious restriction.**
 
 
-Numpy has powerful features that simplify manipulation of numeric arrays.
+**Numpy has powerful features that simplify manipulation of numeric arrays.**
 
-For example, consider:
+For example, consider the following program:
 ```python
 import numpy as np
 
@@ -359,13 +379,20 @@ print(E)             # [3, 3, 3]
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.5
 
-Type up the above in  `my_array_example2.py` and add a line that multiplies the arrays `A` and `B` element-by-element, and prints the result ([ 4 10 18]).
+- **Type up the above in `my_array_example2.py`.** 
+- **Add a line that multiplies the arrays `A` and `B` element-by-element, and prints the result `[ 4 10 18]`.**
+    - Hint: Use `np.multiply()`
+
+- **Submit your program `my_array_example2.py`.** 
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.6
+**let's remind ourselves about how lists work.**
 
-In `my_list_version.py`, let's remind ourselves about how lists work. Start by examining what happens with:
+- **Type up the following program in `my_list_version.py`:**
+
+<!-- Start by examining what happens with: -->
 ```python
 X = [1, 2, 3]
 Y = [4, 5, 6]
@@ -377,29 +404,32 @@ print(Z)          # What does this print?
 
 print(Z)
 ```
-Then add code to perform element-by-element addition.
+- **Then add code to perform element-by-element addition.**
+
+- **Submit your program `my_list_version.py`.**
 :::
 
-Numpy also has a number of functions that act on arrays and return arrays, for example:
+**Numpy also has a number of functions that act on `arrays` and return arrays, for example:**
 
-- One can apply a function like square-root element-by-element:
+- **One can apply a function like square-root element-by-element:**
  
     ```python
     A = np.array( [1, 4, 9, 16] )
     B = np.sqrt(A)
     print(B)        # [1. 2. 3. 4.]
     ```
-- One of the most convenient is to have Numpy create an array with random elements, as in:
-  
+- **One of the most convenient is to have `numpy` create an `array` with random elements:**
+    - Numpy has its own random-generation tool:`np.random`
+    - This has a function `randint()` that takes the desired range (inclusive of first, excluding last), and the desired size of the array.
+
     ```python
     # Roll a die 20 times
     A = np.random.randint(1, 7, size=20)  
     ```
-    This produces an array of size 20 with each element randomly chosen from among the numbers 1,2,3,4,5,6.
-    - Numpy has its own random-generation tool:`np.random`
-    - This has a function `randint()` that takes the desired range (inclusive of first, excluding last), and the desired size of the array.
+    This produces an array of size `20` with each element randomly chosen from among the numbers `1,2,3,4,5,6`.
 
-One can also test membership using the in operator:
+    
+**One can also test membership using the `in` operator:**
 
 - For example, suppose we roll a die 20 times and want to know whether a 6 occured:
   
@@ -408,12 +438,13 @@ One can also test membership using the in operator:
     A = np.random.randint(1, 7, size=20)  
     if 6 in A:
         print('Yes, there was a 6')
-      ```
+    ```
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.7
 
-In `my_dice_problem.py` fill in code below to estimate the chances that you get a total of 7 at least once when rolling a pair of dice 10 times.
+- In `my_dice_problem.py` fill in code below to estimate the chances that you get a total of 7 at least once when rolling a pair of dice 10 times.
+
 ```python
 successes = 0
 num_trials = 1000
@@ -422,23 +453,31 @@ for n in range(num_trials):
 
 print( successes/num_trials )
 ```
-To do so, generate one array called A of length 10 with random numbers representing one die (selected from 1 through 6). Then generate a second array called B that represents the 10 rolls of  the second die. A success occurs when A[i]+B[i] is 7 for some i. Can you solve this without actually accessing the i-th element in a loop?
+- To do so, generate one array called `A` of length `10` with random numbers representing one die (selected from 1 through 6). 
+- Then generate a second array called `B` that represents the `10` rolls of  the second die. 
+- A success occurs when `A[i]+B[i]` is `7` for some `i`. 
+
+**Submit your program `my_dice_problem.py`.**
+
+**Answering the following part of the exercise is recommended but not required for submission:**
+
+- Can you solve this without actually accessing the i-th element in a loop?
 :::
 
 ## 0.2 2D arrays
-Here, 2D is short for two-dimensional.
+**Here, 2D is short for two-dimensional.**
 
-Let's begin with a <em>conceptual depiction</em> of a 1D (one-dimensional) array:
+**Let's begin with a <em>conceptual depiction</em> of a 1D (one-dimensional) array:**
 
 - First, suppose we create an array of 5 numbers as in:
  
     ```python
     A = np.array([50, 55, 60, 65, 70])
     ```
-- A convenient way to visualize this is to draw these numbers in a series of adjacent "boxes" as in:
+- A convenient way to visualize this is to draw these numbers in a series of adjacent "boxes" as shown below:
 ![](../../../media/units/unit2/module2.0/array-pic.png)
 - Because we need a way to use our keyboard to enter elements, we use a particular kind of syntax, comma-separation with square-brackets to specify the elements.
-- We use a similar type of syntax to access a particular element in this array, as in:
+- We use a similar type of syntax to access a particular element in this `array`, as shown below:
 
     ```python
     print(A[2])
@@ -452,7 +491,7 @@ Let's begin with a <em>conceptual depiction</em> of a 1D (one-dimensional) array
 
     ![](../../../media/units/unit2/module2.0/array-pic2.png)
 
-To explain how a 2D array works, let's start with its conceptual visualization, via an example:
+**To explain how a 2D array works, let's start with its conceptual visualization, via an example:**
 
 - Consider this visualization of a 2D array:
 ![](../../../media/units/unit2/module2.0/array-pic3.png)
@@ -460,37 +499,47 @@ To explain how a 2D array works, let's start with its conceptual visualization, 
 ![](../../../media/units/unit2/module2.0/array-pic4.png)
 - And the term <em>column</em> (shortened to <em>col</em> in our pictures) to describe the series of boxes going vertically top to bottom:
 ![](../../../media/units/unit2/module2.0/array-pic5.png)
-- Observe: 
-    - The number of elements in a row is the number of columns.
-    - The number of elements in a column is the number of rows.
+
+:::{.callout-note}  
+- The number of elements in a row is the number of columns.
+- The number of elements in a column is the number of rows.
+:::
+
 - Again, because our limited keyboard doesn't let us draw boxes, we need a way to type in a 2D array. We do so by writing out a 2D array as a series of comma-separated rows:
   
     ```python
-    A = np.array([ [50,   55,  60,  65,  70],
-                [100, 105, 110, 120, 125],
-                [150, 155, 160, 165, 170],
-                [200, 205, 210, 215, 220] ])
+    A = np.array([ [ 50,  55,  60,  65,  70],
+                [   100, 105, 110, 120, 125],
+                [   150, 155, 160, 165, 170],
+                [   200, 205, 210, 215, 220] ])
     ```
-    Here, we've added whitespace (that's allowed) to line up the rows so that it's as close to our visual understanding as possible.
+:::{.callout-note}  
+In the above example of `2D numpy array`, we've added whitespace (that's allowed) to line up the rows so that it's as close to our visual understanding as possible.
+:::
 - To access a particular element, we need the row number and column number, as in:
   
     ```python
     print(A[1,3])     # NOT A[1][3]
     ```
-- **Important:** Unlike a list-of-lists, arrays use comma separation and not box-separation. For comparison:
-  
+:::{.callout-note} 
+    **Important:** 
+    - In a `list-of-lists` box-separation is used in indexing. 
+
     ```python
     # List of lists:
     X = [ [2,4,6,8,10], [1,3,5,7,9] ]
     print(X[0][2])
-
+    ```
+    - In `numpy arrays` comma-separation is used in indexing. 
+    ```python
     # 2D array:
     X = np.array([ [2,4,6,8,10], [1,3,5,7,9] ])
     print(X[0,2])
     ```
     Unfortunately, arrays allow box-separation as well (for access) but this causes problems in other array operations (slicing): so  <em>please use comma-separation with a single set of square brackets</em> for arrays.
+:::
 
-Just as we used a for-loop for a single array, it is very typical to use a nested for-loop for a 2D array:
+**Just as we used a <em>for-loop</em> for a single `array`, it is very typical to use a <em>nested for-loop</em> for a `2D array`:**
 
 - For comparison, let's look at a 1D array:
  
@@ -524,38 +573,46 @@ Just as we used a for-loop for a single array, it is very typical to use a neste
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.9
 
-Consider this conceptual 2D array:
+**Consider this conceptual 2D array:**
 
 ![](../../../media/units/unit2/module2.0/array-pic6.png)
 
-In `my_2D_array.py`, write code to create the array, and then a nested loop to print the array so that the output has one row on each line, with whitespace between elements, as in:
+- **In `my_2D_array.py`, write code to create the `array`.** 
+
+- **Then write a <em>nested for-loop</em> to print the `array` so that the output has one row on each line, with whitespace between elements, as show below:**
 ```python
 10  12  15  
 6  8  10  
 2  -1  -5  
 -4  4  5  
 ```
+
+- **Submit your program `my_2D_array.py`.**
 :::
 
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.10
 
-In `my_2D_array2.py`, use the same array above and structure a nested loop to compute the sum of elements down each column so that the output is:
+- **In `my_2D_array2.py`, use the same array above and structure a nested for-loop to compute the sum of elements down each column so that the output is:**
 ```python
 Column 0 total is 14
 Column 1 total is 23
 Column 2 total is 25
 ```
+
+- **Submit your program `my_2D_array2.py`.**
 :::
 
-About 2D arrays:
+:::{.callout-note} 
+**About 2D arrays:**
 
-- Although our examples show arrays of integers, the Numpy package supports a wide variety of data types, including floats, chars, strings and such.
+- Although our examples show `arrays of integers`, the `Numpy package` supports a wide variety of data types, including `floats`, `chars`, `strings` and such.
 - There are even specially "compacted" versions of integers to enable working with extremely large arrays.
 - There are two common (and quite different) uses of 2D arrays:
     - One is for a mathematical construct called a <em>matrix</em>, which you'd learn in a course called <em>linear algebra</em>.
     - The other is for images, which we'll look at next.
+:::
 
 ## 0.3 A greyscale image is really a 2D array of integers
 Consider the following program:
@@ -580,17 +637,25 @@ dt.display()
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.12
 
-Type up the above in `my_image_example.py` and download <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> into the same folder. When you run and see the result on your laptop, see if you can position yourself 10 feet away from your laptop so that your eyes don't see the faint lines that outline the grid.
+- Type up the above in `my_image_example.py` and download <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> into the same folder. 
+
+- When you run the program, you should see the following result:  
+![](../../../media/units/unit2/module2.0/my_image_PNG.png)
+
+<!-- see the result on your laptop, see if you can position yourself 10 feet away from your laptop so that your eyes don't see the faint lines that outline the grid. -->
+
+- **Submit your program `my_image_example.py`.**
+    - We are only looking for a working program i.e., `my_image_example.py`.
 :::
 
-What is a greyscale image?
+**What is a greyscale image?**
 
-- By <em>greyscale</em>, we mean black-and-white (no colors) but more specifically (and typically) 256 shades of grey.
+- By <em>greyscale</em>, we mean black-and-white (no colors) but more specifically (and typically) `256` shades of grey.
 - Consider this illustration showing an image on the left with a small part of it zoomed in:
 ![](../../../media/units/unit2/module2.0/ace-pixels.png)
 - Any digital image is really a 2D arrangement of small squares called <em>pixels</em>, in rows and columns (just like an array).
 - In a greyscale image, each pixel is colored a shade of grey.
-- In standard greyscale images, there are 256 shades of grey numbered 0 through 255 where 0 is black, and 255 is white.
+- In standard greyscale images, there are 256 shades of grey numbered `0` through `255` where `0` is black, and `255` is white.
 - Now let's go back to the code and examine what we wrote:
   
     ```python
@@ -599,23 +664,23 @@ What is a greyscale image?
                             [150, 155, 160, 165, 170],
                             [200, 205, 210, 215, 220] ])
     ```
-    - The first number (50) is a shade of dark grey (almost black).
-    - The next number (55) along that row specifies a slightly lighter (but still quite dark) shade of grey.
-    - Now consider 200, the first number in the 4th row: this is a shade of light grey, while 220 at the end is nearly white.
-- Thus, a greyscale image is nothing but a 2D array of integers whose values range between 0 and 255 (inclusive).
+    - The first number (`50`) is a shade of dark grey (almost black).
+    - The next number (`55`) along that row specifies a slightly lighter (but still quite dark) shade of grey.
+    - Now consider `200`, the first number in the 4th row: this is a shade of light grey, while `220` at the end is nearly white.
+- Thus, a greyscale image is nothing but a 2D array of integers whose values range between `0` and `255` (inclusive).
 - Our eyes are fooled into seeing a seamless image because of high resolution. Whereas our eye can see the individual pixels in the example above, a regular image has thousands of pixels, which is enough to fool the eye.
-- In a color image, as we will later see, we'll need three numbers for each pixel (the amounts of red, green, blue).
+- In a color image, as we will later see, we'll need three numbers for each pixel (the amounts of `red, green, blue`).
 - About the greyscale machine pictured above:
     - This is an image of the ACE computer, one of the world's earliest computers, designed by none other than Alan Turing, computer science pioneer and WWII hero.
     - To give you a sense of how primitive these were, your laptop with 8GB RAM has more than 60 million times the memory of the ACE. And yet, the ACE was a landmark technological wonder at its time.
 
-:::{.callout-caution appearance="simple" icon=false}
+<!-- :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.13
 
-In `my_image_example2.py`, create a 10 x 12 (10 rows, 12 columns) greyscale image that is intended to be the logo of a fictitious company. In your module pdf, include a screenshot of the image, the name of the company, and what the company does. Points for humor and creativity. We'll post the best ones.
-:::
+- In `my_image_example2.py`, create a 10 x 12 (10 rows, 12 columns) greyscale image that is intended to be the logo of a fictitious company. In your module pdf, include a screenshot of the image, the name of the company, and what the company does. Points for humor and creativity. We'll post the best ones.
+::: -->
 
-Let's now work with an actual image:
+**Let's now work with an actual image:**- 
 ```python
 from drawtool import DrawTool
 import numpy as np
@@ -630,25 +695,33 @@ greypixels = dt.read_greyimagefile('eniac.jpg')
 dt.set_axes_off()
 dt.draw_greyimage(greypixels)
 
-dt.display()
-
 # Add code to print the number of rows, number of columns
 # Should print: rows = 189  columns = 267
+
+dt.display()
 ```
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.14
 
-Type up the above in `my_image_example3.py` and download <a href="../../../media/units/unit2/module2.0/eniac.jpg" download>**eniac.jpg**</a>. Add code to print the number of rows and number of columns, then in your module pdf, report these numbers. Also, spend 15 minutes learning about the ENIAC, its inventors, its significance, and write a short paragraph about this in your pdf.
+- Type up the above in `my_image_example3.py` and download <a href="../../../media/units/unit2/module2.0/eniac.jpg" download>**eniac.jpg**</a>. 
+- Add code to print the number of rows and number of columns
+    - Hint: <em>some_variable</em>`.shape[0]` relates to the rows and  em>some_variable</em>`.shape[1]` relates to the columns
+
+**Submit your program `my_image_example3.py`.**
+- We are only looking for a working program i.e., `my_image_example3.py`.
+
+**Answering the following part of the exercise is recommended but not required for submission:**
+- Spend 15 minutes learning about the ENIAC, its inventors, its significance, and write a short paragraph about this in your pdf.
 :::
 
-Image formats:
+**Image formats:**
 
 - When an image is stored as a file, the file needs to contain all the integers that comprise the 2D array (for greyscale images)
-- Large images can take quite a bit of space. For example, a 1000-row x 1000-column image will have one million pixels.
+- Large images can take quite a bit of space. For example, a `1000`-row x `1000`-column image will have one million pixels.
 - Yet many images have vast expanses of the same color or intensity and they offer a chance to <em>compress</em> (use less space by being clever).
 - Image formats arose as a result of wanting to both compress the storage and to store meta-info about images.
-- Popular formats include: JPG, PNG, TIFF and Bitmap.
+- **Popular formats include:** `JPG, PNG, TIFF and Bitmap`.
 - Typically the last part of the filename (the ".jpg" in "eniac.jpg") tells you the format.
 - Python provides a way of reading from these formats so that we don't have to worry about the details.
 
@@ -688,45 +761,55 @@ dt.display()
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.15
 
-Type up the above in `my_image_example4.py` and try different values (in the range 10 to 100) of the `lightness_factor`. In your module pdf, explain the purpose of of the if-statement inside the loop.
+- **Type up the above program in `my_image_example4.py`** and save it in the same folder where you downloaded <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a> and <a href="../../../media/units/unit2/module2.0/eniac.jpg" download>**eniac.jpg**</a> in the earlier exercise. 
+- **Execute the program `my_image_example4.py`**
+- **Change the `lightness_factor` to 100.**
+
+- **Submit your program `my_image_example4.py`.**
+    - We are only looking for a working program i.e., `my_image_example4.py`.
+
+**Answering the following part of the exercise is recommended but not required for submission:**
+- Try different values (in the range 10 to 100) of the `lightness_factor` and observe the change in the image.
+
+<!-- In your module pdf, explain the purpose of of the if-statement inside the loop. -->
 :::
 
-:::{.callout-caution appearance="simple" icon=false}
+<!-- :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.16
 
 In `my_image_example5.py` write code to create the "photo negative" of a greyscale image (black turns to white, white to black, light grey to dark grey, dark grey to light grey, and so on). For example, applying this to the eniac.jpg image should result in <a href="../../../media/units/unit2/module2.0/eniac-negative.jpg" download>**eniac-negative.jpg**</a>.
-:::
+::: -->
 
 
 ## 0.4 A color image is a 3D array of integers
-About color images:
+**About color images:**
 
 - In a color image, each pixel will have a color instead of a "greyness" factor.
 - Unfortunately, one cannot easily represent colors with a single number.
 - There are many ways of using multiple numbers to encode colors.
 - We'll use the most popular one: specify the strengths of the three primary colors (**R**ed, **G**reen, **B**lue).
 - This approach is so popular that we refer to it simply as RGB.
-- The "amount" of red is a number between 0 and 255, the amount of green is another such number, as is the amount of green.
+- The "amount" of `red` is a number between `0` and `255`, the amount of `green` is another such number, as is the amount of green.
 - Thus, each color is a triple of numbers, for example:
-    - (255,0,0) is all red (no green, no blue)
+    - `(255,0,0)` is all red (no green, no blue)
         <div style="display: inline-block;width: 20px;background:#FF0000">&nbsp;&nbsp;</div>
-    - (0,255,0) is all green (no red, no blue)
+    - `(0,255,0)` is all green (no red, no blue)
         <div style="display: inline-block;width: 20px;background:#00FF00">&nbsp;&nbsp;</div>
-    - (0,0,255) is all blue (no red, no green)
+    - `(0,0,255)` is all blue (no red, no green)
         <div style="display: inline-block;width: 20px;background:#0000FF">&nbsp;&nbsp;</div>
 - Let's try a few more:
-    - (255,255,0) 
+    - `(255,255,0)` 
         <div style="display: inline-block;width: 20px;background:#FFFF00">&nbsp;&nbsp;</div>
-    - (100,255,255) 
+    - `(100,255,255)` 
         <div style="display: inline-block;width: 20px;background:#64FFFF">&nbsp;&nbsp;</div>
-    - (200,200,200) 
+    - `(200,200,200)` 
         <div style="display: inline-block;width: 20px;background:#c8c8c8">&nbsp;&nbsp;</div>
         (grey is R,G,B all equal)
-    - (0,0,0)
+    - `(0,0,0)`
         <div style="display: inline-block;width: 20px;background:#000000">&nbsp;&nbsp;</div>
-    - (255,255,255) is white
+    - `(255,255,255)` is white
 
-When each pixel needs three numbers and there's a grid of pixels, how do we store the numbers?
+**When each pixel needs three numbers and there's a grid of pixels, how do we store the numbers?**
 
 - We use a small array (of size 3) to store the triple.
 - Then each pixel in the 2D array of pixels will have an array of size 3.
@@ -759,14 +842,23 @@ dt.display()
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.17
+- Type up the above in `my_color_example.py` and save it in the same folder where you downloaded <a href="../../../media/useful/drawtool.py" download>**drawtool.py**</a>
 
-Type up the above in `my_color_example.py`. Then in `my_color_example2.py`, go back to your greyscale logo from earlier and design a better 10 x 12 color logo for the same company. Put these side by side in your module pdf.
+- When you run the program, you should see the following result:  
+![](../../../media/units/unit2/module2.0/my_color_PNG.png)
+
+<!-- see the result on your laptop, see if you can position yourself 10 feet away from your laptop so that your eyes don't see the faint lines that outline the grid. -->
+
+- **Submit your program `my_color_example.py`.**
+    - We are only looking for a working program i.e., `my_color_example.py`.
+
+<!-- Then in `my_color_example2.py`, go back to your greyscale logo from earlier and design a better 10 x 12 color logo for the same company. Put these side by side in your module pdf. -->
 :::
 
 Let's point out the structure inherent in the above 3D array:
 ![](../../../media/units/unit2/module2.0/array3d-code.png)
 
-Next, let's work with actual color images with an example application: converting color to greyscale:
+**Next, let's work with actual color images with an example application: converting color to greyscale:**
 ```python
 from drawtool import DrawTool
 import numpy as np
@@ -802,7 +894,17 @@ dt.display()
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.18
 
-Type up the above in `my_color_example3.py` and download <a href="../../../media/units/unit2/module2.0/washdc.jpg" download>**washdc.jpg**</a>. What is the file size of the original versus the new greyscale one? Read further about JPG vs PNG and in your module pdf, explain why the PNG format needs more storage space than the JPG format.
+- Type up the above in `my_color_example3.py` and download <a href="../../../media/units/unit2/module2.0/washdc.jpg" download>**washdc.jpg**</a>. 
+- **Execute the program `my_color_example3.py`**
+    - The program should convert and save the color image into a greyscale and save it in your folder with a filename, `washdc-grey.png`.
+
+- **Submit your program `my_color_example3.py`.**
+    - We are only looking for a working program i.e., `my_color_example3.py`.
+
+**Answering the following part of the exercise is recommended but not required for submission:**
+
+- Try and figure out file size of the original versus the new greyscale one. 
+- Find out more about JPG vs PNG formats of images, to understand why PNG format needs more storage space than the JPG format.
 :::
 
 Next, consider the following program:
@@ -836,26 +938,48 @@ dt.display()
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.20
 
-Type up the above in `my_color_example4.py`. You already have <a href="../../../media/units/unit2/module2.0/washdc.jpg" download>**washdc.jpg**</a>
+- Type up the above in `my_color_example4.py`. You already have <a href="../../../media/units/unit2/module2.0/washdc.jpg" download>**washdc.jpg**</a>
+
+- **Submit your program `my_color_example4.py`.**
+    - We are only looking for a working program i.e., `my_color_example4.py`.
+
+**Answering the following part of the exercise is recommended but not required for submission:**
+
+- Try making the following changes and run your program `my_color_example4.py` to observe your outputs:  
+```python 
+pixels[i,j,0] = 0
+pixels[i,j,1] = 255
+pixels[i,j,2] = 0
+```
+and 
+
+```python 
+pixels[i,j,0] = 255
+pixels[i,j,1] = 0
+pixels[i,j,2] = 0
+```
+- Understand why the image is changing with the above inputs.
 :::
 
 
-What did we just do?
+**What did we just do?**
 
-- We are examining the R,G,B values for each pixel, to see if the condition (G &gt; R) and (B &lt; G) is satisfied.
+- We are examining the `R,G,B` values for each pixel, to see if the condition (`G` &gt; `R`) and (`B` &lt; `G`) is satisfied.
 - When the condition is satisfied, we are overwriting the pixel with a new (all blue) color.
 - What we're trying to do is identify <em>greenery</em> by asking: when do we have the Green value a bit larger than the Red value and much larger than the Blue value?
-- Why is this useful? This is essentially what many satellite-image applications do: identify areas of interest for urban planning, crop surveys, environmental assessment (think: rainforest),  and so on.
-- Notice that this rule does not capture all greenery.
+- **Why is this useful?** 
+    - This is essentially what many satellite-image applications do: 
+        - identify areas of interest for urban planning, crop surveys, environmental assessment (think: rainforest),  and so on.
+    - Notice that this rule does not capture all greenery.
 
-:::{.callout-caution appearance="simple" icon=false}
+<!-- :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.21
 
 In `my_color_example5.py`, try to add additional rules to capture the remaining greenery (the trees) and set those pixels to blue as well. Show the result in your module pdf.
-:::
+::: -->
 
 ## 0.5 Arrays and slicing
-Slicing can be applied to arrays in the same way that we used them earlier for lists with <em>one major difference</em>, as we'll point out.
+**Slicing can be applied to `arrays` in the same way that we used them earlier for `lists` with <em>one major difference</em>, as we'll point out.**
 
 For example:
 ```python
@@ -881,10 +1005,13 @@ print(A)                   # What does this print?
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.23
 
-Type up the above in `my_slicing_example.py` and report the results in your module pdf.
+**Type up the above in `my_slicing_example.py`.** 
+
+**Submit your program `my_slicing_example.py`.** 
+<!-- and report the results in your module pdf. -->
 :::
 
-Let's explain:
+**Let's explain the major difference in list-slicing and array-slicing:**
 
 - The slicing expression `1:3`in `A[1:3]` refers to all the elements from position 1 (inclusive) to just before position 3 (so, not including position 3).
 - With lists, a new list is created with these elements:
@@ -893,22 +1020,23 @@ Let's explain:
     A = [1, 4, 9, 16, 25, 36]
     B = A[1:3]
     ```
-- So, writing into the new list (B) does not affect the old list (A) from which the slice was taken.
-- But with arrays, a slice is only a <em>view</em> as if we were giving a name to a zoomed-in-part:
+- So, **writing into the new `list` (`B`) does not affect the old list (A) from which the slice was taken.**
+- But **with `arrays`, a slice is only a <em>view</em> as if we were giving a name to a zoomed-in-part:**
   
     ```python
     A = np.array( [1, 4, 9, 16, 25, 36] )
     B = A[1:3]
     ```
     Here, array B refers to the segment (that's still in A) from positions 1 to 2.
-- This is why, if you make a change to B, you are actually changing A.
-- Why did they do this?
+- **This is why in `arrays`, if you make a change to B, you are actually changing A.**
+- **Why did they do this?**
     - The reason is, many image processing applications require working on parts of images.
     - Then, with regular slicing, if we were to pull out parts and modify them, we'd have to write them back in.
     - Slicing makes it convenient to write directly into parts of images.
 
-Slicing is a big sub-topic so we'll just point out a few useful things to remember via an example:
+**Slicing is a big sub-topic so we'll just point out a few useful things to remember via an example:**
 ```python
+import numpy as np
 # Color image:
 A = np.array(
     [ [ [255,0,0], [200,0,0], [150,0,0], [50,0,0] ], 
@@ -938,11 +1066,11 @@ print(D)
 
     ```python
     D = A[:3, :2,:]    # The pixels in rows 0-2 and cols 0-1 <
-      ```
+    ```
     In the first (row) case, we're saying "all rows from the start up to row 2".
 :::
 
-Let's apply slicing to creating a cropped image:
+**Let's apply slicing to creating a cropped image:**
 ```python
 from drawtool import DrawTool
 import numpy as np
@@ -965,7 +1093,17 @@ dt.display()
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.24
 
-In `my_slicing_example2.py` change the cropping so that the Washington Monument shows up centered in your cropped image, with little else around it. Include your cropped image in your module pdf.
+- **Type up the above program in `my_slicing_example2.py`.** You already have <a href="../../../media/units/unit2/module2.0/washdc.jpg" download>**washdc.jpg**</a>
+
+- **Execute the program `my_slicing_example2.py`.**
+
+- **Submit your program `my_slicing_example2.py`.**
+    - We are only looking for a working program i.e., `my_slicing_example2.py`.
+
+**Answering the following part of the exercise is recommended but not required for submission:**
+
+- Try changing the cropping in the line `pixels2 = pixels[50:180, 50:200]` so that the Washington Monument shows up centered in your cropped image, with little else around it. 
+<!-- Include your cropped image in your module pdf. -->
 :::
 
 
