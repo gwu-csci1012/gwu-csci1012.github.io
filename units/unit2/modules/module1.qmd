@@ -20,32 +20,32 @@ format:
 
 
 ## Objectives
-Our goal in this almost-final module was to:
+**Our goal in this almost-final module was to:**
 
-- Introduce the all-important topic of <em>arrays</em>.
+- Introduce the all-important topics of <em>tuples</em>, <em>sets</em> and <em>dictionaries</em>.
 - Lightly sketch a few advanced topics to introduce ideas and show some examples, without expecting mastery of all the details.
 
 In the next module, we will dive into examples from across the disciplines. Some of these advanced topics will be useful
 
 So, one might ask: what's left in Python to learn?
 
-Quite a bit it turns out:
+**Quite a bit it turns out:**
 
 - Like many modern programming languages, Python is large enough that one needs a few courses to experience all of it.
 - Some concepts are advanced enough to need weeks to cover (example: <em>objects</em>).
 - Others need a background in <em>data structures</em> to understand <em>how</em> they work (example: dictionaries).
 - Yet others involve library functions and external packages.
 
-Do you need to learn more? Is what we've learned enough to achieve a good deal?
+**Do you need to learn more? Is what we've learned enough to achieve a good deal?**
 
-We'll have more to say about this in a later module.
+**We'll have more to say about this in a later module.**
 
 ## 1.0 Tuples
-In this section and the ones that follow, we'll touch lightly upon a few topics that are "not on the final exam" but will be useful in general.
+- In this section and the ones that follow, we'll touch lightly upon a few topics that are or were "not on the exam" but will be useful in general.
 
-Some of these concepts will be directly used in the next module.
+- Some of these concepts will be directly used in the next module.
 
-Suppose we want to write a function that computes both the square and cube of a number:
+- Suppose we want to write a function that computes both the square and cube of a number:
 
 - One option is to write two separate functions
  
@@ -71,18 +71,18 @@ Suppose we want to write a function that computes both the square and cube of a 
     (y, z) = do_both(x)
     print(x, y, z)
     ```
-- Notice that the return statement returns a <em>pair</em> of values:
+- **Notice that the `return` statement returns a <em>pair</em> of values:**
   
     ```python
     return (square, cube)
     ```
-    And that the pair is enclosed in parentheses.
-- And notice that, since two values are being returned, we need a pair to capture the return values:
+    **And that the pair is enclosed in parentheses.**
+- **And notice that, since two values are being returned, we need a pair to capture the return values:**
   
     ```python
     (y, z) = do_both(x)
     ```
-- We can go beyond a pair to any number of such "grouped" variables:
+- **We can go beyond a pair to any number of such "grouped" variables:**
   
     ```python
     def do_more(x):
@@ -96,9 +96,9 @@ Suppose we want to write a function that computes both the square and cube of a 
     (a, b, c, d) = do_more(x)
     print(x, a, b, c, d)
     ```
-- Such a grouping of variables is called a <em>tuple</em>.
+- **Such a grouping of variables is called a `tuple`.**
 
-Tuples are similar to lists in many ways, but different in one crucial aspect:
+**`Tuples` are similar to lists in many ways, but different in one crucial aspect:**
 
 - First, let's examine how to write the same `do_both()` function above but using lists:
   
@@ -113,7 +113,8 @@ Tuples are similar to lists in many ways, but different in one crucial aspect:
     print(x, y, z)
     ```
     This works just fine.
-- Another way in which a tuple is like a list is in using square-brackets and position indices to access individual elements, as in:
+
+- Another way in which a `tuple` is like a `list` is in using square-brackets and position indices to access individual elements, as in:
   
     ```python
     # List version:
@@ -124,7 +125,7 @@ Tuples are similar to lists in many ways, but different in one crucial aspect:
     t = do_both(x)
     print(t[0], t[1])      # t[0] has the square, t[1] has the cube
     ```
-- However, here's the difference:
+- **However, here's the difference:**
   
     ```python
     # List version:
@@ -135,7 +136,8 @@ Tuples are similar to lists in many ways, but different in one crucial aspect:
     t = do_both(x)
     t[0] = 0              # This is NOT allowed
     ```
-    Thus, you can replace a list element but you cannot replace a tuple element.
+    Thus, you can replace a `list` element but you cannot replace a `tuple` element.
+
 - This is in fact a bit subtle, as this example shows:
   
     ```python
@@ -146,8 +148,12 @@ Tuples are similar to lists in many ways, but different in one crucial aspect:
     x = 2
     print(t)     # (3, 4)
     ```
-    Once the tuple is <em>instantiated</em> (that's the technical term for "made") then the tuple's value cannot be changed.
-- You can of course assign a different tuple value to a tuple variable as in:
+:::{.callout-note}
+    - Once the tuple is <em>instantiated</em> (that's the technical term for "made") then the tuple's value cannot be changed.
+    - **`Tuples` are immutable.**
+:::
+
+- You can of course assign a different `tuple` value to a `tuple` variable as in:
   
     ```python
     t = (1, 2)
@@ -155,16 +161,22 @@ Tuples are similar to lists in many ways, but different in one crucial aspect:
     t = (3, 4)
     print(t)
     ```
-    Here, we're simply replacing one fixed-value tuple with another.
-- Tuples are therefore said to be an <em>immutable</em> type (along with strings).
-- Why use tuples at all? It's to allow programmers to signal clearly that their tuples shouldn't be changed.
-- This turns out to be convenient for <em>mathematical tuples</em> (like points on a graph), which are similar.
+    Here, we're simply replacing one fixed-value `tuple` with another.
 
-Groups of tuples can be combined into lists and other data structures.
+- `Tuples` are therefore said to be an <em>immutable</em> type.  
+- Similarly, `strings` are also an <em>immutable</em> object-type.
 
-It's very useful in working with points (the mathematical point you draw with coordinates) and other mathematical structures that need more than one number to describe.
+:::{.callout-note}
+- **Why use tuples at all?** 
+    - It's to allow programmers to signal clearly that their `tuples` shouldn't be changed.
+    - This turns out to be convenient for <em>mathematical tuples</em> (like points on a graph), which are similar.
+:::
 
-For example, here's a program that, given a list of points, finds the leftmost point (the one with the least x value).
+**Groups of tuples can be combined into lists and other data structures.**
+
+- It's very useful in working with points (the mathematical point you draw with coordinates) and other mathematical structures that need more than one number to describe.
+
+- For example, here's a program that, given a list of points, finds the leftmost point (the one with the least x value).
 ```python
 def leftmost(L):
     leftmost_guess = L[0]
@@ -182,13 +194,18 @@ print('leftmost:', (x,y) )
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.1
 
-Type up the above in `my_tuple_example.py`. Then trace through the iteration in your module pdf.
+**Type up the above in `my_tuple_example.py`.**
+
+**Submit your program `my_tuple_example.py`.** 
+
+**Answering the following part of the exercise is recommended but not required for submission:**
+- Trace through the iterations and record them in a separate document or spreadsheet.
 :::
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.2
 
-Consider the following:
+**Consider the following:**
 ```python
 import math
 
@@ -201,28 +218,35 @@ def find_closest_point(p, L):
 
 list_of_points = [(3,4), (1,2), (3,2), (4,3), (5,6)]
 query_point = (5,4)
+
 (c, d) = find_closest_point(query_point, list_of_points)
 print('closest:',c,' at distance', d)
 # Should print: 
 # closest: (4, 3)  at distance 1.4142135623730951
 ```
-In `my_tuple_example2.py`, fill in the missing code to find the closest point in a list of points to a given query point. Return both the closest point and the distance to the query point as a tuple.
+
+- **In `my_tuple_example2.py`,** 
+    - Fill in the missing code to find the closest point in a list of points to a given query point and 
+    - Return both the closest point and the distance to the query point as a `tuple`.
+
+- **Submit your program `my_tuple_example2.py`.**     
 :::
 
 ## 1.1 Sets
-The general mathematical term <em>set</em> means a "collection of like things but without duplicates".
 
-Python has special syntax and operations to support this mathematical notion:
+**The general mathematical term `set` means a "collection of like things but without duplicates".**
 
-- Here are two sets being defined:
+**Python has special syntax and operations to support this mathematical notion:**
+
+- **Here are two `sets` being defined:**
  
     ```python
     A = {2, 4, 5, 6, 8}       # Curly brackets
     B = {'hello', 'hi', 'hey', 'howdy'}
     ```
-- The first set contains five numbers, whereas the second contains four strings.
+- **The first set contains five numbers, whereas the second contains four strings.**
 
-Consider this variation
+**Consider this variation**
 ```python
 A = {2, 4, 5, 6, 8}
 B = {'hello', 'hi', 'hey', 'howdy'}
@@ -240,17 +264,21 @@ Given what we've said about sets, what will be printed?
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.3
 
-Type up the above in `my_set_example.py` to find out.
+- **Type up the above in `my_set_example.py` to find out.**
+
+- **Submit your program `my_set_example.py`.**
+
 :::
 
 :::{.callout-note}
-- Even though a set may not have duplicates, we are actually allowed to <em>try</em> to create duplicates:
+- **Even though a set may not have duplicates, we are actually allowed to <em>try</em> to create duplicates:**
   
     ```python
     C = {8, 5, 4, 6, 2, 4, 5, 5}
     ```
     Python simply removes the duplicates.
-- Python also organizes sets so that sets can be compared for equality: 
+
+- **Python also organizes sets so that sets can be compared for equality:** 
     Thus, printing the set
   
     ```python
@@ -263,9 +291,9 @@ Type up the above in `my_set_example.py` to find out.
     ```
 :::
 
-What can we do with sets?
+**What can we do with sets?**
 
-- The most common operation is to see whether some value is in some set we've defined using the keyword in:
+- The most common operation is to see whether some value is in some set we've defined using the keyword `in`:
   
     ```python
     def check_vowel(x):
@@ -287,13 +315,14 @@ What can we do with sets?
     D = A | B    # union
     print(D)
     ```
-    Here, D contains every element across both sets.
+    Here, `D` contains every element across both sets.
+
 - Other such operators include: 
     - intersection (elements that are in both sets)
     - difference (elements in one set that are not in the other)
 - Since our goal is merely to give you a taste of these advanced topics, we won't say much more about these operations.
 
-Instead, let's look at an application:
+**Let's look at an application:**
 
 - In <em>text processing</em>, the term <em>stopword</em> is often used to describe commonly used words that serve little or no purpose in text analysis:
     - When you analyze digitized texts for meaning, topic and dialogue (for example), words like "the", "of", "and" get in the way of analysis.
@@ -303,7 +332,7 @@ Instead, let's look at an application:
 - To answer the question, we'll scan text word-by-word and see if each word is in the <em>set</em> of stopwords.
 - Although there are hundreds of stopwords, we'll keep things simple by targeting a few.
 
-Let's write this up:
+**Let's write this up:**
 ```python
 import wordtool as wt 
 
@@ -325,21 +354,29 @@ while s != None:
     s = wt.next_word()
 
 percent_stopwords = 100 * (num_stopwords/total_words)
-# Compare this:
+# print the following:
 string_to_print = '% of stopwords:{0:.2f}'.format(percent_stopwords)
 print(string_to_print)
-# to this:
+# and print the following:
 # print(percent_stopwords)
 ```
 
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.4
+- **Download the text** <a href="../../../media/units/unit2/module2.1/alice.txt">**Alice in Wonderland**</a> **and save it in the same folder as your code**
+- **Type up the above program in `my_stopwords.py`.** 
+- **Submit your program `my_stopwords.py`.** 
 
-Type up the above in `my_stopwords.py`. Then, compare the percentage of stopwords in these two famous texts: <a href="../../../media/units/unit2/module2.1/alice.txt">**Alice in Wonderland**</a> and Darwin's <a href="../../../media/units/unit2/module2.1/darwin.txt">**The Origin of the Species**</a>. Try two other texts from Project Gutenberg, and report the results in your module pdf.
+**Answering the following part of the exercise is recommended but not required for submission:**
+
+- Compare the percentage of stopwords in these two famous texts: <a href="../../../media/units/unit2/module2.1/alice.txt">**Alice in Wonderland**</a> and Darwin's <a href="../../../media/units/unit2/module2.1/darwin.txt">**The Origin of the Species**</a>. 
+
+<!-- Try two other texts from Project Gutenberg, and understand the differences in the results. -->
 :::
 
-As an aside, we'll point out something about <em>string formatting</em>, which is also an advanced topic:
+:::{.callout-note}
+**As an aside, we'll point out something about <em>string formatting</em>, which is also an advanced topic:**
 
 - It's plain ugly (and often useless) to print out all the digits in a floating number like:
   
@@ -381,11 +418,12 @@ As an aside, we'll point out something about <em>string formatting</em>, which i
         string_to_print = '% of stopwords: {0:.2f}'.format(percent_stopwords)
         ```
 - Yes, a bit cryptic and difficult to understand. But eventually, when you get used to it, it's powerful when you are doing a lot of text output.
+:::
 
 ## 1.2 Dictionaries
-Consider this problem:
+**Consider this problem:**
 
-- We have a data file that looks like this:
+- **We have a data file that looks like this:**
     
     ```
     apple
@@ -403,8 +441,9 @@ Consider this problem:
     orange
     ```
 This might represent, for example, a record of sales at a fruit stand.
-- We'd like to count how many of each fruit.
-- One way would be to define a counter for each kind:
+
+- **We'd like to count how many of each fruit.**
+- **One way would be to define a counter for each kind:**
     
     ```python
     num_apples = 0
@@ -440,16 +479,23 @@ This might represent, for example, a record of sales at a fruit stand.
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.5
 
-Type up the above in `my_fruits.py` and use the data file <a href="../../../media/units/unit2/module2.1/fruits.txt" download>**fruits.txt**</a> to confirm. Next, in `my_fruits2.py`, change the program to accommodate the additional fruits in  <a href="../../../media/units/unit2/module2.1/fruits2.txt" download>**fruits2.txt**</a>.
+- Type up the above in `my_fruits.py` and use the data file <a href="../../../media/units/unit2/module2.1/fruits.txt" download>**fruits.txt**</a> to confirm. 
+
+- Next, in `my_fruits2.py`, change the program to accommodate the additional fruits in  <a href="../../../media/units/unit2/module2.1/fruits2.txt" download>**fruits2.txt**</a>.
+
+**Submit the following two programs:**
+
+1. `my_fruits.py`
+2. `my_fruits2.py`
 :::
 
-Aside from being tedious, this approach has other issues:
+**Aside from being tedious, this approach has other issues:**
 
 - One would like to be able to write a general program that does not need to know which fruits are in a file.
 - What if there were a thousand different kinds of items (not fruits, say, but department-store items)?
 - A single mistake in a variable can cause the counts to be wrong.
 
-Fortunately, the use of <em>dictionaries</em> will make it easy:
+**Fortunately, the use of <em>dictionaries</em> will make it easy:**
 ```python
 # Make an empty dictionary
 counters = dict()
@@ -472,30 +518,40 @@ print(counters)
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.6
 
-Type up the above in `my_fruits3.py` and first apply it to  <a href="../../../media/units/unit2/module2.1/fruits.txt" download>**fruits.txt**</a> and then to <a href="../../../media/units/unit2/module2.1/fruits2.txt" download>**fruits2.txt**</a>. (Submit your program with the latter file as the input file.) In your module pdf, describe what you had to change in the code to make it work for the second file.
+- Type up the above in `my_fruits3.py` and first apply it to  <a href="../../../media/units/unit2/module2.1/fruits.txt" download>**fruits.txt**</a>.
+
+- Then to <a href="../../../media/units/unit2/module2.1/fruits2.txt" download>**fruits2.txt**</a>. 
+
+- **Submit `my_fruits3.py` with `fruits2.txt` as the input to your program.** 
+
+**Answering the following part of the exercise is recommended but not required for submission:**
+
+- Explain to yourself what you had to change in the code to make it work for the second file.
 :::
 
-Now let's explain:
+**Now let's explain:**
 
-- A <em>dictionary</em> is a technical term that is only somewhat related to an actual English dictionary.
+- A `dictionary` is a technical term that is only somewhat related to an actual English dictionary.
 - Think of an English dictionary as something where you <em>look up</em> a word and <em>receive</em> its meaning.
 - They operations here are <em>look up</em> and <em>receive</em> an associated <em>value</em> (the word's meaning, in this case).
 - In Python, a dictionary is a structure that lets you associate one kind of data with another.
-- The technical equivalent of a word is called a <em>key</em> and the equivalent of the meaning is called the <em>value</em>.
-- So, a dictionary is a collection of key-value pairs.
-- Here's an example:
+- The technical equivalent of a word is called a `key` and the equivalent of the meaning is called the `value`.
+- So, a dictionary is a collection of `key-value` pairs.
+
+- **Here's an example:**
   
     ```python
     d = {'apple': 3, 'banana': 3, 'pear': 1, 'kiwi': 2, 'orange': 4}
     ```
-    In this case, we're associating
+    **In this case, we're associating**
 
     - The value 3 with the key 'apple'
     - The value 3 with the key 'banana'
     - The value 1 with the key 'pear'
     - The value 2 with the key 'kiwi'
     - The value 4 with the key 'orange'
-- Conveniently, Python allows array indexing using the key:
+
+- **Conveniently, Python allows array indexing using the key:**
  
     ```python
     d = {'apple': 3, 'banana': 3, 'pear': 1, 'kiwi': 2, 'orange': 4}
@@ -505,16 +561,18 @@ Now let's explain:
     d['banana'] = 0    
     # Which changes the value associated with 'banana' to 3
     ```
-- The above is an example of a dictionary that's already built (after we've processed the data).
-- To process data on-the-fly, we need an additional operation that an English dictionary does not really have: we need to be able to <em>add</em> something that's not already there.
-- To add a new key, we simply use it as an index:
+- **The above is an example of a dictionary that's already built (after we've processed the data).**
+
+- **To process data on-the-fly, we need an additional operation that an English dictionary does not really have:** 
+    - We need to be able to <em>add</em> something that's not already there.
+    - To add a new `key`, we simply use it as an index:
   
     ```python
     d = {'apple': 3, 'banana': 3, 'pear': 1, 'kiwi': 2, 'orange': 4}
 
     d['plum'] = 0
     ```
-With this understanding we can now revisit the code in the fruit example:
+**With this understanding we can now revisit the code in the fruit example:**
 
 - We've seen how to read a file line-by-line before
  
@@ -548,19 +606,49 @@ With this understanding we can now revisit the code in the fruit example:
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.7
+**Use the knowledge gained from the above example to work on this exercise.**
 
-In  `my_stopwords2.py`, write code that uses a dictionary to compare the relative occurrence of stopwords in `alice.txt` and `darwin.txt`. In particular, we'd like to know: what percentage of the stopword occurence can be attributed to 'the', what percentage to 'and', and so on. For `alice.txt` the output should look  <a href="../../../media/units/unit2/module2.1/alice_output.txt" download>**like this**</a> (not necessarily in the same order) using the string formatting from the previous section. In your module pdf, compare the outputs for the two texts: do the stopwords occur with similar relative frequencies across the two texts?
+- You should have downloaded the text<a href="../../../media/units/unit2/module2.1/alice.txt">**Alice in Wonderland**</a> and saved it in the same folder as your code.
+
+- In  `my_stopwords2.py`, write code that uses a dictionary to compute the relative occurrence of stopwords in `alice.txt`.
+
+- For `alice.txt` the output should look  <a href="../../../media/units/unit2/module2.1/alice_output.txt" download>**like this**</a> (not necessarily in the same order) using the string formatting from the previous section.
+
+- **Submit your program `my_stopwords2.py`**
+
+<!--  - Compare the percentage of stopwords in these two famous texts: <a href="../../../media/units/unit2/module2.1/alice.txt">**Alice in Wonderland**</a> and Darwin's <a href="../../../media/units/unit2/module2.1/darwin.txt">**The Origin of the Species**</a>. 
+ 
+ and `darwin.txt`. In particular, we'd like to know: what percentage of the stopword occurence can be attributed to 'the', what percentage to 'and', and so on.  In your module pdf, compare the outputs for the two texts: do the stopwords occur with similar relative frequencies across the two texts? -->
+
+<!-- - In  `my_stopwords2.py`, write code that uses a dictionary to compare the relative occurrence of stopwords in `alice.txt` and `darwin.txt`. In particular, we'd like to know: what percentage of the stopword occurence can be attributed to 'the', what percentage to 'and', and so on. For `alice.txt` the output should look  <a href="../../../media/units/unit2/module2.1/alice_output.txt" download>**like this**</a> (not necessarily in the same order) using the string formatting from the previous section. In your module pdf, compare the outputs for the two texts: do the stopwords occur with similar relative frequencies across the two texts? -->
 :::
 
 ## 1.3 Advanced topic: global variables 
 Suppose we have the following application:
 
 - We prompt the user to enter the parameters (the coordinates of the center, and radius) of circle that needs to be drawn.
-- We do this repeatedly until the user is done (empty input) and then draw all the circles.
+    - For example, we do it in the following manner: 
+    ```python 
+    Enter circle parameters: 4 5 6
+    ```
+- We do this repeatedly until the user is done (i.e., provide an empty input and hit `Enter` or `return` on your kepyboard) and then draw all the circles.
+    -  For example, see that inputs below:
+    ```python 
+    Enter circle parameters: 4 5 6
+    Enter circle parameters: 7 8 9 
+    Enter circle parameters: 1 1 4
+    Enter circle parameters: 
+    ```
 - This is the kind of code we'd like to write:
   
     ```python
-    # ... For brevity, we're not showing the import, setting up drawtool etc ...
+    from drawtool import DrawTool
+
+    dt = DrawTool()
+    # Notice: x ranges between -10 and +10, y ranges between -10 and +10.
+    # These values may have to be changed according to the inputs parameters for the circles.
+    dt.set_XY_range(-10, 10, -10,10)
+    dt.set_aspect('equal')
 
     # Read circle data from the user:
     line = input('Enter circle parameters: ')
@@ -576,6 +664,14 @@ Suppose we have the following application:
 - What we'll do is have a <em>list</em> of circles:
   
     ```python
+    from drawtool import DrawTool
+
+    dt = DrawTool()
+    # Notice: x ranges between -10 and +10, y ranges between -10 and +10.
+    # These values may have to be changed according to the inputs parameters for the circles.
+    dt.set_XY_range(-10, 10, -10,10)
+    dt.set_aspect('equal')
+
     # The list of circles
     circles = []
 
@@ -600,6 +696,14 @@ Suppose we have the following application:
 - Let's fill out the code and see:
   
     ```python
+    from drawtool import DrawTool
+
+    dt = DrawTool()
+    # Notice: x ranges between -10 and +10, y ranges between -10 and +10.
+    # These values may have to be changed according to the inputs parameters for the circles.
+    dt.set_XY_range(-10, 10, -10,10)
+    dt.set_aspect('equal')
+        
     circles = []                      # The global variable
 
     def process_line(line):
@@ -625,9 +729,9 @@ Suppose we have the following application:
     dt.display()
     ```
 
-Let's create a simpler example to illustrate:
+**Let's create a simpler example to illustrate:**
 
-- Consider this:
+- **Consider the example below:**
  
     ```python
     x = 5
@@ -644,15 +748,19 @@ Let's create a simpler example to illustrate:
     some_func()          # Prints 6
     some_other_func()    # Prints 7
     ```
-- Let's point out:
+
+   
+- **Let's point out:**
 ![](../../../media/units/unit2/module2.1/globals-code.png)
-- Thus: to share variables across functions, define the variables <em>outside</em> the functions.
-- In which case they become global variables.
 
-That would be the end of it, but there's one more complication:
+:::{.callout-note} 
+- **Thus: to share variables across functions, define the variables <em>outside</em> the functions.**
+    - In which case they become **global variables**.
+- **That would be the end of it, but there's one more complication:**
+    - You cannot <em>modify</em> a global variable inside a function without explicitly stating an intention to do so.
+:::
 
-- You cannot <em>modify</em> a global variable inside a function without explicitly stating an intention to do so.
-- So, suppose we wanted to modify x in the example:
+- **Suppose we wanted to modify `x` in the example:**
 
     ```python
     x = 5
@@ -671,16 +779,20 @@ That would be the end of it, but there's one more complication:
     some_other_func()   # Prints 8
     ```
 
-Now let's go back to the circle-drawing example to see an instance where modifying a global is useful:
+**Now let's go back to the circle-drawing example to see an instance where modifying a global is useful:**
 
 - Suppose we want to track the smallest circle (smallest radius) and draw that circle in red.
 - Thus, as we get user input line-by-line, we'll need to update the smallest.
 - Here's part of the code:
   
     ```python
-    # For brevity, we're not showing the import, setting up drawtool etc
+    from drawtool import DrawTool
 
-    # ... (stuff left out) ... 
+    dt = DrawTool()
+    # Notice: x ranges between -10 and +10, y ranges between -10 and +10.
+    # These values may have to be changed according to the inputs parameters for the circles.
+    dt.set_XY_range(-10, 10, -10,10)
+    dt.set_aspect('equal')
 
     # Global variable circles (a list) available to all functions
     circles = []
@@ -709,7 +821,7 @@ Now let's go back to the circle-drawing example to see an instance where modifyi
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.8
 
-In `my_circles.py`, copy over the above and from the earlier example, and then fill in code in the `draw_circles()` function to complete the program. When the user types, for example,
+- In `my_circles.py`, copy the code above and from the earlier example, and then fill in code in the `draw_circles()` function to complete the program. When the user types, for example,
 ```python
 Enter circle parameters: 3 4 3
 Enter circle parameters: 4 3 1
@@ -718,6 +830,9 @@ Enter circle parameters:
 ```
 the output should be:
 ![](../../../media/units/unit2/module2.1/draw-circles.png)
+
+- **Submit your program `my_circles.py`.**
+    - We are only looking for a working program i.e., `my_circles.py`.
 :::
 
 ## 1.4 Multiple files
@@ -727,16 +842,18 @@ Most such applications actually consist of hundreds of Python programs bundled t
 
 We've already seen examples with the use of drawtool and wordtool.
 
-Why are applications broken into multiple files?
+:::{.callout-note} 
+**Why are applications broken into multiple files?**
 
 - One large file is unwieldy to understand and work with in an editor (imagine the scrolling difficult with a thousand lines).
 - It's much easier to separate out functionality and test each piece. Robustly tested programs can be left alone while refining those that need work.
 - Separated functionality is useful in other projects.
 - If one piece needs upgrading, you can upgrade just that part if it's in a separate file.
+:::
 
-Let's build a simple example:
+**Let's build a simple example that we will be using toward submitting the Exercise 1.9:**
 
-- Suppose we put together a file called `my_math_functions.py` which has
+- **Suppose we put together a file called `my_math_functions.py` which has the following code:**
   
     ```python
     import math
@@ -752,7 +869,7 @@ Let's build a simple example:
     def distance(x1, y1, x2, y2):
         # Write your code here
     ```
-- Then in an another file called `my_math_application.py` you could write:
+- **Then in an another file called `my_math_application.py` you could write the following code:**
   
     ```python
     import my_math_functions as m
@@ -768,23 +885,14 @@ Let's build a simple example:
     d = m.distance(x,y, x2, y2)
     print(d)
     ```
-- Notice the `import` statement at the top of the file:
+- **Notice the `import` statement at the top of the file as shown below:**
   
     ```python
     import my_math_functions as m
     ```
-    This has the `import` keyword, the name of the other file, and a shortcut.
-- If we did not have the shortcut, we'd have to write code like:
-  
-    ```python
-    import my_math_functions 
+    **This has the `import` keyword, the name of the other file, and a shortcut.**
 
-    x = 2
-    y = my_math_functions.square(5)
-    print(y)
-    ```
-    Which is perfectly legit but a bit tedious.
-- To access something from another file, we use the dot (period):
+- **To access something from another file, we use the dot (period):**
   
     ```python
     y = m.square(5)
@@ -793,21 +901,39 @@ Let's build a simple example:
 
     ```python
     print(m.pi)
-      ```
+    ```
+
+:::{.callout-note} 
+- **If we did not have the shortcut, we'd have to write code like the one shown below:**
+  
+    ```python
+    import my_math_functions 
+
+    x = 2
+    y = my_math_functions.square(5)
+    print(y)
+    ```
+**The above code is perfectly legit but a bit tedious.**
+:::
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.9
 
-Complete the code for the `distance()` function and write the above two programs (using the file names as above) so that the output is:
+- **Complete the code for the function `distance()` and write the above two programs (viz., `my_math_functions.py`and `my_math_application.py`. These program were discussed earlier in this section. The output of the program `my_math_application.py` that imports `my_math_functions.py`  should look like the following:**
 ```python
 25
 27
 2.23606797749979
 ```
+
+- **Submit the following programs to complete this exercise:**
+1. `my_math_functions.py`
+2. `my_math_application.py`
+
 :::
 
 ## 1.5 String formatting and numbers
-Consider this program:
+**Consider this program:**
 ```python
 x = 0
 for i in range(5):
@@ -818,10 +944,11 @@ for i in range(5):
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.10
 
-Type up and run in `my_format.py`.
+- **Type up the above program in `my_format.py`.**
+- **Submit your program`my_format.py`.**
 :::
 
-You observed output like:
+**You observed output that looks like what is shown below:**
 ```python
 i= 0 x= 0
 i= 1 x= 0.1
@@ -829,34 +956,35 @@ i= 2 x= 0.2
 i= 3 x= 0.30000000000000004
 i= 4 x= 0.4
 ```
-
-Why the ugly output?
+:::{.callout-note}
+**Why the ugly output?**
 
 - There are really three questions here, the second of which is a bit subtle.
 - The first one is: why doesn't Python see that most of the other values are bring printed nice, so why not print `0.3` instead of `0.30000000000000004`?
 - The second, more sutble one, is: our for-loop clearly wants to increment by 0.1, which means x should be 0.3 and not 0.30000000000000004.
 - The third implied question is: how do we actually limit the number of digits printed after the decimal?
+:::
 
-Let's answer these questions:
+**Let's answer these questions:**
 
-1. <em>Why doesn't Python recognize unnecessary digits?</em>
+1. **Why doesn't Python recognize unnecessary digits?**
 
     - This is because Python does not want to second guess the programmer's intent.
     - Maybe you do want the digits.
 
-2. <em>How did 0.3 become 0.30000000000000004?</em>
+2. **How did 0.3 become 0.30000000000000004?**
 
     - A computer's memory has two kinds of limitations, and one "feature".
-    - One: it cannot store beyond a certain accuracy (and computers differ based on their hardware).
-    - Two: when calculations are performed, this storage limitation forces some arithmetic to be slightly wrong (many digits after the decimal point).
+        1. It cannot store beyond a certain accuracy (and computers differ based on their hardware).
+        2. When calculations are performed, this storage limitation forces some arithmetic to be slightly wrong (many digits after the decimal point).
     - The "feature" is that computers store binary numbers, not our kind of decimal numbers. This means a decimal version of a binary number might have to be an approximation.
 
-3. OK, how do we actually print nicely?
+3. **OK, how do we actually print nicely?**
   
     - This is a bit of an advanced topic, so we'll only provide a simple example.
     - The solution is to use a special set of <em>formatting</em> commands, like the ones you saw a long time ago (remember \n?)
 
-Here's how it works for the above program:
+**Here's how it works for the above program:**
 ```python
 x = 0
 for i in range(5):
@@ -866,50 +994,53 @@ for i in range(5):
     x += 0.1
 ```
 
-Let's explain:
+**Let's explain:**
 
-- A format string is the eventual desired string that needs to be printed but with some placeholders:
+- **A format string is the eventual desired string that needs to be printed but with some placeholders:**
   
     ```python
     format_string = 'i = {0:2d}  x = {1:.2f}'
     ```
-- In this case, there are two placeholders:
+- **In this case, there are two placeholders:**
   
     ```python
     format_string = 'i = {0:2d}  x = {1:.2f}'
     ```
-    Placeholders are enclosed in curly brackets.
-- Each placeholder begins with a number that will eventually determine which variable gets its value into the placeholder.
-- So, here we have variables 0 and 1:
+    **Placeholders are enclosed in curly brackets.**
+
+- **Each placeholder begins with a number that will eventually determine which variable gets its value into the placeholder.**
+- **So, here we have variables 0 and 1:**
   
     ```python
     format_string = 'i = {0:2d}  x = {1:.2f}'
     ```
-- We feed the <em>values</em> via the `format()` function:
+- **We feed the <em>values</em> via the `format()` function:**
   
     ```python
     format_string = 'i = {0:2d}  x = {1:.2f}'
     string_to_print = format_string.format(i, x)
     ```
-    This is what lets `format()` put the value of i in place of the "0" and the value of x in place of the "1".
-- All that's left to explain are the cryptic commands that follow the "0" and "1" respectively:
+    **This is what lets `format()` put the value of i in place of the "0" and the value of x in place of the "1".**
+
+- **All that's left to explain are the cryptic commands that follow the "0" and "1" respectively:**
   
     ```python
     format_string = 'i = {0:2d}  x = {1:.2f}'
     ```
-    The first one says, in effect, "use a minimum of 2 spaces and expect an integer". The second says "expect a float and restrict the number of post-decimal digits to 2".
+    - **The first one says, in effect, "use a minimum of 2 spaces and expect an integer".**
+    - **The second says "expect a float and restrict the number of post-decimal digits to 2".**
 
-String formatting has more to it, but that's all we'll say about it here.
+**String formatting has more to it, but that's all we'll say about it here.**
 
 ## 1.6 Randomness
-As we've seen throughout the course, it is useful to be able to have Python generate random numbers:
+**As we've seen throughout the course, it is useful to be able to have Python generate random numbers:**
 
 - We use random numbers to answer statistical questions.
 - Random numbers were also useful in creating patterns, as in art.
 
-However, there's an important thing to know about random generation.
+**However, there's an important thing to know about random generation.**
 
-Consider this program:
+**Consider this program:**
 ```python
 import random
 
@@ -923,14 +1054,18 @@ for i in range(5):
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 1.11
 
-Type up the above `my_random_example.py`. Run it multiple times and observe the output. Next, un-comment the line 
+- **Type up the above `my_random_example.py`.**
+- **Run it multiple times and observe the output.** 
+- **Next, un-comment the following line and run it again multiple times:** 
 ```python
 #random.seed(123)
 ```
-and run it again multiple times. Then, change the number 123 in the seed to any number between 1 and 1000, and once more run the program many times.
+- **Then, change the number `123` in the seed to any number between 1 and 1000, and once more run the program many times.**
+- **Submit your program `my_random_example.py` by including `random.seed(123)` to complete this assignment.**
 :::
 
-How random generation works:
+:::{.callout-note}
+**How random generation works**
 
 - Python uses a mathematical function with a so-called "seed" to produce random numbers.
 - The numbers aren't really random, because a particular seed will produce the same numbers, which is why they're called pseudorandom numbers.
@@ -941,6 +1076,7 @@ How random generation works:
     - So, typically, one uses a seed when getting your program to work.
     - After it's working, you can comment out the seed.
 - If a seed is not provided, Python uses the local time or something like that as the seed, so that repeated runs produce different results.
+:::
 
 </body>
 </html>
