@@ -51,19 +51,25 @@ evens.append(12)
 # Write code here to increment each element by 2
 
 print(evens)
-# Should print: [12, 4, 6, 8, 10, 12]
 ```
 
 :::{.callout-caution appearance="simple" icon=false}
 ### Exercise 0.1
 
-- First, in `my_list_example.py`, type up the above to see what it prints (without including the missing code). 
-- Then, in `my_list_example2.py`, add the missing code to increment each list element by 2.
+- First, in `my_list_example.py`, type up the above to see what it prints (without including the missing code).
+- Then, in `my_list_example2.py`, add the missing code to increment each list element by 2, giving you the output as:
+
+    ```python
+    12
+    length: 5 contents: [12, 4, 6, 8, 10]
+    missing hey
+    [14, 6, 8, 10, 12, 14]
+    ```
 
 **Submit the following two programs:**
 
 1. `my_list_example.py`
-2. `my_list_example.py`
+2. `my_list_example2.py`
 :::
 
 Let's recall a few things we learned about lists via this example:
