@@ -1,0 +1,374 @@
+---
+title: "**Assignment 4:** Problem Solving Example"
+format:
+  html:
+    code-copy: false
+---
+
+<html>
+<head>
+    <style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
+</head>
+<body>
+
+::: {.callout-important}
+- You are here to solve the demo problem only. 
+- Once you are done with this demo problem you need to go back tothe remaining problems in `assignment4`, found [**here**](./assignment4.qmd) and complete them.
+:::
+
+**As always let's start with some basics and recap what we learned about `numpy` arrays:**
+
+- The `numpy` library works with an data-type called `arrays`. The `array` is a collection of numbers. 
+- We can establish `numpy` arrays in a lot of ways, but in order to do so, we need to have the library imported. 
+- We can also do math with two arrays of the same size!
+- Let's do some `numpy` arrays-related programs to get warmed up.
+
+- **Consider the following code:**
+
+    ```python 
+    import numpy as np
+
+    #Two Array Math
+    array1 = np.array([8, -7, 6, -5, 4, -3])
+    array2 = np.array([1, 2, 3, 4, 5, 6])
+
+    #we can do element-wise math on both arrays
+    sum_array = array1 + array2
+    print(sum_array)
+    print()
+
+    difference_array = array1 - array2
+    print(difference_array)
+    print()
+
+    product_array = array1 * array2
+    print(product_array)
+    print()
+
+    quotient_array = array1 / array2
+    print(quotient_array)
+    ```
+
+:::{.callout-caution appearance="simple" icon="false"}
+###### <span style="color:#8B4513;">**A1.1 Exercise:** </span>
+**Type up the above in `my_demo_problem1.py`.**
+
+**Submit your program `my_demo_problem1.py`.**
+:::
+
+
+<!-- **What if we collect data a little at a time?**
+
+First we establish something called a `null array`. This is a blank canvas for us to put data into later. 
+Then we append the data in one element at a time until we are done. Think loops!
+Then we can do our math to this data!
+
+```python
+import numpy as np
+
+#here we create the null array d
+d = np.array([])
+print(d)
+
+print()
+
+#here we append to d the values from 0-9 (inclusive)
+for i in range(10):
+    d = np.append(d, i)
+    #uncomment below for intermediate steps!
+    #print(d)
+    #print() 
+
+print(d)
+```
+
+:::{.callout-caution appearance="simple" icon="false"}
+###### <span style="color:#8B4513;">**A1.2 Exercise:** </span>
+**Type up the above in `my_demo_problem2.py`.**
+
+**Submit your program `my_demo_problem2.py`.**
+::: -->
+
+**We often want to plot our data. We will certainly go more in depth later, but for now, lets use `numpy` and `matplotlib` libraries to get a line plot created.**
+
+- We can achieve that by importing the `matplotlib` library and it's sub-library called `pyplot`!
+
+    ```python 
+    import numpy as np
+    from matplotlib import pyplot as plt
+
+    array1 = np.array([1, 2, 3, 4, 5])
+    print(array1)
+
+    array2 = array1 * 7 + 16
+    print(array2)
+
+    array3 = array1**3 + array1 + 8
+    print(array3)
+
+    #for the most basic plots we can use plt.plot(x, y)
+    plt.plot(array1, array2);
+    plt.plot(array1, array3);
+    plt.show()
+    #I added a semi-colon at the end to clean up an unwanted message (not necessary)
+    ```
+
+:::{.callout-caution appearance="simple" icon="false"}
+###### <span style="color:#8B4513;">**A1.2 Exercise:** </span>
+**Type up the above in `my_demo_problem2.py`.**
+
+- You should see plot that resembles the one shown below.
+![](../../../media/units/unit2/assignment4/A4_demo3.png)
+
+**Submit your program `my_demo_problem2.py`.**
+
+- We are not looking for the figure in this exercise, just the working code.
+:::
+
+**What if we want to plot data given to us in a CSV-formatted file?**
+
+- Several times the data we may want to plot comes to us in a file that we need to import into our program and then make sense out of it! 
+
+- The library `pandas` helps us do this and in this exercise we are going to use `pandas` to gather data from a file that is in CSV-format (i.e., comma separated variable format). 
+    - Essentially, a CSV-file can be opened using Excel or other spreadsheet-software. Using `pandas` we import data from the file and store them in what is called a "DataFrame".
+
+**Follow the steps below:**
+
+- **Step-1: Make sure you downloaded the CSV-formatted file <a href="../../../media/units/unit2/assignment4/TutorialFile.csv" download>TutorialFile</a> and save it in the same folder as your programs in this assignment** 
+    - You may use either Excel or other spreadsheet software to view the content of the file.
+
+- **Step-2: Import the libraries we need to accomplish objective of the problem.** 
+    - We will bulid on the knowledge gained from using the libraries `numpy` and `matplotlib`.
+        
+        ```python 
+        import numpy as np
+        from matplotlib import pyplot as plt
+        
+        ```
+- **Step-3: Import the library `pandas` store our data in a `DataFrame.`**
+    - We will use the `pd.read_csv(filename)` functionality for this exercise to create a `DataFrame` assign the variable `df` to it.
+
+        ```python 
+        import numpy as np
+        from matplotlib import pyplot as plt
+        import pandas as pd
+
+        df = pd.read_csv('./TutorialFile.csv')
+        print(df)
+        ```
+    - You should see the following output and understand what the `DataFrame` looks like when printed:
+        
+        ```python
+        Time  Voltage
+        0     0     10.0
+        1     1      9.7
+        2     2      4.5
+        3     3      8.7
+        4     4      8.6
+        5     5      2.3
+        6     6     15.0
+        7     7     -9.0
+        ```
+
+:::{.callout-note} 
+In the above output of the `DataFrame` `df`,
+
+- The first column of data are the row-numbers,
+- The second column of data is `Time` and
+- The third colum of data is `Voltage` values at tho corresponding instances of `Time`.
+:::
+
+- **Step-4: Now let's try to read the data into variables.**
+
+    - As you will see these data need to assigned variable that can be used by `matplotlib` library to plot them.
+    - We will use the `df.loc[]` functionality to accomplish the task of gathering the column-wise data and assign them appropriate variables
+
+        ```python
+        import numpy as np
+        from matplotlib import pyplot as plt
+        import pandas as pd
+
+        df = pd.read_csv('./TutorialFile.csv')
+        print(df, '\n')
+
+        t = df.loc[:, 'Time'].values
+        print('Time:', t)
+
+        v = df.loc[:,'Voltage'].values
+        print('Voltage:', v)
+        ```
+
+:::{.callout-note} 
+In the above code where we used `df.loc[:, `Time`]`,
+
+- `:` represents all rows of data
+- `Time` is exactly the same name as it is assigned in the `DataFrame`.
+- The variable `t` is assigned to the data in the `Time`-column.
+
+We can extend that understand to `df.loc[:, `Voltage`]` as well.
+- The variable `v` is assigned to the data in the `Voltage`-column.
+:::
+
+- **Step-5: Finally let's try to plot our newly found variables.**
+
+    ```python
+    import numpy as np
+    from matplotlib import pyplot as plt
+    import pandas as pd
+
+    df = pd.read_csv('./TutorialFile.csv')
+    print(df, '\n')
+
+    t = df.loc[:, 'Time'].values
+    print('Time:', t)
+
+    v = df.loc[:,'Voltage'].values
+    print('Voltage:', v)
+
+    plt.plot(t, v);
+    plt.show()
+    ```
+    - The `print`-statements should produce the following output:
+        
+        ```python
+        Time  Voltage
+        0     0     10.0
+        1     1      9.7
+        2     2      4.5
+        3     3      8.7
+        4     4      8.6
+        5     5      2.3
+        6     6     15.0
+        7     7     -9.0 
+
+        Time: [0 1 2 3 4 5 6 7]
+        Voltage: [10.   9.7  4.5  8.7  8.6  2.3 15.  -9. ]
+        ```
+
+:::{.callout-caution appearance="simple" icon="false"}
+###### <span style="color:#8B4513;">**A1.3 Exercise:** </span>
+**Type up the above in `my_demo_problem3.py`.**
+
+- You should see plot that resembles the one shown below.
+![](../../../media/units/unit2/assignment4/A4_demo41.png)
+
+**Submit your program `my_demo_problem3.py`.**
+
+- We are not looking for the figure in this exercise, just the working code.
+:::
+
+- **Step-6: Now that we learned how to extract data from a CSV-formatted file and plot it, let's try and make the plot better!**
+    - We will use the `plt.subplots()` functionality to accomplish the task creating a plot that has the following attributes:
+        1. data being plotted in red color
+        2. x- and y-axis labels, 
+        3. a title and 
+        4. a legend for the data we are plotting.
+
+        ```python
+        import numpy as np
+        from matplotlib import pyplot as plt
+        import pandas as pd
+
+        df = pd.read_csv('./TutorialFile.csv')
+        print(df, '\n')
+
+        t = df.loc[:, 'Time'].values
+        print('Time:', t)
+
+        v = df.loc[:,'Voltage'].values
+        print('Voltage:', v)
+    
+        fig, ax = plt.subplots(figsize=(6,4))
+        ax.plot(t,  v, color='r', label="data")
+        ax.legend()
+    
+        ax.set_xlabel('Time (s)', fontsize=12)
+        ax.set_ylabel('Voltage values as a function of time', fontsize=12)
+        ax.set_title('Plot of Voltage vs Time')
+        ax.grid()
+
+        plt.show()
+        ```
+
+:::{.callout-caution appearance="simple" icon="false"}
+###### <span style="color:#8B4513;">**A1.4 Exercise:** </span>
+**Type up the above in `my_demo_problem4.py`.**
+
+- You should see plot that resembles the one shown below.
+![](../../../media/units/unit2/assignment4/A4_demo42.png)
+
+**Submit your program `my_demo_problem4.py`.**
+
+- We are not looking for the figure in this exercise, just the working code.
+:::
+
+- **Step-7: In this final step, we will make use of the `numpy` library to accomplish some math and plot the data again!**
+    - We will use the `.to_numpy()` functionality to convert the `DataFrame` into a `numpy array`. 
+    - We will accomplish the task creating a plot that has the following attributes in addition to the ones in the earlier exercise:
+        1. data being plotted in magenta colored dotted line
+        2. use `numpy` methods `.mean()` and `.std()` to calculate the mean and standard deviation of the voltage, respectively.
+        3. add the values of mean and standard as text on the plot
+
+        ```python
+        import numpy as np
+        from matplotlib import pyplot as plt
+        import pandas as pd
+
+        df = pd.read_csv('./TutorialFile.csv')
+        print(df, '\n')
+
+        arr = df.to_numpy() # This function converts the DataFrame into a 2D array
+        print(arr,'\n')     # Prints the 2D array 
+        print(arr.shape)    # Prints the shape of the 2D array and returns a tuple
+
+        t = arr[:,0]        # Assigns variable to the first column of the 2D array data  
+        print('Time:', t)   # Prints the first column of the 2D array data (Time)
+    
+        v = arr[:,1]        # Assigns variable to the second column of the 2D array data 
+        print('Voltage:', v)    # Prints the second column of the 2D array data (Voltage)
+
+        print('Mean of Voltage:', v.mean()) # Prints the mean of the Voltage data
+        print('Standard Deviation of Voltage:', v.std()) # Prints the standard deviation of the Voltage data
+    
+        fig, ax = plt.subplots(figsize=(6,4))
+        ax.plot(t,  v, 'm-o', label="data") # Creates a plot with magenta colored dotted line
+        ax.legend()
+        ax.text(2, 0,  'Mean Voltage='+str(v.mean()), fontsize=12) # Print the mean on the plot
+        ax.text(0, -2.5,  'Standard Deviation of Voltage='+str(v.std()), fontsize=12)
+
+        ax.set_xlabel('Time (s)', fontsize=12)
+        ax.set_ylabel('Voltage values as a function of time', fontsize=12)
+        ax.set_title('Plot of Voltage vs Time')
+        ax.grid()
+
+        plt.show()
+        ```
+
+:::{.callout-caution appearance="simple" icon="false"}
+###### <span style="color:#8B4513;">**A1.5 Exercise:** </span>
+**Type up the above in `my_demo_problem5.py`.**
+
+- You should see plot that resembles the one shown below.
+![](../../../media/units/unit2/assignment4/A4_demo43.png)
+
+**Submit your program `my_demo_problem5.py`.**
+
+- We are not looking for the figure in this exercise, just the working code.
+:::
+
+
+:::{.callout-note}
+### If you got this far successfully, congratulations!
+- Remember: You are saving all the programs in a directory called `assignment4`.
+- You need to start addressing the remaning problems in `assignment4`, found [**here**](./assignment4.qmd).
+- After completing the remaining problems in this assignment, make a `zip` of the directory as `assignment4.zip` and submit it.
+:::
+</body>
+</html>
