@@ -1,0 +1,97 @@
+---
+title: "Assignment 4"
+format:
+  html:
+    code-copy: false
+---
+
+<html>
+<head>
+    <style>
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
+</head>
+<body>
+
+::: {.callout-warning}
+Do this assignment on your own. You may not consult any other students. You are not allowed to use any online resources to complete this assignment other than the course website. This assignment is to be completed and submitted on Blackboard. All examinations, papers, quizzes and other graded work products and assignments are to be completed in conformance with The George Washington University Code of Academic Integrity. Any violations will be treated as violations of the Code of Academic Integrity.
+:::
+
+## Objectives
+As usual, in each such assignment set, we will help develop your problem-solving skills by showing you how to solve one problem, the first and often hardest problem.
+<em>Note: the solution will include some exercises for you that you will need to submit</em>.
+
+<!-- ![](../../../media/units/unit1/assignment2/u1-a1.mp3) -->
+
+## Assignment problems
+
+### 1. Demo problem.
+**Consider the following scenario:**
+
+- We are presented data in a file that we need to plot. 
+- We need to import the data into our program and then make sense out of it! 
+
+**Goal of this problem:** 
+
+- Suppose the file we are presented in CSV-format (i.e., comma separated variable format), how can we produce a plot the looks like what is presented below? 
+![](../../../media/units/unit2/assignment4/A4_demo43.png)
+
+**Preliminaries:** 
+
+- First step for us is to download the file <a href="../../../media/units/unit2/assignment4/TutorialFile.csv" download>**TutorialFile**</a> and save it in the same folder as your programs in this assignment.
+- Second, we need some libraries viz., `numpy`, `matplotlib` and `pandas`.
+
+:::{.callout-warning}
+Before proceeding with this assignment make sure you have installed `numpy`, `matplotlib` and `pandas`libraries. Follow these guides to learn about how to install packages in Thonny on a [**Mac**](../..//unit0/guides/thonny-mac-matplotlib.qmd) or [**Windows**](../../unit0/guides/thonny-win-matplotlib.qmd) computer.
+:::
+
+**At this point, do not read further and click to the link below to address this problem.**
+
+[**Now examine the solution**](./assignment4-solution.qmd)
+
+::: {.callout-important title="Important: You need to answer only one question that follow in this assignment"}
+###### <span style="color:#8B4513;"> **Yes! You got it right! Answer exercise 2 to complete this assignment.**</span>
+Follow the steps provided in the demo problem to get started. Grade for this assignment will entail the submission of the exercises in the demo problem and problem below. 
+Keep up your good work! All the best!
+:::
+
+### 2. In this exercise you are expected to write a program `my_DataPlot.py` that generates a plot as shown below. You are provided with a data in a CSV formatted file. 
+- **You should download the file <a href="../../../media/units/unit2/assignment4/climate-change.csv" download>climate-change</a> and save it in the same folder as your programs in this assignment.**
+    - The correct way to download the file is to use either `control+click` on a Mac or `right click` on a Windows machine and download the linked file.
+    - You may use either Excel or other spreadsheet software to view the content of the file.
+
+**Description of the data:**
+
+- Data that are made available for this exercise are sourced from <a href="https://ourworldindata.org/explorers/climate-change?facet=none&country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~OWID_NAM~South+Cascade+Glacier~Wolverine+Glacier~Hawaii&Metric=CO₂+concentrations&Long-run+series=false" target="_blank">Our World in Data</a>.  
+
+- The data are global atmospheric carbon dioxide concentrations measured in parts per million (ppm) and are presented in monthly and annually averaged manner from year 1979 onward. 
+
+- The data were conditioned so that there are no irregularities, mistakes, missing entries, or weird whitespacing. So it is ready to be used and analyzed.
+
+**Goals of this problem:** 
+
+- **You need to write a program that will import the data from the <a href="../../../media/units/unit2/assignment4/climate-change.csv" download>climate-change</a> file and generate a plot of Global CO~2~ Concentrations as shown in the plot below.**
+![](../../../media/units/unit2/assignment4/A4_Problem2.png)
+
+::: {.callout-tip title="Hint"}
+<!-- ###### <span style="color:#8B4513;"> Yes! You got it right! Answer exercise 2 to complete this assignment.</span> -->
+- When large data sets are being plotted the x-axis gets very dense with values as shown in the image below. 
+![](../../../media/units/unit2/assignment4/SS_xaxis_dense.png)
+- Use the following line of code to reduce the x-axis to look like the one shown in the expected output:
+    `ax.set_xticks(ax.get_xticks()[::100])`
+:::
+
+
+:::{.callout-warning}
+## How to submit:
+- Write all your programs in a directory called `assignment4`.
+- After completing the all problems in this assignment, make a `zip` of the directory as `assignment4.zip` and submit it on Blackboard.
+:::
+
+</body>
+</html>
