@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CSCI1012 - Assignment 2</title>
+<title>CSCI1012 - Assignment 4</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -64,8 +30,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../units/unit1/assignments/assignment3.html" rel="next">
-<link href="../../../units/unit0/assignments/assignment1.html" rel="prev">
+<link href="../../../faq.html" rel="next">
+<link href="../../../units/unit1/assignments/assignment3.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -116,7 +82,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../units/unit0/assignments/assignment0.html">Assignments</a></li><li class="breadcrumb-item"><a href="../../../units/unit1/assignments/assignment2.html">Assignment 2</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../units/unit0/assignments/assignment0.html">Assignments</a></li><li class="breadcrumb-item"><a href="../../../units/unit2/assignments/assignment4.html">Assignment 4</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -503,7 +469,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit1/assignments/assignment2.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../units/unit1/assignments/assignment2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Assignment 2</span></a>
   </div>
 </li>
@@ -515,7 +481,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../units/unit2/assignments/assignment4.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../units/unit2/assignments/assignment4.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Assignment 4</span></a>
   </div>
 </li>
@@ -541,9 +507,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#assignment-problems" id="toc-assignment-problems" class="nav-link" data-scroll-target="#assignment-problems">Assignment problems</a>
   <ul>
   <li><a href="#demo-problem." id="toc-demo-problem." class="nav-link" data-scroll-target="#demo-problem.">1. Demo problem.</a></li>
-  <li><a href="#examine-a-list-of-strings-and-identify-whether-the-list-has-composite-words-consisting-of-a-concatenation-of-words-already-in-the-list." id="toc-examine-a-list-of-strings-and-identify-whether-the-list-has-composite-words-consisting-of-a-concatenation-of-words-already-in-the-list." class="nav-link" data-scroll-target="#examine-a-list-of-strings-and-identify-whether-the-list-has-composite-words-consisting-of-a-concatenation-of-words-already-in-the-list.">2. Examine a list of strings and identify whether the list has <em>composite words</em> consisting of a concatenation of words already in the list.</a></li>
-  <li><a href="#write-code-for-two-functions-in-the-file-the_second_best.py" id="toc-write-code-for-two-functions-in-the-file-the_second_best.py" class="nav-link" data-scroll-target="#write-code-for-two-functions-in-the-file-the_second_best.py">3. Write code for two functions in the file <code>the_second_best.py</code>:</a></li>
-  <li><a href="#the-following-shows-the-plot-of-the-cosine-function" id="toc-the-following-shows-the-plot-of-the-cosine-function" class="nav-link" data-scroll-target="#the-following-shows-the-plot-of-the-cosine-function">4. The following shows the plot of the cosine function:</a></li>
+  <li><a href="#in-this-exercise-you-are-expected-to-write-a-program-my_dataplot.py-that-generates-a-plot-as-shown-below.-you-are-provided-with-a-data-in-a-csv-formatted-file." id="toc-in-this-exercise-you-are-expected-to-write-a-program-my_dataplot.py-that-generates-a-plot-as-shown-below.-you-are-provided-with-a-data-in-a-csv-formatted-file." class="nav-link" data-scroll-target="#in-this-exercise-you-are-expected-to-write-a-program-my_dataplot.py-that-generates-a-plot-as-shown-below.-you-are-provided-with-a-data-in-a-csv-formatted-file.">2. In this exercise you are expected to write a program <code>my_DataPlot.py</code> that generates a plot as shown below. You are provided with a data in a CSV formatted file.</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -551,9 +515,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../units/unit0/assignments/assignment0.html">Assignments</a></li><li class="breadcrumb-item"><a href="../../../units/unit1/assignments/assignment2.html">Assignment 2</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../units/unit0/assignments/assignment0.html">Assignments</a></li><li class="breadcrumb-item"><a href="../../../units/unit2/assignments/assignment4.html">Assignment 4</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Assignment 2</h1>
+<h1 class="title">Assignment 4</h1>
 </div>
 
 
@@ -604,238 +568,86 @@ Warning
 <h2 class="anchored" data-anchor-id="assignment-problems">Assignment problems</h2>
 <section id="demo-problem." class="level3">
 <h3 class="anchored" data-anchor-id="demo-problem.">1. Demo problem.</h3>
-<strong>Consider the following lists:</strong>
-<pre lang="python"><code>
-A = [1, 3, <b>5, 7, 9</b>, 11, 13]
-B = [2, <b>5, 7, 9</b>, 10, 11]
-C = [10, 2, 5, 7, 15, 13]
-D = [9, 11, 13, 14, 15]
-</code></pre>
-<p>Notice that the sub-list <code>5,7,9</code> in the first list <code>A</code> appears in the second list <code>B</code> whereas there is no 3-element sub-sequence in list A that appears in list <code>C</code>.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Such sublist searching is a common operation in dealing with DNA sequences in biology (except that their sequences have letters and not numbers).</p>
-</div>
-</div>
+<p><strong>Consider the following scenario:</strong></p>
+<ul>
+<li>We are presented data in a file that we need to plot.</li>
+<li>We need to import the data into our program and then make sense out of it!</li>
+</ul>
 <p><strong>Goal of this problem:</strong></p>
 <ul>
-<li><p>The goal of this problem is to write a function that prints the start position in each list for the first 3-element sublist found in both, going left to right.</p></li>
-<li><p>The following incomplete program is provided to get things started:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> search_sublist(X, Y):</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Determine: </span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Whether a 3-element sub-list of X exists in Y and </span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. At what position (or list index).</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">9</span>, <span class="dv">11</span>, <span class="dv">13</span>]</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>B <span class="op">=</span> [<span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">11</span>]</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>C <span class="op">=</span> [<span class="dv">10</span>, <span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">15</span>, <span class="dv">13</span>]</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>D <span class="op">=</span> [<span class="dv">9</span>, <span class="dv">11</span>, <span class="dv">13</span>, <span class="dv">14</span>, <span class="dv">15</span>]</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># This should print: Found: at i=2 in X and j=1 in Y</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>search_sublist(A, B)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># This should print: No 3-element sublist found</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>search_sublist(A, C)</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># This should print: Found: at i=4 in X and j=0 in Y</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>search_sublist(A, D)</span></code></pre></div></li>
+<li>Suppose the file we are presented in CSV-format (i.e., comma separated variable format), how can we produce a plot the looks like what is presented below? <img src="../../../media/units/unit2/assignment4/A4_demo43.png" class="img-fluid"></li>
 </ul>
-<p><strong>At this point, try to address the following:</strong></p>
+<p><strong>Preliminaries:</strong></p>
 <ul>
-<li>First understand what is being asked.</li>
-<li>Do you see loops and if so, how would they range over the lists?</li>
-<li>Can the problem be broken down into parts, where you can solve the parts and put the solution together afterwards?</li>
-<li>Try writing some code to get at least some of the output.</li>
+<li>First step for us is to download the file <a href="../../../media/units/unit2/assignment4/TutorialFile.csv" download=""><strong>TutorialFile</strong></a> and save it in the same folder as your programs in this assignment.</li>
+<li>Second, we need some libraries viz., <code>numpy</code>, <code>matplotlib</code> and <code>pandas</code>.</li>
 </ul>
-<p><a href="../../../units/unit1/assignments/assignment2-solution.html"><strong>Now examine the solution</strong></a></p>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span style="color:#8B4513;"> You are required to submit your solutions to the <strong>exercises</strong> within this demo problem.</span>
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>Don’t forget to submit your solutions to the exercises within the demo problem where you are being asked to examine the solution through the guided exercises presented to you <a href="../../../units/unit1/assignments/assignment2-solution.html"><strong>here</strong></a>.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="examine-a-list-of-strings-and-identify-whether-the-list-has-composite-words-consisting-of-a-concatenation-of-words-already-in-the-list." class="level3">
-<h3 class="anchored" data-anchor-id="examine-a-list-of-strings-and-identify-whether-the-list-has-composite-words-consisting-of-a-concatenation-of-words-already-in-the-list.">2. Examine a list of strings and identify whether the list has <em>composite words</em> consisting of a concatenation of words already in the list.</h3>
-<p>For example, consider:</p>
-<pre><code>x = ['red', 'blue', 'trees', 'wood','forest', 'field', 'redwood',
-    'greenfield', 'pasture', 'green']</code></pre>
-We can see there are two composites as shown below with <strong>emphazied font</strong>:
-<pre lang="python"><code>
-x = [<b>'red'</b>, 'blue', 'trees', <b>'wood'</b>,'forest', 'field', <b>'redwood'</b>,
-    'greenfield', 'pasture', 'green']
-</code></pre>
-and
-<pre lang="python"><code>
-x = ['red', 'blue', 'trees', 'wood','forest', <b>'field'</b>,
-    <b>'greenfield'</b>, 'pasture',` <b>'green'</b>]
-</code></pre>
-<p><strong>Write code in <code>composite_word_finder.py</code> to complete the function below:</strong></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> find_composite_words(A):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># write your code here</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="st">'red'</span>, <span class="st">'blue'</span>, <span class="st">'trees'</span>, <span class="st">'wood'</span>, <span class="st">'forest'</span>, <span class="st">'field'</span>, <span class="st">'redwood'</span>, <span class="st">'greenfield'</span>, <span class="st">'pasture'</span>, <span class="st">'green'</span>]</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> [<span class="st">'hi'</span>, <span class="st">'did'</span>, <span class="st">'sunshine'</span>, <span class="st">'splendid'</span>, <span class="st">'silent'</span>, <span class="st">'sun'</span>]</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>find_composite_words(x)</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>find_composite_words(y)</span></code></pre></div>
-<p><strong>The output should be:</strong></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Composite words found:</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="op">-</span> red wood redwood</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="op">-</span> green field greenfield</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>No composites found</span></code></pre></div>
-<p><strong>Submit your program <code>composite_word_finder.py</code>.</strong></p>
-</section>
-<section id="write-code-for-two-functions-in-the-file-the_second_best.py" class="level3">
-<h3 class="anchored" data-anchor-id="write-code-for-two-functions-in-the-file-the_second_best.py">3. Write code for two functions in the file <code>the_second_best.py</code>:</h3>
-<!-- x = [1, 2, 3, 4, 6, 8] -->
-<!-- y = [4, 7, 12, 5, 1] -->
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> second_best(A):</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># write your code here</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> best_second(A, B):</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># write your code here</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">10</span>, <span class="dv">4</span>, <span class="dv">7</span>, <span class="dv">3</span>, <span class="dv">8</span>, <span class="dv">9</span>]</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(second_best(x)) <span class="co"># should print 9</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> [<span class="dv">6</span>, <span class="dv">12</span>, <span class="dv">3</span>, <span class="dv">8</span>, <span class="dv">5</span>]</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(second_best(y)) <span class="co"># should print 8</span></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(best_second(x, y)) <span class="co"># should print 9</span></span></code></pre></div>
-<p>The first function <code>second_best(A)</code> returns the second-largest element in the given list. The second function <code>best_second(A, B)</code> takes two lists, compares their second-largest elements, and returns the larger of the two.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Refer to Unit 1, Module 2, Section 2.11 and Exercise 2.35.</p>
+<p>Before proceeding with this assignment make sure you have installed <code>numpy</code>, <code>matplotlib</code> and <code>pandas</code>libraries. Follow these guides to learn about how to install packages in Thonny on a <a href="../../../units/unit0/guides/thonny-mac-matplotlib.html"><strong>Mac</strong></a> or <a href="../../../units/unit0/guides/thonny-win-matplotlib.html"><strong>Windows</strong></a> computer.</p>
 </div>
 </div>
-<p><strong>Submit your program <code>the_second_best.py</code>.</strong></p>
-</section>
-<section id="the-following-shows-the-plot-of-the-cosine-function" class="level3">
-<h3 class="anchored" data-anchor-id="the-following-shows-the-plot-of-the-cosine-function">4. The following shows the plot of the cosine function:</h3>
-<p><img src="../../../media/units/unit1/assignment2/4.1.png" class="img-fluid"></p>
-<div class="callout callout-style-default callout-note callout-titled">
+<p><strong>At this point, do not read further and click to the link below to address this problem.</strong></p>
+<p><a href="../../../units/unit2/assignments/assignment4-solution.html"><strong>Now examine the solution</strong></a></p>
+<div class="callout callout-style-default callout-important callout-titled" title="Important: You need to answer only one question that follow in this assignment">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Important: You need to answer only one question that follow in this assignment
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>The x coordinate ranges between <code>-1.57</code> and <code>+1.57</code>, approximately <code>-π/2</code> and <code>+π/2</code>. The function <code>cos(x)</code> takes on values between <code>0</code> and <code>1</code> for these values of <code>x</code>.</p>
+<section id="yes-you-got-it-right-answer-exercise-2-to-complete-this-assignment." class="level6 callout-body-container callout-body">
+<h6 class="anchored" data-anchor-id="yes-you-got-it-right-answer-exercise-2-to-complete-this-assignment."><span style="color:#8B4513;"> <strong>Yes! You got it right! Answer exercise 2 to complete this assignment.</strong></span></h6>
+<p>Follow the steps provided in the demo problem to get started. Grade for this assignment will entail the submission of the exercises in the demo problem and problem below. Keep up your good work! All the best!</p>
+</section>
 </div>
-</div>
+</section>
+<section id="in-this-exercise-you-are-expected-to-write-a-program-my_dataplot.py-that-generates-a-plot-as-shown-below.-you-are-provided-with-a-data-in-a-csv-formatted-file." class="level3">
+<h3 class="anchored" data-anchor-id="in-this-exercise-you-are-expected-to-write-a-program-my_dataplot.py-that-generates-a-plot-as-shown-below.-you-are-provided-with-a-data-in-a-csv-formatted-file.">2. In this exercise you are expected to write a program <code>my_DataPlot.py</code> that generates a plot as shown below. You are provided with a data in a CSV formatted file.</h3>
+<ul>
+<li><strong>You should download the file <a href="../../../media/units/unit2/assignment4/climate-change.csv" download="">climate-change</a> and save it in the same folder as your programs in this assignment.</strong>
+<ul>
+<li>The correct way to download the file is to use either <code>control+click</code> on a Mac or <code>right click</code> on a Windows machine and download the linked file.</li>
+<li>You may use either Excel or other spreadsheet software to view the content of the file.</li>
+</ul></li>
+</ul>
+<p><strong>Description of the data:</strong></p>
+<ul>
+<li><p>Data that are made available for this exercise are sourced from <a href="https://ourworldindata.org/explorers/climate-change?facet=none&amp;country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~OWID_NAM~South+Cascade+Glacier~Wolverine+Glacier~Hawaii&amp;Metric=CO₂+concentrations&amp;Long-run+series=false" target="_blank">Our World in Data</a>.</p></li>
+<li><p>The data are global atmospheric carbon dioxide concentrations measured in parts per million (ppm) and are presented in monthly and annually averaged manner from year 1979 onward.</p></li>
+<li><p>The data were conditioned so that there are no irregularities, mistakes, missing entries, or weird whitespacing. So it is ready to be used and analyzed.</p></li>
+</ul>
 <p><strong>Goals of this problem:</strong></p>
 <ul>
-<li><p>Calculate the <strong>area below the graph generated by the <code>cos(x)</code> function</strong>. That is, the area of the shape whose one boundary is the data line generated by the <code>cos(x)</code> function, and whose other boundary is the x-axis.</p></li>
-<li><p>We will do this using a method called <strong>Monte Carlo integration</strong> using the following steps; do not worry about the terminology, you will be able to follow along.</p></li>
+<li><strong>You need to write a program that will import the data from the <a href="../../../media/units/unit2/assignment4/climate-change.csv" download="">climate-change</a> file and generate a plot of Global CO<sub>2</sub> Concentrations as shown in the plot below.</strong> <img src="../../../media/units/unit2/assignment4/A4_Problem2.png" class="img-fluid"></li>
 </ul>
-<p><strong>Follow the steps below and complete this problem:</strong></p>
-<ol type="1">
-<li><p>Download <a href="../../../media/units/unit1/assignment2/my_area_underCosine.py" download=""><strong>my_area_underCosine.py</strong></a>. You will also need <a href="../../../media/useful/drawtool.py" download=""><strong>drawtool.py</strong></a>. Make sure both python files are downloaded into the same folder.</p></li>
-<li><p>Look into the program <strong><code>my_area_underCosine.py</code></strong> and make sure you get familiar the libraries imporated, the variables assigned etc.</p></li>
-<li><p>Execute the program <strong><code>my_area_underCosine.py</code></strong> and examine the graph that is generated. It should look like the one shown above (without any random points).</p></li>
-<li><p>Generate variable <code>x</code> with random values  between <code>-π/2</code> and <code>+π/2</code>, and a variable <em><code>y</code> with random values</em> between <code>0</code> and <code>1</code>.</p></li>
-</ol>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled" title="Hint">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Hint
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>To generate a random value within a particular range you may can use the following function after importing the <code>random</code> library in your program:</p>
+<!-- ###### <span style="color:#8B4513;"> Yes! You got it right! Answer exercise 2 to complete this assignment.</span> -->
 <ul>
-<li><p>Generate a random <code>x</code> value between <code>-π/2</code> and <code>+π/2</code>, approximately with the following lines of code:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> random.uniform(<span class="op">-</span><span class="fl">1.57</span>, <span class="fl">1.57</span>)</span></code></pre></div>
-<p>Since this is an approximation method, using approximate values for <code>-π/2</code> and <code>+π/2</code> are okay.</p></li>
-<li><p>Generate a random <code>y</code> value between <code>0</code> and <code>1</code> with the following lines of code:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> random.uniform(<span class="dv">0</span>, <span class="dv">1</span>)</span></code></pre></div></li>
+<li>When large data sets are being plotted the x-axis gets very dense with values as shown in the image below. <img src="../../../media/units/unit2/assignment4/SS_xaxis_dense.png" class="img-fluid"></li>
+<li>Use the following line of code to reduce the x-axis to look like the one shown in the expected output: <code>ax.set_xticks(ax.get_xticks()[::100])</code></li>
 </ul>
 </div>
 </div>
-<ol start="5" type="1">
-<li>Generate a plot with the random points as shown in the graph below.
-<ul>
-<li>In the program <strong><code>my_area_underCosine.py</code></strong> we generate <code>n</code> (= 1000) random points.</li>
-<li>Then, for those points that lie below the <code>cos()</code> function, we’ll color them <span style="color: green">green</span>. All other points will be colored <span style="color: orange">yellow</span>.</li>
-<li>The plot generated will look like the one shown below:</li>
-</ul></li>
-</ol>
-<p><img src="../../../media/units/unit1/assignment2/4.2.png" class="img-fluid"></p>
-<ol start="6" type="1">
-<li><p>Count the number of points lie under the cosine data line.</p></li>
-<li><p>Calculate the ratio of the number of green points to the total number of points (green and yellow) should be a reasonable approximation of the <strong>ratio of the data line generated by the <code>cos()</code> function</strong>, to the <strong>area of the rectangle (with length of sides being <code>π</code> and <code>1</code>)</strong> in which the <code>cos()</code> function is plotted.</p></li>
-<li><p>Use the <strong><code>my_area_underCosine.py</code></strong> and complete the code to calculate <strong>area below the graph generated by the <code>cos()</code> function</strong>.</p>
-<ul>
-<li>Note that your program <strong><code>my_area_underCosine.py</code></strong> will generate 1000 random points</li>
-</ul></li>
-<li><p>Modify your program <strong><code>my_area_underCosine.py</code></strong>, to output an image with 5000 random points.</p></li>
-<li><p><strong>Submit your modified program </strong><code>my_area_underCosine.py</code>**.</p></li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>The submission requires only the program <code>my_area_underCosine.py</code>that when executed will generate the expected graphs as described in the problem.</li>
-<li><strong>You are not required submit any graphs generated by the program.</strong><br>
-</li>
-</ul>
-</div>
-</div>
-<!-- ### 5. Find a TED talk that relates to computing or computer science. In your `assignment1.pdf`, write the title, include the URL, a little about the speaker, and a one paragraph summary. Add a second paragraph with your own views on the topic. -->
-<!-- 
-<table data-quarto-postprocess="true">
-<tbody>
-<tr class="odd">
-<td height="6"> </td>
-</tr>
-</tbody>
-</table>
-<p>
-<font color="#8B4513">A1.4 Audio:
-<br>
-<audio src="media/u1-a1.mp3" controls="controls"></audio>
-</font> -->
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -847,11 +659,13 @@ How to submit:
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Write all your programs in a directory called <code>assignment2</code>.</li>
-<li>After completing the all problems in this assignment, make a <code>zip</code> of the directory as <code>assignment2.zip</code> and submit it on Blackboard.</li>
+<li>Write all your programs in a directory called <code>assignment4</code>.</li>
+<li>After completing the all problems in this assignment, make a <code>zip</code> of the directory as <code>assignment4.zip</code> and submit it on Blackboard.</li>
 </ul>
 </div>
 </div>
+
+
 
 
 </section>
@@ -1195,13 +1009,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../units/unit0/assignments/assignment1.html" class="pagination-link  aria-label=" assignment="" 1"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Assignment 1</span>
+      <a href="../../../units/unit1/assignments/assignment3.html" class="pagination-link  aria-label=" assignment="" 3"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Assignment 3</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../units/unit1/assignments/assignment3.html" class="pagination-link" aria-label="Assignment 3">
-        <span class="nav-page-text">Assignment 3</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../faq.html" class="pagination-link" aria-label="FAQ">
+        <span class="nav-page-text">FAQ</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
