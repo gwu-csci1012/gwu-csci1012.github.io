@@ -373,13 +373,13 @@ A = np.array([1, 2, 3])
 B = np.array([4, 5, 6])
 
 C = A + B            # Direct element-by-element addition
-print(C)             # [5, 7, 9]
+print(C)             # [5 7 9]
 
 D = np.add(A, B)     # The same, via the add() function in numpy
-print(D)             # [5, 7, 9]
+print(D)             # [5 7 9]
 
 E = B - A            # Elementwise subtraction
-print(E)             # [3, 3, 3]
+print(E)             # [3 3 3]
 ```
 
 :::{.callout-caution appearance="simple" icon=false}
