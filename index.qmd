@@ -21,7 +21,7 @@ The course material is sourced from **Prof. Simha's** webpage: <https://www2.sea
     - **25 questions**
         - Answer as many as you can; Up to 20 correct answers will be graded for 5 points each
     -  **Total:** 100 points
-- **60 % needed to Pass the Exam and the course**
+- **Greater than 60 % needed to Pass the Exam and the course as per [Course Policy](./course-policies.qmd#assessments-and-grading)**
 - **Final grade will be according to the [grading-policy and -scale](course-policies.qmd) outlined inthe course**
 :::
 
@@ -38,7 +38,7 @@ The course material is sourced from **Prof. Simha's** webpage: <https://www2.sea
     - You will be required to sign the Academic Integrity Pledge
     - **20 questions (no choice, 5 points each)**
     - **Total:** 100 points
-- **60 % needed to Pass the Make-up Exam and the course**
+- **Greater than 60 % needed to Pass the Make-up Exam and the course as per [Course Policy](./course-policies.qmd#assessments-and-grading)**
 - **Final grade if you pass** 
     - Will NOT be higher than the lowest grade of the students who passed the exam on 04/15
     - Will be in accordance with the [grading-policy and -scale](course-policies.qmd) outlined in the course.
