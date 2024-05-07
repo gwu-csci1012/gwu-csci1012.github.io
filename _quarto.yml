@@ -95,13 +95,13 @@ website:
                         text: "Week-1"
               - href: units/additional-resources/minor-advising.qmd
                 text: "Computer Science Minor Advising"
-      - section: "Assignments"
-        contents:
-          - ./units/unit0/assignments/assignment0.qmd
-          - ./units/unit0/assignments/assignment1.qmd
-          - ./units/unit1/assignments/assignment2.qmd
-          - ./units/unit1/assignments/assignment3.qmd
-          - ./units/unit2/assignments/assignment4.qmd
+      # - section: "Assignments"
+      #   contents:
+      #     - ./units/unit0/assignments/assignment0.qmd
+      #     - ./units/unit0/assignments/assignment1.qmd
+      #     - ./units/unit1/assignments/assignment2.qmd
+      #     - ./units/unit1/assignments/assignment3.qmd
+      #     - ./units/unit2/assignments/assignment4.qmd
       - href: faq.qmd
         text: FAQ
 format:
