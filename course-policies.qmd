@@ -5,7 +5,7 @@ format:
     code-copy: false
 ---
 
-<html>
+<!-- <html>
 <head>
     <style>
         body {
@@ -16,7 +16,7 @@ format:
         }
     </style>
 </head>
-<body>
+<body> -->
 
 <!-- <div class="breadcrumbs">
   <a href="./index.qmd">Home</a> &raquo;
@@ -27,7 +27,7 @@ format:
 ### Assessments
 -	15 Modules
 -	5 Assignments
--	up to 13 Quizzes (given in lab)
+-	up to 14 Quizzes (given in lab)
 -	1 Examination
 
 ### Grading
