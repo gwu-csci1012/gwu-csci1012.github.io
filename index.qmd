@@ -9,6 +9,11 @@ The course material is sourced from **Prof. Simha's** webpage: <https://www2.sea
 :::
 
 :::{.callout-note}
+### Syllabus
+Link for the syllabus <a href="./media/CS1012_Spring_2024_Syllabus.pdf" download>**here**</a>.
+:::
+
+:::{.callout-note}
 ## Make-up Exam on 05/06/2024 (ONLY for students who Fail Exam on 04/15)
 - **Make-up Exam on Monday, 05/06 (exam week)**
     - **This exam is offered ONLY to students who Fail the exam on 04/15**
@@ -22,9 +27,10 @@ The course material is sourced from **Prof. Simha's** webpage: <https://www2.sea
     - **20 questions (no choice, 5 points each)**
     - **Total:** 100 points
 - **Greater than 60 % needed to Pass the Make-up Exam and the course as per [Course Policy](./course-policies.qmd#assessments-and-grading)**
-- **Final grade if you pass** 
+- **Exam Score if you pass** 
     - Will NOT be higher than the lowest grade of the students who passed the exam on 04/15
     - Will be in accordance with the [grading-policy and -scale](course-policies.qmd) outlined in the course.
+    - The Final grade if you pass will be in accordance with the [grading-policy and scale](course-policies.qmd) outlined inthe course
 :::
 
 :::{.callout-note}
@@ -41,7 +47,7 @@ The course material is sourced from **Prof. Simha's** webpage: <https://www2.sea
         - Answer as many as you can; Up to 20 correct answers will be graded for 5 points each
     -  **Total:** 100 points
 - **Greater than 60 % needed to Pass the Exam and the course as per [Course Policy](./course-policies.qmd#assessments-and-grading)**
-- **Final grade will be according to the [grading-policy and -scale](course-policies.qmd) outlined inthe course**
+- **Exam Score will be according to the [grading-policy and scale](course-policies.qmd) outlined inthe course**
 :::
 
 :::{.callout-important}
