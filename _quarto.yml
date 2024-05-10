@@ -59,42 +59,42 @@ website:
               - ./units/unit2/modules/module0.qmd
               - ./units/unit2/modules/module1.qmd
               - ./units/unit2/modules/module2.qmd
-          - section: "Additional Resources"
-            contents: 
-              - section: "Instructor Notes"
-                contents:   
-                  - href: units/additional-resources/insructor-notes/week-1.qmd
-                    text: "Week-1"
-                  - href: units/additional-resources/insructor-notes/week-2.qmd
-                    text: "Week-2"
-                  - href: units/additional-resources/insructor-notes/week-3.qmd
-                    text: "Week-3"
-                  - href: units/additional-resources/insructor-notes/week-4.qmd
-                    text: "Week-4"
-                  - href: units/additional-resources/insructor-notes/week-5.qmd
-                    text: "Week-5"
-                  - href: units/additional-resources/insructor-notes/week-6.qmd
-                    text: "Week-6"
-                  - href: units/additional-resources/insructor-notes/week-7.qmd
-                    text: "Week-7"
-                  - href: units/additional-resources/insructor-notes/week-9.qmd
-                    text: "Week-9"
-                  - href: units/additional-resources/insructor-notes/week-10.qmd
-                    text: "Week-10"
-                  - href: units/additional-resources/insructor-notes/week-11.qmd
-                    text: "Week-11"
-                  - href: units/additional-resources/insructor-notes/week-12.qmd
-                    text: "Week-12"
-                  - href: units/additional-resources/insructor-notes/week-14.qmd
-                    text: "Week-14"
-              - section: "Lab Notes"
-                contents: 
-                  - section: "Amal AlQahtani"
-                    contents: 
-                      - href: ./units/additional-resources/lab-notes/amal/week-1.qmd
-                        text: "Week-1"
-              - href: units/additional-resources/minor-advising.qmd
-                text: "Computer Science Minor Advising"
+          # - section: "Additional Resources"
+          #   contents: 
+          #     - section: "Instructor Notes"
+          #       contents:   
+          #         - href: units/additional-resources/insructor-notes/week-1.qmd
+          #           text: "Week-1"
+          #         - href: units/additional-resources/insructor-notes/week-2.qmd
+          #           text: "Week-2"
+          #         - href: units/additional-resources/insructor-notes/week-3.qmd
+          #           text: "Week-3"
+          #         - href: units/additional-resources/insructor-notes/week-4.qmd
+          #           text: "Week-4"
+          #         - href: units/additional-resources/insructor-notes/week-5.qmd
+          #           text: "Week-5"
+          #         - href: units/additional-resources/insructor-notes/week-6.qmd
+          #           text: "Week-6"
+          #         - href: units/additional-resources/insructor-notes/week-7.qmd
+          #           text: "Week-7"
+          #         - href: units/additional-resources/insructor-notes/week-9.qmd
+          #           text: "Week-9"
+          #         - href: units/additional-resources/insructor-notes/week-10.qmd
+          #           text: "Week-10"
+          #         - href: units/additional-resources/insructor-notes/week-11.qmd
+          #           text: "Week-11"
+          #         - href: units/additional-resources/insructor-notes/week-12.qmd
+          #           text: "Week-12"
+          #         - href: units/additional-resources/insructor-notes/week-14.qmd
+          #           text: "Week-14"
+          #     - section: "Lab Notes"
+          #       contents: 
+          #         - section: "Amal AlQahtani"
+          #           contents: 
+          #             - href: ./units/additional-resources/lab-notes/amal/week-1.qmd
+          #               text: "Week-1"
+              # - href: units/additional-resources/minor-advising.qmd
+              #   text: "Computer Science Minor Advising"
       # - section: "Assignments"
       #   contents:
       #     - ./units/unit0/assignments/assignment0.qmd
